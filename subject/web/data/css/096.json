@@ -1,0 +1,156 @@
+{
+  "url": "https://www.w3schools.com/css/css_text_shadow.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Text Shadow"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Text Shadow"
+    },
+    {
+      "type": "paragraph",
+      "text": "The text-shadow property adds shadow to text."
+    },
+    {
+      "type": "paragraph",
+      "text": "In its simplest use, you only specify the horizontal shadow (2px) and the vertical shadow (2px):"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Text shadow effect!"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "h1\n{\n  text-shadow: 2px 2px;\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Next, add a color (red) to the shadow:"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Text shadow effect!"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "h1\n{\n  text-shadow: 2px 2px red;\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Then, add a blur effect (5px) to the shadow:"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Text shadow effect!"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "h1\n{\n  text-shadow: 2px 2px 5px red;\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "More Text Shadow Examples"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "h1 {\n  color: white;  text-shadow: 2px 2px 4px #000000;}"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "h1 {\n  text-shadow: 0 0 3px #ff0000;}"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "h1 {\n  text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;}"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "h1 {\n  color: white;  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 \n  0 5px darkblue;}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Tip: Go to our CSS Fonts chapter to learn about how to change fonts, text size and the style of a text. \nTip: Go to our CSS Text Effects chapter to learn about different text effects."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The CSS Text Shadow Property"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Property",
+          "Description"
+        ],
+        [
+          "text-shadow",
+          "Specifies the shadow effect added to text"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

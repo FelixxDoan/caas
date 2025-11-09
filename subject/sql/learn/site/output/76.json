@@ -1,0 +1,58 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_ref_between.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL BETWEEN Keyword"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "text": "BETWEEN"
+    },
+    {
+      "type": "paragraph",
+      "text": "The BETWEEN command is used to select values \nwithin a given range. The values can be numbers, text, or dates."
+    },
+    {
+      "type": "paragraph",
+      "text": "The BETWEEN command is inclusive: begin and end values are included."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement selects all products with a price BETWEEN 10 and 20:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n SELECT * FROM ProductsWHERE Price BETWEEN 10 AND 20;\n\nTry it Yourself »"
+    },
+    {
+      "type": "paragraph",
+      "text": "To display the products outside the range of the previous example, use NOT BETWEEN:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n SELECT * FROM ProductsWHERE Price NOT BETWEEN 10 AND 20;\n\nTry it Yourself »"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement selects all products with a ProductName BETWEEN 'Carnarvon \nTigers' and 'Mozzarella di Giovanni':"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n SELECT * FROM ProductsWHERE ProductName BETWEEN 'Carnarvon Tigers' AND 'Mozzarella \n  di Giovanni'ORDER BY ProductName;\n\nTry it Yourself »"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

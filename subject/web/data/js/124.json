@@ -1,0 +1,132 @@
+{
+  "url": "https://www.w3schools.com/js/js_object_prototypes.asp",
+  "title": "JavaScript Object Prototypes",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Object Prototypes"
+    },
+    {
+      "type": "paragraph",
+      "text": "All JavaScript objects inherit properties and methods \nfrom a prototype."
+    },
+    {
+      "type": "paragraph",
+      "text": "In the previous chapter we learned how to use an object constructor:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "function Person(first, last, age, eyecolor) {\n   \nthis.firstName = first;\n  this.lastName = last;\n   \nthis.age = age;\n   \nthis.eyeColor = eyecolor;\n}\nconst myFather = new Person(\"John\", \"Doe\", 50, \"blue\");\nconst myMother = new Person(\"Sally\", \"Rally\", 48, \"green\");"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "We also learned that you can not add a new property to an existing object constructor:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Person.nationality = \"English\";"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "To add a new property to a constructor, you must add it to the \nconstructor function:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "function Person(first, last, age, eyecolor) {\n   \nthis.firstName = first;\n   \nthis.lastName = last;\n   \nthis.age = age;\n   \nthis.eyeColor = eyecolor;  this.nationality = \"English\";\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Prototype Inheritance"
+    },
+    {
+      "type": "paragraph",
+      "text": "All JavaScript objects inherit properties and methods from a prototype:"
+    },
+    {
+      "type": "other",
+      "text": "Date objects inherit from Date.prototype\n  Array objects inherit from Array.prototype\n  Person objects inherit from Person.prototype"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Object.prototype is on the top of the prototype inheritance chain:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Date objects, Array objects, and Person objects inherit from Object.prototype."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Adding Properties and Methods to Objects"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sometimes you want to add new properties (or methods) to all existing objects of a given type."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sometimes you want to add new properties (or methods) to an object \nconstructor."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Using the prototype Property"
+    },
+    {
+      "type": "paragraph",
+      "text": "The JavaScript prototype property allows you to add new properties to object \nconstructors:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "function Person(first, last, age, eyecolor) {\n    this.firstName = first;\n    this.lastName = last;\n    this.age = age;\n    this.eyeColor = eyecolor;\n}\n Person.prototype.nationality = \"English\";"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The JavaScript prototype property also allows you to add new methods to objects \nconstructors:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "function Person(first, last, age, eyecolor) {\n    this.firstName = first;\n    this.lastName = last;\n    this.age = age;\n  this.eyeColor = eyecolor;\n}\n Person.prototype.name = function() {\n    return this.firstName + \" \" + this.lastName;\n};"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Warning\nOnly modify your own prototypes. Never modify the prototypes of  \nstandard JavaScript objects."
+    },
+    {
+      "type": "other",
+      "text": "Learn More:\nJavaScript Object Definitions\nJavaScript Object Constructors\nJavaScript Object this\nJavaScript Object Methods\nJavaScript Object Properties\nJavaScript Object Getters & Setters\nJavaScript Object Protection\nJavaScript Object Reference"
+    }
+  ]
+}

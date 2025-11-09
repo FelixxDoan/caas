@@ -1,0 +1,289 @@
+{
+  "url": "https://www.w3schools.com/js/js_object_methods.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Object Methods"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "General Methods"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Copies properties from a source object to a target object\nObject.assign(target, source)\n// Creates an object from an existing object\nObject.create(object)\n// Returns an array of the key/value pairs of an object\nObject.entries(object)\n// Creates an object from a list of keys/values\nObject.fromEntries()\n// Returns an array of the keys of an object\nObject.keys(object)\n// Returns an array of the property values of an object\nObject.values(object)\n// Groups object elements according to a function\nObject.groupBy(object, callback)"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Object.assign()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Object.assign() method copies properties from\none or more source objects to a target object."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create Target Object\nconst person1 = {\n  firstName: \"John\",\n  lastName: \"Doe\",\n  age: 50,\n  eyeColor: \"blue\"\n};\n\n// Create Source Object\nconst person2 = {firstName: \"Anne\",lastName: \"Smith\"};\n\n// Assign Source to Target\nObject.assign(person1, person2);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Object.entries()"
+    },
+    {
+      "type": "paragraph",
+      "text": "ECMAScript 2017 added the Object.entries() method to objects."
+    },
+    {
+      "type": "paragraph",
+      "text": "Object.entries() returns an array of the key/value pairs in an object:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const person = {\n  firstName : \"John\",\n  lastName : \"Doe\",\n  age : 50,\n  eyeColor : \"blue\"\n};\n\nlet text = Object.entries(person);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Object.entries() makes it simple to use objects in loops:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const fruits = {Bananas:300, Oranges:200, Apples:500};\n\nlet text = \"\";\nfor (let [fruit, value] of Object.entries(fruits)) {\n  text += fruit + \": \" + value + \"<br>\";\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Object.entries() also makes it simple to convert objects to maps:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const fruits = {Bananas:300, Oranges:200, Apples:500};\n\nconst myMap = new Map(Object.entries(fruits));"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Object.entries() is supported in all modern browsers since March 2017:"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Object.fromEntries()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The fromEntries() method creates an object from\na list of key/value pairs."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const fruits = [\n  [\"apples\", 300],\n  [\"pears\", 900],\n  [\"bananas\", 500]\n];\n\nconst myObj = Object.fromEntries(fruits);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Object.values()"
+    },
+    {
+      "type": "paragraph",
+      "text": "Object.values() is similar to Object.entries(),\nbut returns a single dimension array of the object values:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const person = {\n  firstName : \"John\",\n  lastName : \"Doe\",\n  age : 50,\n  eyeColor : \"blue\"\n};\n\nlet text = Object.values(person);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Object.values() is supported in all modern browsers since March 2017:"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Object.groupBy()"
+    },
+    {
+      "type": "paragraph",
+      "text": "ES2024 added the Object.groupBy() method to JavaScript."
+    },
+    {
+      "type": "paragraph",
+      "text": "The Object.groupBy() method groups elements of an object\naccording to string values returned from a callback function."
+    },
+    {
+      "type": "paragraph",
+      "text": "The Object.groupBy() method does not change the original object."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create an Array\nconst fruits = [\n  {name:\"apples\", quantity:300},\n  {name:\"bananas\", quantity:500},\n  {name:\"oranges\", quantity:200},\n  {name:\"kiwi\", quantity:150}\n];\n\n// Callback function to Group Elements\nfunction myCallback({ quantity }) {\n  return quantity > 200 ? \"ok\" : \"low\";\n}\n\n// Group by Quantity\nconst result = Object.groupBy(fruits, myCallback);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Browser Support"
+    },
+    {
+      "type": "paragraph",
+      "text": "Object.groupby() is an ES2024 feature."
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript 2024 is supported in new browsers since March 2024:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Chrome 117",
+          "Edge 117",
+          "Firefox 119",
+          "Safari 17.4",
+          "Opera 103"
+        ],
+        [
+          "Sep 2023",
+          "Sep 2023",
+          "Oct 2023",
+          "Okt 2024",
+          "May 2023"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Warning\nES2024 features are relatively new.\nOlder browsers may need an alternative code (Polyfill)"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Object.groupBy() vs Map.groupBy()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The difference between Object.groupBy() and Map.groupBy() is:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Object.groupBy() groups elements into a JavaScript object."
+    },
+    {
+      "type": "paragraph",
+      "text": "Map.groupBy() groups elements into a Map object."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Object.keys()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Object.keys() method returns an array with the keys of an object."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create an Object\nconst person = {\n  firstName: \"John\",\n  lastName: \"Doe\",\n  age: 50,\n  eyeColor: \"blue\"\n};\n\n// Get the Keys\nconst keys = Object.keys(person);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript for...in Loop"
+    },
+    {
+      "type": "paragraph",
+      "text": "The JavaScript for...in statement loops through the properties of an object."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Syntax"
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "for (let variable in object) {\n      // code to be executed\n }"
+    },
+    {
+      "type": "paragraph",
+      "text": "The block of code inside of the for...in loop will be executed once for each property."
+    },
+    {
+      "type": "paragraph",
+      "text": "Looping through the properties of an object:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const person = {\n  fname:\" John\",\n  lname:\" Doe\",\n  age: 25\n};\n\nfor (let x in person) {\n    txt += person[x];\n }"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Learn More:\nJavaScript Object Definitions\nJavaScript Object Constructors\nJavaScript Object this\nJavaScript Object Methods\nJavaScript Object Properties\nJavaScript Object Getters & Setters\nJavaScript Object Protection\nJavaScript Object Reference"
+    }
+  ]
+}

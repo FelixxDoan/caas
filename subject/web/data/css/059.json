@@ -1,0 +1,212 @@
+{
+  "url": "https://www.w3schools.com/css/css_image_transparency.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Opacity / Transparency"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "The opacity property specifies the opacity/transparency of an element."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Transparent Image"
+    },
+    {
+      "type": "paragraph",
+      "text": "The opacity property can take a value from 0.0 - 1.0. The lower \nthe value, the more transparent:"
+    },
+    {
+      "type": "other",
+      "text": "opacity 0.2\n\n\n\n\nopacity 0.5\n\n\n\n\nopacity 1(default)"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "img {  opacity: 0.5;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Transparent Hover Effect"
+    },
+    {
+      "type": "paragraph",
+      "text": "The opacity property is often used together with the :hover \nselector to change the opacity on mouse-over:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "img {  opacity: 0.5;}img:hover {  opacity: 1.0;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Example explained"
+    },
+    {
+      "type": "paragraph",
+      "text": "The first CSS block is similar to the code in Example 1. In addition, we have added what should happen when a user hovers over one of the images. In this case we want the image to NOT be transparent when the user hovers over it. The CSS for this is opacity:1;."
+    },
+    {
+      "type": "paragraph",
+      "text": "When the mouse pointer moves away from the image, the image will be transparent again."
+    },
+    {
+      "type": "paragraph",
+      "text": "An example of reversed hover effect:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "img:hover {  opacity: 0.5;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Transparent Box"
+    },
+    {
+      "type": "paragraph",
+      "text": "When using the opacity property to add transparency to the background of an element, all of its child elements \ninherit the same transparency. This can make the text inside a fully transparent element hard to read:"
+    },
+    {
+      "type": "other",
+      "text": "opacity 1\n\n\n\nopacity 0.6\n\n\n\nopacity 0.3\n\n\n\nopacity 0.1"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "div {  opacity: 0.3;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Transparency using RGBA"
+    },
+    {
+      "type": "paragraph",
+      "text": "If you do not want to apply opacity to child elements, like in our example above, use RGBA color values. \nThe following example sets the opacity for the background color and not the text:"
+    },
+    {
+      "type": "other",
+      "text": "100% opacity\n\n\n\n60% opacity\n\n\n\n30% opacity\n\n\n\n10% opacity"
+    },
+    {
+      "type": "paragraph",
+      "text": "You learned from our CSS Colors Chapter, that you can use RGB as a color value. In addition to RGB, \nyou can use an RGB color value with an alpha channel (RGBA) - which specifies the opacity for a color."
+    },
+    {
+      "type": "paragraph",
+      "text": "An RGBA color value is specified with: rgba(red, green, blue, alpha). The \nalpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Tip: You will learn more about RGBA Colors in our CSS Colors Chapter."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "div {  background: rgba(76, 175, 80, 0.3) /* Green background with 30% \nopacity */}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Text in Transparent Box"
+    },
+    {
+      "type": "other",
+      "text": "This is some text that is placed in the transparent box."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<html>\n<head>\n<style>\ndiv.background {\n    background: url(klematis.jpg) repeat;\n    border: 2px solid black;\n}\n\ndiv.transbox {\n    margin: 30px;\n    background-color: #ffffff;\n    border: 1px solid black;\n  opacity: 0.6;\n}\n\ndiv.transbox p {\n  margin: 5%;\n  font-weight: bold;\n    color: #000000;\n}\n</style>\n</head>\n<body>\n\n<div class=\"background\">\n  <div class=\"transbox\">\n    <p>This is some text that is placed in the transparent box.</p>\n  </div>\n</div>\n\n</body>\n</html>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Example explained"
+    },
+    {
+      "type": "paragraph",
+      "text": "First, we create a <div> element (class=\"background\") with a background image, and a border."
+    },
+    {
+      "type": "paragraph",
+      "text": "Then we create another <div> (class=\"transbox\") inside the first <div>."
+    },
+    {
+      "type": "paragraph",
+      "text": "The \n<div class=\"transbox\"> have a background color, and a border - \nthe div is transparent."
+    },
+    {
+      "type": "paragraph",
+      "text": "Inside the transparent \n<div>, we add some text inside a <p> element."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CSS Property"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Property",
+          "Description"
+        ],
+        [
+          "opacity",
+          "Sets the opacity level for an element"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

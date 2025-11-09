@@ -1,0 +1,29 @@
+{
+  "url": "https://www.w3schools.com/js/js_map_reference.asp",
+  "title": "JavaScript Map Reference",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Map Reference"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Complete Map Reference"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Revised July 2025"
+    },
+    {
+      "type": "other",
+      "text": "MethodDescription\nnew Map()Creates a new Map object\nclear()Removes all the elements from a Map\ndelete()Removes a Map element specified by a key\nentries()Returns an iterator object with the [key, value] pairs in a Map\nforEach()Invokes a callback for each key/value pair in a Map\nget()Gets the value for a key in a Map\ngroupBy()Groups object elements according to returned callback values\nhas()Returns true if a key exists in a Map\nkeys()Returns an iterator object with the keys in a Map\nset()Sets the value for a key in a Map\nsizeReturns the number of Map elements\nvalues()Returns an iterator object of the values in a Map"
+    },
+    {
+      "type": "other",
+      "text": "Complete JavaScript Reference\nFor a complete reference to all JavaScript properties and methods, with full descriptions and many examples, go to:\nW3Schools' Full JavaScript Reference.\nThe reference inludes all JavaScript updates from 1999 to 2025."
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_ref_having.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL HAVING Keyword"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "text": "HAVING"
+    },
+    {
+      "type": "paragraph",
+      "text": "The HAVING command is used instead of WHERE with aggregate functions."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL lists the number of customers in each country. \nOnly include countries with more than 5 customers:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n  SELECT COUNT(CustomerID), CountryFROM CustomersGROUP BY Country\n  HAVING COUNT(CustomerID) > 5;\n\n\n  Try it Yourself »"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL lists the number of customers in each country, \nsorted high to low (Only include countries with more than 5 customers):"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n  SELECT COUNT(CustomerID), CountryFROM CustomersGROUP BY CountryHAVING COUNT(CustomerID) \n  > 5\n  ORDER BY COUNT(CustomerID) DESC;\n\n\n  Try it Yourself »"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

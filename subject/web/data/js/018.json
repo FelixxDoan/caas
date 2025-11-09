@@ -1,0 +1,145 @@
+{
+  "url": "https://www.w3schools.com/js/js_graphics_google_chart.asp",
+  "title": "Google Chart",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Google Chart"
+    },
+    {
+      "type": "other",
+      "text": "From simple line charts to complex hierarchical tree maps,\nthe Google Chart gallery provides a large number of ready-to-use chart types:\n\nScatter Chart\nLine Chart \nBar / Column Chart\nArea Chart\nPie Chart\nDonut Chart\nOrg Chart\nMap / Geo Chart"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How to Use Google Chart?"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<div id=\"myChart\" style=\"max-width:700px; height:400px\"></div>"
+        },
+        {
+          "language": "unknown",
+          "code": "<script src=\"https://www.gstatic.com/charts/loader.js\"></script>"
+        },
+        {
+          "language": "unknown",
+          "code": "<script>\ngoogle.charts.load('current',{packages:['corechart']});\ngoogle.charts.setOnLoadCallback(drawChart);\n\n// Your Function\nfunction drawChart() {\n...\n}\n\n</script>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Bar Charts"
+    },
+    {
+      "type": "other",
+      "text": "function drawChart21() {\nvar data = google.visualization.arrayToDataTable([\n  ['Contry', 'Mhl'],\n  ['Italy',55],\n  ['France',49],\n  ['Spain',44],\n  ['USA',24],\n  ['Argentina',15]\n]);\nvar options = {\n  title:'World Wide Wine Production',\n  is3D:true\n};\nvar chart = new google.visualization.BarChart(document.getElementById('myChart21'));\n  chart.draw(data, options);\n}"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "function drawChart() {\n\n// Set Data\nconst data = google.visualization.arrayToDataTable([\n  ['Contry', 'Mhl'],\n  ['Italy', 55],\n  ['France', 49],\n  ['Spain', 44],\n  ['USA', 24],\n  ['Argentina', 15]\n]);\n// Set Options\nconst options = {\n  title: 'World Wide Wine Production'\n};\n// Draw \nconst chart = new google.visualization.BarChart(document.getElementById('myChart'));\nchart.draw(data, options);\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Pie Charts"
+    },
+    {
+      "type": "paragraph",
+      "text": "To convert a Bar Chart to a Pie chart, just replace:\ngoogle.visualization.BarChartwith:\ngoogle.visualization.PieChart"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const chart = new google.visualization.PieChart(document.getElementById('myChart'));"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "function drawChart22() {\nvar data = google.visualization.arrayToDataTable([\n  ['Contry', 'Mhl'],\n  ['Italy', 55],\n  ['France', 49],\n  ['Spain',44],\n  ['USA',24],\n  ['Argentina',15]\n]);\nvar options = {\n  title:'World Wide Wine Production'\n};\nvar chart = new google.visualization.PieChart(document.getElementById('myChart22'));\n  chart.draw(data, options);\n}"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "3D Pie"
+    },
+    {
+      "type": "paragraph",
+      "text": "To display the Pie in 3D, just add is3D: true to the options:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const options = {\n  title: 'World Wide Wine Production',\n  is3D: true\n};"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "function drawChart23() {\nvar data = google.visualization.arrayToDataTable([\n  ['Contry', 'Mhl'],\n  ['Italy',55],\n  ['France',49],\n  ['Spain',44],\n  ['USA',24],\n  ['Argentina',15]\n]);\nvar options = {\n  title:'World Wide Wine Production',\n  is3D:true\n};\nvar chart = new google.visualization.PieChart(document.getElementById('myChart23'));\n  chart.draw(data, options);\n}"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Line Graph"
+    },
+    {
+      "type": "other",
+      "text": "function drawChart12() {\n  var data = google.visualization.arrayToDataTable([\n  ['Price', 'Size'],\n  [50,7],[60,8],[70,8],[80,9],[90,9],\n  [100,9],[110,10],[120,11],\n  [130,14],[140,14],[150,15]\n  ]);\nvar options = {\n  title: 'House Prices vs. Size',\n  hAxis: {title: 'Square Meters'},\n  vAxis: {title: 'Price in Millions'},\n  legend: 'none'\n};\nvar chart = new google.visualization.LineChart(document.getElementById('myChart12'));\n  chart.draw(data, options);\n}"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "function drawChart() {\n// Set Data\nconst data = google.visualization.arrayToDataTable([\n  ['Price', 'Size'],\n  [50,7],[60,8],[70,8],[80,9],[90,9],[100,9],\n  [110,10],[120,11],[130,14],[140,14],[150,15]\n  ]);\n// Set Options\nconst options = {\n  title: 'House Prices vs Size',\n  hAxis: {title: 'Square Meters'},\n  vAxis: {title: 'Price in Millions'},\n  legend: 'none'\n};\n// Draw Chart\nconst chart = new google.visualization.LineChart(document.getElementById('myChart'));\nchart.draw(data, options);\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Scatter Plots"
+    },
+    {
+      "type": "paragraph",
+      "text": "To scatter plot the same data, change google.visualization to ScatterChart:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const chart = new google.visualization.ScatterChart(document.getElementById('myChart'));"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "function drawChart11() {\n  var data = google.visualization.arrayToDataTable([\n  ['Price', 'Size'],\n  [50,7],[60,8],[70,8],[80,9],[90,9],\n  [100,9],[110,10],[120,11],\n  [130,14],[140,14],[150,15]\n  ]);\nvar options = {\n  title: 'House Prices vs. Size',\n  hAxis: {title: 'Square Meters'},\n  vAxis: {title: 'Price in Millions'},\n  legend: 'none'\n};\nvar chart = new google.visualization.ScatterChart(document.getElementById('myChart11'));\n  chart.draw(data, options);\n}"
+    }
+  ]
+}

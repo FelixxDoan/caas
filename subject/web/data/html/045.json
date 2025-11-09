@@ -1,0 +1,407 @@
+{
+  "url": "https://www.w3schools.com/html/html_form_elements.asp",
+  "title": "HTML ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "HTML Form Elements"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "This chapter describes all the different HTML form elements."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The HTML <form> Elements"
+    },
+    {
+      "type": "paragraph",
+      "text": "The HTML <form> element can contain one or more of the following form elements:"
+    },
+    {
+      "type": "other",
+      "text": "<input>\n   <label>\n   <select>\n <textarea>\n <button>\n <fieldset>\n   <legend>\n   <datalist>\n   <output>\n <option>\n <optgroup>"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The <input> Element"
+    },
+    {
+      "type": "paragraph",
+      "text": "One of the most used form elements is the <input> element."
+    },
+    {
+      "type": "paragraph",
+      "text": "The <input> element can be displayed in several ways, depending on the type \nattribute."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<label for=\"fname\">First name:</label><input type=\"text\" id=\"fname\" name=\"fname\">"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "All the different values of the type \nattribute are covered in the next chapter:\nHTML Input Types."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The <label> Element"
+    },
+    {
+      "type": "paragraph",
+      "text": "The <label> element defines a label for \nseveral \nform elements."
+    },
+    {
+      "type": "paragraph",
+      "text": "The <label> element is useful for \nscreen-reader users, because the screen-reader will read out loud the label when \nthe user focus on the input element."
+    },
+    {
+      "type": "paragraph",
+      "text": "The <label> element also help users who have \ndifficulty clicking on very small regions (such as radio buttons or checkboxes) \n- because when the user clicks the text within the <label> element, it toggles \nthe radio button/checkbox."
+    },
+    {
+      "type": "paragraph",
+      "text": "The for attribute of the <label> tag should \nbe equal to the id attribute of the <input>  \nelement to bind them together."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The <select> Element"
+    },
+    {
+      "type": "paragraph",
+      "text": "The <select> element defines a drop-down list:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<label for=\"cars\">Choose a car:</label><select id=\"cars\" name=\"cars\">  <option value=\"volvo\">Volvo</option>\n  \n <option value=\"saab\">Saab</option>  <option value=\"fiat\">Fiat</option>\n  \n <option value=\"audi\">Audi</option></select>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The <option> element defines an option that can be \nselected."
+    },
+    {
+      "type": "paragraph",
+      "text": "By default, the first item in the drop-down list is selected."
+    },
+    {
+      "type": "paragraph",
+      "text": "To define a pre-selected option, add the selected attribute \nto the option:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<option value=\"fiat\" selected>Fiat</option>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Visible Values:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Use the size attribute to specify the number of visible values:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<label for=\"cars\">Choose a car:</label><select id=\"cars\" name=\"cars\" size=\"3\">  <option value=\"volvo\">Volvo</option>\n  \n <option value=\"saab\">Saab</option>  <option value=\"fiat\">Fiat</option>\n  \n <option value=\"audi\">Audi</option></select>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Allow Multiple Selections:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Use the multiple attribute to allow the user to select more than one value:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<label for=\"cars\">Choose a car:</label><select id=\"cars\" name=\"cars\" size=\"4\" multiple>  <option value=\"volvo\">Volvo</option>\n  \n <option value=\"saab\">Saab</option>  <option value=\"fiat\">Fiat</option>\n  \n <option value=\"audi\">Audi</option></select>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The <textarea> Element"
+    },
+    {
+      "type": "paragraph",
+      "text": "The <textarea> element defines a multi-line input field (a text area):"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<textarea name=\"message\" rows=\"10\" cols=\"30\">The cat was playing in the garden.</textarea>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The rows attribute specifies the visible number of lines in \na text area."
+    },
+    {
+      "type": "paragraph",
+      "text": "The cols attribute specifies the visible width of a text \narea."
+    },
+    {
+      "type": "paragraph",
+      "text": "This is how the HTML code above will be displayed in a browser:"
+    },
+    {
+      "type": "other",
+      "text": "The cat was playing in the garden."
+    },
+    {
+      "type": "paragraph",
+      "text": "You can also define the size of the text area by using CSS:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<textarea name=\"message\" \n  style=\"width:200px; height:600px;\">The cat was playing in the garden.</textarea>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The <button> Element"
+    },
+    {
+      "type": "paragraph",
+      "text": "The <button> element defines a clickable \nbutton:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<button type=\"button\" \n onclick=\"alert('Hello World!')\">Click Me!</button>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "This is how the HTML code above will be displayed in a browser:"
+    },
+    {
+      "type": "other",
+      "text": "Click Me!"
+    },
+    {
+      "type": "other",
+      "text": "Note: Always specify the type attribute for the button element. Different browsers may use different default types for the button element."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The <fieldset> and <legend> Elements"
+    },
+    {
+      "type": "paragraph",
+      "text": "The <fieldset> element is used to group related data in a form."
+    },
+    {
+      "type": "paragraph",
+      "text": "The <legend> element defines a caption for the \n<fieldset>\nelement."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<form action=\"/action_page.php\">  <fieldset>    \n  <legend>Personalia:</legend>    <label for=\"fname\">First \n  name:</label><br>    <input type=\"text\" id=\"fname\" name=\"fname\" \n  value=\"John\"><br>    <label for=\"lname\">Last name:</label><br>    \n  <input type=\"text\" id=\"lname\" name=\"lname\" value=\"Doe\"><br><br>    \n  <input type=\"submit\" value=\"Submit\">  </fieldset></form>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "This is how the HTML code above will be displayed in a browser:"
+    },
+    {
+      "type": "other",
+      "text": "Personalia:\nFirst name:\n\nLast name:"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The <datalist> Element"
+    },
+    {
+      "type": "paragraph",
+      "text": "The <datalist> element specifies a list of pre-defined options for an <input> element."
+    },
+    {
+      "type": "paragraph",
+      "text": "Users will see a drop-down list of the pre-defined options as they input data."
+    },
+    {
+      "type": "paragraph",
+      "text": "The list attribute of the <input> element, must refer to the\nid attribute of the <datalist> element."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<form action=\"/action_page.php\">  <input list=\"browsers\">\n  \n <datalist id=\"browsers\">\n     <option value=\"Edge\">\n \n  <option value=\"Firefox\">\n    <option value=\"Chrome\">\n \n  <option value=\"Opera\">\n    <option value=\"Safari\">\n  \n </datalist> </form>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The <output> Element"
+    },
+    {
+      "type": "paragraph",
+      "text": "The <output> element represents the result of a calculation (like one \nperformed by a script)."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<form action=\"/action_page.php\"  oninput=\"x.value=parseInt(a.value)+parseInt(b.value)\">  0\n     \n    <input type=\"range\"  id=\"a\" name=\"a\" value=\"50\">  100 +\n     \n    <input type=\"number\" id=\"b\" name=\"b\" value=\"50\">  =\n     \n    <output name=\"x\" for=\"a b\"></output>  <br><br>  <input type=\"submit\">\n </form>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML Form Elements"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Tag",
+          "Description"
+        ],
+        [
+          "<form>",
+          "Defines an HTML form for user input"
+        ],
+        [
+          "<input>",
+          "Defines an input control"
+        ],
+        [
+          "<textarea>",
+          "Defines a multiline input control (text area)"
+        ],
+        [
+          "<label>",
+          "Defines a label for an <input> element"
+        ],
+        [
+          "<fieldset>",
+          "Groups related elements in a form"
+        ],
+        [
+          "<legend>",
+          "Defines a caption for a <fieldset> element"
+        ],
+        [
+          "<select>",
+          "Defines a drop-down list"
+        ],
+        [
+          "<optgroup>",
+          "Defines a group of related options in a drop-down list"
+        ],
+        [
+          "<option>",
+          "Defines an option in a drop-down list"
+        ],
+        [
+          "<button>",
+          "Defines a clickable button"
+        ],
+        [
+          "<datalist>",
+          "Specifies a list of pre-defined options for input controls"
+        ],
+        [
+          "<output>",
+          "Defines the result of a calculation"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "For a complete list of all available HTML tags, visit our HTML Tag Reference."
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "<input>",
+        "<label>",
+        "<select>",
+        "<textarea>",
+        "<button>",
+        "<fieldset>",
+        "<legend>",
+        "<datalist>",
+        "<output>",
+        "<option>",
+        "<optgroup>"
+      ]
+    }
+  ]
+}

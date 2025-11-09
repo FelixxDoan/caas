@@ -1,0 +1,29 @@
+{
+  "url": "https://www.w3schools.com/js/js_array_reference.asp",
+  "title": "JavaScript Array Reference",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Array Reference"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Complete Array Reference"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Revised July 2025"
+    },
+    {
+      "type": "other",
+      "text": "Name\n    Description\n\n\n  [ ]\n  Creates a new Array\n\n\n  new Array()\n  Creates a new Array\n\n\n  at()\n  Returns an indexed element of an array\n\n\n  concat()\n  Joins arrays and returns an array with the joined arrays\n\n\n  constructor\n  Returns the function that created the Array prototype\n\n\n  copyWithin()\n  Copies array elements within the array, to and from specified positions\n\n\n  entries()\n  Returns a key/value pair Array Iteration Object\n\n\n  every()\n  Checks if every element in an array pass a test\n\n\n  fill()\n  Fill the elements in an array with a static value\n\n\n  filter()\n  Creates a new array with every element in an array that pass a test\n\n\n  find()\n  Returns the value of the first element in an array that pass a test\n\n\n  findIndex()\n  Returns the index of the first element in an array that pass a test\n\n\n  findLast()\n  Returns the value of the last element in an array that pass a test\n\n\n  findLastIndex()\n  Returns the index of the last element in an array that pass a test\n\n\n  flat()\n  Concatenates sub-array elements\n\n\n  flatMap()\n  Maps all array elements and creates a new flat array\n\n\n  forEach()\n  Calls a function for each array element\n\n\n  from()\n  Creates an array from an object\n\n\n  includes()\n  Check if an array contains the specified element\n\n\n  indexOf()\n  Search the array for an element and returns its position\n\n\n  isArray()\n  Checks whether an object is an array\n\n\n  join()\n  Joins all elements of an array into a string\n\n\n  keys()\n  Returns a Array Iteration Object, containing the keys of the original array\n\n\n  lastIndexOf()\n  Search the array for an element, starting at the end, and returns its position\n\n\n  length\n  Sets or returns the number of elements in an array\n\n\n  map()\n  Creates a new array with the result of calling a function for each array element\n\n\n  of()\n  Creates an array from a number of arguments\n\n\n  pop()\n  Removes the last element of an array, and returns that element\n\n\n  prototype\n  Allows you to add properties and methods to an Array object\n\n\n  push()\n  Adds new elements to the end of an array, and returns the new length\n\n\n  reduce()\n  Reduce the values of an array to a single value (going left-to-right)\n\n\n  reduceRight()\n  Reduce the values of an array to a single value (going right-to-left)\n\n\n  reverse()\n  Reverses the order of the elements in an array\n\n\n  shift()\n  Removes the first element of an array, and returns that element\n\n\n  slice()\n  Selects a part of an array, and returns the new array\n\n\n  some()\n  Checks if any of the elements in an array pass a test\n\n\n  sort()\n  Sorts the elements of an array\n\n\n  splice()\n  Adds or Removes array elements\n\n\n  toReversed()\n  Reverses the order of array elements (to a new array)\n\n\n  toSorted()\n  Sorts the elements of an array (to a new array)\n\n\n  toSpliced()\n  Adds or Removes array elements (to a new array)\n\n\n  toString()\n  Converts an array to a string, and returns the result\n\n\n  unshift()\n  Adds new elements to the beginning of an array, and returns the new length\n\n\n  valueOf()\n  Returns the primitive value of an array\n\n\n  with()\n  Returns a new array with updated elements"
+    },
+    {
+      "type": "other",
+      "text": "Complete JavaScript Reference\nFor a complete reference to all JavaScript properties and methods, with full descriptions and many examples, go to:\nW3Schools' Full JavaScript Reference.\nThe reference inludes all JavaScript updates from 1999 to 2025."
+    }
+  ]
+}

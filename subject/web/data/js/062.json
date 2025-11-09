@@ -1,0 +1,170 @@
+{
+  "url": "https://www.w3schools.com/js/js_window_screen.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Window Screen"
+    },
+    {
+      "type": "paragraph",
+      "text": "The window.screen object contains information \nabout the user's screen."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Window Screen"
+    },
+    {
+      "type": "paragraph",
+      "text": "The window.screen object can be written without the window prefix."
+    },
+    {
+      "type": "paragraph",
+      "text": "Properties:"
+    },
+    {
+      "type": "other",
+      "text": "screen.width\n  screen.height\n  screen.availWidth\n  screen.availHeight\n  screen.colorDepth\n  screen.pixelDepth"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Window Screen Width"
+    },
+    {
+      "type": "paragraph",
+      "text": "The screen.width property returns the width of the visitor's screen in \npixels."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "document.getElementById(\"demo\").innerHTML =\"Screen Width: \" + screen.width;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Window Screen Height"
+    },
+    {
+      "type": "paragraph",
+      "text": "The screen.height property returns the height of the visitor's screen in pixels."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "document.getElementById(\"demo\").innerHTML =\"Screen Height: \" + screen.height;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Window Screen Available Width"
+    },
+    {
+      "type": "paragraph",
+      "text": "The screen.availWidth property returns the width of the visitor's screen, in \npixels, \nminus interface features like the Windows Taskbar."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "document.getElementById(\"demo\").innerHTML =\"Available Screen Width: \" + screen.availWidth;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Window Screen Available Height"
+    },
+    {
+      "type": "paragraph",
+      "text": "The screen.availHeight property returns the height of the visitor's screen, \nin pixels, minus interface features like the Windows Taskbar."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "document.getElementById(\"demo\").innerHTML =\"Available Screen Height: \" + screen.availHeight;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Window Screen Color Depth"
+    },
+    {
+      "type": "paragraph",
+      "text": "The screen.colorDepth property returns the number of bits used to display one color."
+    },
+    {
+      "type": "paragraph",
+      "text": "All modern computers use 24 bit or 32 bit hardware for color resolution:"
+    },
+    {
+      "type": "other",
+      "text": "24 bits =      16,777,216 different \"True Colors\"\n 32 bits = 4,294,967,296 different \"Deep Colors\""
+    },
+    {
+      "type": "paragraph",
+      "text": "Older computers used 16 bits: 65,536 different \"High Colors\" resolution."
+    },
+    {
+      "type": "paragraph",
+      "text": "Very old computers, and old cell phones used 8 bits: 256 different \"VGA colors\"."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "document.getElementById(\"demo\").innerHTML = \"Screen Color Depth: \" + screen.colorDepth;"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "The #rrggbb (rgb) values used in HTML represents \"True Colors\" (16,777,216 different colors)"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Window Screen Pixel Depth"
+    },
+    {
+      "type": "paragraph",
+      "text": "The screen.pixelDepth property returns the pixel depth of the screen."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "document.getElementById(\"demo\").innerHTML =\"Screen Pixel Depth: \" + screen.pixelDepth;"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "For modern computers, Color Depth and Pixel Depth are equal."
+    }
+  ]
+}

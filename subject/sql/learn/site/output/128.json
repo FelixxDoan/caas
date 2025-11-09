@@ -1,0 +1,58 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_ref_rownum.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL SELECT TOP, LIMIT and ROWNUM Keywords"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "text": "SELECT TOP, LIMIT and ROWNUM"
+    },
+    {
+      "type": "paragraph",
+      "text": "The LIMIT, SELECT TOP \nor ROWNUM command is used to specify the number of records to return."
+    },
+    {
+      "type": "other",
+      "text": "Note: SQL Server uses \nSELECT TOP. MySQL \nuses LIMIT, and Oracle uses \nROWNUM."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement selects the first three records from the \"Customers\" table \n(SQL SERVER):"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n SELECT TOP 3 * FROM Customers;\n\n\n Try it Yourself »"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement shows the equivalent example using the LIMIT clause \n(MySQL):"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n SELECT * FROM CustomersLIMIT 3;\n\n Try it Yourself »"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement shows the equivalent example using ROWNUM \n(Oracle):"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\nSELECT * FROM CustomersWHERE ROWNUM  <= 3;"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

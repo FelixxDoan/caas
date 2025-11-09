@@ -1,0 +1,137 @@
+{
+  "url": "https://www.w3schools.com/css/css_important.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS The !important Rule"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What is !important?"
+    },
+    {
+      "type": "paragraph",
+      "text": "The !important rule in CSS is used to add more importance to a property/value than normal."
+    },
+    {
+      "type": "paragraph",
+      "text": "In fact, if you use the !important rule, it will override ALL previous styling rules for that \nspecific property on that element!"
+    },
+    {
+      "type": "paragraph",
+      "text": "Let us look at an example:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "#myid {  background-color: blue;}.myclass {  \n  background-color: gray;}p {  background-color: red !important;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Example Explained"
+    },
+    {
+      "type": "paragraph",
+      "text": "In the example above, all three paragraphs will get a red background \ncolor, even though the ID selector and the class selector have a higher \nspecificity. The !important rule overrides the \nbackground-color property in both cases."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Important About !important"
+    },
+    {
+      "type": "paragraph",
+      "text": "The only way to override an !important \nrule is to include another !important \nrule on a declaration with the same (or higher) specificity in the source code - and here the problem starts!\nThis makes the CSS code confusing and the debugging will be hard, especially if \nyou have a large style sheet!"
+    },
+    {
+      "type": "paragraph",
+      "text": "Here we have created a simple example. It is not very clear, when you look at \nthe CSS source code, which color is considered most important:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "#myid {  background-color: blue !important;}.myclass {  \n  background-color: gray !important;}p {  background-color: red !important;}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Tip: It is good to know about the !important \nrule. You might see it in some CSS source code. \nHowever, do not use it unless you absolutely have to."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Maybe One or Two Fair Uses of !important"
+    },
+    {
+      "type": "paragraph",
+      "text": "One way to use !important is if you have to override \na style that cannot be overridden in any other way. This could be if you are \nworking on a Content Management System (CMS) and cannot edit the CSS code. \nThen you can set some custom styles to override some of the CMS styles."
+    },
+    {
+      "type": "paragraph",
+      "text": "Another way to use !important is: Assume you \nwant a special look for all buttons on a page. Here, buttons are styled with a gray \nbackground color, white text, and some padding and border:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".button {  background-color: #8c8c8c;   color: white;  \n  padding: 5px;  border: 1px solid black; }"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The look of a button can sometimes change if we put it inside another element with \nhigher specificity, and the properties get in conflict. Here is an example of this:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".button {  background-color: #8c8c8c;   color: white;  \n  padding: 5px;  border: 1px solid black; }#myDiv a {  \n  color: red;  background-color: yellow; }"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "To \"force\" all buttons to have the same look, no matter what, we can add the !important \nrule to the properties of the button, like this:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".button {  background-color: #8c8c8c !important;   color: white \n  !important;  \n  padding: 5px !important;  border: 1px solid black !important; }#myDiv a {  \n  color: red;  background-color: yellow; }"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

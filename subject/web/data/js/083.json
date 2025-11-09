@@ -1,0 +1,257 @@
+{
+  "url": "https://www.w3schools.com/js/js_2022.asp",
+  "title": "ECMAScript 2022",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "ECMAScript 2022"
+    },
+    {
+      "type": "other",
+      "text": "New Features in JavaScript 2022\n\nArray at()\nString at()\nRegExp /d\nObject.hasOwn()\nerror.cause\nawait import\nClass field declarations\nPrivate methods and fields"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Array at()"
+    },
+    {
+      "type": "paragraph",
+      "text": "ES2022 intoduced the array method at():"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];\nlet fruit = fruits.at(2);"
+        },
+        {
+          "language": "unknown",
+          "code": "const fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];\nlet fruit = fruits[2];"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The at() method returns an indexed element from an array."
+    },
+    {
+      "type": "paragraph",
+      "text": "The at() method returns the same as []."
+    },
+    {
+      "type": "paragraph",
+      "text": "The at() method is supported in all modern browsers since March 2022:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome 92    \n    Edge 92\n    Firefox 90\n    Safari 15.4\n    Opera 78\n  \n  \n    Apr 2021\n    Jul 2021    \n    Jul 2021\n    Mar 2022\n    Aug 2021"
+    },
+    {
+      "type": "other",
+      "text": "Note\nMany languages allows negative bracket indexing like [-1] to access elements from the end of an\nobject / array / string.\nThis is not possible in JavaScript, because [] is used for accessing both arrays and objects.\nobj[-1] refers to the value of key -1, not to the last property of the object.\nThe at() method was introduced in ES2022 to solve this problem."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript String at()"
+    },
+    {
+      "type": "paragraph",
+      "text": "ES2022 intoduced the string method at():"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const name = \"W3Schools\";\nlet letter = name.at(2);"
+        },
+        {
+          "language": "unknown",
+          "code": "const name = \"W3Schools\";\nlet letter = name[2];"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The at() method returns an indexed element from an string."
+    },
+    {
+      "type": "paragraph",
+      "text": "The at() method returns the same as []."
+    },
+    {
+      "type": "paragraph",
+      "text": "The at() method is supported in all modern browsers since March 2022:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome 92    \n    Edge 92\n    Firefox 90\n    Safari 15.4\n    Opera 78\n  \n  \n    Apr 2021\n    Jul 2021    \n    Jul 2021\n    Mar 2022\n    Aug 2021"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "RegExp d Modifier"
+    },
+    {
+      "type": "paragraph",
+      "text": "ES2022 added the /d modifier to express the start and end of the match."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"aaaabb\";\nlet result = text.match(/(aa)(bb)/d);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "RegExp Modifiers are used to spescfy case-insensitive, and other global searches:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Modifier",
+          "Description",
+          "Try it"
+        ],
+        [
+          "i",
+          "Perform case-insensitive matching",
+          "Try it »"
+        ],
+        [
+          "g",
+          "Perform a global match (find all)",
+          "Try it »"
+        ],
+        [
+          "m",
+          "Perform multiline matching",
+          "Try it »"
+        ],
+        [
+          "d",
+          "Perform substring matches (New in ES2022)",
+          "Try it »"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Object hasOwn"
+    },
+    {
+      "type": "paragraph",
+      "text": "ES2022 provides a safe way to check if a property is the own property of an object."
+    },
+    {
+      "type": "paragraph",
+      "text": "Object.hasOwn() is similar to Object.prototype.hasOwnProperty but supports all object types."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Object.hasOwn(myObject, age)"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Error Cause"
+    },
+    {
+      "type": "paragraph",
+      "text": "ES2022 let you specify the reason behind an error with error.cause."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "try {\n  connectData();\n} catch (err) {\n  throw new Error(\"Connecting failed.\", { cause: err });\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript await import"
+    },
+    {
+      "type": "paragraph",
+      "text": "JavasSript modules can now wait for resources that require import before running:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "import {myData} from './myData.js';\n\nconst data = await myData();"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Class Field Declarations"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "class Hello {\n  counter = 0; // Class field\n}\nconst myClass = new Hello();\n\nlet x = myClass.counter;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Class Field Declarations is supported in all modern browsers since April 2021:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome 72    \n    Edge 79\n    Firefox 69\n    Safari 14.1\n    Opera 60\n  \n  \n    Jan 2019\n    Jan 2020    \n    Sep 2019\n    Apr 2021\n    Jan 2020"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Private Methods and Fields"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "class Hello {\n  #counter = 0;  // Private field\n  #myMethod() {} // Private method\n}\nconst myClass = new Hello();\n\nlet x = myClass.#counter;  // Error\nmyClass.#myMethod();      // Error"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Private Methods and Fields is supported in all modern browsers since June 2021:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome 74    \n    Edge 79\n    Firefox 90\n    Safari 14.1\n    Opera 62\n  \n  \n    Apr 2019\n    Jan 2020    \n    Jun 2021\n    Apr 2021\n    Jun 2019"
+    }
+  ]
+}

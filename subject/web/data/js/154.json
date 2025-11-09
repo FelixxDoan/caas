@@ -1,0 +1,249 @@
+{
+  "url": "https://www.w3schools.com/js/js_news.asp",
+  "title": "JavaScript News",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript News"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "New Features in JavaScript 2025"
+    },
+    {
+      "type": "other",
+      "text": "FeatureDescription\nRegExp /v flag\nAn \"upgrade\" to the /u (unicode) flag\nRegExp.escape()\nReturns a string where regex characters are escaped\nFloat16Array\nA Typed Array that stores 16-bit floating-point numbers\nMath.f16round()\nReturns the nearest 16-bit floating point number\nPromise.try()\nStarts a promise chain for handling promise rejections\nImport Attributes\nImport attributes allowed in import statements"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "New Set Features in 2025"
+    },
+    {
+      "type": "other",
+      "text": "FeatureDescription\nunion()\nReturns the union of two sets\nintersection()\nReturns the intersection of two sets\ndifference()\nReturns the difference between two sets\nsymmetricDifference()\nReturns the symmetric difference between to sets\nisSubsetOf()\nReturns true if this set is a subset of a given set\nisSupersetOf()\nReturns true if this set is a superset of a given set\nisDisjointFrom()\nReturns true if this set has no elements in in a given set"
+    },
+    {
+      "type": "other",
+      "text": "Warning\nThese features are relatively new.\nOlder browsers may need an alternative code (Polyfill)"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "New Features in JavaScript 2024"
+    },
+    {
+      "type": "other",
+      "text": "FeatureDescription\nObjectgroupBy()\nGroups object elements according to values returned from a callback function\nMapgroupBy()\nGroups map elements according to values returned from a callback function\nStringisWellFormed()\nReturns true if a string is well formed\nStringtoWellFormed()\nReturns a new string where \"lone surrogates\" are replaced with Unicode U+FFFD\nPromise\nwithResolvers()\nAtomics\nwaitAsync"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "New Features in JavaScript 2023"
+    },
+    {
+      "type": "paragraph",
+      "text": "Supported in all modern browsers since July 2023."
+    },
+    {
+      "type": "other",
+      "text": "Chrome 110    \n    Edge 110\n    Firefox 115\n    Safari 16.4\n    Opera 96\n  \n  \n    Feb 2023\n    Feb 2023    \n    Jul 2023\n    Mar 2023\n    Feb 2023"
+    },
+    {
+      "type": "other",
+      "text": "FeatureDescription\n#! (Shebang)\nTells the operating system which interpreter to use to execute the script"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "New Array Features in 2023"
+    },
+    {
+      "type": "other",
+      "text": "FeatureDescription\nfindLast()\nReturns the value of the last element that satisfies a condition\nfindLastIndex()\nReturns the index of the last element that satisfies a condition\ntoReversed()\nReverses an array without altering the original array\ntoSorted()\nSorts an array without altering the original array\ntoSpliced()\nSplices an array without altering the original array\nwith()\nUpdates array elements without altering the original array"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "New Features in JavaScript 2022"
+    },
+    {
+      "type": "paragraph",
+      "text": "Supported in all modern browsers since March 2023."
+    },
+    {
+      "type": "other",
+      "text": "Chrome 94    \n    Edge 94\n    Firefox 93\n    Safari 16.4\n    Opera 80\n  \n  \n    Sep 2021\n    Sep 2021    \n    Oct 2021\n    Mar 2023\n    Oct 2021"
+    },
+    {
+      "type": "other",
+      "text": "FeatureDescription\nArray at()\nReturns an indexed element from an array\nString at()\nReturns an indexed element from an string\nRegExp /d\nPerform substring matches\nObject.hasOwn()\nCheck if a property is the own property of an object\nerror.cause\nLets you specify the reason behind an error\nawait import\nLets JavasSript modules wait for resources that require import before running.\nClass field declarations\nAllows for properties to be defined directly within a class\nPrivate methods and fields\nAllows for private properties (#method and #field)"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "New Features in JavaScript 2021"
+    },
+    {
+      "type": "paragraph",
+      "text": "Supported in all modern browsers since April 2021."
+    },
+    {
+      "type": "other",
+      "text": "Chrome 85    \n    Edge 85\n    Firefox 79\n    Safari 14.1\n    Opera 71\n  \n  \n    Aug 2020\n    Aug 2020    \n    Jul 2020\n    Apr 2021\n    Sep 2020"
+    },
+    {
+      "type": "other",
+      "text": "FeatureDescription\nPromise.any()\nTakes promises as input and returns a single promise\nString replaceAll()\nReplaces all occurrences of a substring in a string\n\nNum Separator\nNew numeric separator (_) makes numbers more readable"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "New Features in JavaScript 2020"
+    },
+    {
+      "type": "paragraph",
+      "text": "Supported in all modern browsers since April 2021."
+    },
+    {
+      "type": "other",
+      "text": "Chrome 80    \n    Edge 80\n    Firefox 80\n    Safari 14.1\n    Opera 67\n  \n  \n    Feb 2020\n    Feb 2020    \n    Aug 2020\n    Apr 2021\n    Mar 2020"
+    },
+    {
+      "type": "other",
+      "text": "FeatureDescription\nBigInt\nStores values too big to store in a JavaScript number\nString matchAll()\nSearchs for all occurrences of a string in a string\nPromise.allSettled()\nTakes promises as input and returns a single promise\nDynamic Import"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "New Operators in JavaScript 2020"
+    },
+    {
+      "type": "other",
+      "text": "OperDescription\n??\nNullish coalescing returns the first argument not nullish\n?.\nOptional chaining returns undefined if an object is undefined or null\n&&=\nLogical AND assignment assigns the second value if the first value is true\n||=\nLogical OR assignment assigns the second value if the first value is false\n??=\nNullish coalescing assignment assigns the second value if the first value is undefined or null"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "New Features in JavaScript 2019"
+    },
+    {
+      "type": "paragraph",
+      "text": "Supported in all modern browsers since January 2020."
+    },
+    {
+      "type": "other",
+      "text": "Chrome 73    \n    Edge 79\n    Firefox 64\n    Safari 12.1\n    Opera 60\n  \n  \n    Mar 2019\n    Jan 2020    \n    Des 2018\n    Mar 2019\n    Apr 2019"
+    },
+    {
+      "type": "other",
+      "text": "FeatureDescription\nString trimStart()\nRemoves whitespace from the start of a string\nString trimEnd()\nRemoves whitespace from the end of a string\nObject.fromEntries\nCreates an object from key/value pairs\nOptional catch binding\nAllows to omit the catch parameter if it is not needed\nArray flat()\nCreates a new array by flattening a nested array\nArray flatMap()\nMaps all array elements and creates a new array by flattening the array\nRevised Array Sort()\nBrowsers must now use a stable sorting algorithm\nRevised JSON.stringify()\nStrings with UTF-8 code points now convert safely\nSeparator symbols in strings\nLine and paragraph separators (\\u2028 and \\u2029) are now allowed in strings\nRevised Function.toString()\nNow returns source code including comments and spaces and syntax details"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "New Features in JavaScript 2018"
+    },
+    {
+      "type": "paragraph",
+      "text": "Supported in all modern browsers since June 2020."
+    },
+    {
+      "type": "other",
+      "text": "Chrome 64    \n    Edge 79\n    Firefox 78\n    Safari 12\n    Opera 51\n  \n  \n    Jan 2018\n    Jan 2020    \n    Jun 2020\n    Sep 2018\n    Feb 2018"
+    },
+    {
+      "type": "other",
+      "text": "FeatureDescription\nAsynchronous Iteration\nAllows the await keyword in for/of loops\nPromise Finally\nSchedules a function to be executed when a promise has been \"fulfilled\" or \"rejected\"\nArray Rest Elements\nAllows to destruct an array and collect the leftovers\nObject Rest Properties\nAllows to destruct an object and collect the leftovers\nShared Memory\nAllows different parts of a program to access the same memory"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "New RegExp Features JavaScript 2018"
+    },
+    {
+      "type": "other",
+      "text": "FeatureDescription\n/s\nAllows the . (dot) metacharacter to match line terminators\n\\p{}\nMatches character with a Unicode character property\n(?<=y)\n(?<=y)x matches \"x\" if \"x\" is preceded by \"y\"\n(?<!y)\n(?<!y)x matches \"x\" if \"x\" is NOT preceded by \"y\"\n(?<name>)\nCaptures text and names (labels) it"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "New Features in JavaScript 2017"
+    },
+    {
+      "type": "paragraph",
+      "text": "Supported in all modern browsers since September 2017."
+    },
+    {
+      "type": "other",
+      "text": "Chrome 58    \n    Edge 15\n    Firefox 52\n    Safari 11\n    Opera 45\n  \n  \n    Apr 2017\n    Apr 2017    \n    Mar 2017\n    Sep 2017\n    May 2017"
+    },
+    {
+      "type": "other",
+      "text": "FeatureDescription\nString padStart()\nPads the beginning of a string\nString padEnd()\nPads the end of a string\nObject entries()\nReturns an array of the key/value pairs of an object\nObject values()\nReturns an array of the values of an object\nasync and await\nSimplifies the handling of promises\nTrailing Commas\nAllows trailing commas where a comma-separated list of values is accepted\ngetOwnPropertyDescriptors\nReturns an object containing all own property descriptors of an object"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "New Features in JavaScript 2016"
+    },
+    {
+      "type": "paragraph",
+      "text": "Supported in all modern browsers since March 2017."
+    },
+    {
+      "type": "other",
+      "text": "Chrome 52\n    Edge 15\n    Firefox 52\n    Safari 10.1\n    Opera 39\n  \n  \n    Jul 2016\n    Apr 2017\n    Mar 2017\n    May 2017\n    Aug 2016"
+    },
+    {
+      "type": "other",
+      "text": "FeatureDescription\n**\nRaises the first operand to the power of the second\n**=\nRaises the value of a variable to the power of the right operand\nArray includes()\nChecks if an element is present in an array"
+    },
+    {
+      "type": "other",
+      "text": "ECMAScript 2015\nThe second major revision to JavaScript.\nECMAScript 2015 is also known as ES6."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "New Features in JavaScript 2015 (ES6)"
+    },
+    {
+      "type": "other",
+      "text": "FeatureDescription\nThe let keyword\nDeclares a variable with block scope\nThe const keyword\nDeclare a contant immutable variable\nArrow FunctionsAllows short syntax for writing function expressions\n{a,b} = Operator\nAssigns object properties to variables (object destructing)\n[a,b] = Operator\nAssigns array values to variables (array destructing)\n... Operator\nSpreads an array or iterable into individual elements\nFor/of\nLoops through the values of iterable objects\nMap Objects\nObject with key-value pairs, similar but different from objects\nSet Objects\nArray that stores unique values\nClasses\nTemplates for JavaScript Objects\nPromises\nObject representing the completion of an asynchronous operation\nSymbol\nA unique \"hidden\" identifier that no code can access\nDefault Parameters\nAllows default values for function parameters\nRest Parameters\nAllows functions to treat an indefinite number of arguments\nString.includes()\nReturns true if a string contains a specified value\nString.startsWith()\nReturns true if a string begins with a specified value\nString.endsWith()\nReturns true if a string ends with a specified value\nArray entries()\nReturns an iterator key/value pairs from an array\nArray.from()\nCreates an array from a string\nArray keys()\nReturns an iterator with the keys of an array\nArray find()\nReturns the value of the first element that passes a test\nArray findIndex()\nReturns the index of the first element that passes a test\nObject.assign()\nCopies properties from a source object to a target object\nRegExp /u\nEnables full Unicode support in a regular expression\nRegExp /y\nPerforms a \"sticky\" search from the lastIndex property\nisFinite()\nreturns true if the argument is not Infinity or NaN\nIsNaN()\nReturns true if the argument is NaN\nJavaScript Modules\nAllows for breaking up your code into separate files"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Math Features"
+    },
+    {
+      "type": "other",
+      "text": "FeatureDescription\nMath.trunc(x)\nReturns the integer part of x\nMath.sign(x)\nReturns -1, 0 or 1 (x is negative, null or positive)\nMath.cbrt(x)\nReturns the cube root of x\nMath.log2(x)\nReturns the base 2 logarithm of x\nMath.log10(x)\nReturns the base 10 logarithm of x"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Number Features"
+    },
+    {
+      "type": "other",
+      "text": "FeatureDescription\nNumber.EPSILON\nThe difference between 1 and the smallest number\nNumber.MIN_SAFE_INTEGER\nMinimum value that can be precisely represented\nNumber.MAX_SAFE_INTEGER\nMaximum value that can be precisely represented\nNumber.isInteger()\nReturns true if the argument is an integer\nNumber.isSafeInteger()\nReturns true if the argument is a safe integer"
+    },
+    {
+      "type": "other",
+      "text": "ECMAScript 2009\nThe first major revision to JavaScript.\nECMAScript 2009 is also known as ES5."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "ES5 Features"
+    },
+    {
+      "type": "other",
+      "text": "FeatureDescription\n\"use strict\"\nAllows code to bee executed in \"strict mode\"\nString [] access\nReturns the character at a specified index in a string\nMultiline strings\nAallows strings over multiple lines if escaped with \\\nString.trim()\nRemoves whitespace from both sides of a string\nArray.isArray()\nReturns true if a variable is an array\nArray forEach()\nCalls a function for each array element\nArray map()\nCreates a new array from a function on each element\nArray filter()\nCreates an array from array elements that passes a test\nArray reduce()\nReduces an array to a single value (from left)\nArray reduceRight()\nReduces an array to a single value (from right)\nArray every()\nChecks if all array values pass a test\nArray some()\nChecks if some values pass a test\nArray indexOf()\nSearch for an element value and returns its position\nArray lastIndexOf()\nSearch for an element value and returns its position\nJSON.parse()\nConvert JSON into a JavaScript object\nJSON.stringify()\nConvert JSON into a string\nDate.now()\nReturns the number of milliseconds since zero date\nDate toISOString()\nConverts a date object into to an ISO string\nDate toJSON()\nConverts a date object into to a JSON string\nProperty getters\nAllows for defining how a property value is retrieved\nProperty setters\nAllows for defining how a property value is set\nReserved names\nAllows reserved names as property names\nObject.create()\nCreates an object from an existing object\nObject.keys()\nReturns an array with the keys of an object\nObject management\nObject management methods\nObject protection\nObject protection methods\nObject defineProperty()\nAllows for defining or changing object properties\nFunction bind()\nLet objects borrow methods from other objects\nTrailing commas\nallows trailing commas in object and array definitions:"
+    }
+  ]
+}

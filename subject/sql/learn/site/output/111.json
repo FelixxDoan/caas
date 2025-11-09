@@ -1,0 +1,50 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_ref_inner_join.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL INNER JOIN Keyword"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "text": "INNER JOIN"
+    },
+    {
+      "type": "paragraph",
+      "text": "The INNER JOIN command returns rows that have matching values in both tables."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL selects all orders with customer information:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n  SELECT Orders.OrderID, Customers.CustomerNameFROM OrdersINNER JOIN \n  Customers ON Orders.CustomerID = Customers.CustomerID;\n\n Try it Yourself »"
+    },
+    {
+      "type": "paragraph",
+      "text": "Note: The INNER JOIN keyword selects all rows from both \ntables as long as there is a match between the columns. If there are records in the \n\"Orders\" table that do not have matches in \"Customers\", these orders will not \nbe shown!"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement selects all orders with customer and shipper \ninformation:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n  SELECT Orders.OrderID, Customers.CustomerName, Shippers.ShipperNameFROM \n  ((OrdersINNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID)\n  INNER JOIN Shippers ON Orders.ShipperID = Shippers.ShipperID);\n\n Try it Yourself »"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

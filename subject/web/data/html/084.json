@@ -1,0 +1,303 @@
+{
+  "url": "https://www.w3schools.com/html/html_elements.asp",
+  "title": "HTML ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "HTML Elements"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "An HTML element is defined by a start tag, some content, and an \nend tag."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML Elements"
+    },
+    {
+      "type": "paragraph",
+      "text": "The HTML element is everything from the start tag to the end tag:"
+    },
+    {
+      "type": "other",
+      "text": "<tagname>Content goes here...</tagname>"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples of some HTML elements:"
+    },
+    {
+      "type": "other",
+      "text": "<h1>My \n  First Heading</h1>"
+    },
+    {
+      "type": "other",
+      "text": "<p>My first paragraph.</p>"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Start tag",
+          "Element content",
+          "End tag"
+        ],
+        [
+          "<h1>",
+          "My First Heading",
+          "</h1>"
+        ],
+        [
+          "<p>",
+          "My first paragraph.",
+          "</p>"
+        ],
+        [
+          "<br>",
+          "none",
+          "none"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note: Some HTML elements have no content (like the <br> \nelement). These elements are called empty elements. Empty elements do not have an end tag!"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Nested HTML Elements"
+    },
+    {
+      "type": "paragraph",
+      "text": "HTML elements can be nested (this means that elements can contain other elements)."
+    },
+    {
+      "type": "paragraph",
+      "text": "All HTML documents consist of nested HTML elements."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following example contains four HTML elements (<html>, <body>, <h1> \nand <p>):"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<!DOCTYPE html>\n<html><body>\n <h1>My First Heading</h1><p>My first paragraph.</p>\n</body></html>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Example Explained"
+    },
+    {
+      "type": "paragraph",
+      "text": "The <html> element is the root element \nand it defines the whole HTML document."
+    },
+    {
+      "type": "paragraph",
+      "text": "It has a start tag <html> and an end tag </html>."
+    },
+    {
+      "type": "paragraph",
+      "text": "Then, inside the <html> element there is \na <body> \nelement:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<body>\n <h1>My First Heading</h1><p>My first paragraph.</p>\n</body>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The <body> element defines the \ndocument's body."
+    },
+    {
+      "type": "paragraph",
+      "text": "It has a start tag <body> and an end tag </body>."
+    },
+    {
+      "type": "paragraph",
+      "text": "Then, inside the <body> element there \nare two other elements:\n<h1> and \n<p>:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<h1>My First Heading</h1><p>My first paragraph.</p>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The <h1> element defines a heading."
+    },
+    {
+      "type": "paragraph",
+      "text": "It has a start tag <h1> and an end tag </h1>:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<h1>My First Heading</h1>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The <p> element defines a paragraph."
+    },
+    {
+      "type": "paragraph",
+      "text": "It has a start tag <p> and an end tag </p>:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<p>My first paragraph.</p>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Never Skip the End Tag"
+    },
+    {
+      "type": "paragraph",
+      "text": "Some HTML elements will display correctly, even if you forget the end tag:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<html><body>\n <p>This is a paragraph\n <p>This is a paragraph\n</body></html>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "However, never rely on this! Unexpected results and errors may occur if you forget the end tag!"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Empty HTML Elements"
+    },
+    {
+      "type": "paragraph",
+      "text": "HTML elements with no content are called empty elements."
+    },
+    {
+      "type": "paragraph",
+      "text": "The <br> tag defines a line break, and \nis an empty element without a closing tag:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<p>This is a <br> paragraph with a line break.</p>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML is Not Case Sensitive"
+    },
+    {
+      "type": "paragraph",
+      "text": "HTML tags are not case sensitive: <P> means the same as <p>."
+    },
+    {
+      "type": "paragraph",
+      "text": "The HTML standard does not require lowercase tags, but W3C\nrecommends lowercase in HTML, and demands lowercase for stricter document types like XHTML."
+    },
+    {
+      "type": "other",
+      "text": "At W3Schools we always use lowercase tag names."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML Tag Reference"
+    },
+    {
+      "type": "paragraph",
+      "text": "W3Schools' tag reference contains additional information about these tags and their attributes."
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Tag",
+          "Description"
+        ],
+        [
+          "<html>",
+          "Defines the root of an HTML document"
+        ],
+        [
+          "<body>",
+          "Defines the document's body"
+        ],
+        [
+          "<h1> to <h6>",
+          "Defines HTML headings"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "For a complete list of all available HTML tags, visit our HTML Tag Reference."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Video: HTML Elements"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    },
+    {
+      "type": "image",
+      "src": "https://www.w3schools.com/html/images/yt_logo_rgb_dark.png"
+    },
+    {
+      "type": "image",
+      "src": "https://www.w3schools.com/html/images/03_html_elements.png"
+    }
+  ]
+}

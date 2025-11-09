@@ -1,0 +1,180 @@
+{
+  "url": "https://www.w3schools.com/html/html_lists.asp",
+  "title": "HTML ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "HTML Lists"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "HTML lists allow web developers to group a set of related items in lists."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": []
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Unordered HTML List"
+    },
+    {
+      "type": "paragraph",
+      "text": "An unordered list starts with the <ul> tag. Each list item starts with the \n<li> tag."
+    },
+    {
+      "type": "paragraph",
+      "text": "The list items will be marked with bullets (small black circles) by default:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<ul>\n \n<li>Coffee</li>  <li>Tea</li>\n \n<li>Milk</li>\n</ul>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Ordered HTML List"
+    },
+    {
+      "type": "paragraph",
+      "text": "An ordered list starts with the <ol> tag. Each list item starts with the <li> tag."
+    },
+    {
+      "type": "paragraph",
+      "text": "The list items will be marked with numbers by default:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<ol>\n \n<li>Coffee</li>  <li>Tea</li>\n \n<li>Milk</li>\n</ol>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML Description Lists"
+    },
+    {
+      "type": "paragraph",
+      "text": "HTML also supports description lists."
+    },
+    {
+      "type": "paragraph",
+      "text": "A description list is a list of terms, with a description of each term."
+    },
+    {
+      "type": "paragraph",
+      "text": "The <dl> tag defines the description list, the <dt> tag defines the term (name), and the <dd>  \ntag describes each term:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<dl>\n \n<dt>Coffee</dt>\n \n<dd>- black hot drink</dd>\n \n<dt>Milk</dt>\n \n<dd>- white cold drink</dd>\n</dl>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML List Tags"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Tag",
+          "Description"
+        ],
+        [
+          "<ul>",
+          "Defines an unordered list"
+        ],
+        [
+          "<ol>",
+          "Defines an ordered list"
+        ],
+        [
+          "<li>",
+          "Defines a list item"
+        ],
+        [
+          "<dl>",
+          "Defines a description list"
+        ],
+        [
+          "<dt>",
+          "Defines a term in a description list"
+        ],
+        [
+          "<dd>",
+          "Describes the term in a description list"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "For a complete list of all available HTML tags, visit our HTML Tag Reference."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Video: HTML Lists"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Item",
+        "Item",
+        "Item",
+        "Item"
+      ]
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "First item",
+        "Second item",
+        "Third item",
+        "Fourth item"
+      ]
+    },
+    {
+      "type": "image",
+      "src": "https://www.w3schools.com/html/images/yt_logo_rgb_dark.png"
+    },
+    {
+      "type": "image",
+      "src": "https://www.w3schools.com/html/images/15_html_lists.png"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_ref_alter_column.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL ALTER COLUMN Keyword"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "text": "ALTER COLUMN"
+    },
+    {
+      "type": "paragraph",
+      "text": "The ALTER COLUMN command is used to change the data type of a column in a table."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL changes the data type of the column named \"BirthDate\" in \nthe \"Employees\" table to type year:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n  ALTER TABLE EmployeesALTER COLUMN BirthDate \n  year;"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

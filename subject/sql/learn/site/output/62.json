@@ -1,0 +1,90 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_hosting.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL Hosting"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "heading",
+      "text": "SQL Hosting"
+    },
+    {
+      "type": "paragraph",
+      "text": "If you want your web site to be able to store and retrieve data from a \ndatabase, your web server should have access to a database-system that uses the \nSQL language."
+    },
+    {
+      "type": "paragraph",
+      "text": "If your web server is hosted by an Internet Service Provider (ISP), you will have to look for SQL hosting plans."
+    },
+    {
+      "type": "paragraph",
+      "text": "The most common SQL hosting databases are MS SQL Server, Oracle, MySQL, and MS Access."
+    },
+    {
+      "type": "heading",
+      "text": "MS SQL Server"
+    },
+    {
+      "type": "paragraph",
+      "text": "Microsoft's SQL Server is a popular database software for  database-driven web sites \nwith high traffic."
+    },
+    {
+      "type": "paragraph",
+      "text": "SQL Server is a very powerful, robust and full featured SQL database system."
+    },
+    {
+      "type": "heading",
+      "text": "Oracle"
+    },
+    {
+      "type": "paragraph",
+      "text": "Oracle is also a popular database software for  database-driven web sites \nwith high traffic."
+    },
+    {
+      "type": "paragraph",
+      "text": "Oracle is a very powerful, robust and full featured SQL database system."
+    },
+    {
+      "type": "heading",
+      "text": "MySQL"
+    },
+    {
+      "type": "paragraph",
+      "text": "MySQL is also a popular database software for web sites."
+    },
+    {
+      "type": "paragraph",
+      "text": "MySQL is a very powerful, robust and full featured SQL database system."
+    },
+    {
+      "type": "paragraph",
+      "text": "MySQL is an inexpensive \nalternative to the expensive Microsoft and Oracle solutions."
+    },
+    {
+      "type": "heading",
+      "text": "MS Access"
+    },
+    {
+      "type": "paragraph",
+      "text": "When a web site requires only a simple database, Microsoft Access can be a \nsolution."
+    },
+    {
+      "type": "paragraph",
+      "text": "MS Access is not well suited for very high-traffic, and not as powerful as \nMySQL, SQL Server, or Oracle."
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

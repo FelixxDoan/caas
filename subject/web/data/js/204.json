@@ -1,0 +1,393 @@
+{
+  "url": "https://www.w3schools.com/js/js_const.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Const"
+    },
+    {
+      "type": "other",
+      "text": "The const keyword was introduced in\nES6 (2015)\nVariables defined with const cannot be Redeclared\nVariables defined with const cannot be Reassigned\nVariables defined with const have Block Scope"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Cannot be Reassigned"
+    },
+    {
+      "type": "paragraph",
+      "text": "A variable defined with the const keyword cannot be reassigned:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const PI = 3.141592653589793;\nPI = 3.14;      // This will give an error\nPI = PI + 10;   // This will also give an error"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Must be Assigned"
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript const variables must be assigned a value when they are declared:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const PI = 3.14159265359;"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const PI;\nPI = 3.14159265359;"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "When to use JavaScript const?\nAlways declare a variable with const when you know that\nthe value should not be changed.\nUse const when you declare:\n\nA new Array\nA new Object\nA new Function\nA new RegExp"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Constant Objects and Arrays"
+    },
+    {
+      "type": "paragraph",
+      "text": "The keyword const is a little misleading."
+    },
+    {
+      "type": "paragraph",
+      "text": "It does not define a constant value. It defines a constant reference to a value."
+    },
+    {
+      "type": "paragraph",
+      "text": "Because of this you can NOT:"
+    },
+    {
+      "type": "other",
+      "text": "Reassign a constant value\nReassign a constant array\nReassign a constant object"
+    },
+    {
+      "type": "other",
+      "text": "But you CAN:\nChange the elements of constant array\nChange the properties of constant object"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Constant Arrays"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can change the elements of a constant array:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// You can create a constant array:\nconst cars = [\"Saab\", \"Volvo\", \"BMW\"];\n// You can change an element:\ncars[0] = \"Toyota\";\n// You can add an element:\ncars.push(\"Audi\");"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "But you can NOT reassign the array:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const cars = [\"Saab\", \"Volvo\", \"BMW\"];\n\ncars = [\"Toyota\", \"Volvo\", \"Audi\"];    // ERROR"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Constant Objects"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can change the properties of a constant object:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// You can create a const object:\nconst car = {type:\"Fiat\", model:\"500\", color:\"white\"};\n// You can change a property:\ncar.color = \"red\";\n// You can add a property:\ncar.owner = \"Johnson\";"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "But you can NOT reassign the object:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const car = {type:\"Fiat\", model:\"500\", color:\"white\"};\n\ncar = {type:\"Volvo\", model:\"EX60\", color:\"red\"}    // \n  ERROR"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Difference Between var, let and const"
+    },
+    {
+      "type": "table",
+      "data": [
+        [],
+        [
+          "",
+          "Scope",
+          "Redeclare",
+          "Reassign",
+          "Hoisted",
+          "Binds this"
+        ],
+        [
+          "var",
+          "No",
+          "Yes",
+          "Yes",
+          "Yes",
+          "Yes"
+        ],
+        [
+          "let",
+          "Yes",
+          "No",
+          "Yes",
+          "No",
+          "No"
+        ],
+        [
+          "const",
+          "Yes",
+          "No",
+          "No",
+          "No",
+          "No"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What is Good?"
+    },
+    {
+      "type": "paragraph",
+      "text": "let and const\nhave block scope."
+    },
+    {
+      "type": "paragraph",
+      "text": "let and const\ncan not be redeclared."
+    },
+    {
+      "type": "paragraph",
+      "text": "let and const\nmust be declared before use."
+    },
+    {
+      "type": "paragraph",
+      "text": "let and const\ndoes not bind to this."
+    },
+    {
+      "type": "paragraph",
+      "text": "let and const\nare not hoisted."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What is Not Good?"
+    },
+    {
+      "type": "paragraph",
+      "text": "var does not have to be declared."
+    },
+    {
+      "type": "paragraph",
+      "text": "var is hoisted."
+    },
+    {
+      "type": "paragraph",
+      "text": "var binds to this."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Browser Support"
+    },
+    {
+      "type": "paragraph",
+      "text": "The let and const keywords are\nnot supported in Internet Explorer 11 or earlier."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following table defines the first browser versions with full support:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome 49\n    Edge 12    \n    Firefox 36\n    Safari 11\n    Opera 36\n  \n  \n    Mar, 2016\n    Jul, 2015    \n    Jan, 2015\n    Sep, 2017\n    Mar, 2016"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Block Scope"
+    },
+    {
+      "type": "paragraph",
+      "text": "Declaring a variable with const is similar to let \nwhen it comes to Block Scope."
+    },
+    {
+      "type": "paragraph",
+      "text": "The x declared in the block, in this example, is not the same as the x declared outside the block:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const x = 10;\n// Here x is 10\n\n{ \nconst x = 2;\n// Here x is 2}\n\n// Here x is 10"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "You can learn more about block scope in the chapter JavaScript Scope."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Redeclaring"
+    },
+    {
+      "type": "paragraph",
+      "text": "Redeclaring a JavaScript var variable is allowed \nanywhere in a program:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "var x = 2;     // Allowed\nvar x = 3;     // Allowed\n  x = 4;         // Allowed"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Redeclaring an existing var or let\nvariable to const, in the same scope, is not allowed:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "var x = 2;     // Allowed\nconst x = 2;   // Not allowed\n\n{\nlet x = 2;     // Allowed\nconst x = 2;   // Not allowed}\n\n{\nconst x = 2;   // Allowed\nconst x = 2;   // Not allowed\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Reassigning an existing const variable, in the same scope, is not allowed:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const x = 2;     // Allowed\n  x = 2;           // Not allowed\n  var x = 2;       // Not allowed\n  let x = 2;       // Not allowed\n  const x = 2;     // Not allowed\n  { \n  const x = 2;   // Allowed\n  x = 2;         \n  // Not allowed  var x = 2;     \n  // Not allowed  let x = 2;     \n  // Not allowed\n   \n  const x = 2;   // Not allowed\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Redeclaring a variable with const, in another scope, or in another block, is allowed:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const x = 2;       // Allowed{ \n  const x = 3;   // Allowed\n  }\n  \n  {\n  const x = 4;   // Allowed\n  }"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Hoisting"
+    },
+    {
+      "type": "paragraph",
+      "text": "Variables defined with var are hoisted to the top \nand can be initialized at any time."
+    },
+    {
+      "type": "paragraph",
+      "text": "Meaning: You can use the variable before it is declared:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "carName = \"Volvo\";\n  var carName;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "If you want to learn more about hoisting, study the chapter JavaScript Hoisting."
+    },
+    {
+      "type": "paragraph",
+      "text": "Variables defined with const are also hoisted to the top,\nbut not initialized."
+    },
+    {
+      "type": "paragraph",
+      "text": "Meaning: Using a const variable before it is declared will result in a \nReferenceError:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "alert (carName);\nconst carName = \"Volvo\";"
+        }
+      ]
+    }
+  ]
+}

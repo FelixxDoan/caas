@@ -1,0 +1,140 @@
+{
+  "url": "https://www.w3schools.com/js/js_jquery_elements.asp",
+  "title": "JavaScript / jQuery HTML Elements",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript / jQuery HTML Elements"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "jQuery vs JavaScript"
+    },
+    {
+      "type": "paragraph",
+      "text": "jQuery was created in 2006 by John Resig. \nIt was designed to handle Browser Incompatibilities and to simplify HTML DOM Manipulation, Event Handling, Animations, and Ajax."
+    },
+    {
+      "type": "paragraph",
+      "text": "However, after JavaScript Version 5 (2009), most of the jQuery utilities can be solved with a few lines of standard JavaScript:"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Set Text Content"
+    },
+    {
+      "type": "paragraph",
+      "text": "Set the inner text of an HTML element:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "myElement.text(\"Hello Sweden!\");"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "myElement.textContent = \"Hello Sweden!\";"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Get Text Content"
+    },
+    {
+      "type": "paragraph",
+      "text": "Get the inner text of an HTML element:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "myText = $(\"#02\").text();"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "myText = document.getElementById(\"02\").textContent;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Set HTML Content"
+    },
+    {
+      "type": "paragraph",
+      "text": "Set the HTML content of an element:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "myElement.html(\"<p>Hello World</p>\");"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "myElement.innerHTML = \"<p>Hello World</p>\";"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Get HTML Content"
+    },
+    {
+      "type": "paragraph",
+      "text": "Get the HTML content of an element:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "content = myElement.html();"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "content = myElement.innerHTML;"
+        }
+      ]
+    }
+  ]
+}

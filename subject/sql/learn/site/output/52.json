@@ -1,0 +1,130 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_unique.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL UNIQUE Constraint"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "text": "SQL UNIQUE Constraint"
+    },
+    {
+      "type": "paragraph",
+      "text": "The UNIQUE constraint ensures that all values in a column are different."
+    },
+    {
+      "type": "paragraph",
+      "text": "Both the UNIQUE and \nPRIMARY KEY constraints provide a guarantee for uniqueness for a column or set of columns."
+    },
+    {
+      "type": "paragraph",
+      "text": "A PRIMARY KEY constraint automatically has a\nUNIQUE constraint."
+    },
+    {
+      "type": "paragraph",
+      "text": "However, you can have many UNIQUE constraints per table, but only one \nPRIMARY KEY constraint per table."
+    },
+    {
+      "type": "heading",
+      "text": "SQL UNIQUE Constraint on CREATE TABLE"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL creates a UNIQUE constraint on the \"ID\" column when the \"Persons\" table is created:"
+    },
+    {
+      "type": "paragraph",
+      "text": "SQL Server / Oracle / MS Access:"
+    },
+    {
+      "type": "other",
+      "text": "CREATE TABLE Persons\n(\n    ID int NOT NULL UNIQUE,\n   \nLastName varchar(255) NOT NULL,\n   \nFirstName varchar(255),\n   \nAge int\n);"
+    },
+    {
+      "type": "paragraph",
+      "text": "MySQL:"
+    },
+    {
+      "type": "other",
+      "text": "CREATE TABLE Persons\n(\n    ID int NOT NULL,\n   \nLastName varchar(255) NOT NULL,\n   \nFirstName varchar(255),\n   \nAge int,\n   \nUNIQUE (ID)\n);"
+    },
+    {
+      "type": "paragraph",
+      "text": "To name a UNIQUE constraint, and to define a \nUNIQUE constraint on multiple columns, use the following SQL syntax:"
+    },
+    {
+      "type": "paragraph",
+      "text": "MySQL / SQL Server / Oracle / MS Access:"
+    },
+    {
+      "type": "other",
+      "text": "CREATE TABLE Persons\n(\n    ID int NOT NULL,\n   \nLastName varchar(255) NOT NULL,\n   \nFirstName varchar(255),\n   \nAge int,\n   \nCONSTRAINT UC_Person UNIQUE (ID,LastName)\n);"
+    },
+    {
+      "type": "heading",
+      "text": "SQL UNIQUE Constraint on ALTER TABLE"
+    },
+    {
+      "type": "paragraph",
+      "text": "To create a UNIQUE constraint on the \"ID\" column when the table is already created, use the following SQL:"
+    },
+    {
+      "type": "paragraph",
+      "text": "MySQL / SQL Server / Oracle / MS Access:"
+    },
+    {
+      "type": "other",
+      "text": "ALTER TABLE Persons\nADD UNIQUE (ID);"
+    },
+    {
+      "type": "paragraph",
+      "text": "To name a UNIQUE constraint, and to define a \nUNIQUE constraint on multiple columns, use the following SQL syntax:"
+    },
+    {
+      "type": "paragraph",
+      "text": "MySQL / SQL Server / Oracle / MS Access:"
+    },
+    {
+      "type": "other",
+      "text": "ALTER TABLE Persons\nADD CONSTRAINT UC_Person UNIQUE (ID,LastName);"
+    },
+    {
+      "type": "heading",
+      "text": "DROP a UNIQUE Constraint"
+    },
+    {
+      "type": "paragraph",
+      "text": "To drop a UNIQUE constraint, use the following SQL:"
+    },
+    {
+      "type": "paragraph",
+      "text": "MySQL:"
+    },
+    {
+      "type": "other",
+      "text": "ALTER TABLE Persons\nDROP INDEX UC_Person;"
+    },
+    {
+      "type": "paragraph",
+      "text": "SQL Server / Oracle / MS Access:"
+    },
+    {
+      "type": "other",
+      "text": "ALTER TABLE Persons\nDROP CONSTRAINT UC_Person;"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

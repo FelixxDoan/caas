@@ -1,0 +1,287 @@
+{
+  "url": "https://www.w3schools.com/css/css_navbar_horizontal.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Horizontal Navigation Bar"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Horizontal Navigation Bar"
+    },
+    {
+      "type": "other",
+      "text": "Home\n  News\n  Contact\n  About"
+    },
+    {
+      "type": "paragraph",
+      "text": "There are two ways to create a horizontal navigation bar. Using \ninline or floating list items."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Inline List Items"
+    },
+    {
+      "type": "paragraph",
+      "text": "One way to build a horizontal navigation bar is to specify the <li> elements \nas inline, in addition to the \"standard\" code from the previous page:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "li\n{\n   \ndisplay: inline;\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Example explained:"
+    },
+    {
+      "type": "other",
+      "text": "display: inline; - By default, <li> elements are block elements. Here, we \nremove the line breaks before and after each list item, to display them on one line"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Floating List Items"
+    },
+    {
+      "type": "paragraph",
+      "text": "Another way of creating a horizontal navigation bar is to float the <li> \nelements, and specify a layout for the navigation links:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "li\n{\n  float: left;\n}\na\n{\n   \ndisplay: block;\n    padding: 8px;  background-color: \n#dddddd;\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Example explained:"
+    },
+    {
+      "type": "other",
+      "text": "float: left; - Use float to get block elements to \nfloat next to each other\ndisplay: block; -  \nAllows us to specify padding (and \nheight, width, margins, etc. if you want)\npadding: 8px; - Specify some padding \nbetween each <a> element, to make \nthem look good\nbackground-color: #dddddd; - Add a gray background-color to each \n<a> element"
+    },
+    {
+      "type": "paragraph",
+      "text": "Tip: Add the background-color to <ul> instead of each <a> element if you want \na full-width background color:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "ul\n{\n  background-color: #dddddd;\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Horizontal Navigation Bar Examples"
+    },
+    {
+      "type": "paragraph",
+      "text": "Create a basic horizontal navigation bar with a dark background color and \nchange the background color of the links when the user moves the mouse over \nthem:"
+    },
+    {
+      "type": "other",
+      "text": "Home\n  News\n  Contact\n  About"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "ul {  list-style-type: none;  margin: 0;  padding: 0;\n    overflow: \nhidden;  background-color: #333;}li {  \nfloat: left;}\nli a {  display: block;  \ncolor: white;  text-align: center;  \npadding: 14px 16px;  text-decoration: none;}\n/* Change the link color to #111 (black) on hover */li a:hover {  background-color: \n#111;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Active/Current Navigation Link"
+    },
+    {
+      "type": "paragraph",
+      "text": "Add an \"active\" class to the current link to let the user know which page he/she is on:"
+    },
+    {
+      "type": "other",
+      "text": "Home\n  News\n  Contact\n  About"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".active {  background-color: #04AA6D;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Right-Align Links"
+    },
+    {
+      "type": "paragraph",
+      "text": "Right-align links by floating the list items to the right (float:right;):"
+    },
+    {
+      "type": "other",
+      "text": "Home\n  News\n  Contact\n  About"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<ul>  <li><a href=\"#home\">Home</a></li>  \n<li><a href=\"#news\">News</a></li>  <li><a href=\"#contact\">Contact</a></li>\n  <li style=\"float:right\"><a \nclass=\"active\" href=\"#about\">About</a></li></ul>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Border Dividers"
+    },
+    {
+      "type": "paragraph",
+      "text": "Add the border-right property to <li> to create link dividers:"
+    },
+    {
+      "type": "other",
+      "text": "Home\n  News\n  Contact\n  About"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "/* Add a gray right border to all list items, except the last item \n(last-child) */li {  border-right: 1px solid #bbb;}\nli:last-child {  border-right: none;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Fixed Navigation Bar"
+    },
+    {
+      "type": "paragraph",
+      "text": "Make the navigation bar stay at the top or the bottom of the page, even when the user scrolls the page:"
+    },
+    {
+      "type": "other",
+      "text": "Fixed Top\n\nul {  position: fixed;  top: 0;  width: 100%;}\nTry it Yourself »\n\n\n\n\n\n\n\n\n\nFixed Bottom\n\nul {  position: fixed;  bottom: 0;  width: 100%;}\nTry it Yourself »"
+    },
+    {
+      "type": "other",
+      "text": "Note: Fixed position might not work properly on mobile devices."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Gray Horizontal Navbar"
+    },
+    {
+      "type": "paragraph",
+      "text": "An example of a gray horizontal navigation bar with a thin gray border:"
+    },
+    {
+      "type": "other",
+      "text": "Home\n  News\n  Contact\n  About"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "ul {  border: 1px solid #e7e7e7;  \nbackground-color: #f3f3f3;}li a {  color: \n#666;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Sticky Navbar"
+    },
+    {
+      "type": "paragraph",
+      "text": "Add position: sticky; to <ul> to create a sticky navbar."
+    },
+    {
+      "type": "paragraph",
+      "text": "A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it \"sticks\" in place (like position:fixed)."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "ul {  position: sticky;  top: 0;}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note:  You must specify at least one of top, right, bottom or left for \nsticky positioning to work."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "More Examples"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": []
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": []
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": []
+    },
+    {
+      "type": "other",
+      "text": "Ever heard about W3Schools Spaces? Here you can create your website from scratch or use a template, and host it for free.\n  Get started for free ❯\n  * no credit card required"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

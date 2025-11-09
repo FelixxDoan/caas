@@ -1,0 +1,133 @@
+{
+  "url": "https://www.w3schools.com/css/css_background_repeat.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Background Image Repeat"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CSS background-repeat"
+    },
+    {
+      "type": "paragraph",
+      "text": "By default, the background-image property repeats an image both horizontally and vertically."
+    },
+    {
+      "type": "paragraph",
+      "text": "Some images should be repeated only horizontally or vertically, or they will look strange, like this:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "body\n{\n  background-image: url(\"gradient_bg.png\");\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "If the image above is repeated only horizontally (background-repeat: repeat-x;), the background will look \nbetter:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "body\n{\n  background-image: url(\"gradient_bg.png\");\n  background-repeat: repeat-x;\n}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Tip: To repeat an image vertically, set background-repeat: repeat-y;"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CSS background-repeat: no-repeat"
+    },
+    {
+      "type": "paragraph",
+      "text": "Showing the background image only once is also specified by the background-repeat property:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "body\n{\n  background-image: url(\"img_tree.png\");\n  background-repeat: no-repeat;\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "In the example above, the background image is placed in the same place as the text. We want to change the position of the image, so that it does not \ndisturb the text too much."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CSS background-position"
+    },
+    {
+      "type": "paragraph",
+      "text": "The background-position property is used to \nspecify the position of the background image."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "body\n{\n   \nbackground-image: url(\"img_tree.png\");\n   \nbackground-repeat: no-repeat;\n   \nbackground-position: right top;\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The CSS Background Repeat and Position Properties"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Property",
+          "Description"
+        ],
+        [
+          "background-position",
+          "Sets the starting position of a background image"
+        ],
+        [
+          "background-repeat",
+          "Sets how a background image will be repeated"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Video: CSS Background Repeat and Position"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

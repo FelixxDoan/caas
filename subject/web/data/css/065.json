@@ -1,0 +1,149 @@
+{
+  "url": "https://www.w3schools.com/css/css_combinators.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Combinators"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CSS Combinators"
+    },
+    {
+      "type": "other",
+      "text": "A combinator is something that explains the relationship between the selectors."
+    },
+    {
+      "type": "paragraph",
+      "text": "A CSS selector can contain more than one simple selector. Between the simple \nselectors, we can include a combinator."
+    },
+    {
+      "type": "paragraph",
+      "text": "There are four different combinators in CSS:"
+    },
+    {
+      "type": "other",
+      "text": "Descendant combinator (space)\nChild combinator (>)\nNext sibling combinator (+)\nSubsequent-sibling combinator (~)"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Descendant Combinator"
+    },
+    {
+      "type": "paragraph",
+      "text": "The descendant combinator matches all elements that are descendants of a specified \nelement."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following example selects all <p> elements inside <div> elements:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "div p {  background-color: yellow;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Child Combinator (>)"
+    },
+    {
+      "type": "paragraph",
+      "text": "The child combinator selects all elements that are the children of a \nspecified element."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following example selects all <p> elements that are  \nchildren of a <div> \nelement:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "div > p {  background-color: yellow;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Next Sibling Combinator (+)"
+    },
+    {
+      "type": "paragraph",
+      "text": "The next sibling combinator is used to select an element that is directly \nafter another specific element."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sibling elements must have the same parent element, and \"adjacent\" means \n\"immediately following\"."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following example selects the first <p> element that are placed immediately after <div> elements:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "div + p {  background-color: yellow;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Subsequent-sibling Combinator (~)"
+    },
+    {
+      "type": "paragraph",
+      "text": "The subsequent-sibling combinator selects all elements that are next siblings of a specified element."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following example selects all <p> elements that are next siblings of <div> elements:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "div ~ p {  background-color: yellow;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CSS Combinators Reference"
+    },
+    {
+      "type": "other",
+      "text": "For a complete list of all CSS combinators, visit our   CSS Combinators Reference."
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

@@ -1,0 +1,256 @@
+{
+  "url": "https://www.w3schools.com/js/js_htmldom_eventlistener.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript HTML DOM EventListener"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The addEventListener() method"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "document.getElementById(\"myBtn\").addEventListener(\"click\", displayDate);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The addEventListener() method attaches an event handler to the specified element."
+    },
+    {
+      "type": "paragraph",
+      "text": "The addEventListener() method attaches an event handler to an element without overwriting existing event handlers."
+    },
+    {
+      "type": "paragraph",
+      "text": "You can add many event handlers to one element."
+    },
+    {
+      "type": "paragraph",
+      "text": "You can add many event handlers of the same type to one element, i.e two \"click\" events."
+    },
+    {
+      "type": "paragraph",
+      "text": "You can add event listeners to any DOM object not only HTML elements. i.e the window object."
+    },
+    {
+      "type": "paragraph",
+      "text": "The addEventListener() method makes it easier to control how the event reacts to bubbling."
+    },
+    {
+      "type": "paragraph",
+      "text": "When using the addEventListener() method, the JavaScript is separated from the HTML markup, for better readability \nand allows you to add event listeners even when you do not control the HTML markup."
+    },
+    {
+      "type": "paragraph",
+      "text": "You can easily remove an event listener by using the removeEventListener() method."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Syntax"
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "element.addEventListener(event, function, useCapture);"
+    },
+    {
+      "type": "paragraph",
+      "text": "The first parameter is the type of the event (like \"click\" or \"mousedown\" \nor any other HTML DOM Event.)"
+    },
+    {
+      "type": "paragraph",
+      "text": "The second parameter is the function we want to call when the event occurs."
+    },
+    {
+      "type": "paragraph",
+      "text": "The third parameter is a boolean value specifying whether to use event bubbling or event capturing. This parameter is optional."
+    },
+    {
+      "type": "other",
+      "text": "Note that you don't use the \n\"on\" prefix for the event; use \"click\" instead of \"onclick\"."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Add an Event Handler to an Element"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "element.addEventListener(\"click\", function(){ alert(\"Hello World!\"); });"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "You can also refer to an external \"named\" function:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "element.addEventListener(\"click\",  myFunction);function myFunction() {  alert (\"Hello World!\");}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Add Many Event Handlers to the Same Element"
+    },
+    {
+      "type": "paragraph",
+      "text": "The addEventListener() method allows you to add many events to the same \nelement, without overwriting existing events:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "element.addEventListener(\"click\", myFunction);\n element.addEventListener(\"click\", mySecondFunction);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "You can add events of different types to the same element:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "element.addEventListener(\"mouseover\", myFunction);\nelement.addEventListener(\"click\", mySecondFunction);\nelement.addEventListener(\"mouseout\", myThirdFunction);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Add an Event Handler to the window Object"
+    },
+    {
+      "type": "paragraph",
+      "text": "The addEventListener() method allows you to add event listeners on any HTML \nDOM object such as HTML elements, the HTML document, the window object, or other \nobjects that support events, like the xmlHttpRequest object."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "window.addEventListener(\"resize\", function(){\n  document.getElementById(\"demo\").innerHTML = sometext;\n});"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Passing Parameters"
+    },
+    {
+      "type": "paragraph",
+      "text": "When passing parameter values, use \nan \"anonymous function\" that calls the specified function with the parameters:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "element.addEventListener(\"click\", function(){ myFunction(p1, p2); });"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Event Bubbling or Event Capturing?"
+    },
+    {
+      "type": "paragraph",
+      "text": "There are two ways of event propagation in the HTML DOM, bubbling and capturing."
+    },
+    {
+      "type": "paragraph",
+      "text": "Event propagation is a way of defining the element order when an event occurs.\nIf you have a <p> element inside a <div> element, and the user clicks on the <p> element, which element's\n\"click\" event should be handled first?"
+    },
+    {
+      "type": "paragraph",
+      "text": "In bubbling the inner most element's event is handled first and then the outer:\nthe <p> element's click event is handled first, then the <div> element's click event."
+    },
+    {
+      "type": "paragraph",
+      "text": "In capturing the outer most element's event is handled first and then the inner:\nthe <div> element's click event will be handled first, then the <p> element's click event."
+    },
+    {
+      "type": "paragraph",
+      "text": "With the addEventListener() method you can specify the propagation type by using the \"useCapture\" parameter:"
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "addEventListener(event, function, useCapture);"
+    },
+    {
+      "type": "paragraph",
+      "text": "The default value is false, which will use the bubbling propagation, when the value is set to true, the event uses the capturing propagation."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "document.getElementById(\"myP\").addEventListener(\"click\", myFunction, true);\ndocument.getElementById(\"myDiv\").addEventListener(\"click\", myFunction, true);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The removeEventListener() method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The removeEventListener() method removes event handlers that have been \nattached with the addEventListener() method:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "element.removeEventListener(\"mousemove\", myFunction);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML DOM Event Object Reference"
+    },
+    {
+      "type": "paragraph",
+      "text": "For a list of all HTML DOM events, look at our complete HTML DOM Event Object Reference."
+    }
+  ]
+}

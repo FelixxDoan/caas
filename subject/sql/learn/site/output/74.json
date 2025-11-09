@@ -1,0 +1,38 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_ref_asc.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL ASC Keyword"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "text": "ASC"
+    },
+    {
+      "type": "paragraph",
+      "text": "The ASC command is used to sort the data \nreturned in ascending order."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement selects all the columns from the \"Customers\" \ntable, sorted by the \"CustomerName\" column:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n SELECT * FROM CustomersORDER BY CustomerName ASC;\n\n Try it Yourself »"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

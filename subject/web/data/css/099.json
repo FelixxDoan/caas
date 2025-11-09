@@ -1,0 +1,107 @@
+{
+  "url": "https://www.w3schools.com/css/css_text.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Text"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS has a lot of properties for formatting text."
+    },
+    {
+      "type": "other",
+      "text": "text formatting\nThis text is styled with some of the text formatting properties. The heading uses the text-align, text-transform, and color properties.\nThe paragraph is indented, aligned, and the space between characters is specified. The underline is removed from this colored\n\"Try it Yourself\" link."
+    },
+    {
+      "type": "other",
+      "text": "Try it Yourself »"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Text Color"
+    },
+    {
+      "type": "paragraph",
+      "text": "The color property is used to set the color of the text. \nThe color is specified by:"
+    },
+    {
+      "type": "other",
+      "text": "a color name - like \"red\"\na HEX value - like \"#ff0000\"\nan RGB value - like \"rgb(255,0,0)\""
+    },
+    {
+      "type": "paragraph",
+      "text": "Look at CSS Color Values for a complete list of possible color values."
+    },
+    {
+      "type": "paragraph",
+      "text": "The default text color for a page is defined in the body selector."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "body {  color: blue;}\nh1 {  color: green;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Text Color and Background Color"
+    },
+    {
+      "type": "paragraph",
+      "text": "In this example, we define both the background-color property and the color property:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "body {  background-color: lightgrey;  color: blue;}\nh1 {  background-color: black;  color: white;}\n  div {  background-color: blue;  color: white;}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Important: High contrast is very important for people with \nvision problems. So, always ensure that the contrast  \nbetween the text color and the background color (or background image) is good!"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The CSS Text Color Property"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Property",
+          "Description"
+        ],
+        [
+          "color",
+          "Specifies the color of text"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

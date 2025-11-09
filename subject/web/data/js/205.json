@@ -1,0 +1,346 @@
+{
+  "url": "https://www.w3schools.com/js/js_let.asp",
+  "title": "JavaScript Let",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Let"
+    },
+    {
+      "type": "other",
+      "text": "The let keyword was introduced in\nES6 (2015)\nVariables declared with let have Block Scope\nVariables declared with let must be Declared before use\nVariables declared with let cannot be Redeclared in the same scope"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Block Scope"
+    },
+    {
+      "type": "paragraph",
+      "text": "Before ES6 (2015), JavaScript did not have Block Scope."
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript had Global Scope and Function Scope."
+    },
+    {
+      "type": "paragraph",
+      "text": "ES6 introduced the two new JavaScript keywords: let and const."
+    },
+    {
+      "type": "paragraph",
+      "text": "These two keywords provided Block Scope in JavaScript:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "{ \n  let x = 2;\n  }\n// x can NOT be used here"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Global Scope"
+    },
+    {
+      "type": "paragraph",
+      "text": "Variables declared with the var always have Global Scope."
+    },
+    {
+      "type": "paragraph",
+      "text": "Variables declared with the var keyword can NOT have block scope:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "{ \n  var x = 2; \n  }\n// x CAN be used here"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Cannot be Redeclared"
+    },
+    {
+      "type": "paragraph",
+      "text": "Variables defined with let can not be redeclared."
+    },
+    {
+      "type": "paragraph",
+      "text": "You can not accidentally redeclare a variable declared with let."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = \"John Doe\";\n\nlet x = 0;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Variables defined with var can be redeclared."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "var x = \"John Doe\";\n\nvar x = 0;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Redeclaring Variables"
+    },
+    {
+      "type": "paragraph",
+      "text": "Redeclaring a variable using the var keyword can impose problems."
+    },
+    {
+      "type": "paragraph",
+      "text": "Redeclaring a variable inside a block will also redeclare the variable \noutside the block:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "var x = 10;\n// Here x is 10\n\n{ \nvar x = 2;\n// Here x is 2}\n\n// Here x is 2"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Redeclaring a variable using the let keyword can solve this problem."
+    },
+    {
+      "type": "paragraph",
+      "text": "Redeclaring a variable inside a block will not redeclare the variable outside \nthe block:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 10;\n// Here x is 10\n\n{\nlet x = 2;\n// Here x is 2}\n\n// Here x is 10"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Difference Between var, let and const"
+    },
+    {
+      "type": "table",
+      "data": [
+        [],
+        [
+          "",
+          "Scope",
+          "Redeclare",
+          "Reassign",
+          "Hoisted",
+          "Binds this"
+        ],
+        [
+          "var",
+          "No",
+          "Yes",
+          "Yes",
+          "Yes",
+          "Yes"
+        ],
+        [
+          "let",
+          "Yes",
+          "No",
+          "Yes",
+          "No",
+          "No"
+        ],
+        [
+          "const",
+          "Yes",
+          "No",
+          "No",
+          "No",
+          "No"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What is Good?"
+    },
+    {
+      "type": "paragraph",
+      "text": "let and const\nhave block scope."
+    },
+    {
+      "type": "paragraph",
+      "text": "let and const\ncan not be redeclared."
+    },
+    {
+      "type": "paragraph",
+      "text": "let and const\nmust be declared before use."
+    },
+    {
+      "type": "paragraph",
+      "text": "let and const\ndoes not bind to this."
+    },
+    {
+      "type": "paragraph",
+      "text": "let and const\nare not hoisted."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What is Not Good?"
+    },
+    {
+      "type": "paragraph",
+      "text": "var does not have to be declared."
+    },
+    {
+      "type": "paragraph",
+      "text": "var is hoisted."
+    },
+    {
+      "type": "paragraph",
+      "text": "var binds to this."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Browser Support"
+    },
+    {
+      "type": "paragraph",
+      "text": "The let and const keywords are\nnot supported in Internet Explorer 11 or earlier."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following table defines the first browser versions with full support:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome 49\n    Edge 12    \n    Firefox 36\n    Safari 11\n    Opera 36\n  \n  \n    Mar, 2016\n    Jul, 2015    \n    Jan, 2015\n    Sep, 2017\n    Mar, 2016"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Redeclaring"
+    },
+    {
+      "type": "paragraph",
+      "text": "Redeclaring a JavaScript variable with var is allowed \nanywhere in a program:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "var x = 2;\n// Now x is 2\n\nvar x = 3;\n// Now x is 3"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "With let, redeclaring a variable in the same block is NOT allowed:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "var x = 2;   // Allowed\nlet x = 3;   // Not allowed\n\n{\nlet x = 2;   // Allowed\nlet x = 3;   // Not allowed\n}\n\n{\nlet x = 2;   // Allowed\nvar x = 3;   // Not allowed\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Redeclaring a variable with let, in another block, IS allowed:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 2;   // Allowed{\nlet x = 3;   // Allowed\n  }\n  \n  {\nlet x = 4;    // Allowed\n  }"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Let Hoisting"
+    },
+    {
+      "type": "paragraph",
+      "text": "Variables defined with var are hoisted to the top \nand can be initialized at any time."
+    },
+    {
+      "type": "paragraph",
+      "text": "Meaning: You can use the variable before it is declared:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "carName = \"Volvo\";\n  var carName;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "If you want to learn more about hoisting, study the chapter JavaScript Hoisting."
+    },
+    {
+      "type": "paragraph",
+      "text": "Variables defined with let are also hoisted to the top \nof the block, but not initialized."
+    },
+    {
+      "type": "paragraph",
+      "text": "Meaning: Using a let variable before it is declared will result in a \nReferenceError:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "carName = \"Saab\";\nlet carName = \"Volvo\";"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Video: JavaScript let"
+    }
+  ]
+}

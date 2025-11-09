@@ -1,0 +1,335 @@
+{
+  "url": "https://www.w3schools.com/js/js_iterators.asp",
+  "title": "JavaScript Iterators",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Iterators"
+    },
+    {
+      "type": "other",
+      "text": "The Iterator Object\nAn Iterator is an object that provides a standard way to access elements sequentially.\nAn Iterator must adheres to the Iterator Protocol: It must have a next() method."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The next() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The next() method returns an object with two properties:"
+    },
+    {
+      "type": "other",
+      "text": "The value property holds the next value in the iteration sequence.\nThe done property returns false if there are more elements to iterate over,\notherwise it returns true."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The For Of Loop"
+    },
+    {
+      "type": "paragraph",
+      "text": "The JavaScript for..of statement loops \nthrough the elements of an iterable object."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "for (variable of iterable) {\n  // code block to be executed\n}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\nTechnically, iterables must implement the Symbol.iterator method.\nIn JavaScript the following are iterables:\n\nStrings\nArrays\nTyped Arrays\nSets\nMaps\n\nBecause their prototype objects have a\nSymbol.iterator method:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Iterators provide a controlled way to work with data sequences, enabling custom iteration logic\nfor various data structures."
+    },
+    {
+      "type": "paragraph",
+      "text": "They are particularly useful for handling streams of data,\nlazy computation of values, and building custom data structures with defined iteration behaviors."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Helper Functions"
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript 2025 (ECMAScript 2025) officially approved a set of new Iterator Helper methods that\nsignificantly enhance the functionality of iterators in JavaScript."
+    },
+    {
+      "type": "paragraph",
+      "text": "The methods provide a more functional and efficient way to work with iterable objects, including generators,\nby allowing direct manipulation and transformation without first converting them to arrays:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [],
+        [
+          "Function",
+          "Description"
+        ],
+        [
+          "drop()",
+          "Returns an iterator that skips a specified number of elements before yielding the rest"
+        ],
+        [
+          "every()",
+          "Returns true if all elements satisfy a test function"
+        ],
+        [
+          "filter()",
+          "Returns an iterator containing elements that satisfy a filter function"
+        ],
+        [
+          "find()",
+          "Returns the first element that satisfies a test function"
+        ],
+        [
+          "flatMap()",
+          "Returns an iterator by mapping each element and then flattening the results"
+        ],
+        [
+          "forEach()",
+          "Executes a function once for each element in the iterator."
+        ],
+        [
+          "from()",
+          "creates an iterator object from an iterable"
+        ],
+        [
+          "map()",
+          "Returns an iterator with all elements transformed by a map function"
+        ],
+        [
+          "reduce()",
+          "Applies a reducer function against each element to reduce it to a single value"
+        ],
+        [
+          "some()",
+          "Returns true if at least one element satisfy a test function"
+        ],
+        [
+          "take()",
+          "Returns an iterator that yields a specified number of elements"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Iterator.from() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Iterator.from()\ncreates an iterator object from an existing iterable or iterator object."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create an iterator\nconst myIterator = Iterator.from([1, 2, 3]);\n\n// Iterate over the elements\nlet text = \"\";\nfor (const x of myIterator) {\n  text += x;\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The filter() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The filter() method\nreturns a new iterator containing elements that satisfy a filter function."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create an iterator\nconst myIterator = Iterator.from([32, 33, 16, 40]);\n\n// Filter the iterator\nconst filteredIterator = myIterator.filter(x => x > 18);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The map() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The map() method\nreturns a new iterator with all elements transformed by a map function."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create an iterator\nconst myIterator = Iterator.from(\"123456789\");\n\n// Now you can use the map method\nconst mappedIterator = myIterator.map(x => x * 2);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The flatMap() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The flatMap() method\nreturns a new iterator by mapping each element and then flattening\nthe results into a single iterator."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create an iterator\nconst myIterator = Iterator.from([1, 2, 3, 4, 5, 6]);\n\n// Map the Iterator\nconst mappedIterator = myIterator.flatMap(x => [x, x * 10]);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The take() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The take() method\nreturns a new iterator that yields at most a specified number of elements."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const myIterator = Iterator.from([1, 2, 3, 4, 5, 6]);\n\n// Take the first five elements\nconst firstFive = myIterator.take(5);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The drop() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The drop() method\nreturns a new iterator that skips a specified number of elements before yielding the rest."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create an iterator\nconst myIterator = Iterator.from([1, 2, 3, 4, 5, 6]);\n\n// Remove the first five\nconst firstFive = myIterator.drop(5);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The find() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The find(fn) method\nreturns the first element that satisfies a test function."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create an iterator\nconst myIterator = Iterator.from([3, 10, 18, 30, 20]);\n\n// Find first greater than 18\nlet result = myIterator.find(x => x > 18);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The reduce() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The reduce() method\napplies a reducer function against an accumulator and each element to reduce it to a single value."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create an Iterator\nconst myIterator = Iterator.from([175, 50, 25]);\n\n// Reduce the Iterator\nlet result = myIterator.reduce(myFunc);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The every() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The every(fn) method\nreturns true if all elements in the iterator satisfy the provided test function."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create an Iterator\nconst myIterator = Iterator.from(\"123456789\");\n\n// Is every Element greater than 7?\nlet result = myIterator.every(x => x > 7);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The some() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The some() method\nreturns true if at least one element in the iterator satisfies the provided test function."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create an Iterator\nconst myIterator = Iterator.from(\"123456789\");\n\n// Is some Element greater than 7?\nlet result = myIterator.some(x => x > 7);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The forEach() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The forEach() method\nexecutes a provided function once for each element in the iterator."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create an iterator\nconst myIterator = Iterator.from(\"123456789\");\n\n// Iterate over all elements\nlet text = \"\";\nmyIterator.forEach (x => text += x);"
+        }
+      ]
+    }
+  ]
+}

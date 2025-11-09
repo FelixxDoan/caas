@@ -1,0 +1,118 @@
+{
+  "url": "https://www.w3schools.com/js/js_tostring.asp",
+  "title": "JavaScript toString()",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript toString()"
+    },
+    {
+      "type": "other",
+      "text": "The JavaScript toString() method converts a variable (or a value) to a string.\nIt is a built-in method for many data types, including numbers, arrays, dates, and objects.\nThe method is useful for:\n\nConverting data to a readable format for display\nEnsuring type compatibility when a string is required\nCustomizing objects other user interfaces\nCustomizing objects for debugging"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Array toString()"
+    },
+    {
+      "type": "paragraph",
+      "text": "When used on an array, toString() returns the array elements as a comma separated string."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];\n\nlet myList = fruits.toString();"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Date toString()"
+    },
+    {
+      "type": "paragraph",
+      "text": "When used on a date, toString() returns a human-readable date and time string."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const d = new Date();\n\nlet text = d.toString();"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Number toString()"
+    },
+    {
+      "type": "paragraph",
+      "text": "When used on a number, toString() returns the number as a string."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 123;\n\nlet text = x.toString();"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Convert a number to a string, using base 2 (binary):"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 123;\n\nlet text = x.toString(2);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Function toString()"
+    },
+    {
+      "type": "paragraph",
+      "text": "When used on a function, toString() returns the source code of the\nfunction as a string."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Object toString()"
+    },
+    {
+      "type": "paragraph",
+      "text": "When used on an object, toString() an object returns \"[object Object]\"."
+    },
+    {
+      "type": "paragraph",
+      "text": "To provide a meaningful string representation, it can be overridden in the object definition:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let person = {\n  firstname: \"John\",\n  lastname: \"Doe\",\n}\nlet text = person.toString();"
+        }
+      ]
+    }
+  ]
+}

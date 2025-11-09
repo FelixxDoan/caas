@@ -1,0 +1,96 @@
+{
+  "url": "https://www.w3schools.com/js/js_htmldom.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript HTML DOM"
+    },
+    {
+      "type": "paragraph",
+      "text": "With the HTML DOM, JavaScript can access and change all the elements of an HTML \ndocument."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The HTML DOM (Document Object Model)"
+    },
+    {
+      "type": "paragraph",
+      "text": "When a web page is loaded, the browser creates a Document\nObject Model of the page."
+    },
+    {
+      "type": "paragraph",
+      "text": "The HTML DOM model is constructed as a tree of Objects:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": []
+    },
+    {
+      "type": "paragraph",
+      "text": "With the object model, JavaScript gets all the power it needs to create \ndynamic HTML:"
+    },
+    {
+      "type": "other",
+      "text": "JavaScript can change all the HTML elements in the page\n  JavaScript can change all the HTML attributes in the page\n  JavaScript can change all the CSS styles in the page\n  JavaScript can remove existing HTML elements and attributes\n  JavaScript can add new HTML elements and attributes\n  JavaScript can react to all existing HTML events in the page\n  JavaScript can create new HTML events in the page"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What You Will Learn"
+    },
+    {
+      "type": "paragraph",
+      "text": "In the next chapters of this tutorial you will learn:"
+    },
+    {
+      "type": "other",
+      "text": "How to change the content of HTML elements\n  How to change the style (CSS) of HTML elements\n  How to react to HTML DOM events\n  How to add and delete HTML elements"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What is the DOM?"
+    },
+    {
+      "type": "paragraph",
+      "text": "The DOM is a W3C (World Wide Web Consortium) standard."
+    },
+    {
+      "type": "paragraph",
+      "text": "The DOM defines a standard for accessing documents:"
+    },
+    {
+      "type": "paragraph",
+      "text": "\"The W3C Document Object Model (DOM) is a platform and language-neutral \ninterface that allows programs and scripts to dynamically access and update the \ncontent, structure, and style of a document.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "The W3C DOM standard is separated into 3 different parts:"
+    },
+    {
+      "type": "other",
+      "text": "Core DOM - standard model for all document types\n  XML DOM - standard model for XML documents\n  HTML DOM - standard model for HTML documents"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What is the HTML DOM?"
+    },
+    {
+      "type": "paragraph",
+      "text": "The HTML DOM is a standard object model and \nprogramming interface for HTML. It defines:"
+    },
+    {
+      "type": "other",
+      "text": "The HTML elements as objects\n  The properties of all HTML elements\n  The methods to access all HTML elements\n  The events for all HTML elements"
+    },
+    {
+      "type": "paragraph",
+      "text": "In other words: The HTML DOM is a standard for how to get, change, add, or delete HTML elements."
+    }
+  ]
+}

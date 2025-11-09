@@ -1,0 +1,265 @@
+{
+  "url": "https://www.w3schools.com/js/js_htmldom_events.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript HTML DOM Events"
+    },
+    {
+      "type": "paragraph",
+      "text": "HTML DOM allows JavaScript to react to HTML events:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": []
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Reacting to Events"
+    },
+    {
+      "type": "paragraph",
+      "text": "A JavaScript can be executed when an event occurs, like when a user clicks on an HTML element."
+    },
+    {
+      "type": "paragraph",
+      "text": "To execute code when a user clicks on an element, add JavaScript code to an HTML event attribute:"
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "onclick=JavaScript"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples of HTML events:"
+    },
+    {
+      "type": "other",
+      "text": "When a user clicks the mouse\n  When a web page has loaded\n  When an image has been loaded\n  When the mouse moves over an element\n  When an input field is changed\n  When an HTML form is submitted\n  When a user strokes a key"
+    },
+    {
+      "type": "paragraph",
+      "text": "In this example, the content of the <h1> element is changed when a user clicks on it:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<!DOCTYPE html><html>\n<body>\n<h1 onclick=\"this.innerHTML = 'Ooops!'\">Click on this text!</h1>\n</body></html>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "In this example, a function is called from the event handler:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<!DOCTYPE html><html><body>\n<h1 onclick=\"changeText(this)\">Click on this text!</h1>\n <script>\nfunction changeText(id) {\n\n  id.innerHTML = \"Ooops!\";\n}\n</script>\n</body></html>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML Event Attributes"
+    },
+    {
+      "type": "paragraph",
+      "text": "To assign events to HTML elements you can use event attributes."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<button onclick=\"displayDate()\">Try it</button>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "In the example above, a function named displayDate will be executed \nwhen the button is clicked."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Assign Events Using the HTML DOM"
+    },
+    {
+      "type": "paragraph",
+      "text": "The HTML DOM allows you to assign events to HTML elements using JavaScript:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<script>\ndocument.getElementById(\"myBtn\").onclick = displayDate;\n</script>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "In the example above, a function named displayDate is assigned to \nan HTML element with the id=\"myBtn\"."
+    },
+    {
+      "type": "paragraph",
+      "text": "The function will be executed \nwhen the button is clicked."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The onload and onunload Events"
+    },
+    {
+      "type": "paragraph",
+      "text": "The onload and onunload events are triggered when the user enters or leaves the page."
+    },
+    {
+      "type": "paragraph",
+      "text": "The onload event can be used to check the visitor's browser type and browser version, and load the proper version of the web page based on the information."
+    },
+    {
+      "type": "paragraph",
+      "text": "The onload and onunload events can be used to deal with cookies."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<body onload=\"checkCookies()\">"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The oninput Event"
+    },
+    {
+      "type": "paragraph",
+      "text": "The oninput event is often to some action while the user input data."
+    },
+    {
+      "type": "paragraph",
+      "text": "Below is an example of how to use the oninput to change the content of an input field."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<input type=\"text\" id=\"fname\"\noninput=\"upperCase()\">"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The onchange Event"
+    },
+    {
+      "type": "paragraph",
+      "text": "The onchange event is often used in combination with validation of input fields."
+    },
+    {
+      "type": "paragraph",
+      "text": "Below is an example of how to use the onchange. The upperCase() \nfunction will be called when a user changes the content of an input field."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<input type=\"text\" id=\"fname\"\nonchange=\"upperCase()\">"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The onmouseover and onmouseout Events"
+    },
+    {
+      "type": "paragraph",
+      "text": "The onmouseover and onmouseout events can be used to trigger a function when the user mouses \nover, or out of, an HTML element:"
+    },
+    {
+      "type": "other",
+      "text": "Mouse Over Me"
+    },
+    {
+      "type": "paragraph",
+      "text": "Try it Yourself »"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The onmousedown, onmouseup and onclick Events"
+    },
+    {
+      "type": "paragraph",
+      "text": "The onmousedown, onmouseup, and onclick events are all parts of a \nmouse-click. First when a mouse-button is clicked, the onmousedown event is \ntriggered, then, when the mouse-button \nis released, the onmouseup event is triggered, finally, when the mouse-click is completed, the onclick event is triggered."
+    },
+    {
+      "type": "other",
+      "text": "Click Me"
+    },
+    {
+      "type": "other",
+      "text": "<!--\n function mDown(obj)\n {\n obj.style.backgroundColor=\"#1ec5e5\";\n obj.innerHTML=\"Release Me\"\n }\n\n function mUp(obj)\n {\n obj.style.backgroundColor=\"#D94A38\";\n obj.innerHTML=\"Thank You\"\n }\n\n //-->"
+    },
+    {
+      "type": "paragraph",
+      "text": "Try it Yourself »"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "More Examples"
+    },
+    {
+      "type": "paragraph",
+      "text": "onmousedown and onmouseup\nChange an image when a user holds down the mouse button."
+    },
+    {
+      "type": "paragraph",
+      "text": "onload\nDisplay an alert box when the page has finished loading."
+    },
+    {
+      "type": "paragraph",
+      "text": "onfocus\nChange the background-color of an input field when it gets focus."
+    },
+    {
+      "type": "paragraph",
+      "text": "Mouse Events\nChange the color of an element when the cursor moves over it."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML DOM Event Object Reference"
+    },
+    {
+      "type": "paragraph",
+      "text": "For a list of all HTML DOM events, look at our complete HTML DOM Event Object Reference."
+    }
+  ]
+}

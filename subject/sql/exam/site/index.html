@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>SQL Test - W3Schools Style</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="questions">
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          "
+        >
+          <h3>SQL Basic Test</h3>
+          <div id="timer">45:00</div>
+        </div>
+        <ol id="questionList"></ol>
+        <button id="submitBtn">Nộp bài</button>
+
+        <div id="tableListContainer">
+          <h4>Danh sách bảng</h4>
+          <ul id="tableList"></ul>
+        </div>
+      </div>
+      <div id="workarea">
+        <textarea id="sqlInput" placeholder="Nhập câu SQL ở đây..."></textarea>
+        <button id="run">Run SQL</button>
+        <div id="resultTabs">
+          <button class="tab-btn active" data-target="runResult">
+            Kết quả Run
+          </button>
+          <button class="tab-btn" data-target="sampleResult">
+            Kết quả mẫu
+          </button>
+        </div>
+
+        <div id="runResult" class="result-box">
+          Kết quả sẽ hiển thị ở đây...
+        </div>
+        <div id="sampleResult" class="result-box" style="display: none">
+          Kết quả mẫu sẽ hiển thị ở đây...
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal đang chấm -->
+    <div id="gradingModal">
+      <div>⏳ Đang chấm bài...</div>
+    </div>
+
+    <!-- Modal kết quả -->
+    <div id="scoreModal">
+      <div class="score-content">
+        <h2>Kết quả</h2>
+        <div id="scoreText"></div>
+        <button id="close">Đóng</button>
+      </div>
+    </div>
+
+    <script src="./js/main.js" type="module"></script>
+  </body>
+</html>

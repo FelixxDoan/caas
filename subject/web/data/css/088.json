@@ -1,0 +1,85 @@
+{
+  "url": "https://www.w3schools.com/css/css_font_fallbacks.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Font Fallbacks"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Commonly Used Font Fallbacks"
+    },
+    {
+      "type": "paragraph",
+      "text": "Below are some commonly used font fallbacks, organized by the 5 generic font families:"
+    },
+    {
+      "type": "other",
+      "text": "Serif\n  Sans-serif\n  Monospace\n  Cursive\n  Fantasy"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Serif Fonts"
+    },
+    {
+      "type": "other",
+      "text": "font-family\nExample text\nCode\n\n  \n\"Times New Roman\", Times, serif\nThis is a Heading\nThis is a paragraph.\nTry it\n  \n\nGeorgia, serif\nThis is a Heading\nThis is a paragraph.\nTry it\n\n\nGaramond, serif\nThis is a Heading\nThis is a paragraph.\nTry it"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Sans-Serif Fonts"
+    },
+    {
+      "type": "other",
+      "text": "font-family\nExample text\nCode\n\n\nArial, Helvetica, sans-serif\nThis is a Heading\nThis is a paragraph.\nTry it\n\n\nTahoma, Verdana, sans-serif\nThis is a Heading\nThis is a paragraph.\nTry it\n\n\n\"Trebuchet MS\", Helvetica, sans-serif\nThis is a Heading\nThis is a paragraph.\nTry it\n\n\nGeneva, Verdana, sans-serif\nThis is a Heading\nThis is a paragraph.\nTry it"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Monospace Fonts"
+    },
+    {
+      "type": "other",
+      "text": "font-family\nExample text\nCode\n\n\n\"Courier New\", Courier, monospace\nThis is a Heading\nThis is a paragraph.\nTry it"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Cursive Fonts"
+    },
+    {
+      "type": "other",
+      "text": "font-family\nExample text\nCode\n\n\n\"Brush Script MT\", cursive\nThis is a Heading\nThis is a paragraph.\nTry it"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Fantasy Fonts"
+    },
+    {
+      "type": "other",
+      "text": "font-family\nExample text\nCode\n\n\nCopperplate, Papyrus, fantasy\nThis is a Heading\nThis is a paragraph.\nTry it"
+    },
+    {
+      "type": "other",
+      "text": "Tip: Also check out all available Google Fonts and how to use them."
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

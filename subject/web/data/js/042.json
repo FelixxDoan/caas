@@ -1,0 +1,86 @@
+{
+  "url": "https://www.w3schools.com/js/js_ajax_asp.asp",
+  "title": "AJAX",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "AJAX ASP Example"
+    },
+    {
+      "type": "paragraph",
+      "text": "AJAX is used to create more interactive applications."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "AJAX ASP Example"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following example will demonstrate how a web page can communicate with a \nweb server while a user type characters in an input field:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": []
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Example Explained"
+    },
+    {
+      "type": "paragraph",
+      "text": "In the example above, when a user types a character in the input field, a function \ncalled showHint() is executed."
+    },
+    {
+      "type": "paragraph",
+      "text": "The function is triggered by the onkeyup event."
+    },
+    {
+      "type": "paragraph",
+      "text": "Here is the code:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<p>Start typing a name in the input field below:</p>\n<p>Suggestions: <span id=\"txtHint\"></span></p>\n<form>\nFirst name: <input type=\"text\" onkeyup=\"showHint(this.value)\"></form>\n<script>\nfunction showHint(str) {\n  if (str.length == 0) { \n    document.getElementById(\"txtHint\").innerHTML = \"\";\n    return;\n  } else {\n    const xmlhttp = new XMLHttpRequest();\n    xmlhttp.onload = function() {\n      document.getElementById(\"txtHint\").innerHTML = this.responseText;\n    }\n  xmlhttp.open(\"GET\", \"gethint.asp?q=\" + str);\n  xmlhttp.send();\n  }\n}\n</script>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Code explanation:"
+    },
+    {
+      "type": "paragraph",
+      "text": "First, check if the input field is empty (str.length == 0). If it is, clear the \ncontent of the txtHint placeholder and exit the function."
+    },
+    {
+      "type": "paragraph",
+      "text": "However, if the input field is not empty, do the following:"
+    },
+    {
+      "type": "other",
+      "text": "Create an XMLHttpRequest object\n  Create the function to be executed when the server response is ready\n  Send the request off to an ASP file (gethint.asp) on the server\n  Notice that q parameter is added gethint.asp?q=\"+str\n  The str variable holds the content of the input field"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The ASP File - \"gethint.asp\""
+    },
+    {
+      "type": "paragraph",
+      "text": "The ASP file checks an array of names, and returns the corresponding name(s) to the \nbrowser:"
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "<%\nresponse.expires=-1\ndim a(30)\n'Fill up array with names\na(1)=\"Anna\"\na(2)=\"Brittany\"\na(3)=\"Cinderella\"\na(4)=\"Diana\"\na(5)=\"Eva\"\na(6)=\"Fiona\"\na(7)=\"Gunda\"\na(8)=\"Hege\"\na(9)=\"Inga\"\na(10)=\"Johanna\"\na(11)=\"Kitty\"\na(12)=\"Linda\"\na(13)=\"Nina\"\na(14)=\"Ophelia\"\na(15)=\"Petunia\"\na(16)=\"Amanda\"\na(17)=\"Raquel\"\na(18)=\"Cindy\"\na(19)=\"Doris\"\na(20)=\"Eve\"\na(21)=\"Evita\"\na(22)=\"Sunniva\"\na(23)=\"Tove\"\na(24)=\"Unni\"\na(25)=\"Violet\"\na(26)=\"Liza\"\na(27)=\"Elizabeth\"\na(28)=\"Ellen\"\na(29)=\"Wenche\"\na(30)=\"Vicky\"\n'get the q parameter from URL\nq=ucase(request.querystring(\"q\"))\n'lookup all hints from array if length of q>0\nif len(q)>0 then\n   \n  hint=\"\"\n   \n  for i=1 to 30\n       \n    if q=ucase(mid(a(i),1,len(q))) then\n           \n      if hint=\"\" then\n               \n        hint=a(i)\n           \n      else\n               \n        hint=hint & \" , \" & a(i)\n           \n      end if\n       \n    end if\n   \n  next\nend if\n'Output \"no suggestion\" if no hint were found\n'or output the correct values\nif hint=\"\" then\n   \n  response.write(\"no suggestion\")\nelse\n   \n  response.write(hint)\nend if\n%>"
+    }
+  ]
+}

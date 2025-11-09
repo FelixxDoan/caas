@@ -1,0 +1,112 @@
+{
+  "url": "https://www.w3schools.com/html/html_links_colors.asp",
+  "title": "HTML ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "HTML Links - Different Colors"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "An HTML link is displayed in a different color depending on \nwhether it has been visited, is unvisited, or is active."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML Link Colors"
+    },
+    {
+      "type": "paragraph",
+      "text": "By default, a link will appear like this (in all browsers):"
+    },
+    {
+      "type": "other",
+      "text": "An unvisited link is underlined and blue\n  A visited link is underlined and purple\n  An active link is underlined and red"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can change the link state colors, by using CSS:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "css",
+          "code": "<style>a:link {  color: green;   background-color: transparent; \n    text-decoration: none;}\na:visited {  color: pink;  background-color: transparent;  \n  text-decoration: none;}a:hover {  color: red;  background-color: transparent;\n    text-decoration: underline;}\n  a:active {  color: yellow;  background-color: transparent;  \n  text-decoration: underline;}</style>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Link Buttons"
+    },
+    {
+      "type": "paragraph",
+      "text": "A link can also be styled as a button, by using CSS:"
+    },
+    {
+      "type": "other",
+      "text": "This is a link"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "css",
+          "code": "<style>a:link, a:visited {  background-color: #f44336;  \n  color: white;  padding: 15px 25px;  text-align: center;  \n  text-decoration: none;  display: inline-block;}a:hover, a:active {  \n  background-color: red;}</style>"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "To learn more about CSS, go to our CSS Tutorial."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML Link Tags"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Tag",
+          "Description"
+        ],
+        [
+          "<a>",
+          "Defines a hyperlink"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "For a complete list of all available HTML tags, visit our HTML Tag Reference."
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "An unvisited link is underlined and blue",
+        "A visited link is underlined and purple",
+        "An active link is underlined and red"
+      ]
+    }
+  ]
+}

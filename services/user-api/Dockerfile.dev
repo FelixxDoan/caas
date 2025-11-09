@@ -1,0 +1,19 @@
+# services/user-api/Dockerfile.dev
+FROM node:20-alpine
+WORKDIR /app
+
+# Bật pnpm
+RUN corepack enable || true
+
+# Chỉ copy manifest để cache node_modules
+COPY services/user-api/package.json /app/package.json
+COPY services/user-api/pnpm-lock.yaml* /app/pnpm-lock.yaml
+
+# Cài dependencies (có devDeps để chạy nodemon)
+RUN pnpm i
+
+# KHÔNG copy src trong dev; src sẽ được mount từ host qua volumes
+ENV NODE_ENV=development
+
+EXPOSE 4000
+CMD ["pnpm", "dev"]

@@ -1,0 +1,541 @@
+{
+  "url": "https://www.w3schools.com/js/js_variables.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Variables"
+    },
+    {
+      "type": "other",
+      "text": "Variables are Containers for Storing Data\nJavaScript Variables can be declared in 4 ways:\n\nAutomatically\nUsing var\nUsing let\nUsing const"
+    },
+    {
+      "type": "paragraph",
+      "text": "In this first example, x,\ny, and z\nare undeclared variables."
+    },
+    {
+      "type": "paragraph",
+      "text": "They are automatically declared when first used:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "x = 5;\ny = 6;\nz = x + y;"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\nIt is considered good programming practice to always declare variables before use."
+    },
+    {
+      "type": "paragraph",
+      "text": "From the examples you can guess:"
+    },
+    {
+      "type": "other",
+      "text": "x stores the value 5\n y stores the value 6\n z stores the value 11"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "var x = 5;var y = 6;\nvar z = x + y;"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\nThe var keyword was used in all JavaScript code from 1995 to 2015.\nThe let and const keywords were added to JavaScript in 2015.\nThe var keyword should only be used in code written for older browsers."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 5;\nlet y = 6;\nlet z = x + y;"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const x = 5;\nconst y = 6;\nconst z = x + y;"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const price1 = 5;\nconst price2 = 6;\nlet total = price1 + price2;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The two variables price1 and price2\nare declared with the const keyword."
+    },
+    {
+      "type": "paragraph",
+      "text": "These are constant values and cannot be changed."
+    },
+    {
+      "type": "paragraph",
+      "text": "The variable total is declared with the let keyword."
+    },
+    {
+      "type": "paragraph",
+      "text": "The value total can be changed."
+    },
+    {
+      "type": "other",
+      "text": "When to Use var, let, or const?\n1. Always declare variables\n2. Always use const if the value should not be changed\n3. Always use const if the type should not be changed (Arrays and Objects)\n4. Only use let if you can't use const\n5. Only use var if you MUST support old browsers."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Just Like Algebra"
+    },
+    {
+      "type": "paragraph",
+      "text": "Just like in algebra, variables hold values:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 5;\nlet y = 6;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Just like in algebra, variables are used in expressions:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let z = x + y;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "From the example above, you can guess that the total is calculated to be 11."
+    },
+    {
+      "type": "other",
+      "text": "Note\nVariables are containers for storing values."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Identifiers"
+    },
+    {
+      "type": "paragraph",
+      "text": "All JavaScript variables must be\nidentified with unique names."
+    },
+    {
+      "type": "paragraph",
+      "text": "These unique names are called identifiers."
+    },
+    {
+      "type": "paragraph",
+      "text": "Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume)."
+    },
+    {
+      "type": "paragraph",
+      "text": "The general rules for constructing names for variables (unique identifiers) are:"
+    },
+    {
+      "type": "other",
+      "text": "Names can contain letters, digits, underscores, and dollar signs.\n  Names must begin with a letter.\n  Names can also begin with $ and _ (but we will not use it in this tutorial).\n  Names are case sensitive (y and Y are different variables).\n  Reserved words (like JavaScript keywords) cannot be used as names."
+    },
+    {
+      "type": "other",
+      "text": "Note\nJavaScript identifiers are case-sensitive."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Assignment Operator"
+    },
+    {
+      "type": "paragraph",
+      "text": "In JavaScript, the equal sign (=) is an \"assignment\" operator, not an \n\"equal to\" operator."
+    },
+    {
+      "type": "paragraph",
+      "text": "This is different from algebra. The following does not make sense in \nalgebra:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "x = x + 5"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "In JavaScript, however, it makes perfect sense: it assigns the value of x + 5 to \nx."
+    },
+    {
+      "type": "paragraph",
+      "text": "(It calculates the value of x + 5 and puts the result into x. The value of x \nis incremented by 5.)"
+    },
+    {
+      "type": "other",
+      "text": "Note\nThe \"equal to\" operator is written like == in JavaScript."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Data Types"
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript variables can hold numbers like 100 and text values like \"John \nDoe\"."
+    },
+    {
+      "type": "paragraph",
+      "text": "In programming, text values are called text strings."
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript can handle many types of data, but for now, just think of numbers and strings."
+    },
+    {
+      "type": "paragraph",
+      "text": "Strings are written inside double or single quotes. Numbers are written \nwithout quotes."
+    },
+    {
+      "type": "paragraph",
+      "text": "If you put a number in quotes, it will be treated as a text string."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const pi = 3.14;\nlet person = \"John Doe\";\nlet answer = 'Yes I am!';"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Declaring a JavaScript Variable"
+    },
+    {
+      "type": "paragraph",
+      "text": "Creating a variable in JavaScript is called \"declaring\" a variable."
+    },
+    {
+      "type": "paragraph",
+      "text": "You declare a JavaScript variable with the var or the let keyword:"
+    },
+    {
+      "type": "example",
+      "description": "or:",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "var carName;"
+        },
+        {
+          "language": "unknown",
+          "code": "let carName;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "After the declaration, the variable has no value (technically it is undefined)."
+    },
+    {
+      "type": "paragraph",
+      "text": "To assign a value to the variable, use the equal sign:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "carName = \"Volvo\";"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "You can also assign a value to the variable when you declare it:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let carName = \"Volvo\";"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "In the example below, we create a variable called carName and assign the value \n\"Volvo\" to it."
+    },
+    {
+      "type": "paragraph",
+      "text": "Then we \"output\" the value inside an HTML paragraph with id=\"demo\":"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<p id=\"demo\"></p><script>\nlet carName = \"Volvo\";\ndocument.getElementById(\"demo\").innerHTML = carName; </script>"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\nIt's a good programming practice to declare all variables at the beginning of a script."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "One Statement, Many Variables"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can declare many variables in one statement."
+    },
+    {
+      "type": "paragraph",
+      "text": "Start the statement \nwith let and separate the variables by comma:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let person = \"John Doe\", carName = \"Volvo\", price = 200;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "A declaration can span multiple lines:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let person = \"John Doe\",\ncarName = \"Volvo\",\nprice = 200;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Value = undefined"
+    },
+    {
+      "type": "paragraph",
+      "text": "In computer programs, variables are often declared without a value. The value \ncan be something that has to be calculated, or something that will be provided \nlater, like user input."
+    },
+    {
+      "type": "paragraph",
+      "text": "A variable declared without a value will have the value \nundefined."
+    },
+    {
+      "type": "paragraph",
+      "text": "The variable carName will have the value undefined after the execution of this statement:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let carName;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Re-Declaring JavaScript Variables"
+    },
+    {
+      "type": "paragraph",
+      "text": "If you re-declare a JavaScript variable declared with var, it will not lose its value."
+    },
+    {
+      "type": "paragraph",
+      "text": "The variable carName will still have the value \"Volvo\" after the execution of these statements:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "var carName = \"Volvo\";\nvar carName;"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\nYou cannot re-declare a variable declared with let or const.\nThis will not work:\n\nlet carName = \"Volvo\";\nlet carName;"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Arithmetic"
+    },
+    {
+      "type": "paragraph",
+      "text": "As with algebra, you can do arithmetic with JavaScript variables, using \noperators like = and +:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 5 + 2 + 3;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "You can also add strings, but strings will be concatenated:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = \"John\" + \" \" + \"Doe\";"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Also try this:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = \"5\" + 2 + 3;"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\nIf you put a number in quotes, the rest of the numbers will be treated as strings, and concatenated."
+    },
+    {
+      "type": "paragraph",
+      "text": "Now try this:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 2 + 3 + \"5\";"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Dollar Sign $"
+    },
+    {
+      "type": "paragraph",
+      "text": "Since JavaScript treats a dollar sign as a letter, identifiers containing $ are valid variable names:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let $ = \"Hello World\";\nlet $$$ = 2;\nlet $myMoney = 5;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Using the dollar sign is not very common in JavaScript,\nbut professional programmers often use it \nas an alias for the main function in a JavaScript library."
+    },
+    {
+      "type": "paragraph",
+      "text": "In the JavaScript library jQuery, for instance, the main function\n$ is used to select HTML elements.\nIn jQuery $(\"p\"); means \"select all p elements\"."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Underscore (_)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Since JavaScript treats underscore as a letter, identifiers containing _ are valid variable names:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let _lastName = \"Johnson\";\nlet _x = 2;\nlet _100 = 5;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Using the underscore is not very common in JavaScript,\n\nbut a convention among professional programmers is to use it as an alias for\n\"private (hidden)\" variables."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Video: JavaScript Variables"
+    }
+  ]
+}

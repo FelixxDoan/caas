@@ -1,0 +1,70 @@
+{
+  "url": "https://www.w3schools.com/css/css_outline_shorthand.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Outline Shorthand"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CSS Outline - Shorthand property"
+    },
+    {
+      "type": "paragraph",
+      "text": "The outline property is a shorthand property for \nsetting the following individual outline properties:"
+    },
+    {
+      "type": "other",
+      "text": "outline-width\noutline-style (required)\noutline-color"
+    },
+    {
+      "type": "paragraph",
+      "text": "The outline property is specified as one, \ntwo, or three values from the list above. The order of the values does not \nmatter."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following example shows some outlines specified with the shorthand outline \nproperty:"
+    },
+    {
+      "type": "paragraph",
+      "text": "A dashed outline."
+    },
+    {
+      "type": "paragraph",
+      "text": "A dotted red outline."
+    },
+    {
+      "type": "paragraph",
+      "text": "A 5px solid yellow outline."
+    },
+    {
+      "type": "paragraph",
+      "text": "A thick ridge pink outline."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "p.ex1\n{outline: dashed;}p.ex2\n{outline: dotted red;}p.ex3\n{outline: 5px solid yellow;}p.ex4\n{outline: thick ridge pink;}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

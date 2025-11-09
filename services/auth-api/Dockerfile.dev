@@ -1,0 +1,11 @@
+FROM node:20-alpine
+WORKDIR /app
+COPY services/auth-api/package.json /app/package.json
+COPY services/auth-api/pnpm-lock.yaml* /app/pnpm-lock.yaml
+RUN corepack enable || true
+RUN pnpm i
+COPY services/auth-api .
+ENV NODE_ENV=development
+EXPOSE 3001
+CMD ["sh", "-c", "npx chokidar-cli package.json pnpm-lock.yaml -c 'echo Installing... && pnpm install' & pnpm dev"]
+

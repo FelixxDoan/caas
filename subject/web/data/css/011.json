@@ -1,0 +1,222 @@
+{
+  "url": "https://www.w3schools.com/css/css_howto.asp",
+  "title": null,
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "How To Add CSS"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "When a browser reads a style sheet, it will format the HTML document according to \nthe information in the style sheet."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Three Ways to Insert CSS"
+    },
+    {
+      "type": "paragraph",
+      "text": "There are three ways of inserting a style sheet:"
+    },
+    {
+      "type": "other",
+      "text": "External CSS\nInternal CSS\nInline CSS"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "External CSS"
+    },
+    {
+      "type": "paragraph",
+      "text": "With an\nexternal style sheet, you can change the look of an entire website by changing \njust one file!"
+    },
+    {
+      "type": "paragraph",
+      "text": "Each HTML page must include a reference to the external style sheet file inside \nthe <link> element, inside the head section."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<!DOCTYPE html><html><head><link rel=\"stylesheet\" href=\"mystyle.css\"></head><body><h1>This is a heading</h1>\n  <p>This is a paragraph.</p></body></html>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "An external style sheet can be written in any text editor, and must be saved with a .css extension."
+    },
+    {
+      "type": "paragraph",
+      "text": "The external .css file should not contain any HTML tags."
+    },
+    {
+      "type": "paragraph",
+      "text": "Here is how the \"mystyle.css\" file looks:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "body {  background-color: lightblue;}h1 {  color: navy;  margin-left: 20px;}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note: Do not add a space between the property value (20) and the unit \n  (px):\n  Incorrect (space): margin-left: 20 px;\n  Correct (no space): margin-left: 20px;"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Internal CSS"
+    },
+    {
+      "type": "paragraph",
+      "text": "An internal style sheet may be used if one single HTML page has a unique style."
+    },
+    {
+      "type": "paragraph",
+      "text": "The internal style is defined inside the <style> element, inside the head \nsection."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<!DOCTYPE html><html><head><style>body {  \n  background-color: linen;}h1 {  color: maroon;  \n  margin-left: 40px;} </style></head><body><h1>This is a \n  heading</h1><p>This is a paragraph.</p></body></html>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Inline CSS"
+    },
+    {
+      "type": "paragraph",
+      "text": "An inline style may be used to apply a unique style for a single element."
+    },
+    {
+      "type": "paragraph",
+      "text": "To use inline styles, add the style attribute to the relevant element. The\nstyle attribute can contain any CSS property."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<!DOCTYPE html><html><body><h1 style=\"color:blue;text-align:center;\">This \n  is a heading</h1><p style=\"color:red;\">This is a paragraph.</p>\n  </body></html>"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Tip: An inline style loses many of the advantages of a style sheet (by mixing\ncontent with presentation). Use this method sparingly."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Multiple Style Sheets"
+    },
+    {
+      "type": "paragraph",
+      "text": "If some properties have been defined for the same selector (element) in different style sheets,\nthe value from the last read style sheet will be used."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "h1\n{\n  color: navy;\n}"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "h1\n{\n  color: orange;   \n}"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<head><link rel=\"stylesheet\" type=\"text/css\" href=\"mystyle.css\">\n<style>h1 {  color: orange;}</style></head>"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<head><style>h1 {  color: orange;}</style><link rel=\"stylesheet\" type=\"text/css\" href=\"mystyle.css\">\n</head>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Cascading Order"
+    },
+    {
+      "type": "paragraph",
+      "text": "What style will be used when there is more than one style specified for an HTML element?"
+    },
+    {
+      "type": "paragraph",
+      "text": "All the styles in a page will \"cascade\" into a new \"virtual\" style\nsheet by the following rules, where number one has the highest priority:"
+    },
+    {
+      "type": "other",
+      "text": "Inline style (inside an HTML element)\n  External and internal style sheets (in the head section)\n  Browser default"
+    },
+    {
+      "type": "paragraph",
+      "text": "So, an inline style has the highest priority, and will override external and \ninternal styles and browser defaults."
+    },
+    {
+      "type": "paragraph",
+      "text": "Try it Yourself »"
+    },
+    {
+      "type": "other",
+      "text": "Ever heard about W3Schools Spaces? Here you can create your own website, or save code snippets for later use, for free.\n  Get started for free ❯\n  * no credit card required"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Video: How to add CSS to HTML"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

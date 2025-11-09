@@ -1,0 +1,239 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_operators.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL Operators"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "heading",
+      "text": "SQL Arithmetic Operators"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Operator",
+          "Description",
+          "Example"
+        ],
+        [
+          "+",
+          "Add",
+          "Try it"
+        ],
+        [
+          "-",
+          "Subtract",
+          "Try it"
+        ],
+        [
+          "*",
+          "Multiply",
+          "Try it"
+        ],
+        [
+          "/",
+          "Divide",
+          "Try it"
+        ],
+        [
+          "%",
+          "Modulo",
+          "Try it"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "SQL Bitwise Operators"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Operator",
+          "Description"
+        ],
+        [
+          "&",
+          "Bitwise AND"
+        ],
+        [
+          "|",
+          "Bitwise OR"
+        ],
+        [
+          "^",
+          "Bitwise exclusive OR"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "SQL Comparison Operators"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Operator",
+          "Description",
+          "Example"
+        ],
+        [
+          "=",
+          "Equal to",
+          "Try it"
+        ],
+        [
+          ">",
+          "Greater than",
+          "Try it"
+        ],
+        [
+          "<",
+          "Less than",
+          "Try it"
+        ],
+        [
+          ">=",
+          "Greater than or equal to",
+          "Try it"
+        ],
+        [
+          "<=",
+          "Less than or equal to",
+          "Try it"
+        ],
+        [
+          "<>",
+          "Not equal to",
+          "Try it"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "SQL Compound Operators"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Operator",
+          "Description"
+        ],
+        [
+          "+=",
+          "Add equals"
+        ],
+        [
+          "-=",
+          "Subtract equals"
+        ],
+        [
+          "*=",
+          "Multiply equals"
+        ],
+        [
+          "/=",
+          "Divide equals"
+        ],
+        [
+          "%=",
+          "Modulo equals"
+        ],
+        [
+          "&=",
+          "Bitwise AND equals"
+        ],
+        [
+          "^=",
+          "Bitwise exclusive equals"
+        ],
+        [
+          "|*=",
+          "Bitwise OR equals"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "SQL Logical Operators"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Operator",
+          "Description",
+          "Example"
+        ],
+        [
+          "ALL",
+          "TRUE if all of the subquery values meet the condition",
+          "Try it"
+        ],
+        [
+          "AND",
+          "TRUE if all the conditions separated by AND is TRUE",
+          "Try it"
+        ],
+        [
+          "ANY",
+          "TRUE if any of the subquery values meet the condition",
+          "Try it"
+        ],
+        [
+          "BETWEEN",
+          "TRUE if the operand is within the range of comparisons",
+          "Try it"
+        ],
+        [
+          "EXISTS",
+          "TRUE if the subquery returns one or more records",
+          "Try it"
+        ],
+        [
+          "IN",
+          "TRUE if the operand is equal to one of a list of expressions",
+          "Try it"
+        ],
+        [
+          "LIKE",
+          "TRUE if the operand matches a pattern",
+          "Try it"
+        ],
+        [
+          "NOT",
+          "Displays a record if the condition(s) is NOT TRUE",
+          "Try it"
+        ],
+        [
+          "OR",
+          "TRUE if any of the conditions separated by OR is TRUE",
+          "Try it"
+        ],
+        [
+          "SOME",
+          "TRUE if any of the subquery values meet the condition",
+          "Try it"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

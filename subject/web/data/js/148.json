@@ -1,0 +1,33 @@
+{
+  "url": "https://www.w3schools.com/js/js_number_reference.asp",
+  "title": "JavaScript Number Reference",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Number Reference"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Complete Number Reference"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Revised July 2025"
+    },
+    {
+      "type": "other",
+      "text": "Name\n    Description\n\n\n  constructor\n  Returns the function that created JavaScript's Number prototype\n\n\n  EPSILON\n  Returns the difference between 1 and the smallest number greater than 1\n\n\n  isFinite()\n  Checks whether a value is a finite number\n\n\n  isInteger()\n  Checks whether a value is an integer\n\n\n  isNaN()\n  Checks whether a value is Number.NaN\n\n\n  isSafeInteger()\n  Checks whether a value is a safe integer\n\n\n  MAX_SAFE_INTEGER\n  Returns the maximum safe integer in JavaScript.\n\n\n  MIN_SAFE_INTEGER\n  Returns the minimum safe integer in JavaScript\n\n\n  MAX_VALUE\n  Returns the largest number possible in JavaScript\n\n\n  MIN_VALUE\n  Returns the smallest number possible in JavaScript\n\n\n  NaN\n  Represents a \"Not-a-Number\" value\n\n\n  NEGATIVE_INFINITY\n  Represents negative infinity (returned on overflow)\n  \n\n  POSITIVE_INFINITY\n  Represents infinity (returned on overflow)\n\n\n  parseFloat()\n  Parses a string an returns a number\n\n\n  parseInt()\n  Parses a string an returns a whole number\n\n\n  prototype\n  Allows you to add properties and methods to an object\n\n\n  toExponential(x)\n  Converts a number into an exponential notation\n\n\n  toFixed(x)\n  Formats a number with x numbers of digits after the decimal point\n\n\n  toLocaleString()\n  Converts a number into a string, based on the locale settings\n\n\n  toPrecision(x)\n  Formats a number to x length\n\n\n  toString()\n  Converts a number to a string\n\n\n  valueOf()\n  Returns the primitive value of a number"
+    },
+    {
+      "type": "other",
+      "text": "NOTE\nAll number methods return a new value.\nThey do not change the original number."
+    },
+    {
+      "type": "other",
+      "text": "Complete JavaScript Reference\nFor a complete reference to all JavaScript properties and methods, with full descriptions and many examples, go to:\nW3Schools' Full JavaScript Reference.\nThe reference inludes all JavaScript updates from 1999 to 2025."
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "url": "https://www.w3schools.com/js/js_function_bind.asp",
+  "title": "JavaScript Function bind()",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Function bind()"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Function Borrowing"
+    },
+    {
+      "type": "paragraph",
+      "text": "With the bind() method, an object can borrow a method from another object."
+    },
+    {
+      "type": "paragraph",
+      "text": "The example below creates 2 objects (person and member)."
+    },
+    {
+      "type": "paragraph",
+      "text": "The member object borrows the fullname method from the person object:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const person = {\n  firstName:\"John\",\n  lastName: \"Doe\",\n    fullName: function () {\n    return this.firstName + \" \" + this.lastName;\n    }\n}\n\nconst member = {\n  firstName:\"Hege\",\n  lastName: \"Nilsen\",\n}\n\nlet fullName = person.fullName.bind(member);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Preserving this"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sometimes the bind() method has to be used to prevent losing this."
+    },
+    {
+      "type": "paragraph",
+      "text": "In the following example, the person object has a display method. In the display method, this refers to the person object:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const person = {\n  firstName:\"John\",\n  lastName: \"Doe\",\n    display: function () {\n    let x = document.getElementById(\"demo\");\n    x.innerHTML = this.firstName + \" \" + this.lastName;\n    }\n}\n\nperson.display();"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "When a function is used as a callback, this is lost."
+    },
+    {
+      "type": "paragraph",
+      "text": "This example will try to display the person name after 3 seconds, but it will display undefined instead:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const person = {\n  firstName:\"John\",\n  lastName: \"Doe\",\n    display: function () {\n    let x = document.getElementById(\"demo\");\n    x.innerHTML = this.firstName + \" \" + this.lastName;\n    }\n}\n\nsetTimeout(person.display, 3000);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The bind() method solves this problem."
+    },
+    {
+      "type": "paragraph",
+      "text": "In the following example, the bind() method is used to bind person.display to person."
+    },
+    {
+      "type": "paragraph",
+      "text": "This example will display the person name after 3 seconds:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const person = {\n  firstName:\"John\",\n  lastName: \"Doe\",\n    display: function () {\n    let x = document.getElementById(\"demo\");\n    x.innerHTML = this.firstName + \" \" + this.lastName;\n    }\n}\n\nlet display = person.display.bind(person);\nsetTimeout(display, 3000);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What is this?"
+    },
+    {
+      "type": "paragraph",
+      "text": "In JavaScript, the this keyword refers to an object."
+    },
+    {
+      "type": "paragraph",
+      "text": "The this keyword refers to different objects depending on how it is used:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Alone, this refers to the global object."
+        ],
+        [
+          "In a function, this refers to the global object."
+        ],
+        [
+          "In a function, in strict mode, this is undefined."
+        ],
+        [
+          "In an object method, this refers to the object."
+        ],
+        [
+          "In an event, this refers to the element that received the event."
+        ],
+        [
+          "Methods like call(), apply(),\nand bind() can refer this to any object."
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\nthis is not a variable.\nthis is a keyword.\nYou cannot change the value of this."
+    }
+  ]
+}

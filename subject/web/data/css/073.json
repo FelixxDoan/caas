@@ -1,0 +1,228 @@
+{
+  "url": "https://www.w3schools.com/css/css_table.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Tables"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "The look of an HTML table can be greatly improved with CSS:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Company",
+          "Contact",
+          "Country"
+        ],
+        [
+          "Alfreds Futterkiste",
+          "Maria Anders",
+          "Germany"
+        ],
+        [
+          "Berglunds snabbköp",
+          "Christina Berglund",
+          "Sweden"
+        ],
+        [
+          "Centro comercial Moctezuma",
+          "Francisco Chang",
+          "Mexico"
+        ],
+        [
+          "Ernst Handel",
+          "Roland Mendel",
+          "Austria"
+        ],
+        [
+          "Island Trading",
+          "Helen Bennett",
+          "UK"
+        ],
+        [
+          "Königlich Essen",
+          "Philip Cramer",
+          "Germany"
+        ],
+        [
+          "Laughing Bacchus Winecellars",
+          "Yoshi Tannamuri",
+          "Canada"
+        ],
+        [
+          "Magazzini Alimentari Riuniti",
+          "Giovanni Rovelli",
+          "Italy"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Try it Yourself »"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Table Borders"
+    },
+    {
+      "type": "paragraph",
+      "text": "To specify table borders in CSS, use the border property."
+    },
+    {
+      "type": "paragraph",
+      "text": "The example below specifies a solid border for <table>, <th>, and <td> elements:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Firstname",
+          "Lastname"
+        ],
+        [
+          "Peter",
+          "Griffin"
+        ],
+        [
+          "Lois",
+          "Griffin"
+        ]
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "table, th, td {\n  border: 1px solid;\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Full-Width Table"
+    },
+    {
+      "type": "paragraph",
+      "text": "The table above might seem small in some cases. If you need a table that should span the entire screen (full-width), add width: 100% to the \n<table> element:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Firstname",
+          "Lastname"
+        ],
+        [
+          "Peter",
+          "Griffin"
+        ],
+        [
+          "Lois",
+          "Griffin"
+        ]
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "table {\n    width: 100%;\n}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Double Borders\nNotice that the table in the examples above have double borders. This is \nbecause both the table and the <th> and <td> elements have separate borders.\nTo remove double borders, take a look at the example below."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Collapse Table Borders"
+    },
+    {
+      "type": "paragraph",
+      "text": "The border-collapse property sets whether the table borders \nshould be collapsed into a single border:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Firstname",
+          "Lastname"
+        ],
+        [
+          "Peter",
+          "Griffin"
+        ],
+        [
+          "Lois",
+          "Griffin"
+        ]
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "table\n{\n  border-collapse: collapse;\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "If you only want a border around the table, only specify the border property for \n<table>:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Firstname",
+          "Lastname"
+        ],
+        [
+          "Peter",
+          "Griffin"
+        ],
+        [
+          "Lois",
+          "Griffin"
+        ]
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "table\n{  border: 1px solid;\n}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

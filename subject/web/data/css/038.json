@@ -1,0 +1,246 @@
+{
+  "url": "https://www.w3schools.com/css/css_syllabus.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Syllabus"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Introduction"
+    },
+    {
+      "type": "other",
+      "text": ".ws-purple:hover {\n  background-color:#9723f5!important;\n}"
+    },
+    {
+      "type": "paragraph",
+      "text": "The W3Schools CSS Tutorial is comprehensive and beginner-friendly."
+    },
+    {
+      "type": "paragraph",
+      "text": "It will give you a fundamental knowledge of CSS."
+    },
+    {
+      "type": "paragraph",
+      "text": "It is designed for beginners and requires no prior experience with programming."
+    },
+    {
+      "type": "paragraph",
+      "text": "The content has been carefully made to be bite-sized, simple, and easy to understand."
+    },
+    {
+      "type": "paragraph",
+      "text": "The content has been proven by millions of users over the years. It is updated and improved frequently."
+    },
+    {
+      "type": "paragraph",
+      "text": "The syllabus outline and its sequence are structured so you can learn CSS step by step, from the introduction to creating your first application with CSS."
+    },
+    {
+      "type": "paragraph",
+      "text": "Get Started With CSS »"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Learning Outcomes"
+    },
+    {
+      "type": "other",
+      "text": "Understand how CSS is used to format and style web pages.\n    Use CSS rules and syntax to define how HTML elements look.\n    Use colors, fonts, and text properties to customize webpage text.\n    Implement different types of selectors (e.g., class, ID, element selectors) for targeted styling.\n    Use the box model properties (border, padding, and margin) to create and change the layout.\n    To organize elements on the page, use the positioning properties (static, relative, absolute, and fixed).\n    Use media queries to create responsive web pages.\n    Style borders and backgrounds with different qualities and effects.\n    Learn how to utilize CSS Flexbox to create responsive, adaptable layouts.\n    Link an external CSS file to an HTML document."
+    },
+    {
+      "type": "other",
+      "text": "Note: Are you a teacher teaching CSS? W3Schools Academy is a toolbox of features that can help you teach. It offers classroom features such as pre-built study plans, classroom administration and much more. Read more about Academy here."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Which Subjects Are CSS Relevant For?"
+    },
+    {
+      "type": "other",
+      "text": "Web pages: HTML is the \n   standard markup language for creating web pages, and CSS is the language used \n   to style them.\n\n  Computer Science (CS) / Information Technology (IT): \n  HTML together with CSS is fundamental to understanding the internet, web \n  development and programming.\n  Digital Media: Text, \n  photos, and other media can be added to digital platforms using CSS together \n  with HTML, which is essential for content creation and management.\n  Business / Entrepreneurship: Understanding how to create a website is helpful for projects related to the internet.\n  Art and Design: CSS \n  supports Web Design, creativity, and visual communication ideas that are all \n  part of web design.\n  STEM (Science, Technology, Engineering, Mathematics): \n  Building web pages with HTML and CSS is a part of technology integration in \n  STEM projects, teaching logical thinking and problem-solving.\n  Career and Technical Education (CTE): CSS together \n  with HTML is part of the curriculum for career-focused courses, especially \n  those related to web development, IT support, and digital marketing."
+    },
+    {
+      "type": "paragraph",
+      "text": "Get Started"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Activities"
+    },
+    {
+      "type": "paragraph",
+      "text": "In this tutorial we offer different activities for you to learn CSS for free:"
+    },
+    {
+      "type": "other",
+      "text": "Lessons\n    Exercises\n    Quizzes"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Sign in to Track Progress"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can also create a free account to track your progress."
+    },
+    {
+      "type": "paragraph",
+      "text": "As a signed-in user, you get access to features such as:"
+    },
+    {
+      "type": "other",
+      "text": "Learning paths\n    Sandbox and lab environments\n    Achievements\n    And much more!"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sign Up - It's free"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Overview of the Modules"
+    },
+    {
+      "type": "other",
+      "text": ".link-boxes {\n    list-style-type: none; \n    padding: 0;\n    margin: 0;\n}\n\n.link-boxes li {\n    margin: 10px 0;\n}\n\n.link-boxes a {\n    display: block;\n    padding: 10px 15px; \n    background-color: #E7E9EB;    color: #333; \n    text-decoration: none;\n    border: 1px solid #ccc; \n    border-radius: 5px; \n    font-size: 15px;\n}\n\n.link-boxes a:hover {\n    background-color: #ccc; /\n}\n\n\n\n    CSS HOME\n    CSS Introduction\n    CSS Syntax\n    CSS Selectors\n    CSS How To\n    CSS Comments\n    CSS Colors\n    CSS Backgrounds\n    CSS Borders\n    CSS Margins\n    CSS Padding\n    CSS Height/Width\n    CSS Box Model\n    CSS Outline\n    CSS Text\n    CSS Fonts\n    CSS Icons\n    CSS Links\n    CSS Lists\n    CSS Tables\n    CSS Display\n    CSS Max-width\n    CSS Position\n    CSS Z-index\n    CSS Overflow\n    CSS Float\n    CSS Inline-block\n    CSS Align\n    CSS Combinators\n    CSS Pseudo-classes\n    CSS Pseudo-elements\n    CSS Opacity\n    CSS Navigation Bar\n    CSS Dropdowns\n    CSS Image Gallery\n    CSS Image Sprites\n    CSS Attribute Selectors\n    CSS Forms\n    CSS Counters\n    CSS Website Layout\n    CSS Units\n    CSS Specificity\n    CSS Important\n    CSS Math Functions\nCSS Rounded Corners\nCSS Border Images\nCSS Backgrounds\nCSS Colors\nCSS Color Keywords\nCSS Gradients\nCSS Shadows\nCSS Text Effects\nCSS Fonts\nCSS 2D Transforms\nCSS 3D Transforms\nCSS Transitions\nCSS Animations\nCSS Tooltips\nCSS Style Images\nCSS Centering Images\nCSS Image Filter Effects\nCSS Image Shapes\nCSS object-position\nCSS Masking\nCSS Buttons\nCSS Pagination\nCSS Multiple Columns\nCSS User Interface\nCSS Variables\nCSS @property\nCSS Box Sizing\nCSS Media Queries\nCSS MQ Examples Queries\nCSS Flexbox\nCSS Responsive Web Design\nCSS Viewport\nCSS Grid View\nCSS Media Queries (Responsive)\nCSS Responsive Images\nCSS Responsive Videos\nCSS Frameworks\nCSS Responsive Templates\nCSS Grid Layout\nCSS Grid Container\nCSS Grid Item"
+    },
+    {
+      "type": "paragraph",
+      "text": "Get Started"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Sandbox and Lab Environment"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS, like any other coding language, is best learned by working hands-on with code."
+    },
+    {
+      "type": "paragraph",
+      "text": "Easily try code with our \"Try it Yourself\" editor."
+    },
+    {
+      "type": "paragraph",
+      "text": "Here, you can edit CSS code and view the result:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "body\n{  background-color: lightblue;}\nh1\n{\n  color: white;\n  text-align: center;\n}\np\n{\n   \nfont-family: verdana;\n  font-size: 20px;\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "If you want to explore more and host your project, we have a feature called Spaces \nthat allows you to build, test and deploy static websites for free."
+    },
+    {
+      "type": "paragraph",
+      "text": "Here you get a secure sandbox environment called Spaces, where you can practice coding and test projects in real-time."
+    },
+    {
+      "type": "paragraph",
+      "text": "Spaces allow you to test, build, and deploy code. This includes a W3Schools subdomain, hosting, and secure SSL certificates."
+    },
+    {
+      "type": "paragraph",
+      "text": "Spaces require no installation and run directly in the browser."
+    },
+    {
+      "type": "paragraph",
+      "text": "Features include:"
+    },
+    {
+      "type": "other",
+      "text": "Collaboration\n    File navigator\n    Terminal & log\n    Package manager\n    Database\n    Environment manager\n    Analytics"
+    },
+    {
+      "type": "paragraph",
+      "text": "Create a Spaces Account"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CSS Certification"
+    },
+    {
+      "type": "paragraph",
+      "text": "W3Schools offers an end-of-pathway certification program."
+    },
+    {
+      "type": "paragraph",
+      "text": "Here you can take exams to get certified."
+    },
+    {
+      "type": "paragraph",
+      "text": "The CSS exam is a test that summarizes the W3Schools CSS syllabus."
+    },
+    {
+      "type": "paragraph",
+      "text": "After passing the exam you get the \"Certified CSS Developer\" Certification."
+    },
+    {
+      "type": "paragraph",
+      "text": "There are two different types of certifications:"
+    },
+    {
+      "type": "other",
+      "text": "Non-adaptive\nAdaptive"
+    },
+    {
+      "type": "paragraph",
+      "text": "The non-adaptive is pass or no pass."
+    },
+    {
+      "type": "paragraph",
+      "text": "The adaptive certification is adaptive and graded; students will get a grade from intermediate, advanced to professional."
+    },
+    {
+      "type": "paragraph",
+      "text": "Buy Certificate »"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Are You a Teacher?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Are you interested in learning how you can use W3Schools Academy to Teach \nCSS?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Watch a demo of W3Schools Academy. You'll see how it works, and discover how it can make teaching programming easier and more engaging."
+    },
+    {
+      "type": "paragraph",
+      "text": "Watch Demo »"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

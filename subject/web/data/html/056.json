@@ -1,0 +1,451 @@
+{
+  "url": "https://www.w3schools.com/html/html5_semantic_elements.asp",
+  "title": "HTML ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "HTML Semantic Elements"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "Semantic elements = elements with a meaning."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What are Semantic Elements?"
+    },
+    {
+      "type": "paragraph",
+      "text": "A semantic element clearly describes its meaning to both the browser and the developer."
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples of non-semantic elements: <div> and <span> - Tells nothing about its content."
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples of semantic elements: <img>, <table>, and <article> - Clearly defines its content."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Semantic Elements in HTML"
+    },
+    {
+      "type": "paragraph",
+      "text": "Many web sites contain HTML code like:\n<div id=\"nav\"> <div class=\"header\"> <div id=\"footer\">\nto indicate navigation, header, and footer."
+    },
+    {
+      "type": "paragraph",
+      "text": "In HTML there are several semantic elements that can be used to define different parts of a web page:"
+    },
+    {
+      "type": "other",
+      "text": "<article>\n  <aside>\n  <details>\n  <figcaption>\n  <figure>\n  <footer>\n  <header>\n  <main>\n  <mark>\n  <nav>\n  <section>\n  <summary>\n  <time>"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML <section> Element"
+    },
+    {
+      "type": "paragraph",
+      "text": "The <section> element defines a section in a document."
+    },
+    {
+      "type": "paragraph",
+      "text": "According to W3C's HTML documentation: \"A section is a thematic grouping of content, typically with a heading.\""
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples of where a <section> element can be used:"
+    },
+    {
+      "type": "other",
+      "text": "Chapters\n  Introduction\n  News items\n  Contact information"
+    },
+    {
+      "type": "paragraph",
+      "text": "A web page could normally be split into sections for introduction, \ncontent, and contact information."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<section><h1>WWF</h1><p>The World Wide Fund for Nature (WWF) is an \n    international organization working on issues regarding the conservation, \n    research and restoration of the environment, formerly named the World \n    Wildlife Fund. WWF was founded in 1961.</p></section><section>\n    <h1>WWF's Panda symbol</h1><p>The Panda has become the symbol of WWF. \n    The well-known panda logo of WWF originated from a panda named Chi Chi that \n    was transferred from the Beijing Zoo to the London Zoo in the same year of \n    the establishment of WWF.</p></section>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML <article> Element"
+    },
+    {
+      "type": "paragraph",
+      "text": "The <article> element specifies independent, self-contained content."
+    },
+    {
+      "type": "paragraph",
+      "text": "An article should make sense on its own, and it should be possible to \ndistribute it independently from the rest of the web site."
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples of where the <article> element can be used:"
+    },
+    {
+      "type": "other",
+      "text": "Forum posts\n  Blog posts\n  User comments\n  Product cards\n  Newspaper articles"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<article><h2>Google Chrome</h2><p>Google Chrome is a web browser \n    developed by Google, released in 2008. Chrome is the world's most popular \n    web browser today!</p></article><article><h2>Mozilla \n    Firefox</h2><p>Mozilla Firefox is an open-source web browser developed \n    by Mozilla. Firefox has been the second most popular web browser since \n    January, 2018.</p></article><article><h2>Microsoft Edge</h2>\n    <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. \n    Microsoft Edge replaced Internet Explorer.</p></article>"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<html><head><style>.all-browsers {  margin: 0;  \n  padding: 5px;  background-color: lightgray;}.all-browsers \n  > h1, .browser {  margin: 10px;  padding: 5px;}\n  .browser {  background: white;}.browser > h2,  \n  p {  margin: 4px;  font-size: 90%;}</style>\n  </head><body><article class=\"all-browsers\">  <h1>Most \n  Popular Browsers</h1>  <article class=\"browser\">    \n  <h2>Google Chrome</h2>    <p>Google Chrome is a web browser \n  developed by Google, released in 2008. Chrome is the world's most popular web \n  browser today!</p>  </article>  <article class=\"browser\">    \n  <h2>Mozilla Firefox</h2>    <p>Mozilla Firefox is an \n  open-source web browser developed by Mozilla. Firefox has been the second most \n  popular web browser since January, 2018.</p>  </article>  \n  <article class=\"browser\">    <h2>Microsoft Edge</h2>    \n  <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. \n  Microsoft Edge replaced Internet Explorer.</p>  </article>\n  </article></body></html>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Nesting <article> in <section> or Vice Versa?"
+    },
+    {
+      "type": "paragraph",
+      "text": "The <article> \nelement specifies independent, self-contained content."
+    },
+    {
+      "type": "paragraph",
+      "text": "The <section> element defines section in a document."
+    },
+    {
+      "type": "paragraph",
+      "text": "Can we use the definitions to decide how to nest those elements? No, we cannot!"
+    },
+    {
+      "type": "paragraph",
+      "text": "So, you will find HTML pages with <section> elements \ncontaining <article> elements, and <article> elements containing <section> elements."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML <header> Element"
+    },
+    {
+      "type": "paragraph",
+      "text": "The <header> element represents a container for introductory content or \na set of navigational links."
+    },
+    {
+      "type": "paragraph",
+      "text": "A <header> element typically contains:"
+    },
+    {
+      "type": "other",
+      "text": "one or more heading elements (<h1> - <h6>)\n  logo or icon\n  authorship information"
+    },
+    {
+      "type": "paragraph",
+      "text": "Note: You can have several <header> elements in one \nHTML document. However, <header> cannot be placed within a <footer>, <address> or another <header> element."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<article>\n  <header>\n    \n <h1>What Does WWF Do?</h1>\n    <p>WWF's mission:</p>\n  </header>\n   <p>WWF's mission is to stop the degradation of our planet's natural environment,  and build a future in which humans live in harmony with nature.</p>\n </article>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML <footer> Element"
+    },
+    {
+      "type": "paragraph",
+      "text": "The <footer> element defines a footer for a document or section."
+    },
+    {
+      "type": "paragraph",
+      "text": "A <footer> element typically contains:"
+    },
+    {
+      "type": "other",
+      "text": "authorship information\n  copyright \ninformation\n  contact information\n  sitemap\n  back to top links\n  related documents"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can have several <footer> elements in one document."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<footer>\n  <p>Author: Hege Refsnes</p>\n  <p><a href=\"mailto:hege@example.com\">hege@example.com</a></p>\n </footer>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML <nav> Element"
+    },
+    {
+      "type": "paragraph",
+      "text": "The <nav> element defines a set of navigation links."
+    },
+    {
+      "type": "other",
+      "text": "Notice that NOT all links of a document should be inside a <nav> element. The \n<nav> element is intended only for major blocks of navigation links. \n  Browsers, such as screen readers for disabled users, can use this element \n  to determine whether to omit the initial rendering of this content."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<nav>\n  \n <a href=\"/html/\">HTML</a> |\n  \n <a href=\"/css/\">CSS</a> |\n  \n <a href=\"/js/\">JavaScript</a> |\n  \n <a href=\"/jquery/\">jQuery</a>\n </nav>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML <aside> Element"
+    },
+    {
+      "type": "paragraph",
+      "text": "The <aside> element defines some content aside from the content it is \nplaced in (like a sidebar)."
+    },
+    {
+      "type": "paragraph",
+      "text": "The <aside> content should be \nindirectly related to the surrounding content."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<p>My family and I visited The Epcot center this summer. The weather was \n    nice, and Epcot was amazing! I had a great summer together with my \n    family!</p><aside><h4>Epcot Center</h4><p>Epcot is a theme \n    park at Walt Disney World Resort featuring exciting attractions, \n    international pavilions, award-winning fireworks and seasonal special \n    events.</p></aside>"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<html><head><style>aside {  width: 30%;  \n  padding-left: 15px;  margin-left: 15px;  float: right;  \n  font-style: italic;  background-color: lightgray;}</style></head><body>\n  <p>My family and I visited The Epcot \n  center this summer. The weather was nice, and Epcot was amazing! I had a great \n  summer together with my family!</p><aside><p>The Epcot center is a \n  theme park at Walt Disney World Resort featuring exciting attractions, \n  international pavilions, award-winning fireworks and seasonal special \n  events.</p></aside><p>My family and I visited The Epcot center \n  this summer. The weather was nice, and Epcot was amazing! I had a great summer \n  together with my family!</p><p>My family and I visited The Epcot center \n  this summer. The weather was nice, and Epcot was amazing! I had a great summer \n  together with my family!</p></body></html>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML <figure> and <figcaption> Elements"
+    },
+    {
+      "type": "paragraph",
+      "text": "The <figure> tag specifies self-contained content, like illustrations, diagrams, photos, code listings, etc."
+    },
+    {
+      "type": "paragraph",
+      "text": "The <figcaption> tag defines a caption for a <figure> element. The <figcaption> element can be placed as the first or \nas the last child of a <figure> element."
+    },
+    {
+      "type": "paragraph",
+      "text": "The <img> element defines the actual image/illustration."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<figure>\n  <img src=\"pic_trulli.jpg\" alt=\"Trulli\">\n  <figcaption>Fig1. - Trulli, Puglia, Italy.</figcaption>\n</figure>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Why Semantic Elements?"
+    },
+    {
+      "type": "paragraph",
+      "text": "According to the W3C: \"A semantic Web allows data to be shared and reused across applications, \nenterprises, and communities.\""
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Semantic Elements in HTML"
+    },
+    {
+      "type": "paragraph",
+      "text": "Below is a list of some of the semantic elements in HTML."
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Tag",
+          "Description"
+        ],
+        [
+          "<article>",
+          "Defines independent, self-contained content"
+        ],
+        [
+          "<aside>",
+          "Defines content aside from the page content"
+        ],
+        [
+          "<details>",
+          "Defines additional details that the user can view or hide"
+        ],
+        [
+          "<figcaption>",
+          "Defines a caption for a <figure> element"
+        ],
+        [
+          "<figure>",
+          "Specifies self-contained content, like illustrations, diagrams, photos, code \nlistings, etc."
+        ],
+        [
+          "<footer>",
+          "Defines a footer for a document or section"
+        ],
+        [
+          "<header>",
+          "Specifies a header for a document or section"
+        ],
+        [
+          "<main>",
+          "Specifies the main content of a document"
+        ],
+        [
+          "<mark>",
+          "Defines marked/highlighted text"
+        ],
+        [
+          "<nav>",
+          "Defines navigation links"
+        ],
+        [
+          "<section>",
+          "Defines a section in a document"
+        ],
+        [
+          "<summary>",
+          "Defines a visible heading for a <details> element"
+        ],
+        [
+          "<time>",
+          "Defines a date/time"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "For a complete list of all available HTML tags, visit our HTML Tag Reference."
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "<article>",
+        "<aside>",
+        "<details>",
+        "<figcaption>",
+        "<figure>",
+        "<footer>",
+        "<header>",
+        "<main>",
+        "<mark>",
+        "<nav>",
+        "<section>",
+        "<summary>",
+        "<time>"
+      ]
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Chapters",
+        "Introduction",
+        "News items",
+        "Contact information"
+      ]
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Forum posts",
+        "Blog posts",
+        "User comments",
+        "Product cards",
+        "Newspaper articles"
+      ]
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "one or more heading elements (<h1> - <h6>)",
+        "logo or icon",
+        "authorship information"
+      ]
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "authorship information",
+        "copyright \ninformation",
+        "contact information",
+        "sitemap",
+        "back to top links",
+        "related documents"
+      ]
+    },
+    {
+      "type": "image",
+      "src": "https://www.w3schools.com/html/img_sem_elements.gif"
+    }
+  ]
+}

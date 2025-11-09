@@ -1,0 +1,82 @@
+{
+  "url": "https://www.w3schools.com/js/js_window_history.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Window History"
+    },
+    {
+      "type": "paragraph",
+      "text": "The window.history object contains the \nbrowsers history."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Window History"
+    },
+    {
+      "type": "paragraph",
+      "text": "The window.history object can be written without the window prefix."
+    },
+    {
+      "type": "paragraph",
+      "text": "To protect the privacy of the users, there are limitations to how JavaScript \ncan access this object."
+    },
+    {
+      "type": "paragraph",
+      "text": "Some methods:"
+    },
+    {
+      "type": "other",
+      "text": "history.back() - same as clicking back in the browser\n  history.forward() - same as clicking forward in the browser"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Window History Back"
+    },
+    {
+      "type": "paragraph",
+      "text": "The history.back() method loads the previous URL in the history list."
+    },
+    {
+      "type": "paragraph",
+      "text": "This is the same as clicking the Back button in the browser."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<html>\n<head>\n<script>\nfunction goBack() {\n  window.history.back()\n }\n</script>\n</head>\n<body>\n\n<input type=\"button\" value=\"Back\" onclick=\"goBack()\">\n\n</body>\n</html>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Window History Forward"
+    },
+    {
+      "type": "paragraph",
+      "text": "The history.forward() method loads the next URL in the history list."
+    },
+    {
+      "type": "paragraph",
+      "text": "This is the same as clicking the Forward button in the browser."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<html>\n<head>\n<script>\nfunction goForward() {\n  window.history.forward()\n }\n</script>\n</head>\n<body>\n\n<input type=\"button\" value=\"Forward\" onclick=\"goForward()\">\n\n</body>\n</html>"
+        }
+      ]
+    }
+  ]
+}

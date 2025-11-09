@@ -1,0 +1,399 @@
+{
+  "url": "https://www.w3schools.com/js/js_syntax.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Syntax"
+    },
+    {
+      "type": "other",
+      "text": "JavaScript syntax is the set of rules, how \nJavaScript programs are constructed:\n\n// How to create variables:\nvar x;\nlet y;\n\n// How to use variables:\nx = 5;\ny = 6;\nlet z = x + y;"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Values"
+    },
+    {
+      "type": "paragraph",
+      "text": "The JavaScript syntax defines two types of values:"
+    },
+    {
+      "type": "other",
+      "text": "Fixed values\nVariable values"
+    },
+    {
+      "type": "paragraph",
+      "text": "Fixed values are called Literals."
+    },
+    {
+      "type": "paragraph",
+      "text": "Variable values are called Variables."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Literals"
+    },
+    {
+      "type": "paragraph",
+      "text": "The two most important syntax rules for fixed values are:"
+    },
+    {
+      "type": "paragraph",
+      "text": "1. Numbers are written with or \nwithout decimals:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "10.50\n1001"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "2. Strings are text, written within double or single quotes:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "\"John Doe\"\n'John Doe'"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Variables"
+    },
+    {
+      "type": "paragraph",
+      "text": "In a programming language, variables \nare used to store data values."
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript uses the keywords var,\nlet and const to declare variables."
+    },
+    {
+      "type": "paragraph",
+      "text": "An equal sign is used to assign values to variables."
+    },
+    {
+      "type": "paragraph",
+      "text": "In this example, x is defined as a variable. Then, x is \nassigned (given) the value \n6:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x;\nx = 6;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Operators"
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript uses arithmetic operators ( + - * / ) to \ncompute values:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "(5 + 6) * 10"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript uses an assignment operator ( = ) to assign \nvalues to variables:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x, y;x = 5;\ny = 6;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Expressions"
+    },
+    {
+      "type": "paragraph",
+      "text": "An expression is a combination of values, variables, and operators, \nwhich computes to a value."
+    },
+    {
+      "type": "paragraph",
+      "text": "The computation is called an evaluation."
+    },
+    {
+      "type": "paragraph",
+      "text": "For example, 5 * 10 evaluates to 50:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "5 * 10"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Expressions can also contain variable values:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "x * 10"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The values can be of various types, such as numbers and strings."
+    },
+    {
+      "type": "paragraph",
+      "text": "For example, \"John\" + \" \" + \"Doe\", evaluates to \"John Doe\":"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "\"John\" + \" \" + \"Doe\""
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Keywords"
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript keywords are used to \nidentify actions to be performed."
+    },
+    {
+      "type": "paragraph",
+      "text": "The\nlet keyword tells the browser to create variables:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x, y;x = 5 + 6;y = x * 10;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The\nvar keyword also tells the browser to create variables:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "var x, y;x = 5 + 6;y = x * 10;"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "In these examples, using var\nor let will produce the same result. \nYou will learn more about var\nand let later in this tutorial."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Comments"
+    },
+    {
+      "type": "paragraph",
+      "text": "Not all JavaScript statements are \"executed\"."
+    },
+    {
+      "type": "paragraph",
+      "text": "Code after double slashes\n// or between /* and */ is treated as a comment."
+    },
+    {
+      "type": "paragraph",
+      "text": "Comments are ignored, and will not be \nexecuted:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 5;   // I will be executed// x = 6;   I will \nNOT be executed"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "You will learn more about comments in a later chapter."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Identifiers / Names"
+    },
+    {
+      "type": "paragraph",
+      "text": "Identifiers are JavaScript names."
+    },
+    {
+      "type": "paragraph",
+      "text": "Identifiers are used to name variables and keywords, and functions."
+    },
+    {
+      "type": "paragraph",
+      "text": "The rules for legal names are the same in most programming languages."
+    },
+    {
+      "type": "paragraph",
+      "text": "A JavaScript name must begin with:"
+    },
+    {
+      "type": "other",
+      "text": "A letter (A-Z or a-z)\nA dollar sign ($)\nOr an underscore (_)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Subsequent characters may be letters, digits, underscores, or dollar signs."
+    },
+    {
+      "type": "other",
+      "text": "Note\nNumbers are not allowed as the first character in names.\nThis way JavaScript can easily distinguish identifiers from numbers."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript is Case Sensitive"
+    },
+    {
+      "type": "paragraph",
+      "text": "All JavaScript identifiers are \ncase sensitive."
+    },
+    {
+      "type": "paragraph",
+      "text": "The variables lastName and lastname, \nare two different variables:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let lastname, lastName;lastName = \"Doe\";lastname = \"Peterson\";"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript does not interpret LET or Let as the keyword let."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript and Camel Case"
+    },
+    {
+      "type": "paragraph",
+      "text": "Historically, programmers have used different ways of joining multiple words into one variable name:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Hyphens:"
+    },
+    {
+      "type": "paragraph",
+      "text": "first-name, last-name, master-card, inter-city."
+    },
+    {
+      "type": "other",
+      "text": "Hyphens are not allowed in JavaScript. They are reserved for subtractions."
+    },
+    {
+      "type": "paragraph",
+      "text": "Underscore:"
+    },
+    {
+      "type": "paragraph",
+      "text": "first_name, last_name, master_card, inter_city."
+    },
+    {
+      "type": "paragraph",
+      "text": "Upper Camel Case (Pascal Case):"
+    },
+    {
+      "type": "paragraph",
+      "text": "FirstName, LastName, MasterCard, InterCity."
+    },
+    {
+      "type": "paragraph",
+      "text": "Lower Camel Case:"
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript programmers tend to use camel case that starts with a lowercase letter:"
+    },
+    {
+      "type": "paragraph",
+      "text": "firstName, lastName, masterCard, interCity."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Character Set"
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript uses the Unicode character set."
+    },
+    {
+      "type": "paragraph",
+      "text": "Unicode covers (almost) all the characters, punctuations, and symbols in the world."
+    },
+    {
+      "type": "paragraph",
+      "text": "For a closer look, please study our Complete Unicode Reference."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Video: JavaScript Syntax"
+    }
+  ]
+}

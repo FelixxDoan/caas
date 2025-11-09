@@ -1,0 +1,124 @@
+{
+  "url": "https://www.w3schools.com/css/css_comments.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Comments"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS comments are not displayed in the browser, but they can \nhelp document your source code."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CSS Comments"
+    },
+    {
+      "type": "paragraph",
+      "text": "Comments are used to explain the code, and may help when you edit the source code at a later date."
+    },
+    {
+      "type": "paragraph",
+      "text": "Comments are ignored by browsers."
+    },
+    {
+      "type": "paragraph",
+      "text": "A CSS comment is placed inside the <style> element, and starts with /* and ends with */:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "/* This is a single-line comment */p\n{\n   \ncolor: red;\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "You can add comments wherever you want in the code:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "p\n{\n   \ncolor: red; \n  /* Set text color to red */\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Even in the middle of a code line:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "p\n{\n   \ncolor: /*red*/blue; \n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Comments can also span \nmultiple lines:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "/* This isa multi-linecomment */\np\n{\n   \ncolor: red;\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML and CSS Comments"
+    },
+    {
+      "type": "paragraph",
+      "text": "From the HTML tutorial, you learned that you can add comments to your HTML source by using the \n<!--...--> syntax."
+    },
+    {
+      "type": "paragraph",
+      "text": "In the following example, we use a combination of HTML and CSS comments:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<!DOCTYPE html><html><head><style>p {  color: red; /* Set \n  text color to red */} </style></head><body><h2>My \n  Heading</h2><!-- These paragraphs will be red --><p>Hello \n  World!</p><p>This paragraph is styled with CSS.</p><p>HTML \n  and CSS comments are \n  not shown in the output.</p></body></html>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Video: CSS Comments"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

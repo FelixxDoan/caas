@@ -1,0 +1,212 @@
+{
+  "url": "https://www.w3schools.com/html/html_basic.asp",
+  "title": "HTML",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "HTML Basic Examples"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "In this chapter we will show some basic HTML examples."
+    },
+    {
+      "type": "paragraph",
+      "text": "Don't worry if we use tags you have not learned about yet."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML Documents"
+    },
+    {
+      "type": "paragraph",
+      "text": "All HTML documents must start with a document type declaration: <!DOCTYPE html>."
+    },
+    {
+      "type": "paragraph",
+      "text": "The HTML document itself begins with <html> and ends with </html>."
+    },
+    {
+      "type": "paragraph",
+      "text": "The visible part of the HTML document is between <body> and </body>."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<!DOCTYPE html><html><body><h1>My First Heading</h1><p>My first paragraph.</p></body></html>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The <!DOCTYPE> Declaration"
+    },
+    {
+      "type": "paragraph",
+      "text": "The <!DOCTYPE> declaration represents the document type, and helps browsers to display web pages correctly."
+    },
+    {
+      "type": "paragraph",
+      "text": "It must only appear once, at the top of the page (before any HTML tags)."
+    },
+    {
+      "type": "paragraph",
+      "text": "The <!DOCTYPE> declaration is not case sensitive."
+    },
+    {
+      "type": "paragraph",
+      "text": "The <!DOCTYPE> declaration for HTML5 is:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<!DOCTYPE html>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML Headings"
+    },
+    {
+      "type": "paragraph",
+      "text": "HTML headings are defined with the <h1> to <h6> tags."
+    },
+    {
+      "type": "paragraph",
+      "text": "<h1> defines the most important heading. <h6> defines the least important \nheading:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<h1>This is heading 1</h1>\n<h2>This is heading 2</h2>\n<h3>This is heading 3</h3>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML Paragraphs"
+    },
+    {
+      "type": "paragraph",
+      "text": "HTML paragraphs are defined with the <p> tag:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<p>This is a paragraph.</p>\n<p>This is another paragraph.</p>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML Links"
+    },
+    {
+      "type": "paragraph",
+      "text": "HTML links are defined with the <a> tag:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<a href=\"https://www.w3schools.com\">This is a link</a>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The link's destination is specified in the href attribute."
+    },
+    {
+      "type": "paragraph",
+      "text": "Attributes are used to provide additional information about HTML elements."
+    },
+    {
+      "type": "paragraph",
+      "text": "You will learn more about attributes in a later chapter."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML Images"
+    },
+    {
+      "type": "paragraph",
+      "text": "HTML images are defined with the <img> tag."
+    },
+    {
+      "type": "paragraph",
+      "text": "The source file (src), alternative text (alt), \nwidth, and height are provided as attributes:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<img src=\"w3schools.jpg\" alt=\"W3Schools.com\" width=\"104\" height=\"142\">"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How to View HTML Source"
+    },
+    {
+      "type": "paragraph",
+      "text": "Have you ever seen a Web page and wondered \"Hey! How did they do that?\""
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "View HTML Source Code:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Click CTRL + U in an HTML page, or right-click on the page and select \"View Page Source\". This will open a \nnew tab \ncontaining the HTML source code of the page."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Inspect an HTML Element:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Right-click on an element (or a blank area), and choose \"Inspect\" to see what elements are made up of (you will see both \nthe HTML and the CSS). You can also edit the HTML or CSS on-the-fly in the \nElements or Styles panel that opens."
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

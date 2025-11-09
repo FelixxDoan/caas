@@ -1,0 +1,163 @@
+{
+  "url": "https://www.w3schools.com/js/js_sets.asp",
+  "title": "JavaScript Sets",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Sets"
+    },
+    {
+      "type": "other",
+      "text": "A JavaScript Set is a collection of unique values.\nEach value can only occur once in a Set.\nThe values can be of any type, primitive values or objects."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How to Create a Set"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can create a JavaScript Set by:"
+    },
+    {
+      "type": "other",
+      "text": "Passing an array to new Set()\nCreate an empty set and use add() to add values"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The new Set() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "Pass an array to the new Set() constructor:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create a Set\nconst letters = new Set([\"a\",\"b\",\"c\"]);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Create a Set and add values:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create a Set\nconst letters = new Set();\n\n// Add Values to the Set\nletters.add(\"a\");\nletters.add(\"b\");\nletters.add(\"c\");"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Create a Set and add variables:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create a Set\nconst letters = new Set();\n\n// Create Variables\nconst a = \"a\";\nconst b = \"b\";\nconst c = \"c\";\n\n// Add Variables to the Set\nletters.add(a);\nletters.add(b);\nletters.add(c);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The add() Method"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "letters.add(\"d\");\nletters.add(\"e\");"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "If you add equal elements, only the first will be saved:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "letters.add(\"a\");\nletters.add(\"b\");\nletters.add(\"c\");\nletters.add(\"c\");\nletters.add(\"c\");\nletters.add(\"c\");\nletters.add(\"c\");\nletters.add(\"c\");"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Listing the Elements"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can list all Set elements (values) with a for..of loop:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create a Set\nconst letters = new Set([\"a\",\"b\",\"c\"]);\n\n// List all Elements\nlet text = \"\";\nfor (const x of letters) {\n  text += x;\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Sets are Objects"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "typeof letters;      // Returns object"
+        },
+        {
+          "language": "unknown",
+          "code": "letters instanceof Set;  // Returns true"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Learn More:\nJavaScript Set Logic\nJavaScript Set Reference\nJavaScript Map Reference"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Browser Support"
+    },
+    {
+      "type": "paragraph",
+      "text": "Set is an ES6  feature."
+    },
+    {
+      "type": "paragraph",
+      "text": "ES6 is fully supported in all modern browsers since June 2017:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome51\n    Edge15\n    Firefox54\n    Safari10\n    Opera38\n  \n  \n    May 2016\n    Apr 2017\n    Jun 2017\n    Sep 2016\n    Jun 2016"
+    }
+  ]
+}

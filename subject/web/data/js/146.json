@@ -1,0 +1,37 @@
+{
+  "url": "https://www.w3schools.com/js/js_precedence.asp",
+  "title": "JavaScript Operator Precedence",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Operator Precedence"
+    },
+    {
+      "type": "other",
+      "text": "Order of Operation\nOperator precedence describes the order in which operations are performed in \nan arithmetic expression.\nMultiplication (*) and division (/) have higher precedence than \naddition (+) and subtraction (-)."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 100 + 50 * 3;"
+        },
+        {
+          "language": "unknown",
+          "code": "let x = (100 + 50) * 3;"
+        },
+        {
+          "language": "unknown",
+          "code": "let x = 100 / 50 * 3;"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Operator Precedence Values\nExpressions in parentheses are computed before the rest of the expression\nFunction are executed before the result is used in the rest of the expression\n\n\n \n  Val\n  Operator\n  Description\n  Example\n \n \n  18\n  ( )\n  Expression Grouping\n  (100 + 50) * 3\n \n \n  17\n  .\n  Member Of\n  person.name\n \n \n  17\n  []\n  Member Of\n  person[\"name\"]\n \n \n  17\n  ?.\n  Optional Chaining\n  ES2020\n  x ?. y\n \n \n  17\n  ()\n  Function Call\n  myFunction()\n \n \n  17\n  new\n  New with Arguments\n  new Date(\"June 5,2022\")\n \n \n  16\n  new\n  New without Arguments\n  new Date()\n \n\n\nIncrement Operators\nPostfix increments are executed before prefix increments\n\n \n  15\n  ++\n  Postfix Increment\n  i++\n \n \n  15\n  --\n  Postfix Decrement\n  i--\n \n \n  14\n  ++\n  Prefix Increment\n  ++i\n \n \n  14\n  --\n  Prefix Decrement\n  --i\n \n\n\n\nNOT Operators\n\n\n\n \n  14\n  !\n  Logical NOT\n  !(x==y)\n \n \n  14\n  ~\n  Bitwise NOT\n  ~x\n \n\n\n\nUnary Operators\n\n \n  14\n  +\n  Unary Plus\n  +x\n \n \n  14\n  -\n  Unary Minus\n  -x\n \n \n  14\n  typeof\n  Data Type\n  typeof x\n \n \n  14\n  void\n  Evaluate Void\n  void(0)\n \n \n  14\n  delete\n  Property Delete\n  delete myCar.color\n \n\n\n\nArithmetic Operators\nExponentiations are executed before multiplications\nMultiplications and divisions are executed before additions and subtractions\n\n\n\n \n  13\n  **\n  Exponentiation\n  ES2016\n  10 ** 2\n \n \n  12\n  *\n  Multiplication\n  10 * 5\n \n \n  12\n  /\n  Division\n  10 / 5\n \n \n  12\n  %\n  Division Remainder\n  10 % 5\n \n \n  11\n  +\n  Addition\n  10 + 5\n \n \n  11\n  -\n  Subtraction\n  10 - 5\n \n \n  11\n  +\n  Concatenation\n  \"John\" + \"Doe\"\n \n\n\n\nShift Operators\n\n\n \n  10\n  <<\n  Shift Left\n  x << 2\n \n \n  10\n  >>\n  Shift Right (signed)\n  x >> 2\n \n \n  10\n  >>>\n  Shift Right (unsigned)\n  x >>> 2\n \n\n\n\nRelational Operators\n\n\n \n  9\n  in\n  Property in Object\n  \"PI\" in Math\n \n \n  9\n  instanceof\n  Instance of Object\n  x instanceof Array\n \n\n\n\nComparison Operators\n\n\n \n  9\n  <\n  Less than\n  x < y \n \n \n  9\n  <=\n  Less than or equal\n  x <= y\n \n \n  9\n  >\n  Greater than\n  x > y\n \n \n  9\n  >=\n  Greater than or equal\n  x >= Array\n \n \n  8\n  ==\n  Equal\n  x == y\n \n \n  8\n  ===\n  Strict equal\n  x === y\n \n \n  8\n  !=\n  Unequal\n  x != y\n \n \n  8\n  !==\n  Strict unequal\n  x !== y\n \n\n\nBitwise Operators\n\n \n  7\n  &\n  Bitwise AND\n  x & y\n \n \n  6\n  ^\n  Bitwise XOR\n  x ^ y\n \n \n  5\n  |\n  Bitwise OR\n  x | y\n \n\n\n\nLogical Operators\n\n\n \n  4\n  &&\n  Logical AND\n  x && y\n \n \n  3\n  ||\n  Logical OR\n  x || y\n \n \n  3\n  ??\n  Nullish Coalescing\n  ES2020\n  x ?? y\n \n\n\n\nConditional (ternary) Operator\n\n\n\n \n  2\n  ? :\n  Condition\n  ? \"yes\" : \"no\"\n \n\n\n\nAssignment Operators\nAssignments are executed after other operations\n\n\n\n \n  2\n  =\n  Simple Assignment\n  x = y\n \n \n  2\n  :\n  Colon Assignment\n  x: 5\n \n \n  2\n  +=\n  Addition Assignment\n  x += y\n \n \n  2\n  -=\n  Subtraction Assignment\n  x -= y\n \n \n  2\n  *=\n  Multiplication Assignment\n  x *= y\n \n \n  2\n  **=\n  Exponentiation Assignment\n  x **= y\n \n \n  2\n  /=\n  Division Assignment\n  x /= y\n \n \n  2\n  %=\n  Remainder Assignment\n  x %= y\n \n \n  2\n  <<=\n  Left Shift Assignment\n  x <<= y\n \n \n  2\n  >>=\n  Right Shift Assignment\n  x >>= y\n \n \n  2\n  >>>=\n  Unsigned Right Shift\n  x >>>= y\n \n \n  2\n  &=\n  Bitwise AND Assignment\n  x &= y\n \n \n  2\n  |=\n  Bitwise OR Assignment\n  x |= y\n \n \n  2\n  ^=\n  Bitwise XOR Assignment\n  x ^= y\n \n \n  2\n  &&=\n  Logical AND Assignment\n  x &&= y\n \n \n  2\n  ||=\n  Logical OR Assignment\n  x ||= y\n \n\n \n  2\n  =>\n  Arrow\n  x => y\n \n \n  2\n  yield\n  Pause / Resume\n  yield x\n \n \n  2\n  yield*\n  Delegate\n  yield* x\n \n \n  2\n  ...\n  Spread\n  ... x\n \n \n  1\n  ,\n  Comma\n  x , y"
+    }
+  ]
+}

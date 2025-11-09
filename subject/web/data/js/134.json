@@ -1,0 +1,207 @@
+{
+  "url": "https://www.w3schools.com/js/js_function_parameters.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Function Parameters"
+    },
+    {
+      "type": "paragraph",
+      "text": "A JavaScript function does not perform any checking on \nparameter values (arguments)."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Function Parameters and Arguments"
+    },
+    {
+      "type": "paragraph",
+      "text": "Earlier in this tutorial, you learned that functions can have \nparameters:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "function functionName(parameter1, parameter2, parameter3) {\n    // code to be executed\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Function parameters are the names listed in \nthe function definition."
+    },
+    {
+      "type": "paragraph",
+      "text": "Function arguments are the real values \npassed to (and received by) the function."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Parameter Rules"
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript function definitions do not specify data types for \nparameters."
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript functions do not perform type checking on the passed \narguments."
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript functions do not check the number of arguments received."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Default Parameters"
+    },
+    {
+      "type": "paragraph",
+      "text": "If a function is called with missing arguments (less than declared), the missing values are set to\nundefined."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sometimes this is acceptable, but sometimes it is better to assign a default \nvalue to the parameter:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "function myFunction(x, y) {\n    if (y === undefined) {\n    y = 2;\n     }\n\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Default Parameter Values"
+    },
+    {
+      "type": "paragraph",
+      "text": "ES6 allows function parameters to have default values."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "function myFunction(x, y = 10) { \n  return x + y;}myFunction(5);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Function Rest Parameter"
+    },
+    {
+      "type": "paragraph",
+      "text": "The rest parameter (...) allows a function to treat an indefinite number of arguments as an array:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "function sum(...args) {\n  let sum = 0;\n  for (let arg of args) sum += arg;\n  return sum;\n}\nlet x = sum(4, 9, 16, 25, 29, 100, 66, 77);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Arguments Object"
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript functions have a built-in object called the arguments \nobject."
+    },
+    {
+      "type": "paragraph",
+      "text": "The argument object contains an array of the arguments used when the function \nwas called (invoked)."
+    },
+    {
+      "type": "paragraph",
+      "text": "This way you can simply use a function to find (for instance) the highest \nvalue in a list of numbers:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "x = findMax(1, 123, 500, 115, 44, 88);function findMax() {\n  let max = -Infinity;\n    for (let i = 0; i < arguments.length; i++) {\n      if (arguments[i] > max) {\n      max = arguments[i];\n      }\n    }\n    return max;\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Or create a function to sum all input values:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "x = sumAll(1, 123, 500, 115, 44, 88);\n\nfunction sumAll() {\n  let sum = 0;\n    for (let i = 0; i < arguments.length; i++) {\n    sum += arguments[i];\n    }\n    return sum;\n}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "If a function is called with too many arguments (more than declared),\nthese arguments can be reached using the arguments object."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Arguments are Passed by Value"
+    },
+    {
+      "type": "paragraph",
+      "text": "The parameters, in a function call, are the function's arguments."
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript arguments are passed by value: The function only \ngets to know the values, not the argument's locations."
+    },
+    {
+      "type": "paragraph",
+      "text": "If a function changes an argument's value, it does not change the parameter's \noriginal value."
+    },
+    {
+      "type": "paragraph",
+      "text": "Changes to arguments are not visible (reflected) outside the function."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Objects are Passed by Reference"
+    },
+    {
+      "type": "paragraph",
+      "text": "In JavaScript, object references are values."
+    },
+    {
+      "type": "paragraph",
+      "text": "Because of this, objects will behave like they are passed by reference:"
+    },
+    {
+      "type": "paragraph",
+      "text": "If a function changes an object property, it changes the original value."
+    },
+    {
+      "type": "paragraph",
+      "text": "Changes to object properties are visible (reflected) outside the function."
+    }
+  ]
+}

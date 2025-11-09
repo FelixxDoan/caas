@@ -1,0 +1,97 @@
+{
+  "url": "https://www.w3schools.com/js/js_api_fetch.asp",
+  "title": "JavaScript Fetch API",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Fetch API"
+    },
+    {
+      "type": "other",
+      "text": "The Fetch API interface allows web browser to make HTTP requests to web servers.\n😀 No need for XMLHttpRequest anymore."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Browser Support"
+    },
+    {
+      "type": "paragraph",
+      "text": "The numbers in the table specify the first browser versions that fully support Fetch API:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Chrome 42",
+          "Edge 14",
+          "Firefox 40",
+          "Safari 10.1",
+          "Opera 29"
+        ],
+        [
+          "Apr 2015",
+          "Aug 2016",
+          "Aug 2015",
+          "Mar 2017",
+          "Apr 2015"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "A Fetch API Example"
+    },
+    {
+      "type": "paragraph",
+      "text": "The example below fetches a file and displays the content:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "fetch(file).then(x => x.text()).then(y => myDisplay(y));"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Since Fetch is based on async and await, the example above might be easier to understand like this:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "async function getText(file) {\n  let x = await fetch(file);\n  let y = await x.text();\n  myDisplay(y);\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Or even better: Use understandable names instead of x and y:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "async function getText(file) {\n  let myObject = await fetch(file);\n  let myText = await myObject.text();\n  myDisplay(myText);\n}"
+        }
+      ]
+    }
+  ]
+}

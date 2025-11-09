@@ -1,0 +1,74 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_case.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL CASE Expression"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "heading",
+      "text": "The SQL CASE Expression"
+    },
+    {
+      "type": "paragraph",
+      "text": "The CASE expression goes through conditions and returns a value when the first condition is \nmet (like an if-then-else statement). So, once a condition is true, it will stop \nreading and return the result. If no conditions are true, it returns \nthe value in the ELSE clause."
+    },
+    {
+      "type": "paragraph",
+      "text": "If there is no ELSE part and no conditions are true, it returns NULL."
+    },
+    {
+      "type": "heading",
+      "text": "CASE Syntax"
+    },
+    {
+      "type": "other",
+      "text": "CASE    WHEN condition1 THEN result1    \n  WHEN condition2 THEN result2    WHEN \n  conditionN THEN resultN    ELSE resultEND;"
+    },
+    {
+      "type": "heading",
+      "text": "Demo Database"
+    },
+    {
+      "type": "paragraph",
+      "text": "Below is a selection from the \"OrderDetails\" table in the Northwind sample database:"
+    },
+    {
+      "type": "other",
+      "text": "OrderDetailID\n    OrderID\n    ProductID\n    Quantity\n  \n  \n    1\n    10248\n    11\n    12\n  \n  \n    2\n    10248\n    42\n    10\n  \n  \n    3\n    10248\n    72\n    5\n  \n  \n    4\n    10249\n    14\n    9\n  \n  \n    5\n    10249\n    51\n    40"
+    },
+    {
+      "type": "heading",
+      "text": "SQL CASE Examples"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL goes through conditions and returns a value when the first condition is met:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n  SELECT OrderID, Quantity,CASE    WHEN Quantity > 30 \n  THEN 'The quantity is greater than 30'    WHEN Quantity = 30 THEN 'The \n  quantity is 30'    ELSE 'The quantity is under 30'END AS QuantityTextFROM OrderDetails;\nTry it Yourself »"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL will order the customers by City. However, if City is NULL, then order by Country:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n  SELECT CustomerName, City, CountryFROM CustomersORDER BY(CASE    \n  WHEN City IS NULL THEN Country    ELSE CityEND);\nTry it Yourself »"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

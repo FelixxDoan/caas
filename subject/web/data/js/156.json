@@ -1,0 +1,622 @@
+{
+  "url": "https://www.w3schools.com/js/js_mistakes.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Common Mistakes"
+    },
+    {
+      "type": "paragraph",
+      "text": "This chapter points out some common JavaScript mistakes."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Accidentally Using the Assignment Operator"
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript programs may generate unexpected results if a programmer \naccidentally uses an assignment operator (=), instead of a comparison operator \n(==) in an if statement."
+    },
+    {
+      "type": "paragraph",
+      "text": "This if statement returns false (as \nexpected) because x is \nnot equal to 10:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 0;if (x == 10)"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "This if statement returns true (maybe not \nas expected), because 10 is  \ntrue:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 0;if (x = 10)"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "This if statement returns false (maybe not \nas expected), because 0 is  \nfalse:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 0;if (x = 0)"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "An assignment always returns the value of the assignment."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Expecting Loose Comparison"
+    },
+    {
+      "type": "paragraph",
+      "text": "In regular comparison, data type does not matter. This if statement returns \ntrue:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 10;\nlet y = \"10\";if (x == y)"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "In strict comparison, data type does matter. This if statement returns false:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 10;\nlet y = \"10\";if (x === y)"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "It is a common mistake to forget that switch statements use strict \ncomparison:"
+    },
+    {
+      "type": "paragraph",
+      "text": "This case switch will display an alert:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 10;\nswitch(x) {  case 10: alert(\"Hello\");\n    }"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "This case switch will not display an alert:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 10;switch(x) {  case \"10\": alert(\"Hello\");\n    }"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Confusing Addition & Concatenation"
+    },
+    {
+      "type": "paragraph",
+      "text": "Addition is about adding numbers."
+    },
+    {
+      "type": "paragraph",
+      "text": "Concatenation is about adding strings."
+    },
+    {
+      "type": "paragraph",
+      "text": "In JavaScript both operations use the same + operator."
+    },
+    {
+      "type": "paragraph",
+      "text": "Because of this, adding a number as a number will produce a different \nresult from adding a number as a string:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 10;\nx = 10 + 5;       // \n    Now x is 15\n\nlet y = 10;\ny += \"5\";        \n    // Now y is \"105\""
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "When adding two variables, it can be difficult to anticipate the result:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 10;\nlet y = 5;\nlet z = x + y;     // Now z is 15\nlet x = 10;\nlet y = \"5\";\nlet z = x + y;     // Now z is \"105\""
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Misunderstanding Floats"
+    },
+    {
+      "type": "paragraph",
+      "text": "All numbers in JavaScript are stored as 64-bits Floating point numbers \n(Floats)."
+    },
+    {
+      "type": "paragraph",
+      "text": "All programming languages, including JavaScript, have difficulties with \nprecise floating point values:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 0.1;\nlet y = 0.2;let z = x + y            \n    // the result in z will not be 0.3"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "To solve the problem above, it helps to multiply and divide:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let z = (x * 10 + y * 10) / 10;       // z will be 0.3"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Breaking a JavaScript String"
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript will allow you to break a statement into two lines:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x =\"Hello World!\";"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "But, breaking a statement in the middle of a string will not work:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = \"HelloWorld!\";"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "You must use a \"backslash\" if you must break a statement in a string:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = \"Hello \\World!\";"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Misplacing Semicolon"
+    },
+    {
+      "type": "paragraph",
+      "text": "Because of a misplaced semicolon, this code block will execute regardless of \nthe value of x:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "if (x == 19);{\n    // code block  }"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Breaking a Return Statement"
+    },
+    {
+      "type": "paragraph",
+      "text": "It is a default JavaScript behavior to close a statement automatically at the \nend of a line."
+    },
+    {
+      "type": "paragraph",
+      "text": "Because of this, these two examples will return the same result:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "function myFunction(a) {\n    let power = 10    return a * power}"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "function myFunction(a) {\n    let power = 10;  return a * power;}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript will also allow you to break a statement into two lines."
+    },
+    {
+      "type": "paragraph",
+      "text": "Because of this, example 3 will also return the same result:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "function myFunction(a) {\n    let  power = 10;    return a * power;}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "But, what will happen if you break the return statement in two lines like \nthis:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "function myFunction(a) {\n    let  power = 10;    return  a * power;}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The function will return undefined!"
+    },
+    {
+      "type": "paragraph",
+      "text": "Why? Because JavaScript thought you meant:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "function myFunction(a) {\n    let  power = 10;    return;  a * power;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Explanation"
+    },
+    {
+      "type": "paragraph",
+      "text": "If a statement is incomplete like:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript will try to complete the statement by reading the next line:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "power = 10;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "But since this statement is complete:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "return"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript will automatically close it like this:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "return;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "This happens because closing (ending) statements with semicolon is optional in \nJavaScript."
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript will close the return statement at the end of the line, because \nit is a complete statement."
+    },
+    {
+      "type": "other",
+      "text": "Never break a return statement."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Accessing Arrays with Named Indexes"
+    },
+    {
+      "type": "paragraph",
+      "text": "Many programming languages support arrays with named indexes."
+    },
+    {
+      "type": "paragraph",
+      "text": "Arrays with named indexes are called associative \narrays (or hashes)."
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript does not support arrays with named indexes."
+    },
+    {
+      "type": "paragraph",
+      "text": "In JavaScript, arrays use numbered indexes:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const person = [];\nperson[0] = \"John\";\nperson[1] = \"Doe\";\nperson[2] = 46;person.length;       \n // person.length will return 3person[0];           \n // person[0] will return \"John\""
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "In JavaScript, objects use named indexes."
+    },
+    {
+      "type": "paragraph",
+      "text": "If you use a named index, when accessing an array, JavaScript will redefine \nthe array to a standard object."
+    },
+    {
+      "type": "paragraph",
+      "text": "After the automatic redefinition, array methods and properties will produce undefined or \nincorrect results:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const person = [];\nperson[\"firstName\"] = \"John\";\nperson[\"lastName\"] = \"Doe\";\nperson[\"age\"] = 46;person.length;      // person.length will \n return 0person[0];          \n // person[0] will return undefined"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Ending Definitions with a Comma"
+    },
+    {
+      "type": "paragraph",
+      "text": "Trailing commas in object and array definition are legal in ECMAScript 5."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "person = {firstName:\"John\", lastName:\"Doe\", age:46,}"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "points = [40, 100, 1, 5, 25, 10,];"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "WARNING !!\nInternet Explorer 8 will crash.\nJSON does not allow trailing commas."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "person = {\"firstName\":\"John\", \"lastName\":\"Doe\", \"age\":46}"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "points = [40, 100, 1, 5, 25, 10];"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Undefined is Not Null"
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript objects, variables, properties, and methods can be undefined."
+    },
+    {
+      "type": "paragraph",
+      "text": "In addition, empty JavaScript objects can have the value null."
+    },
+    {
+      "type": "paragraph",
+      "text": "This can make it a little bit difficult to test if an object is empty."
+    },
+    {
+      "type": "paragraph",
+      "text": "You can test if an object exists by testing if the type is  undefined:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "if (typeof myObj === \"undefined\")"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "But you cannot test if an object is null, because this will throw an error if the \nobject is undefined:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "if (myObj === null)"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "To solve this problem, you must test if an object is not null, \nand not undefined."
+    },
+    {
+      "type": "paragraph",
+      "text": "But this can still throw an error:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "if (myObj !== null && typeof myObj \n  !== \"undefined\")"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Because of this, you must test for not undefined before you can \ntest for not null:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "if (typeof myObj !== \"undefined\" && myObj !== null)"
+        }
+      ]
+    }
+  ]
+}

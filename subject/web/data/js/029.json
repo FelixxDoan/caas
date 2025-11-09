@@ -1,0 +1,218 @@
+{
+  "url": "https://www.w3schools.com/js/js_json_php.asp",
+  "title": "JSON",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JSON PHP"
+    },
+    {
+      "type": "paragraph",
+      "text": "A common use of JSON is to read data from a web server, \nand display the data in a web page."
+    },
+    {
+      "type": "paragraph",
+      "text": "This chapter will teach you how to exchange JSON data between \nthe client and a PHP server."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The PHP File"
+    },
+    {
+      "type": "paragraph",
+      "text": "PHP has some built-in functions to handle JSON."
+    },
+    {
+      "type": "paragraph",
+      "text": "Objects in PHP can be converted into JSON by using the PHP function\njson_encode():"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<?php$myObj->name = \"John\";$myObj->age = 30;$myObj->city = \"New \n  York\";$myJSON = json_encode($myObj);echo $myJSON;?>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Client JavaScript"
+    },
+    {
+      "type": "paragraph",
+      "text": "Here is a JavaScript on the client, using an AJAX call to request the PHP \nfile from the example above:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const xmlhttp = new XMLHttpRequest();\nxmlhttp.onload = function() {\n  const myObj = JSON.parse(this.responseText);\n  document.getElementById(\"demo\").innerHTML = myObj.name;\n}\nxmlhttp.open(\"GET\", \"demo_file.php\");\nxmlhttp.send();"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "PHP Array"
+    },
+    {
+      "type": "paragraph",
+      "text": "Arrays in PHP will also be converted into JSON when using the PHP function\njson_encode():"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<?php$myArr = array(\"John\", \"Mary\", \"Peter\", \"Sally\");$myJSON = json_encode($myArr);echo $myJSON;?>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Client JavaScript"
+    },
+    {
+      "type": "paragraph",
+      "text": "Here is a JavaScript on the client, using an AJAX call to request the PHP \nfile from the array example above:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "var xmlhttp = new XMLHttpRequest();\nxmlhttp.onload = function() {\n  const myObj = JSON.parse(this.responseText);\n  document.getElementById(\"demo\").innerHTML = myObj[2];\n}\nxmlhttp.open(\"GET\", \"demo_file_array.php\", true);\nxmlhttp.send();"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "PHP Database"
+    },
+    {
+      "type": "paragraph",
+      "text": "PHP is a server side programming language, and can be used to access a database."
+    },
+    {
+      "type": "paragraph",
+      "text": "Imagine you have a database on your server, and you want to send a request to \nit from the client where you ask for the 10 first rows in a table called \n\"customers\"."
+    },
+    {
+      "type": "paragraph",
+      "text": "On the client, make a JSON object that describes the numbers of rows you want to return."
+    },
+    {
+      "type": "paragraph",
+      "text": "Before you send the request to the server, convert the JSON object into a \nstring and send it as a parameter to the url of the PHP page:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const limit = {\"limit\":10};\nconst dbParam = JSON.stringify(limit);\nxmlhttp = new XMLHttpRequest();\nxmlhttp.onload = function() {\n  document.getElementById(\"demo\").innerHTML = this.responseText;\n}\nxmlhttp.open(\"GET\",\"json_demo_db.php?x=\" + dbParam);\nxmlhttp.send();"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Example explained:"
+    },
+    {
+      "type": "other",
+      "text": "Define an object containing a \"limit\" property and value.\n  Convert the object into a JSON string.\n  Send a request to the PHP file, with the JSON string as a parameter.\n  Wait until the request returns with the result (as JSON)\n  Display the result received from the PHP file."
+    },
+    {
+      "type": "paragraph",
+      "text": "Take a look at the PHP file:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<?phpheader(\"Content-Type: application/json; charset=UTF-8\");$obj = \n  json_decode($_GET[\"x\"], false);\n  $conn = new mysqli(\"myServer\", \"myUser\", \"myPassword\", \"Northwind\");\n  $stmt = $conn->prepare(\"SELECT name FROM customers LIMIT ?\");$stmt->bind_param(\"s\", $obj->limit);$stmt->execute();$result = $stmt->get_result();\n  $outp = $result->fetch_all(MYSQLI_ASSOC);echo json_encode($outp);?>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "PHP File explained:"
+    },
+    {
+      "type": "other",
+      "text": "Convert the request into an object, using the PHP function\n  json_decode().\n  Access the database, and fill an array with the requested data.\n  Add the array to an object, and return the object as JSON using \nthe json_encode() function."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Use the Data"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "xmlhttp.onload = function() {\n  const myObj = JSON.parse(this.responseText);\n  let text = \"\";\n  for (let x in myObj) {\n    text += myObj[x].name + \"<br>\";\n  } \n  document.getElementById(\"demo\").innerHTML = text;\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "PHP Method = POST"
+    },
+    {
+      "type": "paragraph",
+      "text": "When sending data to the server, it is often best to use the HTTP POST method."
+    },
+    {
+      "type": "paragraph",
+      "text": "To send AJAX requests using the POST method, specify the method, and the correct header."
+    },
+    {
+      "type": "paragraph",
+      "text": "The data sent to the server must now be an argument to the send() method:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const dbParam = JSON.stringify({\"limit\":10});\nconst xmlhttp = new XMLHttpRequest();\nxmlhttp.onload = function() {\n  const myObj = JSON.parse(this.responseText);\n  let text =\"\";\n  for (let x in myObj) {\n    text += myObj[x].name + \"<br>\";\n  }\n  document.getElementById(\"demo\").innerHTML = text;\n}\nxmlhttp.open(\"POST\", \"json_demo_db_post.php\");\nxmlhttp.setRequestHeader(\"Content-type\", \"application/x-www-form-urlencoded\");\nxmlhttp.send(\"x=\" + dbParam);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The only difference in the PHP file is the method for getting the transferred data."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<?phpheader(\"Content-Type: application/json; charset=UTF-8\");\n  $obj = \n  json_decode($_POST[\"x\"], false);\n  \n  $conn = new mysqli(\"myServer\", \"myUser\", \"myPassword\", \"Northwind\");\n  $stmt = $conn->prepare(\"SELECT name FROM customers LIMIT ?\");$stmt->bind_param(\"s\", \n  $obj->limit);$stmt->execute();$result = $stmt->get_result();\n  $outp = $result->fetch_all(MYSQLI_ASSOC);echo json_encode($outp);?>"
+        }
+      ]
+    }
+  ]
+}

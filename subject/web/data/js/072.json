@@ -1,0 +1,219 @@
+{
+  "url": "https://www.w3schools.com/js/js_validation.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Forms"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Form Validation"
+    },
+    {
+      "type": "paragraph",
+      "text": "HTML form validation can be done by JavaScript."
+    },
+    {
+      "type": "paragraph",
+      "text": "If a form field (fname) is empty, this function alerts a message, and returns \nfalse, to prevent the form from being submitted:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "function validateForm() {\n  let\nx = document.forms[\"myForm\"][\"fname\"].value;\n   \nif (x == \"\") {\n      alert(\"Name must be filled out\");\n      return false;\n    }\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The function can be called when the form is submitted:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<form name=\"myForm\" action=\"/action_page.php\" onsubmit=\"return validateForm()\" \nmethod=\"post\">\n Name: <input type=\"text\" name=\"fname\">\n<input type=\"submit\" value=\"Submit\">\n</form>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Can Validate Numeric Input"
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript is often used to validate numeric input:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": []
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Automatic HTML Form Validation"
+    },
+    {
+      "type": "paragraph",
+      "text": "HTML form validation can be performed automatically by the browser:"
+    },
+    {
+      "type": "paragraph",
+      "text": "If a form field (fname) is empty, the required attribute prevents this form from being \nsubmitted:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<form action=\"/action_page.php\" method=\"post\">\n  <input type=\"text\" name=\"fname\" required>\n \n<input type=\"submit\" value=\"Submit\">\n</form>"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Automatic HTML form validation does not work in Internet Explorer 9 or earlier."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Data Validation"
+    },
+    {
+      "type": "paragraph",
+      "text": "Data validation is the process of ensuring that user input is clean, \ncorrect, and useful."
+    },
+    {
+      "type": "paragraph",
+      "text": "Typical validation tasks are:"
+    },
+    {
+      "type": "other",
+      "text": "has the user filled in all required fields?\n  has the user entered a valid date?\n    has the user entered text in a numeric field?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Most often, the purpose of data validation is to ensure correct user input."
+    },
+    {
+      "type": "paragraph",
+      "text": "Validation can be defined by many different methods, and deployed in many \ndifferent ways."
+    },
+    {
+      "type": "paragraph",
+      "text": "Server side validation is performed by a web server, after input has been sent to the \nserver."
+    },
+    {
+      "type": "paragraph",
+      "text": "Client side validation is performed by a web browser, before input is sent to a web server."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML Constraint Validation"
+    },
+    {
+      "type": "paragraph",
+      "text": "HTML5 introduced a new HTML validation concept called constraint \nvalidation."
+    },
+    {
+      "type": "paragraph",
+      "text": "HTML constraint validation is based on:"
+    },
+    {
+      "type": "other",
+      "text": "Constraint validation HTML Input Attributes\n Constraint validation CSS Pseudo Selectors\n Constraint validation DOM Properties and Methods"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Constraint Validation HTML Input Attributes"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Attribute",
+          "Description"
+        ],
+        [
+          "disabled",
+          "Specifies that the input element should be disabled"
+        ],
+        [
+          "max",
+          "Specifies the maximum value of an input element"
+        ],
+        [
+          "min",
+          "Specifies the minimum value of an input element"
+        ],
+        [
+          "pattern",
+          "Specifies the value pattern of an input element"
+        ],
+        [
+          "required",
+          "Specifies that the input field requires an element"
+        ],
+        [
+          "type",
+          "Specifies the type of an input element"
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "For a full list, go to HTML \nInput Attributes."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Constraint Validation CSS Pseudo Selectors"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Selector",
+          "Description"
+        ],
+        [
+          ":disabled",
+          "Selects input elements with the \"disabled\" attribute specified"
+        ],
+        [
+          ":invalid",
+          "Selects input elements with invalid values"
+        ],
+        [
+          ":optional",
+          "Selects input elements with no \"required\" attribute specified"
+        ],
+        [
+          ":required",
+          "Selects input elements with the \"required\" attribute specified"
+        ],
+        [
+          ":valid",
+          "Selects input elements with valid values"
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "For a full list, go to CSS \nPseudo Classes."
+    }
+  ]
+}

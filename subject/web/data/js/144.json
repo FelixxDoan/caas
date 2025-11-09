@@ -1,0 +1,36 @@
+{
+  "url": "https://www.w3schools.com/js/js_statements_reference.asp",
+  "title": "JavaScript Statements",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Statements"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Statement Identifiers"
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript statements start with a statement identifier \nto identify the JavaScript action to be performed."
+    },
+    {
+      "type": "paragraph",
+      "text": "Statement identifiers are reserved words and cannot be used as variable names \n(or any other things)."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following table lists all JavaScript statement identifiers:"
+    },
+    {
+      "type": "other",
+      "text": "Statement\n    Description\n  \n  \nbreak\nExits a switch or a loop\n\n\nclass\nDeclares a class\n\n\nconst\nDeclares a variable with a constant value\n\n\ncontinue\nBreaks one iteration (in the loop) if a specified condition occurs, and \ncontinues with the next iteration in the loop\n\n\ndebugger\nStops the execution of JavaScript, and calls (if available) the debugging function\n\n\ndo ... while\nExecutes a block of statements and repeats the block while a condition is \ntrue\n\n\nfor\nLoops through a block of code a number of times\n\n\nfor ... in  \nLoops through the properties of an object\n\n\nfor ... of\nLoops through the values of an iterable object\n\n\nfunction\nDeclares a function\n\n\nif ... else ... else if\nMarks a block of statements to be executed depending on a condition\n\n\nlet\nDeclares a variable\n\n\nreturn\nStops the execution of a function and returns a value from that function\n\n\nswitch\nMarks a block of statements to be executed depending on different cases\n\n\nthrow\nThrows (generates) an error\n\n\ntry ... catch ... finally\nMarks the block of statements to be executed when an error occurs in a try \nblock, and implements error handling\n\n\nvar\nDeclares a variable\n\n\nwhile\nMarks a block of statements to be executed while a condition is true"
+    },
+    {
+      "type": "other",
+      "text": "See Also:\nFull Tutorial: JavaScript Statements"
+    }
+  ]
+}

@@ -1,0 +1,292 @@
+{
+  "url": "https://www.w3schools.com/js/js_htmldom_document.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript HTML DOM Document"
+    },
+    {
+      "type": "paragraph",
+      "text": "The HTML DOM document object is the owner of all other objects in your web page."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The HTML DOM Document Object"
+    },
+    {
+      "type": "paragraph",
+      "text": "The document object represents your web page."
+    },
+    {
+      "type": "paragraph",
+      "text": "If you want to access any element in an HTML page, you always start with accessing the \ndocument object."
+    },
+    {
+      "type": "paragraph",
+      "text": "Below are some examples of how you can use the document object to access and \nmanipulate HTML."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Finding HTML Elements"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Method",
+          "Description"
+        ],
+        [
+          "document.getElementById(id)",
+          "Find an element by element id"
+        ],
+        [
+          "document.getElementsByTagName(name)",
+          "Find elements by tag name"
+        ],
+        [
+          "document.getElementsByClassName(name)",
+          "Find elements by class name"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Changing HTML Elements"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Property",
+          "Description"
+        ],
+        [
+          "element.innerHTML =  new html content",
+          "Change the inner HTML of an element"
+        ],
+        [
+          "element.attribute = new value",
+          "Change the attribute value of an HTML element"
+        ],
+        [
+          "element.style.property = new style",
+          "Change the style of an HTML element"
+        ],
+        [
+          "Method",
+          "Description"
+        ],
+        [
+          "element.setAttribute(attribute, value)",
+          "Change the attribute value of an HTML element"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Adding and Deleting Elements"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Method",
+          "Description"
+        ],
+        [
+          "document.createElement(element)",
+          "Create an HTML element"
+        ],
+        [
+          "document.removeChild(element)",
+          "Remove an HTML element"
+        ],
+        [
+          "document.appendChild(element)",
+          "Add an HTML element"
+        ],
+        [
+          "document.replaceChild(new, old)",
+          "Replace an HTML element"
+        ],
+        [
+          "document.write(text)",
+          "Write into the HTML output stream"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Adding Events Handlers"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Method",
+          "Description"
+        ],
+        [
+          "document.getElementById(id).onclick = function(){code}",
+          "Adding event handler code to an onclick event"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Finding HTML Objects"
+    },
+    {
+      "type": "paragraph",
+      "text": "The first HTML DOM Level 1 (1998), defined 11 HTML objects, object collections, and properties. These are still valid in HTML5."
+    },
+    {
+      "type": "paragraph",
+      "text": "Later, in HTML DOM Level 3, more objects, collections, and properties were added."
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Property",
+          "Description",
+          "DOM"
+        ],
+        [
+          "document.anchors",
+          "Deprecated. Do not use it.",
+          "1"
+        ],
+        [
+          "document.applets",
+          "Deprecated. Do not use it.",
+          "1"
+        ],
+        [
+          "document.baseURI",
+          "Returns the absolute base URI of the document",
+          "3"
+        ],
+        [
+          "document.body",
+          "Returns the <body> element",
+          "1"
+        ],
+        [
+          "document.cookie",
+          "Returns the document's cookie",
+          "1"
+        ],
+        [
+          "document.doctype",
+          "Returns the document's doctype",
+          "3"
+        ],
+        [
+          "document.documentElement",
+          "Returns the <html> element",
+          "3"
+        ],
+        [
+          "document.documentMode",
+          "Returns the mode used by the browser",
+          "3"
+        ],
+        [
+          "document.documentURI",
+          "Returns the URI of the document",
+          "3"
+        ],
+        [
+          "document.domain",
+          "Deprecated. Do not use it.",
+          "1"
+        ],
+        [
+          "document.domConfig",
+          "Deprecated. Do not use it.",
+          "3"
+        ],
+        [
+          "document.embeds",
+          "Returns all <embed> elements",
+          "3"
+        ],
+        [
+          "document.forms",
+          "Returns all <form> elements",
+          "1"
+        ],
+        [
+          "document.head",
+          "Returns the <head> element",
+          "3"
+        ],
+        [
+          "document.images",
+          "Returns all <img> elements",
+          "1"
+        ],
+        [
+          "document.implementation",
+          "Returns the DOM implementation",
+          "3"
+        ],
+        [
+          "document.inputEncoding",
+          "Returns the document's encoding (character set)",
+          "3"
+        ],
+        [
+          "document.lastModified",
+          "Returns the date and time the document was updated",
+          "3"
+        ],
+        [
+          "document.links",
+          "Returns all <area> and <a> elements that have a href attribute",
+          "1"
+        ],
+        [
+          "document.readyState",
+          "Returns the (loading) status of the document",
+          "3"
+        ],
+        [
+          "document.referrer",
+          "Returns the URI of the referrer (the linking document)",
+          "1"
+        ],
+        [
+          "document.scripts",
+          "Returns all <script> elements",
+          "3"
+        ],
+        [
+          "document.strictErrorChecking",
+          "Returns if error checking is enforced",
+          "3"
+        ],
+        [
+          "document.title",
+          "Returns the <title> element",
+          "1"
+        ],
+        [
+          "document.URL",
+          "Returns the complete URL of the document",
+          "1"
+        ]
+      ]
+    }
+  ]
+}

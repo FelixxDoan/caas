@@ -1,0 +1,151 @@
+{
+  "url": "https://www.w3schools.com/css/css_supports_rule.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS @supports Rule"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The CSS @supports Rule"
+    },
+    {
+      "type": "paragraph",
+      "text": "The CSS @supports rule lets you check if the browser supports a specific CSS property or value, and to define fallback styles if the feature is not supported."
+    },
+    {
+      "type": "paragraph",
+      "text": "This is useful for applying styles only when the browser can handle them."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Basic Syntax"
+    },
+    {
+      "type": "other",
+      "text": "@supports (property: value) {\n  /* CSS rules */\n}"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Example: Using @supports with grid and flex"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can combine @supports with regular CSS to provide fallback styling."
+    },
+    {
+      "type": "paragraph",
+      "text": "Here, if the browser supports display: flex, the CSS inside the @supports rule will \n  be applied. If not, the .container class outside the @supports rule will be \n  applied:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "/* use this CSS if the browser does not support display: flex */    \n.container {\n  float: left;\n  width: 100%;\n}\n/* use this CSS if the browser supports display: flex */\n@supports (display: flex) {\n  .container {\n    display: flex;\n  }\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Here, if the browser supports display: grid, the CSS inside the @supports rule will \n  be applied. If not, the .container class outside the @supports rule will be \n  applied:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "/* use this CSS if the browser does not support display: grid */.container \n    {  display: table;  width: 90%;  background-color: \n    #2196F3;  padding: 10px;}/* use this CSS if the browser \n    supports display: grid */@supports (display: grid) {  .container \n    {    display: grid;    grid: auto;    \n    grid-gap: 10px;    background-color: #2196F3;    \n    padding: 10px;  }}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Negating with not"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can use not to apply styles only when a feature is not supported:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "@supports not (display: grid) {\n  .warning {\n    background-color: pink;\n    padding: 10px;\n    border: 1px solid red;\n  }\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Combining Conditions"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can use and, or, and not for multiple conditions:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "@supports (display: grid) and (gap: 10px) {\n  .container {\n    display: grid;\n    gap: 10px;\n  }\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Browser Support"
+    },
+    {
+      "type": "paragraph",
+      "text": "The @supports rule is supported in all modern browsers (Chrome, Firefox, Edge, Safari). It is not supported in Internet Explorer."
+    },
+    {
+      "type": "other",
+      "text": "Note: Always provide fallback styles outside of @supports for older browsers."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CSS Reference"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "At-rule",
+          "Description"
+        ],
+        [
+          "@supports",
+          "Used to test whether a browser supports a CSS feature"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

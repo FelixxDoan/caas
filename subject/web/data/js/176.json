@@ -1,0 +1,192 @@
+{
+  "url": "https://www.w3schools.com/js/js_maps.asp",
+  "title": "JavaScript Maps",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Maps"
+    },
+    {
+      "type": "other",
+      "text": "The Map Object\nA Map object holds key-value pairs where the keys can be any datatype.\nA Map also remembers the original insertion order of the keys."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How to Create a Map"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can create a JavaScript Map by:"
+    },
+    {
+      "type": "other",
+      "text": "Passing an Array to new Map()\nCreate a Map and use Map.set()"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The new Map() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can create a Map by passing an Array to the new Map() constructor:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create a Map\nconst fruits = new Map([\n  [\"apples\", 500],\n  [\"bananas\", 300],\n  [\"oranges\", 200]\n]);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The set() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can add elements to a Map with the set() method:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create a Map\nconst fruits = new Map();\n\n// Set Map Values\nfruits.set(\"apples\", 500);\nfruits.set(\"bananas\", 300);\nfruits.set(\"oranges\", 200);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The set() method can also be used to change existing Map values:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "fruits.set(\"apples\", 200);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The get() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The get() method gets the value of a key in a Map:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "fruits.get(\"apples\");    // Returns 500"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Maps are Objects"
+    },
+    {
+      "type": "paragraph",
+      "text": "typeof returns object:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Returns object:\ntypeof fruits;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "instanceof Map returns true:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Returns true:\nfruits instanceof Map;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Objects vs Maps"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Differences between JavaScript Objects and Maps:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Object",
+          "Map"
+        ],
+        [
+          "Not directly iterable",
+          "Directly iterable"
+        ],
+        [
+          "Do not have a size property",
+          "Have a size property"
+        ],
+        [
+          "Keys must be Strings (or Symbols)",
+          "Keys can be any datatype"
+        ],
+        [
+          "Keys are not well ordered",
+          "Keys are ordered by insertion"
+        ],
+        [
+          "Have default keys",
+          "Do not have default keys"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Learn More:\nJavaScript Map Reference\nJavaScript Set Reference"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Browser Support"
+    },
+    {
+      "type": "paragraph",
+      "text": "Map is an ES6  feature."
+    },
+    {
+      "type": "paragraph",
+      "text": "ES6 is fully supported in all modern browsers since June 2017:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome51\n    Edge15\n    Firefox54\n    Safari10\n    Opera38\n  \n  \n    May 2016\n    Apr 2017\n    Jun 2017\n    Sep 2016\n    Jun 2016"
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "url": "https://www.w3schools.com/html/html_youtube.asp",
+  "title": "HTML ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "HTML YouTube Videos"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "The easiest way to play videos in HTML, is to use YouTube."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Struggling with Video Formats?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Converting videos to different formats can be difficult and time-consuming."
+    },
+    {
+      "type": "paragraph",
+      "text": "An easier solution is to let YouTube play the videos in your web page."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "YouTube Video Id"
+    },
+    {
+      "type": "paragraph",
+      "text": "YouTube will display an id (like tgbNymZ7vqY), when you save (or play) a video."
+    },
+    {
+      "type": "paragraph",
+      "text": "You can use this id, and refer to your video in the HTML code."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Playing a YouTube Video in HTML"
+    },
+    {
+      "type": "paragraph",
+      "text": "To play your video on a web page, do the following:"
+    },
+    {
+      "type": "other",
+      "text": "Upload the video to YouTube\n Take a note of the video id\n Define an <iframe> element in your web page\n Let the src attribute point to the video URL\n Use the width and \n height attributes to specify the dimension of the player\n Add any other parameters to the URL (see below)"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<iframe width=\"420\" height=\"315\"src=\"https://www.youtube.com/embed/tgbNymZ7vqY\">\n</iframe>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "YouTube Autoplay + Mute"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can let your video start playing automatically when a user visits the \npage, by adding autoplay=1 to the YouTube URL. \nHowever, automatically starting a video is annoying for your visitors!"
+    },
+    {
+      "type": "other",
+      "text": "Note: Chromium browsers do not \nallow autoplay in most cases. However, muted autoplay is always allowed."
+    },
+    {
+      "type": "paragraph",
+      "text": "Add mute=1 after \nautoplay=1 to let your video start playing automatically (but muted)."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<iframe width=\"420\" height=\"315\"src=\"https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1\">\n</iframe>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "YouTube Playlist"
+    },
+    {
+      "type": "paragraph",
+      "text": "A comma separated list of videos to play (in addition to the original URL)."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "YouTube Loop"
+    },
+    {
+      "type": "paragraph",
+      "text": "Add playlist=videoID and loop=1 to let your video loop forever."
+    },
+    {
+      "type": "paragraph",
+      "text": "loop=0 (default) - The video will play only once."
+    },
+    {
+      "type": "paragraph",
+      "text": "loop=1 - The video will loop (forever)."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<iframe width=\"420\" height=\"315\"src=\"https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1\">\n</iframe>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "YouTube Controls"
+    },
+    {
+      "type": "paragraph",
+      "text": "Add controls=0 to NOT display controls in the \nvideo player."
+    },
+    {
+      "type": "paragraph",
+      "text": "controls=0 - Player controls does not display."
+    },
+    {
+      "type": "paragraph",
+      "text": "controls=1 (default) - Player controls is displayed."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<iframe width=\"420\" height=\"315\"src=\"https://www.youtube.com/embed/tgbNymZ7vqY?controls=0\">\n</iframe>"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Upload the video to YouTube",
+        "Take a note of the video id",
+        "Define an <iframe> element in your web page",
+        "Let the src attribute point to the video URL",
+        "Use the width and \n height attributes to specify the dimension of the player",
+        "Add any other parameters to the URL (see below)"
+      ]
+    }
+  ]
+}

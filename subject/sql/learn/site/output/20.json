@@ -1,0 +1,174 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_like.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL LIKE Operator"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "text": "The SQL LIKE Operator"
+    },
+    {
+      "type": "paragraph",
+      "text": "The LIKE operator is used in a \nWHERE clause to search for a specified pattern in a column."
+    },
+    {
+      "type": "paragraph",
+      "text": "There are two wildcards often used in conjunction with the \nLIKE operator:"
+    },
+    {
+      "type": "other",
+      "text": "The percent sign % represents zero, one, or multiple characters\n  The underscore sign _ represents one, single character"
+    },
+    {
+      "type": "paragraph",
+      "text": "You will learn more about wildcards in the next chapter."
+    },
+    {
+      "type": "other",
+      "text": "Example\nSelect all customers that starts with the letter \"a\":\n\n SELECT * FROM Customers\n WHERE CustomerName LIKE 'a%';\n\n Try it Yourself »"
+    },
+    {
+      "type": "heading",
+      "text": "Syntax"
+    },
+    {
+      "type": "other",
+      "text": "SELECT column1, column2, ...\nFROM table_name\nWHERE columnN LIKE pattern;"
+    },
+    {
+      "type": "heading",
+      "text": "Demo Database"
+    },
+    {
+      "type": "paragraph",
+      "text": "Below is a selection from the Customers table used in the examples:"
+    },
+    {
+      "type": "other",
+      "text": "CustomerID\n    CustomerName\n    ContactName\n    Address\n    City\n    PostalCode\n    Country\n  \n  \n    1\n    Alfreds Futterkiste\n    Maria Anders\n    Obere Str. 57\n    Berlin\n    12209\n    Germany\n  \n  \n    2\n    Ana Trujillo Emparedados y helados\n    Ana Trujillo\n    Avda. de la Constitución 2222\n    México D.F.\n    05021\n    Mexico\n  \n  \n    3\n    Antonio Moreno Taquería\n    Antonio Moreno\n    Mataderos 2312\n    México D.F.\n    05023\n    Mexico\n  \n  \n    4\n    Around the Horn\n    Thomas Hardy\n    120 Hanover Sq.\n    London\n    WA1 1DP\n    UK\n  \n  \n    5\n    Berglunds snabbköp\n    Christina Berglund\n    Berguvsvägen 8\n    Luleå\n    S-958 22\n    Sweden"
+    },
+    {
+      "type": "heading",
+      "text": "The _ Wildcard"
+    },
+    {
+      "type": "paragraph",
+      "text": "The _ wildcard represents a single character."
+    },
+    {
+      "type": "paragraph",
+      "text": "It can be any character or number, but each _ represents one, and only one, character."
+    },
+    {
+      "type": "other",
+      "text": "Example\nReturn all customers from a city that starts with 'L' followed by one wildcard character, then 'nd' and then two wildcard characters:\n\n SELECT * FROM Customers\n WHERE city LIKE 'L_nd__';\n\n Try it Yourself »"
+    },
+    {
+      "type": "heading",
+      "text": "The % Wildcard"
+    },
+    {
+      "type": "paragraph",
+      "text": "The % wildcard represents any number of characters, even zero characters."
+    },
+    {
+      "type": "other",
+      "text": "Example\nReturn all customers from a city that contains the letter 'L':\n\n SELECT * FROM Customers\n WHERE city LIKE '%L%';\n\n Try it Yourself »"
+    },
+    {
+      "type": "heading",
+      "text": "Starts With"
+    },
+    {
+      "type": "paragraph",
+      "text": "To return records that starts with a specific letter or phrase, add the % at the end of the letter or phrase."
+    },
+    {
+      "type": "other",
+      "text": "Example\nReturn all customers that starts with 'La':\n\n SELECT * FROM Customers\n WHERE CustomerName LIKE 'La%';\n\n Try it Yourself »"
+    },
+    {
+      "type": "other",
+      "text": "Tip: You can also combine any number of conditions using \nAND or OR operators."
+    },
+    {
+      "type": "other",
+      "text": "Example\nReturn all customers that starts with 'a' or starts with 'b':\n\n SELECT * FROM Customers\n WHERE CustomerName LIKE 'a%' OR CustomerName LIKE 'b%'; \n\n Try it Yourself »"
+    },
+    {
+      "type": "heading",
+      "text": "Ends With"
+    },
+    {
+      "type": "paragraph",
+      "text": "To return records that ends with a specific letter or phrase, add the % at the beginning of the letter or phrase."
+    },
+    {
+      "type": "other",
+      "text": "Example\nReturn all customers that ends with 'a':\n\n SELECT * FROM Customers\n WHERE CustomerName LIKE '%a'; \n\n Try it Yourself »"
+    },
+    {
+      "type": "other",
+      "text": "Tip: You can also combine \"starts with\" and \"ends with\":"
+    },
+    {
+      "type": "other",
+      "text": "Example\nReturn all customers that starts with \"b\" and ends with \"s\":\n\n\n SELECT * FROM Customers\n  WHERE CustomerName LIKE 'b%s';\n\n Try it Yourself »"
+    },
+    {
+      "type": "heading",
+      "text": "Contains"
+    },
+    {
+      "type": "paragraph",
+      "text": "To return records that contains a specific letter or phrase, add the \n% both before and after the letter or phrase."
+    },
+    {
+      "type": "other",
+      "text": "Example\nReturn all customers that contains the phrase 'or'\n\n SELECT * FROM Customers\n  WHERE CustomerName LIKE '%or%';\n\n\n Try it Yourself »"
+    },
+    {
+      "type": "heading",
+      "text": "Combine Wildcards"
+    },
+    {
+      "type": "paragraph",
+      "text": "Any wildcard, like % and _ \n, can be used in combination with other \nwildcards."
+    },
+    {
+      "type": "other",
+      "text": "Example\nReturn all customers that starts with \"a\" and are at least 3 characters in length:\n\n\n SELECT * FROM Customers\n  WHERE CustomerName LIKE 'a__%';\n  Try it Yourself »"
+    },
+    {
+      "type": "other",
+      "text": "Example\nReturn all customers that have \"r\" in the second position:\n\n SELECT * FROM Customers\n  WHERE CustomerName LIKE '_r%';\n\n\n Try it Yourself »"
+    },
+    {
+      "type": "heading",
+      "text": "Without Wildcard"
+    },
+    {
+      "type": "paragraph",
+      "text": "If no wildcard is specified, the phrase has to have an exact match to return a result."
+    },
+    {
+      "type": "other",
+      "text": "Example\n  Return all customers from Spain: \n\n SELECT * FROM Customers\n  WHERE Country \n  LIKE 'Spain';\n\n\n Try it Yourself »"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

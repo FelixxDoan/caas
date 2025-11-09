@@ -1,0 +1,263 @@
+{
+  "url": "https://www.w3schools.com/js/js_loop_for.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript For Loop"
+    },
+    {
+      "type": "paragraph",
+      "text": "Loops can execute a block of code a number of times."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Loops"
+    },
+    {
+      "type": "paragraph",
+      "text": "Loops are handy, if you want to run the same code over and over again, each \ntime with a different value."
+    },
+    {
+      "type": "paragraph",
+      "text": "Often this is the case when working with arrays:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "text += cars[0] + \"<br>\"; text += cars[1] + \"<br>\"; \n text += cars[2] + \"<br>\"; text += cars[3] + \"<br>\"; \n text += cars[4] + \"<br>\"; text += cars[5] + \"<br>\";"
+        },
+        {
+          "language": "unknown",
+          "code": "for (let i = 0; i < cars.length; i++) {   text += cars[i] + \"<br>\";\n }"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Different Kinds of Loops"
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript supports different kinds of loops:"
+    },
+    {
+      "type": "other",
+      "text": "for - loops through a block of code a number of times\n  for/in - loops through the properties of an object\n  for/of - loops through the values of an \n  iterable object \n  while - loops through a block of code while a specified condition is true\n  do/while - also loops through a block of code while a specified condition is true"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The For Loop"
+    },
+    {
+      "type": "paragraph",
+      "text": "The for statement creates a loop with 3 optional expressions:"
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "for (expression 1; expression 2; expression 3) {\n      // code block to be executed\n }"
+    },
+    {
+      "type": "paragraph",
+      "text": "Expression 1 is executed (one time) before the execution of the code block."
+    },
+    {
+      "type": "paragraph",
+      "text": "Expression 2 defines the condition for executing the code block."
+    },
+    {
+      "type": "paragraph",
+      "text": "Expression 3 is executed (every time) after the code block has been executed."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "for (let i = 0; i < 5; i++) {\n   text += \"The number is \" + i + \"<br>\";\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "From the example above, you can read:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Expression 1 sets a variable before the loop starts (let i = 0)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Expression 2 defines the condition for the loop to run (i must be less than \n5)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Expression 3 increases a value (i++) each time the code block in the loop has \nbeen executed."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How to use Expression 1"
+    },
+    {
+      "type": "paragraph",
+      "text": "Expression 1 is used to initialize the variable(s) used in the loop (let i = 0)."
+    },
+    {
+      "type": "paragraph",
+      "text": "But, expression 1 is optional."
+    },
+    {
+      "type": "paragraph",
+      "text": "You can omit expression 1 when your values are set before the loop starts:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let i = 2;\nlet len = cars.length;\nlet text = \"\";for (; i < len; i++) { \n    text += cars[i] + \"<br>\";\n }"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "You can intiate many values in expression 1 (separated by comma):"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "for (i = 0, len = cars.length, text = \"\"; i < len; i++) {   text += cars[i] + \"<br>\";\n }"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How to use Expression 2"
+    },
+    {
+      "type": "paragraph",
+      "text": "Expression 2 is used to evaluate the condition of the initial variable (i < len)."
+    },
+    {
+      "type": "paragraph",
+      "text": "But, expression 2 is also optional."
+    },
+    {
+      "type": "paragraph",
+      "text": "If expression 2 returns true, the loop will start over again. If it returns false, the \nloop will end."
+    },
+    {
+      "type": "other",
+      "text": "Note\nIf you omit expression 2, you must provide a break inside the \nloop. Otherwise the loop will never end. This will crash your browser.\nRead about breaks in a later chapter of this tutorial."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How to use Expression 3"
+    },
+    {
+      "type": "paragraph",
+      "text": "Expression 3 increments the value of the initial variable (i++)."
+    },
+    {
+      "type": "paragraph",
+      "text": "But, expression 3 is also optional."
+    },
+    {
+      "type": "paragraph",
+      "text": "Expression 3 can do anything like negative increment (i--), positive \nincrement (i = i + 15), or anything else."
+    },
+    {
+      "type": "paragraph",
+      "text": "Expression 3 can also be omitted (like when you increment your values inside the loop):"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let i = 0;\nlet len = cars.length;\nlet text = \"\";\nfor (; i < len; ) {   text += cars[i] + \"<br>\";\n   \n i++;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Loop Scope"
+    },
+    {
+      "type": "paragraph",
+      "text": "Using var in a loop:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "var i = 5;\n\nfor (var i = 0; i < 10; i++) {\n  // some code}\n\n// Here i is 10"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Using let in a loop:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let i = 5;\n\nfor (let i = 0; i < 10; i++) {\n    // some code}\n\n// Here i is 5"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "In the first example, using var, the variable declared in \nthe loop redeclares the variable outside the loop."
+    },
+    {
+      "type": "paragraph",
+      "text": "In the second example, using let, the variable declared in \nthe loop does not redeclare the variable outside the loop."
+    },
+    {
+      "type": "paragraph",
+      "text": "When let is used to declare the i variable in a loop, the i \nvariable will only be visible within the loop."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "For/Of and For/In Loops"
+    },
+    {
+      "type": "paragraph",
+      "text": "The for/in loop and the for/of loop are explained in the next chapter."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "While Loops"
+    },
+    {
+      "type": "paragraph",
+      "text": "The while loop and the do/while are explained in the next chapters."
+    }
+  ]
+}

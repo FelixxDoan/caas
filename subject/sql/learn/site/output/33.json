@@ -1,0 +1,106 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_groupby.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL GROUP BY Statement"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "heading",
+      "text": "The SQL GROUP BY Statement"
+    },
+    {
+      "type": "paragraph",
+      "text": "The GROUP BY statement groups rows that have the same values into summary \nrows, like \"find the number of customers in each country\"."
+    },
+    {
+      "type": "paragraph",
+      "text": "The GROUP BY statement is often used with aggregate functions (COUNT(), \nMAX(), \nMIN(), SUM(), \nAVG()) to group the result-set by one or more columns."
+    },
+    {
+      "type": "other",
+      "text": "GROUP BY Syntax"
+    },
+    {
+      "type": "other",
+      "text": "SELECT column_name(s)\n  FROM table_name\n  WHERE condition\n  GROUP BY column_name(s)ORDER BY column_name(s);"
+    },
+    {
+      "type": "heading",
+      "text": "Demo Database"
+    },
+    {
+      "type": "paragraph",
+      "text": "Below is a selection from the \"Customers\" table in the Northwind sample \ndatabase:"
+    },
+    {
+      "type": "other",
+      "text": "CustomerID\n    CustomerName\n    ContactName\n    Address\n    City\n    PostalCode\n    Country\n  \n  \n    1\n    Alfreds Futterkiste\n    Maria Anders\n    Obere Str. 57\n    Berlin\n    12209\n    Germany\n  \n  \n    2\n    Ana Trujillo Emparedados y helados\n    Ana Trujillo\n    Avda. de la Constitución 2222\n    México D.F.\n    05021\n    Mexico\n  \n  \n    3\n    Antonio Moreno Taquería\n    Antonio Moreno\n    Mataderos 2312\n    México D.F.\n    05023\n    Mexico\n  \n  \n    4\n    Around the Horn\n    Thomas Hardy\n    120 Hanover Sq.\n    London\n    WA1 1DP\n    UK\n  \n  \n    5\n    Berglunds snabbköp\n    Christina Berglund\n    Berguvsvägen 8\n    Luleå\n    S-958 22\n    Sweden"
+    },
+    {
+      "type": "heading",
+      "text": "SQL GROUP BY Examples"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement lists the number of customers in each country:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n  SELECT COUNT(CustomerID), CountryFROM CustomersGROUP BY Country;\n\n\n  Try it Yourself »"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement lists the number of customers in each country, \nsorted high to low:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n  SELECT COUNT(CustomerID), CountryFROM CustomersGROUP BY Country\n  ORDER BY COUNT(CustomerID) DESC;\n\n\n  Try it Yourself »"
+    },
+    {
+      "type": "heading",
+      "text": "Demo Database"
+    },
+    {
+      "type": "paragraph",
+      "text": "Below is a selection from the \"Orders\" table in the Northwind sample database:"
+    },
+    {
+      "type": "other",
+      "text": "OrderID\n    CustomerID\n    EmployeeID\n    OrderDate\n    ShipperID\n  \n  \n    10248\n    90\n    5\n    1996-07-04\n    3\n  \n    \n    10249\n    81\n    6\n    1996-07-05\n    1\n    \n  \n    10250\n    34\n    4\n    1996-07-08\n    2"
+    },
+    {
+      "type": "paragraph",
+      "text": "And a selection from the \"Shippers\" table:"
+    },
+    {
+      "type": "other",
+      "text": "ShipperID\n    ShipperName\n  \n  \n    1\n    Speedy Express\n  \n    \n    2\n    United Package\n  \n  \n    3\n    Federal Shipping"
+    },
+    {
+      "type": "heading",
+      "text": "GROUP BY With JOIN Example"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement lists the number of orders sent by each shipper:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n  SELECT Shippers.ShipperName, COUNT(Orders.OrderID) AS NumberOfOrders FROM \n  OrdersLEFT JOIN Shippers ON Orders.ShipperID = Shippers.ShipperID\n  GROUP BY ShipperName;\n\n\n  Try it Yourself »"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "url": "https://www.w3schools.com/js/js_regexp_patterns.asp",
+  "title": "JavaScript RegExp Patterns",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript RegExp Patterns"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Full RegExp Flag Reference"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Revised July 2025"
+    },
+    {
+      "type": "paragraph",
+      "text": "Flags can be added to a regexp pattern to Modify its behavior:"
+    },
+    {
+      "type": "other",
+      "text": "Flag\n  Description\n\n\n  /d\n  Performs substring matches (new 2022)\n\n\n  /g\n  Performs a global match (find all)\n\n\n  /i\n  Performs case-insensitive matching\n\n\n  /m\n  Performs multiline matching\n\n\n  /s\n  Allows . (dot) to match line terminators (new 2018)\n\n\n  /u\n  Enables Unicode support (new 2015)\n\n\n  /v\n  An upgrade to the /u flag for better Unicode support (new 2025)\n\n\n  /y\n  Performs a \"sticky\" search (new 2015)"
+    },
+    {
+      "type": "other",
+      "text": "See Also:\nJavaScript RegExp Flags Tutorial"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Full Character Classes Reference"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Revised July 2025"
+    },
+    {
+      "type": "paragraph",
+      "text": "A character class is one or more characters enclosed in square brackets [ ]:"
+    },
+    {
+      "type": "other",
+      "text": "Class\n  Description\n\n\n  [a]\n  Matches the character between the brackets\n  \n\n  [^a]\n  Matches all characters NOT between the brackets\n  \n\n  [abc]\n  Matches all characters between the brackets\n  \n\n  [^abc]\n  Matches all characters NOT between the brackets\n  \n\n  [a-z]\n  Matches all characters in the range from a to z\n  \n\n  [^a-z]\n  Matches all characters NOT in the range from a to z\n  \n\n  [0-9]\n  Matches all characters in the range from 0 to 9\n\n\n  [^0-9]\n  Matches all characters NOT in the range from 0 to 9"
+    },
+    {
+      "type": "other",
+      "text": "See Also:\nRegExp Characters Classes Tutorial"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Full Metacharacter Reference"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Revised July 2025"
+    },
+    {
+      "type": "paragraph",
+      "text": "Metacharacters are characters with a special meaning:"
+    },
+    {
+      "type": "other",
+      "text": "a|b\n  Matches a or b\n\n\n  .\n  Matches any (wildcard) character except line terminators\n\n\n  \\w\n  Matches word characters (alphanumeric and _)\n\n\n  \\W\n  Matches non-word characters\n\n\n  \\d\n  Matches digits (0-9)\n\n\n  \\D\n  Matches non-digit characters\n\n\n  \\s\n  Matches whitespace characters (space, tab, newline)\n\n\n  \\S\n  Matches non-whitespace character\n\n\n[\\b]\nMatches backspace characters\n\n\n  \\0\n  Matches NULL characters\n\n\n  \\n\n  Matches new line characters\n\n\n  \\f\n  Matches form feed characters\n\n\n  \\r\n  Matches carriage returns characters\n\n\n  \\t\n  Matches tab characters\n\n\n  \\v\n  Matches vertical tab characters\n\n\n  \\p{}\n  Matches characters with given Unicode Property (new 2018)\n\n\n  \\P{}\n  Matches character NOT with the given Unicode Property (new 2018)\n\n\n  \\ddd\n  Matches a character by the octal number ddd\n\n\n  \\xhh\n  Matches a character by the hexadecimal number hh\n\n\n  \\uhhhh\n  Matches a Unicode character by the hex number hhhh"
+    },
+    {
+      "type": "other",
+      "text": "See Also:\nRegExp Meta Characters Tutorial"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Full RexExp Assertions Reference"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Revised July 2025"
+    },
+    {
+      "type": "paragraph",
+      "text": "Assertions consist of Boundaries and Lookarounds."
+    },
+    {
+      "type": "paragraph",
+      "text": "Boundaries matches at the beginning or the end of lines and words,\nLookarounds mathes previos or subsequent patterns."
+    },
+    {
+      "type": "other",
+      "text": "Char\n  Description\n\n\n  ^\n  Matches from beginning of a string, or the beginning of a line if the m (multiline) flag is set\n\n\n  $\n  Matches from the end of a string, or the end of a line if the m (multiline) flag is set\n\n\n  \\b\n  Matches from the beginning or end of a word\n\n\n  \\B\n  Matches NOT from the beginning or end of a word\n\n\n  (?=...)\n  Matches the subsequent string\n\n\n  (?!...)\n  Matches NOT the subsequent string\n\n\n  (?<=...)\n  Matches the previous string  (new 2018)\n\n\n  (?<!...)\n  Matches NOT the previous string (new 2018)"
+    },
+    {
+      "type": "other",
+      "text": "See Also:\nRegExp Assertions Tutorial"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "RexExp Quantifiers"
+    },
+    {
+      "type": "paragraph",
+      "text": "Quantifiers indicate the numbers of characters or expressions to match:"
+    },
+    {
+      "type": "other",
+      "text": "Code\n  Description\n\n\n  x+\n  Matches at least one x\n\n\n  x*\n  Matches zero or more occurrences of x\n\n\n  x?\n  Matches zero or one occurrences of x\n\n\n  x{n}\n  Matches n occurences of x\n\n\n  x{n,m}\n  Matches from n to m occurences of x\n\n\n  x{n,}\n  Matches n or more occurences of x"
+    },
+    {
+      "type": "other",
+      "text": "See Also:\nRegExp Quantifiers Tutorial"
+    }
+  ]
+}

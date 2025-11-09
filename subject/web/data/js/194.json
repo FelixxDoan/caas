@@ -1,0 +1,395 @@
+{
+  "url": "https://www.w3schools.com/js/js_strings.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Strings"
+    },
+    {
+      "type": "other",
+      "text": "Strings are for storing text\nStrings are written with quotes"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Using Quotes"
+    },
+    {
+      "type": "paragraph",
+      "text": "A JavaScript string is zero or more characters written inside quotes."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"John Doe\";"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "You can use single or double quotes:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let carName1 = \"Volvo XC60\";  \n  // Double quotes\nlet carName2 = 'Volvo XC60';  // Single quotes"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\nStrings created with single or double quotes work the same.\nThere is no difference between the two."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Quotes Inside Quotes"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can use quotes inside a string, as long as they don't match the quotes \nsurrounding the string:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let answer1 = \"It's alright\";\nlet answer2 = \"He is called 'Johnny'\";\nlet answer3 = 'He is called \"Johnny\"';"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Template Strings"
+    },
+    {
+      "type": "paragraph",
+      "text": "Templates were introduced with ES6 (JavaScript 2016)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Templates are strings enclosed in backticks (`This is a template string`)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Templates allow single and double quotes inside a string:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = `He's often called \"Johnny\"`;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "String Length"
+    },
+    {
+      "type": "paragraph",
+      "text": "To find the length of a string, use the built-in length property:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"ABCDEFGHIJKLMNOPQRSTUVWXYZ\";\nlet length = text.length;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Escape Characters"
+    },
+    {
+      "type": "paragraph",
+      "text": "Because strings must be written within quotes, JavaScript will misunderstand this string:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"We are the so-called \"Vikings\" from the north.\";"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The string will be chopped to \"We are the so-called \"."
+    },
+    {
+      "type": "paragraph",
+      "text": "To solve this problem, you can use an backslash escape character."
+    },
+    {
+      "type": "paragraph",
+      "text": "The backslash escape character (\\) turns special characters into string characters:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Code",
+          "Result",
+          "Description"
+        ],
+        [
+          "\\'",
+          "'",
+          "Single quote"
+        ],
+        [
+          "\\\"",
+          "\"",
+          "Double quote"
+        ],
+        [
+          "\\\\",
+          "\\",
+          "Backslash"
+        ]
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"We are the so-called \\\"Vikings\\\" from the north.\";"
+        },
+        {
+          "language": "unknown",
+          "code": "let text= 'It\\'s alright.';"
+        },
+        {
+          "language": "unknown",
+          "code": "let text = \"The character \\\\ is called backslash.\";"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Six other escape sequences are valid in JavaScript:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Code",
+          "Result"
+        ],
+        [
+          "\\b",
+          "Backspace"
+        ],
+        [
+          "\\f",
+          "Form Feed"
+        ],
+        [
+          "\\n",
+          "New Line"
+        ],
+        [
+          "\\r",
+          "Carriage Return"
+        ],
+        [
+          "\\t",
+          "Horizontal Tabulator"
+        ],
+        [
+          "\\v",
+          "Vertical Tabulator"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\nThe 6 escape characters above were originally designed to control \ntypewriters, teletypes, and fax machines. They do not make any sense in HTML."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Breaking Long Lines"
+    },
+    {
+      "type": "paragraph",
+      "text": "For readability, programmers often like to avoid long code lines."
+    },
+    {
+      "type": "paragraph",
+      "text": "A safe way to break up a statement is after an operator:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "document.getElementById(\"demo\").innerHTML =\"Hello Dolly!\";"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "A safe way to break up a string is by using string addition:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "document.getElementById(\"demo\").innerHTML = \"Hello \" + \"Dolly!\";"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Template Strings"
+    },
+    {
+      "type": "paragraph",
+      "text": "Templates were introduced with ES6 (JavaScript 2016)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Templates are strings enclosed in backticks (`This is a template string`)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Templates allow multiline strings:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text =\n`The quick\nbrown fox\njumps over\nthe lazy dog`;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Strings as Objects"
+    },
+    {
+      "type": "paragraph",
+      "text": "Normally, JavaScript strings are primitive values, created from literals:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = \"John\";"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "But strings can also be defined as objects with the keyword new:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let y = new String(\"John\");"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = \"John\";\nlet y = new String(\"John\");"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Do not create String objects.\nThe new keyword complicates the code and slows down execution speed.\nString objects can produce unexpected results:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = \"John\";\nlet y = new String(\"John\");"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = \"John\";\nlet y = new String(\"John\");"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note the difference between (x==y) and (x===y)."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = new String(\"John\");\nlet y = new String(\"John\");"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = new String(\"John\");\nlet y = new String(\"John\");"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Comparing two JavaScript objects always returns false."
+    },
+    {
+      "type": "other",
+      "text": "Learn More:\nJavaScript String Methods\nJavaScript String Search\nJavaScript String Reference"
+    }
+  ]
+}

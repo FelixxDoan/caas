@@ -1,0 +1,185 @@
+{
+  "url": "https://www.w3schools.com/css/css_colors.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Colors"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CSS Color Names"
+    },
+    {
+      "type": "paragraph",
+      "text": "In CSS, a color can be specified by using a predefined color name:"
+    },
+    {
+      "type": "other",
+      "text": "Tomato\n  \n  \n    Orange\n  \n  \n    DodgerBlue\n  \n  \n    MediumSeaGreen\n  \n  \n    Gray\n  \n  \n    SlateBlue\n  \n  \n    Violet\n  \n  \n    LightGray"
+    },
+    {
+      "type": "paragraph",
+      "text": "Try it Yourself »"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS/HTML support 140 standard color names."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CSS Background Color"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can set the background color for HTML elements:"
+    },
+    {
+      "type": "other",
+      "text": "Hello World"
+    },
+    {
+      "type": "other",
+      "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.\n  Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<h1 style=\"background-color:DodgerBlue;\">Hello World</h1><p style=\"background-color:Tomato;\">Lorem \n  ipsum...</p>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CSS Text Color"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can set the color of text:"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Hello World"
+    },
+    {
+      "type": "paragraph",
+      "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat."
+    },
+    {
+      "type": "paragraph",
+      "text": "Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<h1 style=\"color:Tomato;\">Hello \n  World</h1><p style=\"color:DodgerBlue;\">Lorem \n  ipsum...</p><p style=\"color:MediumSeaGreen;\">Ut wisi \n  enim...</p>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CSS Border Color"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can set the color of borders:"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Hello World"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Hello World"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Hello World"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<h1 style=\"border:2px \n  solid Tomato;\">Hello \n  World</h1><h1 style=\"border:2px \n  solid DodgerBlue;\">Hello \n  World</h1><h1 style=\"border:2px \n  solid Violet;\">Hello \n  World</h1>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CSS Color Values"
+    },
+    {
+      "type": "paragraph",
+      "text": "In CSS, colors can also be specified using RGB values, HEX values, HSL \nvalues, RGBA values, and HSLA values:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Same as color name \"Tomato\":"
+    },
+    {
+      "type": "other",
+      "text": "rgb(255, 99, 71)\n  #ff6347\n  hsl(9, 100%, 64%)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Same as color name \"Tomato\", but 50% transparent:"
+    },
+    {
+      "type": "other",
+      "text": "rgba(255, 99, 71, 0.5)\n  hsla(9, 100%, 64%, 0.5)"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<h1 style=\"background-color:rgb(255, \n  99, 71);\">...</h1><h1 style=\"background-color:#ff6347;\">...</h1><h1 style=\"background-color:hsl(9, \n  100%, 64%);\">...</h1><h1 style=\"background-color:rgba(255, \n  99, 71, 0.5);\">...</h1><h1 style=\"background-color:hsla(9, \n  100%, 64%, 0.5);\">...</h1>"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Learn more about Color Values\nYou will learn more about RGB, HEX and HSL in the next chapters."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Video: CSS Colors Introduction"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

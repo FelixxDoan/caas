@@ -1,0 +1,257 @@
+{
+  "url": "https://www.w3schools.com/html/html_lists_unordered.asp",
+  "title": "HTML ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "HTML Unordered Lists"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "The HTML <ul> tag defines an unordered \n(bulleted) list."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Unordered HTML List"
+    },
+    {
+      "type": "paragraph",
+      "text": "An unordered list starts with the <ul> tag. Each list item starts with the \n<li> tag."
+    },
+    {
+      "type": "paragraph",
+      "text": "The list items will be marked with bullets (small black circles) by default:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<ul>\n \n<li>Coffee</li>  <li>Tea</li>\n \n<li>Milk</li>\n</ul>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Unordered HTML List - Choose List Item Marker"
+    },
+    {
+      "type": "paragraph",
+      "text": "The CSS list-style-type property is used to define the style of the \nlist item marker. It can have one of the following values:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Value",
+          "Description"
+        ],
+        [
+          "disc",
+          "Sets the list item marker to a bullet (default)"
+        ],
+        [
+          "circle",
+          "Sets the list item marker to a circle"
+        ],
+        [
+          "square",
+          "Sets the list item marker to a square"
+        ],
+        [
+          "none",
+          "The list items will not be marked"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Disc"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<ul style=\"list-style-type:disc;\">  <li>Coffee</li>\n  <li>Tea</li>  <li>Milk</li></ul>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Circle"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<ul style=\"list-style-type:circle;\">  <li>Coffee</li>\n  <li>Tea</li>  <li>Milk</li></ul>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Square"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<ul style=\"list-style-type:square;\">  <li>Coffee</li>\n  <li>Tea</li>  <li>Milk</li></ul>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "No List Marker"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<ul style=\"list-style-type:none;\">  <li>Coffee</li>\n  <li>Tea</li>  <li>Milk</li></ul>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Nested HTML Lists"
+    },
+    {
+      "type": "paragraph",
+      "text": "Lists can be nested (list inside list):"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<ul>  <li>Coffee</li>  <li>Tea\n    <ul>      \n<li>Black tea</li>      <li>Green tea</li>\n    </ul>  \n</li>  <li>Milk</li></ul>"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note: A list item (<li>) can contain \n  a new list, and other HTML elements, like images and links, etc."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Horizontal List with CSS"
+    },
+    {
+      "type": "paragraph",
+      "text": "HTML lists can be styled in many different ways with CSS."
+    },
+    {
+      "type": "paragraph",
+      "text": "One popular way is to style a list horizontally, to create a navigation menu:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<!DOCTYPE html><html><head><style>ul {  list-style-type: none;\n    margin: 0;  padding: 0;  overflow: hidden;  background-color: #333333;}li {  float: left;}li a {  display: block;  color: white;  text-align: center;  padding: 16px;  text-decoration: none;}\n li a:hover {  background-color: #111111;}\n </style></head><body><ul>  <li><a href=\"#home\">Home</a></li>  <li><a href=\"#news\">News</a></li>  <li><a href=\"#contact\">Contact</a></li>  <li><a href=\"#about\">About</a></li>\n </ul></body></html>"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Tip: You can learn much more about CSS in our CSS Tutorial."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Chapter Summary"
+    },
+    {
+      "type": "other",
+      "text": "Use the HTML <ul> element to define an unordered list\n  Use the CSS list-style-type property to define the list item marker\n  Use the HTML <li> element to define a list item\n  Lists can be nested\n  List items can contain other HTML elements \n  Use the CSS property float:left to display a list horizontally"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML List Tags"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Tag",
+          "Description"
+        ],
+        [
+          "<ul>",
+          "Defines an unordered list"
+        ],
+        [
+          "<ol>",
+          "Defines an ordered list"
+        ],
+        [
+          "<li>",
+          "Defines a list item"
+        ],
+        [
+          "<dl>",
+          "Defines a description list"
+        ],
+        [
+          "<dt>",
+          "Defines a term in a description list"
+        ],
+        [
+          "<dd>",
+          "Describes the term in a description list"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "For a complete list of all available HTML tags, visit our HTML Tag Reference."
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Use the HTML <ul> element to define an unordered list",
+        "Use the CSS list-style-type property to define the list item marker",
+        "Use the HTML <li> element to define a list item",
+        "Lists can be nested",
+        "List items can contain other HTML elements",
+        "Use the CSS property float:left to display a list horizontally"
+      ]
+    }
+  ]
+}

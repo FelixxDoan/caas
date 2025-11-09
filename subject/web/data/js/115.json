@@ -1,0 +1,238 @@
+{
+  "url": "https://www.w3schools.com/js/js_set_methods.asp",
+  "title": "JavaScript Set Methods",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Set Methods"
+    },
+    {
+      "type": "other",
+      "text": "Basic Set Methods\nnew Set()\nadd()\nclear()\ndelete()\nentries()\nforEach()\nhas()\nkeys()\nvalues()\nSet Properties\nsize"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The new Set() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "Pass an array to the new Set() constructor:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create a new Set\nconst letters = new Set([\"a\",\"b\",\"c\"]);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The add() Method"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "letters.add(\"d\");\nletters.add(\"e\");"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "If you add equal elements, only the first will be saved:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "letters.add(\"a\");\nletters.add(\"b\");\nletters.add(\"c\");\nletters.add(\"c\");\nletters.add(\"c\");\nletters.add(\"c\");\nletters.add(\"c\");\nletters.add(\"c\");"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\nThe primary feature of Set objects is that they only store unique values.\nIf an attempt is made to add an element that already exists in the set, the add() method will have no effect,\nand the set will remain unchanged."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The size Property"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create a new Set\nconst mySet = new Set([\"a\",\"b\",\"c\"]);\n\n// The number of elements are\nmySet.size;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Listing Set Elements"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can list all Set elements (values) with a for..of loop:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create a Set\nconst letters = new Set([\"a\",\"b\",\"c\"]);\n\n// List all Elements\nlet text = \"\";\nfor (const x of letters) {\n  text += x;\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The has() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The has() method returns true if a specified value exists in a set."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create a Set\nconst letters = new Set([\"a\",\"b\",\"c\"]);\n\n// Does the Set contain \"d\"?\nanswer = letters.has(\"d\");"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The forEach() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The forEach() method invokes a function for each Set element:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create a Set\nconst letters = new Set([\"a\",\"b\",\"c\"]);\n\n// List all entries\nlet text = \"\";\nletters.forEach (function(value) {\n  text += value;\n})"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The values() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The values() method returns an Iterator object with the values in a Set:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create a Set\nconst letters = new Set([\"a\",\"b\",\"c\"]);\n\n// Get all Values\nconst myIterator = letters.values();\n\n// List all Values\nlet text = \"\";\nfor (const entry of myIterator) {\n  text += entry;\n}"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create a Set\nconst letters = new Set([\"a\",\"b\",\"c\"]);\n\n// List all Values\nlet text = \"\";\nfor (const entry of letters.values()) {\n  text += entry;\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The keys() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The keys() method returns an Iterator object with the values in a Set:"
+    },
+    {
+      "type": "other",
+      "text": "Note\nA Set has no keys, so keys() returns the same as values().\nThis makes Sets compatible with Maps."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create a Set\nconst letters = new Set([\"a\",\"b\",\"c\"]);\n\n// Create an Iterator\nconst myIterator = letters.keys();\n\n// List all Elements\nlet text = \"\";\nfor (const x of myIterator) {\n  text += x;\n}"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create a Set\nconst letters = new Set([\"a\",\"b\",\"c\"]);\n\n// List all Elements\nlet text = \"\";\nfor (const x of letters.keys()) {\n  text += x;\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The entries() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The entries() method returns an Iterator with [value,value] pairs from a Set."
+    },
+    {
+      "type": "other",
+      "text": "Note\nThe entries() method is supposed to return a [key,value] pair from an object.\nA Set has no keys, so the entries() method returns [value,value].\nThis makes Sets compatible with Maps."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create a Set\nconst letters = new Set([\"a\",\"b\",\"c\"]);\n\n// Get all Entries\nconst myIterator = letters.entries();\n\n// List all Entries\nlet text = \"\";\nfor (const entry of myIterator) {\n  text += entry;\n}"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create a Set\nconst letters = new Set([\"a\",\"b\",\"c\"]);\n\n// List all Entries\nlet text = \"\";\nfor (const entry of letters.entries()) {\n  text += entry;\n}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Complete JavaScript Reference\nFor a complete reference to all JavaScript properties and methods, with full descriptions and many examples, go to:\nW3Schools' Full JavaScript Reference.\nThe reference inludes all JavaScript updates from 1999 to 2025."
+    }
+  ]
+}

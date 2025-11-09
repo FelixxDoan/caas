@@ -1,0 +1,118 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_orderby.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL ORDER BY Keyword"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "heading",
+      "text": "The SQL ORDER BY"
+    },
+    {
+      "type": "paragraph",
+      "text": "The ORDER BY keyword is used to sort the result-set in ascending or \ndescending order."
+    },
+    {
+      "type": "other",
+      "text": "Example\nSort the products by price:\n\n SELECT * FROM Products\n ORDER BY Price;\n\n\n Try it Yourself »"
+    },
+    {
+      "type": "heading",
+      "text": "Syntax"
+    },
+    {
+      "type": "other",
+      "text": "SELECT column1, column2, ...\nFROM table_name\nORDER BY column1, column2, ... ASC|DESC;"
+    },
+    {
+      "type": "heading",
+      "text": "Demo Database"
+    },
+    {
+      "type": "paragraph",
+      "text": "Below is a selection from the Products table used in the examples:"
+    },
+    {
+      "type": "other",
+      "text": "ProductID\nProductName\nSupplierID\nCategoryID\nUnit\nPrice\n\n\n1\nChais\n1\n1\n10 boxes x 20 bags\n18\n\n2\nChang\n1\n1\n24 - 12 oz bottles\n19\n\n3\nAniseed Syrup\n1\n2\n12 - 550 ml bottles\n10\n\n4\nChef Anton's Cajun Seasoning\n2\n2\n48 - 6 oz jars\n22\n\n5\nChef Anton's Gumbo Mix\n2\n2\n36 boxes\n21.35"
+    },
+    {
+      "type": "heading",
+      "text": "DESC"
+    },
+    {
+      "type": "paragraph",
+      "text": "The ORDER BY keyword sorts the records in ascending order by default. To sort the records in descending order, use the \nDESC keyword."
+    },
+    {
+      "type": "other",
+      "text": "Example\nSort the products from highest to lowest price:\n\n SELECT * FROM Products\n ORDER BY Price DESC;\n\n Try it Yourself »"
+    },
+    {
+      "type": "heading",
+      "text": "Order Alphabetically"
+    },
+    {
+      "type": "paragraph",
+      "text": "For string values the ORDER BY keyword will order alphabetically:"
+    },
+    {
+      "type": "other",
+      "text": "Example\nSort the products alphabetically by ProductName:\n\n SELECT * FROM Products\n ORDER BY ProductName;\n\n Try it Yourself »"
+    },
+    {
+      "type": "heading",
+      "text": "Alphabetically DESC"
+    },
+    {
+      "type": "paragraph",
+      "text": "To sort the table reverse alphabetically, use the DESC keyword:"
+    },
+    {
+      "type": "other",
+      "text": "Example\nSort the products by ProductName in reverse order:\n\n SELECT * FROM Products\n ORDER BY ProductName DESC;\n\n Try it Yourself »"
+    },
+    {
+      "type": "heading",
+      "text": "ORDER BY Several Columns"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement selects all customers from the \"Customers\" table, \nsorted by the \"Country\" and the \"CustomerName\" column. This means that it orders \nby Country, but if some rows have the same Country, it orders them by \nCustomerName:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n SELECT * FROM Customers\n ORDER BY Country, CustomerName;\n\n Try it Yourself »"
+    },
+    {
+      "type": "heading",
+      "text": "Using Both ASC and DESC"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement selects all customers from the \"Customers\" table, \nsorted ascending by the \"Country\" and descending by the \"CustomerName\" column:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n SELECT * FROM Customers\n ORDER BY Country ASC, CustomerName DESC;\n\n Try it Yourself »"
+    },
+    {
+      "type": "heading",
+      "text": "Video: SQL ORDER BY Keyword"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

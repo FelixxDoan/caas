@@ -1,0 +1,222 @@
+{
+  "url": "https://www.w3schools.com/js/js_regexp_quantifiers.asp",
+  "title": "RegExp Quantifiers",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "RegExp Quantifiers"
+    },
+    {
+      "type": "other",
+      "text": "RegExp Quantifiers\nQuantifiers define the numbers of characters or expressions to match.\n\n// Match at least one zero\nconst pattern = /0+/;"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript RexExp Quantifiers"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Revised July 2025"
+    },
+    {
+      "type": "other",
+      "text": "Code\n  Description\n\n\n  x+\n  Matches at least one x\n\n\n  x*\n  Matches zero or more occurrences of x\n\n\n  x?\n  Matches zero or one occurrences of x\n\n\n  x{n}\n  Matches n occurences of x\n\n\n  x{n,m}\n  Matches from n to m occurences of x\n\n\n  x{n,}\n  Matches n or more occurences of x"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "RegExp + Quantifier"
+    },
+    {
+      "type": "paragraph",
+      "text": "x+ matches matches at least one x."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"Hellooo World! Hello W3Schools!\";\nconst pattern = /lo+/g;\n\nlet result = text.match(pattern);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "RegExp * Quantifier"
+    },
+    {
+      "type": "paragraph",
+      "text": "x* matches zero or more occurrences of x."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"Hellooo World! Hello W3Schools!\";\nconst pattern = /lo*/g;\n\nlet result = text.match(pattern);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "RegExp ? Quantifier"
+    },
+    {
+      "type": "paragraph",
+      "text": "x? matches zero or one occurrences of x."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"1, 100 or 1000?\";\nconst pattern = /10?/g;\n\nlet result = text.match(pattern);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "RegExp {n} Quantifier"
+    },
+    {
+      "type": "paragraph",
+      "text": "x{n} matches n occurences of x."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"100, 1000 or 10000?\";\nlet pattern = /\\d{4}/g;\n\nlet result = text.match(pattern);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "RegExp {n,m} Quantifier"
+    },
+    {
+      "type": "paragraph",
+      "text": "x{n,m} matches from n to m occurences of x."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"100, 1000 or 10000?\";\nlet pattern = /\\d{3,4}/g;\n\nlet result = text.match(pattern);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "RegExp {n,} Quantifier"
+    },
+    {
+      "type": "paragraph",
+      "text": "x{n,} matches n or more occurences of x."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"100, 1000 or 10000?\";\nlet pattern = /\\d{3,}/g;\n\nlet result = text.match(pattern);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Regular Expression Methods"
+    },
+    {
+      "type": "paragraph",
+      "text": "Regular Expression Search and Replace can be done with different methods."
+    },
+    {
+      "type": "paragraph",
+      "text": "These are the most common:"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "String Methods"
+    },
+    {
+      "type": "table",
+      "data": [
+        [],
+        [
+          "Method",
+          "Description"
+        ],
+        [
+          "match(regex)",
+          "Returns an Array of results"
+        ],
+        [
+          "matchAll(regex)",
+          "Returns an Iterator of results"
+        ],
+        [
+          "replace(regex)",
+          "Returns a new String"
+        ],
+        [
+          "replaceAll(regex)",
+          "Returns a new String"
+        ],
+        [
+          "search(regex)",
+          "Returns the index of the first match"
+        ],
+        [
+          "split(regex)",
+          "Returns an Array of results"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "RegExp Methods"
+    },
+    {
+      "type": "table",
+      "data": [
+        [],
+        [
+          "Method",
+          "Description"
+        ],
+        [
+          "regex.exec()",
+          "Returns an Iterator of results"
+        ],
+        [
+          "regex.test()",
+          "Returns true or false"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "See Also:\nJavaScript RegExp Tutorial\nJavaScript RegExp Flags\nJavaScript RegExp Character Classes\nJavaScript RegExp Meta Characters\nJavaScript RegExp Assertions\nJavaScript RegExp Patterns\nJavaScript RegExp Objects\nJavaScript RegExp Methods"
+    }
+  ]
+}

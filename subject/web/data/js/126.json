@@ -1,0 +1,259 @@
+{
+  "url": "https://www.w3schools.com/js/js_object_constructors.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Object Constructors"
+    },
+    {
+      "type": "other",
+      "text": "Object Constructor Functions\nSometimes we need to create many objects of the same type.\nTo create an object type we use an object constructor function.\nIt is considered good practice to name constructor functions with an upper-case first letter."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "function Person(first, last, age, eye) {\n  this.firstName = first;\n  this.lastName = last;\n  this.age = age;\n  this.eyeColor = eye;\n}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note:\nIn the constructor function, this has no value.\nThe value of this will become the new object when \na new object is created.\nSee Also:\nThe JavaScript this Tutorial"
+    },
+    {
+      "type": "paragraph",
+      "text": "Now we can use new Person()\nto create many new Person objects:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const myFather = new Person(\"John\", \"Doe\", 50, \"blue\");\nconst myMother = new Person(\"Sally\", \"Rally\", 48, \"green\");\nconst mySister = new Person(\"Anna\", \"Rally\", 18, \"green\");\n\nconst mySelf = new Person(\"Johnny\", \"Rally\", 22, \"green\");"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Property Default Values"
+    },
+    {
+      "type": "paragraph",
+      "text": "A value given to a property will be a default value for all objects\ncreated by the constructor:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "function Person(first, last, age, eyecolor) {\n   \nthis.firstName = first;\n   \nthis.lastName = last;\n   \nthis.age = age;\n  this.eyeColor = eyecolor;  this.nationality = \"English\";\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Adding a Property to an Object"
+    },
+    {
+      "type": "paragraph",
+      "text": "Adding a property to a created object is easy:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "myFather.nationality = \"English\";"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note:\nThe new property will be added to myFather. Not to any other Person Objects."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Adding a Property to a Constructor"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can NOT add a new property to an object constructor:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Person.nationality = \"English\";"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "To add a new property, you must add it to the constructor function prototype:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Person.prototype.nationality = \"English\";"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Constructor Function Methods"
+    },
+    {
+      "type": "paragraph",
+      "text": "A constructor function can also have methods:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "function Person(first, last, age, eyecolor) {\n   \nthis.firstName = first;\n   \nthis.lastName = last;\n   \nthis.age = age;\n   \nthis.eyeColor = eyecolor;  this.fullName = function() {\n    return this.firstName + \" \" + this.lastName;\n  };\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Adding a Method to an Object"
+    },
+    {
+      "type": "paragraph",
+      "text": "Adding a method to a created object is easy:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "myMother.changeName = function (name) {\n  this.lastName = name;\n}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note:\nThe new method will be added to myMother. Not to any other Person Objects."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Adding a Method to a Constructor"
+    },
+    {
+      "type": "paragraph",
+      "text": "You cannot add a new method to an object constructor function."
+    },
+    {
+      "type": "paragraph",
+      "text": "This code will produce a TypeError:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Person.changeName = function (name) {\n  this.lastName = name;\n}\n\nmyMother.changeName(\"Doe\");"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Adding a new method must be done to the constructor function prototype:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Person.prototype.changeName = function (name) {\n  this.lastName = name;\n}\n\nmyMother.changeName(\"Doe\");"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note:\nThe changeName() function assigns the value of name\nto the person's lastName property, substituting this with myMother."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Built-in JavaScript Constructors"
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript has built-in constructors for all native objects:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "new Object()   // A new Object object\nnew Array()    // A new Array object\nnew Map()      // A new Map object\nnew Set()      // A new Set object\nnew Date()     // A new Date object\nnew RegExp()   // A new RegExp object\nnew Function() // A new Function object"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note:\nThe Math() object is not in the list. Math is a global object. The new keyword cannot be used on \nMath."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Did You Know?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Use object literals {} instead of new Object()."
+    },
+    {
+      "type": "paragraph",
+      "text": "Use array literals [] instead of new Array()."
+    },
+    {
+      "type": "paragraph",
+      "text": "Use pattern literals /()/ instead of new RegExp()."
+    },
+    {
+      "type": "paragraph",
+      "text": "Use function expressions () {} instead of new Function()."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "\"\";           // primitive string\n0;            // primitive number\nfalse;        // primitive boolean\n\n{};           // object object\n[];           // array object\n/()/          // regexp object\nfunction(){}; // function"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Learn More:\nJavaScript Object Definitions\nJavaScript Object Constructors\nJavaScript Object this\nJavaScript Object Methods\nJavaScript Object Properties\nJavaScript Object Getters & Setters\nJavaScript Object Protection\nJavaScript Object Reference"
+    }
+  ]
+}

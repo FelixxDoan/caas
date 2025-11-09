@@ -1,0 +1,82 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_notnull.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL NOT NULL Constraint"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "text": "SQL NOT NULL Constraint"
+    },
+    {
+      "type": "paragraph",
+      "text": "By default, a column can hold NULL values."
+    },
+    {
+      "type": "paragraph",
+      "text": "The NOT NULL constraint enforces a column to NOT accept NULL values."
+    },
+    {
+      "type": "paragraph",
+      "text": "This enforces a field to always contain a value, which means that you cannot insert a new record, or update a record without adding a value to this field."
+    },
+    {
+      "type": "heading",
+      "text": "SQL NOT NULL on CREATE TABLE"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL ensures that the \"ID\", \"LastName\", and \n\"FirstName\" columns \nwill NOT accept NULL values when the \"Persons\" table is created:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n  CREATE TABLE Persons (    ID int NOT NULL,    \n  LastName varchar(255) NOT NULL,    FirstName varchar(255) \n  NOT NULL,    Age int);"
+    },
+    {
+      "type": "heading",
+      "text": "SQL NOT NULL on ALTER TABLE"
+    },
+    {
+      "type": "paragraph",
+      "text": "To create a NOT NULL constraint on the \"Age\" column when the \"Persons\" table is already created, use the following SQL:"
+    },
+    {
+      "type": "paragraph",
+      "text": "SQL Server / MS Access:"
+    },
+    {
+      "type": "other",
+      "text": "ALTER TABLE Persons\nALTER COLUMN Age int NOT NULL;"
+    },
+    {
+      "type": "paragraph",
+      "text": "My SQL / Oracle (prior version 10G):"
+    },
+    {
+      "type": "other",
+      "text": "ALTER TABLE Persons\nMODIFY COLUMN Age int NOT NULL;"
+    },
+    {
+      "type": "paragraph",
+      "text": "Oracle 10G and later:"
+    },
+    {
+      "type": "other",
+      "text": "ALTER TABLE Persons\n  MODIFY Age int NOT NULL;"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

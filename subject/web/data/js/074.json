@@ -1,0 +1,169 @@
+{
+  "url": "https://www.w3schools.com/js/js_htmldom_elements.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript HTML DOM Elements"
+    },
+    {
+      "type": "paragraph",
+      "text": "This page teaches you how to find and access HTML elements in \nan HTML page."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Finding HTML Elements"
+    },
+    {
+      "type": "paragraph",
+      "text": "Often, with JavaScript, you want to manipulate HTML elements."
+    },
+    {
+      "type": "paragraph",
+      "text": "To do so, you have to find the elements first. There are several ways to do this:"
+    },
+    {
+      "type": "other",
+      "text": "Finding HTML elements by id\n  Finding HTML elements by tag name \n  Finding HTML elements by class name\n  Finding HTML elements by CSS selectors\n  Finding HTML elements by HTML object collections"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Finding HTML Element by Id"
+    },
+    {
+      "type": "paragraph",
+      "text": "The easiest way to find an HTML element in the DOM, is by using the element id."
+    },
+    {
+      "type": "paragraph",
+      "text": "This example finds the element with id=\"intro\":"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const element = document.getElementById(\"intro\");"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "If the element is found, the method will return the element as an object (in element)."
+    },
+    {
+      "type": "paragraph",
+      "text": "If the element is not found, element will contain null."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Finding HTML Elements by Tag Name"
+    },
+    {
+      "type": "paragraph",
+      "text": "This example finds all <p> elements:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const element = document.getElementsByTagName(\"p\");"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "This example finds the element with id=\"main\", and then finds all <p> elements \ninside \"main\":"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const x = document.getElementById(\"main\");\nconst y = x.getElementsByTagName(\"p\");"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Finding HTML Elements by Class Name"
+    },
+    {
+      "type": "paragraph",
+      "text": "If you want to find all HTML elements with the same class name, use \ngetElementsByClassName()."
+    },
+    {
+      "type": "paragraph",
+      "text": "This example returns a list of all elements with class=\"intro\"."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const x = document.getElementsByClassName(\"intro\");"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Finding HTML Elements by CSS Selectors"
+    },
+    {
+      "type": "paragraph",
+      "text": "If you want to find all HTML elements that match a specified CSS selector \n(id, class names, types, attributes, values of attributes, etc), use the querySelectorAll() method."
+    },
+    {
+      "type": "paragraph",
+      "text": "This example returns a list of all <p> elements with class=\"intro\"."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const x = document.querySelectorAll(\"p.intro\");"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Finding HTML Elements by HTML Object Collections"
+    },
+    {
+      "type": "paragraph",
+      "text": "This example finds the form element with id=\"frm1\", in the forms \ncollection, and displays all element \nvalues:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const x = document.forms[\"frm1\"];\nlet text = \"\";\nfor (let i = 0; i < x.length; i++) {  text += x.elements[i].value + \"<br>\";}document.getElementById(\"demo\").innerHTML = text;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The following HTML objects (and object collections) are also accessible:"
+    },
+    {
+      "type": "other",
+      "text": "document.anchors\n  document.body\n  document.documentElement\n  document.embeds\n  document.forms\n  document.head\n  document.images\n  document.links\n  document.scripts\n  document.title"
+    }
+  ]
+}

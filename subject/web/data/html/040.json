@@ -1,0 +1,273 @@
+{
+  "url": "https://www.w3schools.com/html/html_form_attributes_form.asp",
+  "title": "HTML ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "HTML Input form* Attributes"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "This chapter describes the different form* attributes for the HTML <input> element."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The form Attribute"
+    },
+    {
+      "type": "paragraph",
+      "text": "The input form attribute specifies the form \nthe <input> element belongs to."
+    },
+    {
+      "type": "paragraph",
+      "text": "The value of this attribute must be equal to the id attribute of the <form> \nelement it belongs to."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<form action=\"/action_page.php\" id=\"form1\">  <label for=\"fname\">First \n    name:</label>  <input type=\"text\" id=\"fname\" name=\"fname\"><br><br>  \n    <input type=\"submit\" value=\"Submit\"></form><label for=\"lname\">Last \n    name:</label><input type=\"text\" id=\"lname\" \n    name=\"lname\" form=\"form1\">"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The formaction Attribute"
+    },
+    {
+      "type": "paragraph",
+      "text": "The input formaction attribute specifies the URL of \nthe file that will process the input when the form is submitted."
+    },
+    {
+      "type": "paragraph",
+      "text": "Note: This attribute overrides the \naction attribute of the <form> element."
+    },
+    {
+      "type": "paragraph",
+      "text": "The formaction attribute works with the \nfollowing input types: submit and image."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<form action=\"/action_page.php\">  <label for=\"fname\">First \n    name:</label>  <input type=\"text\" id=\"fname\" name=\"fname\"><br><br>  \n    <label for=\"lname\">Last name:</label>  <input type=\"text\" id=\"lname\" \n    name=\"lname\"><br><br>  <input type=\"submit\" value=\"Submit\">  \n    <input type=\"submit\" formaction=\"/action_page2.php\" value=\"Submit as Admin\">\n    </form>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The formenctype Attribute"
+    },
+    {
+      "type": "paragraph",
+      "text": "The input formenctype  attribute specifies how the form-data should be encoded when submitted (only for forms with method=\"post\")."
+    },
+    {
+      "type": "paragraph",
+      "text": "Note: This attribute overrides the enctype attribute of the <form> element."
+    },
+    {
+      "type": "paragraph",
+      "text": "The formenctype attribute works with the \nfollowing input types: submit and image."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<form action=\"/action_page_binary.asp\" method=\"post\">  <label for=\"fname\">First \n    name:</label>  <input type=\"text\" id=\"fname\" name=\"fname\"><br><br>  \n    <input type=\"submit\" value=\"Submit\">  <input type=\"submit\" \n    formenctype=\"multipart/form-data\"  value=\"Submit as \n    Multipart/form-data\"></form>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The formmethod Attribute"
+    },
+    {
+      "type": "paragraph",
+      "text": "The input formmethod  attribute defines the HTTP method for sending form-data to the action URL."
+    },
+    {
+      "type": "paragraph",
+      "text": "Note: This attribute overrides the method  attribute of the <form> element."
+    },
+    {
+      "type": "paragraph",
+      "text": "The formmethod attribute works with the \nfollowing input types: submit and image."
+    },
+    {
+      "type": "paragraph",
+      "text": "The form-data can be sent as URL variables (method=\"get\") or as an HTTP post \ntransaction (method=\"post\")."
+    },
+    {
+      "type": "paragraph",
+      "text": "Notes on the \"get\" method:"
+    },
+    {
+      "type": "other",
+      "text": "This method appends the form-data to the URL in name/value pairs\n  This method is useful for form submissions where a user want to bookmark \n  the result\n  There is a limit to how much data you can place in a URL (varies between \n  browsers), therefore, you cannot be sure that all of the form-data will be \n  correctly transferred\n  Never use the \"get\" method to pass sensitive information! (password or \n  other sensitive information will be visible in the browser's address bar)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Notes on the \"post\" method:"
+    },
+    {
+      "type": "other",
+      "text": "This method sends the form-data as an HTTP post transaction\n  Form submissions with the \"post\" method cannot be bookmarked\n  The \"post\" method is more robust and secure than \"get\", and \"post\" does \n  not have size limitations"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<form action=\"/action_page.php\" method=\"get\">  <label for=\"fname\">First \n    name:</label>  <input type=\"text\" id=\"fname\" name=\"fname\"><br><br>  \n    <label for=\"lname\">Last name:</label>  <input type=\"text\" id=\"lname\" \n    name=\"lname\"><br><br>  <input type=\"submit\" value=\"Submit using \n    GET\">  <input type=\"submit\" formmethod=\"post\" value=\"Submit using \n    POST\"></form>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The formtarget Attribute"
+    },
+    {
+      "type": "paragraph",
+      "text": "The input formtarget attribute specifies a name or a keyword that indicates where \nto display the response that is received after submitting the form."
+    },
+    {
+      "type": "paragraph",
+      "text": "Note: This attribute overrides the target attribute of the <form> element."
+    },
+    {
+      "type": "paragraph",
+      "text": "The formtarget attribute works with the \nfollowing input types: submit and image."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<form action=\"/action_page.php\">  <label for=\"fname\">First \n    name:</label>  <input type=\"text\" id=\"fname\" name=\"fname\"><br><br>  \n    <label for=\"lname\">Last name:</label>  <input type=\"text\" id=\"lname\" \n    name=\"lname\"><br><br>  <input type=\"submit\" value=\"Submit\">  \n    <input type=\"submit\" formtarget=\"_blank\" value=\"Submit to a new window/tab\">\n    </form>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The formnovalidate Attribute"
+    },
+    {
+      "type": "paragraph",
+      "text": "The input formnovalidate attribute specifies \nthat an <input> element should not be validated when submitted."
+    },
+    {
+      "type": "paragraph",
+      "text": "Note: This attribute overrides the novalidate attribute of the <form> \nelement."
+    },
+    {
+      "type": "paragraph",
+      "text": "The formnovalidate attribute works with the \nfollowing input types: submit."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<form action=\"/action_page.php\">  <label for=\"email\">Enter your \n    email:</label>  <input type=\"email\" id=\"email\" name=\"email\"><br><br>  \n    <input type=\"submit\" value=\"Submit\">  <input type=\"submit\" \n    formnovalidate=\"formnovalidate\"  value=\"Submit without validation\">\n    </form>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The novalidate Attribute"
+    },
+    {
+      "type": "paragraph",
+      "text": "The novalidate attribute is a <form> attribute."
+    },
+    {
+      "type": "paragraph",
+      "text": "When present, novalidate specifies that all of the form-data should not be validated when submitted."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<form action=\"/action_page.php\" novalidate>  <label \n    for=\"email\">Enter your email:</label>  <input type=\"email\" \n    id=\"email\" name=\"email\"><br><br>  <input type=\"submit\" \n    value=\"Submit\"></form>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML Form and Input Elements"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Tag",
+          "Description"
+        ],
+        [
+          "<form>",
+          "Defines an HTML form for user input"
+        ],
+        [
+          "<input>",
+          "Defines an input control"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "For a complete list of all available HTML tags, visit our HTML Tag Reference."
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "This method appends the form-data to the URL in name/value pairs",
+        "This method is useful for form submissions where a user want to bookmark \n  the result",
+        "There is a limit to how much data you can place in a URL (varies between \n  browsers), therefore, you cannot be sure that all of the form-data will be \n  correctly transferred",
+        "Never use the \"get\" method to pass sensitive information! (password or \n  other sensitive information will be visible in the browser's address bar)"
+      ]
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "This method sends the form-data as an HTTP post transaction",
+        "Form submissions with the \"post\" method cannot be bookmarked",
+        "The \"post\" method is more robust and secure than \"get\", and \"post\" does \n  not have size limitations"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,189 @@
+{
+  "url": "https://www.w3schools.com/js/js_object_property.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Object Properties"
+    },
+    {
+      "type": "other",
+      "text": "An Object is an Unordered Collection of Properties\nProperties are the most important part of JavaScript objects.\nProperties can be changed, added, deleted, and some are read only."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Accessing JavaScript Properties"
+    },
+    {
+      "type": "paragraph",
+      "text": "The syntax for accessing the property of an object is:"
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "// objectName.property\nlet age = person.age;"
+    },
+    {
+      "type": "paragraph",
+      "text": "or"
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "//objectName[\"property\"]\nlet age = person[\"age\"];"
+    },
+    {
+      "type": "paragraph",
+      "text": "or"
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "//objectName[expression]\nlet age = person[x];"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "person.firstname + \" is \" + person.age + \" years old.\";"
+        },
+        {
+          "language": "unknown",
+          "code": "person[\"firstname\"] + \" is \" + person[\"age\"] + \" years old.\";"
+        },
+        {
+          "language": "unknown",
+          "code": "let x = \"firstname\";\nlet y = \"age\";\nperson[x] + \" is \" + person[y] + \" years old.\";"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Adding New Properties"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can add new properties to an existing object by simply giving it a value:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "person.nationality = \"English\";"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Property Default Values"
+    },
+    {
+      "type": "paragraph",
+      "text": "A value given to a property will be a default value for all objects\ncreated by the constructor:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "function Person(first, last, age, eyecolor) {\n   \nthis.firstName = first;\n   \nthis.lastName = last;\n   \nthis.age = age;\n  this.eyeColor = eyecolor;  this.nationality = \"English\";\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Deleting Properties"
+    },
+    {
+      "type": "paragraph",
+      "text": "The delete keyword deletes a property from an object:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const person = {\n  firstName: \"John\",\n  lastName: \"Doe\",\n  age: 50,\n  eyeColor: \"blue\"\n};\ndelete person.age;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "or delete person[\"age\"];"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const person = {\n  firstName: \"John\",\n  lastName: \"Doe\",\n  age: 50,\n  eyeColor: \"blue\"\n};\ndelete person[\"age\"];"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note:\nThe delete keyword deletes both the value of the property and the property itself.\nAfter deletion, the property cannot be used before it is added back again."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Nested Objects"
+    },
+    {
+      "type": "paragraph",
+      "text": "Property values in an object can be other objects:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "myObj = {\n  name:\"John\",  age:30,\n    \n  myCars: {    car1:\"Ford\",\n      \n  car2:\"BMW\",    car3:\"Fiat\"\n    }}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "You can access nested objects using the dot notation or the bracket notation:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "myObj.myCars.car2;"
+        },
+        {
+          "language": "unknown",
+          "code": "myObj.myCars[\"car2\"];"
+        },
+        {
+          "language": "unknown",
+          "code": "myObj[\"myCars\"][\"car2\"];"
+        },
+        {
+          "language": "unknown",
+          "code": "let p1 = \"myCars\";\nlet p2 = \"car2\";\nmyObj[p1][p2];"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Learn More:\nJavaScript Object Definitions\nJavaScript Object Constructors\nJavaScript Object this\nJavaScript Object Methods\nJavaScript Object Properties\nJavaScript Object Getters & Setters\nJavaScript Object Protection\nJavaScript Object Reference"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "url": "https://www.w3schools.com/css/css_z-index.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Layout - The z-index Property"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "The z-index property specifies the \nstack order of an element."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The z-index Property"
+    },
+    {
+      "type": "paragraph",
+      "text": "When elements are positioned, they can overlap other elements."
+    },
+    {
+      "type": "paragraph",
+      "text": "The z-index property specifies the stack order of an element (which element should be placed in front of, or behind, the others)."
+    },
+    {
+      "type": "paragraph",
+      "text": "An element can have a positive or negative stack order:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": []
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "img\n{\n   \nposition: absolute;\n  left: 0px;\n   \ntop: 0px;\n   \nz-index: -1;\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Note: z-index only works on positioned elements (position: absolute, \nposition: relative, position: fixed, or position: sticky) and flex items \n(elements that are direct children of display: flex elements)."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Another z-index Example"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<html><head><style>.container {  position: relative;}\n  .black-box {  position: relative;  z-index: 1;  \n  border: 2px solid black;  height: 100px;  margin: 30px;}.gray-box {  \n  position: absolute;  z-index: 3;  background: lightgray;  height: 60px;   \n  width: 70%;  left: 50px;  top: 50px;}.green-box {  position: absolute;  z-index: 2;  background: lightgreen;  \n  width: 35%;  left: 270px;  top: -15px;  height: \n  100px;}</style></head><body>\n  <div class=\"container\">  <div \n  class=\"black-box\">Black box</div>  <div class=\"gray-box\">Gray \n  box</div>  <div class=\"green-box\">Green box</div></div></body></html>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Without z-index"
+    },
+    {
+      "type": "paragraph",
+      "text": "If two positioned elements overlap each other without a z-index \nspecified, the element defined last in the HTML code will be shown on top."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<html><head><style>.container {  position: relative;}\n  .black-box {  position: relative;  \n  border: 2px solid black;  height: 100px;  margin: 30px;}.gray-box {  \n  position: absolute;  background: lightgray;  height: 60px;   \n  width: 70%;  left: 50px;  top: 50px;}.green-box {  position: absolute;  background: lightgreen;  \n  width: 35%;  left: 270px;  top: -15px;  height: \n  100px;}</style></head><body>\n  <div class=\"container\">  <div \n  class=\"black-box\">Black box</div>  <div class=\"gray-box\">Gray \n  box</div>  <div class=\"green-box\">Green box</div></div></body></html>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CSS Property"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Property",
+          "Description"
+        ],
+        [
+          "z-index",
+          "Sets the stack order of an element"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

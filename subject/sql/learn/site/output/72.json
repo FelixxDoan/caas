@@ -1,0 +1,46 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_ref_any.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL ANY Keyword"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "text": "ANY"
+    },
+    {
+      "type": "paragraph",
+      "text": "The ANY command returns true if any of the subquery values meet \nthe \ncondition."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement returns TRUE and lists the productnames if it \nfinds ANY records in the OrderDetails table where quantity = 10:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n  SELECT ProductNameFROM ProductsWHERE ProductID = ANY (SELECT \n  ProductID FROM OrderDetails WHERE Quantity = 10);\n\n  Try it Yourself »"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement returns TRUE and lists the productnames if it \nfinds ANY records in the OrderDetails table where quantity > 99:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n  SELECT ProductNameFROM ProductsWHERE ProductID = ANY (SELECT ProductID \n  FROM OrderDetails WHERE Quantity > 99);\n\n  Try it Yourself »"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

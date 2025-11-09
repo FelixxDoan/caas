@@ -1,0 +1,224 @@
+{
+  "url": "https://www.w3schools.com/html/html_quotation_elements.asp",
+  "title": "HTML ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "HTML Quotation and Citation Elements"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "In this chapter we will go through the \n<blockquote>,<q>, <abbr>, <address>, <cite>, \nand <bdo> HTML elements."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": []
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML <blockquote> for Quotations"
+    },
+    {
+      "type": "paragraph",
+      "text": "The HTML <blockquote> element defines a section that \nis quoted from another source."
+    },
+    {
+      "type": "paragraph",
+      "text": "Browsers usually indent <blockquote> elements."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<p>Here is a quote from WWF's website:</p><blockquote cite=\"http://www.worldwildlife.org/who/index.html\">\n  For 60 years, WWF has worked to help people and nature thrive. As the world's \n  leading conservation organization, WWF works in nearly 100 countries. At every \n  level, we collaborate with people around the world to develop and deliver \n  innovative solutions that protect communities, wildlife, and the places in \n  which they live.</blockquote>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML <q> for Short Quotations"
+    },
+    {
+      "type": "paragraph",
+      "text": "The HTML <q> tag defines a short quotation."
+    },
+    {
+      "type": "paragraph",
+      "text": "Browsers normally insert quotation marks around the quotation."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<p>WWF's goal is to: <q>Build a future where people live in harmony with \n nature.</q></p>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML <abbr> for Abbreviations"
+    },
+    {
+      "type": "paragraph",
+      "text": "The HTML <abbr> tag defines an abbreviation or an acronym, like \"HTML\", \n\"CSS\", \"Mr.\", \n\"Dr.\", \"ASAP\", \"ATM\"."
+    },
+    {
+      "type": "paragraph",
+      "text": "Marking abbreviations can give useful information to browsers, translation \nsystems and search-engines."
+    },
+    {
+      "type": "paragraph",
+      "text": "Tip: Use the global title attribute to \nshow the description for the \nabbreviation/acronym when you mouse over the element."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<p>The <abbr title=\"World Health Organization\">WHO</abbr> was founded in \n 1948.</p>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML <address> for Contact Information"
+    },
+    {
+      "type": "paragraph",
+      "text": "The HTML <address> tag defines the contact information for the author/owner of a document \nor an article."
+    },
+    {
+      "type": "paragraph",
+      "text": "The contact information can be an email address, URL, physical address, phone \nnumber, social media handle, etc."
+    },
+    {
+      "type": "paragraph",
+      "text": "The text in the <address> element usually renders in italic, \nand browsers will\nalways add a line break before and after the <address> element."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<address>Written by John Doe.<br> Visit us at:<br>Example.com<br>\n Box 564, Disneyland<br>USA</address>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML <cite> for Work Title"
+    },
+    {
+      "type": "paragraph",
+      "text": "The HTML <cite> tag defines the title of a \ncreative work (e.g. a book, a poem, a song, a movie, a painting, a sculpture, etc.)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Note: A person's name is not the title of a work."
+    },
+    {
+      "type": "paragraph",
+      "text": "The text in the <cite> element usually renders in italic."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML <bdo> for Bi-Directional Override"
+    },
+    {
+      "type": "paragraph",
+      "text": "BDO stands for Bi-Directional Override."
+    },
+    {
+      "type": "paragraph",
+      "text": "The HTML <bdo> tag is used to override \nthe current text direction:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<bdo dir=\"rtl\">This text will be written from right to left</bdo>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML Quotation and Citation Elements"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Tag",
+          "Description"
+        ],
+        [
+          "<abbr>",
+          "Defines an abbreviation or acronym"
+        ],
+        [
+          "<address>",
+          "Defines contact information for the author/owner of a document"
+        ],
+        [
+          "<bdo>",
+          "Defines the text direction"
+        ],
+        [
+          "<blockquote>",
+          "Defines a section that is quoted from another source"
+        ],
+        [
+          "<cite>",
+          "Defines the title of a work"
+        ],
+        [
+          "<q>",
+          "Defines a short inline quotation"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "For a complete list of all available HTML tags, visit our HTML Tag Reference."
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

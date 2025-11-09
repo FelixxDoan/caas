@@ -1,0 +1,146 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_insert.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL INSERT INTO Statement"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "heading",
+      "text": "The SQL INSERT INTO Statement"
+    },
+    {
+      "type": "paragraph",
+      "text": "The INSERT INTO statement is used to insert new records in a table."
+    },
+    {
+      "type": "other",
+      "text": "INSERT INTO Syntax"
+    },
+    {
+      "type": "paragraph",
+      "text": "It is possible to write the INSERT INTO \nstatement in two ways:"
+    },
+    {
+      "type": "paragraph",
+      "text": "1. Specify both the column names and the values to be inserted:"
+    },
+    {
+      "type": "other",
+      "text": "INSERT INTO table_name (column1, column2, column3, ...)\nVALUES (value1, value2, value3, ...);"
+    },
+    {
+      "type": "paragraph",
+      "text": "2. If you are adding values for all the columns of the table, you do not need to \nspecify the column names in the SQL query. However, make sure the order of the \nvalues is in the same order as the columns in the table. Here, the \nINSERT INTO syntax \nwould be as follows:"
+    },
+    {
+      "type": "other",
+      "text": "INSERT INTO table_name\nVALUES (value1, value2, value3, ...);"
+    },
+    {
+      "type": "heading",
+      "text": "Demo Database"
+    },
+    {
+      "type": "paragraph",
+      "text": "Below is a selection from the Customers table used in the examples:"
+    },
+    {
+      "type": "other",
+      "text": "CustomerID\n    CustomerName\n    ContactName\n    Address\n    City\n    PostalCode\n    Country\n  \n  \n    89\n    White Clover Markets\n    Karl Jablonski\n    305 - 14th Ave. S. Suite 3B\n    Seattle\n    98128\n    USA\n  \n  \n    90\n    Wilman Kala\n    Matti Karttunen\n    Keskuskatu 45\n    Helsinki\n    21240\n    Finland\n  \n  \n    91\n    Wolski\n    Zbyszek\n    ul. Filtrowa 68\n    Walla\n    01-012\n    Poland"
+    },
+    {
+      "type": "heading",
+      "text": "INSERT INTO Example"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement inserts a new record in the \"Customers\" table:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\nINSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)\nVALUES ('Cardinal', 'Tom B. Erichsen', 'Skagen 21', 'Stavanger', '4006', 'Norway');"
+    },
+    {
+      "type": "paragraph",
+      "text": "The selection from the \"Customers\" table will now look like this:"
+    },
+    {
+      "type": "other",
+      "text": "CustomerID\n    CustomerName\n    ContactName\n    Address\n    City\n    PostalCode\n    Country\n  \n  \n    89\n    White Clover Markets\n    Karl Jablonski\n    305 - 14th Ave. S. Suite 3B\n    Seattle\n    98128\n    USA\n  \n  \n    90\n    Wilman Kala\n    Matti Karttunen\n    Keskuskatu 45\n    Helsinki\n    21240\n    Finland\n  \n  \n    91\n    Wolski\n    Zbyszek\n    ul. Filtrowa 68\n    Walla\n    01-012\n    Poland\n  \n  \n    92\n    Cardinal\n    Tom B. Erichsen\n    Skagen 21\n    Stavanger\n    4006\n    Norway"
+    },
+    {
+      "type": "other",
+      "text": "Did you notice that we did not insert any number into the CustomerID \nfield?The CustomerID column is \nan auto-increment field and will be \ngenerated automatically when a new record is inserted into the table."
+    },
+    {
+      "type": "heading",
+      "text": "Insert Data Only in Specified Columns"
+    },
+    {
+      "type": "paragraph",
+      "text": "It is also possible to only insert data in specific columns."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement will insert a new record, but only insert data in the \"CustomerName\", \n\"City\", and \"Country\" columns (CustomerID will \nbe updated automatically):"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\nINSERT INTO Customers (CustomerName, City, Country)\nVALUES ('Cardinal', 'Stavanger', 'Norway');"
+    },
+    {
+      "type": "paragraph",
+      "text": "The selection from the \"Customers\" table will now look like this:"
+    },
+    {
+      "type": "other",
+      "text": "CustomerID\n    CustomerName\n    ContactName\n    Address\n    City\n    PostalCode\n    Country\n  \n  \n    89\n    White Clover Markets\n    Karl Jablonski\n    305 - 14th Ave. S. Suite 3B\n    Seattle\n    98128\n    USA\n  \n  \n    90\n    Wilman Kala\n    Matti Karttunen\n    Keskuskatu 45\n    Helsinki\n    21240\n    Finland\n  \n  \n    91\n    Wolski\n    Zbyszek\n    ul. Filtrowa 68\n    Walla\n    01-012\n    Poland\n  \n  \n    92\n    Cardinal\n    null\n    null \n    Stavanger\n    null\n    Norway"
+    },
+    {
+      "type": "heading",
+      "text": "Insert Multiple Rows"
+    },
+    {
+      "type": "paragraph",
+      "text": "It is also possible to insert multiple rows in one statement."
+    },
+    {
+      "type": "paragraph",
+      "text": "To insert multiple rows of data, we use the same INSERT INTO statement, but with multiple values:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\nINSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)\nVALUES\n('Cardinal', 'Tom B. Erichsen', 'Skagen 21', 'Stavanger', '4006', 'Norway'),\n('Greasy Burger', 'Per Olsen', 'Gateveien 15', 'Sandnes', '4306', 'Norway'),\n('Tasty Tee', 'Finn Egan', 'Streetroad 19B', 'Liverpool', 'L1 0AA', 'UK');"
+    },
+    {
+      "type": "paragraph",
+      "text": "Make sure you separate each set of values with a comma ,."
+    },
+    {
+      "type": "paragraph",
+      "text": "The selection from the \"Customers\" table will now look like this:"
+    },
+    {
+      "type": "other",
+      "text": "CustomerID\n    CustomerName\n    ContactName\n    Address\n    City\n    PostalCode\n    Country\n  \n  \n    89\n    White Clover Markets\n    Karl Jablonski\n    305 - 14th Ave. S. Suite 3B\n    Seattle\n    98128\n    USA\n  \n  \n    90\n    Wilman Kala\n    Matti Karttunen\n    Keskuskatu 45\n    Helsinki\n    21240\n    Finland\n  \n  \n    91\n    Wolski\n    Zbyszek\n    ul. Filtrowa 68\n    Walla\n    01-012\n    Poland\n  \n  \n    92\n    Cardinal\n    Tom B. Erichsen\n    Skagen 21\n    Stavanger\n    4006\n    Norway\n  \n  \n    93\n    Greasy Burger\n    Per Olsen\n    Gateveien 15\n    Sandnes\n    4306\n    Norway\n  \n  \n    94\n    Tasty Tee\n    Finn Egan\n    Streetroad 19B\n    Liverpool\n    L1 0AA\n    UK"
+    },
+    {
+      "type": "heading",
+      "text": "Video: SQL NOT Operator"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

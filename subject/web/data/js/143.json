@@ -1,0 +1,84 @@
+{
+  "url": "https://www.w3schools.com/js/js_reserved.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Reserved Words"
+    },
+    {
+      "type": "other",
+      "text": "abstract\narguments\nawait*\nboolean\n\n\nbreak\nbyte\ncase\ncatch\n\n\nchar\nclass*\nconst*\ncontinue\n\n\ndebugger\ndefault\ndelete\ndo\n\n\ndouble\nelse\nenum*\neval\n\n\nexport*\nextends*\nfalse\nfinal\n\n\nfinally\nfloat\nfor\nfunction\n\n\ngoto\nif\nimplements\nimport*\n\n\nin\ninstanceof\nint\ninterface\n\n\nlet*\nlong\nnative\nnew\n\n\nnull\npackage\nprivate\nprotected\n\n\npublic\nreturn\nshort\nstatic\n\n\nsuper*\nswitch\nsynchronized\nthis\n\n\nthrow\nthrows\ntransient\ntrue\n\n\ntry\ntypeof\nvar\nvoid\n\n\nvolatile\nwhile\nwith\nyield"
+    },
+    {
+      "type": "other",
+      "text": "ECMAScript 5"
+    },
+    {
+      "type": "other",
+      "text": "ECMAScript 6"
+    },
+    {
+      "type": "other",
+      "text": "You can read more about the different JavaScript versions in the chapter \nJS Versions."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Removed Reserved Words"
+    },
+    {
+      "type": "other",
+      "text": "abstract\nboolean\nbyte\nchar\n\n\ndouble\nfinal\nfloat\ngoto\n\n\nint\nlong\nnative\nshort\n\n\nsynchronized\nthrows\ntransient\nvolatile"
+    },
+    {
+      "type": "other",
+      "text": "Do not use these words as variables. ECMAScript 5/6 does not have full support \nin all browsers."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Objects, Properties, and Methods"
+    },
+    {
+      "type": "other",
+      "text": "Array\nDate\neval\nfunction\n\n\nhasOwnProperty\nInfinity\nisFinite\nisNaN\n\n\nisPrototypeOf\nlength\nMath\nNaN\n\n\nname\nNumber\nObject\nprototype\n\n\nString\ntoString\nundefined\nvalueOf"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Java Reserved Words"
+    },
+    {
+      "type": "other",
+      "text": "getClass\njava\nJavaArray\njavaClass\n\n\nJavaObject\nJavaPackage"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Other Reserved Words"
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript can be used as the programming \nlanguage in many applications."
+    },
+    {
+      "type": "other",
+      "text": "alert\nall\nanchor\nanchors\n\n\narea\nassign\nblur\nbutton\n\n\ncheckbox\nclearInterval\nclearTimeout\nclientInformation\n\n\nclose\nclosed\nconfirm\nconstructor\n\n\ncrypto\ndecodeURI\ndecodeURIComponent\ndefaultStatus\n\n\ndocument\nelement\nelements\nembed\n\n\nembeds\nencodeURI\nencodeURIComponent\nescape\n\n\nevent\nfileUpload\nfocus\nform\n\n\nforms\nframe\ninnerHeight\ninnerWidth\n\n\nlayer\nlayers\nlink\nlocation\n\n\nmimeTypes\nnavigate\nnavigator\nframes\n\n\nframeRate\nhidden\nhistory\nimage\n\n\nimages\noffscreenBuffering\nopen\nopener\n\n\noption\nouterHeight\nouterWidth\npackages\n\n\npageXOffset\npageYOffset\nparent\nparseFloat\n\n\nparseInt\npassword\npkcs11\nplugin\n\n\nprompt\npropertyIsEnum\nradio\nreset\n\n\nscreenX\nscreenY\nscroll\nsecure\n\n\nselect\nself\nsetInterval\nsetTimeout\n\n\nstatus\nsubmit\ntaint\ntext\n\n\ntextarea\ntop\nunescape\nuntaint\n\n\nwindow"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML Event Handlers"
+    },
+    {
+      "type": "paragraph",
+      "text": "In addition you should avoid using the name of all HTML event handlers."
+    },
+    {
+      "type": "other",
+      "text": "onblur\nonclick\nonerror\nonfocus\n\n\nonkeydown\nonkeypress\nonkeyup\nonmouseover\n\n\nonload\nonmouseup\nonmousedown\nonsubmit"
+    }
+  ]
+}

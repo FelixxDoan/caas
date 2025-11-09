@@ -1,0 +1,196 @@
+{
+  "url": "https://www.w3schools.com/css/css_text_decoration.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Text Decoration"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Text Decoration"
+    },
+    {
+      "type": "paragraph",
+      "text": "In this chapter you will learn about the following properties:"
+    },
+    {
+      "type": "other",
+      "text": "text-decoration-line\ntext-decoration-color\ntext-decoration-style\ntext-decoration-thickness\ntext-decoration"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Add a Decoration Line to Text"
+    },
+    {
+      "type": "paragraph",
+      "text": "The text-decoration-line property is used to add \na decoration line to text."
+    },
+    {
+      "type": "paragraph",
+      "text": "Tip: You can combine more than one value, like overline and \nunderline to display lines both over and under a text."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "h1 {  text-decoration-line: overline;}\nh2 {  text-decoration-line: line-through;}\nh3 {  text-decoration-line: underline;}p {  text-decoration-line: \n  overline underline;}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note: It is not recommended to underline text that is not a link, as this often confuses the reader."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Specify a Color for the Decoration Line"
+    },
+    {
+      "type": "paragraph",
+      "text": "The text-decoration-color property is used to \nset the color of the decoration line."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "h1 {  text-decoration-line: overline;  text-decoration-color: \n  red;}\nh2 {  text-decoration-line: line-through;  text-decoration-color: \n  blue;}\nh3 {  text-decoration-line: underline;  text-decoration-color: \n  green;}p {  text-decoration-line: \n  overline underline;  text-decoration-color: purple;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Specify a Style for the Decoration Line"
+    },
+    {
+      "type": "paragraph",
+      "text": "The text-decoration-style property is used to \nset the style of the decoration line."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "h1 {  text-decoration-line: underline;  text-decoration-style: \n  solid;}\n  h2 {  text-decoration-line: underline;  \n  text-decoration-style: double;}\n  h3 {  text-decoration-line: underline;  \n  text-decoration-style: dotted; }p.ex1 {  text-decoration-line: underline;  \n  text-decoration-style: dashed; }p.ex2 {  text-decoration-line: underline;  \n  text-decoration-style: wavy; }p.ex3 {  text-decoration-line: \n  underline;  text-decoration-color: red;   \n  text-decoration-style: wavy; }"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Specify the Thickness for the Decoration Line"
+    },
+    {
+      "type": "paragraph",
+      "text": "The text-decoration-thickness property is used to \nset the thickness of the decoration line."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "h1 {  text-decoration-line: underline;  \n  text-decoration-thickness: auto;}h2 {  text-decoration-line: \n  underline;  text-decoration-thickness: 5px;}h3 {  \n  text-decoration-line: underline;  text-decoration-thickness: 25%;\n  }p {  \n  text-decoration-line: underline;  text-decoration-color: red;   \n  text-decoration-style: double;  text-decoration-thickness: 5px; }"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Shorthand Property"
+    },
+    {
+      "type": "paragraph",
+      "text": "The text-decoration property is a shorthand \nproperty for:"
+    },
+    {
+      "type": "other",
+      "text": "text-decoration-line (required)\ntext-decoration-color (optional)\ntext-decoration-style (optional)\ntext-decoration-thickness (optional)"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "h1 {  text-decoration: underline;}h2 {  \n  text-decoration: underline red;}h3 {  text-decoration: underline \n  red double;}p {  \n  text-decoration: underline red double 5px;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "A Small Tip"
+    },
+    {
+      "type": "paragraph",
+      "text": "All links in HTML are underlined by default. Sometimes you \nsee that links are styled with no underline. The text-decoration: none; is used to remove \nthe underline from links, \nlike this:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "a {  text-decoration: none;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "All CSS text-decoration Properties"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Property",
+          "Description"
+        ],
+        [
+          "text-decoration",
+          "Sets all the text-decoration properties in one declaration"
+        ],
+        [
+          "\n    text-decoration-color",
+          "Specifies the color of the text-decoration"
+        ],
+        [
+          "text-decoration-line",
+          "Specifies the kind of text decoration to be used (underline, overline, \n    etc.)"
+        ],
+        [
+          "\n    text-decoration-style",
+          "Specifies the style of the text decoration (solid, dotted, etc.)"
+        ],
+        [
+          "\n    text-decoration-thickness",
+          "Specifies the thickness of the text decoration line"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

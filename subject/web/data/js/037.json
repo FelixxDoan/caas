@@ -1,0 +1,246 @@
+{
+  "url": "https://www.w3schools.com/js/js_json_syntax.asp",
+  "title": "JSON",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JSON Syntax"
+    },
+    {
+      "type": "paragraph",
+      "text": "The JSON syntax is a subset of the JavaScript syntax."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JSON Syntax Rules"
+    },
+    {
+      "type": "paragraph",
+      "text": "JSON syntax is derived from JavaScript object notation syntax:"
+    },
+    {
+      "type": "other",
+      "text": "Data is in name/value pairs\n  Data is separated by commas\n  Curly braces hold objects\n  Square brackets hold arrays"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JSON Data - A Name and a Value"
+    },
+    {
+      "type": "paragraph",
+      "text": "JSON data is written as name/value pairs (aka key/value pairs)."
+    },
+    {
+      "type": "paragraph",
+      "text": "A name/value pair consists of a field name (in double quotes), \nfollowed by a colon, followed by a value:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "\"name\":\"John\""
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "JSON names require double quotes."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JSON - Evaluates to JavaScript Objects"
+    },
+    {
+      "type": "paragraph",
+      "text": "The JSON format is almost identical to JavaScript objects."
+    },
+    {
+      "type": "paragraph",
+      "text": "In JSON, keys must be strings, written with double quotes:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "{\"name\":\"John\"}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "In JavaScript, keys can be strings, numbers, or identifier names:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "{name:\"John\"}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JSON Values"
+    },
+    {
+      "type": "paragraph",
+      "text": "In JSON, values must be one of the following data types:"
+    },
+    {
+      "type": "other",
+      "text": "a string\n  a number\n  an object\n  an array\n  a boolean\n  null"
+    },
+    {
+      "type": "paragraph",
+      "text": "In JavaScript values can be all of the above, plus any other valid JavaScript \nexpression, including:"
+    },
+    {
+      "type": "other",
+      "text": "a function\n  a date\n  undefined"
+    },
+    {
+      "type": "paragraph",
+      "text": "In JSON, string values must be written with double quotes:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "{\"name\":\"John\"}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "In JavaScript, you can write string values with double or single quotes:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "{name:'John'}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Objects"
+    },
+    {
+      "type": "paragraph",
+      "text": "Because JSON syntax is derived from JavaScript object notation, very little extra \nsoftware is needed to work with JSON within JavaScript."
+    },
+    {
+      "type": "paragraph",
+      "text": "With JavaScript you can create an object and assign data to \nit, like this:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "person = {name:\"John\", age:31, city:\"New York\"};"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "You can access a JavaScript object like this:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// returns Johnperson.name;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "It can also be accessed like this:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// returns Johnperson[\"name\"];"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Data can be modified like this:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "person.name = \"Gilbert\";"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "It can also be modified like this:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "person[\"name\"] = \"Gilbert\";"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "You will learn how to convert JavaScript objects into JSON later in this \ntutorial."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Arrays as JSON"
+    },
+    {
+      "type": "paragraph",
+      "text": "The same way JavaScript objects can be written as JSON, JavaScript arrays can \nalso be written as JSON."
+    },
+    {
+      "type": "paragraph",
+      "text": "You will learn more about objects and arrays later in this tutorial."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JSON Files"
+    },
+    {
+      "type": "other",
+      "text": "The file type for JSON files is \".json\"\nThe MIME type for JSON text is \"application/json\""
+    }
+  ]
+}

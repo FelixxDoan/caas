@@ -1,0 +1,89 @@
+{
+  "url": "https://www.w3schools.com/js/js_ajax_examples.asp",
+  "title": "AJAX",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "AJAX Examples"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Simple Examples"
+    },
+    {
+      "type": "other",
+      "text": "Create a simple XMLHttpRequest, and retrieve data from a TXT file\nCreate a XMLHttpRequest with a callback function, and retrieve data from a TXT file"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Request Header Information"
+    },
+    {
+      "type": "other",
+      "text": "Retrieve all header information \nof a resource (file)\nRetrieve specific header information \nof a resource (file)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Request XML Files"
+    },
+    {
+      "type": "other",
+      "text": "Load an XML file with AJAX\nRetrieve the content of an XML file"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Retrieve Server Data with PHP and ASP"
+    },
+    {
+      "type": "other",
+      "text": "Retrieve the content of a PHP file\nRetrieve the content of an ASP file"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Retrieve Database Information"
+    },
+    {
+      "type": "other",
+      "text": "Retrieve content from a database"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "AJAX Applications"
+    },
+    {
+      "type": "other",
+      "text": "View an XML CD catalog\nDisplay XML data in an HTML table\nShow XML data inside an HTML div element\nNavigate through XML nodes\nA simple CD catalog application"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples explained"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "url": "https://www.w3schools.com/css/css_syntax.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Syntax"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "A CSS rule consists of a selector and a declaration block."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CSS Syntax"
+    },
+    {
+      "type": "paragraph",
+      "text": "The selector points to the HTML element you want to style."
+    },
+    {
+      "type": "paragraph",
+      "text": "The declaration block contains one or more declarations separated by \nsemicolons."
+    },
+    {
+      "type": "paragraph",
+      "text": "Each declaration includes a CSS property name and a value, separated by a colon."
+    },
+    {
+      "type": "paragraph",
+      "text": "Multiple CSS declarations are separated with semicolons, and declaration \nblocks are surrounded by curly braces."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "p\n{\n  color: red;\n  text-align: center;\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Example Explained"
+    },
+    {
+      "type": "other",
+      "text": "p is a selector in CSS (it points to the HTML element you want to style: \n<p>).\ncolor is a property, and red is the property value\ntext-align is a property, and center is the property value"
+    },
+    {
+      "type": "other",
+      "text": "You will learn much more about CSS selectors and CSS properties in the next chapters!"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Video: CSS Syntax"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

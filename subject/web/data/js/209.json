@@ -1,0 +1,289 @@
+{
+  "url": "https://www.w3schools.com/js/js_statements.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Statements"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Statements"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x, y, z;    // Statement 1\nx = 5;          // Statement 2\ny = 6;          // Statement 3\nz = x + y;      //  Statement 4"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Programs"
+    },
+    {
+      "type": "paragraph",
+      "text": "A computer program is a list of \"instructions\" to be \n\"executed\" by a computer."
+    },
+    {
+      "type": "paragraph",
+      "text": "In a programming language, these programming instructions are called statements."
+    },
+    {
+      "type": "paragraph",
+      "text": "A JavaScript program is a list of programming statements."
+    },
+    {
+      "type": "other",
+      "text": "In HTML, JavaScript programs are executed by the web browser."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Statements"
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript statements are composed of:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Values, Operators, Expressions, Keywords, \nand Comments."
+    },
+    {
+      "type": "paragraph",
+      "text": "This statement tells the browser to write \"Hello Dolly.\" \ninside an HTML element with id=\"demo\":"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "document.getElementById(\"demo\").innerHTML = \"Hello Dolly.\";"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Most JavaScript \nprograms contain many JavaScript statements."
+    },
+    {
+      "type": "paragraph",
+      "text": "The statements are executed, one by one, in the \nsame order as they are written."
+    },
+    {
+      "type": "other",
+      "text": "JavaScript programs (and JavaScript statements) are often called JavaScript code."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Semicolons ;"
+    },
+    {
+      "type": "paragraph",
+      "text": "Semicolons separate JavaScript statements."
+    },
+    {
+      "type": "paragraph",
+      "text": "Add a semicolon at the end of each executable statement:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let a, b, c;  // Declare 3 variables\na = 5;        // Assign the value 5 to a\nb = 6;        // Assign the \n  value 6 to b\nc = a + b;    // Assign the sum of a and b to c"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "When separated by semicolons, multiple statements on one line are allowed:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "a = 5; b = 6; c = a + b;"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "On the web, you might see examples without semicolons. \nEnding statements with semicolon is not required, but highly recommended."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript White Space"
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript ignores multiple spaces. You can add white space to your script to make it more readable."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following lines are equivalent:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let person = \"Hege\";\nlet person=\"Hege\";"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "A good practice is to put spaces around operators ( = + - * / ):"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = y + z;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Line Length and Line Breaks"
+    },
+    {
+      "type": "paragraph",
+      "text": "For best readability, programmers often like to avoid code lines longer than 80 \ncharacters."
+    },
+    {
+      "type": "paragraph",
+      "text": "If a JavaScript statement does not fit on one line, the best place to break \nit is after an operator:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "document.getElementById(\"demo\").innerHTML =\"Hello Dolly!\";"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Code Blocks"
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript statements can be grouped together in code blocks, inside curly \nbrackets {...}."
+    },
+    {
+      "type": "paragraph",
+      "text": "The purpose of code blocks is to define statements to be executed together."
+    },
+    {
+      "type": "paragraph",
+      "text": "One place you will find statements grouped together in blocks, is in \nJavaScript functions:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "function myFunction() {\n  document.getElementById(\"demo1\").innerHTML = \"Hello Dolly!\";\n  document.getElementById(\"demo2\").innerHTML = \"How are you?\";\n}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "In this tutorial we use 2 spaces of indentation for code blocks.\nYou will learn more about functions later in this tutorial."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Keywords"
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript statements often start with a keyword \nto identify the JavaScript action to be performed."
+    },
+    {
+      "type": "paragraph",
+      "text": "Our Reserved Words Reference lists all JavaScript keywords."
+    },
+    {
+      "type": "paragraph",
+      "text": "Here is a list of some of the keywords you will learn about in \nthis tutorial:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Keyword",
+          "Description"
+        ],
+        [
+          "var",
+          "Declares a variable"
+        ],
+        [
+          "let",
+          "Declares a block variable"
+        ],
+        [
+          "const",
+          "Declares a block constant"
+        ],
+        [
+          "if",
+          "Marks a block of statements to be executed on a condition"
+        ],
+        [
+          "switch",
+          "Marks a block of statements to be executed in different cases"
+        ],
+        [
+          "for",
+          "Marks a block of statements to be executed in a loop"
+        ],
+        [
+          "function",
+          "Declares a function"
+        ],
+        [
+          "return",
+          "Exits a function"
+        ],
+        [
+          "try",
+          "Implements error handling to a block of statements"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "JavaScript keywords are reserved words. Reserved words cannot be used as names for variables."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Video: JavaScript Statements"
+    }
+  ]
+}

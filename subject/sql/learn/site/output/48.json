@@ -1,0 +1,70 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_drop_table.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL DROP TABLE Statement"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "heading",
+      "text": "The SQL DROP TABLE Statement"
+    },
+    {
+      "type": "paragraph",
+      "text": "The DROP TABLE statement is used to drop an existing table in a database."
+    },
+    {
+      "type": "other",
+      "text": "Syntax"
+    },
+    {
+      "type": "other",
+      "text": "DROP TABLE table_name;"
+    },
+    {
+      "type": "other",
+      "text": "Note: Be careful before dropping a table. Deleting a \ntable will result in loss of complete information stored in the table!"
+    },
+    {
+      "type": "heading",
+      "text": "SQL DROP TABLE Example"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement drops the existing table \"Shippers\":"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n  DROP TABLE Shippers;"
+    },
+    {
+      "type": "heading",
+      "text": "SQL TRUNCATE TABLE"
+    },
+    {
+      "type": "paragraph",
+      "text": "The TRUNCATE TABLE statement is used to delete the data inside a table, but \nnot the table itself."
+    },
+    {
+      "type": "other",
+      "text": "Syntax"
+    },
+    {
+      "type": "other",
+      "text": "TRUNCATE TABLE table_name;"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

@@ -1,0 +1,320 @@
+{
+  "url": "https://www.w3schools.com/html/html_formatting.asp",
+  "title": "HTML ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "HTML Text Formatting"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "HTML contains several elements for defining text with a special meaning."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": []
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML Formatting Elements"
+    },
+    {
+      "type": "paragraph",
+      "text": "Formatting elements were designed to display special types of text:"
+    },
+    {
+      "type": "other",
+      "text": "<b> - Bold text\n <strong> - Important text\n <i> - Italic text\n <em> - Emphasized text\n <mark> - Marked text\n <small> - Smaller text\n <del> - Deleted text\n <ins> - Inserted text\n <sub> - Subscript text\n <sup> - Superscript text"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML <b> and <strong> Elements"
+    },
+    {
+      "type": "paragraph",
+      "text": "The HTML <b> element defines bold text, \nwithout any extra importance."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<b>This text is bold</b>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The HTML <strong> element defines text \nwith strong importance. The content inside is typically displayed in bold."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<strong>This text is \n     important!</strong>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML <i> and <em> Elements"
+    },
+    {
+      "type": "paragraph",
+      "text": "The HTML <i> element defines a part of \ntext in an alternate voice or mood. The content inside is typically displayed in \nitalic."
+    },
+    {
+      "type": "paragraph",
+      "text": "Tip: The <i> tag is often used to indicate a technical term, \na phrase from another language, a thought, a ship name, etc."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<i>This text is italic</i>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The HTML <em> element defines \nemphasized text. The content inside is typically displayed in italic."
+    },
+    {
+      "type": "paragraph",
+      "text": "Tip: A screen reader will pronounce the words in <em> \nwith an emphasis, using verbal stress."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<em>This text is \n emphasized</em>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML <small> Element"
+    },
+    {
+      "type": "paragraph",
+      "text": "The HTML <small> element defines \nsmaller text:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<small>This is some smaller text.</small>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML <mark> Element"
+    },
+    {
+      "type": "paragraph",
+      "text": "The HTML <mark> element defines text \nthat should be marked or highlighted:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<p>Do not forget to buy <mark>milk</mark> today.</p>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML <del> Element"
+    },
+    {
+      "type": "paragraph",
+      "text": "The HTML <del> element defines text \nthat has been deleted from a document. Browsers will usually strike a line \nthrough deleted text:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<p>My favorite color is <del>blue</del> red.</p>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML <ins> Element"
+    },
+    {
+      "type": "paragraph",
+      "text": "The HTML <ins> element defines a text \nthat has been inserted into a document. Browsers will usually underline inserted \ntext:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<p>My favorite color is <del>blue</del> <ins>red</ins>.</p>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML <sub> Element"
+    },
+    {
+      "type": "paragraph",
+      "text": "The HTML <sub> element defines \nsubscript text. Subscript text appears half a character below the normal line, \nand is sometimes rendered in a smaller font. Subscript text can be used for \nchemical formulas, like H2O:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<p>This \n is <sub>subscripted</sub> text.</p>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML <sup> Element"
+    },
+    {
+      "type": "paragraph",
+      "text": "The HTML <sup> element defines \nsuperscript text. Superscript text appears half a character above the normal \nline, and is sometimes rendered in a smaller font. Superscript text can be used \nfor footnotes, like WWW[1]:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<p>This \n is <sup>superscripted</sup> text.</p>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML Text Formatting Elements"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Tag",
+          "Description"
+        ],
+        [
+          "<b>",
+          "Defines bold text"
+        ],
+        [
+          "<em>",
+          "Defines emphasized text"
+        ],
+        [
+          "<i>",
+          "Defines a part of text in an alternate voice or mood"
+        ],
+        [
+          "<small>",
+          "Defines smaller text"
+        ],
+        [
+          "<strong>",
+          "Defines important text"
+        ],
+        [
+          "<sub>",
+          "Defines subscripted text"
+        ],
+        [
+          "<sup>",
+          "Defines superscripted text"
+        ],
+        [
+          "<ins>",
+          "Defines inserted text"
+        ],
+        [
+          "<del>",
+          "Defines deleted text"
+        ],
+        [
+          "<mark>",
+          "Defines marked/highlighted text"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "For a complete list of all available HTML tags, visit our HTML Tag Reference."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Video: HTML Formatting"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "<b> - Bold text",
+        "<strong> - Important text",
+        "<i> - Italic text",
+        "<em> - Emphasized text",
+        "<mark> - Marked text",
+        "<small> - Smaller text",
+        "<del> - Deleted text",
+        "<ins> - Inserted text",
+        "<sub> - Subscript text",
+        "<sup> - Superscript text"
+      ]
+    },
+    {
+      "type": "image",
+      "src": "https://www.w3schools.com/html/images/yt_logo_rgb_dark.png"
+    },
+    {
+      "type": "image",
+      "src": "https://www.w3schools.com/html/images/08_html_formatting.png"
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_stored_procedures.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL Stored Procedures for SQL Server"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "heading",
+      "text": "What is a Stored Procedure?"
+    },
+    {
+      "type": "paragraph",
+      "text": "A stored procedure is a prepared SQL code that you can save, so the \ncode can be reused over and over again."
+    },
+    {
+      "type": "paragraph",
+      "text": "So if you have an SQL query that you write over and over again, save \nit as a stored procedure, and then just call it to execute it."
+    },
+    {
+      "type": "paragraph",
+      "text": "You can also pass parameters to a stored procedure, so that the stored procedure can act based on the parameter value(s) \nthat is passed."
+    },
+    {
+      "type": "other",
+      "text": "Stored Procedure Syntax"
+    },
+    {
+      "type": "other",
+      "text": "CREATE PROCEDURE procedure_name\n  ASsql_statement\n  GO;"
+    },
+    {
+      "type": "other",
+      "text": "Execute a Stored Procedure"
+    },
+    {
+      "type": "other",
+      "text": "EXEC procedure_name;"
+    },
+    {
+      "type": "heading",
+      "text": "Demo Database"
+    },
+    {
+      "type": "paragraph",
+      "text": "Below is a selection from the \"Customers\" table in the Northwind sample database:"
+    },
+    {
+      "type": "other",
+      "text": "CustomerID\n    CustomerName\n    ContactName\n    Address\n    City\n    PostalCode\n    Country\n  \n  \n    1\n    Alfreds Futterkiste\n    Maria Anders\n    Obere Str. 57\n    Berlin\n    12209\n    Germany\n  \n  \n    2\n    Ana Trujillo Emparedados y helados\n    Ana Trujillo\n    Avda. de la Constitución 2222\n    México D.F.\n    05021\n    Mexico\n  \n  \n    3\n    Antonio Moreno Taquería\n    Antonio Moreno\n    Mataderos 2312\n    México D.F.\n    05023\n    Mexico\n  \n  \n    4\n    Around the Horn\n    Thomas Hardy\n    120 Hanover Sq.\n    London\n    WA1 1DP\n    UK\n  \n  \n    5\n    Berglunds snabbköp\n    Christina Berglund\n    Berguvsvägen 8\n    Luleå\n    S-958 22\n    Sweden"
+    },
+    {
+      "type": "heading",
+      "text": "Stored Procedure Example"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement creates a stored procedure named \"SelectAllCustomers\" \nthat selects all records from the \"Customers\" table:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n  CREATE PROCEDURE SelectAllCustomersASSELECT * FROM CustomersGO;"
+    },
+    {
+      "type": "paragraph",
+      "text": "Execute the stored procedure above as follows:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n  EXEC SelectAllCustomers;"
+    },
+    {
+      "type": "heading",
+      "text": "Stored Procedure With One Parameter"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement creates a stored procedure  \nthat selects Customers from a particular City from the \"Customers\" table:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n  CREATE PROCEDURE SelectAllCustomers \n  @City nvarchar(30)ASSELECT * FROM Customers WHERE \n  City = @CityGO;"
+    },
+    {
+      "type": "paragraph",
+      "text": "Execute the stored procedure above as follows:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n  EXEC SelectAllCustomers @City = 'London';"
+    },
+    {
+      "type": "heading",
+      "text": "Stored Procedure With Multiple Parameters"
+    },
+    {
+      "type": "paragraph",
+      "text": "Setting up multiple parameters is very easy. Just list each parameter and the \ndata type separated by a comma as shown below."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement creates a stored procedure  \nthat selects Customers from a particular City with a particular PostalCode from the \"Customers\" table:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n  CREATE PROCEDURE SelectAllCustomers \n  @City nvarchar(30), @PostalCode nvarchar(10)ASSELECT * FROM Customers WHERE \n  City = @City AND PostalCode = @PostalCodeGO;"
+    },
+    {
+      "type": "paragraph",
+      "text": "Execute the stored procedure above as follows:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n  EXEC SelectAllCustomers @City = 'London', @PostalCode = 'WA1 1DP';"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

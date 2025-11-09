@@ -1,0 +1,249 @@
+{
+  "url": "https://www.w3schools.com/css/css_list.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Lists"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "Unordered Lists:\n\n  Coffee\n  Tea\n  Coca Cola\n\n\n  Coffee\n  Tea\n  Coca Cola\n\n  \n  \n  Ordered Lists:  \n\n  Coffee\n  Tea\n  Coca Cola\n\n\n  Coffee\n  Tea\n  Coca Cola"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML Lists and CSS List Properties"
+    },
+    {
+      "type": "paragraph",
+      "text": "In HTML, there are two main types of lists:"
+    },
+    {
+      "type": "other",
+      "text": "unordered lists (<ul>) - the list items are marked with bullets\n  ordered lists (<ol>) - the list items are marked with numbers or letters"
+    },
+    {
+      "type": "paragraph",
+      "text": "The CSS list properties allow you to:"
+    },
+    {
+      "type": "other",
+      "text": "Set different list item markers for ordered lists\n  Set different list item markers for unordered lists\n  Set an image as the list item marker\n  Add background colors to lists and list items"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Different List Item Markers"
+    },
+    {
+      "type": "paragraph",
+      "text": "The list-style-type property specifies the type of list item \nmarker."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following example shows some of the available list item markers:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "ul.a {  list-style-type: circle;}\nul.b {  list-style-type: square;}\n\nol.c {  list-style-type: upper-roman;}\nol.d {  list-style-type: lower-alpha;}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Note: Some of the values are for unordered lists, and some for ordered lists."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "An Image as The List Item Marker"
+    },
+    {
+      "type": "paragraph",
+      "text": "The list-style-image property specifies an image as the list \nitem marker:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "ul\n{\n    list-style-image: url('sqpurple.gif');\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Position The List Item Markers"
+    },
+    {
+      "type": "paragraph",
+      "text": "The list-style-position property specifies the position of the list-item markers \n(bullet points)."
+    },
+    {
+      "type": "paragraph",
+      "text": "\"list-style-position: outside;\" means that the bullet points will be outside \nthe list item. The start of each line of a list item will be aligned vertically. \nThis is default:"
+    },
+    {
+      "type": "other",
+      "text": "Coffee -\nA brewed drink prepared from roasted coffee beans...\nTea\nCoca-cola"
+    },
+    {
+      "type": "paragraph",
+      "text": "\"list-style-position: inside;\" means that the bullet points will be inside \nthe list item. As it is part of the list item, it will be part of the text and \npush the text at the start:"
+    },
+    {
+      "type": "other",
+      "text": "Coffee -\nA brewed drink prepared from roasted coffee beans...\nTea\nCoca-cola"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "ul.a {  list-style-position: outside;}ul.b {  list-style-position: inside;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Remove Default Settings"
+    },
+    {
+      "type": "paragraph",
+      "text": "The list-style-type:none property can also be \nused to remove the markers/bullets. Note that the list also has default margin \nand padding. To remove this, add margin:0 and padding:0 to <ul> or <ol>:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "ul\n{\n   \nlist-style-type: none;  margin: 0;  \n  padding: 0;\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "List - Shorthand property"
+    },
+    {
+      "type": "paragraph",
+      "text": "The list-style property is a shorthand property. It is used to set all the \nlist properties in one declaration:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "ul\n{\n   \nlist-style: square inside url(\"sqpurple.gif\");\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "When using the shorthand property, the order of the property values are:"
+    },
+    {
+      "type": "other",
+      "text": "list-style-type (if a list-style-image is specified, \nthe value of this property will be displayed if the image for some reason \ncannot be displayed)\nlist-style-position (specifies whether the list-item markers should appear inside or outside the content flow)\nlist-style-image (specifies an image as the list item \nmarker)"
+    },
+    {
+      "type": "paragraph",
+      "text": "If one of the property values above is missing, the default value for the \nmissing property will be inserted, if any."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Styling List With Colors"
+    },
+    {
+      "type": "paragraph",
+      "text": "We can also style lists with colors, to make them look a little more \ninteresting."
+    },
+    {
+      "type": "paragraph",
+      "text": "Anything added to the <ol> or <ul> tag, affects the entire list, while \nproperties added to the <li> tag will affect the individual list items:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "ol {  background: #ff9999;  \npadding: 20px;}ul {  background: #3399ff;  \npadding: 20px;}ol li {  background: \n#ffe5e5;  color: darkred;  padding: 5px;  \nmargin-left: 35px;}ul li {  background: \n#cce5ff;  color: darkblue;  margin: 5px;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "More Examples"
+    },
+    {
+      "type": "paragraph",
+      "text": "Customized list with a red left border\nThis example demonstrates how to create a list with a red left border."
+    },
+    {
+      "type": "paragraph",
+      "text": "Full-width bordered list\nThis example demonstrates how to create a bordered list without bullets."
+    },
+    {
+      "type": "paragraph",
+      "text": "All the different list-item markers for lists\nThis example demonstrates all the different list-item markers in CSS."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "All CSS List Properties"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Property",
+          "Description"
+        ],
+        [
+          "list-style",
+          "Sets all the properties for a list in one declaration"
+        ],
+        [
+          "list-style-image",
+          "Specifies an image as the list-item marker"
+        ],
+        [
+          "list-style-position",
+          "Specifies the position of the list-item markers (bullet points)"
+        ],
+        [
+          "list-style-type",
+          "Specifies the type of list-item marker"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

@@ -1,0 +1,248 @@
+{
+  "url": "https://www.w3schools.com/js/js_ajax_http_send.asp",
+  "title": "AJAX - XMLHttpRequest",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "AJAX - XMLHttpRequest"
+    },
+    {
+      "type": "paragraph",
+      "text": "The XMLHttpRequest object is used to request data from a server."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Send a Request To a Server"
+    },
+    {
+      "type": "paragraph",
+      "text": "To send a request to a server, we use the open() and send() methods of the XMLHttpRequest object:"
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "xhttp.open(\"GET\", \"ajax_info.txt\", true);\n xhttp.send();"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Method",
+          "Description"
+        ],
+        [
+          "open(method, url, async)",
+          "Specifies the type of request\n method: the type of request: GET or POST\n url: the server (file) location\n async: true (asynchronous) or false (synchronous)"
+        ],
+        [
+          "send()",
+          "Sends the request to the server (used for GET)"
+        ],
+        [
+          "send(string)",
+          "Sends the request to the server (used for POST)"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The url - A File On a Server"
+    },
+    {
+      "type": "paragraph",
+      "text": "The url parameter of the open() method, is an address to a file on a server:"
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "xhttp.open(\"GET\", \"ajax_test.asp\", true);"
+    },
+    {
+      "type": "paragraph",
+      "text": "The file can be any kind of file, like .txt and \n.xml, or server scripting files like .asp and .php (which can perform  \nactions on the server before sending the response back)."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Asynchronous - True or False?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Server requests should be sent asynchronously."
+    },
+    {
+      "type": "paragraph",
+      "text": "The async parameter of the open() \nmethod should be set to true:"
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "xhttp.open(\"GET\", \"ajax_test.asp\", true);"
+    },
+    {
+      "type": "paragraph",
+      "text": "By sending asynchronously, the \nJavaScript does not have to wait for the server response, but can instead:"
+    },
+    {
+      "type": "other",
+      "text": "execute other scripts while waiting for server response\n  deal with the response after the response is ready"
+    },
+    {
+      "type": "other",
+      "text": "The default value for the async parameter is async = true.\nYou can safely remove the third parameter from your code.\nSynchronous XMLHttpRequest (async = false) is not recommended because the JavaScript will \nstop executing until the server response is ready. If the server is busy or slow, the \napplication will hang or stop."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "GET or POST?"
+    },
+    {
+      "type": "paragraph",
+      "text": "GET is simpler and faster than POST, and can be used in most cases."
+    },
+    {
+      "type": "paragraph",
+      "text": "However, always use POST requests when:"
+    },
+    {
+      "type": "other",
+      "text": "A cached file is not an option (update a file or database on the server).\n  Sending a large amount of data to the server (POST has no size limitations).\n  Sending user input (which can contain unknown characters), POST is more robust and secure than GET."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "GET Requests"
+    },
+    {
+      "type": "paragraph",
+      "text": "A simple GET request:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "xhttp.open(\"GET\", \"demo_get.asp\");\n xhttp.send();"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "In the example above, you may get a cached result. To avoid this, add a unique ID to the URL:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "xhttp.open(\"GET\", \"demo_get.asp?t=\" + Math.random());\n xhttp.send();"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "If you want to send information with the GET method, add the information to the URL:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "xhttp.open(\"GET\", \"demo_get2.asp?fname=Henry&lname=Ford\");\n xhttp.send();"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "How the server uses the input and how the server responds to a request, is explained in a later chapter."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "POST Requests"
+    },
+    {
+      "type": "paragraph",
+      "text": "A simple POST request:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "xhttp.open(\"POST\", \"demo_post.asp\");\n xhttp.send();"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "To POST data like an HTML form, add an HTTP header with setRequestHeader(). \nSpecify the data you want to send in the send() method:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "xhttp.open(\"POST\", \"ajax_test.asp\");\n xhttp.setRequestHeader(\"Content-type\", \"application/x-www-form-urlencoded\");\n xhttp.send(\"fname=Henry&lname=Ford\");"
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Method",
+          "Description"
+        ],
+        [
+          "setRequestHeader(header, value)",
+          "Adds HTTP headers to the request\n header: specifies the header name\n value: specifies the header value"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Synchronous Request"
+    },
+    {
+      "type": "paragraph",
+      "text": "To execute a synchronous request, change the third parameter in the open() method to false:"
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "xhttp.open(\"GET\", \"ajax_info.txt\", false);"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sometimes async = false are used for quick testing. You will also find \nsynchronous requests in older JavaScript code."
+    },
+    {
+      "type": "paragraph",
+      "text": "Since the code will wait for server completion, there is no need for an onreadystatechange \nfunction:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "xhttp.open(\"GET\", \"ajax_info.txt\", false);\nxhttp.send();\ndocument.getElementById(\"demo\").innerHTML = xhttp.responseText;"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Synchronous XMLHttpRequest (async = false) is not recommended because the JavaScript will \nstop executing until the server response is ready. If the server is busy or slow, the \napplication will hang or stop.\nModern developer tools are encouraged to warn about using \nsynchronous requests and may throw an InvalidAccessError exception when it occurs."
+    }
+  ]
+}

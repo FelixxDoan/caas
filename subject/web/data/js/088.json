@@ -1,0 +1,154 @@
+{
+  "url": "https://www.w3schools.com/js/js_2017.asp",
+  "title": "ECMAScript 2017",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "ECMAScript 2017"
+    },
+    {
+      "type": "other",
+      "text": "New Features in JavaScript 2017\n\n  JavaScript String padding\n  JavaScript Object entries()\n  JavaScript Object values()\n  JavaScript async and await\n  Trailing Commas in Functions\n  JavaScript Object.getOwnPropertyDescriptors"
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript 2017 is supported in all modern browsers since September 2017:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome 58    \n    Edge 15\n    Firefox 52\n    Safari 11\n    Opera 45\n  \n  \n    Apr 2017\n    Apr 2017    \n    Mar 2017\n    Sep 2017\n    May 2017"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript String Padding"
+    },
+    {
+      "type": "paragraph",
+      "text": "ECMAScript 2017 added two string methods to JavaScript: padStart()\nand padEnd() to support padding at the beginning and at the end of a string."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"5\";\ntext = text.padStart(4,0);"
+        },
+        {
+          "language": "unknown",
+          "code": "let text = \"5\";\ntext = text.padEnd(4,0);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Object Entries"
+    },
+    {
+      "type": "paragraph",
+      "text": "ECMAScript 2017 added the Object.entries() method to objects."
+    },
+    {
+      "type": "paragraph",
+      "text": "Object.entries() returns an array of the key/value pairs in an object:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const person = {\n  firstName : \"John\",\n  lastName : \"Doe\",\n  age : 50,\n  eyeColor : \"blue\"\n};\n\nlet text = Object.entries(person);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Object.entries() makes it simple to use objects in loops:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const fruits = {Bananas:300, Oranges:200, Apples:500};\n\nlet text = \"\";\nfor (let [fruit, value] of Object.entries(fruits)) {\n  text += fruit + \": \" + value + \"<br>\";\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Object.entries() also makes it simple to convert objects to maps:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const fruits = {Bananas:300, Oranges:200, Apples:500};\n\nconst myMap = new Map(Object.entries(fruits));"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Object Values"
+    },
+    {
+      "type": "paragraph",
+      "text": "Object.values() is similar to Object.entries(),\nbut returns a single dimension array of the object values:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const person = {\n  firstName : \"John\",\n  lastName : \"Doe\",\n  age : 50,\n  eyeColor : \"blue\"\n};\n\nlet text = Object.values(person);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Async Functions"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "async function myDisplay() {\n  let myPromise = new Promise(function(myResolve,  myReject) {\n    setTimeout(function() { myResolve(\"I love You !!\"); }, 3000);\n  });\n  document.getElementById(\"demo\").innerHTML = await myPromise;}\n myDisplay();"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Trailing Commas"
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript allows trailing commas wherever a comma-separated list of values is accepted."
+    },
+    {
+      "type": "paragraph",
+      "text": "In Array and Object Literals, Function Calls, Parameters, Imports and Exports."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "function myFunc(x,,,) {};\nconst myArr = [1,2,3,4,,,];\nconst myObj = {fname: John, age:50,,,};"
+        }
+      ]
+    }
+  ]
+}

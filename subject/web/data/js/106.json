@@ -1,0 +1,511 @@
+{
+  "url": "https://www.w3schools.com/js/js_regexp_flags.asp",
+  "title": "JavaScript RegExp Flags",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript RegExp Flags"
+    },
+    {
+      "type": "other",
+      "text": "RegExp Modifier Flags\n Flags are parameters that can modify how a regex pattern is used,\nsuch as making it case-insensitive or global.\n\n/pattern/flags"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Regex Flags"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Revised July 2025"
+    },
+    {
+      "type": "other",
+      "text": "Flag\n  Description\n\n\n  /d\n  Performs substring matches (new 2022)\n\n\n  /g\n  Performs a global match (find all)\n\n\n  /i\n  Performs case-insensitive matching\n\n\n  /m\n  Performs multiline matching\n\n\n  /s\n  Allows . (dot) to match line terminators (new 2018)\n\n\n  /u\n  Enables Unicode support (new 2015)\n\n\n  /v\n  An upgrade to the /u flag for better Unicode support (new 2025)\n\n\n  /y\n  Performs a \"sticky\" search (new 2015)"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Flag Syntax: /pattern/flags"
+    },
+    {
+      "type": "other",
+      "text": "/Opening delimiter for the regular expression\npatternRegular expression (a search criteria)\n/Closing delimiter for the regular expression\nflagsOne or more single modifier flags"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "RegExp /g Flag (Global)"
+    },
+    {
+      "type": "paragraph",
+      "text": "The /g flag matches all occurrences of the pattern, rather than just the first one."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"Is this all there is?\";\nconst pattern = /is/g;\n\nlet result = text.match(pattern);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "RegExp /i Flag (Insensitive)"
+    },
+    {
+      "type": "paragraph",
+      "text": "The /i flag makes the match case-insensitive: /abc/i matches \"abc\", \"AbC\", \"ABC\"."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"Visit W3Schools\";\nconst pattern = /is/g;\n\nlet result = text.match(pattern);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "RegExp /d Flag"
+    },
+    {
+      "type": "paragraph",
+      "text": "The /d flag specifies the start and the end of a match."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"aaaabb\";\nconst pattern = /(aa)(bb)/d;\n\nlet result = text.match(pattern);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "RegExp /s Flag (Single line/DotAll)"
+    },
+    {
+      "type": "paragraph",
+      "text": "The /s flag allows the . (dot) metacharacter to match newline characters (\\n) in addition to any other\ncharacter."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"Line\\nLine.\";\nconst pattern = /Line./gs;\n\nlet result = text.match(pattern);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "RegExp /y Flag (Sticky):"
+    },
+    {
+      "type": "paragraph",
+      "text": "The /y flag performs a \"sticky\" search from the lastIndex property of the RegExp object."
+    },
+    {
+      "type": "paragraph",
+      "text": "The /y flag lets a match start at the exact position where the last match ended."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"abc def ghi\";\nconst pattern = /\\w+/y;\n\n// Start match from position 4\npattern.lastIndex = 4;\nlet result = text.match(pattern);"
+        },
+        {
+          "language": "unknown",
+          "code": "let text = \"abc def ghi\";\nconst pattern = /\\w+/;\n\n// Start match from position 4\npattern.lastIndex = 4;\nlet result = text.match(pattern);"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\nThe example above uses a regex metacharacter /\\w+/.\nThe meaning of /\\w+/ is \"mach any word\". \nYou will learn more about metacharacters in the next chapters."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "RegExp /u Flag (Unicode)"
+    },
+    {
+      "type": "paragraph",
+      "text": "The /u flag enables full Unicode support in a regular expression."
+    },
+    {
+      "type": "paragraph",
+      "text": "By default, JavaScript RegExp treats 4-byte Unicode characters\n(like emojis or less common symbols) as two separate 2-byte \"surrogate\" code units."
+    },
+    {
+      "type": "paragraph",
+      "text": "The /u flag treats the pattern as a sequence of Unicode code points,\nwhich is important for correctly handling of characters outside the Basic Multilingual Plane (BMP)."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"䷀\";\nconst pattern = /\\u{04DC0}/u;\n\n// Returns true:\nlet result = pattern.test(text);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Without the /u flag, regular expressions are not \"Unicode-aware\"."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"䷀\";\nconst pattern = /\\u{04DC0}/;\n\n// Returns false:\nlet result = pattern.test(text);"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\nJavaScript 2025 introduced the /v flag as an \"upgrade\" to the /u flag.\nThe /v Flag enables more Unicode-related features."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "RegExp /v Flag (Unicode Sets)"
+    },
+    {
+      "type": "paragraph",
+      "text": "The /v flag is an upgrade to the /u flag for better Unicode support."
+    },
+    {
+      "type": "paragraph",
+      "text": "It enables more Unicode-related features."
+    },
+    {
+      "type": "paragraph",
+      "text": "The new features are:"
+    },
+    {
+      "type": "other",
+      "text": "The \\p escape sequence matches strings, instead of just characters.\nThe character class is upgraded to allow intersection, union, and subtraction syntaxes,\nas well as matching multiple Unicode characters."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"Hello 😄\";\nconst pattern = /\\p{Emoji}/v;\n\n// Returns true:\nlet result = pattern.test(text);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Without the /v flag, regular expressions are not \"Unicode-aware\"."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"Hello 😄\";\nconst pattern = /\\p{Emoji}/;\n\n// Returns false:\nlet result = pattern.test(text);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "RegExp Group Modifiers (?flag)"
+    },
+    {
+      "type": "paragraph",
+      "text": "The (?flag) syntax is a group modifier (inline flag modifier)."
+    },
+    {
+      "type": "paragraph",
+      "text": "It allows for modifying flags in a part of a pattern, rather than to the entire pattern."
+    },
+    {
+      "type": "paragraph",
+      "text": "(?flags:pattern) enables the flags only for the pattern in the group."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"W3Schools tutorials.\";\nconst pattern = /(?i:WShools) tutorials/;\n\n// Returns true:\nlet result = pattern.test(text);"
+        },
+        {
+          "language": "unknown",
+          "code": "let text = \"W3Schools Tutorials.\";\nconst pattern = /(?i:W3Sshools) tutorials/;\n\n// Returns false:\nlet result = pattern.test(text);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Regex Flag Properties"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Revised July 2025"
+    },
+    {
+      "type": "other",
+      "text": "Property\n  Description\n\n\n  global\n  Returns true if the /g flag is set\n\n\n  hasIndices\n  Returns true if the /d flag is set\n\n\n  ignoreCase\n  Returns true if the /i flag is set\n\n\n  multiline\n  Returns true if the /m flag is set\n\n\n  dotAll\n  Returns true if the /s flag is set\n\n\n  sticky\n  Returns true if the /y flag is set\n\n\n  unicode\n  Returns true if the /u flag is set\n\n\n  unicodeSets\n  Returns true if the /v flag is set"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The dotAll Property"
+    },
+    {
+      "type": "paragraph",
+      "text": "The dotAll property returns true\nif the /s flag is set."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const pattern = /W3Schools/s;\n\nlet result = pattern.dotAll;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The global Property"
+    },
+    {
+      "type": "paragraph",
+      "text": "The global property returns true\nif the /g flag is set."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const pattern = /W3Schools/g;\n\nlet result = pattern.global;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The hasIndices Property"
+    },
+    {
+      "type": "paragraph",
+      "text": "The hasIndices property returns true\nif the /d flag is set."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const pattern = /W3Schools/d;\n\nlet result = pattern.hasIndices;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The ignoreCase Property"
+    },
+    {
+      "type": "paragraph",
+      "text": "The ignoreCase property returns true\nif the /i flag is set."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const pattern = /W3Schools/i;\n\nlet result = pattern.ignoreCase;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The multiline Property"
+    },
+    {
+      "type": "paragraph",
+      "text": "The multiline property returns true\nif the /m flag is set."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const pattern = /W3Schools/m;\n\nlet result = pattern.multiline;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The sticky Property"
+    },
+    {
+      "type": "paragraph",
+      "text": "The sticky property returns true\nif the /y flag is set."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const pattern = /W3Schools/y;\n\nlet result = pattern.sticky;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The unicode Property"
+    },
+    {
+      "type": "paragraph",
+      "text": "The unicode property returns true\nif the /u flag is set."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"䷀\";\nconst pattern = /\\u{04DC0}/u;\n\nlet result = pattern.unicode;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The unicodeSets Property"
+    },
+    {
+      "type": "paragraph",
+      "text": "The unicodeSets property returns true\nif the /v flag is set."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"Hello 😄\";\nconst pattern = /\\p{Emoji}/v;\n\nlet result = pattern.unicodeSets;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Regular Expression Methods"
+    },
+    {
+      "type": "paragraph",
+      "text": "Regular Expression Search and Replace can be done with different methods."
+    },
+    {
+      "type": "paragraph",
+      "text": "These are the most common:"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "String Methods"
+    },
+    {
+      "type": "table",
+      "data": [
+        [],
+        [
+          "Method",
+          "Description"
+        ],
+        [
+          "match(regex)",
+          "Returns an Array of results"
+        ],
+        [
+          "matchAll(regex)",
+          "Returns an Iterator of results"
+        ],
+        [
+          "replace(regex)",
+          "Returns a new String"
+        ],
+        [
+          "replaceAll(regex)",
+          "Returns a new String"
+        ],
+        [
+          "search(regex)",
+          "Returns the index of the first match"
+        ],
+        [
+          "split(regex)",
+          "Returns an Array of results"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "RegExp Methods"
+    },
+    {
+      "type": "table",
+      "data": [
+        [],
+        [
+          "Method",
+          "Description"
+        ],
+        [
+          "regex.exec()",
+          "Returns an Iterator of results"
+        ],
+        [
+          "regex.test()",
+          "Returns true or false"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "See Also:\nJavaScript RegExp Tutorial\nJavaScript RegExp Character Classes\nJavaScript RegExp Meta Characters\nJavaScript RegExp Assertions\nJavaScript RegExp Quantifiers\nJavaScript RegExp Patterns\nJavaScript RegExp Objects\nJavaScript RegExp Methods"
+    }
+  ]
+}

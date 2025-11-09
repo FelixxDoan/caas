@@ -1,0 +1,86 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_ref_view.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL VIEW Keyword"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "text": "CREATE VIEW"
+    },
+    {
+      "type": "paragraph",
+      "text": "In SQL, a view is a virtual table based on the result set of an SQL statement."
+    },
+    {
+      "type": "paragraph",
+      "text": "The CREATE VIEW command creates a view."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL creates a view that selects all customers from Brazil:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\nCREATE VIEW [Brazil \n  Customers] AS\nSELECT \n  CustomerName, ContactName\nFROM Customers\nWHERE \n  Country = \"Brazil\";"
+    },
+    {
+      "type": "heading",
+      "text": "Query The View"
+    },
+    {
+      "type": "paragraph",
+      "text": "We can query the view above as follows:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\nSELECT * FROM [Brazil \n  Customers];"
+    },
+    {
+      "type": "heading",
+      "text": "CREATE OR REPLACE VIEW"
+    },
+    {
+      "type": "paragraph",
+      "text": "The CREATE OR REPLACE VIEW command updates a view."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL adds the \"City\" column to the \"Brazil Customers\" view:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\nCREATE OR REPLACE VIEW [Brazil Customers] AS\nSELECT CustomerName, ContactName, City\nFROM Customers\nWHERE Country = \"Brazil\";"
+    },
+    {
+      "type": "heading",
+      "text": "DROP VIEW"
+    },
+    {
+      "type": "paragraph",
+      "text": "The DROP VIEW command deletes a view."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL drops the \"Brazil Customers\" view:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\nDROP VIEW [Brazil Customers];"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

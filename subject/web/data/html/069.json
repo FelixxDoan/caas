@@ -1,0 +1,27 @@
+{
+  "url": "https://www.w3schools.com/html/html_table_sizes.asp",
+  "title": "HTML ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "HTML Table Sizes"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "HTML tables can have different sizes for each column, row or \nthe entire table.\n\n\n\n\n \n \n \n\n\n \n \n \n\n\n \n \n \n\n\n\n\n \n \n \n\n\n \n \n \n\n\n \n \n \n\n\n\n\n \n \n \n\n\n \n \n \n\n\n\n\nUse the style attribute with the\nwidth or height\nproperties to specify the size of a table, row or column.\n\n\nHTML Table Width\nTo set the width of a table, add the style \nattribute to the <table> element:\n\n  Example\n  Set the width of the table to 100%:\n\n<table style=\"width:100%\"> \n<tr>    <th>Firstname</th>\n    <th>Lastname</th>     <th>Age</th>\n \n</tr> \n<tr>    <td>Jill</td>\n    <td>Smith</td>     <td>50</td>\n \n</tr>  <tr>    <td>Eve</td>\n    <td>Jackson</td>     <td>94</td>\n  </tr></table>\n\n  Try it Yourself »\n\n\n\nNote: Using a percentage as the size unit for a width means \nhow wide will this element be compared to its parent element, which in this case \nis the <body> \nelement.\n\n\n\n\nHTML Table Column Width\n\n\n \n \n \n\n\n \n \n \n\n\n \n \n \n\n\n\nTo set the size of a specific column, add the style \nattribute on a <th> or\n<td> element:\n\n  Example\n  Set the width of the first column to 70%:\n\n<table style=\"width:100%\"> \n<tr>    <th style=\"width:70%\">Firstname</th>\n    <th>Lastname</th>     <th>Age</th>\n \n</tr> \n<tr>    <td>Jill</td>\n    <td>Smith</td>     <td>50</td>\n \n</tr>  <tr>    <td>Eve</td>\n    <td>Jackson</td>     <td>94</td>\n  </tr></table>\n\n  Try it Yourself »\n\n\n\n\n\n\n\n\n\nHTML Table Row Height\n\n\n \n \n \n\n\n \n \n \n\n\n \n \n \n\n\n\nTo set the height of a specific row, add the style \nattribute on a table row element:\n\n  Example\n  Set the height of the second row to 200 pixels:\n\n<table style=\"width:100%\"> \n<tr>    <th>Firstname</th>\n    <th>Lastname</th>     <th>Age</th>\n \n</tr> \n<tr style=\"height:200px\">    <td>Jill</td>\n    <td>Smith</td>     <td>50</td>\n \n</tr>  <tr>    <td>Eve</td>\n    <td>Jackson</td>     <td>94</td>\n  </tr></table>\n\n  Try it Yourself »"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

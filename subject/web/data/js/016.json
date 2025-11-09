@@ -1,0 +1,527 @@
+{
+  "url": "https://www.w3schools.com/js/js_examples.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Examples"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What can JavaScript do?"
+    },
+    {
+      "type": "other",
+      "text": "JavaScript can change HTML content\n\nJavaScript can change HTML attributes\n\nJavaScript can change CSS style\n\nJavaScript can hide HTML elements\n\nJavaScript can show hidden HTML elements"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples Explained"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Where to Insert JavaScript"
+    },
+    {
+      "type": "other",
+      "text": "JavaScript in <head>\n\nJavaScript in <body>\n\nJavaScript in an external file\n\nJavaScript in an external url \n\nJavaScript in an external folder"
+    },
+    {
+      "type": "paragraph",
+      "text": "Where to Explained"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Output"
+    },
+    {
+      "type": "other",
+      "text": "Writing into the HTML output\n\nWriting into an HTML element\n\nWriting into an window alert box\n\nWriting into the browser console"
+    },
+    {
+      "type": "paragraph",
+      "text": "Output Explained"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Syntax"
+    },
+    {
+      "type": "other",
+      "text": "JavaScript statements\n\nJavaScript numbers\n\nJavaScript strings\n\nJavaScript variables\n\nJavaScript operators\n\nJavaScript assignment\n\nJavaScript expressions (using constants)\n\nJavaScript expressions (using strings)\n\nJavaScript expressions (using variables)\n\nJavaScript keywords\n\nJavaScript comments\n\nJavaScript is case sensitive"
+    },
+    {
+      "type": "paragraph",
+      "text": "Syntax Explained"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Statements"
+    },
+    {
+      "type": "other",
+      "text": "JavaScript statements are commands to the browser\n\nJavaScript code is a sequence of statements\n\nJavaScript statements are separated with semicolon\n\nMultiple statement on one line is allowed\n\nJavaScript statements can be grouped together in code blocks\n\nYou can break a code line after an operator or a comma."
+    },
+    {
+      "type": "paragraph",
+      "text": "Statements Explained"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Comments"
+    },
+    {
+      "type": "other",
+      "text": "Single line comments\n\nSingle line comments at the end of a line\n\nMultiple lines comments\n\nSingle line comment to prevent execution\n\nMultiple lines comment to prevent execution"
+    },
+    {
+      "type": "paragraph",
+      "text": "Comments Explained"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Variables"
+    },
+    {
+      "type": "other",
+      "text": "JavaScript variables\n\nJavaScript variables as algebra\n\nJavaScript numbers and strings\n\nJavaScript var keyword.\n\nDeclaring many variables in one statement\n\nDeclaring many variables multiline\n\nA variable without a value returns the value undefined\n\nRe-declaring a variable will not destroy the value\n\nAdding JavaScript numbers\n\nAdding JavaScript strings\n\nAdding strings and numbers"
+    },
+    {
+      "type": "paragraph",
+      "text": "Variables Explained"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Arithmetic"
+    },
+    {
+      "type": "other",
+      "text": "The addition (+) operator\n\nThe subtraction (-) operator\n\nThe multiplication (*) operator\n\nThe division (/) operator\n\nThe modulus (%) operator\n\nThe increment (++) operator\n\nThe decrement (--) operator"
+    },
+    {
+      "type": "paragraph",
+      "text": "Arithmetic Explained"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Assignment"
+    },
+    {
+      "type": "other",
+      "text": "The = assignment operator\n\nThe += assignment operator\n\nThe -= assignment operator\n\nThe *= assignment operator\n\nThe /= assignment operator\n\nThe %= assignment operator"
+    },
+    {
+      "type": "paragraph",
+      "text": "Assignment Explained"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript String Concatenation"
+    },
+    {
+      "type": "other",
+      "text": "Adding two strings together using the concatenating (+) operator\n\nAdding two strings together with a space in the first string\n\nAdding two strings together with a space in between\n\nAdding two strings together using using the += operator\n\nAdding strings and numbers"
+    },
+    {
+      "type": "paragraph",
+      "text": "Concatenation Explained"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Data Types"
+    },
+    {
+      "type": "other",
+      "text": "Declare (create) strings\n\nDeclare (create) numbers\n\nDeclare (create) an array\n\nDeclare (create) an object\n\nFind the type of a variable\n\nAdding two numbers and a string\n\nAdding a string and two numbers\n\nAn undefined variable\n\nAn empty variable"
+    },
+    {
+      "type": "paragraph",
+      "text": "Data types Explained"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Objects"
+    },
+    {
+      "type": "other",
+      "text": "Create a JavaScript variable\n\nCreate a JavaScript object\n\nCreate a person object (single line)\n\nCreate a person object (multiple lines)\n\nAccess object properties using .property\n\nAccess object properties using [property]\n\nAccess a function property as a method\n\nAccess a function property as a property"
+    },
+    {
+      "type": "paragraph",
+      "text": "Objects Explained"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Functions"
+    },
+    {
+      "type": "other",
+      "text": "A simple function\nA function with an argument\nA function with an argument 2\nA function that returns a value\nA function that converts Fahrenheit to Celsius\nA function call without ()"
+    },
+    {
+      "type": "paragraph",
+      "text": "Functions Explained"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Events"
+    },
+    {
+      "type": "other",
+      "text": "An onclick event changes an HTML element\nAn onclick event changes its own element\nAn onclick event calls a function"
+    },
+    {
+      "type": "paragraph",
+      "text": "Events Explained"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Strings"
+    },
+    {
+      "type": "other",
+      "text": "Strings can be written with single or double quotes.\nShow some string examples\n\nBackslash before quotes accepts quotes as quotes.\nFind the length of a string\n\nYou can break text string with a backslash.\n\nYou cannot break code with a backslash.\nFind the position of the first occurrence of a text\nin a string - indexOf()\nSearch for a text in a string and return the text if found\n- match()\nReplace characters in a string - replace()\nConvert string to upper case - toUpperCase()\nConvert string to lower case - toLowerCase()\nSplit a string into an array - split()"
+    },
+    {
+      "type": "paragraph",
+      "text": "Strings Explained"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Numbers"
+    },
+    {
+      "type": "other",
+      "text": "Numbers can be written with or without decimals\nExtra large or extra small numbers can be written with exponent notation\nNumber are considered accurate only up to 15 digits\nFloating point arithmetic is not always 100% accurate\nBut it helps to multiply and divide by 10\nAdding two numbers results in a new number\nAdding two numeric strings results in a concatenated string\nAdding a number and a numeric string also results in a concatenated string\nAdding a numeric string and a number also results in a concatenated string\nCommon mistake when adding strings and numbers 1\nCommon mistake when adding strings and numbers 2\nJavaScript will try to convert strings to numbers when dividing\nJavaScript will try to convert strings to numbers when multiplying\nJavaScript will try to convert strings to numbers when subtracting\nJavaScript will NOT convert strings to numbers when adding\nA number divided by a string is NaN (Not a Number)\nA number divided by a numeric string is a number\nThe global JavaScript function isNaN() returns if a value is a number\nUsing NaN in a mathematical operation will always return NaN\nUsing NaN in a mathematical string operation will concatenate NaN\nNaN (Not a Number) is a number (Yes! typeof NaN returns number)\nInfinity is returned if you calculate a number outside the largest possible number\nDivision by zero also generates Infinity\nInfinity is a number (typeof Infinity returns number)\nConstants, preceded by 0x, are interpreted as hexadecimal\nThe toString() method can output numbers as hex, octal, and binary\nNumbers can be objects\nNumbers and objects cannot be safely compared\nObjects and objects cannot be safely compared"
+    },
+    {
+      "type": "paragraph",
+      "text": "Numbers Explained"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Number Methods"
+    },
+    {
+      "type": "other",
+      "text": "The toString() method converts a number to a string\nThe valueOf() method returns a number as a number\nThe toExponential() returns a number with exponential notation\nThe toFixed() method rounds a number to a number of digits\nThe toPrecision() method a number written with a specified length\nThe global method Number() converts variables to numbers\nThe global method Number() can even convert dates to numbers\nThe global method parseInt() converts strings to numbers\nThe global method parseFloat() converts strings to numbers\nMAX_VALUE returns the largest possible number in JavaScript\nMIN_VALUE returns the smallest possible number in JavaScript\nPOSITIVE_INFINITY represents infinity\nPOSITIVE_INFINITY is returned on overflow\nNEGATIVE_INFINITY represents negative infinity\nNEGATIVE_INFINITY is returned on overflow\nNaN Represents \"Not-a-Number\"\nArithmetic performed on a string will result in NaN\nUsing a Number property on a variable will return undefined"
+    },
+    {
+      "type": "paragraph",
+      "text": "Numbers Methods Explained"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Maths"
+    },
+    {
+      "type": "other",
+      "text": "Math.PI returns the value of PI\n\nMath.round(x) returns the rounded value of x\n\nMath.pow(x, y) returns the value of x to the power of y\n\nMath.sqrt(x) returns the square root of x\n\nMath.abs(x) returns the absolute (positive) value of x\n\nMath.ceil(x) returns the value of x rounded up\n\nMath.floor(x) returns the value of x rounded down\n\nMath.sin(x) returns the sin of the angle x (given in radians)\n\nMath.cos(x) returns the cosin of the angle x (given in radians)\n\nMath.max() return the number with the highest value from a list of arguments\n\nMath.min() to return the number with the lowest value from a list of arguments\n\nConverting Celsius to Fahrenheit"
+    },
+    {
+      "type": "paragraph",
+      "text": "Maths Explained"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Random"
+    },
+    {
+      "type": "other",
+      "text": "Math.random() returns a random number between 0 (included) and 1 (excluded)\n\nHow to return a random integer between 0 and 9 (both included)\n\nHow to return a random integer between 0 and 10 (both included)\n\nHow to return a random integer between 0 and 99 (both included)\n\nHow to return a random integer between 0 and 100 (both included)\n\nHow to return a random integer between 1 and 10 (both included)\n\nHow to return a random integer between 1 and 100 (both included)\n\nHow to return a random integer between x (included) and y (excluded)\n\nHow to return a random integer between x and y (both included)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Random Explained"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Dates"
+    },
+    {
+      "type": "other",
+      "text": "Use Date() to display today's date and time\nUse getFullYear() display the year\nUse getTime() to calculate the number of milliseconds since 1970\nUse setFullYear() to set a specific date\nUse toUTCString() to convert today's date (according to UTC) to a string\nUse getDay() to display the weekday as a number\nUse getDay() and an array to display the weekday as a name\nDisplay a clock"
+    },
+    {
+      "type": "paragraph",
+      "text": "Dates Explained"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Arrays"
+    },
+    {
+      "type": "other",
+      "text": "Create an array I\nCreate an array II\nAccess an array element\nChange an array element\nAccess a full array\nFind the length of an array\nLoop through an array\nAdd an element to an array\nAdd undefined \"holes\" to an array\nHow to \nrecognize an array I\nHow to \nrecognize an array II"
+    },
+    {
+      "type": "paragraph",
+      "text": "Arrays Explained"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Array Methods"
+    },
+    {
+      "type": "other",
+      "text": "Add an element to an array\nRemove the last element of an array - pop()\nJoin all elements of an array into a string - join()\nJoin two arrays - concat()\nJoin three arrays - concat()\nAdd an element to position 2 in an array - splice()\nConvert an array to a string - toString()\nAdd new elements to the beginning of an array - unshift()\nRemove the first element of an array - shift()\nSelect elements from an array - slice()"
+    },
+    {
+      "type": "paragraph",
+      "text": "Array Methods Explained"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Array Sort"
+    },
+    {
+      "type": "other",
+      "text": "Sort an array in ascending order\nSort an array in descending order\nSort an array of numbers ascending\nSort an array of numbers descending\nSort numbers (alphabetically or numerically)\nSort array numbers in random order\nFind the lowest number in an array\nFind the highest number in an array\nFind the lowest number in an array using Math.min()\nFind the highest number in an array using Math.max()\nUsing a \"homemade\" myArrayMin method\nUsing a \"homemade\" myArrayMax method\nSort objects by numeric properties\nSort objects by string properties"
+    },
+    {
+      "type": "paragraph",
+      "text": "Array Sort Explained"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Array Iteration"
+    },
+    {
+      "type": "other",
+      "text": "Array.forEach()\nArray.map()\nArray.filter()\nArray.reduce()\nArray.reduceRight()\nArray.every()\nArray.some()\nArray.indexOf()\nArray.lastIndexOf()\nArray.find()\nArray.findIndex()"
+    },
+    {
+      "type": "paragraph",
+      "text": "Array Iteration Explained"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Type Conversion"
+    },
+    {
+      "type": "other",
+      "text": "Display the typeof all variable types\nDisplay the constructor of all variable types\nConvert a number to a string using String()\nConvert a number to a string using toString()\nFind out if a variable is an array\nFind out if a variable is a date"
+    },
+    {
+      "type": "paragraph",
+      "text": "Type Conversion Explained"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Booleans"
+    },
+    {
+      "type": "other",
+      "text": "Display the value of Boolean(10 > 9)\nDisplay the value of 10 > 9\nEverything with a real value is true\nThe Boolean value of zero is false\nThe Boolean value of minus zero is false\nThe Boolean value of an empty string is false\nThe Boolean value of undefined is false\nThe Boolean value of null is false\nThe Boolean value of false is false\nThe Boolean value of NaN is false"
+    },
+    {
+      "type": "paragraph",
+      "text": "Booleans Explained"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Comparisons"
+    },
+    {
+      "type": "other",
+      "text": "Assign 5 to x, and display the value of (x == 8)\nAssign 5 to x, and display the value of (x == 5)\nAssign 5 to x, and display the value of (x === 5)\nAssign 5 to x, and display the value of (x === \"5\")\nAssign 5 to x, and display the value of (x != 8)\nAssign 5 to x, and display the value of (x !== 5)\nAssign 5 to x, and display the value of (x !== \"5\")\nAssign 5 to x, and display the value of (x > 8)\nAssign 5 to x, and display the value of (x < 8)\nAssign 5 to x, and display the value of (x >= 8)\nAssign 5 to x, and display the value of (x <= 8)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Comparisons Explained"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Conditionals"
+    },
+    {
+      "type": "other",
+      "text": "The if statement\nThe else statement\nThe else if statement\nRandom link\nSwitch statement"
+    },
+    {
+      "type": "paragraph",
+      "text": "Conditionals Explained"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Loops"
+    },
+    {
+      "type": "other",
+      "text": "For loop\nLooping an Array\nLooping through HTML headers\nWhile loop\nDo While loop\nBreak a loop\nBreak and continue a loop\nUse a for...in statement to loop through the elements of an \nobject"
+    },
+    {
+      "type": "paragraph",
+      "text": "Loops Explained"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Error Handling"
+    },
+    {
+      "type": "other",
+      "text": "The try...catch statement\nThe try...catch statement with a confirm box\nThe onerror event"
+    },
+    {
+      "type": "paragraph",
+      "text": "Errors Explained"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Regular Expressions"
+    },
+    {
+      "type": "other",
+      "text": "Search for an expression in a string\nSearch for an expression and replace it\nRegular Expressions Explained"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Objects"
+    },
+    {
+      "type": "other",
+      "text": "Creating a JavaScript variable\n\nCreating a JavaScript object\n\nCreating a JavaScript object (single line)\n\nCreating a JavaScript object (multiple lines)\n\nCreating a JavaScript object using new\n\nCreating JavaScript objects using a constructor\n\nCreating built-in JavaScript objects\n\nThe best way to create JavaScript variables\n\nJavaScript objects are mutable"
+    },
+    {
+      "type": "paragraph",
+      "text": "Objects Explained"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Object Properties"
+    },
+    {
+      "type": "other",
+      "text": "Accessing properties using .property\n\nAccessing properties using [property]\n\nAccessing properties using for in\n\nAdding new properties to existing objects\n\nDeleting properties from objects"
+    },
+    {
+      "type": "paragraph",
+      "text": "Object Properties Explained"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JSON Objects"
+    },
+    {
+      "type": "other",
+      "text": "Accessing properties using .property\n\nAccessing properties using [property]\n\nLooping through properties\n\nLooping through property values\n\nAccess nested JSON objects\n\nModify values using the dot notation\n\nModify values using the bracket notation\n\nDelete object properties"
+    },
+    {
+      "type": "paragraph",
+      "text": "JSON Object Properties Explained"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JSON Arrays"
+    },
+    {
+      "type": "other",
+      "text": "Accessing array values\n\nLooping through an array using for-in\n\nLooping through an array using for\n\nAccess nested JSON arrays\n\nModify array values\n\nDelete array items"
+    },
+    {
+      "type": "paragraph",
+      "text": "JSON Arrays Explained"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JSON Parse"
+    },
+    {
+      "type": "other",
+      "text": "Use JSON parse\n\nUsing JSON parse in an AJAX example\n\nUsing JSON parse on an array\n\nParsing dates\n\nParsing dates using the reviver function\n\nParsing functions"
+    },
+    {
+      "type": "paragraph",
+      "text": "JSON Parse Explained"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JSON Stringify"
+    },
+    {
+      "type": "other",
+      "text": "Use JSON stringify\n\nUsing JSON stringify on an array\n\nStringify dates\n\nStringify functions\n\nStringify functions using the toString() method"
+    },
+    {
+      "type": "paragraph",
+      "text": "JSON Stringify Explained"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JSON PHP"
+    },
+    {
+      "type": "other",
+      "text": "Get JSON from a php file\n\nGet JSON array from php\n\nGet JSON from a database\n\nLoop through the result from a database\n\nSend JSON using POST method"
+    },
+    {
+      "type": "paragraph",
+      "text": "JSON PHP Explained"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JSON HTML"
+    },
+    {
+      "type": "other",
+      "text": "Make an HTML table based on JSON data\n\nMake a dynamic HTML Table\n\nMake an HTML drop down list based on JSON data"
+    },
+    {
+      "type": "paragraph",
+      "text": "JSON HTML Explained"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JSON JSONP"
+    },
+    {
+      "type": "other",
+      "text": "Simple JSONP example\n\nCreate a dynamic script tag\n\nJSONP example with dynamic result\n\nJSONP example with a callback function"
+    },
+    {
+      "type": "paragraph",
+      "text": "JSON JSONP Explained"
+    }
+  ]
+}

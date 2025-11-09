@@ -1,0 +1,106 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_or.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL OR Operator"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "text": "The SQL OR Operator"
+    },
+    {
+      "type": "paragraph",
+      "text": "The WHERE clause can contain one or more\nOR operators."
+    },
+    {
+      "type": "paragraph",
+      "text": "The OR operator \nis used to filter records based on more than one condition, like if you want to \nreturn all customers from Germany but also those from Spain:"
+    },
+    {
+      "type": "other",
+      "text": "Example\nSelect all customers from Germany or Spain:\n\n SELECT *\n FROM Customers\n WHERE Country = 'Germany' OR Country = 'Spain';\n\nTry it Yourself »"
+    },
+    {
+      "type": "heading",
+      "text": "Syntax"
+    },
+    {
+      "type": "other",
+      "text": "SELECT column1, column2, ...\nFROM table_name\nWHERE condition1 OR condition2 OR condition3 ...;"
+    },
+    {
+      "type": "heading",
+      "text": "OR vs AND"
+    },
+    {
+      "type": "other",
+      "text": "The OR operator displays a record if any of the conditions are TRUE.\nThe AND operator displays a record if all the conditions are TRUE."
+    },
+    {
+      "type": "heading",
+      "text": "Demo Database"
+    },
+    {
+      "type": "paragraph",
+      "text": "Below is a selection from the Customers table used in the examples:"
+    },
+    {
+      "type": "other",
+      "text": "CustomerID\n    CustomerName\n    ContactName\n    Address\n    City\n    PostalCode\n    Country\n  \n  \n    1\n    Alfreds Futterkiste\n    Maria Anders\n    Obere Str. 57\n    Berlin\n    12209\n    Germany\n  \n  \n    2\n    Ana Trujillo Emparedados y helados\n    Ana Trujillo\n    Avda. de la Constitución 2222\n    México D.F.\n    05021\n    Mexico\n  \n  \n    3\n    Antonio Moreno Taquería\n    Antonio Moreno\n    Mataderos 2312\n    México D.F.\n    05023\n    Mexico\n  \n  \n    4\n    Around the Horn\n    Thomas Hardy\n    120 Hanover Sq.\n    London\n    WA1 1DP\n    UK\n  \n  \n    5\n    Berglunds snabbköp\n    Christina Berglund\n    Berguvsvägen 8\n    Luleå\n    S-958 22\n    Sweden"
+    },
+    {
+      "type": "heading",
+      "text": "At Least One Condition Must Be True"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement selects all fields from Customers where either\nCity is \"Berlin\", \nCustomerName starts with the letter \"G\" or \nCountry is \"Norway\":"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n SELECT * FROM Customers\n WHERE City = 'Berlin'\n OR CustomerName LIKE 'G%'\n OR Country = 'Norway'; \n\nTry it Yourself »"
+    },
+    {
+      "type": "heading",
+      "text": "Combining AND and OR"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can combine the AND and OR operators."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement selects all customers from Spain that starts with a \"G\" or an \"R\"."
+    },
+    {
+      "type": "paragraph",
+      "text": "Make sure you use parenthesis to get the correct result."
+    },
+    {
+      "type": "other",
+      "text": "Example\nSelect all Spanish customers that starts with either \"G\" or \"R\":\n\n SELECT * FROM Customers\n WHERE Country = 'Spain'\n AND (CustomerName LIKE 'G%' OR CustomerName LIKE 'R%');\nTry it Yourself »"
+    },
+    {
+      "type": "paragraph",
+      "text": "Without parenthesis, the select statement will return all customers from Spain that starts with a \"G\", plus\nall customers that starts with an \"R\", regardless of the country value:"
+    },
+    {
+      "type": "other",
+      "text": "Example\nSelect all customers that either:\nare from Spain and starts with either \"G\", or\nstarts with the letter \"R\":\n\n SELECT * FROM Customers\n WHERE Country = 'Spain'\n AND CustomerName LIKE 'G%' OR CustomerName LIKE 'R%';\nTry it Yourself »"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

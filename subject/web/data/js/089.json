@@ -1,0 +1,111 @@
+{
+  "url": "https://www.w3schools.com/js/js_2016.asp",
+  "title": "ECMAScript 2016",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "ECMAScript 2016"
+    },
+    {
+      "type": "other",
+      "text": "New Features in JavaScript 2016\n\n  Exponentiation (**)\n  Exponentiation assignment (**=)\n  Array includes()"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Browser Support"
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript 2016 is supported in all modern browsers since March 2017:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome 52\n    Edge 15\n    Firefox 52\n    Safari 10.1\n    Opera 39\n  \n  \n    Jul 2016\n    Apr 2017\n    Mar 2017\n    May 2017\n    Aug 2016"
+    },
+    {
+      "type": "paragraph",
+      "text": "ES 2016 is not supported in Internet Explorer."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Exponentiation Operator"
+    },
+    {
+      "type": "paragraph",
+      "text": "The exponentiation operator (**) raises the first operand to the power of the second operand."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 5;\nlet z = x ** 2;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "x ** y produces the same result as Math.pow(x, y):"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 5;\nlet z = Math.pow(x,2);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Exponentiation Assignment"
+    },
+    {
+      "type": "other",
+      "text": "exponentiation assignment"
+    },
+    {
+      "type": "other",
+      "text": "**="
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 5;\nx **= 2;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Array includes()"
+    },
+    {
+      "type": "paragraph",
+      "text": "ECMAScript 2016 introduced Array.includes to arrays."
+    },
+    {
+      "type": "paragraph",
+      "text": "This allows us to check if an element is present in an array:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];\nfruits.includes(\"Mango\");"
+        }
+      ]
+    }
+  ]
+}

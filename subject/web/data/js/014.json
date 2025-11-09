@@ -1,0 +1,42 @@
+{
+  "url": "https://www.w3schools.com/js/js_input_examples.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript HTML Input Examples"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples of using JavaScript to access and manipulate HTML \ninput objects."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Button Object"
+    },
+    {
+      "type": "other",
+      "text": "Disable a button\nFind the name of a button\nFind the type of a button\nFind the value of a button\nFind the text displayed on a button\nFind the id of the form a button belongs to"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Form Object"
+    },
+    {
+      "type": "other",
+      "text": "Submit a form\nReset a form\nFind the value of each element in a form\nFind the accepted character set of a form\nFind the action attribute of a form\nFind the value of the enctype attribute in a form\nFind the number of elements in a form\nFind the method for sending form data\nFind the name of a form\nFind the target of a form"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Option and Select Objects"
+    },
+    {
+      "type": "other",
+      "text": "Disable and enable a dropdown list\nGet the id of the form that contains the dropdown list\nGet the number of options in the dropdown list\nTurn the dropdown list into a multiline list\nSelect multiple options in a dropdown list\nDisplay the selected option in a dropdown list\nDisplay all options from a dropdown list\nDisplay the index of the selected option in a dropdown list\nChange the text of the selected option\nRemove options from a dropdown list"
+    }
+  ]
+}

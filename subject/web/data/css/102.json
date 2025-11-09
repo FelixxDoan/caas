@@ -1,0 +1,87 @@
+{
+  "url": "https://www.w3schools.com/css/css_outline.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Outline"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "An outline is a line drawn outside the element's border."
+    },
+    {
+      "type": "other",
+      "text": "This element has a black border and a green outline with a width of 10px."
+    },
+    {
+      "type": "other",
+      "text": "Try it Yourself »"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CSS Outline"
+    },
+    {
+      "type": "paragraph",
+      "text": "An outline is a line that is drawn around elements, OUTSIDE the borders, to make the element \"stand out\"."
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS has the following outline properties:"
+    },
+    {
+      "type": "other",
+      "text": "outline-style\n   outline-color\n   outline-width\n   outline-offset\n   outline"
+    },
+    {
+      "type": "other",
+      "text": "Note: Outline differs from borders! Unlike border, the outline is \ndrawn outside the element's border, and may overlap other content. Also, the outline is \nNOT a part of the element's dimensions; the element's total width and height\nis not affected by the width of the outline."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CSS Outline Style"
+    },
+    {
+      "type": "paragraph",
+      "text": "The outline-style property specifies the style of the outline, \nand can have one of the following values:"
+    },
+    {
+      "type": "other",
+      "text": "dotted - Defines a dotted outline\ndashed - Defines a dashed outline\nsolid - Defines a solid outline\ndouble - Defines a double outline\ngroove - Defines a 3D grooved outline\nridge - Defines a 3D ridged outline\ninset - Defines a 3D inset outline\noutset - Defines a 3D outset outline\nnone - Defines no outline\nhidden - Defines a hidden outline"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following example shows the different outline-style values:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "p.dotted {outline-style: dotted;}\np.dashed {outline-style: dashed;}p.solid {outline-style: solid;}\np.double {outline-style: double;}p.groove {outline-style: groove;}\np.ridge {outline-style: ridge;}p.inset {outline-style: inset;}\np.outset {outline-style: outset;}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note: None of the other outline properties (which you will learn more about in the next chapters) will have ANY effect unless the \noutline-style property is set!"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

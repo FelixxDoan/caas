@@ -1,0 +1,164 @@
+{
+  "url": "https://www.w3schools.com/css/css_navbar_vertical.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Vertical Navigation Bar"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Vertical Navigation Bar"
+    },
+    {
+      "type": "other",
+      "text": "Home\n  News\n  Contact\n  About"
+    },
+    {
+      "type": "paragraph",
+      "text": "To build a vertical navigation bar, you can style the <a> elements \ninside the list, in addition to the code from the previous page:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "li a\n{\n   \ndisplay: block;\n   \nwidth: 60px;\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Example explained:"
+    },
+    {
+      "type": "other",
+      "text": "display: block; - Displaying the links as block elements makes the whole \nlink area clickable (not just the text), and it allows us to specify the width \n(and padding, margin, height, etc. if you want)\nwidth: 60px; - Block elements take up the full width available by default. We want to specify a 60 pixels width"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can also set the width of <ul>, and remove the width of <a>, \nas they will take up the full width available when displayed as block elements. \nThis will produce the same result as our previous example:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "ul\n{\n    \nlist-style-type: none;\n    \nmargin: 0;\n    \npadding: 0;  width: 60px;\n}\nli\na\n{\n    \ndisplay: block;\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Vertical Navigation Bar Examples"
+    },
+    {
+      "type": "paragraph",
+      "text": "Create a basic vertical navigation bar with a gray background color and \nchange the background color of the links when the user moves the mouse over \nthem:"
+    },
+    {
+      "type": "other",
+      "text": "Home\n  News\n  Contact\n  About"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "ul {  list-style-type: none;  \nmargin: 0;  padding: 0;  width: \n200px;  background-color: #f1f1f1;}li a {  display: \nblock;  color: #000;  padding: 8px 16px;  text-decoration: none;}/* \nChange the link color on hover */li a:hover {  \nbackground-color: #555;  color: white;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Active/Current Navigation Link"
+    },
+    {
+      "type": "paragraph",
+      "text": "Add an \"active\" class to the current link to let the user know which page he/she is on:"
+    },
+    {
+      "type": "other",
+      "text": "Home\n  News\n  Contact\n  About"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".active {  background-color: #04AA6D;  \ncolor: white;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Center Links & Add Borders"
+    },
+    {
+      "type": "paragraph",
+      "text": "Add text-align:center to <li> or <a> to center the links."
+    },
+    {
+      "type": "paragraph",
+      "text": "Add the border property to <ul> to add a border around the navbar. If you also want \nborders inside the navbar, add a border-bottom to all <li> elements, except for the \nlast one:"
+    },
+    {
+      "type": "other",
+      "text": "Home\n  News\n  Contact\n  About"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "ul {  border: 1px solid #555;}li {  text-align: center;\n    \nborder-bottom: 1px solid #555;}li:last-child {  \nborder-bottom: none;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Full-height Fixed Vertical Navbar"
+    },
+    {
+      "type": "paragraph",
+      "text": "Create a full-height, \"sticky\" side navigation:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "ul {  list-style-type: none;  \nmargin: 0;  padding: 0;  width: \n25%;  background-color: #f1f1f1;  height: 100%; /* Full height */\n    position: fixed; /* \nMake it stick, even on scroll */  \noverflow: auto; /* Enable scrolling if the sidenav has too much content */}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Note: This example might not work properly on mobile devices."
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

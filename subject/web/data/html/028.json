@@ -1,0 +1,448 @@
+{
+  "url": "https://www.w3schools.com/html/html_examples.asp",
+  "title": "HTML ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "HTML Examples"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "HTML Basic"
+    },
+    {
+      "type": "other",
+      "text": "HTML document\nHTML headings\nHTML paragraphs\nHTML links\nHTML images\nHTML buttons\nHTML lists"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "HTML Attributes"
+    },
+    {
+      "type": "other",
+      "text": "The title attribute\nThe href attribute\nThe width and height attributes\nThe alt attribute\nAttribute without quotes\nAttribute without quotes does not work"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "HTML Headings"
+    },
+    {
+      "type": "other",
+      "text": "HTML headings\nHTML horizontal rules\nHTML head"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "HTML Paragraphs"
+    },
+    {
+      "type": "other",
+      "text": "HTML paragraphs\nMore HTML paragraphs\nThe use of line breaks in HTML\nPoem problems (some problems with HTML formatting)\nHow to control the line breaks and spaces with the <pre> tag"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "HTML Styles"
+    },
+    {
+      "type": "other",
+      "text": "HTML styles\nHTML background color\nHTML text color\nHTML text font\nHTML text size\nHTML text alignment"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "HTML Text Formatting"
+    },
+    {
+      "type": "other",
+      "text": "Bold formatting using the <b> element\nStrong formatting using the <strong> element\nItalic formatting using the <i> element\nEmphasized formatting using the <em> element\nSmall formatting using the <small> element\nMarked formatting using the <mark> element\nMarked deleted using the <del> element\nMarked inserted using the <ins> element\nMarked deleted and inserted using <del> and <ins>\nSubscript formatting using the <sub> element\nSuperscript formatting using the <sup> element"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "HTML Quotations and Citations"
+    },
+    {
+      "type": "other",
+      "text": "Formatting short quotations with the <q> element.\nFormatting quoted sections with the <blockquote> element.\nFormatting document author/owner information with the <address> element\nFormatting abbreviations and acronyms the <abbr> element\nFormatting work title with the <cite> element\nFormatting text direction with the <bdo> element"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "HTML Comments"
+    },
+    {
+      "type": "other",
+      "text": "Hidden comments\nConditional comments\nComments for debugging"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "HTML CSS"
+    },
+    {
+      "type": "other",
+      "text": "HTML with inline CSS\nHTML with internal CSS\nHTML with external CSS\nHTML with CSS fonts\nHTML with CSS using the id attribute\nHTML with CSS using the class attribute\nHTML and CSS borders\nHTML and CSS padding\nHTML and CSS margin\nHTML and CSS full demo"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "HTML Links"
+    },
+    {
+      "type": "other",
+      "text": "Linking, using an absolute URL\nLinking, using a relative URL\nChanging the color of links\nRemoving the underline from links\nChanging the target of a link\nAn image as a link\nCreating a bookmark link\nA link that breaks out of a frame\nA mailto link\nA mailto link with subject"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "HTML Images"
+    },
+    {
+      "type": "other",
+      "text": "An image\nAn image height and width using attributes\nAn image height and width using CSS\nAn image height and width using both\nAn image in another folder\nAn image with a broken link\nAn image on another server\nUsing an image as a link\nA moving image\nAn image map with clickable regions\nA floating image"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "HTML Tables"
+    },
+    {
+      "type": "other",
+      "text": "Basic HTML tables\nA table with borders\nA table with collapsed borders\nA table with cell padding\nA table with headings\nA table with left-aligned headings\nHorizontal/Vertical table headings\nA table with a caption\nTable cells that span more than one column\nTable cells that span more than one row\nA table with cell spacing\nA table with HTML tags inside\nTables with different style using id I\nTables with different style using id II\nTables with different style using class I\nTables with different style using class II"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "HTML Lists"
+    },
+    {
+      "type": "other",
+      "text": "An unordered list (default)\nAn unordered list with disc bullets\nAn unordered list with circle bullets\nAn unordered list with square bullets\nAn unordered list without bullets\nAn ordered list (default)\nAn ordered list with numbers\nAn ordered list with letters\nAn ordered list with lowercase letters\nAn ordered list with roman numbers\nAn ordered list with lowercase roman numbers\nA description list\nA nested list I\nA nested list II\nA horizontal list\nA horizontal list menu"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "HTML Block and inline elements"
+    },
+    {
+      "type": "other",
+      "text": "The <div> element\nThe <span> element\nStyling a <div> element\nStyling a <span> element"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "HTML Div Element"
+    },
+    {
+      "type": "other",
+      "text": "<div> elements come with linebreaks\n<div> as a container\nCenter align a <div> element\nMultiple <div> elements\nFloating <div> elements\nPosition <div> elements with display:inline-block\nPosition <div> elements with display:flex\nPosition <div> elements with display:grid"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "HTML Classes"
+    },
+    {
+      "type": "other",
+      "text": "Style all elements with a specified class name\nAccess elements with a specified class name, with JavaScript\nMultiple classes\nSame class, different tag"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "HTML Id"
+    },
+    {
+      "type": "other",
+      "text": "Style an element with a specific id\nDifference between class and id\nAccess an element with a specific id, with JavaScript"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "HTML Layout"
+    },
+    {
+      "type": "other",
+      "text": "Layout using float\nLayout using flexbox\nLayout using flexbox 2\nLayout using flexbox 3"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "HTML IFrame"
+    },
+    {
+      "type": "other",
+      "text": "Inline frame (a frame inside an HTML page)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "HTML head Elements"
+    },
+    {
+      "type": "other",
+      "text": "A valid HTML document with no <html> <body, and <head>\nA valid HTML document with no <head> element\nThe <title> element defines the document title\nThe <style> element contains style information\nThe <link> element defines a relationship to an external resource\nThe <meta> element defines special meta information\nThe <script> element defines client-side JavaScripts\nThe <base> element defines the base URL for all URLs"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "HTML Scripts"
+    },
+    {
+      "type": "other",
+      "text": "Insert a script\nUse of the <noscript> tag"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "HTML Computercode Elements"
+    },
+    {
+      "type": "other",
+      "text": "Keyboard input formatting using the <kbd> element\nComputer output formatting using the <samp> element\nProgramming code formatting using the <code> element\nProgramming code formatting preserving whitespace and line-breaks\nVariable formatting using the <var> element"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "HTML Forms"
+    },
+    {
+      "type": "other",
+      "text": "Form with text input\nForm with radio button input\nForm with text fields and a submit button\nForm with a text fields without a name attribute\nGrouping Form Data"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "HTML Form Elements"
+    },
+    {
+      "type": "other",
+      "text": "A simple drop-down list\nA drop-down list with a pre-selected value\nA textarea (a multi-line text input field)\nAn input button\nUsing the <datalist> Element\nUsing the <output> Element"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "HTML Input Types"
+    },
+    {
+      "type": "other",
+      "text": "Input type text\nInput type password\nInput type radio\nInput type checkbox\nInput type button\nInput type number - with restrictions\nInput type number - with steps\nInput type date - with date picker\nInput type date - with restrictions\nInput type color - with color picker\nInput type range\nInput type month\nInput type week\nInput type time\nInput type datetime-local\nInput type email\nInput type search\nInput type tel\nInput type url"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "HTML Input Attributes"
+    },
+    {
+      "type": "other",
+      "text": "The autocomplete attribute\nThe novalidate attribute\nThe autofocus_attribute\nThe form attribute\nThe formaction attribute\nThe formenctype attribute\nThe formmethod attribute\nThe formnovalidate attribute\nThe formtarget attribute\nThe height and width attributes\nThe list attribute\nThe min and max attributes\nThe multiple attribute\nThe pattern attribute\nThe placeholder attribute\nThe required attribute\nThe step attribute"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "HTML Canvas Graphics"
+    },
+    {
+      "type": "other",
+      "text": "Draw on the canvas with JavaScript\nDraw a line with lineTo()\nDraw a circle with arc()\nDraw a text with fillText()\nDraw a text with strokeText()\nDraw a linear gradient\nDraw a circular gradient\nDraw an image with drawImage()"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "HTML SVG Graphics"
+    },
+    {
+      "type": "other",
+      "text": "SVG Circle\nSVG Rectangle\nSVG Rounded Rectangle\nSVG Star\nSVG Logo"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "HTML Media"
+    },
+    {
+      "type": "other",
+      "text": "Play Bunny\nPlay bear video with controls\nPlay bear video with autoplay\nPlay Horse sound with controls"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "HTML Geolocation"
+    },
+    {
+      "type": "other",
+      "text": "Get geolocation coordinates\nHandle geolocation errors\n\nGet geolocation and watch the position"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "HTML Local Storage"
+    },
+    {
+      "type": "other",
+      "text": "Store a name permanently\nStore a counter permanently\nStore a counter for one session"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "HTML Media"
+    },
+    {
+      "type": "other",
+      "text": "Play a video file\nPlay an audio file in HTML\nPlay a YouTube video in HTML"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "More HTML Examples"
+    },
+    {
+      "type": "other",
+      "text": "HTML drag and drop\nHTML web workers\nHTML server sent events"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

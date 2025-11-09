@@ -1,0 +1,137 @@
+{
+  "url": "https://www.w3schools.com/html/html_images_picture.asp",
+  "title": "HTML ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "HTML <picture> Element"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "The HTML <picture> element allows \nyou to display different pictures for \ndifferent devices or screen sizes."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The HTML <picture> Element"
+    },
+    {
+      "type": "paragraph",
+      "text": "The HTML <picture> element gives web \ndevelopers more flexibility in \nspecifying image resources."
+    },
+    {
+      "type": "paragraph",
+      "text": "The <picture> element contains one or \nmore <source> elements, each referring \nto different images through the srcset \nattribute. This way the browser can choose the image that best \nfits the current view and/or device."
+    },
+    {
+      "type": "paragraph",
+      "text": "Each <source> element has a\nmedia attribute that defines when the image is the \nmost suitable."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<picture>  <source media=\"(min-width: 650px)\" srcset=\"img_food.jpg\">\n   \n  <source media=\"(min-width: 465px)\" srcset=\"img_car.jpg\">  <img src=\"img_girl.jpg\"></picture>"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note: Always specify an <img> element as the last child \nelement of the <picture> element. The <img> element is used by browsers that do \nnot support the <picture> element, or if none of the <source> tags match."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "When to use the Picture Element"
+    },
+    {
+      "type": "paragraph",
+      "text": "There are two main purposes for the <picture> element:"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "1. Bandwidth"
+    },
+    {
+      "type": "paragraph",
+      "text": "If you have a small screen or device, it is not necessary to load a large \nimage file. The browser will use the first <source> \nelement with matching attribute values, and ignore any of the following \nelements."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "2. Format Support"
+    },
+    {
+      "type": "paragraph",
+      "text": "Some browsers or devices may not support all image formats. By using the\n<picture> element, you can add images of all \nformats, and the browser will use the first format it recognizes, and ignore any \nof the following elements."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<picture>  <source srcset=\"img_avatar.png\">\n    <source srcset=\"img_girl.jpg\">\n    <img src=\"img_beatles.gif\" \n  alt=\"Beatles\" style=\"width:auto;\"></picture>"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note: The browser will use the first <source> element with matching attribute \nvalues, and ignore any following <source> elements."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML Image Tags"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Tag",
+          "Description"
+        ],
+        [
+          "<img>",
+          "Defines an image"
+        ],
+        [
+          "<map>",
+          "Defines an image map"
+        ],
+        [
+          "<area>",
+          "Defines a clickable area inside an image map"
+        ],
+        [
+          "<picture>",
+          "Defines a container for multiple image resources"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "For a complete list of all available HTML tags, visit our HTML Tag Reference."
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    },
+    {
+      "type": "image",
+      "src": "https://www.w3schools.com/html/picture_example.jpg"
+    }
+  ]
+}

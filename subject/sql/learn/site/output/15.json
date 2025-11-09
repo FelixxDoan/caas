@@ -1,0 +1,50 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_aggregate_functions.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL Aggregate Functions"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "heading",
+      "text": "SQL Aggregate Functions"
+    },
+    {
+      "type": "paragraph",
+      "text": "An aggregate function is a function that performs a calculation on a set of \nvalues, and returns a single value."
+    },
+    {
+      "type": "paragraph",
+      "text": "Aggregate functions are often used with the GROUP \nBY clause of the SELECT \nstatement. The GROUP BY clause splits the result-set into groups of values and \nthe aggregate function can be used to return a single value for each group."
+    },
+    {
+      "type": "paragraph",
+      "text": "The most commonly used SQL aggregate functions are:"
+    },
+    {
+      "type": "other",
+      "text": "MIN() - returns the smallest value \n  within the selected column\n  MAX() - returns the largest value within the \n  selected column\n  COUNT() - returns the number of rows in a \n  set\n  SUM() - returns the total sum of a \n  numerical column\n  AVG() - returns the average value of a \n  numerical column"
+    },
+    {
+      "type": "paragraph",
+      "text": "Aggregate functions ignore null values (except for COUNT(*))."
+    },
+    {
+      "type": "paragraph",
+      "text": "We will go through the aggregate functions above in the next chapters."
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

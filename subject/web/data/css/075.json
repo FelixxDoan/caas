@@ -1,0 +1,92 @@
+{
+  "url": "https://www.w3schools.com/css/css_max-width.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Layout - width and max-width"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Using width, max-width and margin: auto;"
+    },
+    {
+      "type": "paragraph",
+      "text": "As mentioned in the previous chapter; a block-level element always takes up the full width available \n(stretches out to the left and right as far as it can)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Setting the width of a block-level element will prevent it from stretching \nout to the edges of its container. Then, you can set the \nmargins to auto, to horizontally center the element within its container. The \nelement will take up the specified width, and the remaining space will be split \nequally between the two margins:"
+    },
+    {
+      "type": "other",
+      "text": "This <div> element has a width of 500px, and margin set to auto."
+    },
+    {
+      "type": "paragraph",
+      "text": "Note: The problem with the <div> above occurs when the browser window is \nsmaller than the width of \nthe element. The browser then adds a horizontal scrollbar to the page."
+    },
+    {
+      "type": "paragraph",
+      "text": "Using max-width instead, in this situation, will improve the \nbrowser's handling of small windows. This is important when making a site usable \non small devices:"
+    },
+    {
+      "type": "other",
+      "text": "This <div> element has a max-width of 500px, and margin set to auto."
+    },
+    {
+      "type": "paragraph",
+      "text": "Tip: Resize the browser window to less than 500px wide, to see the difference between \nthe two divs!"
+    },
+    {
+      "type": "paragraph",
+      "text": "Here is an example of the two divs above:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "div.ex1 {  width: 500px;  margin: \nauto;  border: 3px solid #73AD21;}\ndiv.ex2 {  max-width: 500px;  \nmargin: auto;  border: 3px solid #73AD21;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CSS Properties"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Property",
+          "Description"
+        ],
+        [
+          "max-width",
+          "Defines the maximum width of an element"
+        ],
+        [
+          "width",
+          "Sets the width of an element"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

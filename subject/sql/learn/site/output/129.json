@@ -1,0 +1,46 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_ref_select.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL SELECT Keyword"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "text": "SELECT"
+    },
+    {
+      "type": "paragraph",
+      "text": "The SELECT command is used to select data \nfrom a database. The data returned is stored in a result table, called the result set."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement selects the \"CustomerName\" and \"City\" columns \nfrom the \"Customers\" table:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n SELECT CustomerName, City FROM Customers;\n\n\n Try it Yourself »"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement selects all the columns from the \"Customers\" \ntable:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n SELECT * FROM Customers;\n\n\n Try it Yourself »"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

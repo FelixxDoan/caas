@@ -1,0 +1,67 @@
+{
+  "url": "https://www.w3schools.com/js/js_graphics_d3js.asp",
+  "title": "D3.js",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "D3.js"
+    },
+    {
+      "type": "other",
+      "text": "D3.js is a JavaScript library for manipulating HTML data.\nD3.js is easy to use."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How to Use D3.js?"
+    },
+    {
+      "type": "paragraph",
+      "text": "To use D3.js in your web page, add a link to the library:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<script src=\"//d3js.org/d3.v3.min.js\"></script>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "This script selects the body element and appends a paragraph with the text \"Hello World!\":"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "d3.select(\"body\").append(\"p\").text(\"Hello World!\");"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Scatter Plot"
+    },
+    {
+      "type": "other",
+      "text": "myScatter(\"myPlot\");\n\nfunction myScatter(id) {\n// Set Dimensions\nconst xSize = 500; \nconst ySize = 500;\nconst margin = 40;\nconst xMax = xSize - margin*2;\nconst yMax = ySize - margin*2;\n\n// Create Random Points\nconst numPoints = 100;\nconst data = [];\nfor (let i = 0; i < numPoints; i++) {\n  data.push([Math.random() * xMax, Math.random() * yMax]);\n}\n\n// Append SVG Object to the Page\nconst svg = d3.select(\"#\" + id)\n  .append(\"svg\")\n  .append(\"g\")\n  .attr(\"transform\",\"translate(\" + margin + \",\" + margin + \")\");\n\n// X Axis\nconst x = d3.scaleLinear()\n  .domain([0, 500])\n  .range([0, xMax]);\n\nsvg.append(\"g\")\n  .attr(\"transform\", \"translate(0,\" + yMax + \")\")\n  .call(d3.axisBottom(x));\n\n// Y Axis\nconst y = d3.scaleLinear()\n  .domain([0, 500])\n  .range([ yMax, 0]);\n\nsvg.append(\"g\")\n  .call(d3.axisLeft(y));\n\n// Dots\nsvg.append('g')\n  .selectAll(\"dot\")\n  .data(data).enter()\n  .append(\"circle\")\n    .attr(\"cx\", function (d) { return d[0] } )\n    .attr(\"cy\", function (d) { return d[1] } )\n    .attr(\"r\", 3)\n    .style(\"fill\", \"Red\");\n}"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Set Dimensions\nconst xSize = 500;\nconst ySize = 500;\nconst margin = 40;\nconst xMax = xSize - margin*2;\nconst yMax = ySize - margin*2;\n\n// Create Random Points\nconst numPoints = 100;\nconst data = [];\nfor (let i = 0; i < numPoints; i++) {\n  data.push([Math.random() * xMax, Math.random() * yMax]);\n}\n\n// Append SVG Object to the Page\nconst svg = d3.select(\"#myPlot\")\n  .append(\"svg\")\n  .append(\"g\")\n  .attr(\"transform\",\"translate(\" + margin + \",\" + margin + \")\");\n\n// X Axis\nconst x = d3.scaleLinear()\n  .domain([0, 500])\n  .range([0, xMax]);\n\nsvg.append(\"g\")\n  .attr(\"transform\", \"translate(0,\" + yMax + \")\")\n  .call(d3.axisBottom(x));\n\n// Y Axis\nconst y = d3.scaleLinear()\n  .domain([0, 500])\n  .range([ yMax, 0]);\n\nsvg.append(\"g\")\n  .call(d3.axisLeft(y));\n\n// Dots\nsvg.append('g')\n  .selectAll(\"dot\")\n  .data(data).enter()\n  .append(\"circle\")\n  .attr(\"cx\", function (d) { return d[0] } )\n  .attr(\"cy\", function (d) { return d[1] } )\n  .attr(\"r\", 3)\n  .style(\"fill\", \"Red\");"
+        }
+      ]
+    }
+  ]
+}

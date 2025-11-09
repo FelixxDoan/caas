@@ -1,0 +1,122 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_dates.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL Working With Dates"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "heading",
+      "text": "SQL Dates"
+    },
+    {
+      "type": "other",
+      "text": "The most difficult part when working with dates is to be sure that the format of the date you are trying to insert,\nmatches the format of the date column in the database."
+    },
+    {
+      "type": "paragraph",
+      "text": "As long as your data contains only the date portion, your queries will work as expected. However, if a time portion is involved, it gets \nmore complicated."
+    },
+    {
+      "type": "heading",
+      "text": "SQL Date Data Types"
+    },
+    {
+      "type": "paragraph",
+      "text": "MySQL comes with the following data types for storing a date or a date/time value in the database:"
+    },
+    {
+      "type": "other",
+      "text": "DATE - format YYYY-MM-DD\n   DATETIME - format: YYYY-MM-DD HH:MI:SS\n  TIMESTAMP - format: YYYY-MM-DD HH:MI:SS\n   YEAR - format YYYY or YY"
+    },
+    {
+      "type": "paragraph",
+      "text": "SQL Server comes with the following data types for storing a date or a date/time value in the database:"
+    },
+    {
+      "type": "other",
+      "text": "DATE - format YYYY-MM-DD\n   DATETIME - format: YYYY-MM-DD HH:MI:SS\n   SMALLDATETIME - format: YYYY-MM-DD HH:MI:SS\n  TIMESTAMP - format: a unique number"
+    },
+    {
+      "type": "paragraph",
+      "text": "Note: The date types are chosen for a column when you create a new table in your database!"
+    },
+    {
+      "type": "heading",
+      "text": "SQL Working with Dates"
+    },
+    {
+      "type": "paragraph",
+      "text": "Look at the following table:"
+    },
+    {
+      "type": "other",
+      "text": "Orders Table"
+    },
+    {
+      "type": "other",
+      "text": "OrderId\nProductName\nOrderDate\n\n\n1\nGeitost\n2008-11-11\n\n\n2\nCamembert Pierrot\n2008-11-09\n\n\n3\nMozzarella di Giovanni\n2008-11-11\n\n\n4\nMascarpone Fabioli\n2008-10-29"
+    },
+    {
+      "type": "paragraph",
+      "text": "Now we want to select the records with an OrderDate of \"2008-11-11\" from the table above."
+    },
+    {
+      "type": "paragraph",
+      "text": "We use the following SELECT statement:"
+    },
+    {
+      "type": "code",
+      "text": "SELECT * FROM Orders WHERE OrderDate='2008-11-11'"
+    },
+    {
+      "type": "paragraph",
+      "text": "The result-set will look like this:"
+    },
+    {
+      "type": "other",
+      "text": "OrderId\nProductName\nOrderDate\n\n\n1\nGeitost\n2008-11-11\n\n\n3\nMozzarella di Giovanni\n2008-11-11"
+    },
+    {
+      "type": "other",
+      "text": "Note: Two dates can easily be compared if there is no time component involved!"
+    },
+    {
+      "type": "paragraph",
+      "text": "Now, assume that the \"Orders\" table looks like this (notice the \nadded time-component in the \"OrderDate\" column):"
+    },
+    {
+      "type": "other",
+      "text": "OrderId\nProductName\nOrderDate\n\n\n1\nGeitost\n2008-11-11 13:23:44\n\n\n2\nCamembert Pierrot\n2008-11-09 15:45:21\n\n\n3\nMozzarella di Giovanni\n2008-11-11 11:12:01\n\n\n4\nMascarpone Fabioli\n2008-10-29 14:56:59"
+    },
+    {
+      "type": "paragraph",
+      "text": "If we use the same SELECT statement as above:"
+    },
+    {
+      "type": "code",
+      "text": "SELECT * FROM Orders WHERE OrderDate='2008-11-11'"
+    },
+    {
+      "type": "paragraph",
+      "text": "we will get no result! This is because the query is looking only for dates with no time portion."
+    },
+    {
+      "type": "other",
+      "text": "Tip: To keep your queries simple and easy to maintain, do not use time-components in your dates, unless you have to!"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

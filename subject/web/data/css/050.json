@@ -1,0 +1,56 @@
+{
+  "url": "https://www.w3schools.com/css/css_image_gallery.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Image Gallery"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "CSS can be used to create an image gallery.\n\n  \n    \n      \n    \n    Add a description of the image here\n  \n\n\n\n  \n    \n      \n    \n    Add a description of the image here\n  \n\n\n\n  \n    \n      \n    \n    Add a description of the image here\n  \n\n\n\n  \n    \n      \n    \n    Add a description of the image here"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Image Gallery"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following image gallery is created with CSS:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<html>\n<head>\n<style>\ndiv.gallery {\n  margin: 5px;\n    border: 1px solid #ccc;\n    float: left;\n  width: 180px;\n}\n\ndiv.gallery:hover {\n  border: 1px solid #777;\n}\n\ndiv.gallery img {\n  width: 100%;\n  height: auto;\n}\n\ndiv.desc {\n    padding: 15px;\n    text-align: center;\n}\n</style>\n</head>\n<body>\n\n  <div class=\"gallery\">  <a target=\"_blank\" href=\"img_5terre.jpg\">    \n  <img src=\"img_5terre.jpg\" alt=\"Cinque Terre\" width=\"600\" height=\"400\">  \n  </a>  <div class=\"desc\">Add a description of the image here</div>\n  </div><div class=\"gallery\">  <a target=\"_blank\" href=\"img_forest.jpg\">    \n  <img src=\"img_forest.jpg\" alt=\"Forest\" width=\"600\" height=\"400\">  \n  </a>  <div class=\"desc\">Add a description of the image here</div>\n  </div><div class=\"gallery\">  <a target=\"_blank\" href=\"img_lights.jpg\">    \n  <img src=\"img_lights.jpg\" alt=\"Northern Lights\" width=\"600\" height=\"400\">  \n  </a>  <div class=\"desc\">Add a description of the image here</div>\n  </div><div class=\"gallery\">  <a target=\"_blank\" href=\"img_mountains.jpg\">    \n  <img src=\"img_mountains.jpg\" alt=\"Mountains\" width=\"600\" height=\"400\">  \n  </a>  <div class=\"desc\">Add a description of the image here</div>\n  </div>\n\n</body>\n</html>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "More Examples"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": []
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

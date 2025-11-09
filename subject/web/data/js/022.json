@@ -1,0 +1,62 @@
+{
+  "url": "https://www.w3schools.com/js/js_graphics.asp",
+  "title": "JavaScript Graphics",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Graphics"
+    },
+    {
+      "type": "other",
+      "text": "Graphic Libraries\nJavaScript libraries to use for all kinds of graphs:\n\nPlotly.js\nChart.js\nGoogle Chart"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Plotly.js"
+    },
+    {
+      "type": "paragraph",
+      "text": "Plotly.js is a charting library that comes with over 40 chart types, 3D charts, statistical graphs, and SVG maps."
+    },
+    {
+      "type": "paragraph",
+      "text": "Learn More ...\n\nvar xArray = [\"Italy\",\"France\",\"Spain\",\"USA\",\"Argentina\"];\nvar yArray = [55, 49, 44, 24, 15];\nvar data = [{labels:xArray, values:yArray, type:\"pie\"}];\nvar layout = {title:\"World Wide Wine Production\"};\nPlotly.newPlot(\"myPlot24\", data, layout);"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Chart.js"
+    },
+    {
+      "type": "paragraph",
+      "text": "Chart.js comes with many built-in chart types:"
+    },
+    {
+      "type": "other",
+      "text": "Scatter\nLine\nBar\nRadar\nPie and Doughnut\nPolar Area\nBubble"
+    },
+    {
+      "type": "paragraph",
+      "text": "Learn More ...\n\n\nvar chart13 = new Chart(\"myPlot13\", {\n  type: 'bar',\n  data: {\n    labels: [\"Italy\",\"France\",\"Spain\",\"USA\",\"Argentina\"],\n    datasets: [{\n      backgroundColor:[\"red\", \"green\",\"blue\",\"orange\",\"brown\"],\n      data: [55, 49, 44, 24, 15]\n    }]\n  },\n  options: {\n    legend: {display: false},\n    scales: {\n      yAxes: [{\n        ticks: {\n          beginAtZero: true\n        }\n      }]\n    },\n        title: {\n      display: true,\n      text: \"World Wide Wine Production 2018\",\n      fontSize: 16\n    }\n\n  }\n});"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Google Chart"
+    },
+    {
+      "type": "paragraph",
+      "text": "From simple line charts to complex tree maps,\nGoogle Chart provides a number of built-in chart types:"
+    },
+    {
+      "type": "other",
+      "text": "Scatter Chart\nLine Chart \nBar / Column Chart\nArea Chart\nPie Chart\nDonut Chart\nOrg Chart\nMap / Geo Chart"
+    },
+    {
+      "type": "paragraph",
+      "text": "Learn More ..."
+    }
+  ]
+}

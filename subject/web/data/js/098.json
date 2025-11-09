@@ -1,0 +1,285 @@
+{
+  "url": "https://www.w3schools.com/js/js_typed_methods.asp",
+  "title": "Typed Array Methods",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Typed Array Methods"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The from() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The from()method creates a new typed array from any iterable object:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const myArr = Int16Array.from(\"1234567890\");"
+        },
+        {
+          "language": "unknown",
+          "code": "const myArr = Int16Array.from([1,2,3,4,5,6,7,8,9,0]);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The of() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The of() method creates a new typed array from a number of arguments:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const myArr = Int16Array.of(1,2,3,4,5,6,7,8,9,0);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The constructor.name Property"
+    },
+    {
+      "type": "paragraph",
+      "text": "The constructor.name property returns the name (type) of a typed array:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "myArr.constructor.name"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The BYTES_PER_ELEMENT Property"
+    },
+    {
+      "type": "paragraph",
+      "text": "BYTES_PER_ELEMENT returns the number of bytes used to store each array element:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "myArr.BYTES_PER_ELEMENT"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Common Array Methods"
+    },
+    {
+      "type": "paragraph",
+      "text": "Typed Arrays share many methods with Standard Arrays:"
+    },
+    {
+      "type": "other",
+      "text": "Iteration: forEach(), map(), filter(), reduce(), reduceRight(), every(), some(), find(),\nfindIndex(), findLast(), findLastIndex().\nSearching: includes(), indexOf(), lastIndexOf().\nManipulation: at(), copyWithin(), fill(), reverse(), set(), slice(), sort(), subarray().\nConversion: join(), toLocaleString(), toString().\nNon-mutating methods: toReversed(), toSorted(), with()."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The fill() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The fill() method changes all elements in a typed array to a value:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "myArr.fill(200);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The fill() method takes two optional arguments: start index and end index:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "myArr.fill(200, 0, 3);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The find() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The find() method returns the first element that satisfies a test:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "myArr.find((x) => x > 18)"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The some() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The some() method returns true if an element for which a provided function returns true:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "myArr.some((x) => x > 18)"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Not Available Array Methods"
+    },
+    {
+      "type": "paragraph",
+      "text": "Some array methods are NOT available for typed array."
+    },
+    {
+      "type": "paragraph",
+      "text": "This is due to the fixed-length nature and the lack of fixed structure."
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Method",
+          "Array",
+          "Typed Array"
+        ],
+        [
+          "pop()",
+          "Yes",
+          "NO"
+        ],
+        [
+          "push()",
+          "Yes",
+          "NO"
+        ],
+        [
+          "shift()",
+          "Yes",
+          "NO"
+        ],
+        [
+          "unshift()",
+          "Yes",
+          "NO"
+        ],
+        [
+          "splice()",
+          "Yes",
+          "NO"
+        ],
+        [
+          "flat()",
+          "Yes",
+          "NO"
+        ],
+        [
+          "flatMap()",
+          "Yes",
+          "NO"
+        ],
+        [
+          "concat()",
+          "Yes",
+          "NO"
+        ],
+        [
+          "toSpliced()",
+          "Yes",
+          "NO"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Browser APIs Supporting Typed Arrays"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "fetch(url)\n.then(request => request.arrayBuffer())\n.then(arrayBuffer =>...);"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const canvas = document.getElementById('my_canvas');\nconst context = canvas.getContext('2d');\nconst imageData = context.getImageData(0, 0, canvas.width, canvas.height);\nconst uint8ClampedArray = imageData.data;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Browser Support"
+    },
+    {
+      "type": "paragraph",
+      "text": "Typed Arrays is an ES6  feature."
+    },
+    {
+      "type": "paragraph",
+      "text": "ES6 is fully supported in all modern browsers since June 2017:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome51\n    Edge15\n    Firefox54\n    Safari10\n    Opera38\n  \n  \n    May 2016\n    Apr 2017\n    Jun 2017\n    Sep 2016\n    Jun 2016"
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_view.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL Views"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "heading",
+      "text": "SQL CREATE VIEW Statement"
+    },
+    {
+      "type": "paragraph",
+      "text": "In SQL, a view is a virtual table based on the result-set of an SQL statement."
+    },
+    {
+      "type": "paragraph",
+      "text": "A view contains rows and columns, just like a real table. The fields in a view are fields from one or more real tables in the database."
+    },
+    {
+      "type": "paragraph",
+      "text": "You can add SQL statements and functions to a view and present the data as if the data were coming from one single table."
+    },
+    {
+      "type": "paragraph",
+      "text": "A view is created with the CREATE VIEW \nstatement."
+    },
+    {
+      "type": "other",
+      "text": "CREATE VIEW Syntax"
+    },
+    {
+      "type": "other",
+      "text": "CREATE VIEW view_name AS\nSELECT column1, column2, ...\nFROM table_name\nWHERE condition;"
+    },
+    {
+      "type": "paragraph",
+      "text": "Note: A view always shows up-to-date data! The database engine recreates the \nview, every time a user queries it."
+    },
+    {
+      "type": "heading",
+      "text": "SQL CREATE VIEW Examples"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL creates a view that shows all customers from Brazil:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\nCREATE VIEW [Brazil Customers] AS\nSELECT CustomerName, ContactName\nFROM Customers\nWHERE Country = 'Brazil';"
+    },
+    {
+      "type": "paragraph",
+      "text": "We can query the view above as follows:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\nSELECT * FROM [Brazil Customers];"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL creates a view that selects every product in the \"Products\" table with a price higher than the average price:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\nCREATE VIEW [Products Above Average Price] AS\nSELECT ProductName, Price\nFROM Products\nWHERE Price > (SELECT AVG(Price) FROM Products);"
+    },
+    {
+      "type": "paragraph",
+      "text": "We can query the view above as follows:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\nSELECT * FROM [Products Above Average Price];"
+    },
+    {
+      "type": "heading",
+      "text": "SQL Updating a View"
+    },
+    {
+      "type": "paragraph",
+      "text": "A view can be updated with the CREATE OR REPLACE \nVIEW statement."
+    },
+    {
+      "type": "other",
+      "text": "SQL CREATE OR REPLACE VIEW Syntax"
+    },
+    {
+      "type": "other",
+      "text": "CREATE OR REPLACE VIEW view_name AS\nSELECT column1, column2, ...\nFROM table_name\nWHERE condition;"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL adds the \"City\" column to the \"Brazil Customers\" view:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\nCREATE OR REPLACE VIEW [Brazil Customers] AS\nSELECT CustomerName, ContactName, City\nFROM Customers\nWHERE Country = 'Brazil';"
+    },
+    {
+      "type": "heading",
+      "text": "SQL Dropping a View"
+    },
+    {
+      "type": "paragraph",
+      "text": "A view is deleted with the DROP VIEW \nstatement."
+    },
+    {
+      "type": "other",
+      "text": "SQL DROP VIEW Syntax"
+    },
+    {
+      "type": "other",
+      "text": "DROP VIEW view_name;"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL drops the \"Brazil Customers\" view:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\nDROP VIEW [Brazil Customers];"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

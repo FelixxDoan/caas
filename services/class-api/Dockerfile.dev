@@ -1,0 +1,22 @@
+FROM node:20-alpine
+WORKDIR /app
+
+# pnpm ổn định
+ENV PNPM_HOME="/root/.local/share/pnpm"
+ENV PATH="$PNPM_HOME:$PATH"
+RUN corepack enable && corepack prepare pnpm@9.0.0 --activate
+
+# Copy manifest trước để cache layer install
+COPY services/class-api/package.json /app/package.json
+COPY services/class-api/pnpm-lock.yaml* /app/pnpm-lock.yaml
+
+# Cài devDependencies ngay lúc build
+RUN apk add --no-cache git \
+ && pnpm install --frozen-lockfile=false
+
+# Copy mã nguồn (nếu bạn vẫn mount src từ host thì bước này không hại)
+COPY services/class-api /app
+
+ENV NODE_ENV=development
+EXPOSE 3004
+CMD ["pnpm", "dev"]

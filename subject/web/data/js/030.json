@@ -1,0 +1,103 @@
+{
+  "url": "https://www.w3schools.com/js/js_json_server.asp",
+  "title": "JSON Server",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JSON Server"
+    },
+    {
+      "type": "paragraph",
+      "text": "A common use of JSON is to exchange data to/from a web server."
+    },
+    {
+      "type": "paragraph",
+      "text": "When receiving data from a web server, the data is always a string."
+    },
+    {
+      "type": "paragraph",
+      "text": "Parse the data with JSON.parse(), and the data becomes a JavaScript object."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Sending Data"
+    },
+    {
+      "type": "paragraph",
+      "text": "If you have data stored in a JavaScript object, you can convert the object \ninto JSON, and send it to a server:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const myObj = {name: \"John\", \n  age: 31, city: \"New York\"};const myJSON = \n  JSON.stringify(myObj);window.location = \"demo_json.php?x=\" + myJSON;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Receiving Data"
+    },
+    {
+      "type": "paragraph",
+      "text": "If you receive data in JSON format, you can easily convert it into a JavaScript \nobject:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const myJSON =\n  '{\"name\":\"John\", \n  \"age\":31, \"city\":\"New York\"}';const myObj = \n  JSON.parse(myJSON);document.getElementById(\"demo\").innerHTML = myObj.name;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JSON From a Server"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can request JSON from the server by using an AJAX request"
+    },
+    {
+      "type": "paragraph",
+      "text": "As long as the response from the server is written in JSON format, you can \nparse the string into a JavaScript object."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const xmlhttp = new XMLHttpRequest();\nxmlhttp.onload = function() {\n  const myObj = JSON.parse(this.responseText);\n  document.getElementById(\"demo\").innerHTML = myObj.name;\n};\nxmlhttp.open(\"GET\", \"json_demo.txt\");\nxmlhttp.send();"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Array as JSON"
+    },
+    {
+      "type": "paragraph",
+      "text": "When using the JSON.parse() on JSON derived from an array, the method will \nreturn a JavaScript array, instead of a JavaScript object."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const xmlhttp = new XMLHttpRequest();\nxmlhttp.onload = function() {\n  const myArr = JSON.parse(this.responseText);\n  document.getElementById(\"demo\").innerHTML = myArr[0];\n  }\n}\nxmlhttp.open(\"GET\", \"json_demo_array.txt\", true);\nxmlhttp.send();"
+        }
+      ]
+    }
+  ]
+}

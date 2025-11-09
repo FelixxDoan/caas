@@ -1,0 +1,42 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_ref_left_join.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL LEFT JOIN Keyword"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "text": "LEFT JOIN"
+    },
+    {
+      "type": "paragraph",
+      "text": "The LEFT JOIN command returns all rows from \nthe left table, and the matching rows from the right table. The result is NULL \nfrom the right side, if there is no match."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL will select all customers, and any orders they \nmight have:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n SELECT Customers.CustomerName, Orders.OrderID\n FROM Customers\n LEFT JOIN Orders\n ON Customers.CustomerID = Orders.CustomerID\n ORDER BY Customers.CustomerName;\n\nTry it Yourself »"
+    },
+    {
+      "type": "paragraph",
+      "text": "Note: The LEFT JOIN keyword returns all records from the \nleft table (Customers), even if there are no matches in the right table \n(Orders)."
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_drop_db.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL DROP DATABASE Statement"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "heading",
+      "text": "The SQL DROP DATABASE Statement"
+    },
+    {
+      "type": "paragraph",
+      "text": "The DROP DATABASE statement is used to drop an existing SQL database."
+    },
+    {
+      "type": "other",
+      "text": "Syntax"
+    },
+    {
+      "type": "other",
+      "text": "DROP DATABASE databasename;"
+    },
+    {
+      "type": "other",
+      "text": "Note: Be careful before dropping a database. Deleting \na database will result in loss of complete information stored in the database!"
+    },
+    {
+      "type": "heading",
+      "text": "DROP DATABASE Example"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement drops the existing database \"testDB\":"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n  DROP DATABASE testDB;"
+    },
+    {
+      "type": "other",
+      "text": "Tip: Make sure you have admin privilege before dropping any database. Once a \ndatabase is dropped, you can check it in the list of databases with the \nfollowing SQL command: SHOW DATABASES;"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

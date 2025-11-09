@@ -1,0 +1,137 @@
+{
+  "url": "https://www.w3schools.com/js/js_comments.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Comments"
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript comments can be used to explain JavaScript code, and \nto make it more readable."
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript comments can also be used to prevent execution, when \ntesting alternative code."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Single Line Comments"
+    },
+    {
+      "type": "paragraph",
+      "text": "Single line comments start with //."
+    },
+    {
+      "type": "paragraph",
+      "text": "Any text between // and the end of the line will be ignored by JavaScript \n(will not be executed)."
+    },
+    {
+      "type": "paragraph",
+      "text": "This example uses a single-line comment before each code line:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Change heading:\ndocument.getElementById(\"myH\").innerHTML = \"My First Page\";\n// Change paragraph:\ndocument.getElementById(\"myP\").innerHTML = \"My first paragraph.\";"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "This example uses a single line comment at the end of each line \nto explain the code:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 5;      // Declare x, give it the value of 5\nlet y = x + 2;  // Declare y, give it the value of x + 2"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Multi-line Comments"
+    },
+    {
+      "type": "paragraph",
+      "text": "Multi-line comments start with /* and end with  */."
+    },
+    {
+      "type": "paragraph",
+      "text": "Any text between /* and */ will be ignored by JavaScript."
+    },
+    {
+      "type": "paragraph",
+      "text": "This example uses a multi-line comment (a comment block) to explain the code:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "/*\nThe code below will change\nthe heading with id = \"myH\"\nand the paragraph with id = \"myP\"\nin my web page:\n*/\ndocument.getElementById(\"myH\").innerHTML = \"My First Page\";\ndocument.getElementById(\"myP\").innerHTML = \"My first paragraph.\";"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "It is most common to use single line comments.Block comments are often \nused for formal documentation."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Using Comments to Prevent Execution"
+    },
+    {
+      "type": "paragraph",
+      "text": "Using comments to prevent execution of code is suitable for \ncode testing."
+    },
+    {
+      "type": "paragraph",
+      "text": "Adding // in front of a code line changes the code lines from an executable line to \na comment."
+    },
+    {
+      "type": "paragraph",
+      "text": "This example uses // to prevent execution of one of the code lines:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "//document.getElementById(\"myH\").innerHTML = \"My First Page\";\ndocument.getElementById(\"myP\").innerHTML = \"My first paragraph.\";"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "This example uses a comment block to prevent execution of \nmultiple lines:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "/*\ndocument.getElementById(\"myH\").innerHTML = \"My First Page\";\ndocument.getElementById(\"myP\").innerHTML = \"My first paragraph.\";\n*/"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Video: JavaScript Comments"
+    }
+  ]
+}

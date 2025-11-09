@@ -1,0 +1,111 @@
+{
+  "url": "https://www.w3schools.com/js/js_jquery_css.asp",
+  "title": "JavaScript / jQuery CSS Styles",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript / jQuery CSS Styles"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "jQuery vs JavaScript"
+    },
+    {
+      "type": "paragraph",
+      "text": "jQuery was created in 2006 by John Resig. \nIt was designed to handle Browser Incompatibilities and to simplify HTML DOM Manipulation, Event Handling, Animations, and Ajax."
+    },
+    {
+      "type": "paragraph",
+      "text": "However, after JavaScript Version 5 (2009), most of the jQuery utilities can be solved with a few lines of standard JavaScript:"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Hiding HTML Elements"
+    },
+    {
+      "type": "paragraph",
+      "text": "Hide an HTML Element:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "myElement.hide();"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "myElement.style.display = \"none\";"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Showing HTML Elements"
+    },
+    {
+      "type": "paragraph",
+      "text": "Show an HTML Element:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "myElement.show();"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "myElement.style.display = \"\";"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Styling HTML Elements"
+    },
+    {
+      "type": "paragraph",
+      "text": "Change the font size of an HTML element:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "$(\"#demo\").css(\"font-size\",\"35px\");"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "document.getElementById(\"demo\").style.fontSize = \"35px\";"
+        }
+      ]
+    }
+  ]
+}

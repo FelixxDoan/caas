@@ -1,0 +1,135 @@
+{
+  "url": "https://www.w3schools.com/css/css_font.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Fonts"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "Choosing the right font for your website is important!"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Font Selection is Important"
+    },
+    {
+      "type": "paragraph",
+      "text": "Choosing the right font has a huge impact on how the readers experience a website."
+    },
+    {
+      "type": "paragraph",
+      "text": "The right font can create a strong identity for your brand."
+    },
+    {
+      "type": "paragraph",
+      "text": "Using a font that is easy to read is important. The font adds \nvalue to your text. It is also important to choose the correct color and text size \nfor the font."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Generic Font Families"
+    },
+    {
+      "type": "paragraph",
+      "text": "In CSS there are five generic font families:"
+    },
+    {
+      "type": "other",
+      "text": "Serif fonts have a small stroke at the edges of each letter. They create a sense of formality and elegance.\n  Sans-serif fonts have clean lines (no small strokes attached). They create a modern and minimalistic look.\n  Monospace fonts - here all the letters have the same fixed width. They create a mechanical look.\n  Cursive fonts imitate human handwriting.\n  Fantasy fonts are decorative/playful fonts."
+    },
+    {
+      "type": "paragraph",
+      "text": "All the different font names belong to one of the generic font families."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Difference Between Serif and Sans-serif Fonts"
+    },
+    {
+      "type": "image",
+      "src": "https://www.w3schools.com/css/serif.gif"
+    },
+    {
+      "type": "other",
+      "text": "Note: On computer screens, sans-serif fonts are considered easier to read than serif fonts."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Some Font Examples"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Generic Font Family",
+          "Examples of Font Names"
+        ],
+        [
+          "Serif",
+          "Times New Roman\nGeorgia\nGaramond\n"
+        ],
+        [
+          "Sans-serif",
+          "Arial\nVerdana\nHelvetica\n"
+        ],
+        [
+          "Monospace",
+          "Courier New\nLucida Console\nMonaco\n"
+        ],
+        [
+          "Cursive",
+          "Brush Script MT\nLucida Handwriting\n"
+        ],
+        [
+          "Fantasy",
+          "Copperplate\nPapyrus\n"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The CSS font-family Property"
+    },
+    {
+      "type": "paragraph",
+      "text": "In CSS, we use the font-family property to specify the font of a text."
+    },
+    {
+      "type": "other",
+      "text": "Note: If the font name is more than one word, it must be in quotation marks, like: \"Times New Roman\"."
+    },
+    {
+      "type": "paragraph",
+      "text": "Tip: The font-family property should hold several font names as a \"fallback\" system, \nto ensure maximum compatibility between browsers/operating systems. Start with the font you want, and end with a generic family \n(to let the \nbrowser pick a similar font in the generic family, if no other fonts are \navailable). The font names should be separated with a comma. Read more about \nfallback fonts in the next chapter."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".p1 {  font-family: \"Times New Roman\", Times, serif;}\n  .p2 {  font-family: Arial, Helvetica, sans-serif;}\n  .p3 {  font-family: \"Lucida Console\", \"Courier New\", monospace;}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

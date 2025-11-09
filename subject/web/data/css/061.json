@@ -1,0 +1,84 @@
+{
+  "url": "https://www.w3schools.com/css/css_rwd_videos.asp",
+  "title": "Responsive Web Design - ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Responsive Web Design - Videos"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Using The width Property"
+    },
+    {
+      "type": "paragraph",
+      "text": "If the width property is set to 100%, the video player will be \nresponsive and scale up and down:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "video {\n  width: 100%;  height: auto;\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Notice that in the example above, the video player can be scaled up to be larger \nthan its original size. A better solution, in many cases, will be to use the\nmax-width property instead."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Using The max-width Property"
+    },
+    {
+      "type": "paragraph",
+      "text": "If the max-width property is set to 100%, the video player will scale down if it has to, but never scale up to be larger than its \noriginal size:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "video {\n    max-width: 100%;  height: auto;\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Add a Video to the Example Web Page"
+    },
+    {
+      "type": "paragraph",
+      "text": "We want to add a video in our example web page. The video will be resized to always take up all the available space:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "video {\n    width: 100%;  height: auto;\n}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

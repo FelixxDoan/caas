@@ -1,0 +1,153 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_where.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL WHERE Clause"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "text": "The SQL WHERE Clause"
+    },
+    {
+      "type": "paragraph",
+      "text": "The WHERE clause is used to filter records."
+    },
+    {
+      "type": "paragraph",
+      "text": "It is used to extract only those records that fulfill a specified \ncondition."
+    },
+    {
+      "type": "other",
+      "text": "Example\nSelect all customers from Mexico:\n\nSELECT * FROM Customers\nWHERE Country='Mexico';\n\nTry it Yourself »"
+    },
+    {
+      "type": "heading",
+      "text": "Syntax"
+    },
+    {
+      "type": "other",
+      "text": "SELECT column1, column2, ...\nFROM table_name\nWHERE condition;"
+    },
+    {
+      "type": "other",
+      "text": "Note: The WHERE clause is not only used in \nSELECT statements, it is also used in UPDATE,\nDELETE, etc.!"
+    },
+    {
+      "type": "heading",
+      "text": "Demo Database"
+    },
+    {
+      "type": "paragraph",
+      "text": "Below is a selection from the Customers table used in the examples:"
+    },
+    {
+      "type": "other",
+      "text": "CustomerID\n    CustomerName\n    ContactName\n    Address\n    City\n    PostalCode\n    Country\n  \n  \n    1\n    Alfreds Futterkiste\n    Maria Anders\n    Obere Str. 57\n    Berlin\n    12209\n    Germany\n  \n  \n    2\n    Ana Trujillo Emparedados y helados\n    Ana Trujillo\n    Avda. de la Constitución 2222\n    México D.F.\n    05021\n    Mexico\n  \n  \n    3\n    Antonio Moreno Taquería\n    Antonio Moreno\n    Mataderos 2312\n    México D.F.\n    05023\n    Mexico\n  \n  \n    4\n    Around the Horn\n    Thomas Hardy\n    120 Hanover Sq.\n    London\n    WA1 1DP\n    UK\n  \n  \n    5\n    Berglunds snabbköp\n    Christina Berglund\n    Berguvsvägen 8\n    Luleå\n    S-958 22\n    Sweden"
+    },
+    {
+      "type": "heading",
+      "text": "Text Fields vs. Numeric Fields"
+    },
+    {
+      "type": "paragraph",
+      "text": "SQL requires single quotes around text values (most database systems will \nalso allow double quotes)."
+    },
+    {
+      "type": "paragraph",
+      "text": "However, numeric fields should not be enclosed in quotes:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n SELECT * FROM Customers\n WHERE CustomerID=1;\n\n Try it Yourself »"
+    },
+    {
+      "type": "heading",
+      "text": "Operators in The WHERE Clause"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can use other operators than the = operator to filter the search."
+    },
+    {
+      "type": "other",
+      "text": "Example\nSelect all customers with a CustomerID greater than 80:\n\n SELECT * FROM Customers\n WHERE CustomerID > 80;\n\n Try it Yourself »"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following operators can be used in the WHERE clause:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Operator",
+          "Description",
+          "Example"
+        ],
+        [
+          "=",
+          "Equal",
+          "Try it"
+        ],
+        [
+          ">",
+          "Greater than",
+          "Try it"
+        ],
+        [
+          "<",
+          "Less than",
+          "Try it"
+        ],
+        [
+          ">=",
+          "Greater than or equal",
+          "Try it"
+        ],
+        [
+          "<=",
+          "Less than or equal",
+          "Try it"
+        ],
+        [
+          "<>",
+          "Not equal. Note: In some versions of SQL this operator may be written as !=",
+          "Try it"
+        ],
+        [
+          "BETWEEN",
+          "Between a certain range",
+          "Try it"
+        ],
+        [
+          "LIKE",
+          "Search for a pattern",
+          "Try it"
+        ],
+        [
+          "IN",
+          "To specify multiple possible values for a column",
+          "Try it"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Video: SQL WHERE Clause"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

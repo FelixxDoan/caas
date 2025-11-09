@@ -1,0 +1,179 @@
+{
+  "url": "https://www.w3schools.com/js/js_callback.asp",
+  "title": "JavaScript Callbacks",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Callbacks"
+    },
+    {
+      "type": "other",
+      "text": "\"I will call back later!\"\nA callback is a function passed as an argument to another function\nThis technique allows a function to call another function\nA callback function can run after another function has finished"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Function Sequence"
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript functions are executed in the sequence they are called.\nNot in the sequence they are defined."
+    },
+    {
+      "type": "paragraph",
+      "text": "This example will end up displaying \"Goodbye\":"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "function myFirst() {  myDisplayer(\"Hello\");}function \n  mySecond() {  \n  myDisplayer(\"Goodbye\");}myFirst();mySecond();"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "This example will end up displaying \"Hello\":"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "function myFirst() {  myDisplayer(\"Hello\");}function \n  mySecond() {  \n  myDisplayer(\"Goodbye\");}mySecond();myFirst();"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Sequence Control"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sometimes you would like to have better control over when to execute a function."
+    },
+    {
+      "type": "paragraph",
+      "text": "Suppose you want to do a calculation, and then display the result."
+    },
+    {
+      "type": "paragraph",
+      "text": "You could call a calculator function (myCalculator), save the result,\nand then call another function (myDisplayer) to display the result:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "function myDisplayer(some) {\n  document.getElementById(\"demo\").innerHTML = some;}\nfunction myCalculator(num1, num2) {\n  let sum = num1 + num2;\n  return sum;\n\n}let result = myCalculator(5, 5);\nmyDisplayer(result);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Or, you could call a calculator function (myCalculator),\nand let the calculator function call the display function (myDisplayer):"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "function myDisplayer(some) {  document.getElementById(\"demo\").innerHTML \n  = some;}function myCalculator(num1, num2) {  \n  let sum = num1 + num2;  \n  myDisplayer(sum);}myCalculator(5, 5);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The problem with the first example above, is that you have to call two functions to display the result."
+    },
+    {
+      "type": "paragraph",
+      "text": "The problem with the second example, is that you cannot prevent the calculator function from \ndisplaying the result."
+    },
+    {
+      "type": "paragraph",
+      "text": "Now it is time to bring in a callback."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Callbacks"
+    },
+    {
+      "type": "other",
+      "text": "A callback is a function passed as an argument to another function."
+    },
+    {
+      "type": "paragraph",
+      "text": "Using a callback, you could call the calculator function (myCalculator)\nwith a callback (myCallback), and let the calculator function run the callback after the calculation is finished:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "function myDisplayer(some) {  document.getElementById(\"demo\").innerHTML \n  = some;}function myCalculator(num1, num2, myCallback) {  \n  let sum = num1 + num2;  \n  myCallback(sum);}myCalculator(5, 5, myDisplayer);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "In the example above, myDisplayer is a called a callback function."
+    },
+    {
+      "type": "paragraph",
+      "text": "It is passed to myCalculator() as an argument."
+    },
+    {
+      "type": "other",
+      "text": "Note\nWhen you pass a function as an argument, remember not to use parenthesis.\nRight: myCalculator(5, 5, myDisplayer);\nWrong: myCalculator(5, 5, myDisplayer());"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create an Array\nconst myNumbers = [4, 1, -20, -7, 5, 9, -6];\n\n// Call removeNeg with a callback\nconst posNumbers = removeNeg(myNumbers, (x) => x >= 0);\n\n// Display Result\ndocument.getElementById(\"demo\").innerHTML = posNumbers;\n\n// Keep only positive numbers\nfunction removeNeg(numbers, callback) {\n  const myArray = [];\n  for (const x of numbers) {\n    if (callback(x)) {\n      myArray.push(x);\n    }\n  }\n  return myArray;\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "In the example above, (x) => x >= 0 is a callback function."
+    },
+    {
+      "type": "paragraph",
+      "text": "It is passed to removeNeg() as an argument."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "When to Use a Callback?"
+    },
+    {
+      "type": "paragraph",
+      "text": "The examples above are not very exciting."
+    },
+    {
+      "type": "paragraph",
+      "text": "They are simplified to teach you the callback syntax."
+    },
+    {
+      "type": "paragraph",
+      "text": "Where callbacks really shine are in asynchronous functions, \nwhere one function has to wait for another function (like waiting for a file to load)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Asynchronous functions are covered in the next chapter."
+    }
+  ]
+}

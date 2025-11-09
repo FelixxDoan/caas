@@ -1,0 +1,162 @@
+{
+  "url": "https://www.w3schools.com/css/css_float.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Layout - float and clear"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "The CSS float property specifies \nhow an element should float."
+    },
+    {
+      "type": "paragraph",
+      "text": "The CSS clear property \nspecifies what elements can float beside the cleared element and on which side."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The float Property"
+    },
+    {
+      "type": "paragraph",
+      "text": "The float property is used for \npositioning and formatting content e.g. let an image float left to the text in a \ncontainer."
+    },
+    {
+      "type": "paragraph",
+      "text": "The float property can have one of the \nfollowing values:"
+    },
+    {
+      "type": "other",
+      "text": "left - The element floats to the left of its container\n   right - The element floats to the right of its container\n   none - The element does not float (will be displayed just where it occurs in the text). This is default\n   inherit - The element inherits the float value of its parent"
+    },
+    {
+      "type": "paragraph",
+      "text": "In its simplest use, the float property can be used to wrap text around images."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Example - float: right;"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following example specifies that an image should float to the right in a text:"
+    },
+    {
+      "type": "other",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac..."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "img {  float: right;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Example - float: left;"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following example specifies that an image should float to the left in a text:"
+    },
+    {
+      "type": "other",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac..."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "img {  float: left;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Example - No float"
+    },
+    {
+      "type": "paragraph",
+      "text": "In the following example the image will be displayed just where it occurs in \nthe text (float: none;):"
+    },
+    {
+      "type": "other",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac..."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "img {  float: none;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Example - Float Next To Each Other"
+    },
+    {
+      "type": "paragraph",
+      "text": "Normally div elements will be displayed on top of each other. However, if we \nuse float: left we can let elements float next to each other:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "div {  float: left;  padding: 15px; }.div1 {  \n  background: red;}.div2 {  background: yellow;}\n  .div3 {  background: green;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CSS Properties"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Property",
+          "Description"
+        ],
+        [
+          "clear",
+          "Specifies what should happen with the element that is next to a floating \n    element"
+        ],
+        [
+          "float",
+          "Specifies whether an element should float to the left, right, or not at \n    all"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

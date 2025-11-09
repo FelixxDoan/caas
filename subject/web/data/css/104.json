@@ -1,0 +1,204 @@
+{
+  "url": "https://www.w3schools.com/css/css_dimension.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Height, Width and Max-width"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "The CSS height and width properties are used to set the \nheight and width of an element."
+    },
+    {
+      "type": "paragraph",
+      "text": "The CSS max-width property is used to set the maximum width of an element."
+    },
+    {
+      "type": "other",
+      "text": "This element has a height of 50 pixels and a width of 100%."
+    },
+    {
+      "type": "other",
+      "text": "Try it Yourself »"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CSS Setting height and width"
+    },
+    {
+      "type": "paragraph",
+      "text": "The height and width properties are used to set the \nheight and width of an element."
+    },
+    {
+      "type": "paragraph",
+      "text": "The height and width properties do not include padding, borders, or margins. \nIt sets the height/width of the area inside the padding, border, and margin of \nthe element."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CSS height and width Values"
+    },
+    {
+      "type": "paragraph",
+      "text": "The height and width properties \nmay have the following values:"
+    },
+    {
+      "type": "other",
+      "text": "auto - This is default. The browser \ncalculates the height and width\nlength - Defines the height/width in px, cm, \netc.\n% - Defines the height/width in percent of \nthe containing block\ninitial - Sets the height/width to its \ndefault value\n  inherit - The height/width will be \n  inherited from its parent value"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CSS height and width Examples"
+    },
+    {
+      "type": "other",
+      "text": "This element has a height of 200 pixels and a width of 50%"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "div {  height: \n200px;  width: 50%;  background-color: powderblue;}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "This element has a height of 100 pixels and a width of 500 pixels."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "div {  \nheight: \n100px;  width: 500px;  background-color: powderblue;}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Note: Remember that the height and width properties do not include padding, borders, \nor margins! They set the height/width of the area inside the padding, border, \nand margin of the element!"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Setting max-width"
+    },
+    {
+      "type": "paragraph",
+      "text": "The max-width property is used to set the maximum width of an element."
+    },
+    {
+      "type": "paragraph",
+      "text": "The max-width can be specified in length values, like px, cm, etc., or in percent (%) of the \ncontaining block, or set to none (this is \ndefault. Means that there is no maximum width)."
+    },
+    {
+      "type": "paragraph",
+      "text": "The problem with the <div> above occurs when the browser window is smaller than the width of \nthe element (500px). The browser then adds a horizontal scrollbar to the page."
+    },
+    {
+      "type": "paragraph",
+      "text": "In this situation, using max-width will improve the browser's handling of small windows."
+    },
+    {
+      "type": "paragraph",
+      "text": "Tip: Drag the browser window to smaller than 500px wide, to see the difference between \nthe two divs!"
+    },
+    {
+      "type": "other",
+      "text": "This element has a height of 100 pixels and a max-width of 500 pixels."
+    },
+    {
+      "type": "paragraph",
+      "text": "Note: If you for some reason use both the\nwidth property and the\nmax-width property on the same element, and the value of the\nwidth property is larger than the\nmax-width property; the\nmax-width property will be used (and the\nwidth property will be ignored)."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "div {\n    max-width: 500px;  \nheight: \n100px;  background-color: powderblue;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Try it Yourself - Examples"
+    },
+    {
+      "type": "paragraph",
+      "text": "Set the height and width of elements\nThis example demonstrates how to set the height and width of different elements."
+    },
+    {
+      "type": "paragraph",
+      "text": "Set the height and width of an image using percent\nThis example demonstrates how to set the height and width of an image using a percent value."
+    },
+    {
+      "type": "paragraph",
+      "text": "Set min-width and max-width of an element\nThis example demonstrates how to set a minimum width and a maximum width of an element using a pixel value."
+    },
+    {
+      "type": "paragraph",
+      "text": "Set min-height and max-height of an element\nThis example demonstrates how to set a minimum height and a maximum height of an element using a pixel value."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "All CSS Dimension Properties"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Property",
+          "Description"
+        ],
+        [
+          "height",
+          "Sets the height of an element"
+        ],
+        [
+          "max-height",
+          "Sets the maximum height of an element"
+        ],
+        [
+          "max-width",
+          "Sets the maximum width of an element"
+        ],
+        [
+          "min-height",
+          "Sets the minimum height of an element"
+        ],
+        [
+          "min-width",
+          "Sets the minimum width of an element"
+        ],
+        [
+          "width",
+          "Sets the width of an element"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

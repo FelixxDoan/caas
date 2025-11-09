@@ -1,0 +1,130 @@
+{
+  "url": "https://www.w3schools.com/css/css_colors_hex.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS HEX Colors"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "A hexadecimal color is specified with: #RRGGBB, where the RR \n(red), GG (green) and BB (blue) hexadecimal integers specify the components of \nthe color."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HEX Value"
+    },
+    {
+      "type": "paragraph",
+      "text": "In CSS, a color can be specified using a hexadecimal value in the form:"
+    },
+    {
+      "type": "paragraph",
+      "text": "#rrggbb"
+    },
+    {
+      "type": "paragraph",
+      "text": "Where rr (red), gg (green) and bb (blue) are hexadecimal values between 00 and ff (same as decimal 0-255)."
+    },
+    {
+      "type": "paragraph",
+      "text": "For example, #ff0000 is displayed as red, because red is set to its highest value (ff) and the others are set to \nthe lowest value (00)."
+    },
+    {
+      "type": "paragraph",
+      "text": "To display black, set all values to 00, like this: #000000."
+    },
+    {
+      "type": "paragraph",
+      "text": "To display white, set all values to ff, like \nthis: #ffffff."
+    },
+    {
+      "type": "paragraph",
+      "text": "Experiment by mixing the HEX values below:"
+    },
+    {
+      "type": "other",
+      "text": "RED\n      \n      ff\n    \n    \n      GREEN\n      \n      0\n    \n    \n      BLUE\n      \n      0"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": []
+    },
+    {
+      "type": "paragraph",
+      "text": "Shades of gray are often defined using equal values for all the 3 light sources:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": []
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "3 Digit HEX Value"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sometimes you will see a 3-digit hex code in the CSS source."
+    },
+    {
+      "type": "paragraph",
+      "text": "The 3-digit hex code is a shorthand for some 6-digit hex codes."
+    },
+    {
+      "type": "paragraph",
+      "text": "The 3-digit hex code has the following form:"
+    },
+    {
+      "type": "paragraph",
+      "text": "#rgb"
+    },
+    {
+      "type": "paragraph",
+      "text": "Where r, g, and b represent the red, green, and blue components with values between 0 and f."
+    },
+    {
+      "type": "paragraph",
+      "text": "The 3-digit hex code can only be used when both the values (RR, GG, and BB) are the same for \neach component. So, if we have #ff00cc, it can be written like this: #f0c."
+    },
+    {
+      "type": "paragraph",
+      "text": "Here is an example:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "body {  background-color: #fc9; /* same as #ffcc99 */}h1 {  \n  color: #f0f; /* same as #ff00ff */}p {  \n  color: #b58; /* same as #bb5588 */}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "//changeRed(255)\n//changeGreen(0)\n//changeBlue(0)\nchangeHex(\"r\");\nfunction changeHex(x) {\n  var col, r, g, b;\n  r = document.getElementById(\"slideRedHex\").value;\n  g = document.getElementById(\"slideGreenHex\").value;\n  b = document.getElementById(\"slideBlueHex\").value;\n  col = w3color(\"rgb(\" + r + \",\" + g + \",\" + b + \")\");\n    document.getElementById('valRed2Hex').innerHTML = col.toHexString().substr(1,2);\n    document.getElementById('valGreen2Hex').innerHTML = col.toHexString().substr(3,2);\n    document.getElementById('valBlue2Hex').innerHTML = col.toHexString().substr(5,2);\n    document.getElementById('hexresult').style.backgroundColor = col.toRgbString();\n    document.getElementById('hexresulttext').innerHTML = col.toHexString();\n  if (col.isDark(150)) {\n    document.getElementById('hexresulttext').style.color = \"#ffffff\";\n  } else {\n    document.getElementById('hexresulttext').style.color = \"#1f2d3d\";\n  }\n}"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Video: CSS Colors Hex"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

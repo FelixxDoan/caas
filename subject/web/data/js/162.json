@@ -1,0 +1,184 @@
+{
+  "url": "https://www.w3schools.com/js/js_classes.asp",
+  "title": "JavaScript Classes",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Classes"
+    },
+    {
+      "type": "other",
+      "text": "ECMAScript 2015, also known as ES6, introduced JavaScript Classes.\nJavaScript Classes are templates for JavaScript Objects."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Class Syntax"
+    },
+    {
+      "type": "paragraph",
+      "text": "Use the keyword class to create a class."
+    },
+    {
+      "type": "paragraph",
+      "text": "Always add a method named constructor():"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "class ClassName {\n   constructor() { ... }\n}"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "class Car {\n   constructor(name, year) {\n    this.name = name;\n    this.year = year;\n  }\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The example above creates a class named \"Car\"."
+    },
+    {
+      "type": "paragraph",
+      "text": "The class has two initial properties: \"name\" and \"year\"."
+    },
+    {
+      "type": "other",
+      "text": "A JavaScript class is not an object.\nIt is a template for JavaScript objects."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Using a Class"
+    },
+    {
+      "type": "paragraph",
+      "text": "When you have a class, you can use the class to create objects:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const myCar1 = new Car(\"Ford\", 2014);\nconst myCar2 = new Car(\"Audi\", 2019);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The example above uses the Car class to create two Car objects."
+    },
+    {
+      "type": "other",
+      "text": "The constructor method is called automatically when a new object is created."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Constructor Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The constructor method is a special method:"
+    },
+    {
+      "type": "other",
+      "text": "It has to have the exact name \"constructor\"\nIt is executed automatically when a new object is created\nIt is used to initialize object properties"
+    },
+    {
+      "type": "paragraph",
+      "text": "If you do not define a constructor method, JavaScript \nwill add an empty constructor method."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Class Methods"
+    },
+    {
+      "type": "paragraph",
+      "text": "Class methods are created with the same syntax as object methods."
+    },
+    {
+      "type": "paragraph",
+      "text": "Use the keyword class to create a class."
+    },
+    {
+      "type": "paragraph",
+      "text": "Always add a constructor() method."
+    },
+    {
+      "type": "paragraph",
+      "text": "Then add any number of methods."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "class ClassName {\n   constructor() { ... }\n  method_1() { ... }\n  method_2() { ... }\n  method_3() { ... }\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Create a Class method named \"age\", that returns the Car age:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "class Car {\n   constructor(name, year) {\n    this.name = name;\n    this.year = year;\n   }  age() {\n    const date = new Date();\n    return date.getFullYear() - this.year;\n   }}\nconst myCar = new Car(\"Ford\", 2014);\ndocument.getElementById(\"demo\").innerHTML =\n\"My car is \" + myCar.age() + \" years old.\";"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "You can send parameters to Class methods:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "class Car {  constructor(name, year) {    \n  this.name = name;    this.year = year;  }  \n  age(x) {    return x - this.year;  }}\n  const date = new Date();\n  let year = date.getFullYear();const myCar = new \n  Car(\"Ford\", 2014);document.getElementById(\"demo\").innerHTML=\"My car is \n  \" + myCar.age(year) + \" years old.\";"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "table.browserref\n{\nborder-collapse:collapse;width:100%;\n}\n\ntable.browserref th:first-child,table.browserref td:first-child{padding-left:16px}\n\ntable.browserref th{\nheight:32px;background-repeat:no-repeat;background-position:center center;font-weight:normal;padding:11px 5px 11px 5px;vertical-align:middle;\n}\n\ntable.browserref .bsChrome   {background-image:url('/images/compatible_chrome.png');}\ntable.browserref .bsEdge     {background-image:url('/images/compatible_edge.png');}\ntable.browserref .bsFirefox  {background-image:url('/images/compatible_firefox.png')}\ntable.browserref .bsSafari   {background-image:url('/images/compatible_safari.png');}\ntable.browserref .bsOpera    {background-image:url('/images/compatible_opera.png')}\n\ntable.browserref td{\ntext-align:center;padding:8px;vertical-align:top;\n}"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Browser Support"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following table defines the first browser version with full support for \nClasses in JavaScript:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome 49\n    Edge 12    \n    Firefox 45\n    Safari 9\n    Opera 36\n  \n  \n    Mar, 2016\n    Jul, 2015    \n    Mar, 2016\n    Oct, 2015\n    Mar, 2016"
+    },
+    {
+      "type": "other",
+      "text": "You will learn a lot more about JavaScript Classes later in this tutorial."
+    }
+  ]
+}

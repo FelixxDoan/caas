@@ -1,0 +1,82 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_join_right.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL RIGHT JOIN Keyword"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "text": "SQL RIGHT JOIN Keyword"
+    },
+    {
+      "type": "paragraph",
+      "text": "The RIGHT JOIN keyword returns all records from the right table (table2), and the \nmatching records from the left table (table1). The result is 0 records from the left side, \nif there is no match."
+    },
+    {
+      "type": "other",
+      "text": "RIGHT JOIN Syntax"
+    },
+    {
+      "type": "other",
+      "text": "SELECT column_name(s)\nFROM table1\nRIGHT JOIN table2 ON table1.column_name = table2.column_name;"
+    },
+    {
+      "type": "paragraph",
+      "text": "Note: In some databases RIGHT JOIN is called \nRIGHT OUTER JOIN."
+    },
+    {
+      "type": "heading",
+      "text": "Demo Database"
+    },
+    {
+      "type": "paragraph",
+      "text": "In this tutorial we will use the well-known Northwind sample database."
+    },
+    {
+      "type": "paragraph",
+      "text": "Below is a selection from the \"Orders\" table:"
+    },
+    {
+      "type": "other",
+      "text": "OrderID\n    CustomerID\n    EmployeeID\n    OrderDate\n    ShipperID\n  \n  \n    10308\n    2\n    7\n    1996-09-18\n    3\n  \n  \n    10309\n    37\n    3\n    1996-09-19\n    1\n  \n  \n    10310\n    77\n    8\n    1996-09-20\n    2"
+    },
+    {
+      "type": "paragraph",
+      "text": "And a selection from the \"Employees\" table:"
+    },
+    {
+      "type": "other",
+      "text": "EmployeeID\n    LastName\n    FirstName\n    BirthDate\n    Photo\n  \n  \n    1\n    Davolio\n    Nancy\n    12/8/1968\n    EmpID1.pic\n  \n  \n    2\n    Fuller\n    Andrew\n    2/19/1952\n    EmpID2.pic\n  \n  \n    3\n    Leverling\n    Janet\n    8/30/1963\n    EmpID3.pic"
+    },
+    {
+      "type": "heading",
+      "text": "SQL RIGHT JOIN Example"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement will return all employees, and any orders they \nmight have placed:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n SELECT Orders.OrderID, Employees.LastName, Employees.FirstNameFROM OrdersRIGHT JOIN Employees ON Orders.EmployeeID = Employees.EmployeeID\n ORDER BY Orders.OrderID;\nTry it Yourself »"
+    },
+    {
+      "type": "paragraph",
+      "text": "Note: The RIGHT JOIN keyword returns all records from the \nright table (Employees), even if there are no matches in the left table \n(Orders)."
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_ref_right_join.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL RIGHT JOIN Keyword"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "text": "RIGHT JOIN"
+    },
+    {
+      "type": "paragraph",
+      "text": "The RIGHT JOIN command returns all rows from \nthe right table, and the matching records from the left table. The result is \nNULL from the left side, when there is no match."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL will return all employees, and any orders they \nmight have placed:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n SELECT Orders.OrderID, Employees.LastName, Employees.FirstNameFROM OrdersRIGHT JOIN Employees ON Orders.EmployeeID = Employees.EmployeeID\n ORDER BY Orders.OrderID;\nTry it Yourself »"
+    },
+    {
+      "type": "paragraph",
+      "text": "Note: The RIGHT JOIN keyword returns all records from the \nright table (Employees), even if there are no matches in the left table \n(Orders)."
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

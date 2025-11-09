@@ -1,0 +1,118 @@
+{
+  "url": "https://www.w3schools.com/js/js_htmldom_animate.asp",
+  "title": "JavaScript HTML DOM Animation",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript HTML DOM Animation"
+    },
+    {
+      "type": "paragraph",
+      "text": "Learn to create HTML animations using JavaScript."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "A Basic Web Page"
+    },
+    {
+      "type": "paragraph",
+      "text": "To demonstrate how to create HTML animations with JavaScript, we will use a simple \nweb page:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<!DOCTYPE html><html><body><h1>My First \n JavaScript Animation</h1>\n<div id=\"animation\">My animation will go here</div>\n</body></html>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Create an Animation Container"
+    },
+    {
+      "type": "paragraph",
+      "text": "All animations should be relative to a container element."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<div id =\"container\">  <div id =\"animate\">My \n animation will go here</div></div>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Style the Elements"
+    },
+    {
+      "type": "paragraph",
+      "text": "The container element should be created with style = \"position: relative\"."
+    },
+    {
+      "type": "paragraph",
+      "text": "The animation element should be created with style = \"position: absolute\"."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "#container {  width: 400px;  height: \n 400px;  position: relative;  \n background: yellow;\n }#animate {  width: 50px;  height: \n 50px;  position: absolute;  \n background: red;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Animation Code"
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript animations are done by programming gradual changes in an element's \nstyle."
+    },
+    {
+      "type": "paragraph",
+      "text": "The changes are called by a timer. When the timer interval is small, the \nanimation looks continuous."
+    },
+    {
+      "type": "paragraph",
+      "text": "The basic code is:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "id = setInterval(frame, 5);function frame() {  if (/* \n test for finished */) {    clearInterval(id);  } else {\n      \n /* code to change the element style */    }}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Create the Full Animation Using JavaScript"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "function myMove() {\n  let id = null;\n  const elem = document.getElementById(\"animate\");\n  let pos = 0;  \n  clearInterval(id);  id = setInterval(frame, 5);  \n function frame() {    if (pos == \n 350) {      \n clearInterval(id);    } else {      \n pos++;       elem.style.top = pos + 'px';       elem.style.left = pos + 'px'; \n      }  }}"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "url": "https://www.w3schools.com/css/css_outline_width.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Outline Width"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CSS Outline Width"
+    },
+    {
+      "type": "paragraph",
+      "text": "The outline-width property specifies the width of the outline, \nand can have one of the following values:"
+    },
+    {
+      "type": "other",
+      "text": "thin (typically 1px)\n  medium (typically 3px)\n  thick (typically 5px)\n  A specific size (in px, pt, cm, em, etc)"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following example shows some outlines with different widths:"
+    },
+    {
+      "type": "paragraph",
+      "text": "A thin outline."
+    },
+    {
+      "type": "paragraph",
+      "text": "A medium outline."
+    },
+    {
+      "type": "paragraph",
+      "text": "A thick outline."
+    },
+    {
+      "type": "paragraph",
+      "text": "A 4px thick outline."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "p.ex1\n{  border: 1px solid black;\n  outline-style: solid;  outline-color: red;\n   \noutline-width: thin;\n}p.ex2\n{  border: 1px solid black;\n   \noutline-style: solid;  outline-color: red;\n  outline-width: medium;\n}p.ex3\n{  border: 1px solid black;\n   \noutline-style: solid;  outline-color: red;\n  outline-width: thick;\n}\np.ex4\n{\n  border: 1px solid black;\n  outline-style: solid;  outline-color: red;\n   \noutline-width: 4px;\n}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

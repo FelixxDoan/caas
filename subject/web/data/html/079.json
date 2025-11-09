@@ -1,0 +1,323 @@
+{
+  "url": "https://www.w3schools.com/html/html_table_borders.asp",
+  "title": "HTML ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "HTML Table Borders"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "HTML tables can have borders of different styles and shapes."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How To Add a Border"
+    },
+    {
+      "type": "paragraph",
+      "text": "To add a border, use the CSS border property on \ntable, th, and \ntd elements:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "css",
+          "code": "table, th, td\n{\n  border: 1px solid black;\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Collapsed Table Borders"
+    },
+    {
+      "type": "paragraph",
+      "text": "To avoid having double borders like in the example above, set the CSS border-collapse \nproperty to collapse."
+    },
+    {
+      "type": "paragraph",
+      "text": "This will make the borders collapse into a single border:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "css",
+          "code": "table, th, td {  border: 1px solid black;\n   \n border-collapse: collapse;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Style Table Borders"
+    },
+    {
+      "type": "paragraph",
+      "text": "If you set a background color of each cell,\nand give the border a white color (the same as the document background),\nyou get the impression of an invisible border:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "css",
+          "code": "table, th, td {  border: 1px solid white;\n   \n border-collapse: collapse;}th, td {  background-color: #96D4D4;\n  }"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Round Table Borders"
+    },
+    {
+      "type": "paragraph",
+      "text": "With the border-radius property, the borders get rounded corners:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "css",
+          "code": "table, th, td {  border: 1px solid \n  black;\n   \n border-radius: 10px;}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Skip the border around the table by leaving out table from the css selector:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "css",
+          "code": "th, td {  border: 1px solid \n  black;\n   \n border-radius: 10px;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Dotted Table Borders"
+    },
+    {
+      "type": "paragraph",
+      "text": "With the border-style property, you can set the \nappearance of the border."
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The following values are allowed:"
+    },
+    {
+      "type": "other",
+      "text": "dotted     \ndashed     \nsolid     \ndouble     \ngroove      \nridge      \ninset      \noutset      \nnone     \nhidden"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "css",
+          "code": "th, td { \n border-style: dotted;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Border Color"
+    },
+    {
+      "type": "paragraph",
+      "text": "With the border-color property, you can set the color of the border."
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "css",
+          "code": "th, td { \n border-color: #96D4D4;}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "dotted",
+        "dashed",
+        "solid",
+        "double",
+        "groove",
+        "ridge",
+        "inset",
+        "outset",
+        "none",
+        "hidden"
+      ]
+    }
+  ]
+}

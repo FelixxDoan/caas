@@ -1,0 +1,115 @@
+{
+  "url": "https://www.w3schools.com/js/js_ex_browser.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Browser Objects Examples"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples of using JavaScript to access and manipulate the Browser objects."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Window Object"
+    },
+    {
+      "type": "other",
+      "text": "Open a new window when clicking on a button\nOpen a new window and control its appearance\nBlur and Focus a new window\nClose the new window\nChecks whether the new window has been closed or not\nWrite some text to the source (parent) window\nMove the new window relative to its current position\nMove the new window to the specified position\nPrint the current page\nResize a window by the specified pixels\nResize a window to a specified size\nScroll the content by the specified number of pixels\nScroll the content to a specified position"
+    },
+    {
+      "type": "paragraph",
+      "text": "Window explained"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Screen Object"
+    },
+    {
+      "type": "other",
+      "text": "The visitor's screen: Width\nThe visitor's screen: Height\nThe visitor's screen: Available Width\nThe visitor's screen: Available Height\nThe visitor's screen: Color Depth\nThe visitor's screen: Pixel Depth"
+    },
+    {
+      "type": "paragraph",
+      "text": "Screen explained"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Location Object"
+    },
+    {
+      "type": "other",
+      "text": "Return the hostname and port of the current URL\nReturn the entire URL of the current page\nReturn the path name of the current URL\nReturn the protocol portion of the current URL\nLoad a new document\nReplace the current document\nBreak out of a frame"
+    },
+    {
+      "type": "paragraph",
+      "text": "Location explained"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "History Object"
+    },
+    {
+      "type": "other",
+      "text": "Display the number of URLs in the history list\nCreate a back button on a page\nCreate a forward button on a page\nLoad a specific URL from the history list"
+    },
+    {
+      "type": "paragraph",
+      "text": "History explained"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Navigator Object"
+    },
+    {
+      "type": "other",
+      "text": "Is cookies enabled in the visitor's browser?\nWhat is the name of the visitor's browser?\nWhat is the engine name of the visitor's browser?\nWhat is the version information of the visitor's browser?\nWhat is user agent information of the visitor's browser?\nWhat is the platform of the visitor's browser?\nWhat is the language of the visitor's browser?\nIs Java enabled in the visitor's browser?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Navigator explained"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Popup Boxes"
+    },
+    {
+      "type": "other",
+      "text": "Display an alert box\nDemonstrate line breaks in an alert box\nDisplay a confirm box\nDisplay a prompt box"
+    },
+    {
+      "type": "paragraph",
+      "text": "Popup explained"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Timing"
+    },
+    {
+      "type": "other",
+      "text": "Simple timing\nAnother simple timing\nTiming event in an infinite loop\nTiming event in an infinite loop - with a Stop button\nA clock created with a timing event\nSet and stop a timer with setInterval() and clearInterval()"
+    },
+    {
+      "type": "paragraph",
+      "text": "Timing explained"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Cookies"
+    },
+    {
+      "type": "other",
+      "text": "Create a welcome cookie\nCookies explained"
+    }
+  ]
+}

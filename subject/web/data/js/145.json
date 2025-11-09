@@ -1,0 +1,29 @@
+{
+  "url": "https://www.w3schools.com/js/js_math_reference.asp",
+  "title": "JavaScript Math Reference",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Math Reference"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Complete Math Reference"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Revised July 2025"
+    },
+    {
+      "type": "other",
+      "text": "Name\n  Description\n\n\n  abs(x)\n  Returns the absolute value of x\n\n\n  acos(x)\n  Returns the arccosine of x, in radians\n\n\n  acosh(x)\n  Returns the hyperbolic arccosine of x\n\n\n  asin(x)\n  Returns the arcsine of x, in radians\n\n\n  asinh(x)\n  Returns the hyperbolic arcsine of x\n\n\n  atan(x)\n  Returns the arctangent of x as a numeric value between -PI/2 and PI/2 radians\n\n\n  atan2(y, x)\n  Returns the arctangent of the quotient of its arguments\n\n\n  atanh(x)\n  Returns the hyperbolic arctangent of x\n\n\n  cbrt(x)\n  Returns the cubic root of x\n\n\n  ceil(x)\n  Returns x, rounded upwards to the nearest integer\n\n\n  clz32(x)\n  Returns the number of leading zeros in a 32-bit binary representation of x\n\n\n  cos(x)\n  Returns the cosine of x (x is in radians)\n\n\n  cosh(x)\n  Returns the hyperbolic cosine of x\n\n\n  E\n  Returns Euler's number (approx. 2.718)\n\n\n  exp(x)\n  Returns the value of Ex\n\n\n  expm1(x)\n  Returns the value of Ex minus 1\n\n\n  f16round(x)\n  Returns x, rounded downwards to the nearest integer\n\n\n  floor(x)\n  Returns x, rounded downwards to the nearest integer\n\n\n  fround(x)\n  Returns the nearest (32-bit single precision) float representation of a number\n\n\n  LN2\n  Returns the natural logarithm of 2 (approx. 0.693)\n\n\n  LN10\n  Returns the natural logarithm of 10 (approx. 2.302)\n\n\n  log(x)\n  Returns the natural logarithmof x\n\n\n  log10(x)\n  Returns the base-10 logarithm of x\n\n\n  LOG10E\n  Returns the base-10 logarithm of E (approx. 0.434)\n\n\n  log1p(x)\n  Returns the natural logarithm of 1 + x\n\n\n  log2(x)\n  Returns the base-2 logarithm of x\n\n\n  LOG2E\n  Returns the base-2 logarithm of E (approx. 1.442)\n\n\n  max(x1,x2,..)\n  Returns the number with the highest value\n\n\n  min(x1,x2,..)\n  Returns the number with the lowest value\n\n\n  PI\n  Returns PI (approx. 3.14)\n\n\n  pow(x, y)\n  Returns the value of x to the power of y\n\n\n  random()\n  Returns a random number between 0 and 1\n\n\n  round(x)\n  Rounds x to the nearest integer\n\n\n  sign(x)\n  Returns the sign of a number (checks whether it is positive, negative or zero)\n\n\n  sin(x)\n  Returns the sine of x (x is in radians)\n\n\n  sinh(x)\n  Returns the hyperbolic sine of x\n\n\n  sqrt(x)\n  Returns the square root of x\n\n\n  SQRT1_2\n  Returns the square root of 1/2 (approx. 0.707)\n\n\n  SQRT2\n  Returns the square root of 2 (approx. 1.414)\n\n\n  tan(x)\n  Returns the tangent of an angle\n\n\n  tanh(x)\n  Returns the hyperbolic tangent of a number\n\n\n  trunc(x)\n  Returns the integer part of a number (x)"
+    },
+    {
+      "type": "other",
+      "text": "Complete JavaScript Reference\nFor a complete reference to all JavaScript properties and methods, with full descriptions and many examples, go to:\nW3Schools' Full JavaScript Reference.\nThe reference inludes all JavaScript updates from 1999 to 2025."
+    }
+  ]
+}

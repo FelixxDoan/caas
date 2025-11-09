@@ -1,0 +1,166 @@
+{
+  "url": "https://www.w3schools.com/js/js_json_objects.asp",
+  "title": "JSON Object Literals",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JSON Object Literals"
+    },
+    {
+      "type": "paragraph",
+      "text": "This is a JSON string:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "'{\"name\":\"John\", \"age\":30, \"car\":null}'"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Inside the JSON string there is a JSON object literal:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "{\"name\":\"John\", \"age\":30, \"car\":null}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "JSON object literals are surrounded by curly braces {}."
+    },
+    {
+      "type": "paragraph",
+      "text": "JSON object literals contains key/value pairs."
+    },
+    {
+      "type": "paragraph",
+      "text": "Keys and values are separated by a colon."
+    },
+    {
+      "type": "paragraph",
+      "text": "Keys must be strings, \nand values must be a valid JSON data type:"
+    },
+    {
+      "type": "other",
+      "text": "string\nnumber\nobject\narray\nboolean\nnull"
+    },
+    {
+      "type": "paragraph",
+      "text": "Each key/value pair is separated by a comma."
+    },
+    {
+      "type": "other",
+      "text": "It is a common mistake to call a JSON object literal \"a JSON object\".\nJSON cannot be an object. JSON is a string format.\nThe data is only JSON when it is in a string format. \nWhen it is converted to a JavaScript variable, it becomes a JavaScript object."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Objects"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can create a JavaScript object from a JSON object literal:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "myObj = {\"name\":\"John\", \"age\":30, \"car\":null};"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Normally, you create a JavaScript object by parsing a JSON string:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "myJSON = '{\"name\":\"John\", \"age\":30, \"car\":null}';\nmyObj = JSON.parse(myJSON);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Accessing Object Values"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can access object values by using dot (.) notation:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const myJSON = '{\"name\":\"John\", \"age\":30, \"car\":null}';\nconst myObj = JSON.parse(myJSON);\n  x = myObj.name;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "You can also access object values by using bracket ([]) notation:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const myJSON = '{\"name\":\"John\", \"age\":30, \"car\":null}';\nconst myObj = JSON.parse(myJSON);\n  x = myObj[\"name\"];"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Looping an Object"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can loop through object properties with a for-in loop:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const myJSON = '{\"name\":\"John\", \"age\":30, \"car\":null}';\nconst myObj = JSON.parse(myJSON);\n\nlet text = \"\";\nfor (const x in myObj) {\n  text += x + \", \";\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "In a for-in loop, use the bracket notation to access the property values:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const myJSON = '{\"name\":\"John\", \"age\":30, \"car\":null}';\nconst myObj = JSON.parse(myJSON);\n\nlet text = \"\";\nfor (const x in myObj) {\n  text += myObj[x] + \", \";\n}"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "url": "https://www.w3schools.com/js/js_graphics_canvas.asp",
+  "title": "HTML Canvas",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "HTML Canvas"
+    },
+    {
+      "type": "other",
+      "text": "HTML Canvas is perfect for Scatter Plots\nHTML Canvas is perfect for Line Graphs\nHTML Canvas is perfect for combining Scatter and Lines"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Scatter Plots"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const xArray = [50,60,70,80,90,100,110,120,130,140,150];\nconst yArray = [7,8,8,9,9,9,10,11,14,14,15];\n\n// Plot Scatter\nctx.fillStyle = \"red\";\nfor (let i = 0; i < xArray.length-1; i++) {\n  let x = xArray[i]*400/150;\n  let y = yArray[i]*400/15;\n  ctx.beginPath();\n  ctx.ellipse(x, y, 2, 3, 0, 0, Math.PI * 2);\n  ctx.fill();\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Line Graphs"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let xMax = canvas.height;\nlet slope = 1.2;\nlet intercept = 70;\n\n// Plot Scatter\nctx.moveTo(0, intercept);\nctx.lineTo(xMax, f(xMax));\nctx.strokeStyle = \"black\";\nctx.stroke();\n\n// Line Function\nfunction f(x) {\n  return x * slope + intercept;\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Combined"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let xMax = canvas.height;\nlet yMax = canvas.width;\nlet slope = 1.2;\nlet intercept = 70;\n\nconst xArray = [50,60,70,80,90,100,110,120,130,140,150];\nconst yArray = [7,8,8,9,9,9,10,11,14,14,15];\n\n// Plot Scatter\nctx.fillStyle = \"red\";\nfor (let i = 0; i < xArray.length-1; i++) {\n  let x = xArray[i]*400/150;\n  let y = yArray[i]*400/15;\n  ctx.beginPath();\n  ctx.ellipse(x, y, 2, 3, 0, 0, Math.PI * 2);\n  ctx.fill();\n}\n\n// Plot Line\nctx.moveTo(0, intercept);\nctx.lineTo(xMax, f(xMax));\nctx.strokeStyle = \"black\";\nctx.stroke();\n\n// Line Function\nfunction f(x) {\n  return x * slope + intercept;\n}"
+        }
+      ]
+    }
+  ]
+}

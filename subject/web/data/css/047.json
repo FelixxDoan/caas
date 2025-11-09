@@ -1,0 +1,219 @@
+{
+  "url": "https://www.w3schools.com/css/css_specificity.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Specificity"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What is Specificity?"
+    },
+    {
+      "type": "paragraph",
+      "text": "If there are two or more CSS rules that point to the same \nelement, the selector with the highest specificity will \"win\", and its \nstyle declaration will be applied to that HTML element."
+    },
+    {
+      "type": "paragraph",
+      "text": "Think of specificity as a hierarchy that determines which style declaration \nis ultimately applied to an element."
+    },
+    {
+      "type": "paragraph",
+      "text": "Look at the following examples:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<html><head>  <style>    p {color: red;}   \n  </style></head><body><p>Hello World!</p>\n  </body>\n  </html>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Now, look at example 2:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<html><head>  <style>    .test {color: green;}\n      p {color: red;}   </style></head><body>\n  <p class=\"test\">Hello World!</p></body></html>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Now, look at example 3:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<html><head>  <style>    #demo {color: blue;}    \n  .test {color: green;}     p {color: red;}   \n  </style></head><body><p id=\"demo\" class=\"test\">Hello \n  World!</p></body></html>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Now, look at example 4:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<html><head>  <style>    #demo {color: blue;}    \n  .test {color: green;}     p {color: red;}   \n  </style></head><body><p id=\"demo\" class=\"test\" \n  style=\"color: pink;\">Hello World!</p></body></html>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Specificity Hierarchy"
+    },
+    {
+      "type": "paragraph",
+      "text": "Every CSS selector has a position in the specificity hierarchy."
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Priority",
+          "Example",
+          "Description"
+        ],
+        [
+          "Inline style",
+          "<h1 style=\"color: pink;\">",
+          "Highest priority, directly applied with the style attribute"
+        ],
+        [
+          "Id selectors",
+          "#navbar",
+          "Second highest priority, identified by the unique id attribute of an \n    element"
+        ],
+        [
+          "Classes and pseudo-classes",
+          ".test, :hover",
+          "Third highest priority, targeted using class names"
+        ],
+        [
+          "Attributes",
+          "[type=\"text\"]",
+          "Low priority, applies to attributes"
+        ],
+        [
+          "Elements and pseudo-elements",
+          " h1, ::before, ::after",
+          "Lowest priority, applies to HTML elements and pseudo-elements"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "More Specificity Rules Examples"
+    },
+    {
+      "type": "paragraph",
+      "text": "Equal specificity: the latest rule wins - \nIf the same rule is written twice into the external style sheet, then \nthe latest rule wins:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "h1 {background-color: yellow;}\nh1 {background-color: red;}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "ID selectors have a higher specificity than attribute selectors \n- Look at the following three code lines:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "div#myDiv {background-color: green;}#myDiv {background-color: yellow;}div[id=myDiv] {background-color: blue;}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "the first rule is more specific than the other two, and will therefore be applied."
+    },
+    {
+      "type": "paragraph",
+      "text": "Contextual selectors are more specific than a single element \nselector - The embedded style sheet is closer to the element to be styled. So in the \nfollowing situation"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "/*From external CSS file:*/#content h1 {background-color: red;}\n/*In HTML file:*/<style>#content h1 {background-color: \nyellow;}</style>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "the last rule will be applied."
+    },
+    {
+      "type": "paragraph",
+      "text": "A class selector beats any number of element selectors - a class selector such as .intro beats h1, p, div, etc:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".intro {background-color: yellow;}h1 {background-color: \n  red;}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The universal selector (*) and inherited values - \nThe universal selector (*) and inherited values do not impact the specificity \nweight value:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "* {background-color: yellow;}h1 {background-color: red;}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

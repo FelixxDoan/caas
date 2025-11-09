@@ -1,0 +1,118 @@
+{
+  "url": "https://www.w3schools.com/js/js_regexp_objects.asp",
+  "title": "JavaScript RegExp Objects",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript RegExp Objects"
+    },
+    {
+      "type": "other",
+      "text": "The RegExp Object\nIn JavaScript, RegExp is a regular expression object with \npredefined properties and methods."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Using test()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The test() method is a RegExp expression method."
+    },
+    {
+      "type": "paragraph",
+      "text": "It searches a string for a pattern, and returns true \nor false, depending on the result."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following example searches a string for the character \"e\":"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const pattern = /e/;\npattern.test(\"The best things in life are free!\");"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "/e/.test(\"The best things in life are free!\");"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Using exec()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The exec() method is a RegExp expression method."
+    },
+    {
+      "type": "paragraph",
+      "text": "It searches a string for a specified pattern, and returns the found text as \nan object."
+    },
+    {
+      "type": "paragraph",
+      "text": "If no match is found, it returns an empty (null) object."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following example searches a string for the character \"e\":"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "/e/.exec(\"The best things in life are free!\");"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The RegExp.escape() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The RegExp.escape() method returns string where characters that belongs\nto the regular expression syntax are escaped."
+    },
+    {
+      "type": "paragraph",
+      "text": "This makes it possible to treat characters like +, *, ?, ^, $, (, ), [, ], {, }, |, and \\ literally,\nand not as part of a regular expression."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Escape a text for to use as a regular expression\nconst safe = RegExp.escape(\"[*]\";\n\n// Build a new reglar expression\nconst regex = new RegExp(safe);\n\n// Text to replace within\nconst oldText = \"[*] is a web school.\";\n\n// Perform the replace\nconst newText = oldText.match(regex, \"W3Schools\");"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "RegExp.escape() is supported all in modern browsers since May 2025:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome 136    \n    Edge 136\n    Firefox 134\n    Safari 18.2\n    Opera 121\n  \n  \n    Apr 2025\n    May 2025    \n    Jan 2025\n    Des 2024\n    Jun 2025"
+    },
+    {
+      "type": "other",
+      "text": "See Also:\nJavaScript RegExp Tutorial\nJavaScript RegExp Flags\nJavaScript RegExp Character Classes\nJavaScript RegExp Meta Characters\nJavaScript RegExp Assertions\nJavaScript RegExp Quantifiers\nJavaScript RegExp Patterns\nJavaScript RegExp Methods"
+    }
+  ]
+}

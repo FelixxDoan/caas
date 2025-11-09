@@ -1,0 +1,174 @@
+{
+  "url": "https://www.w3schools.com/css/css_math_functions.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Math Functions"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "The CSS math functions allow mathematical expressions to be \nused as property values. Here, we will explain the calc(), \nmax() and min() functions."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The calc() Function"
+    },
+    {
+      "type": "paragraph",
+      "text": "The calc() function performs a calculation to be used as the property value."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Syntax"
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "calc(expression)"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Value",
+          "Description"
+        ],
+        [
+          "expression",
+          "Required. A mathematical expression. The result will be used as the value.The following operators can be used: + - * /"
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Let us look at an example:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "#div1 {  position: absolute;  left: 50px;  width: calc(100% - 100px);\n    border: 1px solid black;  background-color: yellow;  padding: 5px;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The max() Function"
+    },
+    {
+      "type": "paragraph",
+      "text": "The max() function uses the largest value, \nfrom a comma-separated list of values, as the property value."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Syntax"
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "max(value1, value2, ...)"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Value",
+          "Description"
+        ],
+        [
+          "value1, value2, ...",
+          "Required. A list of comma-separated values - where the largest value is \n    chosen"
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Let us look at an example:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "#div1 {  background-color: yellow;  height: 100px;  \n  width: max(50%, 300px);}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The min() Function"
+    },
+    {
+      "type": "paragraph",
+      "text": "The min() function uses the smallest value, \nfrom a comma-separated list of values, as the property value."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Syntax"
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "min(value1, value2, ...)"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Value",
+          "Description"
+        ],
+        [
+          "value1, value2, ...",
+          "Required. A list of comma-separated values - where the smallest value is \n    chosen"
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Let us look at an example:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "#div1 {  background-color: yellow;  height: 100px;  \n  width: min(50%, 300px);}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CSS Functions Reference"
+    },
+    {
+      "type": "other",
+      "text": "For a complete list of all CSS functions, visit our   CSS Functions Reference."
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

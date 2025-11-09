@@ -1,0 +1,38 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_ref_distinct.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL SELECT DISTINCT Keyword"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "text": "SELECT DISTINCT"
+    },
+    {
+      "type": "paragraph",
+      "text": "The SELECT DISTINCT command returns only \ndistinct (different) values in the result set."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement selects only the DISTINCT values from the \"Country\" column in the \"Customers\" table:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\nSELECT DISTINCT Country FROM Customers;\n\nTry it Yourself »"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

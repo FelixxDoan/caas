@@ -1,0 +1,177 @@
+{
+  "url": "https://www.w3schools.com/css/css_text_spacing.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Text Spacing"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Text Spacing"
+    },
+    {
+      "type": "paragraph",
+      "text": "In this chapter you will learn about the following properties:"
+    },
+    {
+      "type": "other",
+      "text": "text-indent\nletter-spacing\nline-height\n  word-spacing\n  white-space"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Text Indentation"
+    },
+    {
+      "type": "paragraph",
+      "text": "The text-indent property is used to specify the indentation of the first line of a text:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "p {  text-indent: 50px;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Letter Spacing"
+    },
+    {
+      "type": "paragraph",
+      "text": "The letter-spacing property is used to specify the space between the characters in a text."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following example demonstrates how to increase or decrease the space between characters:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "h1 {  letter-spacing: 5px;}h2 {  letter-spacing: -2px;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Line Height"
+    },
+    {
+      "type": "paragraph",
+      "text": "The line-height property is used to specify the space between lines:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "p.small {  line-height: 0.8;}p.big {  \nline-height: 1.8;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Word Spacing"
+    },
+    {
+      "type": "paragraph",
+      "text": "The word-spacing property is used to specify the space between \nthe words in a text."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following example demonstrates how to increase or decrease the space between \nwords:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "p.one {  word-spacing: 10px;}p.two {  word-spacing: -2px;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "White Space"
+    },
+    {
+      "type": "paragraph",
+      "text": "The white-space property specifies how white-space inside an element is handled."
+    },
+    {
+      "type": "paragraph",
+      "text": "This example demonstrates how to disable text wrapping inside an element:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "p {  white-space: nowrap;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The CSS Text Spacing Properties"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Property",
+          "Description"
+        ],
+        [
+          "letter-spacing",
+          "Specifies the space between characters in a text"
+        ],
+        [
+          "line-height",
+          "Specifies the line height"
+        ],
+        [
+          "text-indent",
+          "Specifies the indentation of the first line in a text-block"
+        ],
+        [
+          "white-space",
+          "Specifies how to handle white-space inside an element"
+        ],
+        [
+          "word-spacing",
+          "Specifies the space between words in a text"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

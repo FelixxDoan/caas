@@ -1,0 +1,98 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_insert_into_select.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL INSERT INTO SELECT Statement"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "heading",
+      "text": "The SQL INSERT INTO SELECT Statement"
+    },
+    {
+      "type": "paragraph",
+      "text": "The INSERT INTO SELECT statement copies data from one table and \ninserts it into another table."
+    },
+    {
+      "type": "paragraph",
+      "text": "The INSERT INTO SELECT statement requires that \nthe data types in source and target tables match."
+    },
+    {
+      "type": "paragraph",
+      "text": "Note: The existing records in the target table are unaffected."
+    },
+    {
+      "type": "other",
+      "text": "INSERT INTO SELECT Syntax"
+    },
+    {
+      "type": "paragraph",
+      "text": "Copy all columns from one table to another table:"
+    },
+    {
+      "type": "other",
+      "text": "INSERT INTO table2\nSELECT * FROM table1WHERE condition;"
+    },
+    {
+      "type": "paragraph",
+      "text": "Copy only some columns from one table into another table:"
+    },
+    {
+      "type": "other",
+      "text": "INSERT INTO table2 (column1, column2, column3, ...)\nSELECT column1, column2, column3, ... FROM table1\nWHERE condition;"
+    },
+    {
+      "type": "heading",
+      "text": "Demo Database"
+    },
+    {
+      "type": "paragraph",
+      "text": "In this tutorial we will use the well-known Northwind sample database."
+    },
+    {
+      "type": "paragraph",
+      "text": "Below is a selection from the \"Customers\" table:"
+    },
+    {
+      "type": "other",
+      "text": "CustomerID\n    CustomerName\n    ContactName\n    Address\n    City\n    PostalCode\n    Country\n  \n  \n    1\n    Alfreds Futterkiste\n    Maria Anders\n    Obere Str. 57\n    Berlin\n    12209\n    Germany\n  \n  \n    2\n    Ana Trujillo Emparedados y helados\n    Ana Trujillo\n    Avda. de la Constitución 2222\n    México D.F.\n    05021\n    Mexico\n  \n  \n    3\n    Antonio Moreno Taquería\n    Antonio Moreno\n    Mataderos 2312\n    México D.F.\n    05023\n    Mexico"
+    },
+    {
+      "type": "paragraph",
+      "text": "And a selection from the \"Suppliers\" table:"
+    },
+    {
+      "type": "other",
+      "text": "SupplierID\n    SupplierName\n    ContactName\n    Address\n    City\n    Postal Code\n    Country\n  \n  \n    1\n    Exotic Liquid\n    Charlotte Cooper\n    49 Gilbert St.\n    Londona\n    EC1 4SD\n    UK\n  \n  \n    2\n    New Orleans Cajun Delights\n    Shelley Burke\n    P.O. Box 78934\n    New Orleans\n    70117\n    USA\n  \n  \n    3\n    Grandma Kelly's Homestead\n    Regina Murphy\n    707 Oxford Rd.\n    Ann Arbor\n    48104\n    USA"
+    },
+    {
+      "type": "heading",
+      "text": "SQL INSERT INTO SELECT Examples"
+    },
+    {
+      "type": "other",
+      "text": "Example\nCopy \"Suppliers\" into \"Customers\" (the columns that are not filled with data, will contain NULL):\n\n INSERT INTO Customers (CustomerName, \n  City, Country)\n SELECT SupplierName, City, Country FROM Suppliers;"
+    },
+    {
+      "type": "other",
+      "text": "Example\nCopy \"Suppliers\" into \"Customers\" (fill all columns):\n\n  INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, \n  Country)SELECT SupplierName, ContactName, Address, City, PostalCode, \n  Country FROM Suppliers;"
+    },
+    {
+      "type": "other",
+      "text": "Example\nCopy only the German suppliers into \"Customers\":\n\n INSERT INTO Customers (CustomerName, \n  City, Country)\n SELECT SupplierName, City, Country FROM SuppliersWHERE Country='Germany';"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "url": "https://www.w3schools.com/css/css_text_transformation.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Text Transformation"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Text Transformation"
+    },
+    {
+      "type": "paragraph",
+      "text": "The text-transform property is used to specify uppercase and lowercase letters in a text."
+    },
+    {
+      "type": "paragraph",
+      "text": "It can be used to turn everything into uppercase or lowercase letters, or \ncapitalize the first letter of each word:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "p.uppercase {  text-transform: uppercase;}\np.lowercase {  text-transform: lowercase;}\np.capitalize {  text-transform: capitalize;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The CSS Text Transformation Property"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Property",
+          "Description"
+        ],
+        [
+          "text-transform",
+          "Controls the capitalization of text"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

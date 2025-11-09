@@ -1,0 +1,108 @@
+{
+  "url": "https://www.w3schools.com/css/css_rwd_grid.asp",
+  "title": "Responsive Web Design - ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Responsive Web Design - Building a Grid View"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What is a Grid-View?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Many web pages are based on a grid-view, which means that the page is divided into rows and columns."
+    },
+    {
+      "type": "paragraph",
+      "text": "Using a grid-view is very helpful when designing web pages. It makes it easier to place elements on the page."
+    },
+    {
+      "type": "paragraph",
+      "text": "A responsive grid-view often has 6 or 12 columns, and will shrink and expand as you resize the browser window."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Building a Grid View"
+    },
+    {
+      "type": "paragraph",
+      "text": "Lets start building a grid-view."
+    },
+    {
+      "type": "paragraph",
+      "text": "First ensure that all HTML elements have the box-sizing property set to \nborder-box. \nThis makes sure that the padding and border are included in the total width and height of \nthe elements."
+    },
+    {
+      "type": "paragraph",
+      "text": "Add the following at the begnning of your CSS:"
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "* {  margin: 0;  box-sizing: border-box;}"
+    },
+    {
+      "type": "paragraph",
+      "text": "Read more about the box-sizing property in our CSS Box Sizing chapter."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The HTML"
+    },
+    {
+      "type": "paragraph",
+      "text": "We create a grid container with five grid items (item1 = Header, item2 = \nMenu, item3 = Main content, item4 = right, item5 = Footer):"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<div class=\"grid-container\">  <div class=\"item1\">    <h1>Chania</h1>  </div>\n    <div class=\"item2\">    <ul>      <li>The Flight</li>      <li>The City</li>\n       \n  <li>The Island</li>      <li>The Food</li>    </ul>  </div>  <div \n  class=\"item3\">     <h1>The City</h1>    <p>Chania is the capital of the Chania \n  region on the island of Crete.</p>    <p>The city can be divided in two parts, \n  the old town and the modern city. The old town is situated next to the old \n  harbour and is the matrix around which the whole urban area was developed.</p>\n     \n  <p>Chania lies along the north west coast of the island Crete.</p></div>\n    <div class=\"item4\">    <h2>Facts:</h2>    <ul>      <li>Chania is a city \n  on the island of Crete</li>      <li>Crete is a Greek island in the \n  Mediterranean Sea</li>    </ul>  </div>  <div class=\"item5\">    <p>Resize \n  the browser window to see how the content respond to the resizing.</p>  </div>\n  </div>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The CSS"
+    },
+    {
+      "type": "paragraph",
+      "text": "We also want to add some styles and colors to make it look better:"
+    },
+    {
+      "type": "other",
+      "text": "Note: The webpage in the example below is responsive, but it does not look good \nwhen you resize the browser window to a very small width. In the next chapter you will learn how to fix that!"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "* {  margin: 0;  box-sizing: border-box;}body {  \n  font-family: \"Lucida Sans\", sans-serif;}.grid-container {  \n  display: grid;  grid-template-areas:    'header \n  header header header header header'    'menu main main main \n  main right'    'footer footer footer footer footer footer';    \n  gap: 10px;    background-color: white;    \n  padding: 10px;}.grid-container > div {  padding: 10px;  font-size: \n  16px;}\n  .item1 {  grid-area: header;  background-color: purple;  \n  text-align: center;  color: #ffffff;}.item1 > h1 {  font-size: \n  40px;}\n  .item2 {  grid-area: menu;}.item2 ul {  \n  list-style-type: none;  margin: 0;  padding: 0;}.item2 li {  padding: \n  8px;  margin-bottom: 7px;  background-color: #33b5e5;  \n  color: #ffffff;}\n  .item2 li:hover {  background-color: #0099cc;}.item3 \n  {  grid-area: main;}.item3 > h1 {  font-size: 30px;  \n  margin-bottom: 7px;}.item3 > p {  margin-bottom: 7px;\n  }\n  .item4 {  grid-area: right;  border: 2px solid #0099cc;  \n  background-color: white;  padding: 15px;  color: #000000;\n  }\n  .item4 > h2 {  font-size: 20px;  padding-bottom: 10px;}.item4 \n  li {  padding: 5px;  margin-bottom: 5px;}.item5 {  \n  grid-area: footer;  background-color: #0099cc;  color: #ffffff;  \n  text-align: center;}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

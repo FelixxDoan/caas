@@ -1,0 +1,166 @@
+{
+  "url": "https://www.w3schools.com/css/css_background.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Backgrounds"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "The CSS background properties are used to add background effects \nfor elements."
+    },
+    {
+      "type": "other",
+      "text": "In these chapters, you will learn about the following CSS background properties:\n\n   background-color\n   background-image\n   background-repeat\n   background-attachment\n   background-position\n   background (shorthand property)"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CSS background-color"
+    },
+    {
+      "type": "paragraph",
+      "text": "The background-color property specifies the background color of an element."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "body {  background-color: lightblue;}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "With CSS, a color is most often specified by:"
+    },
+    {
+      "type": "other",
+      "text": "a valid color name - like \"red\"\na HEX value - like \"#ff0000\"\nan RGB value - like \"rgb(255,0,0)\""
+    },
+    {
+      "type": "paragraph",
+      "text": "Look at CSS Color Values for a complete \nlist of possible color values."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Other Elements"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can set the background color for any HTML elements:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "h1 {  background-color: green;}\ndiv {  background-color: lightblue;}p {  background-color: \nyellow;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Opacity / Transparency"
+    },
+    {
+      "type": "paragraph",
+      "text": "The opacity property specifies the opacity/transparency of an element. It can take a value from 0.0 - 1.0. The lower value, the more transparent:"
+    },
+    {
+      "type": "other",
+      "text": "opacity 1\n\n\n\nopacity 0.6\n\n\n\nopacity 0.3\n\n\n\nopacity 0.1"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "div {  background-color: green;  opacity: 0.3;}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note: When using the opacity property to add transparency to the background of an element, all of its child elements \ninherit the same transparency. This can make the text inside a fully transparent element hard to read."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Transparency using RGBA"
+    },
+    {
+      "type": "paragraph",
+      "text": "If you do not want to apply opacity to child elements, like in our example above, use RGBA color values. \nThe following example sets the opacity for the background color and not the text:"
+    },
+    {
+      "type": "other",
+      "text": "100% opacity\n\n\n\n60% opacity\n\n\n\n30% opacity\n\n\n\n10% opacity"
+    },
+    {
+      "type": "paragraph",
+      "text": "You learned from our CSS Colors Chapter, that you can use RGB as a color value. In addition to RGB, \nyou can use an RGB color value with an alpha channel (RGBA) - which specifies the opacity for a color."
+    },
+    {
+      "type": "paragraph",
+      "text": "An RGBA color value is specified with: rgba(red, green, blue, alpha). The \nalpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Tip: You will learn more about RGBA Colors in our CSS Colors Chapter."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "div {  background: rgba(0, 128, 0, 0.3) /* Green background with 30% opacity */}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The CSS Background Color Property"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Property",
+          "Description"
+        ],
+        [
+          "background-color",
+          "Sets the background color of an element"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Video: CSS Background Color"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

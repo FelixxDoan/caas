@@ -1,0 +1,131 @@
+{
+  "url": "https://www.w3schools.com/js/js_object_definition.asp",
+  "title": "JavaScript Object Definitions",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Object Definitions"
+    },
+    {
+      "type": "other",
+      "text": "Methods for Defining JavaScript Objects\n\n  Using an Object Literal\n  Using the new Keyword\n  Using an Object Constructor\n  Using Object.assign()\n  Using Object.create()\n  Using Object.fromEntries()"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Using an Object Literal"
+    },
+    {
+      "type": "paragraph",
+      "text": "An object literal is a list of property key:values inside curly braces { }."
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "{firstName:\"John\", lastName:\"Doe\", age:50, eyeColor:\"blue\"};"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create an Object\nconst person = {\n  firstName: \"John\",\n  lastName: \"Doe\",\n  age: 50,\n  eyeColor: \"blue\"\n};"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Using the new Keyword"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create an Object\nconst person = new Object({\n  firstName: \"John\",\n  lastName: \"Doe\",\n  age: 50,\n  eyeColor: \"blue\" \n});"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note:\nThe examples above do exactly the same.\nBut, there is no need to use new Object().\nFor readability, simplicity and execution speed, use the object literal method."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Object.create()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Object.create() method creates an object from an existing object."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create an Object:\nconst person = {\n  firstName: \"John\",\n  lastName: \"Doe\"\n};\n\n// Create new Object\nconst man = Object.create(person);\nman.firstName = \"Peter\";"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Object fromEntries()"
+    },
+    {
+      "type": "paragraph",
+      "text": "ES2019 added the Object method fromEntries() to JavaScript."
+    },
+    {
+      "type": "paragraph",
+      "text": "The fromEntries() method creates an object from iterable key / value pairs."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const fruits = [\n[\"apples\", 300],\n[\"pears\", 900],\n[\"bananas\", 500]\n];\n\nconst myObj = Object.fromEntries(fruits);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript Object fromEntries() is supported in all modern browsers since January 2020:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome 73    \n    Edge 79\n    Firefox 63\n    Safari 12.1\n    Opera 60\n  \n  \n    Mar 2019\n    Jan 2020    \n    Oct 2018\n    Mar 2019\n    Apr 2019"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Object.assign()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Object.assign() method copies properties from\none or more source objects to a target object."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create Target Object\nconst person1 = {\n  firstName: \"John\",\n  lastName: \"Doe\",\n  age: 50,\n  eyeColor: \"blue\"\n};\n\n// Create Source Object\nconst person2 = {firstName: \"Anne\",lastName: \"Smith\"};\n\n// Assign Source to Target\nObject.assign(person1, person2);"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Learn More:\nJavaScript Object Definitions\nJavaScript Object Constructors\nJavaScript Object this\nJavaScript Object Methods\nJavaScript Object Properties\nJavaScript Object Getters & Setters\nJavaScript Object Protection\nJavaScript Object Reference"
+    }
+  ]
+}

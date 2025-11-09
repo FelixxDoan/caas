@@ -1,0 +1,208 @@
+{
+  "url": "https://www.w3schools.com/js/js_timing.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Timing Events"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": []
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Timing Events"
+    },
+    {
+      "type": "paragraph",
+      "text": "The window object allows execution of code at specified time intervals."
+    },
+    {
+      "type": "paragraph",
+      "text": "These time intervals are called timing events."
+    },
+    {
+      "type": "paragraph",
+      "text": "The two key methods to use with JavaScript are:"
+    },
+    {
+      "type": "other",
+      "text": "setTimeout(function, milliseconds)Executes a function, after waiting a specified number of milliseconds.\n  setInterval(function, milliseconds)Same as setTimeout(), but repeats the execution \n    of the function continuously."
+    },
+    {
+      "type": "other",
+      "text": "The setTimeout() and setInterval() are both methods of the HTML DOM Window object."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The setTimeout() Method"
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "window.setTimeout(function, milliseconds);"
+    },
+    {
+      "type": "paragraph",
+      "text": "The window.setTimeout() method can be written without the window prefix."
+    },
+    {
+      "type": "paragraph",
+      "text": "The first parameter is a function to be executed."
+    },
+    {
+      "type": "paragraph",
+      "text": "The second parameter indicates the number of milliseconds before execution."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<button onclick=\"setTimeout(myFunction, 3000)\">Try it</button>\n    <script>function myFunction() {  alert('Hello');\n    }</script>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How to Stop the Execution?"
+    },
+    {
+      "type": "paragraph",
+      "text": "The clearTimeout() method stops the execution of the function \nspecified in setTimeout()."
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "window.clearTimeout(timeoutVariable)"
+    },
+    {
+      "type": "paragraph",
+      "text": "The window.clearTimeout() method can be written without the window prefix."
+    },
+    {
+      "type": "paragraph",
+      "text": "The clearTimeout() method uses the variable \nreturned from setTimeout():"
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "myVar = setTimeout(function, milliseconds);clearTimeout(myVar);"
+    },
+    {
+      "type": "paragraph",
+      "text": "If the function has not already been executed, you can stop the execution by calling the clearTimeout() \nmethod:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<button onclick=\"myVar = setTimeout(myFunction, 3000)\">Try it</button><button onclick=\"clearTimeout(myVar)\">Stop it</button>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The setInterval() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The setInterval() method repeats a given function at every given \ntime-interval."
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "window.setInterval(function, milliseconds);"
+    },
+    {
+      "type": "paragraph",
+      "text": "The window.setInterval() method can be written without the window prefix."
+    },
+    {
+      "type": "paragraph",
+      "text": "The first parameter is the function to be executed."
+    },
+    {
+      "type": "paragraph",
+      "text": "The second parameter indicates the length of the time-interval between each \nexecution."
+    },
+    {
+      "type": "paragraph",
+      "text": "This example executes a function called \"myTimer\" once every second (like a digital \nwatch)."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "setInterval(myTimer, 1000);\n function myTimer() {  const d = new Date();  document.getElementById(\"demo\").innerHTML = d.toLocaleTimeString();\n}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "There are 1000 milliseconds in one second."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How to Stop the Execution?"
+    },
+    {
+      "type": "paragraph",
+      "text": "The clearInterval() method stops the executions of the function \nspecified in the setInterval() method."
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "window.clearInterval(timerVariable)"
+    },
+    {
+      "type": "paragraph",
+      "text": "The window.clearInterval() method can be written without the window prefix."
+    },
+    {
+      "type": "paragraph",
+      "text": "The clearInterval() method uses the variable returned from setInterval():"
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "let myVar = setInterval(function, milliseconds);clearInterval(myVar);"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<p id=\"demo\"></p><button onclick=\"clearInterval(myVar)\">Stop time</button>\n <script>\nlet myVar = setInterval(myTimer, 1000);\n function myTimer() {  const d = new Date();  document.getElementById(\"demo\").innerHTML = d.toLocaleTimeString();}</script>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "More Examples"
+    },
+    {
+      "type": "paragraph",
+      "text": "Another simple timing"
+    },
+    {
+      "type": "paragraph",
+      "text": "A clock created with a timing event"
+    }
+  ]
+}

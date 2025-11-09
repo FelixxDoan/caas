@@ -1,0 +1,380 @@
+{
+  "url": "https://www.w3schools.com/html/html_css.asp",
+  "title": "HTML ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "HTML Styles - CSS"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS stands for Cascading Style Sheets."
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS saves a lot of work. It can control the layout of multiple \nweb pages all at once."
+    },
+    {
+      "type": "other",
+      "text": "CSS = Styles and Colors\n Manipulate Text\n Colors,\n  Boxes"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What is CSS?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Cascading Style Sheets (CSS) is used to format the layout of a webpage."
+    },
+    {
+      "type": "paragraph",
+      "text": "With CSS, you can control the color, font, the size of text, the spacing \nbetween elements, how elements are positioned and laid out, what background \nimages or background colors are to be used, different displays for different devices \nand screen sizes, and much more!"
+    },
+    {
+      "type": "other",
+      "text": "Tip: The word cascading means that a style \napplied to a parent element will also apply to all children elements within the \nparent. So, if you set the color of the body text to \"blue\", all headings, \nparagraphs, and other text elements within the body will also get the same color (unless you specify \nsomething else)!"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Using CSS"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS can be added to HTML documents in 3 ways:"
+    },
+    {
+      "type": "other",
+      "text": "Inline - by using the style attribute inside HTML elements\n  Internal - by using a <style> element in the <head> section\n  External - by using a <link> \n  element to link to an external CSS file"
+    },
+    {
+      "type": "paragraph",
+      "text": "The most common way to add CSS, is to keep the styles in external CSS \nfiles. However, in this tutorial we will use inline and internal styles, because this is easier to \ndemonstrate, and easier for you to try it yourself."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Inline CSS"
+    },
+    {
+      "type": "paragraph",
+      "text": "An inline CSS is used to apply a unique style to a single HTML element."
+    },
+    {
+      "type": "paragraph",
+      "text": "An inline CSS uses the style attribute of an HTML element."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following example sets the text color of the <h1> element to blue, \nand the text color of the <p> element to red:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<h1 style=\"color:blue;\">A Blue Heading</h1><p \n  style=\"color:red;\">A red paragraph.</p>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Internal CSS"
+    },
+    {
+      "type": "paragraph",
+      "text": "An internal CSS is used to define a style for a single HTML page."
+    },
+    {
+      "type": "paragraph",
+      "text": "An internal CSS is defined in the <head> section of an HTML page, \nwithin a <style> element."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following example sets the text color of ALL the <h1> elements \n(on that page) to blue, and the text color of ALL the <p> elements to \nred. In addition, the page will be displayed with a \"powderblue\" background \ncolor:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<!DOCTYPE html><html><head><style>\n body {background-color: powderblue;}h1   {color: blue;}p    {color: red;}\n</style></head><body><h1>This is a \n heading</h1><p>This is a paragraph.</p></body></html>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "External CSS"
+    },
+    {
+      "type": "paragraph",
+      "text": "An external style sheet is used to define the style for many HTML pages."
+    },
+    {
+      "type": "paragraph",
+      "text": "To use an external style sheet, add a link to it in the <head> section of each HTML page:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<!DOCTYPE html><html><head>\n  <link rel=\"stylesheet\" href=\"styles.css\">\n</head><body><h1>This is a heading</h1><p>This is a paragraph.</p></body></html>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The external style sheet can be written in any text editor. The file must not contain any \nHTML code, and must be saved with a .css extension."
+    },
+    {
+      "type": "paragraph",
+      "text": "Here is what the \"styles.css\" file looks like:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "css",
+          "code": "body {  background-color: powderblue;}h1 {  color: blue;}p {  color: red;}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Tip: With an external style sheet, you can change the look of an entire web site, by changing one file!"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CSS Colors, Fonts and Sizes"
+    },
+    {
+      "type": "paragraph",
+      "text": "Here, we will demonstrate some commonly used CSS properties. You will learn \nmore about them later."
+    },
+    {
+      "type": "paragraph",
+      "text": "The CSS color property defines the text color to be used."
+    },
+    {
+      "type": "paragraph",
+      "text": "The CSS font-family property defines the font to be used."
+    },
+    {
+      "type": "paragraph",
+      "text": "The CSS font-size property defines the text size to be used."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<!DOCTYPE html>\n <html><head><style>h1 {  color: blue;  font-family: verdana;  font-size: 300%;}p {\n    color: red;  \n font-family: courier;  font-size: 160%;}</style></head><body>\n <h1>This is a heading</h1><p>This is a paragraph.</p></body></html>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CSS Border"
+    },
+    {
+      "type": "paragraph",
+      "text": "The CSS border property defines a border \naround an HTML element."
+    },
+    {
+      "type": "paragraph",
+      "text": "Tip: You can define a border for nearly all HTML elements."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "css",
+          "code": "p {  border: 2px \nsolid powderblue;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CSS Padding"
+    },
+    {
+      "type": "paragraph",
+      "text": "The CSS padding property defines a padding \n(space) between the text and the border."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "css",
+          "code": "p {  border: 2px \nsolid powderblue;  padding: 30px;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CSS Margin"
+    },
+    {
+      "type": "paragraph",
+      "text": "The CSS margin property defines a margin \n(space) outside the border."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "css",
+          "code": "p {  border: 2px \nsolid powderblue;  margin: 50px;\n }"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Link to External CSS"
+    },
+    {
+      "type": "paragraph",
+      "text": "External style sheets can be referenced with a full URL or with a path relative to the current web page."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<link rel=\"stylesheet\" href=\"https://www.w3schools.com/html/styles.css\">"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<link rel=\"stylesheet\" href=\"/html/styles.css\">"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<link rel=\"stylesheet\" href=\"styles.css\">"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "You can read more about file paths in the chapter HTML \nFile Paths."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Chapter Summary"
+    },
+    {
+      "type": "other",
+      "text": "Use the HTML style attribute for inline styling\n  Use the HTML <style> element to define internal CSS\n  Use the HTML <link> element to refer to an external CSS file\n  Use the HTML <head> element to store <style> and <link> elements\n  Use the CSS color property for text colors\n  Use the CSS font-family property for text fonts\n  Use the CSS font-size property for text sizes\n  Use the CSS border property for borders\n  Use the CSS padding property for space inside the border\n  Use the CSS margin property for space outside the border"
+    },
+    {
+      "type": "other",
+      "text": "Tip: You can learn much more about CSS in our CSS Tutorial."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML Style Tags"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Tag",
+          "Description"
+        ],
+        [
+          "<style>",
+          "Defines style information for an HTML document"
+        ],
+        [
+          "<link>",
+          "Defines a link between a document and an external resource"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "For a complete list of all available HTML tags, visit our HTML Tag Reference."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Video: HTML CSS"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Inline - by using the style attribute inside HTML elements",
+        "Internal - by using a <style> element in the <head> section",
+        "External - by using a <link> \n  element to link to an external CSS file"
+      ]
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Use the HTML style attribute for inline styling",
+        "Use the HTML <style> element to define internal CSS",
+        "Use the HTML <link> element to refer to an external CSS file",
+        "Use the HTML <head> element to store <style> and <link> elements",
+        "Use the CSS color property for text colors",
+        "Use the CSS font-family property for text fonts",
+        "Use the CSS font-size property for text sizes",
+        "Use the CSS border property for borders",
+        "Use the CSS padding property for space inside the border",
+        "Use the CSS margin property for space outside the border"
+      ]
+    },
+    {
+      "type": "image",
+      "src": "https://www.w3schools.com/html/images/yt_logo_rgb_dark.png"
+    },
+    {
+      "type": "image",
+      "src": "https://www.w3schools.com/html/images/11_html_css.png"
+    }
+  ]
+}

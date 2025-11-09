@@ -1,0 +1,263 @@
+{
+  "url": "https://www.w3schools.com/css/css_display_visibility.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Layout - The display Property"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "The display property is the most important CSS property for controlling layout."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The display Property"
+    },
+    {
+      "type": "paragraph",
+      "text": "The display property is used to specify how an element is shown on a web page."
+    },
+    {
+      "type": "paragraph",
+      "text": "Every HTML element has a default display value, depending on what type of element it is. The default display value for most elements is block or \ninline."
+    },
+    {
+      "type": "paragraph",
+      "text": "The display property is used to change the default display behavior of HTML elements."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Block-level Elements"
+    },
+    {
+      "type": "paragraph",
+      "text": "A block-level element ALWAYS starts on a new line and takes up the full width available \n(stretches out to the left and right as far as it can)."
+    },
+    {
+      "type": "other",
+      "text": "The <div> element is a block-level element."
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples of block-level elements:"
+    },
+    {
+      "type": "other",
+      "text": "<div>\n<h1> - <h6>\n<p>\n<form>\n<header>\n<footer>\n<section>"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Inline Elements"
+    },
+    {
+      "type": "paragraph",
+      "text": "An inline element DOES NOT start on a new line and only takes up as much width as necessary."
+    },
+    {
+      "type": "paragraph",
+      "text": "This is an inline <span> element \ninside a paragraph."
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples of inline elements:"
+    },
+    {
+      "type": "other",
+      "text": "<span>\n<a>\n<img>"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The display Property Values"
+    },
+    {
+      "type": "paragraph",
+      "text": "The display property has many values:"
+    },
+    {
+      "type": "other",
+      "text": "Value\n    Description\n  \n    \n    inline\n    Displays an element as an inline element\n    \n  \n    block\n    Displays an element as a block element\n    \n  \n    contents\n    Makes the container disappear, making the child elements children of the \n    element the next level up in the DOM\n    \n  \n    flex\n    Displays an element as a block-level flex container\n    \n  \n    grid\n    Displays an element as a block-level grid container\n    \n  \n    inline-block\n    Displays an element as an inline-level block container. The element itself is formatted as an inline \n    element, but you can apply height and width values\n    \n  \n    inline-flex\n    Displays an element as an inline-level flex container\n    \n  \n    inline-grid\n    Displays an element as an inline-level grid container\n    \n  \n    inline-table\n    The element is displayed as an inline-level table\n    \n  \n    list-item\n    Let the element behave like a <li> element\n    \n  \n    run-in\n    Displays an element as either block or inline, depending on context \n  \n    \n    table\n    Let the element behave like a <table> element\n    \n  \n    table-caption\n    Let the element behave like a <caption> element\n    \n  \n    \n      table-column-group\n    Let the element behave like a <colgroup> element\n    \n  \n    table-header-group\n    Let the element behave like a <thead> element\n    \n  \n    table-footer-group\n    Let the element behave like a <tfoot> element\n    \n  \n    table-row-group\n    Let the element behave like a <tbody> element\n    \n  \n    table-cell\n    Let the element behave like a <td> element\n    \n  \n    table-column\n    Let the element behave like a <col> element\n    \n  \n    table-row\n    Let the element behave like a <tr> element\n    \n  \n    none\n    The element is completely removed\n  \n  \n    initial\n    Sets this property to its default value\n    \n  \n    inherit\n    Inherits this property from its parent element"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Display: none;"
+    },
+    {
+      "type": "paragraph",
+      "text": "display: none; is commonly used with JavaScript to hide \nand show elements without deleting and recreating them. Take a look at our last \nexample on this page if you want to know how this can be achieved."
+    },
+    {
+      "type": "paragraph",
+      "text": "The <script> element uses display: none; \nas default."
+    },
+    {
+      "type": "paragraph",
+      "text": "Click to show panel"
+    },
+    {
+      "type": "other",
+      "text": "This panel contains a <div> element, which is hidden by default (display: none;).\n  It is styled with CSS, and we use JavaScript to show it (change it to (display: block;)."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Override The Default Display Value"
+    },
+    {
+      "type": "paragraph",
+      "text": "As mentioned, every element has a default display value. However, you can \noverride this."
+    },
+    {
+      "type": "paragraph",
+      "text": "Changing an inline element to a block element, or vice versa, can be useful for \nmaking the page look a specific way, and still follow the web standards."
+    },
+    {
+      "type": "paragraph",
+      "text": "A common example is making inline <li> elements for horizontal menus:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "li {  display: inline;}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note: Setting the display property of an element only changes how the element is displayed, \nNOT what kind of element it is. So, an inline element with display: block; is not allowed\nto have other block elements inside it."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following example displays <span> elements as block elements:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "span {  display: block;}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The following example displays <a> elements as block elements:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "a {  display: block;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Hide an Element - display:none or visibility:hidden?"
+    },
+    {
+      "type": "other",
+      "text": "display:none\n  \n  Remove\n\nvisibility:hidden\n  \n  Hide\n\nReset\n  \n  Reset All"
+    },
+    {
+      "type": "other",
+      "text": "function removeElement() {\n    document.getElementById(\"imgbox1\").style.display = \"none\";\n}\n\nfunction changeVisibility() {\n    document.getElementById(\"imgbox2\").style.visibility = \"hidden\";\n}\n\nfunction resetElement() {\n    document.getElementById(\"imgbox1\").style.display = \"block\";\n    document.getElementById(\"imgbox2\").style.visibility = \"visible\";\n}"
+    },
+    {
+      "type": "paragraph",
+      "text": "Hiding an element can be done by setting the display property to \nnone. \nThe element will be hidden, and the page will be displayed as if the element is not \nthere:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "h1.hidden {  display: none;}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "visibility:hidden; also hides an element."
+    },
+    {
+      "type": "paragraph",
+      "text": "However, the element will still take up the same space \nas before. The element will be hidden, but still affect the layout:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "h1.hidden {  visibility: hidden;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "More Examples"
+    },
+    {
+      "type": "paragraph",
+      "text": "Differences between display: none; and visibility: hidden;\nThis example demonstrates display: none; versus visibility: hidden;"
+    },
+    {
+      "type": "paragraph",
+      "text": "Showing more display types\nThis example demonstrates some more display types."
+    },
+    {
+      "type": "paragraph",
+      "text": "Using CSS together with JavaScript to show content\nThis example demonstrates how to use CSS and JavaScript to show an element on click."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CSS Display/Visibility Properties"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Property",
+          "Description"
+        ],
+        [
+          "display",
+          "Specifies how an element should be displayed"
+        ],
+        [
+          "visibility",
+          "Specifies whether or not an element should be visible"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

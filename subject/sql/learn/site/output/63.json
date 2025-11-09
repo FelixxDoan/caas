@@ -1,0 +1,172 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_datatypes.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL Data Types for MySQL, SQL Server, and MS Access"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "The data type of a column defines what value the column can hold: \ninteger, character, money, date and time, binary, \nand so on."
+    },
+    {
+      "type": "heading",
+      "text": "SQL Data Types"
+    },
+    {
+      "type": "paragraph",
+      "text": "Each column in a database table is required to have a name and a data type."
+    },
+    {
+      "type": "paragraph",
+      "text": "An SQL developer must decide what type of data that will be stored inside each \ncolumn when creating a table. The data type is a \nguideline for SQL to understand what type of data is expected inside of each \ncolumn, and it also identifies how SQL will interact with the stored data."
+    },
+    {
+      "type": "other",
+      "text": "Note: Data types might have different names in different database.\nAnd even if the name is the same, the size and other details may be different! \nAlways check the \ndocumentation!"
+    },
+    {
+      "type": "heading",
+      "text": "MySQL Data Types (Version 8.0)"
+    },
+    {
+      "type": "paragraph",
+      "text": "In MySQL there are three main data types: string, numeric, and date and time."
+    },
+    {
+      "type": "other",
+      "text": "String Data Types"
+    },
+    {
+      "type": "other",
+      "text": "Data type\n      Description\n    \n    \n      CHAR(size)\n      A FIXED length string (can contain letters, numbers, and special characters). The\n      size parameter specifies the column length in characters - can be \n      from 0 to   255. Default is 1\n    \n    \n      VARCHAR(size)\n      A VARIABLE length string (can contain letters, numbers, and special \n      characters). The size parameter specifies the maximum string \n      length in characters - can be from 0 to 65535\n    \n    \n      BINARY(size)\n      Equal to CHAR(), but stores binary byte strings. The size \n      parameter specifies the column length in bytes. Default is 1\n    \n    \n      VARBINARY(size)\n      Equal to VARCHAR(), but stores binary byte strings. The size \n      parameter specifies the maximum column length in bytes.\n    \n    \n      TINYBLOB\n      For BLOBs (Binary Large Objects). Max length: 255 bytes\n    \n    \n      TINYTEXT\n      Holds a string with a maximum length of 255 characters\n    \n    \n      TEXT(size)\n      Holds a string with a maximum length of 65,535 bytes\n    \n    \n      BLOB(size)\n      For BLOBs (Binary Large Objects). Holds up to 65,535 bytes of data\n    \n    \n      MEDIUMTEXT\n      Holds a string with a maximum length of 16,777,215 characters\n    \n    \n      MEDIUMBLOB\n      For BLOBs (Binary Large Objects). Holds up to 16,777,215 bytes of data\n    \n    \n      LONGTEXT\n      Holds a string with a maximum length of 4,294,967,295 characters\n    \n    \n      LONGBLOB\n      For BLOBs (Binary Large Objects). Holds up to 4,294,967,295 bytes of data\n    \n    \n      ENUM(val1, val2, val3, ...)\n      A string object that can have only one value, chosen from a list of possible values. You can list up to 65535 values in an ENUM list. If a value is inserted that is not in the list, a   blank value will be inserted. \n      The values are sorted in the order you enter them\n    \n  \n      SET(val1, val2, val3, ...)\n      A string object that can have 0 or more values, chosen from a list of \n      possible values. You can list up to 64 values in a SET list"
+    },
+    {
+      "type": "other",
+      "text": "Numeric Data Types"
+    },
+    {
+      "type": "other",
+      "text": "Data type\n      Description\n    \n    \n      BIT(size)\n      A bit-value type. The number of bits per value is specified in size. \n      The size parameter can hold a value from 1 to 64. The default \n      value for size is 1.\n    \n    \n      TINYINT(size)\n      A very small integer. Signed range is from -128 to 127. Unsigned range \n      is from 0 to 255. The size parameter specifies the maximum \n      display width (which is 255)\n    \n    \n      BOOL\n      Zero is considered as false, nonzero values are considered as true. \n    \n    \n      BOOLEAN\n      Equal to BOOL\n    \n    \n      SMALLINT(size)\n      A small integer. Signed range is from -32768 to 32767. Unsigned range \n      is from 0 to 65535. The size parameter specifies the maximum \n      display width (which is 255)\n    \n    \n      MEDIUMINT(size)\n      A medium integer. Signed range is from -8388608 to 8388607. Unsigned \n      range is from 0 to 16777215. The size parameter specifies the \n      maximum display width (which is 255)\n    \n    \n      INT(size)\n      A medium integer. Signed range is from -2147483648 to 2147483647. \n      Unsigned range is from 0 to 4294967295. The size parameter \n      specifies the maximum display width (which is 255)\n    \n    \n      INTEGER(size)\n      Equal to INT(size)\n    \n    \n      BIGINT(size)\n      A large integer. Signed range is from -9223372036854775808 to \n      9223372036854775807. Unsigned range is from 0 to 18446744073709551615. The\n      size parameter specifies the maximum display width (which is 255)\n    \n    \n      FLOAT(size, d)\n      A floating point number. The total number of digits is specified in \n      size. The   number of digits after the decimal point is specified \n      in the d parameter. This syntax is deprecated in MySQL 8.0.17, \n      and it will be removed in future MySQL versions\n    \n    \n      FLOAT(p)\n      A floating point number. MySQL uses the p value to determine \n      whether to use FLOAT or DOUBLE for the resulting data type. If p \n      is from 0 to 24, the data type becomes FLOAT(). If p is from 25 to \n      53, the data type becomes DOUBLE()\n    \n    \n      DOUBLE(size, d)\n      A normal-size floating point number. The total number of digits is specified in \n      size. The   number of digits after the decimal point is specified \n      in the d parameter\n    \n    \n      DOUBLE PRECISION(size, d)\n       \n    \n    \n      DECIMAL(size, d)\n      An exact fixed-point number. The   total number of digits is specified in \n      size. The   number of digits after the decimal point is specified \n      in the d parameter. The maximum number for size is 65. \n      The maximum number for d is 30. The default value for size \n      is 10. The default value for d is 0.\n    \n    \n      DEC(size, d)\n      Equal to DECIMAL(size,d)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Note: All the numeric data types may have an extra option: UNSIGNED \nor ZEROFILL. If you add the UNSIGNED option, MySQL disallows negative values for \nthe column. If you add the ZEROFILL option, MySQL automatically also adds the \nUNSIGNED attribute to the column."
+    },
+    {
+      "type": "other",
+      "text": "Date and Time Data Types"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Data type",
+          "Description"
+        ],
+        [
+          "DATE",
+          "A date. Format: YYYY-MM-DD. The supported range is from '1000-01-01' to '9999-12-31'"
+        ],
+        [
+          "DATETIME(fsp)",
+          "A date and time combination. Format: YYYY-MM-DD hh:mm:ss. The supported range is from '1000-01-01 00:00:00' to '9999-12-31 23:59:59'. \n      Adding DEFAULT and ON UPDATE in the column definition to get automatic \n      initialization and updating to the current date and time"
+        ],
+        [
+          "TIMESTAMP(fsp)",
+          "A timestamp. TIMESTAMP values are stored as the number of seconds since the Unix epoch ('1970-01-01 00:00:00' UTC). Format: YYYY-MM-DD   \n      hh:mm:ss. The supported range is from '1970-01-01 00:00:01'   UTC to '2038-01-09 03:14:07' UTC. \n      Automatic initialization and updating to the current date and time can be \n      specified using DEFAULT CURRENT_TIMESTAMP and ON UPDATE CURRENT_TIMESTAMP \n      in the column definition"
+        ],
+        [
+          "TIME(fsp)",
+          "A time. Format: hh:mm:ss. The supported range is from '-838:59:59' to '838:59:59'"
+        ],
+        [
+          "YEAR",
+          "A year in four-digit format. Values allowed in four-digit format: 1901 to 2155, and 0000.\n      MySQL 8.0 does not support year in two-digit format."
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "MS SQL Server Data Types"
+    },
+    {
+      "type": "other",
+      "text": "String Data Types"
+    },
+    {
+      "type": "other",
+      "text": "Data type\n      Description\n      Max char length\n      Storage\n    \n    \n      char(n)\n      Fixed-length non-Unicode character data (n must be between 1 and 8000)\n      8,000\n      n bytes (uses one byte for each character)\n    \n    \n      varchar(n)\n      Variable-length non-Unicode character data (n must be between 1 and 8000)\n      8,000\n      n bytes + 2 bytes\n    \n    \n      varchar(max)\n      Variable-length non-Unicode character data\n       \n      up to 2 GB\n    \n    \n      nchar(n)\n      Fixed-length Unicode character data (n must be between 1 and 4000)\n      4,000\n       2 * n bytes (uses two bytes for each character)\n    \n    \n      nvarchar(n)\n      Variable-length Unicode character data (n must be between 1 and 4000)\n      4,000\n      2 * n bytes + 2 bytes (uses two bytes for each character)\n    \n    \n      nvarchar(max)\n      Variable-length Unicode character data\n       \n      up to 2 GB\n    \n    \n      binary(n)\n      Fixed-length binary data (n must be between 1 and 8000)\n      8,000\n      n bytes\n    \n    \n      varbinary(n)\n      Variable-length binary data (n must be between 1 and 8000)\n      8,000\n      actual length of data entered + 2 bytes\n    \n    \n      varbinary(max)\n      Variable-length binary data\n      2GB"
+    },
+    {
+      "type": "other",
+      "text": "Numeric Data Types"
+    },
+    {
+      "type": "other",
+      "text": "Data type\n      Description\n      Storage\n    \n    \n      bit\n      Integer that can be 0, 1, or NULL\n       \n    \n    \n      tinyint\n      Allows whole numbers from 0 to 255\n      1 byte\n    \n    \n      smallint\n      Allows whole numbers between -32,768 and 32,767\n      2 bytes\n    \n    \n      int\n      Allows whole numbers between -2,147,483,648 and 2,147,483,647 \n      4 bytes\n    \n    \n      bigint\n      Allows whole numbers between -9,223,372,036,854,775,808 and   9,223,372,036,854,775,807 \n      8 bytes\n    \n    \n      decimal(p,s)\n      Fixed precision and scale numbers.\n      Allows numbers from -10^38 +1 to 10^38 –1.\n  The p parameter indicates the maximum total number of digits that can  be stored (both to the left and to the right of the decimal point). p  must be a value from 1 to 38. Default is 18.\n  The s parameter indicates the maximum number of digits stored to the  right of the decimal point. s must be a value from 0 to p. Default value  is 0\n      5-17 bytes\n    \n    \n      numeric(p,s)\n      Fixed precision and scale numbers.\n      Allows numbers from -10^38 +1 to 10^38 –1.\n  The p parameter indicates the maximum total number of digits that can  be stored (both to the left and to the right of the decimal point). p  must be a value from 1 to 38. Default is 18.\n  The s parameter indicates the maximum number of digits stored to the  right of the decimal point. s must be a value from 0 to p. Default value  is 0\n      5-17 bytes\n    \n    \n      smallmoney\n      Monetary data from -214,748.3648 to 214,748.3647 \n      4 bytes\n    \n    \n      money\n      Monetary data from -922,337,203,685,477.5808 to   922,337,203,685,477.5807\n      8 bytes\n    \n    \n      float(n)\n      Floating precision number data from -1.79E + 308 to 1.79E + 308.The   n parameter indicates whether the field should hold 4 or 8 bytes.   float(24) holds a 4-byte field and float(53) holds an 8-byte field.   Default value of n is 53.\n      4 or 8 bytes\n    \n    \n      real\n      Floating precision number data from -3.40E + 38 to 3.40E + 38\n      4 bytes"
+    },
+    {
+      "type": "other",
+      "text": "Date and Time Data Types"
+    },
+    {
+      "type": "other",
+      "text": "Data type\n      Description\n      Storage\n    \n    \n      datetime\n      From January 1, 1753 to December 31, 9999 with an accuracy of 3.33   milliseconds\n      8 bytes\n    \n    \n      datetime2\n      From January 1, 0001 to December 31, 9999 with an accuracy of 100   nanoseconds\n      6-8 bytes\n    \n    \n      smalldatetime\n      From January 1, 1900 to June 6, 2079 with an accuracy of 1 minute\n      4 bytes\n    \n    \n      date\n      Store a date only. From January 1, 0001 to December 31, 9999\n      3 bytes\n    \n    \n      time\n      Store a time only to an accuracy of 100 nanoseconds\n      3-5 bytes\n    \n    \n      datetimeoffset\n      The same as datetime2 with the addition of a time zone offset\n      8-10 bytes\n    \n    \n      timestamp\n      Stores a unique number that gets updated every time a row gets created   or modified. The timestamp value is based upon an internal clock and does   not correspond to real time. Each table may have only one timestamp   variable"
+    },
+    {
+      "type": "other",
+      "text": "Other Data Types"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Data type",
+          "Description"
+        ],
+        [
+          "sql_variant",
+          "Stores up to 8,000 bytes of data of various data types, except text,   ntext, and timestamp"
+        ],
+        [
+          "uniqueidentifier",
+          "Stores a globally unique identifier (GUID)"
+        ],
+        [
+          "xml",
+          "Stores XML formatted data. Maximum 2GB"
+        ],
+        [
+          "cursor",
+          "Stores a reference to a cursor used for database operations"
+        ],
+        [
+          "table",
+          "Stores a result-set for later processing"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "MS Access Data Types"
+    },
+    {
+      "type": "other",
+      "text": "Data type\n      Description\n      Storage\n    \n    \n      Text\n      Use for text or combinations of text and numbers. 255 characters maximum\n       \n    \n    \n      Memo\n      Memo is used for larger amounts of text. Stores up to 65,536 characters. Note: You cannot sort a memo field. However, they are   searchable\n       \n    \n    \n      Byte\n      Allows whole numbers from 0 to 255\n      1 byte\n    \n    \n      Integer\n      Allows whole numbers between -32,768 and 32,767\n      2 bytes\n    \n    \n      Long\n      Allows whole numbers between -2,147,483,648 and 2,147,483,647\n      4 bytes\n    \n    \n      Single\n      Single precision floating-point. Will handle most decimals \n      4 bytes\n    \n    \n      Double\n      Double precision floating-point. Will handle most decimals\n      8 bytes\n    \n    \n      Currency\n      Use for currency. Holds up to 15 digits of whole dollars, plus 4 decimal places. Tip: You can choose which country's currency to use\n      8 bytes\n    \n    \n      AutoNumber\n      AutoNumber fields automatically give each record its own number, usually starting at 1\n      4 bytes\n    \n    \n      Date/Time\n      Use for dates and times\n      8 bytes\n    \n    \n      Yes/No\n      A logical field can be displayed as Yes/No, True/False, or On/Off. In code, use the constants True and False (equivalent to -1 and 0). Note:   Null values are not allowed in Yes/No fields\n      1 bit\n    \n    \n      Ole Object\n      Can store pictures, audio, video, or other BLOBs (Binary Large Objects)\n      up to 1GB\n    \n    \n      Hyperlink\n      Contain links to other files, including web pages\n       \n    \n    \n      Lookup Wizard\n      Let you type a list of options, which can then be chosen from a drop-down list\n      4 bytes"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

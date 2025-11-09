@@ -1,0 +1,34 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_ref_add.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL ADD Keyword"
+    },
+    {
+      "type": "other",
+      "text": "❮ SQL Keywords Reference\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "text": "ADD"
+    },
+    {
+      "type": "paragraph",
+      "text": "The ADD command is used to add a column in an \nexisting table."
+    },
+    {
+      "type": "other",
+      "text": "Example\nAdd an \"Email\" column to the \"Customers\" table:\n\n  ALTER TABLE CustomersADD Email varchar(255);"
+    },
+    {
+      "type": "other",
+      "text": "❮ SQL Keywords Reference\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

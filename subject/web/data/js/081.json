@@ -1,0 +1,162 @@
+{
+  "url": "https://www.w3schools.com/js/js_2024.asp",
+  "title": "ECMAScript 2024",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "ECMAScript 2024"
+    },
+    {
+      "type": "other",
+      "text": "New Features in JavaScript 2024\n\nObject.groupBy()\nMap.groupBy()\nString isWellFormed()\nString toWellFormed()\nPromise.withResolvers()\nAtomics.waitAsync"
+    },
+    {
+      "type": "other",
+      "text": "Warning\nThese features are relatively new.\nOlder browsers may need an alternative code (Polyfill)"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Object.groupBy()"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create an Array\nconst fruits = [\n  {name:\"apples\", quantity:300},\n  {name:\"bananas\", quantity:500},\n  {name:\"oranges\", quantity:200},\n  {name:\"kiwi\", quantity:150}\n];\n\n// Callback function to Group Elements\nfunction myCallback({ quantity }) {\n  return quantity > 200 ? \"ok\" : \"low\";\n}\n\n// Group by Quantity\nconst result = Object.groupBy(fruits, myCallback);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Description"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Object.groupBy() method groups elements of an object\naccording to string values returned from a callback function."
+    },
+    {
+      "type": "paragraph",
+      "text": "The Object.groupBy() method return a new object."
+    },
+    {
+      "type": "paragraph",
+      "text": "The Object.groupBy() method does not change the original object."
+    },
+    {
+      "type": "other",
+      "text": "Note:\nThe elements in the original and in the returned object are the same.\nFuture changes will be reflected in both the original and in the returned object."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Map.groupBy()"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create a Map\nconst fruits = [\n  {name:\"apples\", quantity:300},\n  {name:\"bananas\", quantity:500},\n  {name:\"oranges\", quantity:200},\n  {name:\"kiwi\", quantity:150}\n];\n\n// Callback function to Group Elements\nfunction myCallback({ quantity }) {\n  return quantity > 200 ? \"ok\" : \"low\";\n}\n\n// Group by Quantity\nconst result = Map.groupBy(fruits, myCallback);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Description"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Map.groupBy() method groups elements of a map\naccording to string values returned from a callback function."
+    },
+    {
+      "type": "paragraph",
+      "text": "The Map.groupBy() method returns a new map."
+    },
+    {
+      "type": "paragraph",
+      "text": "The Map.groupBy() method does not change the original object."
+    },
+    {
+      "type": "other",
+      "text": "Note:\nThe elements in the original and in the returned object are the same.\nFuture changes will be reflected in both the original and in the returned object."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Object.groupBy() vs Map.groupBy()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The difference between Object.groupBy() and Map.groupBy() is:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Object.groupBy() groups elements into a JavaScript object."
+    },
+    {
+      "type": "paragraph",
+      "text": "Map.groupBy() groups elements into a Map object."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript String isWellFormed()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The isWellFormed() method returns true\nif a string is well formed."
+    },
+    {
+      "type": "paragraph",
+      "text": "Otherwise it returns false."
+    },
+    {
+      "type": "paragraph",
+      "text": "A string is not well formed if it contains lone surrogates."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"Hello world!\";\nlet result = text.isWellFormed();"
+        },
+        {
+          "language": "unknown",
+          "code": "let text = \"Hello World \\uD800\";\nlet result = text.isWellFormed();"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Lone Surrogates\nA lone surrogate is a Unicode surrogate code point that is not part of a valid surrogate pair\nused to represent characters in UTF-16 encoding."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript String toWellFormed()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The String method toWellFormed()\nreturns a new string where all \"lone surrogates\" are replaced with the Unicode replacement character (U+FFFD)."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"Hello World \\uD800\";\nlet result = text.toWellFormed();"
+        }
+      ]
+    }
+  ]
+}

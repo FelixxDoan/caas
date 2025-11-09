@@ -1,0 +1,50 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_ref_set.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL SET Keyword"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "text": "SET"
+    },
+    {
+      "type": "paragraph",
+      "text": "The SET command is used with UPDATE to specify which columns and values that should be updated \nin a table."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL updates the first customer (CustomerID = 1) with a new ContactName and \na new City:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n UPDATE Customers\n SET ContactName = 'Alfred Schmidt', City= 'Frankfurt'\n WHERE CustomerID = 1;"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL will \nupdate the \"ContactName\" field to \"Juan\" for all records where Country is \"Mexico\":"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\nUPDATE Customers\nSET ContactName='Juan'\nWHERE Country='Mexico';"
+    },
+    {
+      "type": "other",
+      "text": "Note: Be careful when updating records in a table! Notice the WHERE clause in the \nUPDATE statement.\nThe WHERE clause specifies which record(s) that should be updated. If \nyou omit the WHERE clause, all records in the table will be updated!"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

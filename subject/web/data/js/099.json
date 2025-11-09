@@ -1,0 +1,38 @@
+{
+  "url": "https://www.w3schools.com/js/js_regexp_methods.asp",
+  "title": "RegExp Methods",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "RegExp Methods"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Complete RexExp Reference"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Revised July 2025"
+    },
+    {
+      "type": "other",
+      "text": "Name\n  Description\n\n\n  compile()\n  Compiles a regular expression (Deprecated)\n\n\n  constructor\n  Returns the function that created the RegExp prototype\n\n\n  dotAll\n  Returns true if the s flag is set in the expression(new in 2018)\n\n\n  escape()\n  Returns a string where characters that belongs to the regular expression syntax are escaped(new in 2025)\n\n\n  exec()\n  Returns a result array for a matches in a string\n\n\n  flags\n  Returns the modifiers set in the expression(new in 2015)\n\n\n  global\n  Returns true if the g flag is set in the expression\n\n\n  hasIndices\n  Returns true if the d flag is set (new in 2022)\n\n\n  ignoreCase\n  Returns true if the i flag is set\n\n\n  lastIndex\n  Specifies the index at which to start the next match\n\n\n  multiline\n  Returns true if the m modifier is set\n\n\n  source\n  Returns the text of the RegExp pattern\n\n\n  sticky\n  Returns true if the y flag is set(new in 2015)\n\n\n  test()\n  Tests for a match in a string. Returns true or false\n\n\n  toString()\n  Returns the string value of the regular expression\n\n\n  unicode\n  Returns true if the u flag is set(new in 2018)\n\n\n  unicodeSets\n  Returns true if the v flag is set(new in 2023)"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "RegExp String Methods"
+    },
+    {
+      "type": "other",
+      "text": "MethodDescription \nmatch(regexp)\nReturns an Array of results\nmatchAll(regexp)\nReturns an Iterator of results\nreplace(regexp, s)\nReturns a new String\nreplaceAll(regexp, s)\nReturns a new String\nsearch(regexp)\nReturns the index of the first match\nsplit(regexp)\nReturns an Array of results"
+    },
+    {
+      "type": "other",
+      "text": "See Also:\nJavaScript RegExp Tutorial\nJavaScript RegExp Flags\nJavaScript RegExp Character Classes\nJavaScript RegExp Meta Characters\nJavaScript RegExp Assertions\nJavaScript RegExp Quantifiers\nJavaScript RegExp Patterns\nJavaScript RegExp Objects"
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "url": "https://www.w3schools.com/css/css_background_image.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Background Image"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CSS background-image"
+    },
+    {
+      "type": "paragraph",
+      "text": "The background-image property specifies an image to use as the background of an element."
+    },
+    {
+      "type": "paragraph",
+      "text": "By default, the image is repeated so it covers the entire element."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "body {  background-image: url(\"paper.gif\");}"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "body {  background-image: url(\"bgdesert.jpg\");}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note: When using a background image, use an image that does not disturb the text."
+    },
+    {
+      "type": "paragraph",
+      "text": "The background image can also be set for specific elements, like the <p> element:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "p {  background-image: url(\"paper.gif\");}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The CSS Background Image Property"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Property",
+          "Description"
+        ],
+        [
+          "background-image",
+          "Sets the background image for an element"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Video: CSS Background Images"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

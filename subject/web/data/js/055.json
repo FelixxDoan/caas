@@ -1,0 +1,80 @@
+{
+  "url": "https://www.w3schools.com/js/js_api_intro.asp",
+  "title": "Web APIs - Introduction",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Web APIs - Introduction"
+    },
+    {
+      "type": "other",
+      "text": "A Web API is a developer's dream.\n\nIt can extend the functionality of the browser\nIt can greatly simplify complex functions\nIt can provide easy syntax to complex code"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What is Web API?"
+    },
+    {
+      "type": "paragraph",
+      "text": "API stands for Application Programming Interface."
+    },
+    {
+      "type": "paragraph",
+      "text": "A Web API is an application programming interface for the Web."
+    },
+    {
+      "type": "paragraph",
+      "text": "A Browser API can extend the functionality of a web browser."
+    },
+    {
+      "type": "paragraph",
+      "text": "A Server API can extend the functionality of a web server."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Browser APIs"
+    },
+    {
+      "type": "paragraph",
+      "text": "All browsers have a set of built-in Web APIs \nto support complex operations, and to help accessing data."
+    },
+    {
+      "type": "paragraph",
+      "text": "For example, the Geolocation API can return the coordinates of where the browser is located."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const myElement = document.getElementById(\"demo\");\nfunction getLocation() {\n  if (navigator.geolocation) {\n    navigator.geolocation.getCurrentPosition(showPosition);\n  } else {     myElement.innerHTML = \"Geolocation is not supported by this browser.\";\n  }\n}\nfunction showPosition(position) {\n  myElement.innerHTML = \"Latitude: \" + position.coords.latitude + \n  \"<br>Longitude: \" + position.coords.longitude; }"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Third Party APIs"
+    },
+    {
+      "type": "paragraph",
+      "text": "Third party APIs are not built into your browser."
+    },
+    {
+      "type": "paragraph",
+      "text": "To use these APIs, you will have to download the code from the Web."
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples:"
+    },
+    {
+      "type": "other",
+      "text": "YouTube API - Allows you to display videos on a web site.\nTwitter API - Allows you to display Tweets on a web site.\nFacebook API - Allows you to display Facebook info on a web site."
+    }
+  ]
+}

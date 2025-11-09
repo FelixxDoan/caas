@@ -1,0 +1,184 @@
+{
+  "url": "https://www.w3schools.com/css/css_link.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Links"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "With CSS, links can be styled in many different ways."
+    },
+    {
+      "type": "other",
+      "text": "Text Link"
+    },
+    {
+      "type": "other",
+      "text": "Text Link"
+    },
+    {
+      "type": "other",
+      "text": "Link Button"
+    },
+    {
+      "type": "other",
+      "text": "Link Button"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Styling Links"
+    },
+    {
+      "type": "paragraph",
+      "text": "Links can be styled with any CSS property (e.g. color, font-family, \nbackground, etc.)."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "a {  color: hotpink;}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "In addition, links can be styled \ndifferently depending on what state they are in."
+    },
+    {
+      "type": "paragraph",
+      "text": "The four links states are:"
+    },
+    {
+      "type": "other",
+      "text": "a:link - a normal, unvisited link\na:visited - a link the user has visited\na:hover - a link when the user mouses over it\na:active - a link the moment it is clicked"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "/* unvisited link */a:link {  color: red;}/* visited \nlink */a:visited {  color: green;}/* mouse over link */\na:hover {  color: hotpink;}/* selected link */a:active {\n   \ncolor: blue;}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "When setting the style for several link states, there are some order rules:"
+    },
+    {
+      "type": "other",
+      "text": "a:hover MUST come after a:link and a:visited\na:active MUST come after a:hover"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Text Decoration"
+    },
+    {
+      "type": "paragraph",
+      "text": "The text-decoration property is mostly used to remove underlines from links:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "a:link {  text-decoration: none;}\na:visited {  text-decoration: none;}\na:hover {  text-decoration: underline;}\na:active {  text-decoration: underline;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Background Color"
+    },
+    {
+      "type": "paragraph",
+      "text": "The background-color property can be used to specify a background color for links:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "a:link {  background-color: yellow;}\na:visited {  background-color: cyan;}\na:hover {  background-color: lightgreen;}\na:active {  background-color: hotpink;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Link Buttons"
+    },
+    {
+      "type": "paragraph",
+      "text": "This example demonstrates a more advanced example where we combine several CSS properties to display links as boxes/buttons:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "a:link, a:visited {  background-color: #f44336;  \ncolor: white;  padding: 14px 25px;  text-align: center;   text-decoration: none;  display: inline-block;}a:hover, a:active {  background-color: red;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "More Examples"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "a.one:link {color: #ff0000;}a.one:visited {color: #0000ff;}a.one:hover \n  {color: #ffcc00;}a.two:link {color: #ff0000;}a.two:visited {color: \n  #0000ff;}a.two:hover {font-size: 150%;}a.three:link {color: \n  #ff0000;}a.three:visited {color: #0000ff;}a.three:hover {background: \n  #66ff66;}a.four:link {color: #ff0000;}a.four:visited {color: \n  #0000ff;}a.four:hover {font-family: monospace;}a.five:link {color: \n  #ff0000; text-decoration: none;}a.five:visited {color: #0000ff; \n  text-decoration: none;}a.five:hover {text-decoration: underline;}"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "a:link, a:visited {  background-color: white;  color: black;  \n  border: 2px solid green;  padding: 10px 20px;  text-align: \n  center;  text-decoration: none;  display: inline-block;}a:hover, a:active \n  {  background-color: green;  color: white;}"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<span style=\"cursor: auto\">auto</span><br><span style=\"cursor: \n  crosshair\">crosshair</span><br><span style=\"cursor: \n  default\">default</span><br><span style=\"cursor: e-resize\">e-resize</span><br>\n  <span style=\"cursor: help\">help</span><br><span style=\"cursor: \n  move\">move</span><br><span style=\"cursor: n-resize\">n-resize</span><br>\n  <span style=\"cursor: ne-resize\">ne-resize</span><br><span style=\"cursor: \n  nw-resize\">nw-resize</span><br><span style=\"cursor: \n  pointer\">pointer</span><br><span style=\"cursor: progress\">progress</span><br>\n  <span style=\"cursor: s-resize\">s-resize</span><br><span style=\"cursor: \n  se-resize\">se-resize</span><br><span style=\"cursor: sw-resize\">sw-resize</span><br>\n  <span style=\"cursor: text\">text</span><br><span style=\"cursor: \n  w-resize\">w-resize</span><br><span style=\"cursor: wait\">wait</span>"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

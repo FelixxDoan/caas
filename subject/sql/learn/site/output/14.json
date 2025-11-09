@@ -1,0 +1,198 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_top.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL TOP, LIMIT, FETCH FIRST or ROWNUM Clause"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "heading",
+      "text": "The SQL SELECT TOP Clause"
+    },
+    {
+      "type": "paragraph",
+      "text": "The SELECT TOP clause is used to specify the number of records to return."
+    },
+    {
+      "type": "paragraph",
+      "text": "The SELECT TOP clause is useful on large tables with thousands of \nrecords. Returning a large number of records can impact performance."
+    },
+    {
+      "type": "other",
+      "text": "Example\nSelect only the first 3 records of the Customers table:\n\n SELECT TOP 3 * FROM Customers;\n\n\n Try it Yourself »"
+    },
+    {
+      "type": "other",
+      "text": "Note: Not all database systems support the \nSELECT TOP clause. MySQL \nsupports the LIMIT clause to select a limited number of records, while Oracle uses \nFETCH FIRST n ROWS ONLY and ROWNUM."
+    },
+    {
+      "type": "paragraph",
+      "text": "SQL Server / MS Access Syntax:"
+    },
+    {
+      "type": "other",
+      "text": "SELECT TOP number|percent column_name(s)\nFROM table_nameWHERE condition;"
+    },
+    {
+      "type": "paragraph",
+      "text": "MySQL Syntax:"
+    },
+    {
+      "type": "other",
+      "text": "SELECT column_name(s)\nFROM table_nameWHERE condition\nLIMIT number;"
+    },
+    {
+      "type": "paragraph",
+      "text": "Oracle 12 Syntax:"
+    },
+    {
+      "type": "other",
+      "text": "SELECT column_name(s)\nFROM table_nameORDER BY \n  column_name(s)\n  FETCH FIRST number ROWS ONLY;"
+    },
+    {
+      "type": "paragraph",
+      "text": "Older Oracle Syntax:"
+    },
+    {
+      "type": "other",
+      "text": "SELECT column_name(s)\nFROM table_name\nWHERE ROWNUM <= number;"
+    },
+    {
+      "type": "paragraph",
+      "text": "Older Oracle Syntax (with ORDER BY):"
+    },
+    {
+      "type": "other",
+      "text": "SELECT *FROM (SELECT column_name(s) FROM table_name \n  ORDER BY column_name(s))\nWHERE ROWNUM <= number;"
+    },
+    {
+      "type": "heading",
+      "text": "Demo Database"
+    },
+    {
+      "type": "paragraph",
+      "text": "Below is a selection from the Customers table used in the examples:"
+    },
+    {
+      "type": "other",
+      "text": "CustomerID\n    CustomerName\n    ContactName\n    Address\n    City\n    PostalCode\n    Country\n  \n  \n    1\n    Alfreds Futterkiste\n    Maria Anders\n    Obere Str. 57\n    Berlin\n    12209\n    Germany\n  \n  \n    2\n    Ana Trujillo Emparedados y helados\n    Ana Trujillo\n    Avda. de la Constitución 2222\n    México D.F.\n    05021\n    Mexico\n  \n  \n    3\n    Antonio Moreno Taquería\n    Antonio Moreno\n    Mataderos 2312\n    México D.F.\n    05023\n    Mexico\n  \n  \n    4\n    Around the Horn\n    Thomas Hardy\n    120 Hanover Sq.\n    London\n    WA1 1DP\n    UK\n  \n  \n    5\n    Berglunds snabbköp\n    Christina Berglund\n    Berguvsvägen 8\n    Luleå\n    S-958 22\n    Sweden"
+    },
+    {
+      "type": "heading",
+      "text": "LIMIT"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement shows the equivalent example for MySQL:"
+    },
+    {
+      "type": "other",
+      "text": "Example\nSelect the first 3 records of the Customers table:\n\n SELECT * FROM CustomersLIMIT 3;\n\n Try it Yourself »"
+    },
+    {
+      "type": "heading",
+      "text": "FETCH FIRST"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement shows the equivalent example for \nOracle:"
+    },
+    {
+      "type": "other",
+      "text": "Example\nSelect the first 3 records of the Customers table:\n\nSELECT * FROM CustomersFETCH FIRST 3 ROWS ONLY;"
+    },
+    {
+      "type": "heading",
+      "text": "SQL TOP PERCENT Example"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement selects the first 50% of the records from the \n\"Customers\" table (for SQL Server/MS Access):"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n SELECT TOP 50 PERCENT * FROM Customers;\n\n\n Try it Yourself »"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement shows the equivalent example for \nOracle:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\nSELECT * FROM CustomersFETCH FIRST 50 PERCENT ROWS ONLY;"
+    },
+    {
+      "type": "heading",
+      "text": "ADD a WHERE CLAUSE"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement selects the first three records from the \"Customers\" table, \nwhere the country is \"Germany\" (for SQL Server/MS Access):"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\nSELECT TOP 3 * FROM CustomersWHERE Country='Germany';\n\n\n Try it Yourself »"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement shows the equivalent example for MySQL:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n SELECT * FROM CustomersWHERE Country='Germany'LIMIT 3;\n\n Try it Yourself »"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement shows the equivalent example for \nOracle:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\nSELECT * FROM CustomersWHERE Country='Germany'FETCH FIRST 3 ROWS ONLY;"
+    },
+    {
+      "type": "heading",
+      "text": "ADD the ORDER BY Keyword"
+    },
+    {
+      "type": "paragraph",
+      "text": "Add the ORDER BY keyword when you want to sort the result, and return the first 3 records of the sorted result."
+    },
+    {
+      "type": "paragraph",
+      "text": "For SQL Server and MS Access:"
+    },
+    {
+      "type": "other",
+      "text": "Example\nSort the result reverse alphabetically by CustomerName, and return the first 3 records:\n\nSELECT TOP 3 * FROM CustomersORDER BY CustomerName DESC;\n\n\n Try it Yourself »"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement shows the equivalent example for MySQL:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n SELECT * FROM CustomersORDER BY CustomerName DESCLIMIT 3;\n\n Try it Yourself »"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement shows the equivalent example for \nOracle:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\nSELECT * FROM CustomersORDER BY CustomerName DESCFETCH FIRST 3 ROWS ONLY;"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

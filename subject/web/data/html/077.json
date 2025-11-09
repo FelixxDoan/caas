@@ -1,0 +1,202 @@
+{
+  "url": "https://www.w3schools.com/html/html_table_headers.asp",
+  "title": "HTML ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "HTML Table Headers"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "HTML tables can have headers for each column or row, or for many columns/rows."
+    },
+    {
+      "type": "other",
+      "text": "EMIL\nTOBIAS\nLINUS\n\n\n \n \n \n\n\n \n \n \n\n\n \n \n \n\n\n \n \n \n\n\n \n \n \n\n\n\n\n8:00\n \n \n\n\n9:00\n \n \n\n\n10:00\n \n \n\n\n11:00\n \n \n\n\n12:00\n \n \n\n\n13:00\n \n \n\n\n\n\n\nMON\nTUE\nWED\nTHU\nFRI\n\n\n8:00\n \n \n \n \n \n\n\n9:00\n \n \n \n \n \n\n\n10:00\n \n \n \n \n \n\n\n11:00\n \n \n \n \n \n\n\n12:00\n \n \n \n \n \n\n\n\n\nDECEMBER"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML Table Headers"
+    },
+    {
+      "type": "paragraph",
+      "text": "Table headers are defined with th elements. \nEach th element represents a table cell."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<table>  <tr>    <th>Firstname</th>    \n  <th>Lastname</th>    <th>Age</th>  </tr>  \n  <tr>    <td>Jill</td>    <td>Smith</td>    \n  <td>50</td>  </tr>  <tr>    <td>Eve</td>    \n  <td>Jackson</td>    <td>94</td>  </tr></table>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Vertical Table Headers"
+    },
+    {
+      "type": "paragraph",
+      "text": "To use the first column as table headers, define the first cell in each row as a \n<th> element:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<table>  <tr>    <th>Firstname</th>    \n  <td>Jill</td>    <td>Eve</td>  </tr>  \n  <tr>    \n  <th>Lastname</th>    <td>Smith</td>    \n  <td>Jackson</td>  </tr>  <tr>    <th>Age</th>    <td>94</td>    \n  <td>50</td>  </tr></table>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Align Table Headers"
+    },
+    {
+      "type": "paragraph",
+      "text": "By default, table headers are bold and centered:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Firstname",
+          "Lastname",
+          "Age"
+        ],
+        [
+          "Jill",
+          "Smith",
+          "50"
+        ],
+        [
+          "Eve",
+          "Jackson",
+          "94"
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "To left-align the table headers, use the CSS text-align property:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "css",
+          "code": "th {  text-align: left;\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Header for Multiple Columns"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can have a header that spans over two or more columns."
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Name",
+          "Age"
+        ],
+        [
+          "Jill",
+          "Smith",
+          "50"
+        ],
+        [
+          "Eve",
+          "Jackson",
+          "94"
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "To do this, use the colspan attribute on the \n<th> element:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<table>  <tr>    <th colspan=\"2\">Name</th>    <th>Age</th>  </tr>  \n  <tr>    <td>Jill</td>    <td>Smith</td>    \n  <td>50</td>  </tr>  <tr>    <td>Eve</td>    \n  <td>Jackson</td>    <td>94</td>  </tr></table>"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "You will learn more about colspan and rowspan in the Table colspan & rowspan chapter."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Table Caption"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can add a caption that serves as a heading for the entire table."
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Month",
+          "Savings"
+        ],
+        [
+          "January",
+          "$100"
+        ],
+        [
+          "February",
+          "$50"
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "To add a caption to a table, use the <caption> tag:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<table style=\"width:100%\">  <caption>Monthly savings</caption>  <tr>    <th>Month</th>    <th>Savings</th>  </tr>  <tr>    <td>January</td>    <td>$100</td>  </tr>  <tr>    <td>February</td>    <td>$50</td>  </tr>\n </table>"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note: The <caption> tag \nshould be inserted immediately after the <table> tag."
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

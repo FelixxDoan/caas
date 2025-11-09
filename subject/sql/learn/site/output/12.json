@@ -1,0 +1,118 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_update.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL UPDATE Statement"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "text": "The SQL UPDATE Statement"
+    },
+    {
+      "type": "paragraph",
+      "text": "The UPDATE statement is used to modify the existing records in a table."
+    },
+    {
+      "type": "other",
+      "text": "UPDATE Syntax"
+    },
+    {
+      "type": "other",
+      "text": "UPDATE table_name\n SET column1 = value1, column2 = value2, ...\n WHERE condition;"
+    },
+    {
+      "type": "other",
+      "text": "Note: Be careful when updating records in a table! Notice the \nWHERE clause in the UPDATE statement.\nThe WHERE clause specifies which record(s) that should be updated. If \nyou omit the WHERE clause, all records in the table will be updated!"
+    },
+    {
+      "type": "heading",
+      "text": "Demo Database"
+    },
+    {
+      "type": "paragraph",
+      "text": "Below is a selection from the Customers table used in the examples:"
+    },
+    {
+      "type": "other",
+      "text": "CustomerID\n    CustomerName\n    ContactName\n    Address\n    City\n    PostalCode\n    Country\n  \n  \n    1\n    Alfreds Futterkiste\n    Maria Anders\n    Obere Str. 57\n    Berlin\n    12209\n    Germany\n  \n  \n    2\n    Ana Trujillo Emparedados y helados\n    Ana Trujillo\n    Avda. de la Constitución 2222\n    México D.F.\n    05021\n    Mexico\n  \n  \n    3\n    Antonio Moreno Taquería\n    Antonio Moreno\n    Mataderos 2312\n    México D.F.\n    05023\n    Mexico\n  \n  \n    4\n    Around the Horn\n    Thomas Hardy\n    120 Hanover Sq.\n    London\n    WA1 1DP\n    UK\n  \n  \n    5\n    Berglunds snabbköp\n    Christina Berglund\n    Berguvsvägen 8\n    Luleå\n    S-958 22\n    Sweden"
+    },
+    {
+      "type": "heading",
+      "text": "UPDATE Table"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement updates the first customer (CustomerID = 1) with a new contact person and \na new city."
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n UPDATE Customers\n SET ContactName = 'Alfred Schmidt', City= 'Frankfurt'\n WHERE CustomerID = 1;"
+    },
+    {
+      "type": "paragraph",
+      "text": "The selection from the \"Customers\" table will now look like this:"
+    },
+    {
+      "type": "other",
+      "text": "CustomerID\n    CustomerName\n    ContactName\n    Address\n    City\n    PostalCode\n    Country\n  \n  \n    1\n    Alfreds Futterkiste\n    Alfred Schmidt\n    Obere Str. 57\n    Frankfurt\n    12209\n    Germany\n  \n  \n    2\n    Ana Trujillo Emparedados y helados\n    Ana Trujillo\n    Avda. de la Constitución 2222\n    México D.F.\n    05021\n    Mexico\n  \n  \n    3\n    Antonio Moreno Taquería\n    Antonio Moreno\n    Mataderos 2312\n    México D.F.\n    05023\n    Mexico\n  \n  \n    4\n    Around the Horn\n    Thomas Hardy\n    120 Hanover Sq.\n    London\n    WA1 1DP\n    UK\n  \n  \n    5\n    Berglunds snabbköp\n    Christina Berglund\n    Berguvsvägen 8\n    Luleå\n    S-958 22\n    Sweden"
+    },
+    {
+      "type": "heading",
+      "text": "UPDATE Multiple Records"
+    },
+    {
+      "type": "paragraph",
+      "text": "It is the WHERE clause that determines how many records will be updated."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement will \nupdate the ContactName to \"Juan\" for all records where country is \"Mexico\":"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\nUPDATE Customers\nSET ContactName='Juan'\nWHERE Country='Mexico';"
+    },
+    {
+      "type": "paragraph",
+      "text": "The selection from the \"Customers\" table will now look like this:"
+    },
+    {
+      "type": "other",
+      "text": "CustomerID\n    CustomerName\n    ContactName\n    Address\n    City\n    PostalCode\n    Country\n  \n  \n    1\n    Alfreds Futterkiste\n    Alfred Schmidt\n    Obere Str. 57\n    Frankfurt\n    12209\n    Germany\n  \n  \n    2\n    Ana Trujillo Emparedados y helados\n    Juan\n    Avda. de la Constitución 2222\n    México D.F.\n    05021\n    Mexico\n  \n  \n    3\n    Antonio Moreno Taquería\n    Juan\n    Mataderos 2312\n    México D.F.\n    05023\n    Mexico\n  \n  \n    4\n    Around the Horn\n    Thomas Hardy\n    120 Hanover Sq.\n    London\n    WA1 1DP\n    UK\n  \n  \n    5\n    Berglunds snabbköp\n    Christina Berglund\n    Berguvsvägen 8\n    Luleå\n    S-958 22\n    Sweden"
+    },
+    {
+      "type": "heading",
+      "text": "Update Warning!"
+    },
+    {
+      "type": "other",
+      "text": "Be careful when updating records. If you omit the \nWHERE clause, ALL records \nwill be updated!"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\nUPDATE Customers\nSET ContactName='Juan';"
+    },
+    {
+      "type": "paragraph",
+      "text": "The selection from the \"Customers\" table will now look like this:"
+    },
+    {
+      "type": "other",
+      "text": "CustomerID\n    CustomerName\n    ContactName\n    Address\n    City\n    PostalCode\n    Country\n  \n  \n    1\n    Alfreds Futterkiste\n    Juan\n    Obere Str. 57\n    Frankfurt\n    12209\n    Germany\n  \n  \n    2\n    Ana Trujillo Emparedados y helados\n    Juan\n    Avda. de la Constitución 2222\n    México D.F.\n    05021\n    Mexico\n  \n  \n    3\n    Antonio Moreno Taquería\n    Juan\n    Mataderos 2312\n    México D.F.\n    05023\n    Mexico\n  \n  \n    4\n    Around the Horn\n    Juan\n    120 Hanover Sq.\n    London\n    WA1 1DP\n    UK\n  \n  \n    5\n    Berglunds snabbköp\n    Juan\n    Berguvsvägen 8\n    Luleå\n    S-958 22\n    Sweden"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

@@ -1,0 +1,381 @@
+{
+  "url": "https://www.w3schools.com/js/js_array_search.asp",
+  "title": "JavaScript Array Search",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Array Search"
+    },
+    {
+      "type": "other",
+      "text": "Array Search Methods\n\n\n\nArray indexOf()\nArray lastIndexOf()\nArray includes()\n\n\nArray find()\nArray findIndex()\nArray findLast()\nArray findLastIndex()"
+    },
+    {
+      "type": "other",
+      "text": "See Also:\nArray Tutorial\nArray Basic Methods\nArray Sort Methods\nArray Iteration Methods\nArray Reference"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Array indexOf()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The indexOf() method searches an array for an element value and returns its position."
+    },
+    {
+      "type": "other",
+      "text": "Note: The first item has position 0, the second item has position 1, and so on."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const fruits = [\"Apple\", \"Orange\", \"Apple\", \"Mango\"];\nlet position = fruits.indexOf(\"Apple\") + 1;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Syntax"
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "array.indexOf(item, start)"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "item",
+          "Required. The item to search for."
+        ],
+        [
+          "start",
+          "Optional. Where to start the search. Negative values will start at the given position counting from the end, and search to the end."
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Array.indexOf() returns -1 if the item is not found."
+    },
+    {
+      "type": "paragraph",
+      "text": "If the item is present more than once, it returns the position of the first \noccurrence."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Array lastIndexOf()"
+    },
+    {
+      "type": "paragraph",
+      "text": "Array.lastIndexOf() is the same as Array.indexOf(), but \nreturns the position of the last occurrence of the specified element."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const fruits = [\"Apple\", \"Orange\", \"Apple\", \"Mango\"];\nlet position = fruits.lastIndexOf(\"Apple\") + 1;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Syntax"
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "array.lastIndexOf(item, start)"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "item",
+          "Required. The item to search for"
+        ],
+        [
+          "start",
+          "Optional. Where to start the search. Negative values will start at the given position counting from the end, and search to the beginning"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Array includes()"
+    },
+    {
+      "type": "paragraph",
+      "text": "ECMAScript 2016 introduced Array.includes() to arrays.\nThis allows us to check if an element is present in an array (including NaN, unlike indexOf)."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];\nfruits.includes(\"Mango\"); // is true"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Syntax"
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "array.includes(search-item)"
+    },
+    {
+      "type": "other",
+      "text": "Array.includes() allows to check for NaN values. Unlike Array.indexOf()."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Browser Support"
+    },
+    {
+      "type": "paragraph",
+      "text": "includes() is an ECMAScript 2016 feature."
+    },
+    {
+      "type": "paragraph",
+      "text": "ES 2016 is fully supported in all modern browsers since March 2017:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome 52\n    Edge 15\n    Firefox 52\n    Safari 10.1\n    Opera 39\n  \n  \n    Jul 2016\n    Apr 2017\n    Mar 2017\n    May 2017\n    Aug 2016"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Array find()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The find() method returns the value of the first array element that passes a \ntest function."
+    },
+    {
+      "type": "paragraph",
+      "text": "This example finds (returns the value of) the first element that is larger \nthan 18:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const numbers = [4, 9, 16, 25, 29];\nlet first = \n  numbers.find(myFunction);function myFunction(value, index, array) {  return \n  value > 18;}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Note that the function takes 3 arguments:"
+    },
+    {
+      "type": "other",
+      "text": "The item value\n  The item index \n  The array itself"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Browser Support"
+    },
+    {
+      "type": "paragraph",
+      "text": "find() is an ES6  feature."
+    },
+    {
+      "type": "paragraph",
+      "text": "ES6 is fully supported in all modern browsers since June 2017:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome51\n    Edge15\n    Firefox54\n    Safari10\n    Opera38\n  \n  \n    May 2016\n    Apr 2017\n    Jun 2017\n    Sep 2016\n    Jun 2016"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Array findIndex()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The findIndex() method returns the index of the first array element that \npasses a test function."
+    },
+    {
+      "type": "paragraph",
+      "text": "This example finds the index of the first element that is larger than 18:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const numbers = [4, 9, 16, 25, 29];\nlet first = \n  numbers.findIndex(myFunction);function myFunction(value, index, array) {\n    return \n  value > 18;}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Note that the function takes 3 arguments:"
+    },
+    {
+      "type": "other",
+      "text": "The item value\nThe item index \nThe array itself"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Browser Support"
+    },
+    {
+      "type": "paragraph",
+      "text": "findIndex() is an ES6  feature."
+    },
+    {
+      "type": "paragraph",
+      "text": "ES6 is fully supported in all modern browsers since June 2017:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome51\n    Edge15\n    Firefox54\n    Safari10\n    Opera38\n  \n  \n    May 2016\n    Apr 2017\n    Jun 2017\n    Sep 2016\n    Jun 2016"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Array findLast() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "ES2023 added the findLast() method that will start from the end of an array and return\nthe value of the first element that satisfies a condition."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const temp = [27, 28, 30, 40, 42, 35, 30];\nlet high = temp.findLast(x => x > 40);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Browser Support"
+    },
+    {
+      "type": "paragraph",
+      "text": "findLast() is an ES2023 feature."
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript 2023 is supported in all modern browsers since July 2023:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Chrome 110",
+          "Edge 110",
+          "Firefox 115",
+          "Safari 16.4",
+          "Opera 96"
+        ],
+        [
+          "Feb 2023",
+          "Feb 2023",
+          "Jul 2023",
+          "Mar 2023",
+          "May 2023"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Array findLastIndex() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The findLastIndex() method finds the index of the last element that satisfies a condition."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const temp = [27, 28, 30, 40, 42, 35, 30];\nlet pos = temp.findLastIndex(x => x > 40);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Browser Support"
+    },
+    {
+      "type": "paragraph",
+      "text": "findLastIndex() is an ES2023 feature."
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript 2023 is supported in all modern browsers since July 2023:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Chrome 110",
+          "Edge 110",
+          "Firefox 115",
+          "Safari 16.4",
+          "Opera 96"
+        ],
+        [
+          "Feb 2023",
+          "Feb 2023",
+          "Jul 2023",
+          "Mar 2023",
+          "May 2023"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Complete JavaScript Reference\nFor a complete reference to all JavaScript properties and methods, with full descriptions and many examples, go to:\nW3Schools' Full JavaScript Reference.\nThe reference inludes all JavaScript updates from 1999 to 2025."
+    }
+  ]
+}

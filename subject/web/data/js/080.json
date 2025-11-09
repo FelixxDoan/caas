@@ -1,0 +1,412 @@
+{
+  "url": "https://www.w3schools.com/js/js_2025.asp",
+  "title": "ECMAScript 2025",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "ECMAScript 2025"
+    },
+    {
+      "type": "other",
+      "text": "New Features in JavaScript 2025\n\nRegExp /v Flag()\nRegExp.escape()\nFloat16Array\nMath.f16round()\nPromise.try()\nSet union()\nSet intersection()\nSet difference()\nSet symmetricDifference()\nSet isSubsetOf()\nSet isSupersetOf()\nSet isDisjointFrom()\nImport Attributes"
+    },
+    {
+      "type": "other",
+      "text": "Warning\nThese features are relatively new.\nOlder browsers may need an alternative code (Polyfill)"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The RegExp /v Flag"
+    },
+    {
+      "type": "paragraph",
+      "text": "The v flag is an \"upgrade\" to the u flag."
+    },
+    {
+      "type": "paragraph",
+      "text": "The u (unicode) flag enables full Unicode support in regular expressions."
+    },
+    {
+      "type": "paragraph",
+      "text": "The v flag enables more Unicode-related features."
+    },
+    {
+      "type": "paragraph",
+      "text": "The new features are:"
+    },
+    {
+      "type": "other",
+      "text": "The \\p escape sequence matches strings, instead of just characters.\nThe character class is upgraded to allow intersection, union, and subtraction syntaxes,\nas well as matching multiple Unicode characters."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"Hello 😄\";\n\nlet pattern = /\\p{RGI_Emoji}/v;\nlet result = pattern.test(text);"
+        },
+        {
+          "language": "unknown",
+          "code": "let text = \"Hello 😄\";\n\nlet pattern = /\\p{RGI_Emoji}/;\nlet result = pattern.test(text);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "/regexp/v is supported all in modern browsers since May 2025:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome 136    \n    Edge 136\n    Firefox 134\n    Safari 18.2\n    Opera 121\n  \n  \n    Apr 2025\n    May 2025    \n    Jan 2025\n    Des 2024\n    Jun 2025"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The RegExp.escape() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The RegExp.escape() method returns a string where characters that belongs\nto the regular expression syntax are escaped."
+    },
+    {
+      "type": "paragraph",
+      "text": "This makes it possible to treat characters like +, *, ?, ^, $, (, ), [, ], {, }, |, and \\ literally,\nand not as part of a regular expression."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Escape a text for to use as a regular expression\nconst safe = RegExp.escape(\"[*]\");\n\n// Build a new reglar expression\nconst regex = new RegExp(safe);\n\n// Text to replace within\nconst oldText = \"[*] is a web school.\";\n\n// Perform the replace\nconst newText = oldText.match(regex, \"W3Schools\");"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "RegExp.escape() is supported all in modern browsers since May 2025:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome 136    \n    Edge 136\n    Firefox 134\n    Safari 18.2\n    Opera 121\n  \n  \n    Apr 2025\n    May 2025    \n    Jan 2025\n    Des 2024\n    Jun 2025"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Float16Array Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "A Float16Array is a TypedArray that stores 16-bit (half-precision)\nfloating-point numbers in the IEEE 754 half-precision format."
+    },
+    {
+      "type": "paragraph",
+      "text": "Float16Array requires half the memory of Float32Array\nand a quarter of Float64Array."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const myArr = new Float16Array([1.5, 2.5, 3.5, 4.5]);\n\nlet bytes = myArr.BYTES_PER_ELEMENT;\nlet length = myArr.length;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The Float16Array object is supported in all modern browsers since June 2024:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome 135    \n    Edge 135\n    Firefox 129\n    Safari 18.2\n    Opera 120\n  \n  \n    Apr 2025\n    Apr 2025    \n    Aug 2024\n    Des 2024\n    May 2025"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Math.f16round Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The static Math.f16round() method returns the nearest 16-bit floating point representation of a number."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let a = Math.f16round(2.60);\nlet b = Math.f16round(2.50);\nlet c = Math.f16round(2.49);\nlet d = Math.f16round(-2.60);\nlet e = Math.f16round(-2.50);\nlet f = Math.f16round(-2.49);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The Math.f16round() method is supported in all modern browsers since June 2024:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome 135    \n    Edge 135\n    Firefox 129\n    Safari 18.2\n    Opera 120\n  \n  \n    Apr 2025\n    Apr 2025    \n    Aug 2024\n    Des 2024\n    May 2025"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Promise.try() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Promise.try() method starts a promise chain from potentially throwing, synchronous code."
+    },
+    {
+      "type": "paragraph",
+      "text": "This ensures exceptions are correctly handled as promise rejections."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "function compute() {\n  return Promise.try(() => {\n    const v = mayThrowSync();\n    return asyncFunc(v);\n  });\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Set union()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The union() method returns the union of two sets."
+    },
+    {
+      "type": "paragraph",
+      "text": "The union() method returns a new set containing the elements which are in this set,\nor in the argument set, or in both:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const A = new Set(['a','b','c']);\nconst B = new Set(['b','c','d']);\n\nconst C = A.union(B);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The union() method is supported in all modern browsers since June 2024:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome 122    \n    Edge 122\n    Firefox 127\n    Safari 17\n    Opera 108\n  \n  \n    Feb 2024\n    Feb 2024    \n    Jun 2024\n    Sep 2023\n    Mar 2024"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Set intersection()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The intersection() method returns the intersection of two sets."
+    },
+    {
+      "type": "paragraph",
+      "text": "The intersection() method returns a new set containing the elements which are in this set\nand in the argument set:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const A = new Set(['a','b','c']);\nconst B = new Set(['b','c','d']);\n\nconst C = A.intersection(B);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The intersection() method is supported in all modern browsers since June 2024:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome 122    \n    Edge 122\n    Firefox 127\n    Safari 17\n    Opera 108\n  \n  \n    Feb 2024\n    Feb 2024    \n    Jun 2024\n    Sep 2023\n    Mar 2024"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Set difference()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The difference() method returns the difference between two sets."
+    },
+    {
+      "type": "paragraph",
+      "text": "The difference() method returns a new set containing elements which are in this set\nbut not in the argument set:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const A = new Set(['a','b','c']);\nconst B = new Set(['b','c','d']);\n\nconst C = A.difference(B);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The difference() method is supported in all modern browsers since June 2024:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome 122    \n    Edge 122\n    Firefox 127\n    Safari 17\n    Opera 108\n  \n  \n    Feb 2024\n    Feb 2024    \n    Jun 2024\n    Sep 2023\n    Mar 2024"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Set symmetricDifference()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The symmetricDifference() method returns the symmetric difference between to sets."
+    },
+    {
+      "type": "paragraph",
+      "text": "The symmetricDifference() method returns a new set containing elements which are in this set\nor in the argument set, but not in both:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const A = new Set(['a','b','c']);\nconst B = new Set(['b','c','d']);\n\nconst C = A.symetricDifference(B);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The symmetricDifference() method is supported in all modern browsers since June 2024:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome 122    \n    Edge 122\n    Firefox 127\n    Safari 17\n    Opera 108\n  \n  \n    Feb 2024\n    Feb 2024    \n    Jun 2024\n    Sep 2023\n    Mar 2024"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Set isSubsetOf()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The isSubsetOf() method returns true\nif all elements in this set are elements in the argument set:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const A = new Set(['a','b','c']);\nconst B = new Set(['b','c','d']);\n\nlet answer = A.isSubsetOf(B);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The isSubsetOf() method is supported in all modern browsers since June 2024:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome 122    \n    Edge 122\n    Firefox 127\n    Safari 17\n    Opera 108\n  \n  \n    Feb 2024\n    Feb 2024    \n    Jun 2024\n    Sep 2023\n    Mar 2024"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Set isSupersetOf()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The isSupersetOf() method returns true if all elements in the argument set are also in this set:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const A = new Set(['a','b','c']);\nconst B = new Set(['b','c','d']);\n\nlet answer = A.isSupersetOf(B);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The isSupersetOf() method is supported in all modern browsers since June 2024:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome 122    \n    Edge 122\n    Firefox 127\n    Safari 17\n    Opera 108\n  \n  \n    Feb 2024\n    Feb 2024    \n    Jun 2024\n    Sep 2023\n    Mar 2024"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Set isDisjointFrom()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The isDisjointFrom() method returns true\nif this set has no elements in common with the argument set:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const A = new Set(['a','b','c']);\nconst B = new Set(['b','c','d']);\n\nlet answer = A.isDisjointFrom(B);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The Set.isDisjointFrom() method is supported in all modern browsers since June 2024:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome 122    \n    Edge 122\n    Firefox 127\n    Safari 17\n    Opera 108\n  \n  \n    Feb 2024\n    Feb 2024    \n    Jun 2024\n    Sep 2023\n    Mar 2024"
+    },
+    {
+      "type": "other",
+      "text": "Note\nUsing both flags (u and v) results in a SyntaxError."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Modules with Import Attributes"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "import {names} from \"module-name\" with {key:\"data\"};"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "import config from \"config.json\" with {type:\"json\"};\n\nimport styles from \"styles.css\" with {type:\"css\"};\n\nimport data from \"data.json\" with {type:\"json\"};"
+        }
+      ]
+    }
+  ]
+}

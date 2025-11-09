@@ -1,0 +1,152 @@
+{
+  "url": "https://www.w3schools.com/js/js_regexp_characters.asp",
+  "title": "RegExp Character Classes",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "RegExp Character Classes"
+    },
+    {
+      "type": "other",
+      "text": "Character Classes are characters enclosed in square brackets [].\nA character class matches any character from a set within brackets:\n\n// Match Digits\nconst pattern = /[0-9]/;"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Regex Character Classes"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Revised July 2025"
+    },
+    {
+      "type": "other",
+      "text": "Class\n  Description\n\n\n  [a]\n  Matches the character between the brackets\n  \n\n  [^a]\n  Matches all characters NOT between the brackets\n  \n\n  [abc]\n  Matches all characters between the brackets\n  \n\n  [^abc]\n  Matches all characters NOT between the brackets\n  \n\n  [a-z]\n  Matches all characters in the range from a to z\n  \n\n  [^a-z]\n  Matches all characters NOT in the range from a to z\n  \n\n  [0-9]\n  Matches all characters in the range from 0 to 9\n\n\n  [^0-9]\n  Matches all characters NOT in the range from 0 to 9"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"Hello World!\";\nconst pattern = /[HW]/g;\n\nlet result = text.match(pattern);"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"This is W3School\";\nconst pattern = /[A-Z]/g;\n\nlet result = text.match(pattern);"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"123456789\";\nconst pattern = /[1234]/g;\n\nlet result = text.match(pattern);"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"123456789\";\nconst pattern = /[1-4]/g;\n\nlet result = text.match(pattern);"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\n[01234] is the same as [0-4]\n[abcde] is the same as [a-e]"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Regular Expression Methods"
+    },
+    {
+      "type": "paragraph",
+      "text": "Regular Expression Search and Replace can be done with different methods."
+    },
+    {
+      "type": "paragraph",
+      "text": "These are the most common:"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "String Methods"
+    },
+    {
+      "type": "table",
+      "data": [
+        [],
+        [
+          "Method",
+          "Description"
+        ],
+        [
+          "match(regex)",
+          "Returns an Array of results"
+        ],
+        [
+          "matchAll(regex)",
+          "Returns an Iterator of results"
+        ],
+        [
+          "replace(regex)",
+          "Returns a new String"
+        ],
+        [
+          "replaceAll(regex)",
+          "Returns a new String"
+        ],
+        [
+          "search(regex)",
+          "Returns the index of the first match"
+        ],
+        [
+          "split(regex)",
+          "Returns an Array of results"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "RegExp Methods"
+    },
+    {
+      "type": "table",
+      "data": [
+        [],
+        [
+          "Method",
+          "Description"
+        ],
+        [
+          "regex.exec()",
+          "Returns an Iterator of results"
+        ],
+        [
+          "regex.test()",
+          "Returns true or false"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "See Also:\nJavaScript RegExp Tutorial\nJavaScript RegExp Flags\nJavaScript RegExp Meta Characters\nJavaScript RegExp Assertions\nJavaScript RegExp Quantifiers\nJavaScript RegExp Patterns\nJavaScript RegExp Objects\nJavaScript RegExp Methods"
+    }
+  ]
+}

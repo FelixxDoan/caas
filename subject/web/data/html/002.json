@@ -1,0 +1,455 @@
+{
+  "url": "https://www.w3schools.com/html/html_images.asp",
+  "title": "HTML ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "HTML Images"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "Images can improve the design and the appearance of a web page."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<img src=\"pic_trulli.jpg\" \nalt=\"Italian Trulli\">"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<img src=\"img_girl.jpg\" \nalt=\"Girl in a jacket\">"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<img src=\"img_chania.jpg\" \nalt=\"Flowers in Chania\">"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML Images Syntax"
+    },
+    {
+      "type": "paragraph",
+      "text": "The HTML <img> tag is used to embed an \nimage in a web page."
+    },
+    {
+      "type": "paragraph",
+      "text": "Images are not technically inserted into a web page; images are linked to web \npages. The <img> tag creates a holding \nspace for the referenced image."
+    },
+    {
+      "type": "paragraph",
+      "text": "The <img> tag is empty, it contains attributes only, and does not \nhave a closing tag."
+    },
+    {
+      "type": "paragraph",
+      "text": "The <img> tag has two required \nattributes:"
+    },
+    {
+      "type": "other",
+      "text": "src - Specifies the path to the image\n  alt - Specifies an alternate text for the image"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<img src=\"url\" alt=\"alternatetext\">"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The src Attribute"
+    },
+    {
+      "type": "paragraph",
+      "text": "The required src attribute specifies the path (URL) to the image."
+    },
+    {
+      "type": "paragraph",
+      "text": "Note: When a web page loads, it is the browser, at that \nmoment, that gets the image from a web server and inserts it into the page. \nTherefore, make sure that the image actually stays in the same spot in relation \nto the web page, otherwise your visitors will get a broken link icon. The broken \nlink icon and the alt text are shown if the browser cannot find the image."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<img src=\"img_chania.jpg\" alt=\"Flowers \n  in Chania\">"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The alt Attribute"
+    },
+    {
+      "type": "paragraph",
+      "text": "The required alt attribute provides an alternate text for an image, if the user for \nsome reason cannot view it (because of slow connection, an error in the src \nattribute, or if the user uses a screen reader)."
+    },
+    {
+      "type": "paragraph",
+      "text": "The value of the alt attribute should describe the image:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<img src=\"img_chania.jpg\" alt=\"Flowers \n  in Chania\">"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "If a browser cannot find an image, it will display the value of the alt \nattribute:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<img src=\"wrongname.gif\" alt=\"Flowers \n  in Chania\">"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Tip: A screen reader is a software program that reads the HTML code, and allows the user to \"listen\" to the content. Screen readers are useful \nfor people who are visually impaired or learning disabled."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Image Size - Width and Height"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can use the style attribute to specify the width and \nheight of an image."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<img src=\"img_girl.jpg\" alt=\"Girl in a jacket\" style=\"width:500px;height:600px;\">"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Alternatively, you can use the width and height attributes:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<img src=\"img_girl.jpg\" alt=\"Girl in a jacket\" width=\"500\" height=\"600\">"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The width and height attributes always define the width and height of the \nimage in pixels."
+    },
+    {
+      "type": "other",
+      "text": "Note: Always specify the width and height of an image. If width and height are not specified, the \n  web page \n  might flicker while the image loads."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Width and Height, or Style?"
+    },
+    {
+      "type": "paragraph",
+      "text": "The width, height, and style attributes are \nall valid in HTML."
+    },
+    {
+      "type": "paragraph",
+      "text": "However, we suggest using the style attribute. It prevents styles sheets from changing \nthe size of images:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<!DOCTYPE html><html><head><style>img {   width: 100%; }\n </style></head><body><img src=\"html5.gif\" alt=\"HTML5 Icon\" width=\"128\" height=\"128\"><img src=\"html5.gif\" alt=\"HTML5 Icon\" style=\"width:128px;height:128px;\"></body></html>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Images in Another Folder"
+    },
+    {
+      "type": "paragraph",
+      "text": "If you have your images in a sub-folder, you must include the folder \nname in the src attribute:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<img src=\"/images/html5.gif\" \nalt=\"HTML5 Icon\" style=\"width:128px;height:128px;\">"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Images on Another Server/Website"
+    },
+    {
+      "type": "paragraph",
+      "text": "Some web sites point to an image on another server."
+    },
+    {
+      "type": "paragraph",
+      "text": "To point to an image on another server, you must specify an absolute (full) \nURL in the src attribute:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<img src=\"https://www.w3schools.com/images/w3schools_green.jpg\" alt=\"W3Schools.com\">"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Notes on external images: External images might be under \ncopyright. If you do not get permission to use it, you may be in violation of \ncopyright laws. In addition, you cannot control external images; they can suddenly \nbe removed or changed."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Animated Images"
+    },
+    {
+      "type": "paragraph",
+      "text": "HTML allows animated GIFs:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<img src=\"programming.gif\" alt=\"Computer Man\" style=\"width:48px;height:48px;\">"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Image as a Link"
+    },
+    {
+      "type": "paragraph",
+      "text": "To use an image as a link, put the <img> tag inside the <a> \ntag:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<a href=\"default.asp\">  <img src=\"smiley.gif\" alt=\"HTML tutorial\" \nstyle=\"width:42px;height:42px;\"></a>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Image Floating"
+    },
+    {
+      "type": "paragraph",
+      "text": "Use the CSS float property to let the image float to the right or to the left of a text:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<p><img src=\"smiley.gif\" alt=\"Smiley face\"\nstyle=\"float:right;width:42px;height:42px;\">\n The image will float to the right of \nthe text.</p><p><img src=\"smiley.gif\" alt=\"Smiley face\"\nstyle=\"float:left;width:42px;height:42px;\">\n The image will float to the left of \nthe text.</p>"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Tip: To learn more about CSS Float, read our CSS Float Tutorial."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Common Image Formats"
+    },
+    {
+      "type": "paragraph",
+      "text": "Here are the most common image file types, which are supported in all browsers \n(Chrome, Edge, Firefox, Safari, Opera):"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Abbreviation",
+          "File Format",
+          "File Extension"
+        ],
+        [
+          "APNG",
+          "Animated Portable Network Graphics",
+          ".apng"
+        ],
+        [
+          "GIF",
+          "Graphics Interchange Format",
+          ".gif"
+        ],
+        [
+          "ICO",
+          "Microsoft Icon",
+          ".ico, .cur"
+        ],
+        [
+          "JPEG",
+          "Joint Photographic Expert Group image",
+          ".jpg, .jpeg, .jfif, .pjpeg, .pjp"
+        ],
+        [
+          "PNG",
+          "Portable Network Graphics",
+          ".png"
+        ],
+        [
+          "SVG",
+          "Scalable Vector Graphics",
+          ".svg"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Chapter Summary"
+    },
+    {
+      "type": "other",
+      "text": "Use the HTML <img> element to define an image\n  Use the HTML src attribute to define the URL of the image\n  Use the HTML alt attribute to define an alternate text for an image, if it cannot be displayed\n  Use the HTML width and height attributes \n  or the CSS width and height \n  properties to define the size of the image\n  Use the CSS float property to let the image float \n  to the left or to the right"
+    },
+    {
+      "type": "other",
+      "text": "Note: Loading large images takes time, and can slow down your \n  web page. Use images carefully."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML Image Tags"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Tag",
+          "Description"
+        ],
+        [
+          "<img>",
+          "Defines an image"
+        ],
+        [
+          "<map>",
+          "Defines an image map"
+        ],
+        [
+          "<area>",
+          "Defines a clickable area inside an image map"
+        ],
+        [
+          "<picture>",
+          "Defines a container for multiple image resources"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "For a complete list of all available HTML tags, visit our HTML Tag Reference."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Video: HTML Images"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "src - Specifies the path to the image",
+        "alt - Specifies an alternate text for the image"
+      ]
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Use the HTML <img> element to define an image",
+        "Use the HTML src attribute to define the URL of the image",
+        "Use the HTML alt attribute to define an alternate text for an image, if it cannot be displayed",
+        "Use the HTML width and height attributes \n  or the CSS width and height \n  properties to define the size of the image",
+        "Use the CSS float property to let the image float \n  to the left or to the right"
+      ]
+    },
+    {
+      "type": "image",
+      "src": "https://www.w3schools.com/html/images/yt_logo_rgb_dark.png"
+    },
+    {
+      "type": "image",
+      "src": "https://www.w3schools.com/html/images/13_html_images.png"
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "url": "https://www.w3schools.com/css/css_border_color.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Border Color"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CSS Border Color"
+    },
+    {
+      "type": "paragraph",
+      "text": "The border-color property is used to set the color of the four borders."
+    },
+    {
+      "type": "paragraph",
+      "text": "The color can be set by:"
+    },
+    {
+      "type": "other",
+      "text": "name - specify a color name, like \"red\"\nHEX - specify a HEX value, like \"#ff0000\"\nRGB - specify a RGB value, like \"rgb(255,0,0)\"\nHSL - specify a HSL value, like \"hsl(0, 100%, 50%)\"\ntransparent"
+    },
+    {
+      "type": "paragraph",
+      "text": "Note: If border-color is not set, it inherits the color of the element."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "p.one\n{\n   \nborder-style: solid;\n   \nborder-color: red;\n}\np.two\n{\n   \nborder-style: solid;\n  border-color: green;\n}p.three {  border-style: dotted;  border-color: \n  blue;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Specific Side Colors"
+    },
+    {
+      "type": "paragraph",
+      "text": "The border-color property can have from one to four values (for \nthe top border, right border, bottom border, and the left border)."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "p.one {  border-style: solid;  border-color: red green blue yellow; \n  /* red top, green right, blue bottom and yellow left */}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HEX Values"
+    },
+    {
+      "type": "paragraph",
+      "text": "The color of the border can also be specified using a hexadecimal value (HEX):"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "p.one {  border-style: solid;  border-color: #ff0000; /* red \n  */}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "RGB Values"
+    },
+    {
+      "type": "paragraph",
+      "text": "Or by using RGB values:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "p.one {  border-style: solid;  border-color: rgb(255, 0, 0); \n  /* red */}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HSL Values"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can also use HSL values:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "p.one {  border-style: solid;  border-color: hsl(0, 100%, 50%); \n  /* red */}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "You can learn more about HEX, RGB and HSL values in our CSS Colors chapters."
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

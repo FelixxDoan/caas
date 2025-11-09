@@ -1,0 +1,202 @@
+{
+  "url": "https://www.w3schools.com/html/html_styles.asp",
+  "title": "HTML ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "HTML Styles"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "The HTML style attribute is used to add styles to an element, such as color, font, size, and more."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": []
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The HTML Style Attribute"
+    },
+    {
+      "type": "paragraph",
+      "text": "Setting the style of an HTML element, can be done with the style attribute."
+    },
+    {
+      "type": "paragraph",
+      "text": "The HTML style attribute has the following syntax:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<tagname\nstyle=\"property:value;\">"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The property is a CSS property. The value is a CSS value."
+    },
+    {
+      "type": "other",
+      "text": "You will learn more about CSS later in this tutorial."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Background Color"
+    },
+    {
+      "type": "paragraph",
+      "text": "The CSS background-color property defines the background color \nfor an HTML element."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<body style=\"background-color:powderblue;\"><h1>This is a heading</h1><p>This is a paragraph.</p></body>"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<body><h1 style=\"background-color:powderblue;\">This is a heading</h1><p \n  style=\"background-color:tomato;\">This is a paragraph.</p></body>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Text Color"
+    },
+    {
+      "type": "paragraph",
+      "text": "The CSS color property defines the text color for \nan HTML element:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<h1 style=\"color:blue;\">This is a heading</h1>\n <p style=\"color:red;\">This is a paragraph.</p>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Fonts"
+    },
+    {
+      "type": "paragraph",
+      "text": "The CSS font-family property defines the font to be used  \nfor an HTML element:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<h1 style=\"font-family:verdana;\">This is a heading</h1><p style=\"font-family:courier;\">This is a paragraph.</p>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Text Size"
+    },
+    {
+      "type": "paragraph",
+      "text": "The CSS font-size property defines the text size for \nan HTML element:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<h1 style=\"font-size:300%;\">This is a heading</h1><p \nstyle=\"font-size:160%;\">This is a paragraph.</p>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Text Alignment"
+    },
+    {
+      "type": "paragraph",
+      "text": "The CSS text-align property defines the horizontal text alignment for an HTML element:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<h1 style=\"text-align:center;\">Centered Heading</h1>\n <p style=\"text-align:center;\">Centered paragraph.</p>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Chapter Summary"
+    },
+    {
+      "type": "other",
+      "text": "Use the style attribute for styling HTML elements\n  Use background-color for background color\n  Use color for text colors\n  Use font-family for text fonts\n  Use font-size for text sizes\n  Use text-align for text alignment"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Video: HTML Styles"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Use the style attribute for styling HTML elements",
+        "Use background-color for background color",
+        "Use color for text colors",
+        "Use font-family for text fonts",
+        "Use font-size for text sizes",
+        "Use text-align for text alignment"
+      ]
+    },
+    {
+      "type": "image",
+      "src": "https://www.w3schools.com/html/images/yt_logo_rgb_dark.png"
+    },
+    {
+      "type": "image",
+      "src": "https://www.w3schools.com/html/images/07_html_styles.png"
+    }
+  ]
+}

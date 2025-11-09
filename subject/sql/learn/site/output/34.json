@@ -1,0 +1,110 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_having.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL HAVING Clause"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "heading",
+      "text": "The SQL HAVING Clause"
+    },
+    {
+      "type": "paragraph",
+      "text": "The HAVING clause was added to SQL because the \nWHERE keyword cannot be \nused with aggregate functions."
+    },
+    {
+      "type": "other",
+      "text": "HAVING Syntax"
+    },
+    {
+      "type": "other",
+      "text": "SELECT column_name(s)\n  FROM table_name\n  WHERE condition\n  GROUP BY column_name(s)HAVING conditionORDER BY \n  column_name(s);"
+    },
+    {
+      "type": "heading",
+      "text": "Demo Database"
+    },
+    {
+      "type": "paragraph",
+      "text": "Below is a selection from the \"Customers\" table in the Northwind sample \ndatabase:"
+    },
+    {
+      "type": "other",
+      "text": "CustomerID\n    CustomerName\n    ContactName\n    Address\n    City\n    PostalCode\n    Country\n  \n  \n    1\n    Alfreds Futterkiste\n    Maria Anders\n    Obere Str. 57\n    Berlin\n    12209\n    Germany\n  \n  \n    2\n    Ana Trujillo Emparedados y helados\n    Ana Trujillo\n    Avda. de la Constitución 2222\n    México D.F.\n    05021\n    Mexico\n  \n  \n    3\n    Antonio Moreno Taquería\n    Antonio Moreno\n    Mataderos 2312\n    México D.F.\n    05023\n    Mexico\n  \n  \n    4\n    Around the Horn\n    Thomas Hardy\n    120 Hanover Sq.\n    London\n    WA1 1DP\n    UK\n  \n  \n    5\n    Berglunds snabbköp\n    Christina Berglund\n    Berguvsvägen 8\n    Luleå\n    S-958 22\n    Sweden"
+    },
+    {
+      "type": "heading",
+      "text": "SQL HAVING Examples"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement lists the number of customers in each country. \nOnly include countries with more than 5 customers:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n  SELECT COUNT(CustomerID), CountryFROM CustomersGROUP BY Country\n  HAVING COUNT(CustomerID) > 5;\n\n\n  Try it Yourself »"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement lists the number of customers in each country, \nsorted high to low (Only include countries with more than 5 customers):"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n  SELECT COUNT(CustomerID), CountryFROM CustomersGROUP BY CountryHAVING COUNT(CustomerID) \n  > 5\n  ORDER BY COUNT(CustomerID) DESC;\n\n\n  Try it Yourself »"
+    },
+    {
+      "type": "heading",
+      "text": "Demo Database"
+    },
+    {
+      "type": "paragraph",
+      "text": "Below is a selection from the \"Orders\" table in the Northwind sample database:"
+    },
+    {
+      "type": "other",
+      "text": "OrderID\n    CustomerID\n    EmployeeID\n    OrderDate\n    ShipperID\n  \n  \n    10248\n    90\n    5\n    1996-07-04\n    3\n  \n    \n    10249\n    81\n    6\n    1996-07-05\n    1\n    \n  \n    10250\n    34\n    4\n    1996-07-08\n    2"
+    },
+    {
+      "type": "paragraph",
+      "text": "And a selection from the \"Employees\" table:"
+    },
+    {
+      "type": "other",
+      "text": "EmployeeID\n    LastName\n    FirstName\n    BirthDate\n    Photo\n    Notes\n  \n  \n    1\n    Davolio\n    Nancy\n    1968-12-08\n    EmpID1.pic\n    Education includes a BA....\n  \n    \n    2\n    Fuller\n    Andrew\n    1952-02-19\n    EmpID2.pic\n    Andrew received his BTS....    \n    \n  \n    3\n    Leverling\n    Janet\n    1963-08-30\n    EmpID3.pic\n    Janet has a BS degree...."
+    },
+    {
+      "type": "heading",
+      "text": "More HAVING Examples"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement lists the employees that have registered more \nthan 10 orders:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n  SELECT Employees.LastName, COUNT(Orders.OrderID) AS NumberOfOrdersFROM \n  (OrdersINNER JOIN Employees ON Orders.EmployeeID = Employees.EmployeeID)\n  GROUP BY LastNameHAVING COUNT(Orders.OrderID) > 10;\n\n\n  Try it Yourself »"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement lists if the employees \"Davolio\" or \"Fuller\" have registered \nmore than 25 orders:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n  SELECT Employees.LastName, COUNT(Orders.OrderID) AS NumberOfOrdersFROM Orders\n  INNER JOIN Employees ON Orders.EmployeeID = Employees.EmployeeID\n  WHERE LastName = 'Davolio' OR LastName = 'Fuller'GROUP BY LastNameHAVING \n  COUNT(Orders.OrderID) > 25;\n\n\n  Try it Yourself »"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

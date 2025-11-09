@@ -1,0 +1,933 @@
+{
+  "url": "https://www.w3schools.com/css/css_examples.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Examples"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Syntax"
+    },
+    {
+      "type": "other",
+      "text": "CSS syntax"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS syntax explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Selectors"
+    },
+    {
+      "type": "other",
+      "text": "The element selector\nThe id selector\nThe class selector (for all elements)\nThe class selector (for only <p> elements)\nAn HTML element that refer to two classes\nThe universal selector\nGrouping selectors"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS selectors explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS How To / Where To"
+    },
+    {
+      "type": "other",
+      "text": "External CSS\nInternal CSS\nInline CSS\nMultiple style sheets\nCascading order"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS how to explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Comments"
+    },
+    {
+      "type": "other",
+      "text": "Single-line comment\nMulti-line comment"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS comments explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Colors"
+    },
+    {
+      "type": "other",
+      "text": "Set the background color of an element\nSet the text color\nSet the border color\nSet different color values\nSet RGB values\nSet HEX values\nSet HSL values"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS colors explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Backgrounds"
+    },
+    {
+      "type": "other",
+      "text": "Set the background color of a page\nSet the background color of different elements\nSet an image as the background of a page\nHow to repeat a background image only horizontally\nHow to position a background image\nA fixed background image (this image will not scroll with the rest of the page)\nAll the background properties in one declaration\nAdvanced background example"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS background properties explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Borders"
+    },
+    {
+      "type": "other",
+      "text": "Set the width of the four borders\nSet the width of the top border\nSet the width of the bottom border\nSet the width of the left border\nSet the width of the right border\nSet the style of the four borders\nSet the style of the top border\nSet the style of the bottom border\nSet the style of the left border\nSet the style of the right border\nSet the color of the four borders\nSet the color of the top border\nSet the color of the bottom border\nSet the color of the left border\nSet the color of the right border\nAll the border properties in one declaration\nAdd rounded borders to an element\nSet different borders on each side\nAll the top border properties in one declaration\nAll the bottom border properties in one declaration\nAll the left border properties in one declaration\nAll the right border properties in one declaration"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS border properties explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Margins"
+    },
+    {
+      "type": "other",
+      "text": "Specify different margins for each side of an element\nUse shorthand margin property with four values\nUse shorthand margin property with three values\nUse shorthand margin property with two values\nUse shorthand margin property with one value\nSet margin to auto to center the element within its container\nLet the left margin be inherited from the parent element\nMargin collapse"
+    },
+    {
+      "type": "paragraph",
+      "text": "Margin properties explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Padding"
+    },
+    {
+      "type": "other",
+      "text": "Specify different padding for each side of an element\nUse shorthand padding property with four values\nUse shorthand padding property with three values\nUse shorthand padding property with two values\nUse shorthand padding property with one value\nPadding and element width (without box-sizing)\nPadding and element width (with box-sizing)\nSet padding-left of an element\nSet padding-right of an element\nSet padding-top of an element\nSet padding-bottom of an element"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS padding properties explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Height/Width"
+    },
+    {
+      "type": "other",
+      "text": "Set the height and width of an element\nSet max-width of an element\nSet the height and width of different elements\nSet the height and width of an image using percent\nSet min-width and max-width of an element\nSet min-height and max-height of an element"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS height/width properties explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Box Model"
+    },
+    {
+      "type": "other",
+      "text": "Demonstrating the box model\nSpecify an element with a total width of 250px"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS box model explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Outline"
+    },
+    {
+      "type": "other",
+      "text": "Draw a line around an element (outline)\nSet the style of an outline\nSet the color of an outline\nSet the width of an outline\nUse the shorthand outline property\nAdd space between an outline and the edge/border of an element"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS outline properties explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Text"
+    },
+    {
+      "type": "other",
+      "text": "Set the text color of different elements\nAlign the text\nRemove the line under links\nDecorate the text\nControl the letters in a text\nIndent text\nSpecify the space between characters\nSpecify the space between lines\nSet the text direction of an element\nIncrease the white space between words\nSpecify a text shadow for an element\nDisable text wrapping inside an element\nVertical alignment of an image inside text"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS text properties explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Fonts"
+    },
+    {
+      "type": "other",
+      "text": "Set the font of a text\nSet the size of the font\nSet the size of the font in px\nSet the size of the font in em\nSet the size of the font in percent and em\nSet the style of the font\nSet the variant of the font\nSet the boldness of the font\nAll the font properties in one declaration"
+    },
+    {
+      "type": "paragraph",
+      "text": "Font properties explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Icons"
+    },
+    {
+      "type": "other",
+      "text": "Font Awesome icons\nBootstrap icons\nGoogle icons"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS icons explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Links"
+    },
+    {
+      "type": "other",
+      "text": "Add different colors to visited/unvisited links\nUse of text-decoration on links\nSpecify a background color for links\nAdd other styles to hyperlinks\nDifferent types of cursors\nAdvanced - Create link boxes\nAdvanced - Create link boxes with borders"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS link properties explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Lists"
+    },
+    {
+      "type": "other",
+      "text": "All the different list item markers in lists\nSet an image as the list-item marker\nPosition the list-item marker\nRemove default list settings\nAll list properties in one declaration\nStyle lists with colors\nFull-width bordered list"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS list properties explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Tables"
+    },
+    {
+      "type": "other",
+      "text": "Specify a black border for table, th, and td elements\nUse of border-collapse\nSingle border around the table\nSpecify the width and height of a table\nSet the horizontal alignment of content (text-align)\nSet the vertical alignment of content (vertical-align)\nSpecify the padding for th and td elements\nHorizontal dividers\nHoverable table\nStriped tables\nSpecify the color of the table borders\nSet the position of the table caption\nResponsive Table\nCreate a fancy table"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS table properties explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Display"
+    },
+    {
+      "type": "other",
+      "text": "How to hide an element (visibility:hidden)\nHow to not display an element (display:none)\nHow to display a block-level element as an inline element\nHow to display an inline element as a block-level element\nHow to to use CSS together with JavaScript to show hidden content"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS display properties explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Positioning"
+    },
+    {
+      "type": "other",
+      "text": "Position an element relative to the browser window\nPosition an element relative to its normal position\nPosition an element with an absolute value\nSticky positioning\nOverlapping elements\nSet the shape of an element\nSet the top edge of an image using a pixel value\nSet the bottom edge of an image using a pixel value\nSet the left edge of an image using a pixel value\nSet the right edge of an image using a pixel value\nPosition image text (top left corner)\nPosition image text (top right corner)\nPosition image text (bottom left corner)\nPosition image text (bottom right corner)\nPosition image text (centered)"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS positioning properties explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Overflow"
+    },
+    {
+      "type": "other",
+      "text": "Using overflow: visible - The overflow is not clipped. It renders outside the element's box.\nUsing overflow: hidden - The overflow is clipped, and the rest of the content is hidden.\nUsing overflow: scroll - The overflow is clipped, but a scrollbar is added to see the rest of the content.\nUsing overflow: auto - If overflow is clipped, a scrollbar should be added to see the rest of the content.\nUsing overflow-x and overflow-y."
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS overflow properties explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Floating"
+    },
+    {
+      "type": "other",
+      "text": "A simple use of the float property\nAn image with border and margins that floats to the right in a paragraph\nAn image with a caption that floats to the right\nLet the first letter of a paragraph float to the left\nTurning off float (using the clear property)\nTurning off float (using the \"clearfix\" hack)\nCreate floating boxes\nCreate side-by-side images\nCreate equal-height boxes (with flexbox)\nCreating a horizontal menu\nCreate a web layout example"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS float properties explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Inline-block"
+    },
+    {
+      "type": "other",
+      "text": "Show the differences between inline, inline-block and block\nUsing inline-block to create navigation links"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS inline-block explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Aligning Elements"
+    },
+    {
+      "type": "other",
+      "text": "Center aligning with margin\nCenter aligning text\nCenter an image\nLeft/Right aligning with position\nLeft/Right aligning with position - Crossbrowser solution\nLeft/Right aligning with float\nLeft/Right aligning with float - Crossbrowser solution\nCenter vertically with padding\nCenter vertically and horizontally\nCenter vertically with line-height\nCenter vertically and horizontally with position"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS align properties explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Combinators"
+    },
+    {
+      "type": "other",
+      "text": "Descendant selector\nChild selector\nAdjacent Sibling selector\nGeneral Sibling selector"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS combinators explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Pseudo-classes"
+    },
+    {
+      "type": "other",
+      "text": "Add different colors to a hyperlink\nAdd other styles to hyperlinks\nUse of :focus\n:first-child - match the first p element\n:first-child - match the first i element in all p elements\n:first-child - Match all i elements in all first child p elements\nUse of :lang"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS pseudo-classes explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Pseudo-elements"
+    },
+    {
+      "type": "other",
+      "text": "Make the first letter special in a text\nMake the first line special in a text\nMake the first letter and first line special\nUse :before to insert some content before an element\nUse :after to insert some content after an element"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS pseudo-elements explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Opacity"
+    },
+    {
+      "type": "other",
+      "text": "Creating transparent images\nCreating transparent images - mouseover effect\nReversed mouseover effect for transparent images\nTransparent box/div\nTransparent box/div with RGBA values\nCreating a transparent box with text on a background image"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS image opacity explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Navigation Bars"
+    },
+    {
+      "type": "other",
+      "text": "Fully styled vertical navigation bar\nFully styled horizontal navigation bar\nFull-height fixed vertical navigation bar\nFixed horizontal navigation bar\nSticky navigation bar (does not work in IE or Edge 15 and earlier)\nResponsive top navigation\nResponsive side navigation"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS navigation bars explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Dropdowns"
+    },
+    {
+      "type": "other",
+      "text": "Dropdown text\nDropdown menu\nRight-aligned dropdown menu\nDropdown image\nDropdown navigation bar"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS dropdowns explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Image Gallery"
+    },
+    {
+      "type": "other",
+      "text": "Image gallery\nResponsive Image gallery"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS image gallery explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Image Sprites"
+    },
+    {
+      "type": "other",
+      "text": "An image sprite\nAn image sprite - a navigation list\nAn image sprite with hover effect"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS image sprites explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Attribute Selectors"
+    },
+    {
+      "type": "other",
+      "text": "Selects all <a> elements with a target attribute\nSelects all <a> elements with a target=\"_blank\" attribute\nSelects all elements with a title attribute that contains a space-separated list of words, one of which is \"flower\"Selects all elements with a class attribute value that begins with \"top\" (must be whole word)\nSelects all elements with a class attribute value that begins with \"top\" (must not be whole word)\nSelects all elements with a class attribute value that ends with \"test\"\nSelects all elements with a class attribute value that contains \"te\""
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS attribute selectors explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Forms"
+    },
+    {
+      "type": "other",
+      "text": "Full-width input field\nPadded input field\nBordered input field\nBottom bordered input field\nColored input fields\nFocused input fields\nFocused input fields 2\nInput with icon/image\nAnimated search input\nStyling textareas\nStyling select menus\nStyling input buttons\nResponsive form"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS forms explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Counters"
+    },
+    {
+      "type": "other",
+      "text": "Create a counter\nNested counters 1\nNested counters 2"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS counters explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Website Layout"
+    },
+    {
+      "type": "other",
+      "text": "Simple, responsive website layout\nA website example"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS website layout explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Rounded Corners"
+    },
+    {
+      "type": "other",
+      "text": "Add rounded corners to elements\nRound each corner separately\nCreate elliptical corners"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS rounded corners explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Border Images"
+    },
+    {
+      "type": "other",
+      "text": "Create an image border around an element, using the round keyword\nCreate an image border around an element, using the stretch keyword\nImage border - Different slice values"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS border images explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Backgrounds"
+    },
+    {
+      "type": "other",
+      "text": "Add multiple background images for an element\nSpecify the size of a background image\nScale a background image using \"contain\" and \"cover\"\nDefine sizes of multiple background images\nFull-size background image (completely fill the content area)\nUse background-origin to specify where the background image is positioned\nUse background-clip to specify the painting area of the background"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS backgrounds explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Gradients"
+    },
+    {
+      "type": "other",
+      "text": "Linear Gradient - top to bottom\nLinear Gradient - left to right\nLinear Gradient - diagonal\nLinear Gradient - with a specified angle\nLinear Gradient - with multiple color stops\nLinear Gradient - color of a rainbow + text\nLinear Gradient - with transparency\nLinear Gradient - a repeating linear gradient\nRadial Gradient - evenly spaced color stops\nRadial Gradient - differently spaced color stops\nRadial Gradient - set shape\nRadial Gradient - different size keywords\nRadial Gradient - a repeating radial gradient"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS gradients explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Shadow Effects"
+    },
+    {
+      "type": "other",
+      "text": "Simple shadow effect\nAdd a color to the shadow\nAdd a blur effect to the shadow\nWhite text with black shadow\nA red neon glow shadow\nA red and blue neon glow shadow\nWhite text with black, blue, and darkblue shadow\nAdd a simple box-shadow to an element\nAdd color to box-shadow\nAdd color and blur effect to box-shadow\nCreate paper-like cards (text)\nCreate paper-like cards (polaroid images)"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS shadow effects explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Text Effects"
+    },
+    {
+      "type": "other",
+      "text": "Specify how hidden, overflowed content should be signaled to the user\nHow to display the overflowed content when hover over the element\nAllow long words to be able to be broken and wrap onto the next line\nSpecify line breaking rules"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS text explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Web Fonts"
+    },
+    {
+      "type": "other",
+      "text": "Use your \"own\" fonts in @font-face rule\nUse your \"own\" fonts in @font-face rule (bold)"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS web fonts explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS 2D Transforms"
+    },
+    {
+      "type": "other",
+      "text": "translate() - move an element from its current position\nrotate() - rotate an element clockwise\nrotate() - rotate an element counter-clockwise\nscale() - increase an element\nscale() - decrease an element\nskewX() - skews an element along the X-axis\nskewY() - skews an element along the Y-axis\nskew() - skews an element along the X and Y-axis\nmatrix() - rotate, scale, move, and skew an element"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS 2D transforms explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS 3D Transforms"
+    },
+    {
+      "type": "other",
+      "text": "rotateX() - rotate an element around its X-axis at a given degree\nrotateY() - rotate an element around its Y-axis at a given degree\nrotateZ() - rotate an element around its Z-axis at a given degree"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS 3D transforms explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Transitions"
+    },
+    {
+      "type": "other",
+      "text": "Transition - change width of an element\nTransition - change width and height of an element\nSpecify different speed curves for a transition\nSpecify a delay for a transition effect\nAdd a transformation to a transition effect\nSpecify all transition properties in one shorthand property"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS transitions explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Animations"
+    },
+    {
+      "type": "other",
+      "text": "Bind an animation to an element\nAnimation - change background-color of an element\nAnimation - change background-color and position of an element\nDelay an animation\nRun animation 3 times before it stops\nRun animation for ever\nRun animation in reverse direction\nRun animation in alternate cycles\nSpeed curves for animations\nAnimation shorthand property"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS animations explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Tooltips"
+    },
+    {
+      "type": "other",
+      "text": "Right tooltip\nLeft tooltip\nTop tooltip\nBottom tooltip\nTooltip with arrow\nAnimated tooltip"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS tooltips explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Style Images"
+    },
+    {
+      "type": "other",
+      "text": "Rounded image\nCircled image\nThumbnail image\nThumbnail image as link\nResponsive image\nImage text (top left corner)\nImage text (top right corner)\nImage text (bottom left corner)\nImage text (bottom right corner)\nImage text (centered)\nPolaroid images\nAdvanced - Image Modal with CSS and JavaScript"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS images explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Image Centering"
+    },
+    {
+      "type": "other",
+      "text": "Center image horizontally with margin: auto\nCenter image horizontally with display: flex\nCenter image vertically with display: flex"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS image centering explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Image Filters"
+    },
+    {
+      "type": "other",
+      "text": "Filter blur()\nFilter brightness()\nFilter contrast()\nFilter drop-shadow()\nFilter grayscale()\nFilter hue-rotate()\nFilter invert()\nFilter opacity()\nFilter saturate()\nFilter sepia()"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS image filters explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Image Shapes"
+    },
+    {
+      "type": "other",
+      "text": "Clip an image to a circle\nClip an image to a circle and position the center of circle to the right\nCircle() and shape-outside\nClip an image to an ellipse\nClip an image to an ellipse and position the center of ellipse to the right\nEllipse() and shape-outside\nClip an image to a polygon"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS image shapes explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Object-fit"
+    },
+    {
+      "type": "other",
+      "text": "Use object-fit: cover\nUse object-fit: contain\nUse object-fit: fill\nUse object-fit: none\nUse object-fit: scale-down\nAll object-fit property values in one example"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS object-fit explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Object-position"
+    },
+    {
+      "type": "other",
+      "text": "Position the image so that the great old building is in center\nPosition the image so that the famous Eiffel Tower is in center"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS object-position explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Buttons"
+    },
+    {
+      "type": "other",
+      "text": "Basic CSS buttons\nButton colors\nButton sizes\nRounded buttons\nColored button borders\nHoverable buttons\nShadow buttons\nDisabled buttons\nButton width\nButton groups\nBordered button group\nAnimated Button (Hover Effect)\nAnimated Button (Ripple Effect)\nAnimated Button (Pressed Effect)"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS buttons explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Pagination"
+    },
+    {
+      "type": "other",
+      "text": "Simple pagination\nActive and hoverable pagination\nRounded active and hoverable pagination\nHoverable transition effect\nBordered pagination\nRounded bordered pagination\nPagination with space between links\nPagination size\nPagination with space between links\nCentered pagination\nBreadcrumbs"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS pagination explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Multiple Columns"
+    },
+    {
+      "type": "other",
+      "text": "Create multiple columns\nSpecify the gap between columns\nSpecify the style of the rule between columns\nSpecify the width of the rule between columns\nSpecify the color of the rule between columns\nSpecify the width, style and color of the rule between columns\nSpecify how many columns an element should span across\nSpecify a suggested, optimal width for the columns"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS multiple columns explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS User Interface"
+    },
+    {
+      "type": "other",
+      "text": "Let a user resize the width of an element\nLet a user resize the height of an element\nLet a user resize both the width and height of an element\nAdd space between an outline and the border of an element"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS user interface explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Variables"
+    },
+    {
+      "type": "other",
+      "text": "Using the var() function\nUsing the var() function to insert several custom property values"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS variables explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Box Sizing"
+    },
+    {
+      "type": "other",
+      "text": "Width of elements without box-sizing\nWidth of elements with box-sizing\nForm elements + box-sizing"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS box sizing explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Media Queries"
+    },
+    {
+      "type": "other",
+      "text": "Change the background-color to lightgreen if the viewport is 480px wide or wider\nShow a menu that will float to the left of the page if the viewport is 480px wide or wider"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS media queries explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Media Queries - More Examples"
+    },
+    {
+      "type": "other",
+      "text": "Set different background colors depending on screen width\nResponsive navigation menu\nResponsive columns using float\nResponsive columns using flexbox\nHide elements with media queries\nResponsive font size\nResponsive image gallery\nResponsive website\nChange layout of a page depending on the orientation of the browser\nMin width to max width"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS media queries examples explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Flexbox"
+    },
+    {
+      "type": "other",
+      "text": "Flexbox with three flex items\nflex-direction - row\nflex-direction - column\nflex-direction - row-reverse\nflex-direction - column-reverse\nflex-wrap - nowrap\nflex-wrap - wrap\nflex-wrap - wrap-reverse\nflex-flow\njustify-content - center\njustify-content - flex-start\njustify-content - flex-end\njustify-content - space-around\njustify-content - space-between\njustify-content - space-evenly\nalign-items - center\nalign-items - flex-start\nalign-items - flex-end\nalign-items - stretch\nalign-items - baseline\nalign-content - center\nalign-content - flex-start\nalign-content - flex-end\nalign-content - space-between\nalign-content - space-around\nalign-content - space-evenly\nPerfect centering"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS flexbox explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Flex Items"
+    },
+    {
+      "type": "other",
+      "text": "Order the flex items\nflex-grow property\nflex-shrink property\nflex-basis property\nflex property\nflex-basis property\nalign-self - center\nalign-self - flex-start and flex-end"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS flex items explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Flexbox Responsive"
+    },
+    {
+      "type": "other",
+      "text": "Responsive flexbox\nResponsive flexbox 2\nResponsive image gallery with flexbox\nCreate a responsive website with flexbox"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS flexbox responsive explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Grid Intro"
+    },
+    {
+      "type": "other",
+      "text": "Grid layout\nGrid container and grid items\ndisplay: grid\ndisplay: inline-grid"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS grid intro explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Grid Columns, Rows and Gap"
+    },
+    {
+      "type": "other",
+      "text": "Grid column gap\nGrid row gap\nThe gap property 1\nThe gap property 2\nThe grid-column-start and grid-column-end properties\nThe grid-column property\nThe grid-row-start and grid-row-end properties\nThe grid-row property"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS grid columns, rows and gap explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Grid Container"
+    },
+    {
+      "type": "other",
+      "text": "Grid container\nThe grid-template-columns property 1\nThe grid-template-columns property 2\nCell-sizing with the fr unit 1\nCell-sizing with the fr unit 2\nThe grid-template-rows property\njustify-content: space-evenly\njustify-content: space-around\njustify-content: space-between\njustify-content: center\njustify-content: start\njustify-content: end\nalign-content: center\nalign-content: space-evenly\nalign-content: space-around\nalign-content: space-between\nalign-content: start\nalign-content: end\nplace-content: center\nplace-content: end space-between"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS grid container explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Grid Item"
+    },
+    {
+      "type": "other",
+      "text": "A five items grid layout\nThe grid-column-start and grid-column-end properties\nThe grid-column property 1\nThe grid-column property 2\nThe grid-column property 3\nThe grid-row-start and grid-row-end properties\nThe grid-row property 1\nThe grid-row property 2\nThe grid-area property 1\nThe grid-area property 2\nUsing grid-area to name grid items 1\nUsing grid-area to name grid items 2\nUsing grid-area to name grid items 3\nUsing grid-area to name grid items 4\nUsing grid-area to order grid items\nRe-arrange the order on small devices\nThe justify-self property\nThe align-self property"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS grid item explained"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS Responsive Webdesign"
+    },
+    {
+      "type": "other",
+      "text": "Responsive grid view\nResponsive grid view with breakpoints\nAdd a breakpoint at width: 600px\nTypical breakpoints\nMedia query orientation: portrait / landscape\nHide elements on different screen sizes\nChange font size on different screen sizes\nResponsive image: width property\nResponsive image: max-width property\nResponsive image on responsive webpage\nBackground image and background-size: contain\nBackground image and background-size: 100% 100%\nBackground image and background-size: cover\nChange background image depending on browser width\nChange background image depending on browser width 2\nChange background image with HTML picture element\nResponsive video: width property\nResponsive video: max-width property\nResponsive video on responsive webpage\nResponsive framework: W3.CSS\nResponsive framework: Bootstrap"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS responsive webdesign explained"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

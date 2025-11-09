@@ -1,0 +1,242 @@
+{
+  "url": "https://www.w3schools.com/css/css_tooltip.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Tooltip"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "Create tooltips with CSS."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Demo: Tooltip Examples"
+    },
+    {
+      "type": "paragraph",
+      "text": "A tooltip is often used to specify extra information about something when the \nuser moves the mouse pointer over an element:"
+    },
+    {
+      "type": "other",
+      "text": "Top\n    Tooltip text\n  \n\n\n\n  Right\n    Tooltip text\n  \n\n\n\n  Bottom\n    Tooltip text\n  \n\n\n\n\n  Left\n    Tooltip text"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Basic Tooltip"
+    },
+    {
+      "type": "paragraph",
+      "text": "Create a tooltip that appears when the user moves the mouse over an element:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<style>/* Tooltip container */.tooltip {  position: relative;\n    \ndisplay: inline-block;  border-bottom: 1px dotted \nblack; /* If you want dots under the hoverable text */}/* Tooltip text \n*/.tooltip .tooltiptext {  visibility: hidden;  width: 120px;\n    \nbackground-color: black;  color: #fff;  text-align: center;\n    padding: 5px 0;  \nborder-radius: 6px;   \n/* Position the tooltip text - see examples below! */  position: absolute;\n    z-index: 1;}/* Show \nthe tooltip text when you mouse over the tooltip container */.tooltip:hover \n.tooltiptext {  visibility: visible;}</style><div class=\"tooltip\">Hover \nover me\n  <span class=\"tooltiptext\">Tooltip \ntext</span></div>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Example Explained"
+    },
+    {
+      "type": "paragraph",
+      "text": "HTML: Use a container element (like <div>) and add the \n\"tooltip\" class to it. When the user mouse over this <div>, it will show the \ntooltip text."
+    },
+    {
+      "type": "paragraph",
+      "text": "The tooltip text is placed inside an inline element (like <span>) with class=\"tooltiptext\"."
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS: The tooltip class use position:relative, \nwhich is needed to position the tooltip text (position:absolute).\nNote: See examples below on how to position the tooltip."
+    },
+    {
+      "type": "paragraph",
+      "text": "The tooltiptext class holds the actual tooltip text. It is \nhidden by default, and will be visible on hover (see below). We have also added \nsome basic styles to it: 120px width, black background color, white text color, \ncentered text, and 5px top and bottom padding."
+    },
+    {
+      "type": "paragraph",
+      "text": "The CSS border-radius property is used to add rounded corners to the tooltip \ntext."
+    },
+    {
+      "type": "paragraph",
+      "text": "The :hover selector is used to show the tooltip text when the user moves the \nmouse over the <div> with class=\"tooltip\"."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Positioning Tooltips"
+    },
+    {
+      "type": "paragraph",
+      "text": "In this example, the tooltip is placed to the right (left:105%) of the \"hoverable\" \ntext (<div>). Also note that top:-5px is used to place it in the middle of its container element. \nWe use the number 5 because the tooltip text has a top and \nbottom padding of \n5px. If you increase its padding, also increase the value of the top property to \nensure that it stays in the middle (if this is something you want). The same \napplies if you want the tooltip placed to the left."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".tooltip .tooltiptext {  top: -5px;  \nleft: \n105%; }"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".tooltip .tooltiptext {  top: -5px;  \nright: \n105%; }"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "If you want the tooltip to appear on top or on the bottom, see examples \nbelow. Note that we use the margin-left property with a value of minus 60 \npixels. This is to center the tooltip above/below the hoverable text. It is set \nto the half of the tooltip's width (120/2 = 60)."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".tooltip .tooltiptext {  width: 120px;  \nbottom: 100%;  left: \n50%;   margin-left: -60px; /* Use half of the width \n(120/2 = 60), to center the tooltip */}"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".tooltip .tooltiptext {  width: 120px;  top: 100%;  left: \n50%;   margin-left: -60px; /* Use half of the width \n(120/2 = 60), to center the tooltip */}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Tooltip Arrows"
+    },
+    {
+      "type": "paragraph",
+      "text": "To create an arrow that should appear from a specific side of the tooltip, add \"empty\" \ncontent after \ntooltip, with the pseudo-element class ::after together with the content \nproperty. The arrow itself is created using borders. This will make the tooltip \nlook like a speech bubble."
+    },
+    {
+      "type": "paragraph",
+      "text": "This example demonstrates how to add an arrow to the bottom of the tooltip:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".tooltip .tooltiptext::after {  content: \" \";  position: absolute;\n    top: 100%; \n/* At the bottom of the tooltip */  left: 50%;  margin-left: -5px;\n    \nborder-width: 5px;  border-style: solid;  \nborder-color: black transparent transparent transparent;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Example Explained"
+    },
+    {
+      "type": "paragraph",
+      "text": "Position the arrow inside the tooltip: top: 100% will place the arrow at the \nbottom of the tooltip. left: 50% will center the arrow."
+    },
+    {
+      "type": "paragraph",
+      "text": "Note: The border-width property specifies the size of the \narrow. If you change this, also change the margin-left value to the same. This \nwill keep the arrow centered."
+    },
+    {
+      "type": "paragraph",
+      "text": "The border-color is used to transform the content into an arrow. We set the \ntop border to black, and the rest to transparent. If all sides were black, you \nwould end up with a black square box."
+    },
+    {
+      "type": "paragraph",
+      "text": "This example demonstrates how to add an arrow to the top of the tooltip. \nNotice that we set the bottom border color this time:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".tooltip .tooltiptext::after {  content: \" \";  position: absolute;  bottom: 100%;  /* At the top of the tooltip */\n    left: 50%;  margin-left: -5px;  \nborder-width: 5px;  border-style: solid;  \nborder-color: transparent transparent black transparent;}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "This example demonstrates how to add an arrow to the left of the tooltip:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".tooltip .tooltiptext::after {  content: \" \";  position: absolute;  top: 50%;\n    right: 100%; /* To the left of the tooltip \n*/  margin-top: -5px;  \nborder-width: 5px;  border-style: solid;  \nborder-color: transparent black transparent transparent;}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "This example demonstrates how to add an arrow to the right of the tooltip:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".tooltip .tooltiptext::after {  content: \" \";  position: absolute;\n    top: 50%;  left: 100%; /* To the right of the \ntooltip */  margin-top: -5px;  \nborder-width: 5px;  border-style: solid;  \nborder-color: transparent transparent transparent black;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Fade In Tooltips (Animation)"
+    },
+    {
+      "type": "paragraph",
+      "text": "If you want to fade in the tooltip text when it is about to be visible, you \ncan use the CSS transition property together with the opacity \nproperty, and go from being completely invisible to 100% visible, in a number of specified seconds \n(1 second in our example):"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".tooltip .tooltiptext {  opacity: 0;  \ntransition: opacity 1s;}.tooltip:hover \n.tooltiptext {  opacity: 1;}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

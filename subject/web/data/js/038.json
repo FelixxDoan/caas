@@ -1,0 +1,123 @@
+{
+  "url": "https://www.w3schools.com/js/js_json_intro.asp",
+  "title": "JSON",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JSON - Introduction"
+    },
+    {
+      "type": "other",
+      "text": "JSON \n\n\nJSON stands for JavaScript Object Notation\nJSON is a text format for storing and transporting data\nJSON is \"self-describing\" and easy to understand"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JSON Example"
+    },
+    {
+      "type": "paragraph",
+      "text": "This example is a JSON string:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "'{\"name\":\"John\", \"age\":30, \"car\":null}'"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "It defines an object with 3 properties:"
+    },
+    {
+      "type": "other",
+      "text": "name\nage\ncar"
+    },
+    {
+      "type": "paragraph",
+      "text": "Each property has a value."
+    },
+    {
+      "type": "paragraph",
+      "text": "If you parse the JSON string with a JavaScript program, you can access the data\nas an object:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let personName = obj.name;\nlet personAge = obj.age;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What is JSON?"
+    },
+    {
+      "type": "other",
+      "text": "JSON stands for JavaScript Object Notation\n  JSON is a lightweight data-interchange format\n  JSON is plain text written in JavaScript object notation\n  JSON is used to send data between computers\n  JSON is language independent *"
+    },
+    {
+      "type": "other",
+      "text": "*\nThe JSON syntax is derived from JavaScript object notation, but the JSON format is text only.\nCode for reading and generating JSON exists in many programming languages."
+    },
+    {
+      "type": "paragraph",
+      "text": "The JSON format was originally specified by\nDouglas Crockford."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Why Use JSON?"
+    },
+    {
+      "type": "paragraph",
+      "text": "The JSON format is syntactically similar to the code for creating \nJavaScript objects.\nBecause of this, a JavaScript program \ncan easily convert JSON data into JavaScript objects."
+    },
+    {
+      "type": "paragraph",
+      "text": "Since the format is text only, JSON data can easily be sent between computers,\nand used by any programming language."
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript has a built in function for converting JSON strings into JavaScript objects:"
+    },
+    {
+      "type": "paragraph",
+      "text": "JSON.parse()"
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript also has a built in function for converting an object into a JSON string:"
+    },
+    {
+      "type": "paragraph",
+      "text": "JSON.stringify()"
+    },
+    {
+      "type": "other",
+      "text": "You can receive pure text from a server and use it as a JavaScript object.\nYou can send a JavaScript object to a server in pure text format.\nYou can work with data as JavaScript objects, with no complicated \nparsing and translations."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Storing Data"
+    },
+    {
+      "type": "paragraph",
+      "text": "When storing data, the data has to be a certain format, and regardless of where you choose to store it, \ntext is always one of the legal formats."
+    },
+    {
+      "type": "paragraph",
+      "text": "JSON makes it possible to store JavaScript objects as text."
+    }
+  ]
+}

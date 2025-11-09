@@ -1,0 +1,140 @@
+{
+  "url": "https://www.w3schools.com/js/js_jquery_selectors.asp",
+  "title": "JavaScript / jQuery DOM Selectors",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript / jQuery DOM Selectors"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "jQuery vs JavaScript"
+    },
+    {
+      "type": "paragraph",
+      "text": "jQuery was created in 2006 by John Resig. \nIt was designed to handle Browser Incompatibilities and to simplify HTML DOM Manipulation, Event Handling, Animations, and Ajax."
+    },
+    {
+      "type": "paragraph",
+      "text": "However, after JavaScript Version 5 (2009), most of the jQuery utilities can be solved with a few lines of standard JavaScript:"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Finding HTML Element by Id"
+    },
+    {
+      "type": "paragraph",
+      "text": "Return the element with id=\"id01\":"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "myElement = $(\"#id01\");"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "myElement = document.getElementById(\"id01\");"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Finding HTML Elements by Tag Name"
+    },
+    {
+      "type": "paragraph",
+      "text": "Return all <p> elements:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "myElements = $(\"p\");"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "myElements = document.getElementsByTagName(\"p\");"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Finding HTML Elements by Class Name"
+    },
+    {
+      "type": "paragraph",
+      "text": "Return all elements with class=\"intro\"."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "myElements = $(\".intro\");"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "myElements = document.getElementsByClassName(\"intro\");"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Finding HTML Elements by CSS Selectors"
+    },
+    {
+      "type": "paragraph",
+      "text": "Return a list of all <p> elements with class=\"intro\"."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "myElements = $(\"p.intro\");"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "myElements = document.querySelectorAll(\"p.intro\");"
+        }
+      ]
+    }
+  ]
+}

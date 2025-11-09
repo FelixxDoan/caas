@@ -1,0 +1,173 @@
+{
+  "url": "https://www.w3schools.com/js/js_async.asp",
+  "title": "JavaScript Async",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Async"
+    },
+    {
+      "type": "other",
+      "text": "\"async and await make promises easier to write\"\nasync makes a function return a Promise\nawait makes a function wait for a Promise"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Async Syntax"
+    },
+    {
+      "type": "paragraph",
+      "text": "The keyword async before a function makes the function return a promise:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "async function myFunction() {\n  return \"Hello\";\n}"
+        },
+        {
+          "language": "unknown",
+          "code": "function myFunction() {\n  return Promise.resolve(\"Hello\");\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Here is how to use the Promise:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "myFunction().then(\n  function(value) { /* code if successful */ },\n  function(error) { /* code if some error */ }\n);"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "async function myFunction() {\n  return \"Hello\";\n}myFunction().then(  function(value) {myDisplayer(value);},\n    function(error) {myDisplayer(error);});"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Or simpler, since you expect a normal value (a normal response, not an error):"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "async function myFunction() {\n  return \"Hello\";\n}myFunction().then(  function(value) {myDisplayer(value);}\n);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Await Syntax"
+    },
+    {
+      "type": "paragraph",
+      "text": "The await keyword can only be used inside an\nasync function."
+    },
+    {
+      "type": "paragraph",
+      "text": "The await keyword makes the function pause the execution \nand wait for a resolved promise before it continues:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let value = await promise;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Example"
+    },
+    {
+      "type": "paragraph",
+      "text": "Let's go slowly and learn how to use it."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "async function myDisplay() {\n  let myPromise = new Promise(function(resolve,  reject) {\n    resolve(\"I love You !!\");\n  });\n  document.getElementById(\"demo\").innerHTML = await myPromise;}\n myDisplay();"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "The two arguments (resolve and reject) are pre-defined by JavaScript.\nWe will not create them, but call one of them when the executor function is ready.\nVery often we will not need a reject function."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "async function myDisplay() {\n  let myPromise = new Promise(function(resolve) {\n    resolve(\"I love You !!\");\n  });\n  document.getElementById(\"demo\").innerHTML = await myPromise;}\n myDisplay();"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "async function myDisplay() {\n  let myPromise = new Promise(function(resolve) {\n    setTimeout(function() {resolve(\"I love You !!\");}, 3000);\n  });\n  document.getElementById(\"demo\").innerHTML = await myPromise;}\n myDisplay();"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "async function getFile() {\n  let myPromise = new Promise(function(resolve) {\n    let req = new XMLHttpRequest();\n    req.open('GET', \"mycar.html\");\n    req.onload = function() {\n      if (req.status == 200) {\n        resolve(req.response);\n      } else {\n        resolve(\"File not Found\");\n      }\n    };\n    req.send();\n  });\n  document.getElementById(\"demo\").innerHTML = await myPromise;\n}\n\ngetFile();"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "table.browserref\n{\nborder-collapse:collapse;width:100%;\n}\n\ntable.browserref th:first-child,table.browserref td:first-child{padding-left:16px}\n\ntable.browserref th{\nheight:32px;background-repeat:no-repeat;background-position:center center;font-weight:normal;padding:11px 5px 11px 5px;vertical-align:middle;\n}\ntable.browserref td{\ntext-align:center;padding:8px;vertical-align:top;\n}\ntable.browserref .bsChrome   {background-image:url('/images/compatible_chrome.png');}\ntable.browserref .bsEdge     {background-image:url('/images/compatible_edge.png');}\ntable.browserref .bsFirefox  {background-image:url('/images/compatible_firefox.png')}\ntable.browserref .bsSafari   {background-image:url('/images/compatible_safari.png');}\ntable.browserref .bsOpera    {background-image:url('/images/compatible_opera.png')}"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Browser Support"
+    },
+    {
+      "type": "paragraph",
+      "text": "ECMAScript 2017 introduced the JavaScript keywords\nasync and await."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following table defines the first browser version with full support for both:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome 55\n    Edge 15    \n    Firefox 52\n    Safari 11\n    Opera 42\n  \n  \n    Dec, 2016\n    Apr, 2017    \n    Mar, 2017\n    Sep, 2017\n    Dec, 2016"
+    }
+  ]
+}

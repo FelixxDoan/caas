@@ -1,0 +1,842 @@
+{
+  "url": "https://www.w3schools.com/js/js_es5.asp",
+  "title": "JavaScript 2009 (ES5)",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript 2009 (ES5)"
+    },
+    {
+      "type": "other",
+      "text": "ECMAScript 2009\nThe first major revision to JavaScript.\nECMAScript 2009 is also known as ES5. \nThis chapter describes the new features of ES5."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "ES5 Features"
+    },
+    {
+      "type": "other",
+      "text": "\"use strict\"\n  String[number] access\n  Multiline strings\n  String.trim()\n  Array.isArray()\n  Array forEach()\n  Array map()\n  Array filter()\n  Array reduce()\n  Array reduceRight()\n  Array every()\n  Array some()\n  Array indexOf()\n  Array lastIndexOf()\n  JSON.parse()\n  JSON.stringify()\n  Date.now()\n  Date toISOString()\n  Date toJSON()\n  Property getters and setters\n  Reserved words as property names\n  Object.create()\n  Object.keys()\n  Object management\n  Object protection\n  Object defineProperty()\n  Function bind()\n  Trailing commas"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Browser Support"
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript 2009 is supported in all modern browsers since July 2013:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome23\n  IE/Edge10\n  Firefox21\n  Safari6\n  Opera15\n\n\n  Sep 2012\n  Sep 2012\n  Apr 2013\n  Jul 2012\n  Jul 2013"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The \"use strict\" Directive"
+    },
+    {
+      "type": "paragraph",
+      "text": "\"use strict\" defines that the JavaScript code should be executed in \"strict mode\"."
+    },
+    {
+      "type": "paragraph",
+      "text": "With strict mode you can, for example, not use undeclared variables."
+    },
+    {
+      "type": "other",
+      "text": "You can use strict mode in all your programs. It helps you to write cleaner code,\nlike preventing you from using undeclared variables.\n\"use strict\" is just a string expression. Old browsers will not throw an error if they don't understand it."
+    },
+    {
+      "type": "paragraph",
+      "text": "Read more in JS Strict Mode."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Property Access on Strings"
+    },
+    {
+      "type": "paragraph",
+      "text": "The charAt() method returns the character at a specified \nindex (position) in a string:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "var str = \"HELLO WORLD\";\nstr.charAt(0);            // returns H"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "ES5 allows property access on strings:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "var str = \"HELLO WORLD\";\nstr[0];                   // returns H"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Property access on string might be a little unpredictable.\nRead more in JS String Methods."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Strings Over Multiple Lines"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "\"Hello \\Dolly!\";"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "The \\ method might not have universal support.Older browsers might treat \nthe spaces around the backslash differently. Some older browsers do \nnot allow spaces behind the \\ character."
+    },
+    {
+      "type": "paragraph",
+      "text": "A safer way to break up a string literal, is to use string \naddition:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "\"Hello \" + \"Dolly!\";"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Reserved Words as Property Names"
+    },
+    {
+      "type": "paragraph",
+      "text": "ES5 allows reserved words as property names:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "var obj = {name: \"John\", new: \"yes\"}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "String trim()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The trim() method removes whitespace from both sides of a string."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "var str = \"       Hello World!        \";alert(str.trim());"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Read more in JS String Methods."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Array.isArray()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The isArray() method checks whether an object is an array."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];\n\nresult = Array.isArray(fruits);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Read more in JS Arrays."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Array forEach()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The forEach() method calls a function once for each array element."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const numbers = [45, 4, 9, 16, 25];\n\nnumbers.forEach(myFunction);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Learn more in JS Array Iteration Methods."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Array map()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The map() method creates a new array by performing a function on each array element."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const numbers1 = [45, 4, 9, 16, 25];\nconst numbers2 = numbers1.map(myFunction);\n\nfunction myFunction(value) {\n  return value * 2;\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Learn more in JS Array Iteration Methods."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Array filter()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The filter() method creates a new array from array elements that passes a test."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const numbers = [45, 4, 9, 16, 25];\nconst over18 = numbers.filter(myFunction);\n\nfunction myFunction(value) {\n  return value > 18;\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Learn more in JS Array Iteration Methods."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Array reduce()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The reduce() method reduces an array to a single value."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const numbers = [45, 4, 9, 16, 25];\nlet sum = numbers.reduce(myFunction);\n\nfunction myFunction(total, value) {\n  return total + value;\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Learn more in JS Array Iteration Methods."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Array reduceRight()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The reduceRight() method reduces an array to a single value (from right to left)."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const numbers1 = [45, 4, 9, 16, 25];\nlet sum = numbers1.reduceRight(myFunction);\n\nfunction myFunction(total, value) {\n  return total + value;\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Learn more in JS Array Iteration Methods."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Array every()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The every() method checks if all array values pass a test."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const numbers = [45, 4, 9, 16, 25];\nlet allOver18 = numbers.every(myFunction);\n\nfunction myFunction(value) {\n  return value > 18;\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Learn more in JS Array Iteration Methods."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Array some()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The some() method checks if some array values pass a test."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const numbers = [45, 4, 9, 16, 25];\nlet allOver18 = numbers.some(myFunction);\n\nfunction myFunction(value) {\n  return value > 18;\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Learn more in JS Array Iteration Methods."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Array indexOf()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The indexOf() method searches for an element value and returns its position."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const fruits = [\"Apple\", \"Orange\", \"Apple\", \"Mango\"];\nlet position = fruits.indexOf(\"Apple\") + 1;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Learn more in JS Array Iteration Methods."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Array lastIndexOf()"
+    },
+    {
+      "type": "paragraph",
+      "text": "lastIndexOf() is the same as indexOf(), but searches from the end of the array."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const fruits = [\"Apple\", \"Orange\", \"Apple\", \"Mango\"];\nlet position = fruits.lastIndexOf(\"Apple\") + 1;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Learn more in JS Array Iteration Methods."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JSON.parse()"
+    },
+    {
+      "type": "paragraph",
+      "text": "A common use of JSON is to receive data from a web server."
+    },
+    {
+      "type": "paragraph",
+      "text": "Imagine you received this text string from a web server:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "'{\"name\":\"John\", \"age\":30, \"city\":\"New York\"}'"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The JavaScript function JSON.parse() is used to convert the text into a JavaScript object:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const txt = '{\"name\":\"John\", \"age\":30, \"city\":\"New York\"}'\n\nconst myObj = JSON.parse(txt);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Read more in our JSON Tutorial."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JSON.stringify()"
+    },
+    {
+      "type": "paragraph",
+      "text": "A common use of JSON is to send data to a web server."
+    },
+    {
+      "type": "paragraph",
+      "text": "When sending data to a web server, the data has to be \na string."
+    },
+    {
+      "type": "paragraph",
+      "text": "Imagine we have this object in JavaScript:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const myObj = {name:\"John\", age:30, city:\"New York\"};"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Use the JavaScript function JSON.stringify() to convert it into a string."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const myJSON = JSON.stringify(myObj);"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "The result will be a string following the JSON notation."
+    },
+    {
+      "type": "paragraph",
+      "text": "myJSON is now a string, and ready to be sent to a server:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const myObj = {name:\"John\", age:30, city:\"New York\"};\nconst myJSON = JSON.stringify(myObj);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Read more in our JSON Tutorial."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Date.now()"
+    },
+    {
+      "type": "paragraph",
+      "text": "Date.now() returns the number of milliseconds since zero date (January 1. \n1970 00:00:00 UTC)."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "var timInMSs = Date.now();"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Date.now() returns the same as getTime() performed on a Date object."
+    },
+    {
+      "type": "paragraph",
+      "text": "Learn more in JS Dates."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Date toISOString()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The toISOString() method converts a Date object to a string, using the ISO standard format:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const d = new Date();\ndocument.getElementById(\"demo\").innerHTML = d.toISOString();"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Date toJSON()"
+    },
+    {
+      "type": "paragraph",
+      "text": "toJSON() converts a Date object into a string, formatted as a JSON date."
+    },
+    {
+      "type": "paragraph",
+      "text": "JSON dates have the same format as the ISO-8601 standard: YYYY-MM-DDTHH:mm:ss.sssZ:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "d = new Date();\ndocument.getElementById(\"demo\").innerHTML = d.toJSON();"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Property Getters"
+    },
+    {
+      "type": "paragraph",
+      "text": "A property getter is a method that allows you to define how a property value is retrieved when it is accessed."
+    },
+    {
+      "type": "paragraph",
+      "text": "This example creates a getter for a property called fullName:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create an object:const Person = {  firstName: \n  \"John\",  lastName : \"Doe\",  get \n  fullName() {    \n  return this.firstName + \" \" + this.lastName;  }};// Display data from the \n  object using a getter:document.getElementById(\"demo\").innerHTML = \n  Person.fullName;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Property Setters"
+    },
+    {
+      "type": "paragraph",
+      "text": "A property setter is a method that allows you to define how a property value is set."
+    },
+    {
+      "type": "paragraph",
+      "text": "This example uses a setter to secure upper case updates of language:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const Person = {  firstName: \"John\",  \n  lastName : \"Doe\",  language : \"NO\",  set lang(value) {    \n  this.language = value.toUpperCase();  }};// Set an object \n  property using a setter:person.lang = \"en\";// Display data from the \n  object:document.getElementById(\"demo\").innerHTML = \n  Person.language;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "This example creates a setter and a getter for the language property:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const Person = {  firstName: \"John\",  \n  lastName : \"Doe\",  language : \"NO\",  \n  get lang() {    return this.language;  },  set lang(value) {    \n  this.language = value;  }};// Set an object \n  property using a setter:person.lang = \"en\";// Display data from the \n  object using a getter:document.getElementById(\"demo\").innerHTML = \n  Person.lang;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Learn more about Gettes and Setters in JS Object Accessors"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Object.defineProperty()"
+    },
+    {
+      "type": "paragraph",
+      "text": "Object.defineProperty() is a new Object method in ES5."
+    },
+    {
+      "type": "paragraph",
+      "text": "It lets you define an object property and/or change a property's value and/or \nmetadata."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create an Object:const person = {  firstName: \n  \"John\",  lastName : \"Doe\",  language : \"NO\", };\n  // Change a Property:Object.defineProperty(person, \"language\", {\n    \n  value: \"EN\",  writable : true,  enumerable : true,  configurable : true});// \n  Enumerate Propertieslet txt = \"\";for (let x in person) {\n    \n  txt += person[x] + \"<br>\";}\n\n// Display Properties\ndocument.getElementById(\"demo\").innerHTML = \n  txt;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Next example is the same code, except it hides the language property from enumeration:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create an Object:const person = {  firstName: \n  \"John\",  lastName : \"Doe\",  language : \"NO\", };\n  // Change a Property:Object.defineProperty(person, \"language\", {\n    \n  value: \"EN\",  writable : true,  enumerable : false,  configurable : true});// \n  Enumerate Propertieslet txt = \"\";for (let x in person) {\n    \n  txt += person[x] + \"<br>\";}document.getElementById(\"demo\").innerHTML = \n  txt;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "This example creates a setter and a getter to secure upper case updates of language:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create an Object:const person = {  firstName: \"John\",\n    lastName : \n  \"Doe\",  language : \"NO\"};// Change a Property:\n  Object.defineProperty(person, \"language\", {  get : function() { return \n  language },  set : function(value) { language = value.toUpperCase()}});\n  // Change Languageperson.language = \"en\";// Display Language\n  document.getElementById(\"demo\").innerHTML = person.language;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Object.create()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Object.create() method creates an object from an existing object."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create an Object:\nconst person = {\n  firstName: \"John\",\n  lastName: \"Doe\"\n};\n\n// Create new Object\nconst man = Object.create(person);\nman.firstName = \"Peter\";"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Object.keys()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Object.keys() method returns an array with the keys of an object."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create an Object\nconst person = {\n  firstName: \"John\",\n  lastName: \"Doe\",\n  age: 50,\n  eyeColor: \"blue\"\n};\n\n// Get the Keys\nconst keys = Object.keys(person);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Object Management"
+    },
+    {
+      "type": "paragraph",
+      "text": "ES5 added new Object management methods to JavaScript:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Adding or changing an object property\nObject.defineProperty(object, property, descriptor)\n// Adding or changing object properties\nObject.defineProperties(object, descriptors)\n// Accessing a Property\nObject.getOwnPropertyDescriptor(object, property)\n// Accessing Properties\nObject.getOwnPropertyDescriptors(object)\n// Returns all properties as an array\nObject.getOwnPropertyNames(object)\n// Accessing the prototype\nObject.getPrototypeOf(object)"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Object Protection"
+    },
+    {
+      "type": "paragraph",
+      "text": "ES5 added Object protection methods to JavaScript:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Prevents adding properties to an object\nObject.preventExtensions(object)\n// Returns true if properties can be added to an object\nObject.isExtensible(object)\n// Prevents changes of object properties (not values)\nObject.seal(object)\n// Returns true if object is sealed\nObject.isSealed(object)\n// Prevents any changes to an object\nObject.freeze(object)\n// Returns true if object is frozen\nObject.isFrozen(object)"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Function Bind()"
+    },
+    {
+      "type": "paragraph",
+      "text": "With the bind() method, an object can borrow a method from another object."
+    },
+    {
+      "type": "paragraph",
+      "text": "This example creates 2 objects (person and member)."
+    },
+    {
+      "type": "paragraph",
+      "text": "The member object borrows the fullname method from the person object:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const person = {\n  firstName:\"John\",\n  lastName: \"Doe\",\n    fullName: function () {\n    return this.firstName + \" \" + this.lastName;\n    }\n}\n\nconst member = {\n  firstName:\"Hege\",\n  lastName: \"Nilsen\",\n}\n\nlet fullName = person.fullName.bind(member);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Learn more in Function bind()."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Trailing Commas"
+    },
+    {
+      "type": "paragraph",
+      "text": "ES5 allows trailing commas in object and array definitions:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "person = {\n  firstName: \"John\",\n  lastName: \"\nDoe\",\n \nage: 46,\n}"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "points = [\n  1,\n  5,\n  10,\n  25,\n  40,\n  100,\n];"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "WARNING\nJSON does not allow trailing commas."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "//\n  Allowed:var person = '{\"firstName\":\"John\", \"lastName\":\"Doe\", \n  \"age\":46}'JSON.parse(person)// Not allowed:var person = '{\"firstName\":\"John\", \n  \"lastName\":\"Doe\", \"age\":46,}'JSON.parse(person)"
+        },
+        {
+          "language": "unknown",
+          "code": "//\n    Allowed:points = [40, 100, 1, 5, 25, 10]// Not allowed:points = \n    [40, 100, 1, 5, 25, 10,]"
+        }
+      ]
+    }
+  ]
+}

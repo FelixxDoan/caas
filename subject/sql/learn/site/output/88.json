@@ -1,0 +1,54 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_ref_create_view.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL CREATE VIEW Keyword"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "text": "CREATE VIEW"
+    },
+    {
+      "type": "paragraph",
+      "text": "The CREATE VIEW command creates a view."
+    },
+    {
+      "type": "paragraph",
+      "text": "A view is a virtual table based on the result set of an SQL statement."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL creates a view that selects all customers from Brazil:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\nCREATE VIEW [Brazil \n  Customers] AS\nSELECT \n  CustomerName, ContactName\nFROM Customers\nWHERE \n  Country = \"Brazil\";"
+    },
+    {
+      "type": "heading",
+      "text": "Query The View"
+    },
+    {
+      "type": "paragraph",
+      "text": "We can query the view above as follows:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\nSELECT * FROM [Brazil Customers];"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

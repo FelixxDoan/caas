@@ -1,0 +1,345 @@
+{
+  "url": "https://www.w3schools.com/html/html_study_plan.asp",
+  "title": "HTML ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "HTML Study Plan"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Introduction"
+    },
+    {
+      "type": "paragraph",
+      "text": "The HTML study plan helps you teach your students HTML step-by-step."
+    },
+    {
+      "type": "paragraph",
+      "text": "Creating a study plan for HTML is easy."
+    },
+    {
+      "type": "paragraph",
+      "text": "You can use a pre-built study plan or customize it."
+    },
+    {
+      "type": "paragraph",
+      "text": "Students have different skill levels. The study plans can be customized to ensure that everyone is challenged."
+    },
+    {
+      "type": "paragraph",
+      "text": "Save time with pre-built teacher materials and study plans. Easily organize your class with a timeline from the introduction of HTML to the final exam."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "W3Schools Academy"
+    },
+    {
+      "type": "paragraph",
+      "text": "This study plan is a feature of W3Schools Academy."
+    },
+    {
+      "type": "paragraph",
+      "text": "W3Schools Academy is a platform that has everything you need to teach coding, all in one place."
+    },
+    {
+      "type": "paragraph",
+      "text": "It offers you as a teacher a toolbox of features that helps you succeed with teaching in your classroom."
+    },
+    {
+      "type": "paragraph",
+      "text": "You need to have an active subscription to access the study plan feature. There are two different subscription tiers:"
+    },
+    {
+      "type": "other",
+      "text": "Essentials ($1.99 / month per student)\n  Full Access ($5.99 / month per student)\n  Calculate your price and order here."
+    },
+    {
+      "type": "paragraph",
+      "text": "Learn More »"
+    },
+    {
+      "type": "paragraph",
+      "text": "Academy also offer other features such as:"
+    },
+    {
+      "type": "other",
+      "text": "Managing your classroom\n  Tracking of student progress and reports\n  Labs, assignments, and code challenges (prebuilt challenges or create your own ones)\n  Auto-grading\n  Teaching materials\n  Certification exams"
+    },
+    {
+      "type": "paragraph",
+      "text": "Get a free demo »"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Teacher Materials"
+    },
+    {
+      "type": "paragraph",
+      "text": "W3Schools has everything you need to teach HTML."
+    },
+    {
+      "type": "paragraph",
+      "text": "The HTML training materials is available for you to include and use in your study plan:"
+    },
+    {
+      "type": "other",
+      "text": "W3Schools HTML Tutorial\n  HTML Exercises\n  HTML Quiz\n  HTML Challenges (Coding challenges)\n  HTML Certification Exam (End of Pathway Exam)"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML Syllabus"
+    },
+    {
+      "type": "paragraph",
+      "text": "With the HTML Syllabus, your students will start with the basics, like creating simple web pages, and move to more advanced topics, like adding images, links, and forms. Each chapter has examples, try-its, exercises, and quizzes to make learning easy, interactive and fun."
+    },
+    {
+      "type": "paragraph",
+      "text": "Read more about HTML Syllabus."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Study Plan Overview"
+    },
+    {
+      "type": "paragraph",
+      "text": "The study plan features are made to help teachers and students. They make learning easy, flexible, and fun. These features work for different types of classes, learning styles and student level."
+    },
+    {
+      "type": "other",
+      "text": "Learning Paths\n    \n      You can add ready-made learning paths.\n      The learning paths are by default ordered by our recommended order.\n      You can change the order.\n      You can add custom activities with text, links, or multi-media files.\n      Drag and drop or click to make changes to the path.\n    \n  \n  \n    Interactive Content\n    \n      Tutorials\n      Try-its (test code snippets)\n      Exercises\n      Quiz\n      Challenges\n      Labs\n    \n  \n  \n    Timeline and Pace\n    \n      You can set a timeline of your study plan (e.g., 4-week, 8-week, 12-week, 24-week plans).\n      You can decide the learning pace for your class.\n      Different study plans can be assigned to different students in the same class.\n      The flexibility can help to make sure that everyone is challenged.\n    \n  \n  \n    Track Student Progress\n    \n      There are tools to track student progress.\n      The analytic tools include: chapter progress, exercises results, quiz results, exam results, and much more.\n      The challenges can be auto-graded or manually graded. The results are available to you as a teacher.\n    \n  \n  \n    End of Pathway Exam\n    \n      The HTML study plan aligns with the HTML Certification Exam.\n      The exam can be taken at the end of the study plan, at your selected date.\n      The exam summarizes the HTML Tutorial.\n      You get reports of the students' results.\n    \n  \n  \n    Accessibility\n    \n      Study plans and learning materials are accessible on desktops, tablets, and smartphones.\n      This ensures students can learn anytime, anywhere."
+    },
+    {
+      "type": "paragraph",
+      "text": "Learn More »"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Sample Study Plan"
+    },
+    {
+      "type": "paragraph",
+      "text": "You choose the timeline and pace of your study plans."
+    },
+    {
+      "type": "paragraph",
+      "text": "Schools have different preferences."
+    },
+    {
+      "type": "paragraph",
+      "text": "Some would like more intensive pace, e.g. 4 weeks, others 12 or more weeks."
+    },
+    {
+      "type": "paragraph",
+      "text": "It is completely up to you."
+    },
+    {
+      "type": "paragraph",
+      "text": "For example, this is how a 4-week HTML study plan could look like:"
+    },
+    {
+      "type": "other",
+      "text": "Week 1: Introduction and Basics, Formatting and Style, Colors, Links\n  Week 2: Images, Tables, Lists\n  Week 3: More HTML Elements, Logic, Forms\n  Week 4: Graphics, Media, APIs, HTML Certification Exam"
+    },
+    {
+      "type": "paragraph",
+      "text": "Image of Sample HTML study plan:"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Ready to get started?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Start with  HTML Study Plans today."
+    },
+    {
+      "type": "paragraph",
+      "text": "Get Started »"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Are You a Teacher?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Are you interested in learning how you can use W3Schools Academy to Teach HTML programming?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Watch a demo of W3Schools Academy. You'll see how it works, and discover how it can make teaching programming easier and more engaging."
+    },
+    {
+      "type": "paragraph",
+      "text": "Watch Demo »"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Essentials ($1.99 / month per student)",
+        "Full Access ($5.99 / month per student)",
+        "Calculate your price and order here."
+      ]
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Managing your classroom",
+        "Tracking of student progress and reports",
+        "Labs, assignments, and code challenges (prebuilt challenges or create your own ones)",
+        "Auto-grading",
+        "Teaching materials",
+        "Certification exams"
+      ]
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "W3Schools HTML Tutorial",
+        "HTML Exercises",
+        "HTML Quiz",
+        "HTML Challenges (Coding challenges)",
+        "HTML Certification Exam (End of Pathway Exam)"
+      ]
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Learning Paths\n    \n      You can add ready-made learning paths.\n      The learning paths are by default ordered by our recommended order.\n      You can change the order.\n      You can add custom activities with text, links, or multi-media files.\n      Drag and drop or click to make changes to the path.",
+        "You can add ready-made learning paths.",
+        "The learning paths are by default ordered by our recommended order.",
+        "You can change the order.",
+        "You can add custom activities with text, links, or multi-media files.",
+        "Drag and drop or click to make changes to the path.",
+        "Interactive Content\n    \n      Tutorials\n      Try-its (test code snippets)\n      Exercises\n      Quiz\n      Challenges\n      Labs",
+        "Tutorials",
+        "Try-its (test code snippets)",
+        "Exercises",
+        "Quiz",
+        "Challenges",
+        "Labs",
+        "Timeline and Pace\n    \n      You can set a timeline of your study plan (e.g., 4-week, 8-week, 12-week, 24-week plans).\n      You can decide the learning pace for your class.\n      Different study plans can be assigned to different students in the same class.\n      The flexibility can help to make sure that everyone is challenged.",
+        "You can set a timeline of your study plan (e.g., 4-week, 8-week, 12-week, 24-week plans).",
+        "You can decide the learning pace for your class.",
+        "Different study plans can be assigned to different students in the same class.",
+        "The flexibility can help to make sure that everyone is challenged.",
+        "Track Student Progress\n    \n      There are tools to track student progress.\n      The analytic tools include: chapter progress, exercises results, quiz results, exam results, and much more.\n      The challenges can be auto-graded or manually graded. The results are available to you as a teacher.",
+        "There are tools to track student progress.",
+        "The analytic tools include: chapter progress, exercises results, quiz results, exam results, and much more.",
+        "The challenges can be auto-graded or manually graded. The results are available to you as a teacher.",
+        "End of Pathway Exam\n    \n      The HTML study plan aligns with the HTML Certification Exam.\n      The exam can be taken at the end of the study plan, at your selected date.\n      The exam summarizes the HTML Tutorial.\n      You get reports of the students' results.",
+        "The HTML study plan aligns with the HTML Certification Exam.",
+        "The exam can be taken at the end of the study plan, at your selected date.",
+        "The exam summarizes the HTML Tutorial.",
+        "You get reports of the students' results.",
+        "Accessibility\n    \n      Study plans and learning materials are accessible on desktops, tablets, and smartphones.\n      This ensures students can learn anytime, anywhere.",
+        "Study plans and learning materials are accessible on desktops, tablets, and smartphones.",
+        "This ensures students can learn anytime, anywhere."
+      ]
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "You can add ready-made learning paths.",
+        "The learning paths are by default ordered by our recommended order.",
+        "You can change the order.",
+        "You can add custom activities with text, links, or multi-media files.",
+        "Drag and drop or click to make changes to the path."
+      ]
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Tutorials",
+        "Try-its (test code snippets)",
+        "Exercises",
+        "Quiz",
+        "Challenges",
+        "Labs"
+      ]
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "You can set a timeline of your study plan (e.g., 4-week, 8-week, 12-week, 24-week plans).",
+        "You can decide the learning pace for your class.",
+        "Different study plans can be assigned to different students in the same class.",
+        "The flexibility can help to make sure that everyone is challenged."
+      ]
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "There are tools to track student progress.",
+        "The analytic tools include: chapter progress, exercises results, quiz results, exam results, and much more.",
+        "The challenges can be auto-graded or manually graded. The results are available to you as a teacher."
+      ]
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "The HTML study plan aligns with the HTML Certification Exam.",
+        "The exam can be taken at the end of the study plan, at your selected date.",
+        "The exam summarizes the HTML Tutorial.",
+        "You get reports of the students' results."
+      ]
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Study plans and learning materials are accessible on desktops, tablets, and smartphones.",
+        "This ensures students can learn anytime, anywhere."
+      ]
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Week 1: Introduction and Basics, Formatting and Style, Colors, Links",
+        "Week 2: Images, Tables, Lists",
+        "Week 3: More HTML Elements, Logic, Forms",
+        "Week 4: Graphics, Media, APIs, HTML Certification Exam"
+      ]
+    },
+    {
+      "type": "image",
+      "src": "https://www.w3schools.com/html/HTML_study_plan.png"
+    },
+    {
+      "type": "image",
+      "src": "https://www.w3schools.com/python/syllabus-webinar.png"
+    }
+  ]
+}

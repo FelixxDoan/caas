@@ -1,0 +1,376 @@
+{
+  "url": "https://www.w3schools.com/js/js_map_methods.asp",
+  "title": "JavaScript Map Methods",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Map Methods"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The new Map() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can create a map by passing an array to the new Map() constructor:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create a Map\nconst fruits = new Map([\n  [\"apples\", 500],\n  [\"bananas\", 300],\n  [\"oranges\", 200]\n]);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Map.get()"
+    },
+    {
+      "type": "paragraph",
+      "text": "You get the value of a key in a map with the get() method"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "fruits.get(\"apples\");"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Map.set()"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can add elements to a map with the set() method:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create a Map\nconst fruits = new Map();\n\n// Set Map Values\nfruits.set(\"apples\", 500);\nfruits.set(\"bananas\", 300);\nfruits.set(\"oranges\", 200);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The set() method can also be used to change existing map values:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "fruits.set(\"apples\", 500);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Map.size"
+    },
+    {
+      "type": "paragraph",
+      "text": "The size property returns the number of elements in a map:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "fruits.size;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Map.delete()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The delete() method removes a map element:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "fruits.delete(\"apples\");"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Map.clear()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The clear() method removes all the elements from a map:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "fruits.clear();"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Map.has()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The has() method returns true if a key exists in a map:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "fruits.has(\"apples\");"
+        },
+        {
+          "language": "unknown",
+          "code": "fruits.delete(\"apples\");\nfruits.has(\"apples\");"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Map.forEach()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The forEach() method invokes a callback for each key/value pair in a map:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// List all entries\nlet text = \"\";\nfruits.forEach (function(value, key) {\n  text += key + ' = ' + value;\n})"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Map.entries()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The entries() method returns an iterator object with the [key,values] in a map:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// List all entries\nlet text = \"\";\nfor (const x of fruits.entries()) {\n  text += x;\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Map.keys()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The keys() method returns an iterator object with the keys in a map:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// List all keys\nlet text = \"\";\nfor (const x of fruits.keys()) {\n  text += x;\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Map.values()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The values() method returns an iterator object with the values in a map:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// List all values\nlet text = \"\";\nfor (const x of fruits.values()) {\n  text += x;\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "You can use the values() method to sum the values in a map:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Sum all values\nlet total = 0;\nfor (const x of fruits.values()) {\n  total += x;\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Objects as Keys"
+    },
+    {
+      "type": "other",
+      "text": "Being able to use objects as keys is an important Map feature."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create Objects\nconst apples = {name: 'Apples'};\nconst bananas = {name: 'Bananas'};\nconst oranges = {name: 'Oranges'};\n\n// Create a Map\nconst fruits = new Map();\n\n// Add new Elements to the Map\nfruits.set(apples, 500);\nfruits.set(bananas, 300);\nfruits.set(oranges, 200);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Remember: The key is an object (apples), not a string (\"apples\"):"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "fruits.get(\"apples\");  // Returns undefined"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Map.groupBy()"
+    },
+    {
+      "type": "paragraph",
+      "text": "ES2024 added the Map.groupBy() method to JavaScript."
+    },
+    {
+      "type": "paragraph",
+      "text": "The Map.groupBy() method groups elements of an object\naccording to string values returned from a callback function."
+    },
+    {
+      "type": "paragraph",
+      "text": "The Map.groupBy() method does not change the original object."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create an Array\nconst fruits = [\n  {name:\"apples\", quantity:300},\n  {name:\"bananas\", quantity:500},\n  {name:\"oranges\", quantity:200},\n  {name:\"kiwi\", quantity:150}\n];\n\n// Callback function to Group Elements\nfunction myCallback({ quantity }) {\n  return quantity > 200 ? \"ok\" : \"low\";\n}\n\n// Group by Quantity\nconst result = Map.groupBy(fruits, myCallback);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Browser Support"
+    },
+    {
+      "type": "paragraph",
+      "text": "Map.groupby() is an ES2024 feature."
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript 2024 is supported in new browsers since March 2024:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Chrome 117",
+          "Edge 117",
+          "Firefox 119",
+          "Safari 17.4",
+          "Opera 103"
+        ],
+        [
+          "Sep 2023",
+          "Sep 2023",
+          "Oct 2023",
+          "Okt 2024",
+          "May 2023"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Warning\nES2024 features are relatively new.\nOlder browsers may need an alternative code (Polyfill)"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Object.groupBy() vs Map.groupBy()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The difference between Object.groupBy() and Map.groupBy() is:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Object.groupBy() groups elements into a JavaScript object."
+    },
+    {
+      "type": "paragraph",
+      "text": "Map.groupBy() groups elements into a Map object."
+    },
+    {
+      "type": "other",
+      "text": "Complete JavaScript Reference\nFor a complete reference to all JavaScript properties and methods, with full descriptions and many examples, go to:\nW3Schools' Full JavaScript Reference.\nThe reference inludes all JavaScript updates from 1999 to 2025."
+    }
+  ]
+}

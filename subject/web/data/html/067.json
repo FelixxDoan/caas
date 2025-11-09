@@ -1,0 +1,110 @@
+{
+  "url": "https://www.w3schools.com/html/html_lists_other.asp",
+  "title": "HTML ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "HTML Other Lists"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "HTML also supports description lists."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML Description Lists"
+    },
+    {
+      "type": "paragraph",
+      "text": "A description list is a list of terms, with a description of each term."
+    },
+    {
+      "type": "paragraph",
+      "text": "The <dl> tag defines the description list, the \n<dt> tag defines the term (name), and the \n<dd> \ntag describes each term:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<dl>\n \n<dt>Coffee</dt>\n \n<dd>- black hot drink</dd>\n \n<dt>Milk</dt>\n \n<dd>- white cold drink</dd>\n</dl>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Chapter Summary"
+    },
+    {
+      "type": "other",
+      "text": "Use the HTML <dl> element to define a description list\n  Use the HTML <dt> element to define the description term\n  Use the HTML <dd> element to describe the term in a description list"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML List Tags"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Tag",
+          "Description"
+        ],
+        [
+          "<ul>",
+          "Defines an unordered list"
+        ],
+        [
+          "<ol>",
+          "Defines an ordered list"
+        ],
+        [
+          "<li>",
+          "Defines a list item"
+        ],
+        [
+          "<dl>",
+          "Defines a description list"
+        ],
+        [
+          "<dt>",
+          "Defines a term in a description list"
+        ],
+        [
+          "<dd>",
+          "Describes the term in a description list"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "For a complete list of all available HTML tags, visit our HTML Tag Reference."
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Use the HTML <dl> element to define a description list",
+        "Use the HTML <dt> element to define the description term",
+        "Use the HTML <dd> element to describe the term in a description list"
+      ]
+    }
+  ]
+}

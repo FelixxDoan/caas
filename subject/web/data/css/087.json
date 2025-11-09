@@ -1,0 +1,281 @@
+{
+  "url": "https://www.w3schools.com/css/css_font_pairings.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Great Font Pairings"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "Great font pairings are essential to great design."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Font Pairing Rules"
+    },
+    {
+      "type": "paragraph",
+      "text": "Here are some basic rules to create great font pairings:"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "1. Complement"
+    },
+    {
+      "type": "paragraph",
+      "text": "It is always safe to find font pairings that complement one another."
+    },
+    {
+      "type": "paragraph",
+      "text": "A great font combination should harmonize, without being too similar or too different."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "2. Use Font Superfamilies"
+    },
+    {
+      "type": "paragraph",
+      "text": "A font superfamily is a set of fonts designed to work well together. So, using different fonts within the same superfamily is safe."
+    },
+    {
+      "type": "paragraph",
+      "text": "For example, the Lucida superfamily contains the following fonts: Lucida \nSans, Lucida Serif, Lucida Typewriter Sans, Lucida Typewriter Serif and Lucida Math."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "3. Contrast is King"
+    },
+    {
+      "type": "paragraph",
+      "text": "Two fonts that are too similar will often conflict. However, contrasts, done \nthe right way, brings out the best in each font."
+    },
+    {
+      "type": "paragraph",
+      "text": "Example: Combining serif with sans serif is a well known combination."
+    },
+    {
+      "type": "paragraph",
+      "text": "A strong superfamily includes both serif and sans serif variations of the same font (e.g. Lucida and Lucida Sans)."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "4. Choose Only One Boss"
+    },
+    {
+      "type": "paragraph",
+      "text": "One font should be the boss. This establishes a hierarchy for the fonts on \nyour page. This can be achieved by varying the size, weight and color."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "body {  background-color: black;  font-family: Verdana, \n  sans-serif;  font-size: 16px;  color: gray; }h1 \n  {  font-family: Georgia, serif;  font-size: 60px;  \n  color: white;}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Below, we have shown some popular font pairings that will suit many brands and contexts."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Georgia and Verdana"
+    },
+    {
+      "type": "paragraph",
+      "text": "Georgia and Verdana is a classic combination. It also sticks to the web safe font standards:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Beautiful Norway\nNorway has a total area of 385,252 square \nkilometers and a population of 5,438,657 (December 2020). Norway is bordered by Sweden, Finland and Russia to the north-east, and the Skagerrak to the south, with Denmark on the other side.\nNorway has beautiful mountains, glaciers and stunning fjords. Oslo, the capital, is a city of green spaces and museums. Bergen, with colorful wooden houses, is the starting point for cruises to the dramatic Sognefjord. Norway is also known for fishing, hiking and skiing."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Helvetica and Garamond"
+    },
+    {
+      "type": "paragraph",
+      "text": "Helvetica and Garamond is another classic combination that uses web safe fonts:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Beautiful Norway\nNorway has a total area of 385,252 square \nkilometers and a population of 5,438,657 (December 2020). Norway is bordered by Sweden, Finland and Russia to the north-east, and the Skagerrak to the south, with Denmark on the other side.\nNorway has beautiful mountains, glaciers and stunning fjords. Oslo, the capital, is a city of green spaces and museums. Bergen, with colorful wooden houses, is the starting point for cruises to the dramatic Sognefjord. Norway is also known for fishing, hiking and skiing."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Popular Google Font Pairings"
+    },
+    {
+      "type": "paragraph",
+      "text": "If you do not want to use standard fonts in HTML, you can use Google Fonts."
+    },
+    {
+      "type": "paragraph",
+      "text": "Google Fonts are free to use, and have more than 1000 fonts to choose from."
+    },
+    {
+      "type": "paragraph",
+      "text": "Below are some popular Google Web Font Pairings."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Merriweather and Open Sans"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Beautiful Norway\nNorway has a total area of 385,252 square \nkilometers and a population of 5,438,657 (December 2020). Norway is bordered by Sweden, Finland and Russia to the north-east, and the Skagerrak to the south, with Denmark on the other side.\nNorway has beautiful mountains, glaciers and stunning fjords. Oslo, the capital, is a city of green spaces and museums. Bergen, with colorful wooden houses, is the starting point for cruises to the dramatic Sognefjord. Norway is also known for fishing, hiking and skiing."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Ubuntu and Lora"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Beautiful Norway\nNorway has a total area of 385,252 square \nkilometers and a population of 5,438,657 (December 2020). Norway is bordered by Sweden, Finland and Russia to the north-east, and the Skagerrak to the south, with Denmark on the other side.\nNorway has beautiful mountains, glaciers and stunning fjords. Oslo, the capital, is a city of green spaces and museums. Bergen, with colorful wooden houses, is the starting point for cruises to the dramatic Sognefjord. Norway is also known for fishing, hiking and skiing."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Abril Fatface and Poppins"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Beautiful Norway\nNorway has a total area of 385,252 square \nkilometers and a population of 5,438,657 (December 2020). Norway is bordered by Sweden, Finland and Russia to the north-east, and the Skagerrak to the south, with Denmark on the other side.\nNorway has beautiful mountains, glaciers and stunning fjords. Oslo, the capital, is a city of green spaces and museums. Bergen, with colorful wooden houses, is the starting point for cruises to the dramatic Sognefjord. Norway is also known for fishing, hiking and skiing."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Cinzel and Fauna One"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Beautiful Norway\nNorway has a total area of 385,252 square \nkilometers and a population of 5,438,657 (December 2020). Norway is bordered by Sweden, Finland and Russia to the north-east, and the Skagerrak to the south, with Denmark on the other side.\nNorway has beautiful mountains, glaciers and stunning fjords. Oslo, the capital, is a city of green spaces and museums. Bergen, with colorful wooden houses, is the starting point for cruises to the dramatic Sognefjord. Norway is also known for fishing, hiking and skiing."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Fjalla One and Libre Baskerville"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Beautiful Norway\nNorway has a total area of 385,252 square \nkilometers and a population of 5,438,657 (December 2020). Norway is bordered by Sweden, Finland and Russia to the north-east, and the Skagerrak to the south, with Denmark on the other side.\nNorway has beautiful mountains, glaciers and stunning fjords. Oslo, the capital, is a city of green spaces and museums. Bergen, with colorful wooden houses, is the starting point for cruises to the dramatic Sognefjord. Norway is also known for fishing, hiking and skiing."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Space Mono and Muli"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Beautiful Norway\nNorway has a total area of 385,252 square \nkilometers and a population of 5,438,657 (December 2020). Norway is bordered by Sweden, Finland and Russia to the north-east, and the Skagerrak to the south, with Denmark on the other side.\nNorway has beautiful mountains, glaciers and stunning fjords. Oslo, the capital, is a city of green spaces and museums. Bergen, with colorful wooden houses, is the starting point for cruises to the dramatic Sognefjord. Norway is also known for fishing, hiking and skiing."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Spectral and Rubik"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Beautiful Norway\nNorway has a total area of 385,252 square \nkilometers and a population of 5,438,657 (December 2020). Norway is bordered by Sweden, Finland and Russia to the north-east, and the Skagerrak to the south, with Denmark on the other side.\nNorway has beautiful mountains, glaciers and stunning fjords. Oslo, the capital, is a city of green spaces and museums. Bergen, with colorful wooden houses, is the starting point for cruises to the dramatic Sognefjord. Norway is also known for fishing, hiking and skiing."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Oswald and Noto Sans"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Beautiful Norway\nNorway has a total area of 385,252 square \nkilometers and a population of 5,438,657 (December 2020). Norway is bordered by \nSweden, Finland and Russia to the north-east, and the Skagerrak to the south, with Denmark on the other side.\nNorway has beautiful mountains, glaciers and stunning fjords. Oslo, the capital, is a city of green spaces and museums. Bergen, with colorful wooden houses, is the starting point for cruises to the dramatic Sognefjord. Norway is also known for fishing, hiking and skiing."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "For a list of all free Google Fonts, visit our How To - Google Fonts Tutorial."
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

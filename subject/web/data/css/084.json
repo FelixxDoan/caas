@@ -1,0 +1,176 @@
+{
+  "url": "https://www.w3schools.com/css/css_font_size.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Font Size"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Font Size"
+    },
+    {
+      "type": "paragraph",
+      "text": "The font-size property sets the size of the text."
+    },
+    {
+      "type": "paragraph",
+      "text": "Being able to manage the text size is important in web design. However, you \nshould not use font size adjustments to make paragraphs look like headings, or \nheadings look like paragraphs."
+    },
+    {
+      "type": "paragraph",
+      "text": "Always use the proper HTML tags, like <h1> - <h6> for headings and <p> for \nparagraphs."
+    },
+    {
+      "type": "paragraph",
+      "text": "The font-size value can be  \nan absolute, or relative size."
+    },
+    {
+      "type": "paragraph",
+      "text": "Absolute size:"
+    },
+    {
+      "type": "other",
+      "text": "Sets the text to a specified size\nDoes not allow a user to change the text size in all browsers (bad for accessibility reasons)\nAbsolute size is useful when the physical size of the output is known"
+    },
+    {
+      "type": "paragraph",
+      "text": "Relative size:"
+    },
+    {
+      "type": "other",
+      "text": "Sets the size relative to surrounding elements\nAllows a user to change the text size in browsers"
+    },
+    {
+      "type": "other",
+      "text": "Note: If you do not specify a font size, the default size for normal text, like paragraphs, is 16px (16px=1em)."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Set Font Size With Pixels"
+    },
+    {
+      "type": "paragraph",
+      "text": "Setting the text size with pixels gives you full control over the text size:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "h1 {  font-size: 40px;}\nh2 {  font-size: 30px;}\np {  font-size: 14px;}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Tip: If you use pixels, you can still use the zoom tool to resize the entire page."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Set Font Size With Em"
+    },
+    {
+      "type": "paragraph",
+      "text": "To allow users to resize the text (in the browser menu), many \ndevelopers use em instead of pixels."
+    },
+    {
+      "type": "paragraph",
+      "text": "1em is equal to the current font size. The default text size in browsers is \n16px. So, the default size of 1em is 16px."
+    },
+    {
+      "type": "paragraph",
+      "text": "The size can be calculated from pixels to em using this formula: pixels/16=em"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "h1 {  font-size: 2.5em; /* 40px/16=2.5em */}\nh2 {  font-size: 1.875em; /* 30px/16=1.875em */\n}\np {  font-size: 0.875em; /* 14px/16=0.875em */}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "In the example above, the text size in em is the same as the previous example \nin pixels. However, with the em size, it is possible to adjust the text size \nin all browsers."
+    },
+    {
+      "type": "paragraph",
+      "text": "Unfortunately, there is still a problem with older versions \nof Internet Explorer. \nThe text becomes larger than it should \nwhen made larger, and smaller than it should when made smaller."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Use a Combination of Percent and Em"
+    },
+    {
+      "type": "paragraph",
+      "text": "The solution that works in all browsers, is to set a default font-size in \npercent for the <body> element:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "body {  font-size: 100%;}\nh1 {  font-size: 2.5em;}\nh2 {  font-size: 1.875em;}\np {  font-size: 0.875em;}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Our code now works great! It shows the same text size in \nall browsers, and allows all browsers to zoom or resize the text!"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Responsive Font Size"
+    },
+    {
+      "type": "paragraph",
+      "text": "The text size can be set with a vw unit, which means the \"viewport width\"."
+    },
+    {
+      "type": "paragraph",
+      "text": "That way the text size will follow the size of the browser window:"
+    },
+    {
+      "type": "other",
+      "text": "Hello World\nResize the browser window to see how the font size scales."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<h1 style=\"font-size:10vw\">Hello World</h1>"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm."
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

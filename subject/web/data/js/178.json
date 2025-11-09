@@ -1,0 +1,132 @@
+{
+  "url": "https://www.w3schools.com/js/js_break.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Break and Continue"
+    },
+    {
+      "type": "paragraph",
+      "text": "The break statement \"jumps out\" of a loop."
+    },
+    {
+      "type": "paragraph",
+      "text": "The continue statement \"jumps over\" one iteration in \nthe loop."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Break Statement"
+    },
+    {
+      "type": "paragraph",
+      "text": "You have already seen the break statement used in an earlier \nchapter of this tutorial. It was used to \"jump out\" of a switch() statement."
+    },
+    {
+      "type": "paragraph",
+      "text": "The break statement can also be used to jump out of a loop:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "for (let i = 0; i < 10; i++) {\n   \nif (i === 3) { break; }\n    text += \"The number is \" + i + \"<br>\";\n }"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "In the example above, the break statement ends the loop (\"breaks\" the loop)\nwhen the loop counter (i) is 3."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Continue Statement"
+    },
+    {
+      "type": "paragraph",
+      "text": "The continue statement breaks one iteration (in the loop), if a specified \ncondition occurs, and continues with the next iteration in the loop."
+    },
+    {
+      "type": "paragraph",
+      "text": "This example skips the value of 3:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "for (let i = 0; i < 10; i++) {\n    if (i === 3) { continue; }\n    text += \"The number is \" + i + \"<br>\";\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Labels"
+    },
+    {
+      "type": "paragraph",
+      "text": "To label JavaScript statements you precede the statements with a label name \nand a colon:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "label:statements"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The break and the continue statements are the only JavaScript statements that \ncan \"jump out of\" a code block."
+    },
+    {
+      "type": "paragraph",
+      "text": "Syntax:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "break labelname; continue labelname;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The continue \nstatement (with or without a label reference) can only be used to skip one \nloop iteration."
+    },
+    {
+      "type": "paragraph",
+      "text": "The break statement, without a label reference, can only be used to \njump out of a loop \nor a switch."
+    },
+    {
+      "type": "paragraph",
+      "text": "With a label reference, the break statement can be used to jump out \nof any code block:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const cars = [\"BMW\", \"Volvo\", \"Saab\", \"Ford\"];list: {  text += cars[0] + \"<br>\"; \n    text += cars[1] + \"<br>\";   break list;  text += cars[2] + \"<br>\"; \n    text += cars[3] + \"<br>\"; }"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "A code block is a block of code between { and }."
+    }
+  ]
+}

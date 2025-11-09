@@ -1,0 +1,385 @@
+{
+  "url": "https://www.w3schools.com/js/js_arithmetic.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Arithmetic"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Arithmetic Operators"
+    },
+    {
+      "type": "paragraph",
+      "text": "Arithmetic operators perform arithmetic on numbers (literals or variables)."
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Operator",
+          "Description"
+        ],
+        [
+          "+",
+          "Addition"
+        ],
+        [
+          "-",
+          "Subtraction"
+        ],
+        [
+          "*",
+          "Multiplication"
+        ],
+        [
+          "**",
+          "Exponentiation (ES2016)"
+        ],
+        [
+          "/",
+          "Division"
+        ],
+        [
+          "%",
+          "Modulus (Remainder)"
+        ],
+        [
+          "++",
+          "Increment"
+        ],
+        [
+          "--",
+          "Decrement"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Arithmetic Operations"
+    },
+    {
+      "type": "paragraph",
+      "text": "A typical arithmetic operation operates on two numbers."
+    },
+    {
+      "type": "paragraph",
+      "text": "The two numbers can be literals:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 100 + 50;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "or variables:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = a + b;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "or expressions:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = (100 + 50) * a;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Operators and Operands"
+    },
+    {
+      "type": "paragraph",
+      "text": "The numbers (in an arithmetic operation) are called operands."
+    },
+    {
+      "type": "paragraph",
+      "text": "The operation (to be performed between the two operands) is defined by an operator."
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Operand",
+          "Operator",
+          "Operand"
+        ],
+        [
+          "100",
+          "+",
+          "50"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Adding"
+    },
+    {
+      "type": "paragraph",
+      "text": "The addition operator (+) adds numbers:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 5;\nlet y = 2;\nlet z = x + y;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Subtracting"
+    },
+    {
+      "type": "paragraph",
+      "text": "The subtraction operator (-) subtracts numbers."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 5;\nlet y = 2;\nlet z = x - y;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Multiplying"
+    },
+    {
+      "type": "paragraph",
+      "text": "The multiplication operator (*) multiplies numbers."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 5;\nlet y = 2;\nlet z = x * y;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Dividing"
+    },
+    {
+      "type": "paragraph",
+      "text": "The division operator (/) divides numbers."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 5;\nlet y = 2;\nlet z = x / y;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Remainder"
+    },
+    {
+      "type": "paragraph",
+      "text": "The modulus operator (%) returns the division remainder."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 5;\nlet y = 2;\nlet z = x % y;"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "In arithmetic, the division of two integers produces a quotient\nand a remainder.\nIn mathematics, the result of a modulo operation is the remainder of an arithmetic division."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Incrementing"
+    },
+    {
+      "type": "paragraph",
+      "text": "The increment operator (++) increments numbers."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 5;x++;\nlet z = x;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Decrementing"
+    },
+    {
+      "type": "paragraph",
+      "text": "The decrement operator (--) decrements numbers."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 5;\n x--;\nlet z = x;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Exponentiation"
+    },
+    {
+      "type": "paragraph",
+      "text": "The exponentiation operator (**) raises the first operand to the power of the second operand."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 5;\nlet z =\n x ** 2;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "x ** y produces the same result as Math.pow(x,y):"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 5;\nlet z =\n  Math.pow(x,2);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Operator Precedence"
+    },
+    {
+      "type": "paragraph",
+      "text": "Operator precedence describes the order in which operations are performed in \nan arithmetic expression."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 100 + 50 * 3;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Is the result of example above the same as 150 * 3, or is it the same as 100 \n+ 150?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Is the addition or the multiplication done first?"
+    },
+    {
+      "type": "paragraph",
+      "text": "As in traditional school mathematics, the multiplication is done first."
+    },
+    {
+      "type": "paragraph",
+      "text": "Multiplication (*) and division (/) have higher precedence than \naddition (+) and subtraction (-)."
+    },
+    {
+      "type": "paragraph",
+      "text": "And (as in school mathematics) the precedence can be changed by using \nparentheses."
+    },
+    {
+      "type": "paragraph",
+      "text": "When using parentheses, the operations inside the parentheses are computed \nfirst:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = (100 + 50) * 3;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "When many operations have the same precedence (like addition and \nsubtraction or multiplication and division), they are computed from left to \nright:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 100 + 50 - 3;"
+        },
+        {
+          "language": "unknown",
+          "code": "let x = 100 / 50 * 3;"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\nFor a full list of operator precedence values go to:\nJavaScript Operator Precedence Values."
+    }
+  ]
+}

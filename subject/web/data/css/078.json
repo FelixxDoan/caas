@@ -1,0 +1,166 @@
+{
+  "url": "https://www.w3schools.com/css/css_table_align.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Table Alignment"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Horizontal Alignment"
+    },
+    {
+      "type": "paragraph",
+      "text": "The text-align property sets the horizontal alignment (like left, right, or center) \nof the content in <th> or <td>."
+    },
+    {
+      "type": "paragraph",
+      "text": "By default, the content of <th> elements are center-aligned and the \ncontent of <td> elements are left-aligned."
+    },
+    {
+      "type": "paragraph",
+      "text": "To center-align the content of  <td> elements as well, use text-align: center:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Firstname",
+          "Lastname",
+          "Savings"
+        ],
+        [
+          "Peter",
+          "Griffin",
+          "$100"
+        ],
+        [
+          "Lois",
+          "Griffin",
+          "$150"
+        ],
+        [
+          "Joe",
+          "Swanson",
+          "$300"
+        ]
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "td\n{\n   \ntext-align: center;\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "To left-align the content, force the alignment of <th> elements to be \nleft-aligned, with the text-align: left property:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Firstname",
+          "Lastname",
+          "Savings"
+        ],
+        [
+          "Peter",
+          "Griffin",
+          "$100"
+        ],
+        [
+          "Lois",
+          "Griffin",
+          "$150"
+        ],
+        [
+          "Joe",
+          "Swanson",
+          "$300"
+        ]
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "th\n{\n   \ntext-align: left;\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Vertical Alignment"
+    },
+    {
+      "type": "paragraph",
+      "text": "The vertical-align property sets the vertical alignment (like top, bottom, or middle) \nof the content in <th> or <td>."
+    },
+    {
+      "type": "paragraph",
+      "text": "By default, the vertical alignment of the content in a table is middle (for both <th> \nand <td> elements)."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following example sets the vertical text alignment to bottom for <td> elements:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Firstname",
+          "Lastname",
+          "Savings"
+        ],
+        [
+          "Peter",
+          "Griffin",
+          "$100"
+        ],
+        [
+          "Lois",
+          "Griffin",
+          "$150"
+        ],
+        [
+          "Joe",
+          "Swanson",
+          "$300"
+        ]
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "td\n{\n   \nheight: 50px;\n   \nvertical-align: bottom;\n}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

@@ -1,0 +1,198 @@
+{
+  "url": "https://www.w3schools.com/html/html_charset.asp",
+  "title": "HTML ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "HTML Encoding (Character Sets)"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "To display an HTML page correctly, a web browser must know which character set to use."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The HTML charset Attribute"
+    },
+    {
+      "type": "paragraph",
+      "text": "The character set is specified in the <meta> tag:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<meta charset=\"UTF-8\">"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The HTML5 specification encourages web developers to use the UTF-8 character set."
+    },
+    {
+      "type": "paragraph",
+      "text": "UTF-8 covers almost all of the characters and symbols in the world!"
+    },
+    {
+      "type": "paragraph",
+      "text": "Full UTF-8 Reference"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The ASCII Character Set"
+    },
+    {
+      "type": "paragraph",
+      "text": "ASCII was the first character encoding standard for the web.\nIt defined 128 different characters that could be used on the internet:"
+    },
+    {
+      "type": "other",
+      "text": "English letters (A-Z)\nNumbers (0-9)\nSpecial characters like ! $ + - ( ) @ < >."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The ANSI Character Set"
+    },
+    {
+      "type": "paragraph",
+      "text": "ANSI (Windows-1252) was the original Windows character set:"
+    },
+    {
+      "type": "other",
+      "text": "Identical to ASCII for the first 127 characters\nSpecial characters from 128 to 159\nIdentical to UTF-8 from 160 to 255"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<meta charset=\"Windows-1252\">"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The ISO-8859-1 Character Set"
+    },
+    {
+      "type": "paragraph",
+      "text": "ISO-8859-1 was the default character set for HTML 4. This character set \nsupported 256 different character codes. HTML 4 also supported UTF-8."
+    },
+    {
+      "type": "other",
+      "text": "Identical to ASCII for the first 127 characters\nDoes not use the characters from 128 to 159\nIdentical to ANSI and UTF-8 from 160 to 255"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<meta http-equiv=\"Content-Type\" content=\"text/html;charset=ISO-8859-1\">"
+        },
+        {
+          "language": "html",
+          "code": "<meta charset=\"ISO-8859-1\">"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The UTF-8 Character Set"
+    },
+    {
+      "type": "other",
+      "text": "is identical to ASCII for the values from 0 to 127\nDoes not use the characters from 128 to 159\nIdentical to ANSI and 8859-1 from 160 to 255\nContinues from the value 256 to 10 000 characters"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<meta charset=\"UTF-8\">"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Full HTML Character Set Reference."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Differences Between Character Sets"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following table displays the differences between the character sets described above:"
+    },
+    {
+      "type": "other",
+      "text": "Numb\nASCII\nANSI\n8859\nUTF‑8\nDescription\n\n32    space\n33!!!!exclamation mark\n34\"\"\"\"quotation mark\n35####number sign\n36$$$$dollar sign\n37%%%%percent sign\n38&&&&ampersand\n39''''apostrophe\n40((((left parenthesis\n41))))right parenthesis\n42****asterisk\n43++++plus sign\n44,,,,comma\n45----hyphen-minus\n46....full stop\n47////solidus\n480000digit zero\n491111digit one\n502222digit two\n513333digit three\n524444digit four\n535555digit five\n546666digit six\n557777digit seven\n568888digit eight\n579999digit nine\n58::::colon\n59;;;;semicolon\n60<<<<less than\n61====equals sign\n62>>>>greater than\n63????question mark\n64@@@@commercial at\n65AAAALatin A\n66BBBBLatin B\n67CCCCLatin C\n68DDDDLatin D\n69EEEELatin E\n70FFFFLatin F\n71GGGGLatin G\n72HHHHLatin H\n73IIIILatin I\n74JJJJLatin J\n75KKKKLatin K\n76LLLLLatin L\n77MMMMLatin M\n78NNNNLatin N\n79OOOOLatin O\n80PPPPLatin P\n81QQQQLatin Q\n82RRRRLatin R\n83SSSSLatin S\n84TTTTLatin T\n85UUUULatin U\n86VVVVLatin V\n87WWWWLatin W\n88XXXXLatin X\n89YYYYLatin Y\n90ZZZZLatin Z\n91[[[[left square bracket\n92\\\\\\\\reverse solidus\n93]]]]right square bracket\n94^^^^circumflex accent\n95____low line\n96````grave accent\n97aaaaLatin small a\n98bbbbLatin small b\n99ccccLatin small c\n100ddddLatin small d\n101eeeeLatin small e\n102ffffLatin small f\n103ggggLatin small g\n104hhhhLatin small h\n105iiiiLatin small i\n106jjjjLatin small j\n107kkkkLatin small k\n108llllLatin small l\n109mmmmLatin small m\n110nnnnLatin small n\n111ooooLatin small o\n112ppppLatin small p\n113qqqqLatin small q\n114rrrrLatin small r\n115ssssLatin small s\n116ttttLatin small t\n117uuuuLatin small u\n118vvvvLatin small v\n119wwwwLatin small w\n120xxxxLatin small x\n121yyyyLatin small y\n122zzzzLatin small z\n123{{{{left curly bracket\n124||||vertical line\n125}}}}right curly bracket\n126~~~~tilde\n127DEL    \n128   euro sign\n129 NOT USED\n130   single low-9 quotation mark\n131   Latin small f with hook\n132   double low-9 quotation mark\n133   horizontal ellipsis\n134   dagger\n135   double dagger\n136   modifier letter circumflex accent\n137   per mille sign\n138   Latin S with caron\n139   single left-pointing angle quotation mark\n140   Latin capital ligature OE\n141 NOT USED\n142   Latin Z with caron\n143 NOT USED\n144 NOT USED\n145   left single quotation mark\n146   right single quotation mark\n147   left double quotation mark\n148   right double quotation mark\n149   bullet\n150   en dash\n151   em dash\n152   small tilde\n153   trade mark sign\n154   Latin small s with caron\n155   single right-pointing angle quotation mark\n156   Latin small ligature oe\n157 NOT USED\n158   Latin small z with caron\n159   Latin Y with diaeresis\n160    no-break space\n161 ¡¡¡inverted exclamation mark\n162 ¢¢¢cent sign\n163 £££pound sign\n164 ¤¤¤currency sign\n165 ¥¥¥yen sign\n166 ¦¦¦broken bar\n167 §§§section sign\n168 ¨¨¨diaeresis\n169 ©©©copyright sign\n170 ªªªfeminine ordinal indicator\n171 «««left-pointing double angle quotation mark\n172 ¬¬¬not sign\n173 ­­­soft hyphen\n174 ®®®registered sign\n175 ¯¯¯macron\n176 °°°degree sign\n177 ±±±plus-minus sign\n178 ²²²superscript two\n179 ³³³superscript three\n180 ´´´acute accent\n181 µµµmicro sign\n182 ¶¶¶pilcrow sign\n183 ···middle dot\n184 ¸¸¸cedilla\n185 ¹¹¹superscript one\n186 ºººmasculine ordinal indicator\n187 »»»right-pointing double angle quotation mark\n188 ¼¼¼vulgar fraction one quarter\n189 ½½½vulgar fraction one half\n190 ¾¾¾vulgar fraction three quarters\n191 ¿¿¿inverted question mark\n192 ÀÀÀLatin A with grave\n193 ÁÁÁLatin A with acute\n194 ÂÂÂLatin A with circumflex\n195 ÃÃÃLatin A with tilde\n196 ÄÄÄLatin A with diaeresis\n197 ÅÅÅLatin A with ring above\n198 ÆÆÆLatin AE\n199 ÇÇÇLatin C with cedilla\n200 ÈÈÈLatin E with grave\n201 ÉÉÉLatin E with acute\n202 ÊÊÊLatin E with circumflex\n203 ËËËLatin E with diaeresis\n204 ÌÌÌLatin I with grave\n205 ÍÍÍLatin I with acute\n206 ÎÎÎLatin I with circumflex\n207 ÏÏÏLatin I with diaeresis\n208 ÐÐÐLatin Eth\n209 ÑÑÑLatin N with tilde\n210 ÒÒÒLatin O with grave\n211 ÓÓÓLatin O with acute\n212 ÔÔÔLatin O with circumflex\n213 ÕÕÕLatin O with tilde\n214 ÖÖÖLatin O with diaeresis\n215 ×××multiplication sign\n216 ØØØLatin O with stroke\n217 ÙÙÙLatin U with grave\n218 ÚÚÚLatin U with acute\n219 ÛÛÛLatin U with circumflex\n220 ÜÜÜLatin U with diaeresis\n221 ÝÝÝLatin Y with acute\n222 ÞÞÞLatin Thorn\n223 ßßßLatin small sharp s\n224 àààLatin small a with grave\n225 áááLatin small a with acute\n226 âââLatin small a with circumflex\n227 ãããLatin small a with tilde\n228 äääLatin small a with diaeresis\n229 åååLatin small a with ring above\n230 æææLatin small ae\n231 çççLatin small c with cedilla\n232 èèèLatin small e with grave\n233 éééLatin small e with acute\n234 êêêLatin small e with circumflex\n235 ëëëLatin small e with diaeresis\n236 ìììLatin small i with grave\n237 íííLatin small i with acute\n238 îîîLatin small i with circumflex\n239 ïïïLatin small i with diaeresis\n240 ðððLatin small eth\n241 ñññLatin small n with tilde\n242 òòòLatin small o with grave\n243 óóóLatin small o with acute\n244 ôôôLatin small o with circumflex\n245 õõõLatin small o with tilde\n246 öööLatin small o with diaeresis\n247 ÷÷÷division sign\n248 øøøLatin small o with stroke\n249 ùùùLatin small u with grave\n250 úúúLatin small u with acute\n251 ûûûLatin small with circumflex\n252 üüüLatin small u with diaeresis\n253 ýýýLatin small y with acute\n254 þþþLatin small thorn\n255 ÿÿÿLatin small y with diaeresis"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "English letters (A-Z)",
+        "Numbers (0-9)",
+        "Special characters like ! $ + - ( ) @ < >."
+      ]
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Identical to ASCII for the first 127 characters",
+        "Special characters from 128 to 159",
+        "Identical to UTF-8 from 160 to 255"
+      ]
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Identical to ASCII for the first 127 characters",
+        "Does not use the characters from 128 to 159",
+        "Identical to ANSI and UTF-8 from 160 to 255"
+      ]
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "is identical to ASCII for the values from 0 to 127",
+        "Does not use the characters from 128 to 159",
+        "Identical to ANSI and 8859-1 from 160 to 255",
+        "Continues from the value 256 to 10 000 characters"
+      ]
+    },
+    {
+      "type": "image",
+      "src": "https://www.w3schools.com/images/unicode_web.jpg"
+    }
+  ]
+}

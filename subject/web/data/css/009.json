@@ -1,0 +1,65 @@
+{
+  "url": "https://www.w3schools.com/css/css_border_width.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Border Width"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CSS Border Width"
+    },
+    {
+      "type": "paragraph",
+      "text": "The border-width property specifies the width of the four borders."
+    },
+    {
+      "type": "paragraph",
+      "text": "The width can be set as a specific size (in px, pt, cm, em, etc) or by using \none of the three pre-defined values: thin, medium, or thick:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "p.one\n{\n   \nborder-style: solid;\n   \nborder-width: 5px;\n}\np.two\n{\n   \nborder-style: solid;\n  border-width: medium;\n}p.three\n{\n   \nborder-style: dotted;\n  border-width: 2px;\n}\np.four\n{\n   \nborder-style: dotted;\n    border-width: thick;\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Specific Side Widths"
+    },
+    {
+      "type": "paragraph",
+      "text": "The border-width \nproperty can have from one to four values (for the top border, right border, \nbottom border, and the left border):"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "p.one {  border-style: solid;  border-width: 5px 20px; /* \n  5px top and bottom, 20px on the sides */}p.two {  border-style: \n  solid;  border-width: 20px 5px; /* 20px top and bottom, 5px on the \n  sides */}\n  p.three {  border-style: solid;  border-width: 25px 10px \n  4px 35px; /* 25px top, 10px right, 4px bottom and 35px left */}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

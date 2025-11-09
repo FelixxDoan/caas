@@ -1,0 +1,102 @@
+{
+  "url": "https://www.w3schools.com/css/css_outline_offset.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Outline Offset"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CSS Outline Offset"
+    },
+    {
+      "type": "paragraph",
+      "text": "The outline-offset property adds space \nbetween an outline and the edge/border of an element. The space between an \nelement and its outline is transparent."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following example specifies an outline 15px outside the border edge:"
+    },
+    {
+      "type": "paragraph",
+      "text": "This paragraph has an outline 15px outside the border edge."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "p {  margin: 30px;  border: 1px solid black;  outline: \n  1px solid red;  \n  outline-offset: 15px;}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The following example shows that the space between an element and its outline \nis transparent:"
+    },
+    {
+      "type": "paragraph",
+      "text": "This paragraph has an outline of 15px outside the border edge."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "p {  margin: 30px;  background: \n  yellow;  border: 1px solid black;  outline: \n  1px solid red;  \n  outline-offset: 15px;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "All CSS Outline Properties"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Property",
+          "Description"
+        ],
+        [
+          "outline",
+          "A shorthand property for setting outline-width, outline-style, and \n    outline-color in one declaration"
+        ],
+        [
+          "outline-color",
+          "Sets the color of an outline"
+        ],
+        [
+          "outline-offset",
+          "Specifies the space between an outline and the edge or border of an element"
+        ],
+        [
+          "outline-style",
+          "Sets the style of an outline"
+        ],
+        [
+          "\n      outline-width",
+          "Sets the width of an outline"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "url": "https://www.w3schools.com/js/js_htmldom_html.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript HTML DOM - Changing HTML"
+    },
+    {
+      "type": "paragraph",
+      "text": "The HTML DOM allows JavaScript to change the content of HTML elements."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Changing HTML Content"
+    },
+    {
+      "type": "paragraph",
+      "text": "The easiest way to modify the content of an HTML element is by using the innerHTML property."
+    },
+    {
+      "type": "paragraph",
+      "text": "To change the content of an HTML element, use this syntax:"
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "document.getElementById(id).innerHTML = new HTML"
+    },
+    {
+      "type": "paragraph",
+      "text": "This example changes the content of a <p> element:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<html>\n<body>\n<p id=\"p1\">Hello World!</p>\n<script>\ndocument.getElementById(\"p1\").innerHTML = \"New text!\";\n</script>\n</body>\n</html>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Example explained:"
+    },
+    {
+      "type": "other",
+      "text": "The HTML document above contains a <p> element with id=\"p1\"\n  We use the HTML DOM to get the element with id=\"p1\"\n  A JavaScript changes the content (innerHTML) of that element to \"New \n  text!\""
+    },
+    {
+      "type": "paragraph",
+      "text": "This example changes the content of an <h1> element:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<!DOCTYPE html><html>\n<body>\n\n<h1 id=\"id01\">Old Heading</h1>\n\n<script>\nconst element = document.getElementById(\"id01\");element.innerHTML = \"New Heading\";\n</script>\n\n</body>\n</html>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Example explained:"
+    },
+    {
+      "type": "other",
+      "text": "The HTML document above contains an <h1> element with id=\"id01\"\n  We use the HTML DOM to get the element with id=\"id01\"\n  A JavaScript changes the content (innerHTML) of that element to \"New \n  Heading\""
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Changing the Value of an Attribute"
+    },
+    {
+      "type": "paragraph",
+      "text": "To change the value of an HTML attribute, use this syntax:"
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "document.getElementById(id).attribute = new value"
+    },
+    {
+      "type": "paragraph",
+      "text": "This example changes the value of the src attribute of an <img> element:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<!DOCTYPE html><html>\n<body>\n\n<img id=\"myImage\" src=\"smiley.gif\">\n\n<script>\ndocument.getElementById(\"myImage\").src = \"landscape.jpg\";\n</script>\n\n</body>\n</html>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Example explained:"
+    },
+    {
+      "type": "other",
+      "text": "The HTML document above contains an <img> element with id=\"myImage\"\n  We use the HTML DOM to get the element with id=\"myImage\"\n  A JavaScript changes the src attribute of that element from \"smiley.gif\" to \"landscape.jpg\""
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Dynamic HTML content"
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript can create dynamic HTML content:"
+    },
+    {
+      "type": "other",
+      "text": "document.getElementById(\"today\").innerHTML = \"Date : \" + Date();"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<!DOCTYPE html><html>\n<body>\n\n<script>\ndocument.getElementById(\"demo\").innerHTML = \"Date : \" + Date();\n</script>\n\n</body>\n</html>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "document.write()"
+    },
+    {
+      "type": "paragraph",
+      "text": "In JavaScript, document.write() can be used to write directly to the HTML \noutput stream:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<!DOCTYPE html><html>\n<body>\n\n<p>Bla bla bla</p>\n\n<script>\ndocument.write(Date());\n</script>\n\n<p>Bla bla bla</p>\n\n</body>\n</html>"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Never use document.write() after the document is loaded. It will \noverwrite the document."
+    }
+  ]
+}

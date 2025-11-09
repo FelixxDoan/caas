@@ -1,0 +1,150 @@
+{
+  "url": "https://www.w3schools.com/js/js_window_location.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Window Location"
+    },
+    {
+      "type": "paragraph",
+      "text": "The window.location object can be used to get \nthe current page address (URL) and to redirect the browser to a new page."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Window Location"
+    },
+    {
+      "type": "paragraph",
+      "text": "The window.location object can be written without the window prefix."
+    },
+    {
+      "type": "paragraph",
+      "text": "Some examples:"
+    },
+    {
+      "type": "other",
+      "text": "window.location.href returns the href (URL) of the current page\n  window.location.hostname returns the domain name of the web host\n  window.location.pathname returns the path and filename of the current page\n  window.location.protocol returns the web protocol used (http: or https:)\n  window.location.assign() loads a new document"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Window Location Href"
+    },
+    {
+      "type": "paragraph",
+      "text": "The window.location.href property returns the URL of the current page."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "document.getElementById(\"demo\").innerHTML =\"Page location is \" + window.location.href;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Window Location Hostname"
+    },
+    {
+      "type": "paragraph",
+      "text": "The window.location.hostname property returns the name of the internet host (of the current page)."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "document.getElementById(\"demo\").innerHTML =\"Page hostname is \" + window.location.hostname;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Window Location Pathname"
+    },
+    {
+      "type": "paragraph",
+      "text": "The window.location.pathname property returns the pathname of \nthe current page."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "document.getElementById(\"demo\").innerHTML =\"Page path is \" + window.location.pathname;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Window Location Protocol"
+    },
+    {
+      "type": "paragraph",
+      "text": "The window.location.protocol property returns the web protocol of the page."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "document.getElementById(\"demo\").innerHTML =\"Page protocol is \" + window.location.protocol;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Window Location Port"
+    },
+    {
+      "type": "paragraph",
+      "text": "The window.location.port property returns the number of the internet host \nport (of the current page)."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "document.getElementById(\"demo\").innerHTML =\"Port \n  number is \" + window.location.port;"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Most browsers will not display default port numbers (80 for http and 443 for https)"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Window Location Assign"
+    },
+    {
+      "type": "paragraph",
+      "text": "The window.location.assign() method loads a new document."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<html>\n<head>\n<script>\nfunction newDoc() {  window.location.assign(\"https://www.w3schools.com\")\n }\n</script>\n</head>\n<body>\n\n<input type=\"button\" value=\"Load new document\"\nonclick=\"newDoc()\">\n\n</body>\n</html>"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,449 @@
+{
+  "url": "https://www.w3schools.com/js/js_operators.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Operators"
+    },
+    {
+      "type": "other",
+      "text": "Javascript operators are used to perform different types of mathematical and logical computations.\nExamples:\nThe Assignment Operator = assigns values\nThe Addition Operator + adds values\nThe Multiplication Operator * multiplies values\nThe Comparison Operator > compares values"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Assignment"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Assignment Operator (=) assigns a value to a variable:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 10;"
+        },
+        {
+          "language": "unknown",
+          "code": "// Assign the value 5 to x\nlet x = 5;\n// Assign the value 2 to y\nlet y = 2;\n// Assign the value x + y to z:\nlet z = x + y;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Addition"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Addition Operator (+) adds numbers:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 5;\nlet y = 2;\nlet z = x + y;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Multiplication"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Multiplication Operator (*) multiplies numbers:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 5;\nlet y = 2;\nlet z = x * y;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Types of JavaScript Operators"
+    },
+    {
+      "type": "paragraph",
+      "text": "There are different types of JavaScript operators:"
+    },
+    {
+      "type": "other",
+      "text": "Arithmetic Operators\nAssignment Operators\nComparison Operators\nString Operators\nLogical Operators\nBitwise Operators\nTernary Operators\nType Operators"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Arithmetic Operators"
+    },
+    {
+      "type": "paragraph",
+      "text": "Arithmetic Operators are used to perform arithmetic on numbers:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let a = 3;\nlet x = (100 + 50) * a;"
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Operator",
+          "Description"
+        ],
+        [
+          "+",
+          "Addition"
+        ],
+        [
+          "-",
+          "Subtraction"
+        ],
+        [
+          "*",
+          "Multiplication"
+        ],
+        [
+          "**",
+          "Exponentiation (ES2016)"
+        ],
+        [
+          "/",
+          "Division"
+        ],
+        [
+          "%",
+          "Modulus (Division Remainder)"
+        ],
+        [
+          "++",
+          "Increment"
+        ],
+        [
+          "--",
+          "Decrement"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\nArithmetic operators are fully described in the \nJS Arithmetic chapter."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Assignment Operators"
+    },
+    {
+      "type": "paragraph",
+      "text": "Assignment operators assign values to JavaScript variables."
+    },
+    {
+      "type": "paragraph",
+      "text": "The Addition Assignment Operator (+=) adds a value to a variable."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 10;x += 5;"
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Operator",
+          "Example",
+          "Same As"
+        ],
+        [
+          "=",
+          "x = y",
+          "x = y"
+        ],
+        [
+          "+=",
+          "x += y",
+          "x = x + y"
+        ],
+        [
+          "-=",
+          "x -= y",
+          "x = x - y"
+        ],
+        [
+          "*=",
+          "x *= y",
+          "x = x * y"
+        ],
+        [
+          "/=",
+          "x /= y",
+          "x = x / y"
+        ],
+        [
+          "%=",
+          "x %= y",
+          "x = x % y"
+        ],
+        [
+          "**=",
+          "x **= y",
+          "x = x ** y"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\nAssignment operators are fully described in the \nJS Assignment chapter."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Comparison Operators"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Operator",
+          "Description"
+        ],
+        [
+          "==",
+          "equal to"
+        ],
+        [
+          "===",
+          "equal value and equal type"
+        ],
+        [
+          "!=",
+          "not equal"
+        ],
+        [
+          "!==",
+          "not equal value or not equal type"
+        ],
+        [
+          ">",
+          "greater than"
+        ],
+        [
+          "<",
+          "less than"
+        ],
+        [
+          ">=",
+          "greater than or equal to"
+        ],
+        [
+          "<=",
+          "less than or equal to"
+        ],
+        [
+          "?",
+          "ternary operator"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\nComparison operators are fully described in the \nJS Comparisons chapter."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript String Comparison"
+    },
+    {
+      "type": "paragraph",
+      "text": "All the comparison operators above can also be used on strings:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text1 = \"A\";\nlet text2 = \"B\";\nlet result = text1 < text2;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Note that strings are compared alphabetically:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text1 = \"20\";\nlet text2 = \"5\";\nlet result = text1 < text2;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript String Addition"
+    },
+    {
+      "type": "paragraph",
+      "text": "The + can also be used to add (concatenate) strings:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text1 = \"John\";\nlet text2 = \"Doe\";\nlet text3 = text1 + \" \" + text2;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The += assignment operator can also be used to add (concatenate) strings:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text1 = \"What a very \";\ntext1 += \"nice day\";"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\nWhen used on strings, the + operator is called the concatenation operator."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Adding Strings and Numbers"
+    },
+    {
+      "type": "paragraph",
+      "text": "Adding two numbers, will return the sum as a number like 5 + 5 = 10."
+    },
+    {
+      "type": "paragraph",
+      "text": "Adding a number and a string, will return the sum as a concatenated string like 5 + \"5\" = \"55\"."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 5 + 5;\nlet y = \"5\" + 5;\nlet z = \"Hello\" + 5;"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\nIf you add a number and a string, the result will be a string!"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Logical Operators"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Operator",
+          "Description"
+        ],
+        [
+          "&&",
+          "logical and"
+        ],
+        [
+          "||",
+          "logical or"
+        ],
+        [
+          "!",
+          "logical not"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\nLogical operators are fully described in the \nJS Comparisons chapter."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Type Operators"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Operator",
+          "Description"
+        ],
+        [
+          "typeof",
+          "Returns the type of a variable"
+        ],
+        [
+          "instanceof",
+          "Returns true if an object is an instance of an object type"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\nType operators are fully described in the JS Type Conversion chapter."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Bitwise Operators"
+    },
+    {
+      "type": "paragraph",
+      "text": "Bit operators work on 32 bits numbers."
+    },
+    {
+      "type": "other",
+      "text": "Operator\nDescription\nExample\nSame as\nResult\nDecimal\n\n\n&\nAND\n5 & 1\n0101 & 0001\n0001\n 1\n\n\n|\nOR\n5 | 1\n0101 | 0001\n0101\n 5\n\n\n~\nNOT\n~ 5\n ~0101\n1010\n 10\n\n\n^\nXOR\n5 ^ 1\n0101 ^ 0001\n0100\n 4\n\n\n<<\nleft shift\n5 << 1\n0101 << 1\n1010\n 10\n\n\n>>\nright shift\n5 >> 1\n0101 >> 1\n0010\n  2\n\n\n>>>\nunsigned right shift\n5 >>> 1\n0101 >>> 1\n0010\n  2"
+    },
+    {
+      "type": "other",
+      "text": "The examples above uses 4 bits unsigned examples. But JavaScript uses 32-bit signed numbers.\nBecause of this, in JavaScript, ~ 5 will not return 10. It will return -6.\n~00000000000000000000000000000101 will return 11111111111111111111111111111010\nBitwise operators are fully described in the JS \nBitwise chapter."
+    }
+  ]
+}

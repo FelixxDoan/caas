@@ -1,0 +1,183 @@
+{
+  "url": "https://www.w3schools.com/js/js_events.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Events"
+    },
+    {
+      "type": "paragraph",
+      "text": "HTML events are \"things\" that happen to HTML elements."
+    },
+    {
+      "type": "paragraph",
+      "text": "When JavaScript is used in HTML pages, JavaScript can \n\"react\" on \nthese events."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML Events"
+    },
+    {
+      "type": "paragraph",
+      "text": "An HTML event can be something the browser does, or something a user does."
+    },
+    {
+      "type": "paragraph",
+      "text": "Here are some examples of HTML events:"
+    },
+    {
+      "type": "other",
+      "text": "An HTML web page has finished loading\n  An HTML input field was changed\n  An HTML button was clicked"
+    },
+    {
+      "type": "paragraph",
+      "text": "Often, when events happen, you may want to do something."
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript lets you execute code when events are detected."
+    },
+    {
+      "type": "paragraph",
+      "text": "HTML allows event handler attributes, with JavaScript code, to be added to HTML elements."
+    },
+    {
+      "type": "paragraph",
+      "text": "With single quotes:"
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "<element\n event='some JavaScript'>"
+    },
+    {
+      "type": "paragraph",
+      "text": "With double quotes:"
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "<element\n event=\"some JavaScript\">"
+    },
+    {
+      "type": "paragraph",
+      "text": "In the following example, an onclick attribute (with code), is added to a \n<button> element:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<button onclick=\"document.getElementById('demo').innerHTML = Date()\">The time is?</button>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "In the example above, the JavaScript code changes the content of \nthe element with id=\"demo\"."
+    },
+    {
+      "type": "paragraph",
+      "text": "In the next example, the code changes the content of \nits own element (using this.innerHTML):"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<button onclick=\"this.innerHTML = Date()\">The time is?</button>"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "JavaScript code is often several lines long. It is more common to see event attributes calling functions:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<button onclick=\"displayDate()\">The time is?</button>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Common HTML Events"
+    },
+    {
+      "type": "paragraph",
+      "text": "Here is a list of some common HTML events:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Event",
+          "Description"
+        ],
+        [
+          "onchange",
+          "An HTML element has been changed"
+        ],
+        [
+          "onclick",
+          "The user clicks an HTML element"
+        ],
+        [
+          "onmouseover",
+          "The user moves the mouse over an HTML element"
+        ],
+        [
+          "onmouseout",
+          "The user moves the mouse away from an HTML element"
+        ],
+        [
+          "onkeydown",
+          "The user pushes a keyboard key"
+        ],
+        [
+          "onload",
+          "The browser has finished loading the page"
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The list is much longer: W3Schools JavaScript Reference HTML DOM Events."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Event Handlers"
+    },
+    {
+      "type": "paragraph",
+      "text": "Event handlers can be used to handle and verify user input, user actions, \nand browser actions:"
+    },
+    {
+      "type": "other",
+      "text": "Things that should be done every time a page loads\n  Things that should be done when the page is closed\n  Action that should be performed when a user clicks a button\n  Content that should be verified when a user inputs data\n  And more ..."
+    },
+    {
+      "type": "paragraph",
+      "text": "Many different methods can be used to let JavaScript work with events:"
+    },
+    {
+      "type": "other",
+      "text": "HTML event attributes can execute JavaScript code directly\n  HTML event attributes can call JavaScript functions\n  You can assign your own event handler functions to HTML elements\n  You can prevent events from being sent or being handled\n  And more ..."
+    },
+    {
+      "type": "other",
+      "text": "You will learn a lot more about events and event handlers in the HTML DOM chapters."
+    }
+  ]
+}

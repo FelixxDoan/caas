@@ -1,0 +1,77 @@
+{
+  "url": "https://www.w3schools.com/html/html_table_colspan_rowspan.asp",
+  "title": "HTML ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "HTML Table Colspan & Rowspan"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "HTML tables can have cells that span over multiple rows and/or columns."
+    },
+    {
+      "type": "other",
+      "text": "NAME\n \n\n\n \n \n \n\n\n \n \n \n\n\n \n \n \n\n\n \n \n \n\n\n\n\nAPRIL\n \n \n\n\n \n \n\n\n \n \n\n\n \n \n \n\n\n \n \n \n\n\n\n\n2022\n\n\n \n \n \n\n\nFIESTA"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML Table - Colspan"
+    },
+    {
+      "type": "paragraph",
+      "text": "To make a cell span over multiple columns, use the colspan attribute:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<table>  <tr>    <th colspan=\"2\">Name</th>    \n  <th>Age</th>  </tr>  <tr>    \n  <td>Jill</td>    <td>Smith</td>    \n  <td>43</td>  </tr>  <tr>    <td>Eve</td>    \n  <td>Jackson</td>    <td>57</td>  </tr></table>"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note: The value of the colspan attribute represents the number of columns to span."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML Table - Rowspan"
+    },
+    {
+      "type": "paragraph",
+      "text": "To make a cell span over multiple rows, use the rowspan attribute:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<table>  <tr>    <th>Name</th>    \n  <td>Jill</td>  </tr>  <tr>    <th rowspan=\"2\">Phone</th>    \n  <td>555-1234</td>  </tr>  <tr>    \n  <td>555-8745</td></tr></table>"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note: The value of the rowspan attribute represents the number of \nrows to span."
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

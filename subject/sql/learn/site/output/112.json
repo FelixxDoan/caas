@@ -1,0 +1,46 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_ref_insert_into.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL INSERT INTO Keyword"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "text": "INSERT INTO"
+    },
+    {
+      "type": "paragraph",
+      "text": "The INSERT INTO command is used to insert new rows in a table."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL inserts a new record in the \"Customers\" table:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\nINSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)\nVALUES ('Cardinal', 'Tom B. Erichsen', 'Skagen 21', 'Stavanger', '4006', 'Norway');"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL will insert a new record, but only insert data in the \"CustomerName\", \n\"City\", and \"Country\" columns (CustomerID will \nbe updated automatically):"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\nINSERT INTO Customers (CustomerName, City, Country)\nVALUES ('Cardinal', 'Stavanger', 'Norway');"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

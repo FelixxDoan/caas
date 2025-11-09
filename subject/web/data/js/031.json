@@ -1,0 +1,169 @@
+{
+  "url": "https://www.w3schools.com/js/js_json_arrays.asp",
+  "title": "JSON Array Literals",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JSON Array Literals"
+    },
+    {
+      "type": "paragraph",
+      "text": "This is a JSON string:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "'[\"Ford\", \"BMW\", \"Fiat\"]'"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Inside the JSON string there is a JSON array literal:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "[\"Ford\", \"BMW\", \"Fiat\"]"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Arrays in JSON are almost the same as arrays in JavaScript."
+    },
+    {
+      "type": "paragraph",
+      "text": "In JSON, array values must be of type string, number, object, array, boolean \nor null."
+    },
+    {
+      "type": "paragraph",
+      "text": "In JavaScript, array values can be all of the above, plus any other valid \nJavaScript expression, including functions, dates, and undefined."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Arrays"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can create a JavaScript array from a literal:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "myArray = [\"Ford\", \"BMW\", \"Fiat\"];"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "You can create a JavaScript array by parsing a JSON string:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "myJSON = '[\"Ford\", \"BMW\", \"Fiat\"]';\nmyArray = JSON.parse(myJSON);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Accessing Array Values"
+    },
+    {
+      "type": "paragraph",
+      "text": "You access array values by index:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "myArray[0];"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Arrays in Objects"
+    },
+    {
+      "type": "paragraph",
+      "text": "Objects can contain arrays:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "{\n\"name\":\"John\",\n\"age\":30,\n\"cars\":[\"Ford\", \"BMW\", \"Fiat\"]\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "You access array values by index:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "myObj.cars[0];"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Looping Through an Array"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can access array values by using a for in loop:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "for (let i in myObj.cars) {  \n  x \n  += myObj.cars[i];}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Or you can use a for loop:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "for (let i \n  = 0; i < myObj.cars.length; i++) {  x \n  += myObj.cars[i];}"
+        }
+      ]
+    }
+  ]
+}

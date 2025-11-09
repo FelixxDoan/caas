@@ -1,0 +1,189 @@
+{
+  "url": "https://www.w3schools.com/js/js_arrow_function.asp",
+  "title": "JavaScript Arrow Function",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Arrow Function"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let myFunction = function(a, b) {return a * b}"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let myFunction = (a, b) => a * b;"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let hello = function() {  return \"Hello World!\";}"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let hello = () => {  return \"Hello World!\";}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "If the function has only one statement that returns a value, you can remove the brackets and the\nreturn keyword:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let hello = () => \"Hello World!\";"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\nThis works only if the function has only one statement."
+    },
+    {
+      "type": "paragraph",
+      "text": "If you have parameters, you pass them inside the parentheses:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let hello = (val) => \"Hello \" + val;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "In fact, if you have only one parameter, you can skip the parentheses as well:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let hello = val => \"Hello \" + val;"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\nArrow functions do not have their own this.\nThey are not well suited for defining object methods.\nArrow functions are not hoisted. They must be defined before they are used."
+    },
+    {
+      "type": "paragraph",
+      "text": "You can only omit the return keyword and the curly brackets if the function is a single\nstatement. Because of this, it might be a good habit to always keep them:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// This will not work\nlet myFunction = (x, y) =>  { x * y } ;\n\n// This will not work\nlet myFunction = (x, y) =>  return x * y ;\n\n// Only this will work\nlet myFunction = (x, y) => { return x * y };"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What About this?"
+    },
+    {
+      "type": "paragraph",
+      "text": "The handling of this is also different in arrow functions compared to regular \nfunctions."
+    },
+    {
+      "type": "paragraph",
+      "text": "In short, with arrow functions there are no binding of\nthis."
+    },
+    {
+      "type": "paragraph",
+      "text": "In regular functions the this keyword represented the object that called the \nfunction, which could be the window, the document, a button or whatever."
+    },
+    {
+      "type": "paragraph",
+      "text": "With arrow functions the this keyword always represents the \nobject that \ndefined the arrow function."
+    },
+    {
+      "type": "paragraph",
+      "text": "Let us take a look at two examples to understand the difference."
+    },
+    {
+      "type": "paragraph",
+      "text": "Both examples call a method twice, first when the page loads, and once again \nwhen the user clicks a button."
+    },
+    {
+      "type": "paragraph",
+      "text": "The first example uses a regular function, and the second example uses an \narrow function."
+    },
+    {
+      "type": "paragraph",
+      "text": "The result shows that the first example returns two different objects (window and button), \nand the \nsecond example returns the window object twice, because the window object is the \n\"owner\" of the function."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Regular Function:hello = function() {  document.getElementById(\"demo\").innerHTML \n  += this;}// The window object calls the function:\n  window.addEventListener(\"load\", hello);// A button object calls the \n  function:document.getElementById(\"btn\").addEventListener(\"click\", hello);"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Arrow Function:hello = () => {  document.getElementById(\"demo\").innerHTML \n  += this;}// The window object calls the function:\n  window.addEventListener(\"load\", hello);// A button object calls the \n  function:document.getElementById(\"btn\").addEventListener(\"click\", hello);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Remember these differences when you are working with functions. Sometimes the \nbehavior of regular functions is what you want, if not, use arrow functions."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Browser Support"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following table defines the first browsers with full support for arrow functions:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome 45\n    Edge 12    \n    Firefox 22\n    Safari 10\n    Opera 32\n  \n  \n    Sep 2015\n    Jul 2015    \n    May 2013\n    Sep 2016\n    Sep 2015"
+    }
+  ]
+}

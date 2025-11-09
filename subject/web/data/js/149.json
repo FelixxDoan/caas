@@ -1,0 +1,209 @@
+{
+  "url": "https://www.w3schools.com/js/js_number_properties.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Number Properties"
+    },
+    {
+      "type": "other",
+      "text": "Number Properties\n\n\nEPSILON\nMAX_VALUE\nMIN_VALUE\n\nMAX_SAFE_INTEGER\nMIN_SAFE_INTEGER\nPOSITIVE_INFINITY\nNEGATIVE_INFINITY\nNaN"
+    },
+    {
+      "type": "other",
+      "text": "See Also:\nNumbers Tutorial\nNumber Methods\nNumber Reference"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript EPSILON"
+    },
+    {
+      "type": "paragraph",
+      "text": "Number.EPSILON is the difference between\nthe smallest floating point number greater than 1 and 1."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = Number.EPSILON;"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\nNumber.EPSILON is an ES6 feature.\nIt does not work in Internet Explorer."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript MAX_VALUE"
+    },
+    {
+      "type": "paragraph",
+      "text": "Number.MAX_VALUE is a constant representing the largest possible number in JavaScript."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = Number.MAX_VALUE;"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Number Properties Cannot be Used on Variables\nNumber properties belong to the JavaScript Number Object.\nThese properties can only be accessed as Number.MAX_VALUE.\nUsing x.MAX_VALUE, where x is a variable or a value,\nwill return undefined:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 6;\nx.MAX_VALUE"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript MIN_VALUE"
+    },
+    {
+      "type": "paragraph",
+      "text": "Number.MIN_VALUE is a constant representing the lowest possible number in JavaScript."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = Number.MIN_VALUE;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript MAX_SAFE_INTEGER"
+    },
+    {
+      "type": "paragraph",
+      "text": "Number.MAX_SAFE_INTEGER represents the maximum safe integer in JavaScript."
+    },
+    {
+      "type": "paragraph",
+      "text": "Number.MAX_SAFE_INTEGER is (253 - 1)."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = Number.MAX_SAFE_INTEGER;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript MIN_SAFE_INTEGER"
+    },
+    {
+      "type": "paragraph",
+      "text": "Number.MIN_SAFE_INTEGER represents the minimum safe integer in JavaScript."
+    },
+    {
+      "type": "paragraph",
+      "text": "Number.MIN_SAFE_INTEGER is -(253 - 1)."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = Number.MIN_SAFE_INTEGER;"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\nMAX_SAFE_INTEGER and\nMIN_SAFE_INTEGER are ES6 features.\nThey do not work in Internet Explorer."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript POSITIVE_INFINITY"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = Number.POSITIVE_INFINITY;"
+        },
+        {
+          "language": "unknown",
+          "code": "let x = 1 / 0;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript NEGATIVE_INFINITY"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = Number.NEGATIVE_INFINITY;"
+        },
+        {
+          "language": "unknown",
+          "code": "let x = -1 / 0;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript NaN - Not a Number"
+    },
+    {
+      "type": "paragraph",
+      "text": "NaN is a JavaScript reserved word for a number that is not a legal number."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = Number.NaN;"
+        },
+        {
+          "language": "unknown",
+          "code": "let x = 100 / \"Apple\";"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Complete JavaScript Reference\nFor a complete reference to all JavaScript properties and methods, with full descriptions and many examples, go to:\nW3Schools' Full JavaScript Reference.\nThe reference inludes all JavaScript updates from 1999 to 2025."
+    }
+  ]
+}

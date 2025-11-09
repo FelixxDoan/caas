@@ -1,0 +1,149 @@
+{
+  "url": "https://www.w3schools.com/js/js_object_display.asp",
+  "title": "JavaScript Display Objects",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Display Objects"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How to Display JavaScript Objects?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Displaying a JavaScript object will output [object Object]."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create an Object\nconst person = {\n  name: \"John\",\n  age: 30,\n  city: \"New York\"\n};\n\ndocument.getElementById(\"demo\").innerHTML = person;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Some solutions to display JavaScript objects are:"
+    },
+    {
+      "type": "other",
+      "text": "Displaying the Object Properties by name\nDisplaying the Object Properties in a Loop\nDisplaying the Object using Object.values()\nDisplaying the Object using JSON.stringify()"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Displaying Object Properties"
+    },
+    {
+      "type": "paragraph",
+      "text": "The properties of an object can be displayed as a string:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create an Object\nconst person = {\n  name: \"John\",\n  age: 30,\n  city: \"New York\"\n};\n\n// Display Properties\ndocument.getElementById(\"demo\").innerHTML =\nperson.name + \",\" + person.age + \",\" + person.city;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Displaying Properties in a Loop"
+    },
+    {
+      "type": "paragraph",
+      "text": "The properties of an object can be collected in a loop:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create an Object\nconst person = {\n  name: \"John\",\n  age: 30,\n  city: \"New York\"\n};\n\n// Build a Text\nlet text = \"\";\nfor (let x in person) {\n  text += person[x] + \" \";\n};\n// Display the Text\ndocument.getElementById(\"demo\").innerHTML = text;"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note:\nYou must use person[x] in the loop.\nperson.x will not work (Because x is the loop variable)."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Using Object.values()"
+    },
+    {
+      "type": "paragraph",
+      "text": "Object.values() creates an array from the property values:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create an Object\nconst person = {\n  name: \"John\",\n  age: 30,\n  city: \"New York\"\n};\n\n// Create an Array\nconst myArray = Object.values(person);\n\n// Display the Array\ndocument.getElementById(\"demo\").innerHTML = myArray;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Using Object.entries()"
+    },
+    {
+      "type": "paragraph",
+      "text": "Object.entries() makes it simple to use objects in loops:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const fruits = {Bananas:300, Oranges:200, Apples:500};\n\nlet text = \"\";\nfor (let [fruit, value] of Object.entries(fruits)) {\n  text += fruit + \": \" + value + \"<br>\";\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Using JSON.stringify()"
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript objects can be converted to a string with JSON method\nJSON.stringify()."
+    },
+    {
+      "type": "paragraph",
+      "text": "JSON.stringify() is included in JavaScript and supported in all major browsers."
+    },
+    {
+      "type": "other",
+      "text": "Note:\nThe result will be a string written in JSON notation:\n{\"name\":\"John\",\"age\":50,\"city\":\"New York\"}"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create an Object\nconst person = {\n  name: \"John\",\n  age: 30,\n  city: \"New York\"\n};\n\n// Stringify Object\nlet myString = JSON.stringify(person);\n\n// Display String\ndocument.getElementById(\"demo\").innerHTML = myString;"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Learn More:\nJavaScript Object Definitions\nJavaScript Object Constructors\nJavaScript Object this\nJavaScript Object Methods\nJavaScript Object Properties\nJavaScript Object Getters & Setters\nJavaScript Object Protection\nJavaScript Object Reference"
+    }
+  ]
+}

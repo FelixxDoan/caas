@@ -1,0 +1,94 @@
+{
+  "url": "https://www.w3schools.com/js/js_json_xml.asp",
+  "title": "JSON",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JSON vs XML"
+    },
+    {
+      "type": "paragraph",
+      "text": "Both JSON and XML can be used to receive data from a web server."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following JSON and XML examples both define an employees object, with an array of 3 employees:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "{\"employees\":[\n  { \"firstName\":\"John\", \"lastName\":\"Doe\" },\n  { \"firstName\":\"Anna\", \"lastName\":\"Smith\" },\n  { \"firstName\":\"Peter\", \"lastName\":\"Jones\" }\n]}"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<employees>  <employee>\n    <firstName>John</firstName> <lastName>Doe</lastName>\n  </employee>\n  <employee>\n      <firstName>Anna</firstName> <lastName>Smith</lastName>\n    </employee>\n  <employee>\n      <firstName>Peter</firstName> <lastName>Jones</lastName>\n    </employee>\n</employees>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JSON is Like XML Because"
+    },
+    {
+      "type": "other",
+      "text": "Both JSON and XML are \"self describing\" (human readable)\n  Both JSON and XML are hierarchical (values within values)\n  Both JSON and XML can be parsed and used by lots of programming languages\n  Both JSON and XML can be fetched with an XMLHttpRequest"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JSON is Unlike XML Because"
+    },
+    {
+      "type": "other",
+      "text": "JSON doesn't use end tag\n  JSON is shorter\n  JSON is quicker to read and write\n  JSON can use arrays"
+    },
+    {
+      "type": "paragraph",
+      "text": "The biggest difference is:"
+    },
+    {
+      "type": "paragraph",
+      "text": "XML has to be parsed with an XML parser. JSON can be parsed by a \nstandard JavaScript function."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Why JSON is Better Than XML"
+    },
+    {
+      "type": "other",
+      "text": "XML is much more difficult to parse than JSON.\nJSON is parsed into a ready-to-use JavaScript object."
+    },
+    {
+      "type": "paragraph",
+      "text": "For AJAX applications, JSON is faster and easier than XML:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Using XML"
+    },
+    {
+      "type": "other",
+      "text": "Fetch an XML document\n  Use the XML DOM to loop through the document\n  Extract values and store in variables"
+    },
+    {
+      "type": "paragraph",
+      "text": "Using JSON"
+    },
+    {
+      "type": "other",
+      "text": "Fetch a JSON string\n  JSON.Parse the JSON string"
+    }
+  ]
+}

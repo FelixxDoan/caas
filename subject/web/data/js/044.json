@@ -1,0 +1,65 @@
+{
+  "url": "https://www.w3schools.com/js/js_ajax_xmlfile.asp",
+  "title": "AJAX",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "AJAX XML Example"
+    },
+    {
+      "type": "paragraph",
+      "text": "AJAX can be used for interactive communication with an XML file."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "AJAX XML Example"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following example will demonstrate how a web page can fetch information \nfrom an XML file with AJAX:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": []
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Example Explained"
+    },
+    {
+      "type": "paragraph",
+      "text": "When a user clicks on the \"Get CD info\" button above, the loadDoc() \nfunction is executed."
+    },
+    {
+      "type": "paragraph",
+      "text": "The loadDoc() function creates an XMLHttpRequest object, adds the function \nto be executed when the server response is ready, and sends the request off to the server."
+    },
+    {
+      "type": "paragraph",
+      "text": "When the server response is ready, an HTML \ntable is built, nodes (elements) are extracted from the XML file, and it finally updates the \nelement \"demo\" with the HTML table filled with XML data:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "function loadDoc() {\n  const xhttp = new XMLHttpRequest();\n  xhttp.onload = function() {myFunction(this);}\n  xhttp.open(\"GET\", \"cd_catalog.xml\");\n  xhttp.send();\n}\nfunction myFunction(xml) { \n  const xmlDoc = xml.responseXML;\n  const x = xmlDoc.getElementsByTagName(\"CD\");\n  let table=\"<tr><th>Artist</th><th>Title</th></tr>\";\n  for (let i = 0; i <x.length; \n i++) {     table += \"<tr><td>\" +    x[i].getElementsByTagName(\"ARTIST\")[0].childNodes[0].nodeValue \n +    \"</td><td>\" +    x[i].getElementsByTagName(\"TITLE\")[0].childNodes[0].nodeValue \n +    \"</td></tr>\";  }  \n document.getElementById(\"demo\").innerHTML = table;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The XML File"
+    },
+    {
+      "type": "paragraph",
+      "text": "The XML file used in the example above looks like this: \"cd_catalog.xml\"."
+    }
+  ]
+}

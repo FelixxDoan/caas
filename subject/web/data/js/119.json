@@ -1,0 +1,25 @@
+{
+  "url": "https://www.w3schools.com/js/js_object_reference.asp",
+  "title": "JavaScript Object Reference",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Object Reference"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Object Methods and Properties"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Revised July 2025"
+    },
+    {
+      "type": "other",
+      "text": "Name\n  Description\n\n\n  assign()\n  Copies properties from a source object to a target object\n\n\n  constructor\n  Returns the function that created an object's prototype\n\n\n  create()\n  Returns an object created from an existing object\n\n\n  defineProperties()\n  Adds or changes properties\n\n\n  defineProperty()\n  Adds or changes a property\n\n\n  entries()\n  Returns an array of the key/value pairs of an object\n\n\n  freeze()\n  Prevents any changes to an object\n\n\n  fromEntries()\n  Returns an object created from an iterable list of key/value pairs\n\n\n  getOwnPropertyDescriptor()\n  Returns an array of the keys of an object\n\n\n  getOwnPropertyDescriptors()\n  Returns an array of the keys of an object\n\n\n  getOwnPropertyNames()\n  Returns an array of the keys of an object\n\n\n  groupBy()\n  Groups object elements according to returned callback values\n\n\n  isExtensible()\n  Returns true if an object is extensible\n\n\n  isFrozen()\n  Returns true if an object is frozen\n\n\n  isSealed()\n  Returns true if an object is sealed\n\n\n  keys()\n  Returns an array of the keys of an object\n\n\n  preventExtensions()\n  Prevents adding new properties to an object\n\n\n  prototype\n  Let you to add properties and methods to JavaScript objects\n\n\n  seal()\n  Prevents adding new or deleting existing object properties\n\n\n  toString()\n  Converts an object to a string and returns the result\n\n\n  valueOf()\n  Returns the primitive value of an object\n\n\n  values()\n  Returns an array of the property values of an object"
+    }
+  ]
+}

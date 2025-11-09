@@ -1,0 +1,255 @@
+{
+  "url": "https://www.w3schools.com/css/css_font_websafe.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Web Safe Fonts"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What are Web Safe Fonts?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Web safe fonts are fonts that are universally installed across all browsers and devices."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Fallback Fonts"
+    },
+    {
+      "type": "paragraph",
+      "text": "However, there are no 100% completely web safe fonts. There is always a \nchance that a font is not found or is not installed properly."
+    },
+    {
+      "type": "paragraph",
+      "text": "Therefore, it is very important to always use fallback fonts."
+    },
+    {
+      "type": "paragraph",
+      "text": "This means that you should add a list of similar \"backup fonts\" in \nthe font-family \nproperty. If the \nfirst font does not work, the browser will try the next one, and the next one, and so on. \nAlways end the list with a generic font family name."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "p {font-family: Tahoma, Verdana, sans-serif;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Best Web Safe Fonts for HTML and CSS"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following list are the best web safe fonts for HTML and CSS:"
+    },
+    {
+      "type": "other",
+      "text": "Arial (sans-serif)\n  Verdana (sans-serif)\n  Tahoma (sans-serif)\n  Trebuchet MS (sans-serif)\n  Times New Roman (serif)\n  Georgia (serif)\n  Garamond (serif)\n  Courier New (monospace)\n  Brush Script MT (cursive)"
+    },
+    {
+      "type": "other",
+      "text": "Note: Before you publish your website, always check how your \nfonts appear on different browsers and devices, and always use \nfallback fonts!"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Arial (sans-serif)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Arial is the most widely used font for both online and printed media. Arial \nis also the default font in Google Docs."
+    },
+    {
+      "type": "paragraph",
+      "text": "Arial is one of the safest web fonts, and it is available on all major operating systems."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Lorem ipsum dolor sit amet\nLorem ipsum dolor sit amet.\n0 1 2 3 4 5 6 7 8 9"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Verdana (sans-serif)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Verdana is a very popular font. Verdana is easily readable even for small font sizes."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Lorem ipsum dolor sit amet\nLorem ipsum dolor sit amet.\n0 1 2 3 4 5 6 7 8 9"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Tahoma (sans-serif)"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Tahoma font has less space between the characters."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Lorem ipsum dolor sit amet\nLorem ipsum dolor sit amet.\n0 1 2 3 4 5 6 7 8 9"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Trebuchet MS (sans-serif)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Trebuchet MS was designed by Microsoft in 1996. Use this font carefully. Not \nsupported by all mobile operating systems."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Lorem ipsum dolor sit amet\nLorem ipsum dolor sit amet.\n0 1 2 3 4 5 6 7 8 9"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Times New Roman (serif)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Times New Roman is one of the most recognizable fonts in the world. It looks \nprofessional and is used in many newspapers and \"news\" websites. It is also the \nprimary font for Windows devices and applications."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Lorem ipsum dolor sit amet\nLorem ipsum dolor sit amet.\n0 1 2 3 4 5 6 7 8 9"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Georgia (serif)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Georgia is an elegant serif font. It is very readable at different font sizes, so it is a good candidate for mobile-responsive design."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Lorem ipsum dolor sit amet\nLorem ipsum dolor sit amet.\n0 1 2 3 4 5 6 7 8 9"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Garamond (serif)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Garamond is a classical font used for many printed books. It has a timeless \nlook and good readability."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Lorem ipsum dolor sit amet\nLorem ipsum dolor sit amet.\n0 1 2 3 4 5 6 7 8 9"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Courier New (monospace)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Courier New is the most widely used monospace serif font. \nCourier New is often used with coding displays, and many email providers \nuse it as their default font. Courier New is also the standard font for movie \nscreenplays."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Lorem ipsum dolor sit amet\nLorem ipsum dolor sit amet.\n0 1 2 3 4 5 6 7 8 9"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Brush Script MT (cursive)"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Brush Script MT font was designed to mimic handwriting.\nIt is elegant and sophisticated, but can be hard to read. Use it carefully."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Lorem ipsum dolor sit amet\nLorem ipsum dolor sit amet.\n0 1 2 3 4 5 6 7 8 9"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Tip: Also check out all available Google Fonts and how to use them."
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

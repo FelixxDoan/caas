@@ -1,0 +1,251 @@
+{
+  "url": "https://www.w3schools.com/js/js_api_web_storage.asp",
+  "title": "Web Storage API",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Web Storage API"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Web Storage API is a simple syntax for storing and retrieving data in the browser.\nIt is very easy to use:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "localStorage.setItem(\"name\", \"John Doe\");\nlocalStorage.getItem(\"name\");"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The Web Storage API is supported in all browsers:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Chrome",
+          "IE/Edge",
+          "Firefox",
+          "Safari",
+          "Opera"
+        ],
+        [
+          "Yes",
+          "Yes",
+          "Yes",
+          "Yes",
+          "Yes"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The localStorage Object"
+    },
+    {
+      "type": "paragraph",
+      "text": "The localStorage object provides access to a local storage for a particular Web Site.\nIt allows you to store, read, add, modify, and delete data items for that domain."
+    },
+    {
+      "type": "paragraph",
+      "text": "The data is stored with no expiration date, and will not be deleted when the browser is closed."
+    },
+    {
+      "type": "paragraph",
+      "text": "The data will be available for days, weeks, and years."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The setItem() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The localStorage.setItem() method stores a data item in a storage."
+    },
+    {
+      "type": "paragraph",
+      "text": "It takes a name and a value as parameters:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "localStorage.setItem(\"name\", \"John Doe\");"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The getItem() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The localStorage.getItem() method retrieves a data item from the storage."
+    },
+    {
+      "type": "paragraph",
+      "text": "It takes a name as parameter:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "localStorage.getItem(\"name\");"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The sessionStorage Object"
+    },
+    {
+      "type": "paragraph",
+      "text": "The sessionStorage object is identical to the localStorage object."
+    },
+    {
+      "type": "paragraph",
+      "text": "The difference is that the sessionStorage object stores data for one session."
+    },
+    {
+      "type": "paragraph",
+      "text": "The data is deleted when the browser is closed."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "sessionStorage.getItem(\"name\");"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The setItem() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The sessionStorage.setItem() method stores a data item in a storage."
+    },
+    {
+      "type": "paragraph",
+      "text": "It takes a name and a value as parameters:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "sessionStorage.setItem(\"name\", \"John Doe\");"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The getItem() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The sessionStorage.getItem() method retrieves a data item from the storage."
+    },
+    {
+      "type": "paragraph",
+      "text": "It takes a name as parameter:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "sessionStorage.getItem(\"name\");"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Storage Object Properties and Methods"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Property/Method",
+          "Description"
+        ],
+        [
+          "key(n)",
+          "Returns the name of the nth key in the storage"
+        ],
+        [
+          "length",
+          "Returns the number of data items stored in the Storage object"
+        ],
+        [
+          "getItem(keyname)",
+          "Returns the value of the specified key name"
+        ],
+        [
+          "setItem(keyname, value)",
+          "Adds a key to the storage, or updates a key value (if it already exists)"
+        ],
+        [
+          "removeItem(keyname)",
+          "Removes that key from the storage"
+        ],
+        [
+          "clear()",
+          "Empty all key out of the storage"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Related Pages for Web Storage API"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Property",
+          "Description"
+        ],
+        [
+          "window.localStorage",
+          "Allows to save key/value pairs in a web browser. Stores the data with no \n    expiration date"
+        ],
+        [
+          "window.sessionStorage",
+          "Allows to save key/value pairs in a web browser. Stores the data for one \n    session"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_ref_union_all.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL UNION ALL Keyword"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "text": "UNION ALL"
+    },
+    {
+      "type": "paragraph",
+      "text": "The UNION ALL command combines the result set of two or more SELECT statements (allows \nduplicate values)."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement returns the cities \n(duplicate values also) from both the \"Customers\" and the \"Suppliers\" table:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n SELECT City FROM CustomersUNION ALLSELECT City FROM Suppliers\n ORDER BY City;\n\n\n Try it Yourself »"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

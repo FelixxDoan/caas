@@ -1,0 +1,307 @@
+{
+  "url": "https://www.w3schools.com/js/js_ajax_http.asp",
+  "title": "AJAX - The XMLHttpRequest Object",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "AJAX - The XMLHttpRequest Object"
+    },
+    {
+      "type": "other",
+      "text": "The keystone of AJAX is the XMLHttpRequest object.\n\nCreate an XMLHttpRequest object\nDefine a callback function\nOpen the XMLHttpRequest object\nSend a Request to a server"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The XMLHttpRequest Object"
+    },
+    {
+      "type": "paragraph",
+      "text": "All modern browsers support the XMLHttpRequest object."
+    },
+    {
+      "type": "paragraph",
+      "text": "The XMLHttpRequest object can be used to exchange data with a web server behind the \nscenes. This means that it is possible to update parts of a web page, without \nreloading the whole page."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Create an XMLHttpRequest Object"
+    },
+    {
+      "type": "paragraph",
+      "text": "All modern browsers (Chrome, Firefox, IE, Edge, Safari, Opera) have a built-in XMLHttpRequest object."
+    },
+    {
+      "type": "paragraph",
+      "text": "Syntax for creating an XMLHttpRequest object:"
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "variable = new XMLHttpRequest();"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Define a Callback Function"
+    },
+    {
+      "type": "paragraph",
+      "text": "A callback function is a function passed as a parameter to another function."
+    },
+    {
+      "type": "paragraph",
+      "text": "In this case, the callback function should contain the code to execute when the \nresponse is ready."
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "xhttp.onload = function() {\n   // What to do when the response is ready\n}"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Send a Request"
+    },
+    {
+      "type": "paragraph",
+      "text": "To send a request to a server, you can use the open() and send() methods of the\nXMLHttpRequest object:"
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "xhttp.open(\"GET\", \"ajax_info.txt\");\nxhttp.send();"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create an XMLHttpRequest object\nconst xhttp = new XMLHttpRequest();\n// Define a callback function\nxhttp.onload = function() {\n  // Here you can use the Data\n}\n// Send a request\nxhttp.open(\"GET\", \"ajax_info.txt\");\nxhttp.send();"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Access Across Domains"
+    },
+    {
+      "type": "paragraph",
+      "text": "For security reasons, modern browsers do not allow access across domains."
+    },
+    {
+      "type": "paragraph",
+      "text": "This means that both the web page and the XML file it tries to load, must be located on the same server."
+    },
+    {
+      "type": "paragraph",
+      "text": "The examples on W3Schools all open XML files located on the W3Schools domain."
+    },
+    {
+      "type": "paragraph",
+      "text": "If you want to use the example above on one of your own web pages,\nthe XML files you load must be located on your own server."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "XMLHttpRequest Object Methods"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Method",
+          "Description"
+        ],
+        [
+          "new XMLHttpRequest()",
+          "Creates a new XMLHttpRequest object"
+        ],
+        [
+          "abort()",
+          "Cancels the current request"
+        ],
+        [
+          "getAllResponseHeaders()",
+          "Returns header information"
+        ],
+        [
+          "getResponseHeader()",
+          "Returns specific header information"
+        ],
+        [
+          "open(method, url, async, user, psw)",
+          "Specifies the requestmethod: the request type GET or POST\n url: the file location\n async: true (asynchronous) or false (synchronous)user: optional user namepsw: optional password"
+        ],
+        [
+          "send()",
+          "Sends the request to the serverUsed for GET requests"
+        ],
+        [
+          "send(string)",
+          "Sends the request to the server.Used for POST requests"
+        ],
+        [
+          "setRequestHeader()",
+          "Adds a label/value pair to the header to be sent"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "XMLHttpRequest Object Properties"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Property",
+          "Description"
+        ],
+        [
+          "onload",
+          "Defines a function to be called when the request is received (loaded)"
+        ],
+        [
+          "onreadystatechange",
+          "Defines a function to be called when the readyState property changes"
+        ],
+        [
+          "readyState",
+          "Holds the status of the XMLHttpRequest.\n 0: request not initialized \n 1: server connection established\n 2: request received \n 3: processing request \n 4: request finished and response is ready"
+        ],
+        [
+          "responseText",
+          "Returns the response data as a string"
+        ],
+        [
+          "responseXML",
+          "Returns the response data as XML data"
+        ],
+        [
+          "status",
+          "Returns the status-number of a request200: \"OK\"403: \"Forbidden\"404: \"Not Found\"\n    For a complete list go to the Http \n    Messages Reference"
+        ],
+        [
+          "statusText",
+          "Returns the status-text (e.g. \"OK\" or \"Not Found\")"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The onload Property"
+    },
+    {
+      "type": "paragraph",
+      "text": "With the XMLHttpRequest object you can define a callback function to be executed when \nthe request receives an answer."
+    },
+    {
+      "type": "paragraph",
+      "text": "The function is defined in the onload property of the XMLHttpRequest object:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "xhttp.onload = function() {\n  document.getElementById(\"demo\").innerHTML = this.responseText;\n }\n xhttp.open(\"GET\", \"ajax_info.txt\");\n xhttp.send();"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Multiple Callback Functions"
+    },
+    {
+      "type": "paragraph",
+      "text": "If you have more than one AJAX task in a website, you should create one function for \nexecuting the XMLHttpRequest object, and one callback function for each \nAJAX task."
+    },
+    {
+      "type": "paragraph",
+      "text": "The function call should contain the URL and what function to call when the \nresponse is ready."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "loadDoc(\"url-1\", myFunction1);\n\nloadDoc(\"url-2\", myFunction2);\nfunction loadDoc(url, cFunction) {\n  const xhttp = new XMLHttpRequest();\n  xhttp.onload = function() {cFunction(this);}\n  xhttp.open(\"GET\", url);\n  xhttp.send();\n}\nfunction myFunction1(xhttp) {\n  // action goes here\n}\n\nfunction myFunction2(xhttp) {\n  // action goes here\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The onreadystatechange Property"
+    },
+    {
+      "type": "paragraph",
+      "text": "The readyState property holds the status of the XMLHttpRequest."
+    },
+    {
+      "type": "paragraph",
+      "text": "The onreadystatechange property defines a callback function to be executed when the readyState changes."
+    },
+    {
+      "type": "paragraph",
+      "text": "The status property and the statusText properties hold the status of the XMLHttpRequest object."
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Property",
+          "Description"
+        ],
+        [
+          "onreadystatechange",
+          "Defines a function to be called when the readyState property changes"
+        ],
+        [
+          "readyState",
+          "Holds the status of the XMLHttpRequest. \n 0: request not initialized \n 1: server connection established\n 2: request received \n 3: processing request \n 4: request finished and response is ready"
+        ],
+        [
+          "status",
+          "200: \"OK\"403: \"Forbidden\"\n 404: \"Page not found\"For a complete list go to the\n    Http Messages Reference"
+        ],
+        [
+          "statusText",
+          "Returns the status-text (e.g. \"OK\" or \"Not Found\")"
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The onreadystatechange function is called every time the readyState changes."
+    },
+    {
+      "type": "paragraph",
+      "text": "When readyState is 4 and status is 200, the response is ready:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "function loadDoc() {\n  const xhttp = new XMLHttpRequest();\n  xhttp.onreadystatechange = function() {\n    if (this.readyState == 4 && this.status == 200) {\n        document.getElementById(\"demo\").innerHTML =\n        this.responseText;\n      }\n  };\n  xhttp.open(\"GET\", \"ajax_info.txt\");\n  xhttp.send();\n}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "The onreadystatechange event is triggered four times (1-4), one time for each change in the readyState."
+    }
+  ]
+}

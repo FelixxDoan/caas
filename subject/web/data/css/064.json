@@ -1,0 +1,276 @@
+{
+  "url": "https://www.w3schools.com/css/css_positioning.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Layout - The position Property"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "The position property specifies the type of \npositioning method used for an element (static, relative, fixed, absolute or \nsticky)."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The position Property"
+    },
+    {
+      "type": "paragraph",
+      "text": "The position property specifies the type of positioning method used for an element."
+    },
+    {
+      "type": "paragraph",
+      "text": "There are five different position values:"
+    },
+    {
+      "type": "other",
+      "text": "static\nrelative\nfixed\nabsolute\nsticky"
+    },
+    {
+      "type": "paragraph",
+      "text": "Elements are then positioned using the top, bottom, left, and right \nproperties. However, these properties will not work unless the position \nproperty is set first. They also work differently depending on the position \nvalue."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "position: static;"
+    },
+    {
+      "type": "paragraph",
+      "text": "HTML elements are positioned static by default."
+    },
+    {
+      "type": "paragraph",
+      "text": "Static positioned elements are not affected by the top, bottom, left, and right properties."
+    },
+    {
+      "type": "paragraph",
+      "text": "An element with position: static; is not positioned in any special way; it is \nalways positioned according to the normal flow of the page:"
+    },
+    {
+      "type": "other",
+      "text": "This <div> element has position: static;"
+    },
+    {
+      "type": "paragraph",
+      "text": "Here is the CSS that is used:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "div.static {  position: static;  border: 3px solid #73AD21;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "position: relative;"
+    },
+    {
+      "type": "paragraph",
+      "text": "An element with position: relative; is positioned relative to its normal position."
+    },
+    {
+      "type": "paragraph",
+      "text": "Setting the top, right, bottom, and left properties of a relatively-positioned element will cause\nit to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the \nelement."
+    },
+    {
+      "type": "other",
+      "text": "This <div> element has position: relative;"
+    },
+    {
+      "type": "paragraph",
+      "text": "Here is the CSS that is used:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "div.relative {  position: relative;  \nleft: 30px;  border: 3px solid #73AD21;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "position: fixed;"
+    },
+    {
+      "type": "paragraph",
+      "text": "An element with position: fixed; is positioned relative to the viewport, which means it always \nstays in the same place even if the page is scrolled. The top, \nright, bottom, and left properties are used to position the element."
+    },
+    {
+      "type": "paragraph",
+      "text": "A fixed element does not leave a gap in the page where it would normally have been located."
+    },
+    {
+      "type": "paragraph",
+      "text": "Notice the fixed element in the lower-right corner of the page. Here is the CSS that is used:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "div.fixed {  position: fixed;  \nbottom: 0;  right: 0;  width: \n300px;  border: 3px solid #73AD21;}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "This <div> element has position: fixed;"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "position: absolute;"
+    },
+    {
+      "type": "paragraph",
+      "text": "An element with position: absolute; is positioned relative to the nearest positioned ancestor \n(instead of positioned relative to the viewport, like fixed)."
+    },
+    {
+      "type": "paragraph",
+      "text": "However; if an absolute positioned element has no positioned ancestors, \nit uses the document body, and moves along with page scrolling."
+    },
+    {
+      "type": "paragraph",
+      "text": "Note: Absolute positioned elements are removed from the normal flow, and can overlap elements."
+    },
+    {
+      "type": "paragraph",
+      "text": "Here is a simple example:"
+    },
+    {
+      "type": "other",
+      "text": "This <div> element has position: relative;\n\n\nThis <div> element has position: absolute;"
+    },
+    {
+      "type": "paragraph",
+      "text": "Here is the CSS that is used:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "div.relative {  position: relative;  \nwidth: 400px;  height: 200px;  border: 3px solid #73AD21;}\n\ndiv.absolute {  position: absolute; \ntop: 80px;  right: 0;  width: 200px;  height: 100px;  border: 3px solid #73AD21;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "position: sticky;"
+    },
+    {
+      "type": "paragraph",
+      "text": "An element with position: sticky; is positioned based on the user's scroll position."
+    },
+    {
+      "type": "paragraph",
+      "text": "A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it \"sticks\" in place (like position:fixed)."
+    },
+    {
+      "type": "other",
+      "text": "Note: You must specify at least one of top, right, bottom or left for \nsticky positioning to work."
+    },
+    {
+      "type": "paragraph",
+      "text": "In this example, the sticky element sticks to the top of the page (top: 0), when you reach its scroll position."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "div.sticky {  position: \n  sticky;  top: 0;  background-color: green;  \n  border: 2px solid #4CAF50;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Positioning Text In an Image"
+    },
+    {
+      "type": "paragraph",
+      "text": "How to position text over an image:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": []
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "More Examples"
+    },
+    {
+      "type": "paragraph",
+      "text": "Set the shape of an element\nThis example demonstrates how to set the shape of an element. The element is clipped into this shape, and displayed."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "All CSS Positioning Properties"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Property",
+          "Description"
+        ],
+        [
+          "bottom",
+          "Sets the bottom margin edge for a positioned box"
+        ],
+        [
+          "clip",
+          "Clips an absolutely positioned element"
+        ],
+        [
+          "left",
+          "Sets the left margin edge for a positioned box"
+        ],
+        [
+          "position",
+          "Specifies the type of positioning for an element"
+        ],
+        [
+          "right",
+          "Sets the right margin edge for a positioned box"
+        ],
+        [
+          "top",
+          "Sets the top margin edge for a positioned box"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

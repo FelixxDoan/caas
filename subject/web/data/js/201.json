@@ -1,0 +1,449 @@
+{
+  "url": "https://www.w3schools.com/js/js_datatypes.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Data Types"
+    },
+    {
+      "type": "other",
+      "text": "JavaScript has 8 Datatypes\n\nString\nNumber\nBigint\nBoolean\nUndefined\nNull\nSymbol\nObject\n\nThe Object Datatype\nThe object data type can contain both built-in objects, and user defined objects:\nBuilt-in object types can be:\n \nobjects, arrays, dates, maps, sets, intarrays, floatarrays, promises, and more."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Numbers:\nlet length = 16;\nlet weight = 7.5;\n\n// Strings:\nlet color = \"Yellow\";\nlet lastName = \"Johnson\";\n\n// Booleans\nlet x = true;\nlet y = false;\n\n// Object:\nconst person = {firstName:\"John\", lastName:\"Doe\"};\n\n// Array object:\nconst cars = [\"Saab\", \"Volvo\", \"BMW\"];\n\n// Date object:\nconst date = new Date(\"2022-03-25\");"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\nA JavaScript variable can hold any type of data."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Concept of Data Types"
+    },
+    {
+      "type": "paragraph",
+      "text": "In programming, data types is an important concept."
+    },
+    {
+      "type": "paragraph",
+      "text": "To be able to operate on variables, it is important to know something about \nthe type."
+    },
+    {
+      "type": "paragraph",
+      "text": "Without data types, a computer cannot safely solve this:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 16 + \"Volvo\";"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Does it make any sense to add \"Volvo\" to sixteen? Will it produce an \nerror or will it produce a result?"
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript will treat the example above as:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = \"16\" + \"Volvo\";"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\nWhen adding a number and a string, JavaScript will treat the number as a \nstring."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 16 + \"Volvo\";"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = \"Volvo\" + 16;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript evaluates expressions from left to right. Different sequences can \nproduce different results:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 16 + 4 + \"Volvo\";"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = \"Volvo\" + 16 + 4;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "In the first example, JavaScript treats 16 and 4 as numbers, until it reaches \"Volvo\"."
+    },
+    {
+      "type": "paragraph",
+      "text": "In the second example, since the first operand is a string, all operands are \ntreated as strings."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Types are Dynamic"
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript has dynamic types. This means that the same variable can be used \nto hold \ndifferent data types:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x;       // Now x is undefined\nx = 5;       // Now x is a Number\nx = \"John\";  // Now x is a String"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Strings"
+    },
+    {
+      "type": "paragraph",
+      "text": "A string (or a text string) is a series of characters like \"John Doe\"."
+    },
+    {
+      "type": "paragraph",
+      "text": "Strings are written with quotes. You can use single or double quotes:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Using double quotes:\nlet carName1 = \"Volvo XC60\";\n\n// Using single quotes:\nlet carName2 = 'Volvo XC60';"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "You can use quotes inside a string, as long as they don't match the quotes \nsurrounding the string:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Single quote inside double quotes:\nlet answer1 = \"It's alright\"; \n\n// Single quotes inside double quotes:\nlet answer2 = \"He is called 'Johnny'\";\n\n// Double quotes inside single quotes:\nlet answer3 = 'He is called \"Johnny\"';"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "You will learn more about strings later in this tutorial."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Numbers"
+    },
+    {
+      "type": "paragraph",
+      "text": "All JavaScript numbers are stored as decimal numbers (floating point)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Numbers can be written with, or without decimals:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// With decimals:\nlet x1 = 34.00;\n \n// Without decimals:\nlet x2 = 34;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Exponential Notation"
+    },
+    {
+      "type": "paragraph",
+      "text": "Extra large or extra small numbers can be written with scientific \n(exponential) notation:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let y = 123e5;    // 12300000\nlet z = 123e-5;   // 0.00123"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\nMost programming languages have many number types:\nWhole numbers (integers):\nbyte (8-bit), short (16-bit), int (32-bit), long (64-bit)\nReal numbers (floating-point):\nfloat (32-bit), double (64-bit).\nJavascript numbers are always one type:\ndouble (64-bit floating point).\nYou will learn more about numbers later in this tutorial."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript BigInt"
+    },
+    {
+      "type": "paragraph",
+      "text": "All JavaScript numbers are stored in a 64-bit floating-point format."
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript BigInt is a new datatype (ES2020) that can be used to store integer values that are too big to be represented\nby a normal JavaScript Number."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = BigInt(\"123456789012345678901234567890\");"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "You will learn more about BigInt later in this tutorial."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Booleans"
+    },
+    {
+      "type": "paragraph",
+      "text": "Booleans can only have two values: true or false."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 5;\nlet y = 5;\nlet z = 6;(x == y)       \n  // Returns true(x == z)       // Returns \n  false"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Booleans are often used in conditional testing."
+    },
+    {
+      "type": "other",
+      "text": "You will learn more about booleans later in this tutorial."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Arrays"
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript arrays are written with square brackets."
+    },
+    {
+      "type": "paragraph",
+      "text": "Array items are separated by commas."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following code declares (creates) an array called cars, containing three \nitems (car names):"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const cars = [\"Saab\", \"Volvo\", \"BMW\"];"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Array indexes are zero-based, which means the first item is [0], second is \n[1], and so on."
+    },
+    {
+      "type": "other",
+      "text": "You will learn more about arrays later in this tutorial."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Objects"
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript objects are written with curly braces {}."
+    },
+    {
+      "type": "paragraph",
+      "text": "Object \nproperties are written as name:value pairs, separated by commas."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const person = {firstName:\"John\", lastName:\"Doe\", age:50, eyeColor:\"blue\"};"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The object (person) in the example above has 4 properties: firstName, \nlastName, age, and eyeColor."
+    },
+    {
+      "type": "other",
+      "text": "You will learn more about objects later in this tutorial."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The typeof Operator"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can use the JavaScript typeof operator to find the type \nof a JavaScript variable."
+    },
+    {
+      "type": "paragraph",
+      "text": "The typeof operator returns the type of a variable or an expression:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "typeof \"\"             // Returns \n \"string\"\ntypeof \"John\"         // Returns \n \"string\"\ntypeof \"John Doe\"     // Returns \n \"string\""
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "typeof 0              // Returns \n \"number\"\n  typeof 314            // Returns \n \"number\"\n  typeof 3.14           // Returns \n \"number\"\n  typeof (3)            // Returns \n \"number\"typeof (3 + 4)        // Returns \n \"number\""
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "You will learn more about typeof later in this tutorial."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Undefined"
+    },
+    {
+      "type": "paragraph",
+      "text": "In JavaScript, a variable without a value, has the value undefined. \nThe type is also undefined."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let car;    // Value is undefined, \n    type is undefined"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Any variable can be emptied, by setting the value to undefined. \nThe type will also be undefined."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "car = undefined;    // Value is undefined, \n    type is undefined"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Empty Values"
+    },
+    {
+      "type": "paragraph",
+      "text": "An empty value has nothing to do with undefined."
+    },
+    {
+      "type": "paragraph",
+      "text": "An empty string has both a legal value and a type."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let car = \"\";    // \n    The value is \n    \"\", the typeof is \"string\""
+        }
+      ]
+    }
+  ]
+}

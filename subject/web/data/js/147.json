@@ -1,0 +1,156 @@
+{
+  "url": "https://www.w3schools.com/js/js_operators_reference.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Operators Reference"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Complete Operators Reference"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Revised July 2025"
+    },
+    {
+      "type": "other",
+      "text": "TypeCommon UseExample\nAssignmentAssigns a value to a variablex = 5\nArithmeticPerforms arithmetic between variablesx = y + 2\nStringConcatenates (adds) strings\"Sun\" + \"shine\"\nExponentiationRaises a variable to a powerx++\nRemainderReturns the remainder from a divisionx++\nIncrementIncrements a variablex++\nDecrementDecrements a variablex--\nComparisonCompares variables(x == 5)\nLogicalDetefines the logic between variables(x>0 || x>0)\nBitwiseDoes binary operations on numbers(5 & 1)\nSpreadSpreads an array into individual values(...numbers)\nRelationalReturns if a variable is a propery \"age\" in person\ntypeofReturns the type of a variabletypeof \"John\"\ninstanceofReturns if a variable is an objectx instance of Array\ndeleteDeletes an object propertydelete car.color\nvoidRetuns undefinedvoid(0)"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Assignment Operators"
+    },
+    {
+      "type": "paragraph",
+      "text": "Assignment operators are used to assign values to JavaScript variables."
+    },
+    {
+      "type": "paragraph",
+      "text": "Given that x = 10 and y = 5, the table below explains the assignment operators:"
+    },
+    {
+      "type": "other",
+      "text": "Oper\nExample\nSame As\nResult\nTry it\n\n\n=\nx = y\nx = y\nx = 5\nTry it »\n\n\n+=\nx += y\nx = x + y\nx = 15\nTry it »\n\n\n-=\nx -= y\nx = x - y\nx = 5\nTry it »\n\n\n*=\nx *= y\nx = x * y\nx = 50\nTry it »\n\n\n/=\nx /= y\nx = x / y\nx = 2\nTry it »\n\n\n%=\nx %= y\nx = x % y\nx = 0\nTry it »\n\n\n:\nx: 45\nsize.x = 45\nx = 45\nTry it »"
+    },
+    {
+      "type": "other",
+      "text": "Study our  JavaScript Assignment Tutorial."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Arithmetic Operators"
+    },
+    {
+      "type": "paragraph",
+      "text": "Arithmetic operators are used to perform arithmetic between variables and/or values."
+    },
+    {
+      "type": "paragraph",
+      "text": "Given that y = 5, the table below explains the arithmetic operators:"
+    },
+    {
+      "type": "other",
+      "text": "Oper\nName\nExample\nResults\nTry it\n\n\n\n+\nAddition\nx = y + 2\ny=5, x=7\nTry it »\n\n\n\n++\nIncrement\nx = y++\ny=6, x=5\nTry it »\n\n\n\n++\nIncrement\nx = ++y\ny=6, x=6\nTry it »\n\n\n\n-\nSubtraction\nx = y - 2\ny=5, x=3\nTry it »\n\n\n\n--\nDecrement\nx = y--\ny=4, x=5\nTry it »\n\n\n\n--\nDecrement\nx = --y\ny=4, x=4\nTry it »\n\n\n\n*\nMultiplication\nx=y*2\ny=5, x=10\nTry it »\n\n\n\n**\nExponentiation\nx = y ** 2\ny=5, x=25\nTry it »\n\n\n\n/\nDivision\nx = y / 2\ny=5, x=2.5\nTry it »\n\n\n\n%\nRemainder\nx = y % 2\ny=5, x=1\nTry it »"
+    },
+    {
+      "type": "other",
+      "text": "Study our \nJavaScript Arithmetic Tutorial."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Conditional (Ternary) Operator"
+    },
+    {
+      "type": "paragraph",
+      "text": "The conditional operator assigns a value to a variable based on a condition."
+    },
+    {
+      "type": "other",
+      "text": "Syntax\nExample\nTry it\n\n\n\n(condition) ? x : y\n(z < 18) ? x : y\nTry it »"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript String Operators"
+    },
+    {
+      "type": "paragraph",
+      "text": "The + operator, and the += operator can also be used to concatenate (add) \nstrings."
+    },
+    {
+      "type": "paragraph",
+      "text": "Given that t1 = \"Good \", t2 = \"Morning\", \nand t3 = \"\", the table below explains the operators:"
+    },
+    {
+      "type": "other",
+      "text": "Oper\nExample\nt1\nt2\nt3\nTry it\n\n\n+\nt3 = t1 + t2\n\"Good \"\n\"Morning\"\n \"Good Morning\"\nTry it »\n\n\n+=\nt1 += t2\n\"Good Morning\"\n\"Morning\"\n\nTry it »"
+    },
+    {
+      "type": "other",
+      "text": "Study our  JavaScript Strings Tutorial."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Javascript Comparison Operators"
+    },
+    {
+      "type": "paragraph",
+      "text": "Comparison operators are used in logical statements to determine equality or difference between variables or values."
+    },
+    {
+      "type": "paragraph",
+      "text": "Given that x = 5, the table below explains the comparison operators:"
+    },
+    {
+      "type": "other",
+      "text": "Oper\nName\nComparing\nReturns\nTry it\n\n\n\n==\nequal to\nx == 8\nfalse\nTry it » \n\n\n==\nequal to\nx == 5\ntrue\nTry it » \n\n\n===\nequal value and type\nx === \"5\"\nfalse\nTry it »\n\n\n===\nequal value and type\nx === 5\ntrue\nTry it »\n\n\n!=\nnot equal\nx != 8\ntrue\nTry it »\n\n\n!==\nnot equal value or type\nx !== \"5\"\ntrue\nTry it »\n\n\n!==\nnot equal value or type\nx !== 5\nfalse\nTry it »\n\n\n>\ngreater than\nx > 8\nfalse\nTry it »\n\n\n<\nless than\nx < 8\ntrue\nTry it »\n\n\n>=\ngreater or equal to\nx >= 8\nfalse\nTry it »\n\n\n<=\nless or equal to\nx <= 8\ntrue\nTry it »"
+    },
+    {
+      "type": "other",
+      "text": "Study our JavaScript Comparisons Tutorial."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Logical Operators"
+    },
+    {
+      "type": "paragraph",
+      "text": "Logical operators are used to determine the logic between variables or values."
+    },
+    {
+      "type": "paragraph",
+      "text": "Given that x = 6 and y = 3, the table below explains the logical operators:"
+    },
+    {
+      "type": "other",
+      "text": "Oper\nName\nExample\nTry it\n\n\n&&\nAND\n (x < 10 && y > 1) is true\nTry it »\n\n\n||\nOR\n(x === 5 || y === 5) is false\nTry it »\n\n\n!\nNOT\n !(x === y) is true\nTry it »"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Bitwise Operators"
+    },
+    {
+      "type": "paragraph",
+      "text": "Bit operators work on 32 bits numbers.\nAny numeric operand in the operation is converted into a 32 bit number.\nThe result is converted back to a JavaScript number."
+    },
+    {
+      "type": "other",
+      "text": "Oper\nName\nExample\nSame as\nResult\nDec\nTry it\n\n\n&\nAND\nx = 5 & 1\n0101 & 0001\n0001\n1\nTry it »\n\n\n|\nOR\nx = 5 | 1\n0101 | 0001\n0101\n5\nTry it »\n\n\n~\nNOT\nx = ~ 5\n~0101\n1010\n10\nTry it »\n\n\n^\nXOR\nx = 5 ^ 1\n0101 ^ 0001\n0100\n4\nTry it »\n\n\n<<\nLeft shift\nx = 5 << 1\n0101 << 1\n1010\n10\nTry it »\n\n\n>>\nRight shift\nx = 5 >> 1\n0101 >> 1\n0010\n2\nTry it »\n\n\n>>>\nUnsigned right\nx = 5 >>> 1\n0101 >>> 1\n0010\n2\nTry it »"
+    },
+    {
+      "type": "other",
+      "text": "Study our  JavaScript Bitwise Tutorial."
+    }
+  ]
+}

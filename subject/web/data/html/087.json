@@ -1,0 +1,208 @@
+{
+  "url": "https://www.w3schools.com/html/html_editors.asp",
+  "title": "HTML ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "HTML Editors"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "A simple text editor is all you need to learn HTML."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Learn HTML Using Notepad or TextEdit"
+    },
+    {
+      "type": "paragraph",
+      "text": "Web pages can be created and modified by using professional HTML editors."
+    },
+    {
+      "type": "paragraph",
+      "text": "However, for learning HTML we recommend a simple text editor like Notepad (PC) or TextEdit (Mac)."
+    },
+    {
+      "type": "paragraph",
+      "text": "We believe that using a simple text editor is a good way to learn HTML."
+    },
+    {
+      "type": "paragraph",
+      "text": "Follow the steps below to create your first web page with Notepad or TextEdit."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Step 1: Open Notepad (PC)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Windows 8 or later:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Open the Start Screen (the window symbol at the bottom left on your screen). Type Notepad."
+    },
+    {
+      "type": "paragraph",
+      "text": "Windows 7 or earlier:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Open Start > \nPrograms > Accessories > Notepad"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Step 1: Open TextEdit (Mac)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Open Finder > Applications > TextEdit"
+    },
+    {
+      "type": "paragraph",
+      "text": "Also change some preferences to get the application to \nsave files correctly.\nIn Preferences > Format > \nchoose \"Plain Text\""
+    },
+    {
+      "type": "paragraph",
+      "text": "Then under \"Open and Save\", check the box that says \"Display HTML files as HTML code instead of formatted text\"."
+    },
+    {
+      "type": "paragraph",
+      "text": "Then open a new document to place the code."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Step 2: Write Some HTML"
+    },
+    {
+      "type": "paragraph",
+      "text": "Write or copy the following HTML code into Notepad:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<!DOCTYPE html><html><body><h1>My First Heading</h1>\n<p>My first paragraph.</p></body></html>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Step 3: Save the HTML Page"
+    },
+    {
+      "type": "paragraph",
+      "text": "Save the file on your computer. Select File > Save as in the Notepad menu."
+    },
+    {
+      "type": "paragraph",
+      "text": "Name the file \"index.htm\" and set the encoding to \nUTF-8 (which is the preferred encoding for HTML files)."
+    },
+    {
+      "type": "other",
+      "text": "Tip: You can use either .htm or .html as file extension. There is no difference; it is up to you."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Step 4: View the HTML Page in Your Browser"
+    },
+    {
+      "type": "paragraph",
+      "text": "Open the saved HTML file in your favorite browser (double click on the file, \nor right-click - and choose \"Open with\")."
+    },
+    {
+      "type": "paragraph",
+      "text": "The result will look much like this:"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "W3Schools Online Editor - \"Try it Yourself\""
+    },
+    {
+      "type": "paragraph",
+      "text": "With our free online editor, you can edit the HTML code and view the result in your browser."
+    },
+    {
+      "type": "paragraph",
+      "text": "It is the perfect tool when you want to test code fast. It also has color \ncoding and the ability to save and share code with others:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<!DOCTYPE html>\n<html><head><title>Page Title</title>\n</head><body><h1>This is a Heading</h1><p>This is a paragraph.</p>\n</body></html>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Click on the \"Try it Yourself\" button to see how it works."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "W3Schools Spaces"
+    },
+    {
+      "type": "paragraph",
+      "text": "If you want to create your own website and save your code online, try our free website builder, called W3schools Spaces:"
+    },
+    {
+      "type": "other",
+      "text": "W3Schools Spaces\n    W3Schools Spaces\n    Everything you need right in the browser.\n    Get Started Now"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Video: HTML Editors"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    },
+    {
+      "type": "image",
+      "src": "https://www.w3schools.com/html/img_notepad.png"
+    },
+    {
+      "type": "image",
+      "src": "https://www.w3schools.com/html/img_saveas.png"
+    },
+    {
+      "type": "image",
+      "src": "https://www.w3schools.com/html/img_chrome.png"
+    },
+    {
+      "type": "image",
+      "src": "https://www.w3schools.com/how-spaces-works3.png"
+    },
+    {
+      "type": "image",
+      "src": "https://www.w3schools.com/html/images/yt_logo_rgb_dark.png"
+    },
+    {
+      "type": "image",
+      "src": "https://www.w3schools.com/html/images/02_html_editors.png"
+    }
+  ]
+}

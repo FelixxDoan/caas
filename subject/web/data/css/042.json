@@ -1,0 +1,116 @@
+{
+  "url": "https://www.w3schools.com/css/css_colors_keywords.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS  Color Keywords"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "This page will explain the transparent, currentcolor, \nand \ninherit keywords."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The transparent Keyword"
+    },
+    {
+      "type": "paragraph",
+      "text": "The transparent keyword is used to make a \ncolor transparent. This is often used to make a transparent background color for \nan element."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "body {  background-image: url(\"paper.gif\");}div {   \n  background-color: transparent;}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note: The transparent \nkeyword is equivalent to rgba(0,0,0,0). RGBA color values are an extension of \nRGB color values with an alpha channel - which specifies the opacity for a \ncolor. Read more in our CSS RGB chapter and in \nour CSS Colors chapter."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The currentcolor Keyword"
+    },
+    {
+      "type": "paragraph",
+      "text": "The currentcolor keyword is like a variable \nthat holds the current value of the color property of an element."
+    },
+    {
+      "type": "paragraph",
+      "text": "This keyword can be useful if you want a specific color to be consistent in an \nelement or a page."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "div {  color: blue;  border: 10px solid currentcolor;}"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "body {  color: purple;}div {  background-color: \n  currentcolor;}"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "body { color: green;}div {   box-shadow: 0px 0px \n  15px currentcolor;  border: 5px solid currentcolor;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The inherit Keyword"
+    },
+    {
+      "type": "paragraph",
+      "text": "The inherit keyword specifies that a \nproperty should inherit its value from its parent element."
+    },
+    {
+      "type": "paragraph",
+      "text": "The inherit keyword can be used for any CSS \nproperty, and on any HTML element."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "div {  border: 2px solid red;}span {  border: \n  inherit;}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

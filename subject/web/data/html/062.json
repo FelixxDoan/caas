@@ -1,0 +1,171 @@
+{
+  "url": "https://www.w3schools.com/html/html_filepaths.asp",
+  "title": "HTML ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "HTML File Paths"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "A file path describes the location of a file in a web site's folder structure."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "File Path Examples"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Path",
+          "Description"
+        ],
+        [
+          "<img src=\"picture.jpg\">",
+          "The \"picture.jpg\" file is located in the same folder as the current page"
+        ],
+        [
+          "<img src=\"images/picture.jpg\">",
+          "The \"picture.jpg\" file is located in the images folder in the current folder"
+        ],
+        [
+          "<img src=\"/images/picture.jpg\">",
+          "The \"picture.jpg\" file is located in the images folder at the root of the current web"
+        ],
+        [
+          "<img src=\"../picture.jpg\">",
+          "The \"picture.jpg\" file is located in the folder one level up from the current folder"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML File Paths"
+    },
+    {
+      "type": "paragraph",
+      "text": "A file path describes the location of a file in a web site's folder structure."
+    },
+    {
+      "type": "paragraph",
+      "text": "File paths are used when linking to external files, like:"
+    },
+    {
+      "type": "other",
+      "text": "Web pages\n  Images\n  Style sheets\n  JavaScripts"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Absolute File Paths"
+    },
+    {
+      "type": "paragraph",
+      "text": "An absolute file path is the full URL to a file:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<img src=\"https://www.w3schools.com/images/picture.jpg\" \n  alt=\"Mountain\">"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "The <img> tag is explained in the chapter: HTML Images."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Relative File Paths"
+    },
+    {
+      "type": "paragraph",
+      "text": "A relative file path points to a file relative to the current page."
+    },
+    {
+      "type": "paragraph",
+      "text": "In the following example, the file path points to a file in the images folder located \nat the root of the current web:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<img src=\"/images/picture.jpg\" \nalt=\"Mountain\">"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "In the following example, the file path points to a file in the images folder located in the \ncurrent folder:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<img src=\"images/picture.jpg\" \nalt=\"Mountain\">"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "In the following example, the file path points to a file in the images folder located in the \nfolder one level up from the current folder:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<img src=\"../images/picture.jpg\" \nalt=\"Mountain\">"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Best Practice"
+    },
+    {
+      "type": "paragraph",
+      "text": "It is best practice to use relative file paths (if possible)."
+    },
+    {
+      "type": "paragraph",
+      "text": "When using relative file paths, your web pages will not be bound to your current \nbase URL. All links will work on your own computer (localhost) as well as on \nyour current public domain and your future public domains."
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Web pages",
+        "Images",
+        "Style sheets",
+        "JavaScripts"
+      ]
+    }
+  ]
+}

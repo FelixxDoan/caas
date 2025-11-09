@@ -1,0 +1,136 @@
+{
+  "url": "https://www.w3schools.com/js/js_loop_while.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript While Loop"
+    },
+    {
+      "type": "paragraph",
+      "text": "Loops can execute a block of code\nas long as a specified condition is true."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The While Loop"
+    },
+    {
+      "type": "paragraph",
+      "text": "The while loop loops through a block of code as long as a specified condition is true."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Syntax"
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "while (condition) {\n      // code block to be executed\n }"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Example"
+    },
+    {
+      "type": "paragraph",
+      "text": "In the following example, the code in the loop will run, over and over again, as long as \na variable (i) is less than 10:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "while (i < 10) {\n    text += \"The number is \" + i;\n    i++;}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "If you forget to increase the variable used in the condition, the loop will never end.\nThis will crash your browser."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Do While Loop"
+    },
+    {
+      "type": "paragraph",
+      "text": "The do while loop is a variant of the while loop. This loop will \nexecute the code block once, before checking if the condition is true, then it will\nrepeat the loop as long as the condition is true."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Syntax"
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "do {\n      // code block to be executed\n}\nwhile (condition);"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Example"
+    },
+    {
+      "type": "paragraph",
+      "text": "The example below uses a do while loop. The loop will always be \nexecuted at least once, even if the condition is false, because the code block \nis executed before the condition is tested:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "do {\n    text += \"The number is \" + i;\n    i++;\n }\nwhile (i < 10);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Do not forget to increase the variable used in the condition, otherwise \nthe loop will never end!"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Comparing For and While"
+    },
+    {
+      "type": "paragraph",
+      "text": "If you have read the previous chapter, about the for loop, you will discover that a while loop is \nmuch the same as a for loop, with statement 1 and statement 3 omitted."
+    },
+    {
+      "type": "paragraph",
+      "text": "The loop in this example uses a for loop to collect the car \nnames from the cars array:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const cars = [\"BMW\", \"Volvo\", \"Saab\", \"Ford\"];\nlet i = 0;\nlet text = \"\";\nfor (;cars[i];) {\n    text += cars[i];\n   \ni++;\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The loop in this example uses a while loop to collect the \ncar names from the cars array:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const cars = [\"BMW\", \"Volvo\", \"Saab\", \"Ford\"];\nlet i = 0;\nlet text = \"\";\n \n while (cars[i]) {\n    text += cars[i];\n   \ni++;\n}"
+        }
+      ]
+    }
+  ]
+}

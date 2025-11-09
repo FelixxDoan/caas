@@ -1,0 +1,62 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_ref_database.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL DATABASE Keyword"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "text": "CREATE DATABASE"
+    },
+    {
+      "type": "paragraph",
+      "text": "The CREATE DATABASE command is used is to \ncreate a new SQL database."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL creates a database called \"testDB\":"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\nCREATE DATABASE testDB;"
+    },
+    {
+      "type": "other",
+      "text": "Tip: Make sure you have admin privilege before creating any database. Once a \ndatabase is created, you can check it in the list of databases with the \nfollowing SQL command: SHOW DATABASES;"
+    },
+    {
+      "type": "heading",
+      "text": "DROP DATABASE"
+    },
+    {
+      "type": "paragraph",
+      "text": "The DROP DATABASE command is used is to \ndelete an existing SQL database."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL drops a database named \"testDB\":"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n  DROP DATABASE testDB;"
+    },
+    {
+      "type": "other",
+      "text": "Note: Be careful before dropping a database. Deleting \na database will result in loss of complete information stored in the database!"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

@@ -1,0 +1,304 @@
+{
+  "url": "https://www.w3schools.com/css/css_grid_columns_rows.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Grid Columns, Rows and Gaps"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Grid Columns"
+    },
+    {
+      "type": "paragraph",
+      "text": "The vertical lines of grid items are called columns."
+    },
+    {
+      "type": "image",
+      "src": "https://www.w3schools.com/css/grid_columns.png"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Grid Rows"
+    },
+    {
+      "type": "paragraph",
+      "text": "The horizontal lines of grid items are called rows."
+    },
+    {
+      "type": "image",
+      "src": "https://www.w3schools.com/css/grid_rows.png"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Grid Gaps"
+    },
+    {
+      "type": "paragraph",
+      "text": "The spaces between each column/row are called gaps."
+    },
+    {
+      "type": "image",
+      "src": "https://www.w3schools.com/css/grid_gaps.png"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can adjust the gap size by using one of the following properties:"
+    },
+    {
+      "type": "other",
+      "text": "column-gap\n  row-gap\n  gap"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The column-gap Property"
+    },
+    {
+      "type": "paragraph",
+      "text": "The column-gap property specifies the gap \nbetween the columns in a grid."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".container {  \n  display: grid;  column-gap: 50px;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The row-gap Property"
+    },
+    {
+      "type": "paragraph",
+      "text": "The row-gap property specifies the gap \nbetween the rows in a grid."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".container {  \n  display: grid;  row-gap: 50px;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The gap Property"
+    },
+    {
+      "type": "paragraph",
+      "text": "The gap property is a shorthand property for \nrow-gap and \ncolumn-gap:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".container {  \n  display: grid;  gap: 50px 100px;}"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".container {  \n  display: grid;  gap: 50px;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Grid Lines"
+    },
+    {
+      "type": "paragraph",
+      "text": "The lines between columns are called column lines."
+    },
+    {
+      "type": "paragraph",
+      "text": "The lines between rows are called row lines."
+    },
+    {
+      "type": "image",
+      "src": "https://www.w3schools.com/css/grid_lines.png"
+    },
+    {
+      "type": "paragraph",
+      "text": "We can specify where to start and end a grid item by using the following properties:"
+    },
+    {
+      "type": "other",
+      "text": "grid-column-start\n  grid-column-end\n  grid-row-start\n  grid-row-end\n  grid-column\n  grid-row"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can refer to line numbers when placing a grid item in a grid container."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The grid-column-start and grid-column-end Properties"
+    },
+    {
+      "type": "paragraph",
+      "text": "The grid-column-start property specifies where to start \na grid item."
+    },
+    {
+      "type": "paragraph",
+      "text": "The grid-column-end property specifies where to \nend a grid item."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".item1 {\n    grid-column-start: 1;  grid-column-end: 3;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The grid-column Property"
+    },
+    {
+      "type": "paragraph",
+      "text": "The grid-column property is a shorthand property for the grid-column-start and the grid-column-end properties."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".item1 {\n    grid-column: 1 / span \n  2;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The grid-row-start and grid-row-end Property"
+    },
+    {
+      "type": "paragraph",
+      "text": "The grid-row-start property specifies where to start \na grid item."
+    },
+    {
+      "type": "paragraph",
+      "text": "The grid-row-end property specifies where to \nend a grid item."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".item1 {\n    grid-row-start: 1;  grid-row-end: 3;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The grid-row Property"
+    },
+    {
+      "type": "paragraph",
+      "text": "The grid-row property is a shorthand property for the grid-row-start and the grid-row-end properties."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".item1 {\n    grid-row: 1 / span 2;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "All CSS Grid Column, Row and Gap Properties"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Property",
+          "Description"
+        ],
+        [
+          "display",
+          "Specifies the display behavior (the type of rendering box) of an element"
+        ],
+        [
+          "column-gap",
+          "Specifies the gap between the columns"
+        ],
+        [
+          "gap",
+          "A shorthand property for the row-gap and the column-gap properties"
+        ],
+        [
+          "grid-column",
+          "A shorthand property for the grid-column-start and the grid-column-end properties"
+        ],
+        [
+          "grid-column-end",
+          "Specifies where to end the grid item"
+        ],
+        [
+          "grid-column-start",
+          "Specifies where to start the grid item"
+        ],
+        [
+          "grid-row",
+          "A shorthand property for the grid-row-start and the grid-row-end properties"
+        ],
+        [
+          "grid-row-end",
+          "Specifies where to end the grid item"
+        ],
+        [
+          "grid-row-start",
+          "Specifies where to start the grid item"
+        ],
+        [
+          "row-gap",
+          "Specifies the gap between the grid rows"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

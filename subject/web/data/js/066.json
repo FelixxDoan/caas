@@ -1,0 +1,254 @@
+{
+  "url": "https://www.w3schools.com/js/js_htmldom_nodes.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript HTML DOM Elements (Nodes)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Adding and Removing Nodes (HTML Elements)"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Creating New HTML Elements (Nodes)"
+    },
+    {
+      "type": "paragraph",
+      "text": "To add a new element to the HTML DOM, you must create the element (element node) first, \nand then append it to an existing element."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<div id=\"div1\">\n \n<p id=\"p1\">This is a paragraph.</p>\n \n<p id=\"p2\">This is another paragraph.</p>\n</div><script>\nconst para = document.createElement(\"p\");\nconst node = document.createTextNode(\"This is new.\");\npara.appendChild(node);\nconst element = document.getElementById(\"div1\");\nelement.appendChild(para);\n</script>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Example Explained"
+    },
+    {
+      "type": "paragraph",
+      "text": "This code creates a new <p> element:"
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "const para = document.createElement(\"p\");"
+    },
+    {
+      "type": "paragraph",
+      "text": "To add text to the <p> element, you must create a text node first. This code creates a text node:"
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "const node = document.createTextNode(\"This is a new paragraph.\");"
+    },
+    {
+      "type": "paragraph",
+      "text": "Then you must append the text node to the <p> element:"
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "para.appendChild(node);"
+    },
+    {
+      "type": "paragraph",
+      "text": "Finally you must append the new element to an existing element."
+    },
+    {
+      "type": "paragraph",
+      "text": "This code finds an existing element:"
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "const element = document.getElementById(\"div1\");"
+    },
+    {
+      "type": "paragraph",
+      "text": "This code appends the new element to the existing element:"
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "element.appendChild(para);"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Creating new HTML Elements - insertBefore()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The appendChild() method in the previous example, appended the new element as \nthe last child of the parent."
+    },
+    {
+      "type": "paragraph",
+      "text": "If you don't want that you can use the insertBefore() method:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<div id=\"div1\">\n \n<p id=\"p1\">This is a paragraph.</p>\n \n<p id=\"p2\">This is another paragraph.</p>\n</div><script>\nconst para = document.createElement(\"p\");\nconst node = document.createTextNode(\"This is new.\");\npara.appendChild(node);\nconst element = document.getElementById(\"div1\");\nconst child = document.getElementById(\"p1\");element.insertBefore(para, child);\n</script>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Removing Existing HTML Elements"
+    },
+    {
+      "type": "paragraph",
+      "text": "To remove an HTML element, use the remove() \nmethod:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<div>\n \n<p id=\"p1\">This is a paragraph.</p>\n \n<p id=\"p2\">This is another paragraph.</p>\n</div><script>\nconst elmnt = document.getElementById(\"p1\");\nelmnt.remove();\n</script>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Example Explained"
+    },
+    {
+      "type": "paragraph",
+      "text": "The HTML document contains a <div> element with two child nodes (two <p> \nelements):"
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "<div>\n \n<p id=\"p1\">This is a paragraph.</p>\n \n<p id=\"p2\">This is another paragraph.</p>\n</div>"
+    },
+    {
+      "type": "paragraph",
+      "text": "Find the element you want to remove:"
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "const elmnt = document.getElementById(\"p1\");"
+    },
+    {
+      "type": "paragraph",
+      "text": "Then execute the remove() method on that element:"
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "elmnt.remove();"
+    },
+    {
+      "type": "other",
+      "text": "The remove() method does not work in \nolder browsers, see the example below on how to use \nremoveChild() instead."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Removing a Child Node"
+    },
+    {
+      "type": "paragraph",
+      "text": "For browsers that does not support the remove() method, you have to find the \nparent node to remove an element:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<div id=\"div1\">\n \n<p id=\"p1\">This is a paragraph.</p>\n \n<p id=\"p2\">This is another paragraph.</p>\n</div><script>\nconst parent = document.getElementById(\"div1\");\nconst child = document.getElementById(\"p1\");\nparent.removeChild(child);\n</script>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Example Explained"
+    },
+    {
+      "type": "paragraph",
+      "text": "This HTML document contains a <div> element with two child nodes (two <p> \nelements):"
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "<div id=\"div1\">\n \n<p id=\"p1\">This is a paragraph.</p>\n \n<p id=\"p2\">This is another paragraph.</p>\n</div>"
+    },
+    {
+      "type": "paragraph",
+      "text": "Find the element with id=\"div1\":"
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "const parent = document.getElementById(\"div1\");"
+    },
+    {
+      "type": "paragraph",
+      "text": "Find the <p> element with id=\"p1\":"
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "const child = document.getElementById(\"p1\");"
+    },
+    {
+      "type": "paragraph",
+      "text": "Remove the child from the parent:"
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "parent.removeChild(child);"
+    },
+    {
+      "type": "paragraph",
+      "text": "Here is a common workaround: Find the child you want to remove, and use its \nparentNode property to find the parent:"
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "const child = document.getElementById(\"p1\");child.parentNode.removeChild(child);"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Replacing HTML Elements"
+    },
+    {
+      "type": "paragraph",
+      "text": "To replace an element to the HTML DOM, use the replaceChild() method:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<div id=\"div1\">\n \n<p id=\"p1\">This is a paragraph.</p>\n \n<p id=\"p2\">This is another paragraph.</p>\n</div><script>\nconst para = document.createElement(\"p\");\nconst node = document.createTextNode(\"This is new.\");para.appendChild(node);\n const parent = document.getElementById(\"div1\");const child = document.getElementById(\"p1\");parent.replaceChild(para, child);\n</script>"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,245 @@
+{
+  "url": "https://www.w3schools.com/js/js_json_stringify.asp",
+  "title": "JSON",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JSON.stringify()"
+    },
+    {
+      "type": "other",
+      "text": "A common use of JSON is to exchange data to/from a web server.\nWhen sending data to a web server, the data has to be \na string.\nYou can convert any JavaScript datatype into a string with JSON.stringify()."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Stringify a JavaScript Object"
+    },
+    {
+      "type": "paragraph",
+      "text": "Imagine we have this object in JavaScript:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const obj = {name: \"John\", age: 30, city: \"New York\"};"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Use the JavaScript function JSON.stringify() to convert it into a string."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const myJSON = JSON.stringify(obj);"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "The result will be a string following the JSON notation."
+    },
+    {
+      "type": "paragraph",
+      "text": "myJSON is now a string, and ready to be sent to a server:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const obj = {name: \"John\", age: 30, city: \"New York\"};\nconst myJSON = \n  JSON.stringify(obj);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "You will learn how to send JSON to a server in the next chapters."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Stringify a JavaScript Array"
+    },
+    {
+      "type": "paragraph",
+      "text": "It is also possible to stringify JavaScript arrays:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Imagine we have this array in JavaScript:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const arr = [\"John\", \"Peter\", \"Sally\", \"Jane\"];"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Use the JavaScript function JSON.stringify() to convert it into a string."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const myJSON = JSON.stringify(arr);"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "The result will be a string following the JSON notation."
+    },
+    {
+      "type": "paragraph",
+      "text": "myJSON is now a string, and ready to be sent to a server:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const arr = [\"John\", \"Peter\", \"Sally\", \"Jane\"];\nconst myJSON = \n  JSON.stringify(arr);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "You will learn how to send a JSON string to a server in the next chapters."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Storing Data"
+    },
+    {
+      "type": "paragraph",
+      "text": "When storing data, the data has to be a certain format, and regardless of where you choose to store it, \ntext is always one of the legal formats."
+    },
+    {
+      "type": "paragraph",
+      "text": "JSON makes it possible to store JavaScript objects as text."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Storing data:const myObj = {name: \"John\", \n  age: 31, city: \"New York\"};const myJSON = \n  JSON.stringify(myObj);localStorage.setItem(\"testJSON\", myJSON);\n  // Retrieving data:let text = localStorage.getItem(\"testJSON\");let obj = \n  JSON.parse(text);document.getElementById(\"demo\").innerHTML = obj.name;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "All Data Types"
+    },
+    {
+      "type": "paragraph",
+      "text": "JSON.stringify() can not only convert objects and arrays into JSON strings,\nit can convert any JavaScript value into a string."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const num = 123e-5;\nconst myJSON = JSON.stringify(num);"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let bool = new Boolean(1);\nconst myJSON = JSON.stringify(bool);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Stringify  a Date"
+    },
+    {
+      "type": "paragraph",
+      "text": "In JSON, date objects are not allowed. The JSON.stringify() function\nwill convert any Date objects into strings."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const obj = {name: \"John\", today: new Date(), city : \"New York\"};\nconst myJSON = JSON.stringify(obj);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "You can convert the string back into a date object at the receiver."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Stringify a Function"
+    },
+    {
+      "type": "paragraph",
+      "text": "In JSON, functions are not allowed as object values."
+    },
+    {
+      "type": "paragraph",
+      "text": "The JSON.stringify() function will remove any functions from a JavaScript \nobject, both the key and the value:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const obj = {name: \"John\", age: function () {return 30;}, city: \"New York\"};\nconst myJSON = JSON.stringify(obj);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "This can be omitted if you convert your functions into strings before running \nthe JSON.stringify() function."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const obj = {name: \"John\", age: function () {return 30;}, city: \"New York\"};\n  obj.age = obj.age.toString();const myJSON = JSON.stringify(obj);"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "If you send functions using JSON, the functions will lose their scope, and the receiver \nwould have to use eval() to convert them back into functions."
+    }
+  ]
+}

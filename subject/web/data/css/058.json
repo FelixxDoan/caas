@@ -1,0 +1,299 @@
+{
+  "url": "https://www.w3schools.com/css/css_align.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Layout - Horizontal & Vertical Align"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "▲\n▼\n\n◀\n►\n  Center elementshorizontally and vertically"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Center Align Elements"
+    },
+    {
+      "type": "paragraph",
+      "text": "To horizontally center a block element (like <div>), use margin: auto;"
+    },
+    {
+      "type": "paragraph",
+      "text": "Setting the width of the element will prevent it from stretching out to the \nedges of its container."
+    },
+    {
+      "type": "paragraph",
+      "text": "The element will then take up the specified width, and the remaining space \nwill be split equally between the two margins:"
+    },
+    {
+      "type": "other",
+      "text": "This div element is centered."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".center\n{\n  margin: auto;\n   \nwidth: 50%;\n   \nborder: 3px solid green;  padding: 10px;\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Note: Center aligning has no effect if the width property is not set \n(or set to 100%)."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Center Align Text"
+    },
+    {
+      "type": "paragraph",
+      "text": "To just center the text inside an element, use text-align: center;"
+    },
+    {
+      "type": "other",
+      "text": "This text is centered."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".center {  text-align: center;  \nborder: 3px solid green;}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Tip: For more examples on how to align text, see the CSS Text chapter."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Center an Image"
+    },
+    {
+      "type": "paragraph",
+      "text": "To center an image, set left and right margin to auto and make it into a block element:"
+    },
+    {
+      "type": "image",
+      "src": "https://www.w3schools.com/css/paris.jpg"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "img\n{  display: block;\n    margin-left: auto;  margin-right: auto;\n  width: 40%;\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Left and Right Align - Using position"
+    },
+    {
+      "type": "paragraph",
+      "text": "One method for aligning elements is to use position: absolute;:"
+    },
+    {
+      "type": "other",
+      "text": "In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".right\n{\n  position: absolute;\n   \nright: 0px;\n  width: 300px;\n  border: 3px solid #73AD21;  padding: 10px;\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Note: Absolute positioned elements are removed from the normal flow, and can overlap elements."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Left and Right Align - Using float"
+    },
+    {
+      "type": "paragraph",
+      "text": "Another method for aligning elements is to use the float property:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".right\n{\n  float: right;\n   \nwidth: 300px;\n  border: 3px solid #73AD21;  padding: 10px;\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The clearfix Hack"
+    },
+    {
+      "type": "other",
+      "text": "Note: If an element is taller than the element containing it, and it is floated, it \nwill overflow outside of its container. You can use the \"clearfix hack\" to fix this (see example below)."
+    },
+    {
+      "type": "other",
+      "text": "Without Clearfix\n\n\n\nWith Clearfix"
+    },
+    {
+      "type": "paragraph",
+      "text": "Then we can add the clearfix hack to the containing element to fix \nthis problem:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".clearfix::after {  content: \"\";  clear: both;  \n  display: table;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Center Vertically - Using padding"
+    },
+    {
+      "type": "paragraph",
+      "text": "There are many ways to center an element vertically in CSS. A simple solution is to use top and bottom padding:"
+    },
+    {
+      "type": "other",
+      "text": "I am vertically centered."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".center {  padding: 70px 0;  border: 3px solid \ngreen;\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "To center both vertically and horizontally, use padding and text-align: center:"
+    },
+    {
+      "type": "other",
+      "text": "I am vertically and horizontally centered."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".center {  padding: 70px 0;  border: 3px solid \ngreen;  text-align: center;\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Center Vertically - Using line-height"
+    },
+    {
+      "type": "paragraph",
+      "text": "Another trick is to use the line-height property with a value that is equal \nto the height property:"
+    },
+    {
+      "type": "other",
+      "text": "I am vertically and horizontally centered."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".center {  line-height: 200px;  height: 200px;  border: 3px solid green;  text-align: center;}/* If the text has multiple lines, add the \nfollowing: */.center p {  line-height: 1.5;  display: inline-block;  vertical-align: middle;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Center Vertically - Using position & transform"
+    },
+    {
+      "type": "paragraph",
+      "text": "If padding and line-height \nare not options, another solution is to use positioning and the transform property:"
+    },
+    {
+      "type": "other",
+      "text": "I am vertically and horizontally centered."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".center {   height: 200px;  position: relative;  border: 3px solid green; }\n.center p {  margin: 0;  \nposition: absolute;  top: 50%;  \nleft: 50%;  transform: translate(-50%, -50%);}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Tip: You will learn more about the transform property in our 2D Transforms \nChapter."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Center Vertically - Using Flexbox"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can also use flexbox to center things. Just note that flexbox is not supported in IE10 and earlier versions:"
+    },
+    {
+      "type": "other",
+      "text": "I am vertically and horizontally centered."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".center {  display: flex;  justify-content: center;  \n  align-items: center;  height: 200px;  border: 3px solid \n  green; }"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

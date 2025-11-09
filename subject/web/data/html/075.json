@@ -1,0 +1,330 @@
+{
+  "url": "https://www.w3schools.com/html/html_table_styling.asp",
+  "title": "HTML ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "HTML Table Styling"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "Use CSS to make your tables look better."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML Table - Zebra Stripes"
+    },
+    {
+      "type": "paragraph",
+      "text": "If you add a background color on every other table row, you will get a nice zebra stripes effect."
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        [
+          "5",
+          "6",
+          "7",
+          "8"
+        ],
+        [
+          "9",
+          "10",
+          "11",
+          "12"
+        ],
+        [
+          "13",
+          "14",
+          "15",
+          "16"
+        ],
+        [
+          "17",
+          "18",
+          "19",
+          "20"
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "To style every other table row element, use the :nth-child(even) \nselector like this:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "css",
+          "code": "tr:nth-child(even) {  background-color: #D6EEEE;}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note: If you use (odd) instead of \n(even), the styling will occur on row 1,3,5 etc. instead of 2,4,6 etc."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML Table - Vertical Zebra Stripes"
+    },
+    {
+      "type": "paragraph",
+      "text": "To make vertical zebra stripes, style every other column, instead of every other \nrow."
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        [
+          "5",
+          "6",
+          "7",
+          "8"
+        ],
+        [
+          "9",
+          "10",
+          "11",
+          "12"
+        ],
+        [
+          "13",
+          "14",
+          "15",
+          "16"
+        ],
+        [
+          "17",
+          "18",
+          "19",
+          "20"
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Set the :nth-child(even) for table data elements like this:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "css",
+          "code": "td:nth-child(even),\n  th:nth-child(even) {  background-color: #D6EEEE;}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note: Put the :nth-child() selector \non both th and td \nelements if you want to have the styling on both headers and regular table \ncells."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Combine Vertical and Horizontal Zebra Stripes"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can combine the styling from the two examples above and you will have stripes on every other row and every other column."
+    },
+    {
+      "type": "paragraph",
+      "text": "If you use a transparent color you will get an overlapping effect."
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Use an rgba() color to specify the transparency of the color:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "css",
+          "code": "tr:nth-child(even) {  background-color: rgba(150, 212, 212, 0.4);\n  }\n  th:nth-child(even),td:nth-child(even) {  background-color: rgba(150, \n  212, 212, 0.4);}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Horizontal Dividers"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "First Name",
+          "Last Name",
+          "Savings"
+        ],
+        [
+          "Peter",
+          "Griffin",
+          "$100"
+        ],
+        [
+          "Lois",
+          "Griffin",
+          "$150"
+        ],
+        [
+          "Joe",
+          "Swanson",
+          "$300"
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "If you specify borders only at the bottom of each table row, you will have a table with horizontal dividers."
+    },
+    {
+      "type": "paragraph",
+      "text": "Add the border-bottom property to all \ntr elements to get horizontal dividers:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "css",
+          "code": "tr {  border-bottom: 1px solid #ddd;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Hoverable Table"
+    },
+    {
+      "type": "paragraph",
+      "text": "Use the :hover selector on\ntr to highlight table rows on mouse \nover:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "First Name",
+          "Last Name",
+          "Savings"
+        ],
+        [
+          "Peter",
+          "Griffin",
+          "$100"
+        ],
+        [
+          "Lois",
+          "Griffin",
+          "$150"
+        ],
+        [
+          "Joe",
+          "Swanson",
+          "$300"
+        ]
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "css",
+          "code": "tr:hover {background-color: #D6EEEE;}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

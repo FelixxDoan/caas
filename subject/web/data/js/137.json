@@ -1,0 +1,275 @@
+{
+  "url": "https://www.w3schools.com/js/js_array_const.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Array Const"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "ECMAScript 2015 (ES6)"
+    },
+    {
+      "type": "paragraph",
+      "text": "In 2015, JavaScript introduced an important new keyword: const."
+    },
+    {
+      "type": "paragraph",
+      "text": "It has become a common practice to declare arrays using const:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const cars = [\"Saab\", \"Volvo\", \"BMW\"];"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Cannot be Reassigned"
+    },
+    {
+      "type": "paragraph",
+      "text": "An array declared with const cannot be reassigned:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const cars = [\"Saab\", \"Volvo\", \"BMW\"];\ncars = [\"Toyota\", \"Volvo\", \"Audi\"];    // ERROR"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Arrays are Not Constants"
+    },
+    {
+      "type": "paragraph",
+      "text": "The keyword const is a little misleading."
+    },
+    {
+      "type": "paragraph",
+      "text": "It does NOT define a constant array. It defines a constant reference to an array."
+    },
+    {
+      "type": "paragraph",
+      "text": "Because of this, we can still change the elements of a constant array."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Elements Can be Reassigned"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can change the elements of a constant array:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// You can create a constant array:\nconst cars = [\"Saab\", \"Volvo\", \"BMW\"];\n// You can change an element:\ncars[0] = \"Toyota\";\n// You can add an element:\ncars.push(\"Audi\");"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Browser Support"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following table lists the first browsers with support for\nconst:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Chrome 49",
+          "IE 11/Edge",
+          "Firefox 36",
+          "Safari 10",
+          "Opera 36"
+        ],
+        [
+          "Mar, 2016",
+          "Oct, 2013",
+          "Feb, 2015",
+          "Sep, 2016",
+          "Mar, 2016"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Assigned when Declared"
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript const variables must be assigned a value when they are declared:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Meaning: An array declared with const must be initialized when it is declared."
+    },
+    {
+      "type": "paragraph",
+      "text": "Using const without initializing the array is a syntax \nerror:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const cars;\ncars = [\"Saab\", \"Volvo\", \"BMW\"];"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Arrays declared with var can be initialized at any time."
+    },
+    {
+      "type": "paragraph",
+      "text": "You can even use the array before it is declared:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "cars = [\"Saab\", \"Volvo\", \"BMW\"];\nvar cars;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Const Block Scope"
+    },
+    {
+      "type": "paragraph",
+      "text": "An array declared with const has Block Scope."
+    },
+    {
+      "type": "paragraph",
+      "text": "An array declared in a block is not the same as an array declared outside the block:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const cars = [\"Saab\", \"Volvo\", \"BMW\"];\n// Here cars[0] is \"Saab\"\n{\n  const cars = [\"Toyota\", \"Volvo\", \"BMW\"]; \n  // Here cars[0] is \"Toyota\"\n}\n// Here cars[0] is \"Saab\""
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "An array declared with var does not have block scope:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "var cars = [\"Saab\", \"Volvo\", \"BMW\"];\n// Here cars[0] is \"Saab\"\n{\n  var cars = [\"Toyota\", \"Volvo\", \"BMW\"]; \n  // Here cars[0] is \"Toyota\"\n}\n// Here cars[0] is \"Toyota\""
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "You can learn more about Block Scope in the chapter: JavaScript Scope."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Redeclaring Arrays"
+    },
+    {
+      "type": "paragraph",
+      "text": "Redeclaring an array declared with var is allowed anywhere in a program:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "var cars = [\"Volvo\", \"BMW\"];   // Allowed\nvar cars = [\"Toyota\", \"BMW\"];  // Allowed\ncars = [\"Volvo\", \"Saab\"];      // Allowed"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Redeclaring or reassigning an array to const, in the same scope, or in \nthe same block, is not allowed:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "var cars = [\"Volvo\", \"BMW\"];     // Allowed\nconst cars = [\"Volvo\", \"BMW\"];   // Not allowed\n{\n  var cars = [\"Volvo\", \"BMW\"];   // Allowed\n  const cars = [\"Volvo\", \"BMW\"]; // Not allowed\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Redeclaring or reassigning an existing const array, in the same scope, or in \nthe same block, is not allowed:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const cars = [\"Volvo\", \"BMW\"];   // Allowed\nconst cars = [\"Volvo\", \"BMW\"];   // Not allowed\nvar cars = [\"Volvo\", \"BMW\"];     // Not allowed\ncars = [\"Volvo\", \"BMW\"];         // Not allowed\n\n{\n  const cars = [\"Volvo\", \"BMW\"]; // Allowed\n  const cars = [\"Volvo\", \"BMW\"]; // Not allowed\n  var cars = [\"Volvo\", \"BMW\"];   // Not allowed\n  cars = [\"Volvo\", \"BMW\"];       // Not allowed\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Redeclaring an array with const, in another scope, or in another block, is allowed:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const cars = [\"Volvo\", \"BMW\"];   // Allowed\n{\n  const cars = [\"Volvo\", \"BMW\"]; // Allowed\n}\n{\n  const cars = [\"Volvo\", \"BMW\"]; // Allowed\n}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Complete Array Reference\nFor a complete Array reference, go to our:\nComplete JavaScript Array Reference.\nThe reference contains descriptions and examples of all Array \nproperties and methods."
+    }
+  ]
+}

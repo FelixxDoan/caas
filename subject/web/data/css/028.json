@@ -1,0 +1,217 @@
+{
+  "url": "https://www.w3schools.com/css/css_interview_prep.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Interview Preparation"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "other",
+      "text": "Try W3Schools' comprehensive Front-End interview preparation feature. \n\nA tool that will help you get ready for your next interview.\n  \nW3Schools interview preparation is an interactive feature powered by AI, where you can select the role of the interviewer, ask questions, and receive guidance.\n  \nAfter the interview training you will get an evaluation of your performance that you can use to improve yourself.\nGet Started"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What to expect in a Front-End interview"
+    },
+    {
+      "type": "paragraph",
+      "text": "If you are going to a Front-End interview, there are a few things you can expect:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Coding Questions:"
+    },
+    {
+      "type": "paragraph",
+      "text": "You will be asked coding questions, and you possibly also get a task to solve."
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples of technical questions:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Tell me about your experience as a Front-End developer.\n  Tell me about a personal project where you worked on implementing the user interface for a website."
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples of a task:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Create a webpage that shows a greeting message to the user. \n  Use HTML and CSS to structure and style it. You can add a JavaScript function to change the message based on the time of the day."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<head>\n      <title>Simple Greeting Page</title>\n      <style>\n        body {\n          font-family: Arial, sans-serif;\n          background-color: #f0f0f0;\n          color: #333;\n          padding: 20px;\n        }\n      </style>\n  </head>\n  <body>\n      <h1>Hello, welcome to our website!</h1>\n  </body>\n  </html>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "If you don't know how to solve the task or answer the question, do not panic. It happens to everyone, even pro Front-End developers."
+    },
+    {
+      "type": "paragraph",
+      "text": "Showcase your skills and projects:"
+    },
+    {
+      "type": "paragraph",
+      "text": "They would like to see projects to understand your work better.\nYou can include current projects in your portfolio even if they are unfinished."
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples of projects to have in your portfolio:"
+    },
+    {
+      "type": "other",
+      "text": "To-do list app\n  Blog template\n  Weather dashboard\n  E-commerce product page\n  Interactive game or application"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What to do before the interview"
+    },
+    {
+      "type": "paragraph",
+      "text": "Before you go to an interview, you should check out the company."
+    },
+    {
+      "type": "paragraph",
+      "text": "It will give you a better understanding of their values and what they do."
+    },
+    {
+      "type": "paragraph",
+      "text": "Check out:"
+    },
+    {
+      "type": "other",
+      "text": "Their webpage\n  Their social media platforms\n  Articles and reviews"
+    },
+    {
+      "type": "paragraph",
+      "text": "Make sure you understand the job description:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Read the description and take notes if you need help understanding something. You can call them before the interview and ask about the things you don't understand."
+    },
+    {
+      "type": "paragraph",
+      "text": "You can also ask a friend or a community member to help you."
+    },
+    {
+      "type": "paragraph",
+      "text": "There is a big community of Front-End developers on social media."
+    },
+    {
+      "type": "paragraph",
+      "text": "Reflect on why you are the right fit for this role:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Companies hire people they believe will be the right fit."
+    },
+    {
+      "type": "paragraph",
+      "text": "Think about what value you can add to the role and the team."
+    },
+    {
+      "type": "paragraph",
+      "text": "Write them down."
+    },
+    {
+      "type": "paragraph",
+      "text": "It will help you discuss how you are the right candidate for the role."
+    },
+    {
+      "type": "paragraph",
+      "text": "We have created an interview tool to help you prepare:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Try it out"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What is Front-End Development?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Front-End development is an exciting career that allows you to create dynamic and responsive websites and apps. It's a good choice if you're interested in good user engagement and experience."
+    },
+    {
+      "type": "paragraph",
+      "text": "Typical Languages Used in Front-End Development:"
+    },
+    {
+      "type": "other",
+      "text": "HTML\n  CSS\n  JavaScript\n  React.js\n  Bootstrap\n  and other CSS frameworks"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Career Outlook"
+    },
+    {
+      "type": "paragraph",
+      "text": "The demand for Front-End developers is high."
+    },
+    {
+      "type": "paragraph",
+      "text": "You can expect:"
+    },
+    {
+      "type": "other",
+      "text": "Competitive salary\n  Possibility of working remotely\n  Opportunity to grow as the industry innovates and adopts new technologies."
+    },
+    {
+      "type": "paragraph",
+      "text": "The Average Salary is $112,328 in the US."
+    },
+    {
+      "type": "paragraph",
+      "text": "Typical Job Titles for a Front-End Developer:"
+    },
+    {
+      "type": "other",
+      "text": "Front-End developer\n  Web Developer\n  UI/UX Designer\n  Web App Developer\n  and many more."
+    },
+    {
+      "type": "paragraph",
+      "text": "Try W3Schools Pathfinder Jobs, where companies post in-demand job roles such as Front-End development, web development, Java development, and more."
+    },
+    {
+      "type": "paragraph",
+      "text": "Our best tip: Prepare yourself so you can go in with confidence and enjoy the process!"
+    },
+    {
+      "type": "paragraph",
+      "text": "Try W3Schools interview preparation here: Interview Preperation"
+    },
+    {
+      "type": "paragraph",
+      "text": "Best of luck!"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

@@ -1,0 +1,284 @@
+{
+  "url": "https://www.w3schools.com/css/css_pseudo_elements.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Pseudo-elements"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What are Pseudo-Elements?"
+    },
+    {
+      "type": "paragraph",
+      "text": "A CSS pseudo-element is used to style specific parts of an element."
+    },
+    {
+      "type": "paragraph",
+      "text": "For example, it can be used to:"
+    },
+    {
+      "type": "other",
+      "text": "Style the first letter or line, of an element\n  Insert content before or after an element\n  Style the markers of list items\n  Style the viewbox behind a dialog box"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Syntax"
+    },
+    {
+      "type": "paragraph",
+      "text": "The syntax of pseudo-elements:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "selector::pseudo-element {  property: value;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The ::first-line Pseudo-element"
+    },
+    {
+      "type": "paragraph",
+      "text": "The ::first-line pseudo-element is used to add a special style \nto the first line of a text."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following example formats the first line of the text in all <p> \nelements:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "p::first-line \n{\n   \ncolor: #ff0000;\n   \nfont-variant: small-caps;\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Note: The ::first-line pseudo-element can only be applied to block-level \nelements."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following properties apply to the ::first-line \npseudo-element:"
+    },
+    {
+      "type": "other",
+      "text": "font properties\n  color properties\n  background properties\n  word-spacing\n  letter-spacing\n  text-decoration\n  vertical-align\n  text-transform\n  line-height\n  clear"
+    },
+    {
+      "type": "other",
+      "text": "Notice the double colon notation -  ::first-line versus\n:first-lineThe double colon replaced the single-colon \nnotation for pseudo-elements in CSS3. This was an attempt from W3C to \ndistinguish between pseudo-classes \nand pseudo-elements.The single-colon syntax was used \nfor both pseudo-classes and pseudo-elements in CSS2 and CSS1.For \nbackward compatibility, the single-colon syntax is acceptable for CSS2 and CSS1 \npseudo-elements."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The ::first-letter Pseudo-element"
+    },
+    {
+      "type": "paragraph",
+      "text": "The ::first-letter pseudo-element is used to add a special style to the first \nletter of a text."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following example formats the first letter of the text in all <p> \nelements:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "p::first-letter \n{\n   \ncolor: #ff0000;\n   \nfont-size: xx-large;\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Note: The ::first-letter pseudo-element can only be applied to block-level \nelements."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following properties apply to the ::first-letter pseudo- element:"
+    },
+    {
+      "type": "other",
+      "text": "font properties\n   color properties \n   background properties\n  margin properties\n  padding properties\n  border properties\n  text-decoration\n  vertical-align (only if \"float\" is \"none\")\n  text-transform\n  line-height\n  float\n  clear"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Pseudo-elements and HTML Classes"
+    },
+    {
+      "type": "paragraph",
+      "text": "Pseudo-elements can be combined with HTML classes:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "p.intro::first-letter {  color: #ff0000;  \nfont-size: 200%;}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The example above will display the first letter of paragraphs with class=\"intro\", in \nred and in a larger size."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Multiple Pseudo-elements"
+    },
+    {
+      "type": "paragraph",
+      "text": "Several pseudo-elements can also be combined."
+    },
+    {
+      "type": "paragraph",
+      "text": "In the following example, the first letter of a paragraph will be red, in \nan xx-large font size. The rest of the first line will be blue, and in \nsmall-caps. The rest of the paragraph will be the default font size and color:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "p::first-letter\n{\n  color: #ff0000;\n  font-size: xx-large;\n}\np::first-line \n{\n   \ncolor: #0000ff;\n   \nfont-variant: small-caps;\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CSS - The ::before Pseudo-element"
+    },
+    {
+      "type": "paragraph",
+      "text": "The ::before pseudo-element can be used to insert some content before the content of an element."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following example inserts an image before the content of each <h1> element:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "h1::before \n{\n  content: url(smiley.gif);\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CSS - The ::after Pseudo-element"
+    },
+    {
+      "type": "paragraph",
+      "text": "The ::after pseudo-element can be used to insert some content after the content of an element."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following example inserts an image after the content of each <h1> element:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "h1::after\n{\n  content: url(smiley.gif);\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CSS - The ::marker Pseudo-element"
+    },
+    {
+      "type": "paragraph",
+      "text": "The ::marker pseudo-element selects the \nmarkers of list items."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following example styles the markers of list items:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "::marker { \n  color: red;  font-size: 23px;\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CSS - The ::selection Pseudo-element"
+    },
+    {
+      "type": "paragraph",
+      "text": "The ::selection pseudo-element matches the portion of an element that is \nselected by a user."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following CSS properties can be applied to ::selection: \ncolor, \nbackground, cursor, and outline."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following example makes the selected text red on a yellow background:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "::selection {  color: red;   \nbackground: yellow;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CSS Pseudo-elements Reference"
+    },
+    {
+      "type": "other",
+      "text": "For a complete list of all CSS Pseudo-elements, visit our   CSS Pseuodo-elements Reference."
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

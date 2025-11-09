@@ -1,0 +1,1087 @@
+{
+  "url": "https://www.w3schools.com/js/js_es6.asp",
+  "title": "Javascript 2015 (ES6)",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Javascript 2015 (ES6)"
+    },
+    {
+      "type": "other",
+      "text": "ECMAScript 2015\nThe second major revision to JavaScript.\nECMAScript 2015 is also known as ES6. \nThis chapter describes the features of ES6."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "New Features in JavaScript 2015 (ES6)"
+    },
+    {
+      "type": "other",
+      "text": "The let keyword\n  The const keyword\n  Arrow Functions\n  The {a,b} = Operator\n  The [a,b] = Operator\n  The ... Operator\n  For/of\n  Map Objects\n  Set Objects\n  Classes\n  Promises\n  Symbol\n  Default Parameters\n  Function Rest Parameter\n  String.includes()\n  String.startsWith()\n  String.endsWith()\n  Array entries()\n  Array.from()\n  Array keys()\n  Array find()\n  Array findIndex()\n  Math.trunc\n  Math.sign\n  Math.cbrt\n  Math.log2\n  Math.log10\n  Number.EPSILON\n  Number.MIN_SAFE_INTEGER\n  Number.MAX_SAFE_INTEGER\n  Number.isInteger()\n  Number.isSafeInteger()\n  Object.assign()\n  RegExp /u\n  RegExp /y\n  New Global Methods\n  JavaScript Modules"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Browser Support for ES6 (2015)"
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript 2015 is supported in all modern browsers since June 2017:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome51\n    Edge15\n    Firefox54\n    Safari10\n    Opera38\n  \n  \n    May 2016\n    Apr 2017\n    Jun 2017\n    Sep 2016\n    Jun 2016"
+    },
+    {
+      "type": "paragraph",
+      "text": "ES6 is not supported in Internet Explorer."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript let"
+    },
+    {
+      "type": "paragraph",
+      "text": "The let keyword allows you to declare a variable with \nblock scope."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "var x = 10;\n// Here x is 10\n{ \n  let x = 2;\n    // Here x is 2}\n// Here x is 10"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Read more about let in the chapter: JavaScript Let."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript const"
+    },
+    {
+      "type": "paragraph",
+      "text": "The const keyword allows you to declare a constant (a \nJavaScript variable with a constant value)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Constants are similar to let variables, except that the value cannot be changed."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "var x = 10;\n// Here x is 10\n{ \n  const x = 2;\n    // Here x is 2}\n// Here x is 10"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Read more about const in the chapter: JavaScript Const."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Arrow Functions"
+    },
+    {
+      "type": "paragraph",
+      "text": "Arrow functions is a short syntax for writing function expressions."
+    },
+    {
+      "type": "paragraph",
+      "text": "You don't need the function keyword, the return keyword, or the \ncurly brackets."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let myFunction = function(a, b) {return a * b}"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let myFunction = (a, b) => a * b;"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\nArrow functions do not have their own this.\nThey are not well suited for defining object methods.\nArrow functions are not hoisted. They must be defined before they are used."
+    },
+    {
+      "type": "paragraph",
+      "text": "You can only omit the return keyword and the curly brackets if the function is a single\nstatement. Because of this, it might be a good habit to always keep them:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// This will not work\nlet myFunction = (x, y) =>  { x * y } ;\n\n// This will not work\nlet myFunction = (x, y) =>  return x * y ;\n\n// Only this will work\nlet myFunction = (x, y) => { return x * y };"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Learn more about Arrow Functions in the chapter: JavaScript Arrow Function."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Object Destructuring"
+    },
+    {
+      "type": "paragraph",
+      "text": "Destructuring assignment makes it easy to assign array values and object properties to variables."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create an Object\nconst person = {\n  firstName: \"John\",\n  lastName: \"Doe\",\n  age: 50,\n  eyeColor: \"blue\"\n};\n\n// Destructuring Assignment\nlet { firstName, age } = person;"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note:\nWhen destructuring an object, you must use the same name for the variables\nas the corresponding object keys (names).\nThe order of the keys (names) does not matter."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Array Destructuring"
+    },
+    {
+      "type": "paragraph",
+      "text": "Destructuring assignment makes it easy to assign array values and object properties to variables."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create an Array\nconst fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];\n\n// Destructuring Assignment\nlet [fruit1, fruit2] = fruits;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Spread (...) Operator"
+    },
+    {
+      "type": "paragraph",
+      "text": "The ... operator spreads an array or iterable into individual elements."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const numbers = [23,55,21,87,56];\nlet minValue = Math.min(...numbers);\nlet maxValue = Math.max(...numbers);"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const arr1 = [1, 2, 3];\nconst arr2 = [4, 5, 6];\nconst arr3 = [...arr1, ...arr2];"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const q1 = [\"Jan\", \"Feb\", \"Mar\"];\nconst q2 = [\"Apr\", \"May\", \"Jun\"];\nconst q3 = [\"Jul\", \"Aug\", \"Sep\"];\nconst q4 = [\"Oct\", \"Nov\", \"Dec\"];\n\nconst year = [...q1, ...q2, ...q3, ...q4];"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The For/Of Loop"
+    },
+    {
+      "type": "paragraph",
+      "text": "The JavaScript for/of statement loops \nthrough the values of iterable objects."
+    },
+    {
+      "type": "paragraph",
+      "text": "for/of lets you loop over data structures \nthat are iterable such as Arrays, Strings, Maps, NodeLists, and more."
+    },
+    {
+      "type": "paragraph",
+      "text": "The for/of loop has the following syntax:"
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "for (variable of iterable) {\n      // code block to be executed\n}"
+    },
+    {
+      "type": "paragraph",
+      "text": "variable - For every iteration the value of the next property is \nassigned to the variable. Variable can be declared with\nconst, let, or var."
+    },
+    {
+      "type": "paragraph",
+      "text": "iterable - An object that has iterable properties."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Looping over an Array"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const cars = [\"BMW\", \"Volvo\", \"Mini\"];\nlet text = \"\";\nfor (let x of cars) {\n  text += x + \" \";\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Looping over a String"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let language = \"JavaScript\";\nlet text = \"\";\n\n\nfor (let x of language) {  \n  text += x + \" \";\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Learn more in the chapter: JavaScript Loop For/In/Of."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Maps"
+    },
+    {
+      "type": "paragraph",
+      "text": "A Map is an object that stores key-value pairs, similar to objects, but with differences:"
+    },
+    {
+      "type": "other",
+      "text": "Keys can be of any data type (objects, functions, primitive values),\nunlike plain objects where keys are strings.\nMaintains the original insertion order of keys."
+    },
+    {
+      "type": "other",
+      "text": "Note\nBeing able to use an Object as a key is an important Map feature."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const fruits = new Map([\n  [\"apples\", 500],\n  [\"bananas\", 300],\n  [\"oranges\", 200]\n]);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Learn more about Map objects, and the difference between a Map and an Array, in the the chapter: JavaScript Maps."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Sets"
+    },
+    {
+      "type": "paragraph",
+      "text": "A Set is an object that stores unique values of any type (primitive values, functions, objects)."
+    },
+    {
+      "type": "paragraph",
+      "text": "A Set can only contain unique values. An attempt to add a duplicate value will be ignored."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create a Set\nconst letters = new Set();\n\n// Add some values to the Set\nletters.add(\"a\");\nletters.add(\"b\");\nletters.add(\"c\");"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Learn more about Set objects in the the chapter: JavaScript Sets."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Classes"
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript Classes are templates for JavaScript Objects."
+    },
+    {
+      "type": "paragraph",
+      "text": "Use the keyword class to create a class."
+    },
+    {
+      "type": "paragraph",
+      "text": "Always add a method named constructor():"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "class ClassName {\n   constructor() { ... }\n}"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "class Car {\n   constructor(name, year) {\n    this.name = name;\n    this.year = year;\n  }\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The example above creates a class named \"Car\"."
+    },
+    {
+      "type": "paragraph",
+      "text": "The class has two initial properties: \"name\" and \"year\"."
+    },
+    {
+      "type": "other",
+      "text": "A JavaScript class is not an object.\nIt is a template for JavaScript objects."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Using a Class"
+    },
+    {
+      "type": "paragraph",
+      "text": "When you have a class, you can use the class to create objects:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const myCar1 = new Car(\"Ford\", 2014);\nconst myCar2 = new Car(\"Audi\", 2019);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Learn more about classes in the the chapter: JavaScript Classes."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Promises"
+    },
+    {
+      "type": "paragraph",
+      "text": "A JavaScript Promise is an object representing the completion or failure of an asynchronous\noperation and its values."
+    },
+    {
+      "type": "paragraph",
+      "text": "It is a placeholder for a value that may not yet be available,\nproviding a structured way to handle asynchronous code."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const myPromise = new Promise(function(myResolve, myReject) {\n// \"Producing Code\" (May take some time)\n\n  myResolve(); // when successful\n  myReject();  // when error\n});\n// \"Consuming Code\" (Must wait for a fulfilled Promise).\nmyPromise.then(\n  function(value) { /* code if successful */ },\n  function(error) { /* code if some error */ }\n);"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const myPromise = new Promise(function(myResolve, myReject) {\n  setTimeout(function() { myResolve(\"I love You !!\"); }, 3000);});\nmyPromise.then(function(value) {\n  document.getElementById(\"demo\").innerHTML = value;\n});"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Learn more about Promises in the the chapter: JavaScript Promises."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Symbol Type"
+    },
+    {
+      "type": "paragraph",
+      "text": "A JavaScript Symbol is a primitive data type just like Number, String, or Boolean."
+    },
+    {
+      "type": "paragraph",
+      "text": "It represents a unique \"hidden\" identifier that no other code can accidentally access."
+    },
+    {
+      "type": "paragraph",
+      "text": "For instance, if different coders want to add a person.id property to a person object belonging to a third-party code,\nthey could mix each others values."
+    },
+    {
+      "type": "paragraph",
+      "text": "Using Symbol() to create a unique identifiers, solves this problem:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const person = {\n  firstName: \"John\",\n  lastName: \"Doe\",\n  age: 50,\n  eyeColor: \"blue\"\n};\nlet id = Symbol('id');\nperson[id] = 140353;\n// Now person[id] = 140353\n// but person.id is still undefined"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\nSymbols are always unique.\nIf you create two symbols with the same description they will have different values:\n\nSymbol(\"id\") == Symbol(\"id\"); // false"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Default Parameter Values"
+    },
+    {
+      "type": "paragraph",
+      "text": "ES6 allows function parameters to have default values."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "function myFunction(x, y = 10) { \n  // y is 10 if not passed or undefined \n  return x + y;}myFunction(5); // will return 15"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Function Rest Parameter"
+    },
+    {
+      "type": "paragraph",
+      "text": "The rest parameter (...) allows a function to treat an indefinite number of arguments as an array:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "function sum(...args) {\n  let sum = 0;\n  for (let arg of args) sum += arg;\n  return sum;\n}\nlet x = sum(4, 9, 16, 25, 29, 100, 66, 77);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "String.includes()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The includes() method returns true if a string contains a specified value,\notherwise false:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"Hello world, welcome to the universe.\";\ntext.includes(\"world\")    // Returns true"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "String.startsWith()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The startsWith() method returns true\nif a string begins with a specified value, otherwise false:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"Hello world, welcome to the universe.\";\n\ntext.startsWith(\"Hello\")   // Returns true"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "String.endsWith()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The endsWith() method returns true\nif a string ends with a specified value, otherwise false:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "var text = \"John Doe\";\ntext.endsWith(\"Doe\")    // Returns true"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Array entries()"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];\nconst f = fruits.entries();for (let x of f) {\n  document.getElementById(\"demo\").innerHTML += x;}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The entries() method returns an Array Iterator object with key/value pairs:"
+    },
+    {
+      "type": "paragraph",
+      "text": "[0, \"Banana\"][1, \"Orange\"][2, \"Apple\"][3, \"Mango\"]"
+    },
+    {
+      "type": "paragraph",
+      "text": "The entries() method does not change the original array."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Array.from()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Array.from() method returns an Array object from any object with a length \nproperty or any iterable object."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Array.from(\"ABCDEFG\")   // Returns [A,B,C,D,E,F,G]"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Array keys()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The keys() method returns an Array Iterator object with the keys of an array."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];\nconst keys = fruits.keys();\nlet text = \"\";\nfor (let x of keys) {\n  text += x + \"<br>\";}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Array find()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The find() method returns the value of the first array element that passes a \ntest function."
+    },
+    {
+      "type": "paragraph",
+      "text": "This example finds (returns the value of ) the first element that is larger \nthan 18:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const numbers = [4, 9, 16, 25, 29];let first = \n  numbers.find(myFunction);function myFunction(value, index, array) {\n    return \n  value > 18;}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Note that the function takes 3 arguments:"
+    },
+    {
+      "type": "other",
+      "text": "The item value\nThe item index \nThe array itself"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Array findIndex()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The findIndex() method returns the index of the first array element that \npasses a test function."
+    },
+    {
+      "type": "paragraph",
+      "text": "This example finds the index of the first element that is larger than 18:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const numbers = [4, 9, 16, 25, 29];let first = \n  numbers.findIndex(myFunction);function myFunction(value, index, array) {\n    return \n  value > 18;}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Note that the function takes 3 arguments:"
+    },
+    {
+      "type": "other",
+      "text": "The item value\nThe item index \nThe array itself"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "New Math Methods"
+    },
+    {
+      "type": "paragraph",
+      "text": "ES6 added the following methods to the Math object:"
+    },
+    {
+      "type": "other",
+      "text": "Math.trunc()\nMath.sign()\nMath.cbrt()\nMath.log2()\nMath.log10()"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Math.trunc() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "Math.trunc(x) returns the integer part of x:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Math.trunc(4.9);    // returns 4\nMath.trunc(4.7);    // returns 4\nMath.trunc(4.4);    // returns 4\nMath.trunc(4.2);    // returns 4\nMath.trunc(-4.2);    // returns -4"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Math.sign() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "Math.sign(x) returns -1, 0, or 1 (if x is negative, null or positive):"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Math.sign(-4);    // returns -1\nMath.sign(0);    // returns 0\nMath.sign(4);    // returns 1"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Math.cbrt() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "Math.cbrt(x) returns the cube root of x:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Math.cbrt(8);    // returns 2\nMath.cbrt(64);    // returns 4\nMath.cbrt(125);    // returns 5"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Math.log2() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "Math.log2(x) returns the base 2 logarithm of x:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Math.log2(2);    // returns 1"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Math.log10() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "Math.log10(x) returns the base 10 logarithm of x:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Math.log10(10);    // returns 1"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "New Number Properties"
+    },
+    {
+      "type": "paragraph",
+      "text": "ES6 added the following properties to the Number object:"
+    },
+    {
+      "type": "other",
+      "text": "EPSILON\nMIN_SAFE_INTEGER\nMAX_SAFE_INTEGER"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = Number.EPSILON;"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = Number.MIN_SAFE_INTEGER;"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = Number.MAX_SAFE_INTEGER;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Number.isInteger() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Number.isInteger() method returns true if the argument is an integer."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Number.isInteger(10);        // returns true\nNumber.isInteger(10.5);      // returns false"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Number.isSafeInteger() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "A safe integer is an integer that can be exactly represented as a double precision number."
+    },
+    {
+      "type": "paragraph",
+      "text": "The Number.isSafeInteger() method returns true if the argument is a safe integer."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Number.isSafeInteger(10);    // returns true\nNumber.isSafeInteger(12345678901234567890);  // returns false"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Safe integers are all integers from -(253 - 1) to +(253 - 1).\nThis is safe: 9007199254740991. This is not safe: 9007199254740992."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "New Global Methods"
+    },
+    {
+      "type": "paragraph",
+      "text": "ES6 added 2 new global number methods:"
+    },
+    {
+      "type": "other",
+      "text": "isFinite()\n  isNaN()"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The isFinite() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The global isFinite() method returns false if the argument is Infinity or NaN."
+    },
+    {
+      "type": "paragraph",
+      "text": "Otherwise it returns true:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "isFinite(10/0);       // returns false\nisFinite(10/1);       // returns true"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The isNaN() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The global isNaN() method returns true if the argument is NaN. Otherwise it returns false:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "isNaN(\"Hello\");       // returns true"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Object.assign()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Object.assign() method copies properties from\none or more source objects to a target object."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create Target Object\nconst person1 = {\n  firstName: \"John\",\n  lastName: \"Doe\",\n  age: 50,\n  eyeColor: \"blue\"\n};\n\n// Create Source Object\nconst person2 = {firstName: \"Anne\",lastName: \"Smith\"};\n\n// Assign Source to Target\nObject.assign(person1, person2);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "RegExp u Modifier"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"Hello 😄\";\n\nlet pattern = /\\p{Emoji}/u;\nlet result = pattern.test(text);"
+        },
+        {
+          "language": "unknown",
+          "code": "let text = \"Hello 😄\";\n\nlet pattern = /\\p{Emoji}/;\nlet result = pattern.test(text);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Description"
+    },
+    {
+      "type": "paragraph",
+      "text": "The u (unicode) flag enables full Unicode support in the regular expression."
+    },
+    {
+      "type": "paragraph",
+      "text": "By default, JavaScript and regex treats 4-byte Unicode characters\n(like emojis or less common symbols) as two separate 2-byte \"surrogate\" code units."
+    },
+    {
+      "type": "paragraph",
+      "text": "The u flag treats the pattern as a sequence of Unicode code points, which is important for correctly\nhandling characters outside the Basic Multilingual Plane (BMP)."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "RegExp y Modifier"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"abc def ghi\";\nlet pattern = /\\w+/y;\n\n// Start match from position 4\npattern.lastIndex = 4;\nlet result = text.match(pattern);"
+        },
+        {
+          "language": "unknown",
+          "code": "let text = \"abc def ghi\";\nlet pattern = /\\w+/;\n\n// Start match from position 4\npattern.lastIndex = 4;\nlet result = text.match(pattern);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Description"
+    },
+    {
+      "type": "paragraph",
+      "text": "The y (Sticky) flag performs a \"sticky\" search that matches only from the lastIndex\nproperty of the RegExp object."
+    },
+    {
+      "type": "paragraph",
+      "text": "The y flag  ensures that subsequent matches start immediately\nafter the previous one, without skipping characters."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Modules"
+    },
+    {
+      "type": "paragraph",
+      "text": "Modules are imported in two different ways:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "import { name, age } from \"./person.js\";"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "import message from \"./message.js\";"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Learn more about Modules in: JavaScript Modules."
+    }
+  ]
+}

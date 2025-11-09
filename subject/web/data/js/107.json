@@ -1,0 +1,25 @@
+{
+  "url": "https://www.w3schools.com/js/js_date_reference.asp",
+  "title": "JavaScript Date Reference",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Date Reference"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Date Methods and Properties"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Revised Luly 2025"
+    },
+    {
+      "type": "other",
+      "text": "Name\n    Description\n  \n  \n    new Date()\n    Creates a new Date object\n  \n  \n    constructor\n    Creates a new Date object\n  \n  \n    constructor\n    Returns the function that created the Date prototype\n  \n  \n    getDate()\n    Returns the day of the month (from 1-31)\n  \n  \n    getDay()\n    Returns the day of the week (from 0-6)\n  \n  \n    getFullYear()\n    Returns the year\n  \n  \n    getHours()\n    Returns the hour (from 0-23)\n  \n  \n    getMilliseconds()\n    Returns the milliseconds (from 0-999)\n  \n  \n    getMinutes()\n    Returns the minutes (from 0-59)\n  \n  \n    getMonth()\n    Returns the month (from 0-11)\n  \n  \n    getSeconds()\n    Returns the seconds (from 0-59)\n  \n  \n    getTime()\n    Returns the number of milliseconds since midnight Jan 1 1970, and a specified date\n  \n  \n    getTimezoneOffset()\n    Returns the time difference between UTC time and local time, in minutes\n  \n  \n    getUTCDate()\n    Returns the day of the month, according to universal time (from 1-31)\n  \n  \n    getUTCDay()\n    Returns the day of the week, according to universal time (from 0-6)\n  \n  \n    getUTCFullYear()\n    Returns the year, according to universal time\n  \n  \n    getUTCHours()\n    Returns the hour, according to universal time (from 0-23)\n  \n  \n    getUTCMilliseconds()\n    Returns the milliseconds, according to universal time (from 0-999)\n  \n  \n    getUTCMinutes()\n    Returns the minutes, according to universal time (from 0-59)\n  \n  \n    getUTCMonth()\n    Returns the month, according to universal time (from 0-11)\n  \n  \n    getUTCSeconds()\n    Returns the seconds, according to universal time (from 0-59)\n  \n  \n    getYear()\n    Deprecated. Use the getFullYear() method instead\n  \n    \n    now()\n    Returns the number of milliseconds since midnight Jan 1, 1970\n    \n  \n    parse()\n    Parses a date string and returns the number of milliseconds since January 1, 1970\n  \n  \n    prototype\n    Allows you to add properties and methods to an object\n  \n  \n    setDate()\n    Sets the day of the month of a date object\n  \n  \n    setFullYear()\n    Sets the year of a date object\n  \n  \n    setHours()\n    Sets the hour of a date object\n  \n  \n    setMilliseconds()\n    Sets the milliseconds of a date object\n  \n  \n    setMinutes()\n    Set the minutes of a date object\n  \n  \n    setMonth()\n    Sets the month of a date object\n  \n  \n    setSeconds()\n    Sets the seconds of a date object\n  \n  \n    setTime()\n    Sets a date to a specified number of milliseconds after/before January 1, 1970\n  \n  \n    setUTCDate()\n    Sets the day of the month of a date object, according to universal time\n  \n  \n    setUTCFullYear()\n    Sets the year of a date object, according to universal time\n  \n  \n    setUTCHours()\n    Sets the hour of a date object, according to universal time\n  \n  \n    setUTCMilliseconds()\n    Sets the milliseconds of a date object, according to universal time\n  \n  \n    setUTCMinutes()\n    Set the minutes of a date object, according to universal time\n  \n  \n    setUTCMonth()\n    Sets the month of a date object, according to universal time\n  \n  \n    setUTCSeconds()\n    Set the seconds of a date object, according to universal time\n  \n  \n    setYear()\n    Deprecated. Use the setFullYear() method instead\n  \n  \n    toDateString()\n    Converts the date portion of a Date object into a readable string\n  \n  \n    toGMTString()\n    Deprecated. Use the toUTCString() method instead\n  \n  \n    toISOString()\n    Returns the date as a string, using the ISO standard\n  \n  \n    toJSON()\n    Returns the date as a string, formatted as a JSON date\n  \n  \n    toLocaleDateString()\n    Returns the date portion of a Date object as a string, using locale conventions\n  \n  \n    toLocaleTimeString()\n    Returns the time portion of a Date object as a string, using locale conventions\n  \n  \n    toLocaleString()\n    Converts a Date object to a string, using locale conventions\n  \n  \n    toString()\n    Converts a Date object to a string\n  \n  \n    toTimeString()\n    Converts the time portion of a Date object to a string\n  \n  \n    toUTCString()\n    Converts a Date object to a string, according to universal time\n  \n  \n    UTC()\n    Returns the number of milliseconds in a date since midnight of January 1, 1970, according to UTC time\n  \n  \n    valueOf()\n    Returns the primitive value of a Date object"
+    }
+  ]
+}

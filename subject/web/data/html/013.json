@@ -1,0 +1,133 @@
+{
+  "url": "https://www.w3schools.com/html/html_colors_rgb.asp",
+  "title": "HTML ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "HTML RGB and RGBA Colors"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "An RGB color value represents RED, GREEN, and BLUE light \nsources."
+    },
+    {
+      "type": "paragraph",
+      "text": "An RGBA color value is an extension of RGB with an \nAlpha channel (opacity)."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "RGB Color Values"
+    },
+    {
+      "type": "paragraph",
+      "text": "In HTML, a color can be specified as an RGB value, using this formula:"
+    },
+    {
+      "type": "paragraph",
+      "text": "rgb(red, green, blue)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Each parameter (red, green, and \nblue) defines the intensity of the color with a value between 0 and 255."
+    },
+    {
+      "type": "paragraph",
+      "text": "This means that there are 256 x 256 x 256 = 16777216 possible colors!"
+    },
+    {
+      "type": "paragraph",
+      "text": "For example, rgb(255, 0, 0) is displayed as red, \nbecause red is set to its highest value (255), and the other two (green and blue) are \nset to 0."
+    },
+    {
+      "type": "paragraph",
+      "text": "Another example, rgb(0, 255, 0) is displayed as green, \nbecause green is set to its highest value (255), and the other two (red and blue) are \nset to 0."
+    },
+    {
+      "type": "paragraph",
+      "text": "To display black, set all color parameters to 0, like this: rgb(0, 0, 0)."
+    },
+    {
+      "type": "paragraph",
+      "text": "To display white, set all color parameters to 255, like \nthis: rgb(255, 255, 255)."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": []
+    },
+    {
+      "type": "paragraph",
+      "text": "Experiment by mixing the RGB values below:"
+    },
+    {
+      "type": "other",
+      "text": "RED\n      \n      255\n    \n    \n      GREEN\n      \n      0\n    \n    \n      BLUE\n      \n      0"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Shades of Gray"
+    },
+    {
+      "type": "paragraph",
+      "text": "Shades of gray are often defined using equal values for all three parameters:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": []
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "RGBA Color Values"
+    },
+    {
+      "type": "paragraph",
+      "text": "RGBA color values are an extension of RGB color values with an Alpha channel \n- which specifies the opacity for a color."
+    },
+    {
+      "type": "paragraph",
+      "text": "An RGBA color value is \nspecified with:"
+    },
+    {
+      "type": "paragraph",
+      "text": "rgba(red, green, blue, \nalpha)"
+    },
+    {
+      "type": "paragraph",
+      "text": "The alpha parameter is a number \nbetween 0.0 (fully transparent) and 1.0 (not transparent at all):"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": []
+    },
+    {
+      "type": "paragraph",
+      "text": "Experiment by mixing the RGBA values below:"
+    },
+    {
+      "type": "other",
+      "text": "RED\n      \n      255\n    \n    \n      GREEN\n      \n      0\n    \n    \n      BLUE\n      \n      0\n    \n    \n      ALPHA\n      \n      0"
+    },
+    {
+      "type": "other",
+      "text": "//changeRed(255)\n//changeGreen(0)\n//changeBlue(0)\nchangeRGB(\"r\");\nfunction changeRGB(x) {\n  var col, r, g, b;\n  r = document.getElementById(\"slideRed\").value;\n  g = document.getElementById(\"slideGreen\").value;\n  b = document.getElementById(\"slideBlue\").value;\n  col = w3color(\"rgb(\" + r + \",\" + g + \",\" + b + \")\");\n  document.getElementById('valRed2').innerHTML = r;\n  document.getElementById('valGreen2').innerHTML = g;\n  document.getElementById('valBlue2').innerHTML = b;\n  document.getElementById('rgbresult').style.backgroundColor = col.toRgbString();\n  document.getElementById('rgbresulttext').innerHTML = col.toRgbString();\n  if (col.isDark(150)) {\n    document.getElementById('rgbresulttext').style.color = \"#ffffff\";\n  } else {\n    document.getElementById('rgbresulttext').style.color = \"#1f2d3d\";\n  }\n}\n//function changeGreen(value) {\n//    document.getElementById('valGreen').innerHTML = value;\n//}\n//function changeBlue(value) {\n//    document.getElementById('valBlue').innerHTML = value;\n//}\nchangeRGBA(\"r\");\nfunction changeRGBA(x) {\n  var col, r, g, b, a;\n  r = document.getElementById(\"slideRedA\").value;\n  g = document.getElementById(\"slideGreenA\").value;\n  b = document.getElementById(\"slideBlueA\").value;\n  a = document.getElementById(\"slideAlphaA\").value/10;\n  col = w3color(\"rgba(\" + r + \",\" + g + \",\" + b + \",\" + a + \")\");\n  document.getElementById('valRed2A').innerHTML = r;\n  document.getElementById('valGreen2A').innerHTML = g;\n  document.getElementById('valBlue2A').innerHTML = b;\n  document.getElementById('valAlpha2A').innerHTML = a;\n  document.getElementById('rgbaresult').style.backgroundColor = col.toRgbaString();\n  document.getElementById('rgbaresulttext').innerHTML = col.toRgbaString();\n  if (col.isDark(150) && a > 0.2) {\n    document.getElementById('rgbaresulttext').style.color = \"#ffffff\";\n  } else {\n    document.getElementById('rgbaresulttext').style.color = \"#1f2d3d\";\n  }\n}"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

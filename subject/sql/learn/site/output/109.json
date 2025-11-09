@@ -1,0 +1,58 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_ref_in.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL IN Keyword"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "text": "IN"
+    },
+    {
+      "type": "paragraph",
+      "text": "The IN command allows you to specify \nmultiple values in a WHERE clause."
+    },
+    {
+      "type": "paragraph",
+      "text": "The IN operator is a shorthand for multiple OR conditions."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL selects all customers that are located in \"Germany\", \"France\" and \"UK\":"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n SELECT * FROM Customers\n  WHERE Country IN ('Germany', 'France', 'UK');\n\nTry it Yourself »"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL selects all customers that are NOT located in \"Germany\", \"France\" or \"UK\":"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n SELECT * FROM Customers\n  WHERE Country NOT IN ('Germany', 'France', 'UK');\n\nTry it Yourself »"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL selects all customers that are from the same \ncountries as the suppliers:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n SELECT * FROM Customers\n  WHERE Country IN (SELECT Country FROM Suppliers);\n\nTry it Yourself »"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

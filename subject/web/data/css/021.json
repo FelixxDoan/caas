@@ -1,0 +1,161 @@
+{
+  "url": "https://www.w3schools.com/css/css_editor.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Online Editor"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CSS Editor"
+    },
+    {
+      "type": "paragraph",
+      "text": "With our online CSS editor, you can edit HTML, CSS and JavaScript code, and view the result in your browser."
+    },
+    {
+      "type": "other",
+      "text": "Run »\n  Size: \n\n\n\nExample\n\n  body {  background-color: lightblue;}h1 {  color: \n  white;  text-align: center;}p {  font-family: verdana;} \n\n\n\nMy First CSS Example\nThis is a paragraph.\n\n\nTry it Yourself »"
+    },
+    {
+      "type": "paragraph",
+      "text": "Click on the \"Try it Yourself\" button to see how it works."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Publish Your Code"
+    },
+    {
+      "type": "paragraph",
+      "text": "If you want to save your HTML, CSS and JavaScript code, and create your own website, check out W3Schools Spaces."
+    },
+    {
+      "type": "paragraph",
+      "text": "W3Schools Spaces is a website-building tool that lets you make and share your own website."
+    },
+    {
+      "type": "paragraph",
+      "text": "You can change the website's look and how it works by editing the code right in your web browser."
+    },
+    {
+      "type": "paragraph",
+      "text": "It's easy to use and doesn't require any setup:"
+    },
+    {
+      "type": "paragraph",
+      "text": "The code editor is packed with features to help you achieve more:"
+    },
+    {
+      "type": "other",
+      "text": "Templates: Start from scratch or use a template\n  Cloud-based: no installations required. You only need your browser\n  Terminal & Log: debug and troubleshoot your code easily\n  File Navigator: switch between files inside the code editor\n  And much more!"
+    },
+    {
+      "type": "other",
+      "text": "Learn More"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Learn Faster"
+    },
+    {
+      "type": "paragraph",
+      "text": "Practice is key to mastering coding, and the best way to put your CSS knowledge into practice is by getting practical with code."
+    },
+    {
+      "type": "paragraph",
+      "text": "Use W3Schools Spaces to build, test and deploy code."
+    },
+    {
+      "type": "paragraph",
+      "text": "The code editor lets you write and practice different types of computer \nlanguages. It includes HTML/CSS/JavaScript, but you can use it for other \nlanguages too, such as PHP, Python, Node.js, etc."
+    },
+    {
+      "type": "other",
+      "text": "Learn More"
+    },
+    {
+      "type": "other",
+      "text": "If you don't know CSS, we suggest that you read our CSS Tutorial from scratch."
+    },
+    {
+      "type": "other",
+      "text": ".templates {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  flex-flow: row wrap;\n}\n\n.templates-item {\n  margin: 10px;\n  font-size: 30px;\n}"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Build Powerful Websites"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can also use the code editor in W3School Spaces to build frontend or full-stack websites from scratch."
+    },
+    {
+      "type": "paragraph",
+      "text": "Or you can use the 60+ templates available and save time:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Create your Spaces account today and explore them all!"
+    },
+    {
+      "type": "other",
+      "text": "Learn More"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Share It With The World"
+    },
+    {
+      "type": "paragraph",
+      "text": "Host and publish your websites in no time with W3School Spaces."
+    },
+    {
+      "type": "paragraph",
+      "text": "W3Schools subdomain and SSL certificate are included for free with W3School Spaces. An SSL certificate makes your website safe and secure. It also helps people trust your website and makes it easier to find it online."
+    },
+    {
+      "type": "paragraph",
+      "text": "Want a custom domain for your website?"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can buy a domain or transfer an existing one and connect it to your space."
+    },
+    {
+      "type": "other",
+      "text": "Learn More"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How Does It Work?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Get started in a few clicks with W3School Spaces."
+    },
+    {
+      "type": "other",
+      "text": "if (window.addEventListener) {              \n  window.addEventListener(\"load\", showFrameSize);\n  window.addEventListener(\"resize\", showFrameSize);\n} else if (window.attachEvent) {                 \n  window.attachEvent(\"onresize\", showFrameSize);\n}\n\nfunction showFrameSize() {\n  var t;\n  var width, height;\n  width = Number(w3_getStyleValue(document.getElementById(\"editorEdit\"), \"width\").replace(\"px\", \"\")).toFixed();\n  height = Number(w3_getStyleValue(document.getElementById(\"editorEdit\"), \"height\").replace(\"px\", \"\")).toFixed();\n  document.getElementById(\"framesize\").innerHTML = \"Size: <span>\" + width + \" x \" + height + \"</span>\";\n}"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

@@ -1,0 +1,260 @@
+{
+  "url": "https://www.w3schools.com/html/html_intro.asp",
+  "title": "HTML ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "HTML Introduction"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "HTML is the standard markup language for creating Web pages."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What is HTML?"
+    },
+    {
+      "type": "other",
+      "text": "HTML stands for Hyper Text Markup Language\n  HTML is the standard markup language for creating Web pages\n  HTML describes the structure of a Web page\n  HTML consists of a series of elements\n  HTML elements tell the browser how to display the content\n  HTML elements label pieces of content such as \"this is a heading\", \"this \n  is a paragraph\", \"this is a link\", etc."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "A Simple HTML Document"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<!DOCTYPE html>\n<html><head><title>Page Title</title>\n </head>\n<body><h1>My First Heading</h1><p>My first paragraph.</p>\n    </body></html>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Example Explained"
+    },
+    {
+      "type": "other",
+      "text": "The <!DOCTYPE html> declaration defines \nthat this document is an HTML5 document\nThe <html> element is the root element of an HTML \npage\n The <head> element contains meta information about the \n HTML page\n The <title> element specifies a title for the \n HTML page (which is shown in the browser's title bar or in the page's tab)\n The <body> element defines the \n document's body, and is a container for all the visible contents, such as \n headings, paragraphs, images, hyperlinks, tables, lists, etc.\n The <h1> element defines a large heading\n The <p> element defines a paragraph"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What is an HTML Element?"
+    },
+    {
+      "type": "paragraph",
+      "text": "An HTML element is defined by a start tag, some content, and an end tag:"
+    },
+    {
+      "type": "other",
+      "text": "<tagname>\nContent goes here...\n\n</tagname>"
+    },
+    {
+      "type": "paragraph",
+      "text": "The HTML element is everything from the start tag to the end tag:"
+    },
+    {
+      "type": "other",
+      "text": "<h1>My \n  First Heading</h1>"
+    },
+    {
+      "type": "other",
+      "text": "<p>My first paragraph.</p>"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Start tag",
+          "Element content",
+          "End tag"
+        ],
+        [
+          "<h1>",
+          "My First Heading",
+          "</h1>"
+        ],
+        [
+          "<p>",
+          "My first paragraph.",
+          "</p>"
+        ],
+        [
+          "<br>",
+          "none",
+          "none"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note: Some HTML elements have no content (like the <br> \nelement). These elements are called empty elements. Empty elements do not have an end tag!"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Web Browsers"
+    },
+    {
+      "type": "paragraph",
+      "text": "The purpose of a web browser (Chrome, Edge, Firefox, Safari) is to read HTML documents and display them \ncorrectly."
+    },
+    {
+      "type": "paragraph",
+      "text": "A browser does not display the HTML tags, but uses them to determine how to display the document:"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML Page Structure"
+    },
+    {
+      "type": "paragraph",
+      "text": "Below is a visualization of an HTML page structure:"
+    },
+    {
+      "type": "other",
+      "text": "<html>\n<head>\n<title>Page title</title>\n\n</head>\n\n<body>\n\n<h1>This is a heading</h1>\n<p>This is a paragraph.</p>\n<p>This is another paragraph.</p>\n\n</body>\n\n</html>"
+    },
+    {
+      "type": "other",
+      "text": "Note: The content inside the <body> section \nwill be displayed in a browser. The content inside the <title> element will be \nshown in the browser's title bar or in the page's tab."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML History"
+    },
+    {
+      "type": "paragraph",
+      "text": "Since the early days of the World Wide Web, there have been many versions of HTML:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Year",
+          "Version"
+        ],
+        [
+          "1989",
+          "Tim Berners-Lee invented www"
+        ],
+        [
+          "1991",
+          "Tim Berners-Lee invented HTML"
+        ],
+        [
+          "1993",
+          "Dave Raggett drafted HTML+"
+        ],
+        [
+          "1995",
+          "HTML Working Group defined HTML 2.0"
+        ],
+        [
+          "1997",
+          "W3C Recommendation: HTML 3.2"
+        ],
+        [
+          "1999",
+          "W3C Recommendation: HTML 4.01"
+        ],
+        [
+          "2000",
+          "W3C Recommendation: XHTML 1.0"
+        ],
+        [
+          "2008",
+          "WHATWG HTML5 First Public Draft"
+        ],
+        [
+          "2012",
+          "WHATWG HTML5 Living Standard"
+        ],
+        [
+          "2014",
+          "W3C Recommendation: HTML5"
+        ],
+        [
+          "2016",
+          "W3C Candidate Recommendation: HTML 5.1"
+        ],
+        [
+          "2017",
+          "W3C Recommendation: HTML5.1 2nd Edition"
+        ],
+        [
+          "2017",
+          "W3C Recommendation: HTML5.2"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "This tutorial follows the latest HTML5 standard."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Video: HTML Introduction"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "HTML stands for Hyper Text Markup Language",
+        "HTML is the standard markup language for creating Web pages",
+        "HTML describes the structure of a Web page",
+        "HTML consists of a series of elements",
+        "HTML elements tell the browser how to display the content",
+        "HTML elements label pieces of content such as \"this is a heading\", \"this \n  is a paragraph\", \"this is a link\", etc."
+      ]
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "The <!DOCTYPE html> declaration defines \nthat this document is an HTML5 document",
+        "The <html> element is the root element of an HTML \npage",
+        "The <head> element contains meta information about the \n HTML page",
+        "The <title> element specifies a title for the \n HTML page (which is shown in the browser's title bar or in the page's tab)",
+        "The <body> element defines the \n document's body, and is a container for all the visible contents, such as \n headings, paragraphs, images, hyperlinks, tables, lists, etc.",
+        "The <h1> element defines a large heading",
+        "The <p> element defines a paragraph"
+      ]
+    },
+    {
+      "type": "image",
+      "src": "https://www.w3schools.com/html/img_chrome.png"
+    },
+    {
+      "type": "image",
+      "src": "https://www.w3schools.com/html/images/yt_logo_rgb_dark.png"
+    },
+    {
+      "type": "image",
+      "src": "https://www.w3schools.com/html/images/01_html_introduction.png"
+    }
+  ]
+}

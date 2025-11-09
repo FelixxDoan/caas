@@ -1,0 +1,146 @@
+{
+  "url": "https://www.w3schools.com/js/js_json_datatypes.asp",
+  "title": "JSON",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JSON Data Types"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Valid Data Types"
+    },
+    {
+      "type": "paragraph",
+      "text": "In JSON, values must be one of the following data types:"
+    },
+    {
+      "type": "other",
+      "text": "a string\n  a number\n  an object (JSON object)\n  an array\n  a boolean\n  null"
+    },
+    {
+      "type": "other",
+      "text": "JSON values cannot be one of the following data types:\n\n  a function\n  a date\n  undefined"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JSON Strings"
+    },
+    {
+      "type": "paragraph",
+      "text": "Strings in JSON must be written in double quotes."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "{\"name\":\"John\"}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JSON Numbers"
+    },
+    {
+      "type": "paragraph",
+      "text": "Numbers in JSON must be an integer or a floating point."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "{\"age\":30}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JSON Objects"
+    },
+    {
+      "type": "paragraph",
+      "text": "Values in JSON can be objects."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "{\"employee\":{\"name\":\"John\", \"age\":30, \"city\":\"New York\"}\n}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Objects as values in JSON must follow the JSON syntax."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JSON Arrays"
+    },
+    {
+      "type": "paragraph",
+      "text": "Values in JSON can be arrays."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "{\"employees\":[\"John\", \"Anna\", \"Peter\"]}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JSON Booleans"
+    },
+    {
+      "type": "paragraph",
+      "text": "Values in JSON can be true/false."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "{\"sale\":true}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JSON null"
+    },
+    {
+      "type": "paragraph",
+      "text": "Values in JSON can be null."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "{\"middlename\":null}"
+        }
+      ]
+    }
+  ]
+}

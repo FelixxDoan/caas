@@ -1,0 +1,46 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_ref_exists.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL EXISTS Keyword"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "text": "EXISTS"
+    },
+    {
+      "type": "paragraph",
+      "text": "The EXISTS command tests for the existence of any record in a subquery, \nand returns true if the subquery returns one or more records."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL lists the suppliers with a product price less than 20:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n  SELECT SupplierNameFROM SuppliersWHERE EXISTS (SELECT ProductName FROM \n  Products WHERE SupplierId = Suppliers.supplierId AND Price < 20);\n\n  Try it Yourself »"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL lists the suppliers with a product price \nequal to 22:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n  SELECT SupplierNameFROM SuppliersWHERE EXISTS (SELECT ProductName FROM \n  Products WHERE SupplierId = Suppliers.supplierId AND Price = 22);\n\n  Try it Yourself »"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

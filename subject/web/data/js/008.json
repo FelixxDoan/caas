@@ -1,0 +1,53 @@
+{
+  "url": "https://www.w3schools.com/js/js_quiz.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Quiz Test"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can test your JavaScript skills with W3Schools' Quiz."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Test"
+    },
+    {
+      "type": "paragraph",
+      "text": "The test contains 25 questions and there is no time limit."
+    },
+    {
+      "type": "paragraph",
+      "text": "The test is not official, it's just a nice way to see how much you know, or don't know, about JavaScript."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Count Your Score"
+    },
+    {
+      "type": "paragraph",
+      "text": "You will get 1 point for each correct answer. At the end of the Quiz,\nyour total score will be displayed. Maximum score is 25 points."
+    },
+    {
+      "type": "other",
+      "text": "Start the Quiz\nGood luck!\nStart the JavaScript Quiz ❯"
+    },
+    {
+      "type": "other",
+      "text": "If you don't know JavaScript, we suggest that you read our JavaScript Tutorial from scratch."
+    },
+    {
+      "type": "other",
+      "text": "#w3_cert_badge {\n  position: absolute;\n  right: 5%;\n  width: 220px;\n  transform: rotate(10deg);\n  bottom: -20%;\n}\n\n#w3_cert_arrow {\n  position: absolute;\n  right: 220px;\n  width: 220px;\n  transform: rotate(10deg);\n  bottom: 0;\n  z-index: 1;\n}\n\n#getdiploma {\n  position: relative;\n  padding: 0 60px 50px 60px;\n  margin-bottom: 125px;\n  background-color: #282A35;\n  color:white;\n  border-radius:10px;\n  font-family: 'Source Sans Pro', sans-serif;\n}\n\n#getdiploma h2 {\n  font-size:45px;\n  margin-top: 1em;\n  margin-bottom: 1em;\n  font-family: 'Source Sans Pro', sans-serif\n}\n\n#getdiploma p {\n  font-size: 32px;\n  margin-top: 1em;\n  margin-bottom: 1em;\n  font-family: 'Source Sans Pro', sans-serif\n}\n\n#getdiploma a {\n  border-radius: 50px;\n  mxargin-top: 50px;\n  font-size: 18px;\n  background-color: #04AA6D;\n  padding: 17px 55px\n}\n\n#getdiploma a:hover,\n#getdiploma a:active {\n  background-color: #059862 !important;\n}\n\n\n@media screen and (max-width: 1442px) {\n  #w3_cert_arrow {\n    right: 212px;\n    bottom: -15px;\n  }\n}\n\n\n@media screen and (max-width: 1202px) {\n  #w3_cert_arrow {\n    display: none;\n  }\n}\n\n@media screen and (max-width: 992px) {\n  #w3_cert_arrow {\n    display: block;\n  }\n}\n\n\n@media screen and (max-width: 800px) {\n  #w3_cert_arrow {\n    display: none;\n  }\n  #getdiploma h2 {\n    font-size: 44px;\n  }\n  #getdiploma p {\n    font-size: 30px;\n  }\n\n  #getdiploma a {\n    width: 100%;\n  }\n  #w3_cert_badge {\n    top: -16px;\n    right: -8px;\n    width: 100px;\n  }\n  #getdiploma  {\n    margin-bottom: 55px;\n  }\n}"
+    },
+    {
+      "type": "other",
+      "text": "Kickstart your career\nGet certified by completing the  course\nGet certified\n\n\nvar foldername;\nfunction getCourseFolder() {\n  var pathname = window.location.pathname;\n  if (pathname.substr(0,1) == \"/\") {pathname = pathname.substr(1);}\n  pos = pathname.indexOf(\"/\");\n  foldername = pathname.substr(0, pos);\n  foldername = foldername.toUpperCase();\n  certLink = \"\";\n  switch (foldername) {\n  case \"CPP\":\n    certLink = \"https://campus.w3schools.com/collections/course-catalog/products/c-course-1?utm_source=classic&utm_medium=tutorials&utm_campaign=first-page-ad\";\n    foldername = \"C++\";\n    break;\n  case \"JAVA\":\n    certLink = \"https://campus.w3schools.com/collections/course-catalog/products/java-course?utm_source=classic&utm_medium=tutorials&utm_campaign=first-page-ad\";\n    break;\n  case \"BOOTSTRAP4\":\n    certLink = \"https://campus.w3schools.com/collections/course-catalog/products/bootstrap-4-course?utm_source=classic&utm_medium=tutorials&utm_campaign=first-page-ad\";\n    break;  \n  case \"XML\":\n    certLink = \"https://campus.w3schools.com/collections/course-catalog/products/xml-course?utm_source=classic&utm_medium=tutorials&utm_campaign=first-page-ad\";\n    break;\n  case \"JQUERY\":\n    certLink = \"https://campus.w3schools.com/collections/course-catalog/products/jquery-course?utm_source=classic&utm_medium=tutorials&utm_campaign=first-page-ad\";\n    break;\n  case \"ACCESSIBILITY\":\n    certLink = \"https://campus.w3schools.com/collections/course-catalog/products/accessibility-course?utm_source=classic&utm_medium=tutorials&utm_campaign=first-page-ad\";\n    break;\n  case \"BOOTSTRAP\":\n    certLink = \"https://campus.w3schools.com/collections/course-catalog/products/bootstrap-course?utm_source=classic&utm_medium=tutorials&utm_campaign=first-page-ad\";\n    break;\n  case \"HTML\":\n    certLink = \"https://campus.w3schools.com/collections/course-catalog/products/html-course?utm_source=classic&utm_medium=tutorials&utm_campaign=first-page-ad\";\n    break;\n  case \"CSS\":\n    certLink = \"https://campus.w3schools.com/collections/course-catalog/products/css-course?utm_source=classic&utm_medium=tutorials&utm_campaign=first-page-ad\";\n    break;\n  case \"JS\":\n    certLink = \"https://campus.w3schools.com/collections/course-catalog/products/javascript-course?utm_source=classic&utm_medium=tutorials&utm_campaign=first-page-ad\";\n    foldername = \"JavaScript\";\n    break;\n  case \"REACT\":\n    subjectText = \"React.js\";\n    certLink = \"https://campus.w3schools.com/collections/course-catalog/products/react-js-course?utm_source=classic&utm_medium=tutorials&utm_campaign=first-page-ad\";\n    break;\n  case \"SQL\":\n    certLink = \"https://campus.w3schools.com/collections/course-catalog/products/sql-course?utm_source=classic&utm_medium=tutorials&utm_campaign=first-page-ad\";\n    break;\n  case \"PHP\":\n    certLink = \"https://campus.w3schools.com/collections/course-catalog/products/php-course?utm_source=classic&utm_medium=tutorials&utm_campaign=first-page-ad\";\n    break;\n  case \"CYBERSECURITY\":\n    certLink = \"https://campus.w3schools.com/collections/course-catalog/products/cyber-security-course?utm_source=classic&utm_medium=tutorials&utm_campaign=first-page-ad\";\n    foldername = \"Cyber Security\";\n    break;\n  case \"R\":\n    certLink = \"https://campus.w3schools.com/collections/course-catalog/products/r-course?utm_source=classic&utm_medium=tutorials&utm_campaign=first-page-ad\";\n    break;\n  case \"NUMPY\":\n    certLink = \"https://campus.w3schools.com/collections/course-catalog/products/numpy-course?utm_source=classic&utm_medium=tutorials&utm_campaign=first-page-ad\";\n    break;\n  case \"TYPESCRIPT\":\n    certLink = \"https://campus.w3schools.com/collections/course-catalog/products/learn-typescript?utm_source=classic&utm_medium=tutorials&utm_campaign=first-page-ad\";\n    break; \n  case \"PANDAS\":\n    certLink = \"https://campus.w3schools.com/collections/course-catalog/products/pandas-course?utm_source=classic&utm_medium=tutorials&utm_campaign=first-page-ad\";\n    break;\n  case \"PYTHON\":\n    certLink = \"https://campus.w3schools.com/collections/course-catalog/products/python-course?utm_source=classic&utm_medium=tutorials&utm_campaign=first-page-ad\";\n    break;\n  case \"CS\":\n    certLink = \"https://campus.w3schools.com/collections/course-catalog/products/c-course?utm_source=classic&utm_medium=tutorials&utm_campaign=first-page-ad\";\n    foldername = \"C#\";\n    break;    \n  default:\n    certLink = \"https://campus.w3schools.com/collections/course-catalog?utm_source=classic&utm_medium=tutorials&utm_campaign=first-page-ad\";\n  }\n  document.getElementById(\"cert_firstpage\").href = certLink;\n  if (foldername == \"QUIZTEST\" || foldername == \"EXERCISES\") {\n    document.getElementById(\"hey\").innerText = \"a\";\n  }\n  if (foldername == \"QUIZTEST\" || foldername == \"EXERCISES\") foldername = \"\";\n  document.getElementById(\"coursetopic\").innerText = foldername;\n}\ngetCourseFolder();\n\n\n\n\n\n\n.cls-1{fill:#04aa6b;}.cls-2{font-size:23px;}.cls-2,.cls-3,.cls-4{fill:#fff;}.cls-2,.cls-3{font-family:RobotoMono-Medium, Roboto Mono;font-weight:500;}.cls-3{font-size:20.08px;}w3schools CERTIFIED  .  2025"
+    }
+  ]
+}

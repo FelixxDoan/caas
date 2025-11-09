@@ -1,0 +1,254 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_injection.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL Injection"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "heading",
+      "text": "SQL Injection"
+    },
+    {
+      "type": "paragraph",
+      "text": "SQL injection is a code injection technique that might destroy your database."
+    },
+    {
+      "type": "paragraph",
+      "text": "SQL injection is one of the most common web hacking techniques."
+    },
+    {
+      "type": "paragraph",
+      "text": "SQL injection is the placement of malicious code in SQL statements, via web page input."
+    },
+    {
+      "type": "heading",
+      "text": "SQL in Web Pages"
+    },
+    {
+      "type": "paragraph",
+      "text": "SQL injection usually occurs when you ask a user for input, like their \nusername/userid, and instead of a name/id, the user gives you an SQL statement \nthat you will unknowingly run on your database."
+    },
+    {
+      "type": "paragraph",
+      "text": "Look at the following example which creates a \nSELECT statement by adding a variable \n(txtUserId) to a select string. The variable is fetched from user input \n(getRequestString):"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n txtUserId = getRequestString(\"UserId\");txtSQL = \"SELECT *\nFROM Users WHERE UserId = \" + txtUserId;"
+    },
+    {
+      "type": "paragraph",
+      "text": "The rest of this chapter describes the potential dangers of using user input in SQL statements."
+    },
+    {
+      "type": "heading",
+      "text": "SQL Injection Based on 1=1 is Always True"
+    },
+    {
+      "type": "paragraph",
+      "text": "Look at the example above again. The original purpose of the code was to create an SQL statement to select a \nuser, with a given user id."
+    },
+    {
+      "type": "paragraph",
+      "text": "If there is nothing to prevent a user from entering \"wrong\" input, the user \ncan enter some \"smart\" input like this:"
+    },
+    {
+      "type": "paragraph",
+      "text": "UserId:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Then, the SQL statement will look like this:"
+    },
+    {
+      "type": "other",
+      "text": "SELECT * FROM Users WHERE UserId = 105 OR 1=1;"
+    },
+    {
+      "type": "paragraph",
+      "text": "The SQL above is valid and will return ALL rows from the \"Users\" table, since \nOR 1=1 is always TRUE."
+    },
+    {
+      "type": "paragraph",
+      "text": "Does the example above look dangerous? What if the \"Users\" table contains names and passwords?"
+    },
+    {
+      "type": "paragraph",
+      "text": "The SQL statement above is much the same as this:"
+    },
+    {
+      "type": "other",
+      "text": "SELECT UserId, Name, Password\nFROM Users WHERE UserId = 105 or 1=1;"
+    },
+    {
+      "type": "paragraph",
+      "text": "A hacker might get access to all the user names and passwords in a database, by \nsimply inserting \n105 OR 1=1 into the input field."
+    },
+    {
+      "type": "heading",
+      "text": "SQL Injection Based on \"\"=\"\" is Always True"
+    },
+    {
+      "type": "paragraph",
+      "text": "Here is an example of a user login on a web site:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Username:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Password:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\nuName = getRequestString(\"username\");uPass = getRequestString(\"userpassword\");\nsql = 'SELECT * FROM Users WHERE Name =\"' + uName + '\" AND Pass =\"' + uPass + \n '\"'"
+    },
+    {
+      "type": "other",
+      "text": "Result\n\nSELECT * FROM Users WHERE Name =\"John Doe\" AND Pass =\"myPass\""
+    },
+    {
+      "type": "paragraph",
+      "text": "A hacker might get access to user names and passwords in a database by \nsimply inserting \" OR \"\"=\" into the user name or password text box:"
+    },
+    {
+      "type": "paragraph",
+      "text": "User Name:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Password:"
+    },
+    {
+      "type": "paragraph",
+      "text": "The code at the server will create a valid SQL statement like this:"
+    },
+    {
+      "type": "other",
+      "text": "Result\n\nSELECT * FROM Users WHERE Name =\"\" or \"\"=\"\" AND Pass =\"\" or \"\"=\"\""
+    },
+    {
+      "type": "paragraph",
+      "text": "The SQL above is valid and will return all rows from the \"Users\" table, \nsince OR \"\"=\"\" is always TRUE."
+    },
+    {
+      "type": "heading",
+      "text": "SQL Injection Based on Batched SQL Statements"
+    },
+    {
+      "type": "paragraph",
+      "text": "Most databases support batched SQL statement."
+    },
+    {
+      "type": "paragraph",
+      "text": "A batch of SQL statements is a group of two or more SQL statements, separated by semicolons."
+    },
+    {
+      "type": "paragraph",
+      "text": "The SQL statement below will return all rows from the \"Users\" table, then delete the \n\"Suppliers\" table."
+    },
+    {
+      "type": "other",
+      "text": "Example\n\nSELECT * FROM Users; DROP TABLE Suppliers"
+    },
+    {
+      "type": "paragraph",
+      "text": "Look at the following example:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\ntxtUserId = getRequestString(\"UserId\");txtSQL = \"SELECT *\nFROM Users WHERE UserId = \" + txtUserId;"
+    },
+    {
+      "type": "paragraph",
+      "text": "And the following input:"
+    },
+    {
+      "type": "paragraph",
+      "text": "User id:"
+    },
+    {
+      "type": "paragraph",
+      "text": "The valid SQL statement would look like this:"
+    },
+    {
+      "type": "other",
+      "text": "Result\n\nSELECT * FROM Users WHERE \nUserId = 105; DROP TABLE Suppliers;"
+    },
+    {
+      "type": "heading",
+      "text": "Use SQL Parameters for Protection"
+    },
+    {
+      "type": "paragraph",
+      "text": "To protect a web site from SQL injection, you can use SQL parameters."
+    },
+    {
+      "type": "paragraph",
+      "text": "SQL parameters are values that are added to an SQL query at execution time, in a controlled manner."
+    },
+    {
+      "type": "other",
+      "text": "ASP.NET Razor Example\n\ntxtUserId = getRequestString(\"UserId\");txtSQL = \"SELECT *\nFROM Users WHERE UserId = @0\";db.Execute(txtSQL,txtUserId);"
+    },
+    {
+      "type": "paragraph",
+      "text": "Note that parameters are represented in the SQL statement by a @ marker."
+    },
+    {
+      "type": "paragraph",
+      "text": "The SQL engine checks each parameter to ensure that it is correct for its column\nand are treated literally, and not as part of the SQL to be executed."
+    },
+    {
+      "type": "other",
+      "text": "Another Example\n\n txtNam = getRequestString(\"CustomerName\");txtAdd = getRequestString(\"Address\");txtCit = getRequestString(\"City\");\n txtSQL = \"INSERT INTO Customers (CustomerName,Address,City) Values(@0,@1,@2)\";db.Execute(txtSQL,txtNam,txtAdd,txtCit);"
+    },
+    {
+      "type": "heading",
+      "text": "Examples"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following examples shows how to build parameterized queries in some common web languages."
+    },
+    {
+      "type": "paragraph",
+      "text": "SELECT STATEMENT IN ASP.NET:"
+    },
+    {
+      "type": "other",
+      "text": "txtUserId = getRequestString(\"UserId\");\n sql = \"SELECT * FROM Customers WHERE CustomerId = @0\";command = new SqlCommand(sql);command.Parameters.AddWithValue(\"@0\",txtUserId);\n command.ExecuteReader();"
+    },
+    {
+      "type": "paragraph",
+      "text": "INSERT INTO STATEMENT IN ASP.NET:"
+    },
+    {
+      "type": "other",
+      "text": "txtNam = getRequestString(\"CustomerName\");txtAdd = getRequestString(\"Address\");txtCit = getRequestString(\"City\");\n txtSQL = \"INSERT INTO Customers (CustomerName,Address,City) Values(@0,@1,@2)\";command = new SqlCommand(txtSQL);\n command.Parameters.AddWithValue(\"@0\",txtNam);\n command.Parameters.AddWithValue(\"@1\",txtAdd);\n command.Parameters.AddWithValue(\"@2\",txtCit);command.ExecuteNonQuery();"
+    },
+    {
+      "type": "paragraph",
+      "text": "INSERT INTO STATEMENT IN PHP:"
+    },
+    {
+      "type": "other",
+      "text": "$stmt = $dbh->prepare(\"INSERT INTO Customers (CustomerName,Address,City) \n VALUES (:nam, :add, :cit)\");$stmt->bindParam(':nam', $txtNam);\n $stmt->bindParam(':add', $txtAdd);$stmt->bindParam(':cit', $txtCit);\n $stmt->execute();"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

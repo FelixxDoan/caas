@@ -1,0 +1,66 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_constraints.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL Constraints"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "SQL constraints are used to specify rules for data in a table."
+    },
+    {
+      "type": "heading",
+      "text": "SQL Create Constraints"
+    },
+    {
+      "type": "paragraph",
+      "text": "Constraints can be specified when the table is created with the \nCREATE TABLE statement, or after the table is created \nwith the ALTER TABLE statement."
+    },
+    {
+      "type": "other",
+      "text": "Syntax"
+    },
+    {
+      "type": "other",
+      "text": "CREATE TABLE table_name (\n     column1 datatype constraint,\n     column2 datatype constraint,\n     column3 datatype constraint,\n   \n....\n);"
+    },
+    {
+      "type": "heading",
+      "text": "SQL Constraints"
+    },
+    {
+      "type": "paragraph",
+      "text": "SQL constraints are used to specify rules for the data in a table."
+    },
+    {
+      "type": "paragraph",
+      "text": "Constraints are used to limit the type of data that can go into a table. This \nensures the accuracy and reliability of the data in the table. If there is any violation between the constraint and the data action, \nthe action is aborted."
+    },
+    {
+      "type": "paragraph",
+      "text": "Constraints can be column level or table level. Column level constraints \napply to a column, and table level constraints apply to the whole table."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following constraints are commonly used in SQL:"
+    },
+    {
+      "type": "other",
+      "text": "NOT NULL - Ensures that a column cannot have a NULL value\n  UNIQUE - Ensures that all values in a column are \n  different\n  PRIMARY KEY - A combination of a \n  NOT NULL and UNIQUE. \n  Uniquely identifies each row in a table\n  FOREIGN KEY \n  - Prevents actions that would destroy links between tables\n   CHECK - Ensures that \n  the values in a column satisfies a specific condition\n   DEFAULT - Sets a default value for a column \n  if no value \n  is specified\n   CREATE INDEX - Used to create and retrieve data from the database \n  very quickly"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

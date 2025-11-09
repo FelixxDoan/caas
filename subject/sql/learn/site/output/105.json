@@ -1,0 +1,54 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_ref_from.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL FROM Keyword"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "text": "FROM"
+    },
+    {
+      "type": "paragraph",
+      "text": "The FROM command is used to specify which \ntable to select or delete data from."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement selects the \"CustomerName\" and \"City\" columns \nfrom the \"Customers\" table:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n SELECT CustomerName, City FROM Customers;\n\n\n Try it Yourself »"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement selects all the columns from the \"Customers\" \ntable:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n SELECT * FROM Customers;\n\n\n Try it Yourself »"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement deletes the customer \"Alfreds Futterkiste\" from \nthe \"Customers\" table:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n DELETE FROM Customers\n WHERE CustomerName='Alfreds Futterkiste';"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

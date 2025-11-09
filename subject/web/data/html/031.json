@@ -1,0 +1,223 @@
+{
+  "url": "https://www.w3schools.com/html/html5_webstorage.asp",
+  "title": "HTML ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "HTML Web Storage API"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "HTML Web Storage API; better than cookies."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What is HTML Web Storage?"
+    },
+    {
+      "type": "paragraph",
+      "text": "With web storage, applications can store data locally within the user's browser."
+    },
+    {
+      "type": "paragraph",
+      "text": "Before HTML5, application data had to be stored in cookies, included in every server request. Web storage is more secure, and large amounts of data \ncan be stored locally, without affecting website performance."
+    },
+    {
+      "type": "paragraph",
+      "text": "Unlike cookies, the storage limit is far larger (at least 5MB) and information is never transferred to the server."
+    },
+    {
+      "type": "paragraph",
+      "text": "Web storage is per origin (per domain and protocol). All pages, from one origin, can store and access the same data."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Web Storage API Objects"
+    },
+    {
+      "type": "paragraph",
+      "text": "Web storage provides two objects for storing data in the browser:"
+    },
+    {
+      "type": "other",
+      "text": "window.localStorage - stores data with no expiration date \n  (data is not lost when the browser tab is closed)\n  window.sessionStorage - stores data for one session (data is lost when the browser tab is closed)"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Browser Support"
+    },
+    {
+      "type": "paragraph",
+      "text": "The numbers in the table specify the first browser version that fully supports \nWeb Storage."
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "API",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "localStorage",
+          "4.0",
+          "8.0",
+          "3.5",
+          "4.0",
+          "11.5"
+        ],
+        [
+          "sessionStorage",
+          "4.0",
+          "8.0",
+          "3.5",
+          "4.0",
+          "11.5"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Test Web Storage API Support"
+    },
+    {
+      "type": "paragraph",
+      "text": "Before using web storage, we can quickly check browser support for localStorage and sessionStorage:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "javascript",
+          "code": "<script>const x = document.getElementById(\"result\");if (typeof(Storage) \n  !== \"undefined\") {  x.innerHTML = \"Your browser supports Web \n  storage!\";} else {  x.innerHTML = \"Sorry, no Web storage \n  support!\";}</script>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The localStorage Object"
+    },
+    {
+      "type": "paragraph",
+      "text": "The localStorage object stores the data with no expiration date. The data \nwill not be lost when the browser is closed, and will be available the next day, week, or year."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "javascript",
+          "code": "<script>const x = document.getElementById(\"result\");if (typeof(Storage) \n  !== \"undefined\") {  // Store  localStorage.setItem(\"lastname\", \n  \"Smith\");  localStorage.setItem(\"bgcolor\", \"yellow\");  // \n  Retrieve  x.innerHTML = localStorage.getItem(\"lastname\");  \n  x.style.backgroundColor = localStorage.getItem(\"bgcolor\");} else {  \n  x.innerHTML = \"Sorry, no Web storage support!\";}</script>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Example explained:"
+    },
+    {
+      "type": "other",
+      "text": "Use the localStorage.setItem() method to \n  create name/value pairs\n  Use the localStorage.getItem() method to \n  retrieve the values set\n  Retrieve the value of \"lastname\" and insert it into an element with id=\"result\"\n  Retrieve the value of \"bgcolor\" and insert it into the style \n  backgroundColor of the element with id=\"result\""
+    },
+    {
+      "type": "paragraph",
+      "text": "The syntax for removing the \"lastname\" localStorage item is as follows:"
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "code": "localStorage.removeItem(\"lastname\");"
+    },
+    {
+      "type": "paragraph",
+      "text": "Note: Name/value pairs are always stored as strings. \nRemember to convert them to another format when needed!"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Counting Clicks with localStorage"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following example counts the number of times a user has clicked a button. \nIn this code the value string is converted to a number to be able to increase the counter:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "javascript",
+          "code": "<script>function clickCounter() {  const x = \n  document.getElementById(\"result\");  if (typeof(Storage) !== \n  \"undefined\") {    if (localStorage.clickcount) {      \n  localStorage.clickcount = Number(localStorage.clickcount)+1;    \n  } else {      localStorage.clickcount = 1;    \n  }    x.innerHTML = \"You have clicked the button \" + \n  localStorage.clickcount + \" time(s)!\";  } else {    \n  x.innerHTML = \"Sorry, no Web storage support!\";  }}</script>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The sessionStorage Object"
+    },
+    {
+      "type": "paragraph",
+      "text": "The sessionStorage object is equal to the localStorage object, except \nthat it stores the data for only one session! The data is deleted when the user closes the \nspecific browser tab."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Counting Clicks with sessionStorage"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following example counts the number of times a user has clicked a button, in the current session:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "javascript",
+          "code": "<script>function clickCounter() {  const x = \n  document.getElementById(\"result\");  if (typeof(Storage) !== \n  \"undefined\") {    if (sessionStorage.clickcount) {      \n  sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;    \n  } else {      sessionStorage.clickcount = 1;    \n  }    x.innerHTML = \"You have clicked the button \" + \n  sessionStorage.clickcount + \" time(s) in this session!\";  } else {    \n  x.innerHTML = \"Sorry, no Web storage support!\";  }}</script>"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "window.localStorage - stores data with no expiration date \n  (data is not lost when the browser tab is closed)",
+        "window.sessionStorage - stores data for one session (data is lost when the browser tab is closed)"
+      ]
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Use the localStorage.setItem() method to \n  create name/value pairs",
+        "Use the localStorage.getItem() method to \n  retrieve the values set",
+        "Retrieve the value of \"lastname\" and insert it into an element with id=\"result\"",
+        "Retrieve the value of \"bgcolor\" and insert it into the style \n  backgroundColor of the element with id=\"result\""
+      ]
+    }
+  ]
+}

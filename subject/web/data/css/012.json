@@ -1,0 +1,75 @@
+{
+  "url": "https://www.w3schools.com/css/css_background_attachment.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Background Attachment"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CSS background-attachment"
+    },
+    {
+      "type": "paragraph",
+      "text": "The background-attachment property specifies \nwhether the background image should scroll or be fixed (will not scroll with the \nrest of the page):"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "body\n{\n  background-image: url(\"img_tree.png\");\n  background-repeat: no-repeat;\n  background-position: right top;\n    background-attachment: fixed;}"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "body\n{\n  background-image: url(\"img_tree.png\");\n  background-repeat: no-repeat;\n  background-position: right top;\n    background-attachment: scroll;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The CSS Background Attachment Property"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Property",
+          "Description"
+        ],
+        [
+          "background-attachment",
+          "Sets whether a background image is fixed or scrolls with the rest of the page"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Video: CSS Background Attachment"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

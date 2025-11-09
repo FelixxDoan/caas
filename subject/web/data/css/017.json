@@ -1,0 +1,227 @@
+{
+  "url": "https://www.w3schools.com/css/css_selectors.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Selectors"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "A CSS selector selects the HTML element(s) you \nwant to style."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CSS Selectors"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS selectors are used to \"find\" (or select) the HTML elements you \nwant to style."
+    },
+    {
+      "type": "paragraph",
+      "text": "We can divide CSS selectors into five categories:"
+    },
+    {
+      "type": "other",
+      "text": "Simple selectors (select elements based on name, id, class)\n  Combinator selectors (select  \n  elements based on a specific relationship between them)\n  Pseudo-class selectors (select elements based on a certain state)\n  Pseudo-elements selectors (select \n  and style a part of an element)\n  Attribute selectors (select elements based on \n  an attribute or attribute value)"
+    },
+    {
+      "type": "paragraph",
+      "text": "This page will explain the most basic CSS selectors."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The CSS element Selector"
+    },
+    {
+      "type": "paragraph",
+      "text": "The element selector selects HTML elements based on the element name."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "p\n{\n  text-align: center;\n  color: red;\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The CSS id Selector"
+    },
+    {
+      "type": "paragraph",
+      "text": "The id selector uses the id attribute of an HTML element to select a specific element."
+    },
+    {
+      "type": "paragraph",
+      "text": "The id of an element is unique within a page, so the id selector is \nused to \nselect one unique element!"
+    },
+    {
+      "type": "paragraph",
+      "text": "To select an element with a specific id, write a hash (#) character, followed by \nthe id of the element."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "#para1\n{\n  text-align: center;\n  color: red;\n}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note: An id name cannot start with a number!"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The CSS class Selector"
+    },
+    {
+      "type": "paragraph",
+      "text": "The class selector selects HTML elements with a specific class attribute."
+    },
+    {
+      "type": "paragraph",
+      "text": "To select elements with a specific class, write a period (.) character, followed by the \nclass name."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".center {  text-align: center;  color: red;}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "You can also specify that only specific HTML elements should be affected by a class."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "p.center {  text-align: center;  color: red;}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "HTML elements \ncan also refer to more than one class."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<p class=\"center large\">This paragraph refers to two classes.</p>"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note: A class name cannot start with a number!"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The CSS Universal Selector"
+    },
+    {
+      "type": "paragraph",
+      "text": "The universal selector (*) selects all HTML \nelements on the page."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "*\n{\n  text-align: center;\n  color: blue;\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The CSS Grouping Selector"
+    },
+    {
+      "type": "paragraph",
+      "text": "The grouping selector selects all the HTML elements with the same style \ndefinitions."
+    },
+    {
+      "type": "paragraph",
+      "text": "Look at the following CSS code (the h1, h2, and p elements have the same \nstyle definitions):"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "h1\n{\n  text-align: center;  color: red;\n}\nh2\n{\n   \ntext-align: center;  color: red;}\np\n{\n  text-align: center;  color: red;\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "It will be better to group the selectors, to minimize the code."
+    },
+    {
+      "type": "paragraph",
+      "text": "To group selectors, separate each selector with a comma."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "h1, h2, p\n{\n   \ntext-align: center;  color: red;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "All CSS Simple Selectors"
+    },
+    {
+      "type": "other",
+      "text": "Selector\n    Example\n    Example description\n  \n  \n    #id\n    #firstname\n    Selects the element with id=\"firstname\"\n  \n  \n    .class\n    .intro\n    Selects all elements with class=\"intro\"\n  \n  \n    *\n    *\n    Selects all elements\n  \n  \n    element\n    p\n    Selects all <p> elements\n  \n  \n    element,element,..\n    div, p\n    Selects all <div> elements and all <p> elements"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Video: CSS Simple Selectors"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

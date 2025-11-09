@@ -1,0 +1,203 @@
+
+services:
+  redis:
+    image: redis:7-alpine
+    ports: ["6379:6379"]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+
+  mongodb:
+    image: mongo:latest
+    container_name: mongo_db
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: password
+      MONGO_INITDB_DATABASE: my_database
+    volumes:
+      - D:\WorkSpace\micro\mogodb:/data/db
+    ports:
+      - "27017:27017"
+    healthcheck:
+      test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+
+  coredns:
+    image: coredns/coredns:1.11.1
+    container_name: coredns
+    volumes:
+      - ./coreDNS/Corefile:/etc/coredns/Corefile
+      - ./coreDNS/zones:/zones
+    command: -conf /etc/coredns/Corefile
+    ports:
+      - "127.0.0.1:53:53/udp"
+      - "127.0.0.1:53:53/tcp"
+
+  traefik:
+    image: traefik:v3.4
+    command:
+      - --api.insecure=true
+      - --api.dashboard=true
+      - --providers.docker=true
+      - --providers.docker.exposedbydefault=false
+      - --entrypoints.web.address=:80
+    ports:
+      - "80:80"
+      - "8080:8080"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    container_name: traefik
+  admin-api:
+    build:
+      context: .
+      dockerfile: services/admin-api/Dockerfile.dev
+    image: admin-api:dev
+    environment:
+      PORT: "3000"
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./services/admin-api/src:/app/src:rw
+      - /app/node_modules
+    command: >
+      sh -c "
+        if [ ! -d node_modules ] || [ package.json -nt node_modules ] || [ pnpm-lock.yaml -nt node_modules ]; then
+          echo 'Installing dependencies...';
+          pnpm install;
+        fi;
+        pnpm dev
+      "
+    depends_on:
+      mongodb:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+
+  auth-api:
+    build:
+      context: .
+      dockerfile: services/auth-api/Dockerfile.dev
+    image: auth-api:dev
+    environment:
+      PORT: "3001"
+      JWT_SECRET: "Fi123581321"
+      REDIS_URL: "redis://redis:6379"
+    ports:
+      - "3001:3001"
+    volumes:
+      - ./services/auth-api/src:/app/src:rw
+      - /app/node_modules
+    command: >
+      sh -c "
+        if [ ! -d node_modules ] || [ package.json -nt node_modules ] || [ pnpm-lock.yaml -nt node_modules ]; then
+          echo 'Installing dependencies...';
+          pnpm install;
+        fi;
+        pnpm dev
+      "
+    depends_on:
+      mongodb:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+
+  user-api:
+    build:
+      context: .
+      dockerfile: services/user-api/Dockerfile.dev
+    image: user-api:dev
+    environment:
+      PORT: "3003"
+    ports:
+      - "3003:3003"
+    volumes:
+      - ./services/user-api/src:/app/src:rw
+      - /app/node_modules
+    depends_on:
+      auth-api:
+        condition: service_started
+      mongodb:
+        condition: service_healthy
+    command: >
+      sh -c "
+        if [ ! -d node_modules ] || [ package.json -nt node_modules ] || [ pnpm-lock.yaml -nt node_modules ]; then
+          echo 'Installing dependencies...';
+          pnpm install;
+        fi;
+        pnpm dev
+      "
+
+  class-api:
+    build:
+      context: .
+      dockerfile: services/class-api/Dockerfile.dev
+    image: class-api:dev
+    environment:
+      PORT: "3004"
+    ports:
+      - "3004:3004"
+    volumes:
+      - ./services/class-api/src:/app/src:rw
+      - ./coreDNS/zones:/zones
+      - /var/run/docker.sock:/var/run/docker.sock
+    depends_on:
+      auth-api:
+        condition: service_started
+      mongodb:
+        condition: service_healthy
+
+  gateway:
+    build:
+      context: .
+      dockerfile: services/gateway/Dockerfile.dev
+    image: gateway:dev
+    environment:
+      PORT: "3002"
+      AUTH_SERVICE: "http://auth-api:3001/auth"
+      USER_SERVICE: "http://user-api:3003/user"
+      CLASS_SERVICE: "http://class-api:3004/class"
+      SUBJECT_SERVICE: "http://class-api:3004/subject"
+      ROOM_SERVICE: "http://class-api:3004/room"
+      JWT_SECRET: "Fi123581321"
+      REDIS_URL: "redis://redis:6379"
+      CORS_ORIGINS: "http://127.0.0.1:5173, http://localhost:5173, http://portal.test:5173"
+    ports:
+      - "3002:3002"
+    volumes:
+      - ./services/gateway/src:/app/src:rw
+      - /app/node_modules
+    command: >
+      sh -c "
+        if [ ! -d node_modules ] || [ package.json -nt node_modules ] || [ pnpm-lock.yaml -nt node_modules ]; then
+          echo 'Installing dependencies...';
+          pnpm install;
+        fi;
+        pnpm dev
+      "
+    depends_on:
+      admin-api:
+        condition: service_started
+      auth-api:
+        condition: service_started
+      user-api:
+        condition: service_started
+      class-api:
+        condition: service_started
+
+  minio:
+    image: minio/minio:latest
+    container_name: minio
+    command: server /data --console-address ":9001"
+    environment:
+      MINIO_ROOT_USER: minioadmin
+      MINIO_ROOT_PASSWORD: minioadmin123
+    ports:
+      - "9000:9000" # S3 API
+      - "9001:9001" # Console
+    volumes:
+      - D:\WorkSpace\private_cloud\minio:/data

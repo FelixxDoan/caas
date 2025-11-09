@@ -1,0 +1,460 @@
+{
+  "url": "https://www.w3schools.com/js/js_number_methods.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Number Methods"
+    },
+    {
+      "type": "other",
+      "text": "Basic Methods\nBasic number methods can be used on any number:\ntoString()\ntoExponential()\ntoFixed()\ntoPrecision()\nvalueOf()\n\nStatic Methods\nStatic methods can only be used on Number:\nNumber.isFinite()\nNumber.isInteger()\nNumber.isNan()\nNumber.isSafeInteger()\nNumber.parseInt()\nNumber.parseFloat()"
+    },
+    {
+      "type": "other",
+      "text": "See Also:\nNumbers Tutorial\nNumber Properties\nNumber Reference"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The toString() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The toString() method returns a number as a string."
+    },
+    {
+      "type": "paragraph",
+      "text": "All number methods can be used on any type of numbers (literals, variables, or expressions):"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 123;\nx.toString();\n(123).toString();\n(100 + 23).toString();"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The toString() method can take an optional radix argument to convert\nthe number to a different base:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 123;\n\nlet text = x.toString(2);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The toExponential() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "toExponential() returns a string, with a number rounded and written using exponential notation."
+    },
+    {
+      "type": "paragraph",
+      "text": "A parameter defines the number of characters behind the decimal point:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 9.656;\nx.toExponential(2);\nx.toExponential(4);\nx.toExponential(6);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The parameter is optional. If you don't specify it, JavaScript will not round the number."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The toFixed() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "toFixed() returns a string, with the number \nwritten with a specified number of \ndecimals:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 9.656;\nx.toFixed(0);\nx.toFixed(2);\nx.toFixed(4);\nx.toFixed(6);"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "toFixed(2) is perfect for working with money."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The toPrecision() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "toPrecision() returns a string, with a number written with a \nspecified length:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 9.656;\nx.toPrecision();\nx.toPrecision(2);\nx.toPrecision(4);\nx.toPrecision(6);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The valueOf() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "valueOf() returns a number as a number."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 123;\nx.valueOf();\n(123).valueOf();\n(100 + 23).valueOf();"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "In JavaScript, a number can be a primitive value (typeof = number) or an \nobject (typeof = object)."
+    },
+    {
+      "type": "paragraph",
+      "text": "The valueOf() method is used internally in JavaScript to convert Number \nobjects to primitive values."
+    },
+    {
+      "type": "paragraph",
+      "text": "There is no reason to use it in your code."
+    },
+    {
+      "type": "other",
+      "text": "All JavaScript data types have a valueOf() and a toString() method."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Converting Variables to Numbers"
+    },
+    {
+      "type": "paragraph",
+      "text": "There are 3 JavaScript methods that can be used \nto convert a variable to a number:"
+    },
+    {
+      "type": "other",
+      "text": "Method\n    Description\n  \n  \n    Number()\n    Returns a number converted from its argument.\n  \n  \n    parseFloat()\n    Parses its argument and returns a floating point number\n    \n  \n    parseInt()\n    Parses its argument and returns a whole number"
+    },
+    {
+      "type": "other",
+      "text": "The methods above are not number methods. They are global JavaScript methods."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Number() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Number() method can be used to convert JavaScript variables to numbers:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Number(true);\nNumber(false);\nNumber(\"10\");\nNumber(\"  10\");\nNumber(\"10  \");\nNumber(\" 10  \");\nNumber(\"10.33\");\nNumber(\"10,33\");\nNumber(\"10 33\");\nNumber(\"John\");"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "If the number cannot be converted, NaN (Not a Number) is returned."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Number() Method Used on Dates"
+    },
+    {
+      "type": "paragraph",
+      "text": "Number() can also convert a date to a number."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Number(new Date(\"1970-01-01\"))"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\nThe Date() method returns the number of milliseconds since 1.1.1970."
+    },
+    {
+      "type": "paragraph",
+      "text": "The number of milliseconds between 1970-01-02 and 1970-01-01 is 86400000:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Number(new Date(\"1970-01-02\"))"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Number(new Date(\"2017-09-30\"))"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The parseInt() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "parseInt() parses a string and returns a whole number. Spaces are \nallowed. Only the first number is returned:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "parseInt(\"-10\");\nparseInt(\"-10.33\");\nparseInt(\"10\");\nparseInt(\"10.33\");\nparseInt(\"10 20 30\");\nparseInt(\"10 years\");\nparseInt(\"years 10\");"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "If the number cannot be converted, NaN (Not a Number) is returned."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The parseFloat() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "parseFloat() parses a string and returns a number. Spaces are \nallowed. Only the first number is returned:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "parseFloat(\"10\");\nparseFloat(\"10.33\");\nparseFloat(\"10 20 30\");\nparseFloat(\"10 years\");\nparseFloat(\"years 10\");"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "If the number cannot be converted, NaN (Not a Number) is returned."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Number Object Methods"
+    },
+    {
+      "type": "paragraph",
+      "text": "These object methods belong to the Number object:"
+    },
+    {
+      "type": "other",
+      "text": "MethodDescription\nNumber.isInteger()Returns true if the argument is an integer\nNumber.isNaN()Returns true if the argument is NaN\nNumber.isFinite()Returns true if the argument is not Infinity nor NaN\nNumber.isSafeInteger()Returns true if the argument is a safe integer\nNumber.parseFloat()Converts a string to a number\nNumber.parseInt()Converts a string to a whole number"
+    },
+    {
+      "type": "other",
+      "text": "Number Methods Cannot be Used on Variables\nThe number methods above belong to the JavaScript Number Object.\nThese methods can only be accessed like Number.isInteger().\nUsing X.isInteger() where X is a variable, will result in an error:\nTypeError X.isInteger is not a function."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Number.isInteger() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Number.isInteger() method returns true if the argument is an integer."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Number.isInteger(10);\nNumber.isInteger(10.5);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Number.isFinite() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Number.isFinite() method returns true\nif the argument is not Infinity, -iInfinity, nor Nan."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Number.isFinite(123);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Number.isNaN() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Number.isNaN() method returns true\nif the argument is NaN (Not a Number)."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Number.isNaN(123);"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\nNumber.isNaN() is the preferred way to check for equality with NaN.\nYou cannot test for equality with NaN using == or ===."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Number.isSafeInteger() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "A safe integer is an integer that can be exactly represented as a double precision number."
+    },
+    {
+      "type": "paragraph",
+      "text": "The Number.isSafeInteger() method returns true if the argument is a safe integer."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Number.isSafeInteger(10);\nNumber.isSafeInteger(12345678901234567890);"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Safe integers are all integers from -(253 - 1) to +(253 - 1).\nThis is safe: 9007199254740991. This is not safe: 9007199254740992."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Number.parseFloat() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "Number.parseFloat() parses a string and returns a number."
+    },
+    {
+      "type": "paragraph",
+      "text": "Spaces are allowed. Only the first number is returned:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Number.parseFloat(\"10\");\nNumber.parseFloat(\"10.33\");\nNumber.parseFloat(\"10 20 30\");\nNumber.parseFloat(\"10 years\");\nNumber.parseFloat(\"years 10\");"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "If the number cannot be converted, NaN (Not a Number) is returned."
+    },
+    {
+      "type": "other",
+      "text": "Note\nThe Number methods Number.parseInt()\nand Number.parseFloat()\nare the same as the\nGlobal methods parseInt() and parseFloat().\nThe purpose is modularization of globals (to make it easier to use the same JavaScript code outside the browser)."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Number.parseInt() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "Number.parseInt() parses a string and returns a whole number."
+    },
+    {
+      "type": "paragraph",
+      "text": "Spaces are allowed. Only the first number is returned:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Number.parseInt(\"-10\");\nNumber.parseInt(\"-10.33\");\nNumber.parseInt(\"10\");\nNumber.parseInt(\"10.33\");\nNumber.parseInt(\"10 20 30\");\nNumber.parseInt(\"10 years\");\nNumber.parseInt(\"years 10\");"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "If the number cannot be converted, NaN (Not a Number) is returned."
+    },
+    {
+      "type": "other",
+      "text": "Complete JavaScript Reference\nFor a complete reference to all JavaScript properties and methods, with full descriptions and many examples, go to:\nW3Schools' Full JavaScript Reference.\nThe reference inludes all JavaScript updates from 1999 to 2025."
+    }
+  ]
+}

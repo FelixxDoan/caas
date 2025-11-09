@@ -1,0 +1,488 @@
+{
+  "url": "https://www.w3schools.com/js/js_date_methods.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Get Date Methods"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The new Date() Constructor"
+    },
+    {
+      "type": "paragraph",
+      "text": "In JavaScript, date objects are created with new Date()."
+    },
+    {
+      "type": "paragraph",
+      "text": "new Date() returns a date object with the current date and time."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const date = new Date();"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Date Get Methods"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Method",
+          "Description"
+        ],
+        [
+          "getFullYear()",
+          "Get year as a four digit number (yyyy)"
+        ],
+        [
+          "getMonth()",
+          "Get month as a number (0-11)"
+        ],
+        [
+          "getDate()",
+          "Get day as a number (1-31)"
+        ],
+        [
+          "getDay()",
+          "Get weekday as a number (0-6)"
+        ],
+        [
+          "getHours()",
+          "Get hour (0-23)"
+        ],
+        [
+          "getMinutes()",
+          "Get minute (0-59)"
+        ],
+        [
+          "getSeconds()",
+          "Get second (0-59)"
+        ],
+        [
+          "getMilliseconds()",
+          "Get millisecond (0-999)"
+        ],
+        [
+          "getTime()",
+          "Get time (milliseconds since January 1, 1970)"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note 1\nThe get methods above return Local time.\nUniversal time (UTC) is documented at the bottom of this page."
+    },
+    {
+      "type": "other",
+      "text": "Note 2\nThe get methods return information from existing date objects.\nIn a date object, the time is static. The \"clock\" is not \"running\".\nThe time in a date object is NOT the same as current time."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The getFullYear() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The getFullYear() method returns the year of a date as a four digit number:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const d = new Date(\"2021-03-25\");\nd.getFullYear();"
+        },
+        {
+          "language": "unknown",
+          "code": "const d = new Date();\nd.getFullYear();"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Warning !\nOld JavaScript code might use the non-standard method getYear().\ngetYear() is supposed to return a 2-digit year.\ngetYear() is deprecated. Do not use it!"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The getMonth() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The getMonth() method returns the month of a date as a number (0-11)."
+    },
+    {
+      "type": "other",
+      "text": "Note\nIn JavaScript, January is month number 0, February is number 1, ...\nFinally, December is month number 11."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const d = new Date(\"2021-03-25\");\nd.getMonth();"
+        },
+        {
+          "language": "unknown",
+          "code": "const d = new Date();\nd.getMonth();"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\nYou can use an array of names to return the month as a name:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const months = [\"January\", \"February\", \"March\", \"April\", \"May\",\n\"June\", \"July\", \"August\", \"September\", \"October\",\n\"November\", \"December\"];\n\nconst d = new Date(\"2021-03-25\");\nlet month = months[d.getMonth()];"
+        },
+        {
+          "language": "unknown",
+          "code": "const months = [\"January\", \"February\", \"March\", \"April\", \"May\",\n\"June\", \"July\", \"August\", \"September\", \"October\",\n\"November\", \"December\"];\n\nconst d = new Date();\nlet month = months[d.getMonth()];"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The getDate() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The getDate() method returns the day of a date as a number (1-31):"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const d = new Date(\"2021-03-25\");\nd.getDate();"
+        },
+        {
+          "language": "unknown",
+          "code": "const d = new Date();\nd.getDate();"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The getHours() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The getHours() method returns the hours of a date as a number (0-23):"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const d = new Date(\"2021-03-25\");\nd.getHours();"
+        },
+        {
+          "language": "unknown",
+          "code": "const d = new Date();\nd.getHours();"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The getMinutes() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The getMinutes() method returns the minutes of a date as a number (0-59):"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const d = new Date(\"2021-03-25\");\nd.getMinutes();"
+        },
+        {
+          "language": "unknown",
+          "code": "const d = new Date();\nd.getMinutes();"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The getSeconds() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The getSeconds() method returns the seconds of a date as a number (0-59):"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const d = new Date(\"2021-03-25\");\nd.getSeconds();"
+        },
+        {
+          "language": "unknown",
+          "code": "const d = new Date();\nd.getSeconds();"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The getMilliseconds() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The getMilliseconds() method returns the milliseconds of a date as a number (0-999):"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const d = new Date(\"2021-03-25\");\nd.getMilliseconds();"
+        },
+        {
+          "language": "unknown",
+          "code": "const d = new Date();\nd.getMilliseconds();"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The getDay() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The getDay() method returns the weekday of a date as a number (0-6)."
+    },
+    {
+      "type": "other",
+      "text": "Note\nIn JavaScript, the first day of the week (day 0) is Sunday.\nSome countries in the world consider the first day of the week to be Monday."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const d = new Date(\"2021-03-25\");\nd.getDay();"
+        },
+        {
+          "language": "unknown",
+          "code": "const d = new Date();\nd.getDay();"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\nYou can use an array of names, and getDay() to return weekday as a name:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const days = [\"Sunday\", \"Monday\", \"Tuesday\", \"Wednesday\",\n\"Thursday\", \"Friday\", \"Saturday\"];\n\nconst d = new Date(\"2021-03-25\");\nlet day = days[d.getDay()];"
+        },
+        {
+          "language": "unknown",
+          "code": "const days = [\"Sunday\", \"Monday\", \"Tuesday\", \"Wednesday\",\n\"Thursday\", \"Friday\", \"Saturday\"];\n\nconst d = new Date();\nlet day = days[d.getDay()];"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The getTime() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The getTime() method returns the number of milliseconds since January 1, 1970:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const d = new Date(\"1970-01-01\");\nd.getTime();"
+        },
+        {
+          "language": "unknown",
+          "code": "const d = new Date(\"2021-03-25\");\nd.getTime();"
+        },
+        {
+          "language": "unknown",
+          "code": "const d = new Date();\nd.getTime();"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Date.now() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "Date.now() returns the number of milliseconds since January 1, 1970."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let ms = Date.now();"
+        },
+        {
+          "language": "unknown",
+          "code": "const minute = 1000 * 60;\nconst hour = minute * 60;\nconst day = hour * 24;\nconst year = day * 365;\n\nlet years = Math.round(Date.now() / year);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Date.now() is a static method of the Date object."
+    },
+    {
+      "type": "paragraph",
+      "text": "You cannot use it on a date object like myDate.now()."
+    },
+    {
+      "type": "paragraph",
+      "text": "The syntax is always Date.now()."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "UTC Date Get Methods"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Method",
+          "Same As",
+          "Description"
+        ],
+        [
+          "getUTCDate()",
+          "getDate()",
+          "Returns the UTC date"
+        ],
+        [
+          "getUTCFullYear()",
+          "getFullYear()",
+          "Returns the UTC year"
+        ],
+        [
+          "getUTCMonth()",
+          "getMonth()",
+          "Returns the UTC month"
+        ],
+        [
+          "getUTCDay()",
+          "getDay()",
+          "Returns the UTC day"
+        ],
+        [
+          "getUTCHours()",
+          "getHours()",
+          "Returns the UTC hour"
+        ],
+        [
+          "getUTCMinutes()",
+          "getMinutes()",
+          "Returns the UTC minutes"
+        ],
+        [
+          "getUTCSeconds()",
+          "getSeconds()",
+          "Returns the UTC seconds"
+        ],
+        [
+          "getUTCMilliseconds()",
+          "getMilliseconds()",
+          "Returns the UTC milliseconds"
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "UTC methods use UTC time (Coordinated Universal Time)."
+    },
+    {
+      "type": "paragraph",
+      "text": "UTC time is the same as GMT (Greenwich Mean Time)."
+    },
+    {
+      "type": "paragraph",
+      "text": "The difference between Local time and UTC time can be up to 24 hours."
+    },
+    {
+      "type": "other",
+      "text": "Local Time?"
+    },
+    {
+      "type": "other",
+      "text": "UTC Time?"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The getTimezoneOffset() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The getTimezoneOffset() method returns the difference (in minutes)\nbetween local time an UTC time:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let diff = d.getTimezoneOffset();"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Complete JavaScript Date Reference\nFor a complete Date reference, go to our:\nComplete JavaScript Date Reference.\nThe reference contains descriptions and examples of all Date properties and \nmethods."
+    },
+    {
+      "type": "other",
+      "text": "var canvas = document.getElementById(\"canvas\");\nvar ctx = canvas.getContext(\"2d\");\nvar radius = canvas.height/2;\nctx.translate(radius, radius);\nradius = radius*0.90\ntimeShow(0);\nfunction timeShow(UTC) {\nvar now = new Date();\n//setInterval(drawClock, 1000);\ndrawClock(UTC, now);\n}\nfunction drawClock(UTC, now) {\n  drawFace(ctx, radius);\n  drawNumbers(ctx, radius);\n  drawTime(ctx, radius, UTC, now);\n}"
+    }
+  ]
+}

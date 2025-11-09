@@ -1,0 +1,245 @@
+{
+  "url": "https://www.w3schools.com/js/js_regexp_meta_characters.asp",
+  "title": "RegExp Meta Characters",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "RegExp Meta Characters"
+    },
+    {
+      "type": "other",
+      "text": "Regular Expression Metacharacters\nMetacharacters are characters with a special meaning.\nThey can be used to match digts, words, spaces, and more:\n\n// Match words\nconst pattern = /\\w/;"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Regex Metacharacters"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Revised July 2025"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "RegExp \\d (digits) Metacharacter"
+    },
+    {
+      "type": "paragraph",
+      "text": "The \\d metacharacter matches digits."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"Give 100%!\";\nconst pattern = /\\d/g;\n\nlet result = text.match(pattern);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "RegExp \\D Metacharacter"
+    },
+    {
+      "type": "paragraph",
+      "text": "The \\D metacharacter matches non-digit characters."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"Give 100%!\";\nconst pattern = /\\D/g;\n\nlet result = text.match(pattern);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "RegExp \\w (word) Metacharacter"
+    },
+    {
+      "type": "paragraph",
+      "text": "The \\w metacharacter matches word characters."
+    },
+    {
+      "type": "paragraph",
+      "text": "A word character is a character a-z, A-Z, 0-9, including _ (underscore)."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"Give 100%!\";\nconst pattern = /\\w/g;\n\nlet result = text.match(pattern);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "RegExp \\W Metacharacter"
+    },
+    {
+      "type": "paragraph",
+      "text": "The \\W metacharacter matches non-word characters."
+    },
+    {
+      "type": "paragraph",
+      "text": "A word character is a character a-z, A-Z, 0-9, including _ (underscore)."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"Give 100%!\";\nconst pattern = /\\W/g;\n\nlet result = text.match(pattern);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The \\s (space) Metacharacter"
+    },
+    {
+      "type": "paragraph",
+      "text": "The \\s metacharacter matches whitespace characters like space, tab, and newline."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"Is this all there is?\";\nconst pattern = /\\s/g;\n\nlet result = text.match(pattern);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "RegExp \\xhh (hexadecimal)"
+    },
+    {
+      "type": "paragraph",
+      "text": "\\xhh matches characters by the hexadecimal number hh."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"Visit W3Schools. Hello World!\";\nlet pattern = /\\x6F/g;\n\nlet result = text.replace(pattern, \"*\");"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "RegExp \\uhhhh (unicode hex)"
+    },
+    {
+      "type": "paragraph",
+      "text": "\\uhhhh matches a Unicode character by the hex number hhhh."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"Visit W3Schools. Hello World!\";\nconst pattern = /\\u0057/g;\n \nlet result = text.match(pattern);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Regular Expression Methods"
+    },
+    {
+      "type": "paragraph",
+      "text": "Regular Expression Search and Replace can be done with different methods."
+    },
+    {
+      "type": "paragraph",
+      "text": "These are the most common:"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "String Methods"
+    },
+    {
+      "type": "table",
+      "data": [
+        [],
+        [
+          "Method",
+          "Description"
+        ],
+        [
+          "match(regex)",
+          "Returns an Array of results"
+        ],
+        [
+          "matchAll(regex)",
+          "Returns an Iterator of results"
+        ],
+        [
+          "replace(regex)",
+          "Returns a new String"
+        ],
+        [
+          "replaceAll(regex)",
+          "Returns a new String"
+        ],
+        [
+          "search(regex)",
+          "Returns the index of the first match"
+        ],
+        [
+          "split(regex)",
+          "Returns an Array of results"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "RegExp Methods"
+    },
+    {
+      "type": "table",
+      "data": [
+        [],
+        [
+          "Method",
+          "Description"
+        ],
+        [
+          "regex.exec()",
+          "Returns an Iterator of results"
+        ],
+        [
+          "regex.test()",
+          "Returns true or false"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "See Also:\nJavaScript RegExp Tutorial\nJavaScript RegExp Character Classes\nJavaScript RegExp Assertions\nJavaScript RegExp Quantifiers\nJavaScript RegExp Patterns\nJavaScript RegExp Objects\nJavaScript RegExp Methods"
+    }
+  ]
+}

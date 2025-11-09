@@ -1,0 +1,439 @@
+{
+  "url": "https://www.w3schools.com/js/js_dates.asp",
+  "title": "JavaScript Dates",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Dates"
+    },
+    {
+      "type": "other",
+      "text": "xxx=new Date()"
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript Date Objects let us work with dates:"
+    },
+    {
+      "type": "paragraph",
+      "text": "document.write(xxx)"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const d = new Date();"
+        },
+        {
+          "language": "unknown",
+          "code": "const d = new Date(\"2022-03-25\");"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\nDate objects are static. The \"clock\" is not \"running\".\nThe computer clock is ticking, date objects are not."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Date Output"
+    },
+    {
+      "type": "paragraph",
+      "text": "By default, JavaScript will use the browser's time zone and display a date as a full text string:"
+    },
+    {
+      "type": "paragraph",
+      "text": "document.write(xxx)"
+    },
+    {
+      "type": "other",
+      "text": "You will learn much more about how to display dates, later in this tutorial."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Creating Date Objects"
+    },
+    {
+      "type": "paragraph",
+      "text": "Date objects are created with the \nnew Date() constructor."
+    },
+    {
+      "type": "paragraph",
+      "text": "There are 9 ways to create a new date object:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "new Date()\nnew Date(date string)\n\nnew Date(year,month)\nnew Date(year,month,day)\nnew Date(year,month,day,hours)\nnew Date(year,month,day,hours,minutes)\nnew Date(year,month,day,hours,minutes,seconds)\nnew Date(year,month,day,hours,minutes,seconds,ms)\n\nnew Date(milliseconds)"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript new Date()"
+    },
+    {
+      "type": "paragraph",
+      "text": "new Date() creates a date object with the current date and time:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const d = new Date();"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "new Date(date string)"
+    },
+    {
+      "type": "paragraph",
+      "text": "new Date(date string) creates a date object from a date string:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const d = new Date(\"October 13, 2014 11:13:00\");"
+        },
+        {
+          "language": "unknown",
+          "code": "const d = new Date(\"2022-03-25\");"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Date string formats are described in the next chapter."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "new Date(year, month, ...)"
+    },
+    {
+      "type": "paragraph",
+      "text": "new Date(year, month, ...) creates a date object with a specified date and time."
+    },
+    {
+      "type": "paragraph",
+      "text": "7 numbers specify year, month, day, hour, minute, second, and millisecond (in that order):"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const d = new Date(2018, 11, 24, 10, 33, 30, 0);"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\nJavaScript counts months from 0 to 11:\nJanuary = 0.\nDecember = 11."
+    },
+    {
+      "type": "paragraph",
+      "text": "Specifying a month higher than 11, will not result in an error but add the overflow to the next year:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const d = new Date(2018, 15, 24, 10, 33, 30);"
+        },
+        {
+          "language": "unknown",
+          "code": "const d = new Date(2019, 3, 24, 10, 33, 30);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Specifying a day higher than max, will not result in an error but add the overflow to the next month:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const d = new Date(2018, 5, 35, 10, 33, 30);"
+        },
+        {
+          "language": "unknown",
+          "code": "const d = new Date(2018, 6, 5, 10, 33, 30);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Using 6, 4, 3, or 2 Numbers"
+    },
+    {
+      "type": "paragraph",
+      "text": "6 numbers specify year, month, day, hour, minute, second:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const d = new Date(2018, 11, 24, 10, 33, 30);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "5 numbers specify year, month, day, hour, and minute:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const d = new Date(2018, 11, 24, 10, 33);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "4 numbers specify year, month, day, and hour:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const d = new Date(2018, 11, 24, 10);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "3 numbers specify year, month, and day:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const d = new Date(2018, 11, 24);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "2 numbers specify year and month:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const d = new Date(2018, 11);"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "You cannot omit month. If you supply only one parameter it will be treated as milliseconds."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const d = new Date(2018);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Previous Century"
+    },
+    {
+      "type": "paragraph",
+      "text": "One and two digit years will be interpreted as 19xx:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const d = new Date(99, 11, 24);"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const d = new Date(9, 11, 24);"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "JavaScript Stores Dates as Milliseconds\nJavaScript stores dates as number of milliseconds since January 01, 1970.\nZero time is January 01, 1970 00:00:00 UTC.\nOne day (24 hours) is 86 400 000 milliseconds.\nNow the time is: document.write(xxx.getTime()) milliseconds past January 01, 1970"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "new Date(milliseconds)"
+    },
+    {
+      "type": "paragraph",
+      "text": "new Date(milliseconds) creates a new date object as milliseconds plus zero time:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const d = new Date(100000000000);"
+        },
+        {
+          "language": "unknown",
+          "code": "const d = new Date(-100000000000);"
+        },
+        {
+          "language": "unknown",
+          "code": "const d = new Date(24 * 60 * 60 * 1000);\n// or\nconst d = new Date(86400000);"
+        },
+        {
+          "language": "unknown",
+          "code": "const d = new Date(0);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Date Methods"
+    },
+    {
+      "type": "paragraph",
+      "text": "When a date object is created, a number of methods allow you to operate on \nit."
+    },
+    {
+      "type": "paragraph",
+      "text": "Date methods allow you to get and set the year, month, day, hour, \nminute, second, and millisecond of date objects, using either local time or UTC \n(universal, or GMT) time."
+    },
+    {
+      "type": "other",
+      "text": "Date methods and time zones are covered in the next chapters."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Displaying Dates"
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript will (by default) output dates using the toString() method.\nThis is a string representation of the date, including the time zone.\nThe format is specified in the ECMAScript specification:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "document.write(new Date())"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "When you display a date object in HTML, it is automatically converted to a \nstring, with the toString() method."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const d = new Date();\nd.toString();"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The toDateString() method converts a date to a more readable \nformat:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const d = new Date();\nd.toDateString();"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The toUTCString() method converts a date to a string using the UTC standard:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const d = new Date();\nd.toUTCString();"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The toISOString() method converts a date to a string using the ISO standard:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const d = new Date();\nd.toISOString();"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Learn More:\nJavaScript Date Formats\nJavaScript Date Get Methods\nJavaScript Date Set Methods\nJavaScript Date Reference"
+    }
+  ]
+}

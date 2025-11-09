@@ -1,0 +1,80 @@
+{
+  "url": "https://www.w3schools.com/js/js_json_html.asp",
+  "title": "JSON",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JSON HTML"
+    },
+    {
+      "type": "paragraph",
+      "text": "JSON can very easily be translated into JavaScript."
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript can be used to make HTML in your web pages."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML Table"
+    },
+    {
+      "type": "paragraph",
+      "text": "Make an HTML table with data received as JSON:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const dbParam = JSON.stringify({table:\"customers\",limit:20});\nconst xmlhttp = new XMLHttpRequest();\nxmlhttp.onload = function() {\n  myObj = JSON.parse(this.responseText);\n  let text = \"<table border='1'>\"\n  for (let x in myObj) {\n    text += \"<tr><td>\" + myObj[x].name + \"</td></tr>\";\n  }\n  text += \"</table>\"\n  document.getElementById(\"demo\").innerHTML   = text;\n}\nxmlhttp.open(\"POST\", \"json_demo_html_table.php\");\nxmlhttp.setRequestHeader(\"Content-type\", \"application/x-www-form-urlencoded\");\nxmlhttp.send(\"x=\" + dbParam);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Dynamic HTML Table"
+    },
+    {
+      "type": "paragraph",
+      "text": "Make the HTML table based on the value of a drop down menu:\n\n\nChoose an option:\nCustomers\nProducts\nSuppliers"
+    },
+    {
+      "type": "other",
+      "text": "function change_myselect(sel) {\n  var obj, dbParam, xmlhttp, myObj, x, txt = \"\";\nconsole.log(sel);\n  obj = { \"table\":sel, \"limit\":10 };\n  dbParam = JSON.stringify(obj);\n  xmlhttp = new XMLHttpRequest();\n  xmlhttp.onreadystatechange = function() {\n    if (this.readyState == 4 && this.status == 200) {\n      document.getElementById(\"demo\").innerHTML = this.responseText;\n      myObj = JSON.parse(this.responseText);\n      txt += \"<table border='1'>\"\n      for (x in myObj) {\n        txt += \"<tr><td>\" + myObj[x].name + \"</td></tr>\";\n      }\n      txt += \"</table>\"        \n      document.getElementById(\"demo\").innerHTML = txt;\n    }\n  };\n  xmlhttp.open(\"POST\", \"json_demo_html_table.php\", true);\n  xmlhttp.setRequestHeader(\"Content-type\", \"application/x-www-form-urlencoded\");\n  xmlhttp.send(\"x=\" + dbParam);\n}"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<select id=\"myselect\" onchange=\"change_myselect(this.value)\">  <option value=\"\">Choose an option:</option>  <option \nvalue=\"customers\">Customers</option>  <option \nvalue=\"products\">Products</option>  <option \nvalue=\"suppliers\">Suppliers</option></select>\n<script>\nfunction change_myselect(sel) {\n  const dbParam = JSON.stringify({table:sel,limit:20});\n  const xmlhttp = new XMLHttpRequest();\n  xmlhttp.onload = function() {\n    const myObj = JSON.parse(this.responseText);\n    let text = \"<table border='1'>\"\n    for (let x in myObj) {\n      text += \"<tr><td>\" + myObj[x].name + \"</td></tr>\";\n    }\n    text += \"</table>\"\n    document.getElementById(\"demo\").innerHTML = text;\n  }\n  xmlhttp.open(\"POST\", \"json_demo_html_table.php\");\n  xmlhttp.setRequestHeader(\"Content-type\", \"application/x-www-form-urlencoded\");\n  xmlhttp.send(\"x=\" + dbParam);\n}\n</script>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML Drop Down List"
+    },
+    {
+      "type": "paragraph",
+      "text": "Make an HTML drop down list with data received as JSON:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const dbParam = JSON.stringify({table:\"customers\",limit:20});\nconst xmlhttp = new XMLHttpRequest();\nxmlhttp.onload = function() {\n  const myObj = JSON.parse(this.responseText);\n  let text = \"<select>\"\n  for (let x in myObj) {\n    text += \"<option>\" + myObj[x].name + \"</option>\";\n  }\n  text += \"</select>\"\n  document.getElementById(\"demo\").innerHTML = text;\n  }\n}\nxmlhttp.open(\"POST\", \"json_demo_html_table.php\", true);\nxmlhttp.setRequestHeader(\"Content-type\", \"application/x-www-form-urlencoded\");\nxmlhttp.send(\"x=\" + dbParam);"
+        }
+      ]
+    }
+  ]
+}

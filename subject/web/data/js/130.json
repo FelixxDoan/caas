@@ -1,0 +1,177 @@
+{
+  "url": "https://www.w3schools.com/js/js_function_apply.asp",
+  "title": "JavaScript Function apply()",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Function apply()"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Method Reuse"
+    },
+    {
+      "type": "paragraph",
+      "text": "With the apply() method, you can write a method that can be used on different \nobjects."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The JavaScript apply() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The apply() method is similar to the call() method (previous chapter)."
+    },
+    {
+      "type": "paragraph",
+      "text": "In this example the fullName method of person is applied on person1:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const person = {\n    fullName: function() {\n      return this.firstName + \" \" + this.lastName;\n    }}\n\nconst person1 = {\n  firstName: \"Mary\",\n  lastName: \"Doe\"}\n\n// This will return \"Mary Doe\":\nperson.fullName.apply(person1);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Difference Between call() and apply()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The difference is:"
+    },
+    {
+      "type": "paragraph",
+      "text": "The call() method takes arguments separately."
+    },
+    {
+      "type": "paragraph",
+      "text": "The apply() method takes arguments as an array."
+    },
+    {
+      "type": "other",
+      "text": "The apply() method is very handy if you want to use an array instead of an argument list."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The apply() Method with Arguments"
+    },
+    {
+      "type": "paragraph",
+      "text": "The apply() method accepts arguments in an array:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const person = {\n    fullName: function(city, country) {\n    return this.firstName + \" \" + this.lastName \n  + \",\" + city + \",\" + country;\n    }}\n\nconst person1 = {\n  firstName:\"John\",\n    lastName: \"Doe\"\n}\n\nperson.fullName.apply(person1, [\"Oslo\", \"Norway\"]);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Compared with the call() method:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const person = {\n  fullName: function(city, country) {\n    return this.firstName + \" \" + this.lastName \n  + \",\" + city + \",\" + country;\n    }}\n\nconst person1 = {\n    firstName:\"John\",\n    lastName: \"Doe\"\n}\n\nperson.fullName.call(person1, \"Oslo\", \"Norway\");"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Simulate a Max Method on Arrays"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can find the largest number (in a list of numbers) using the Math.max() method:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Math.max(1,2,3);  // Will return 3"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Since JavaScript arrays do not have a max() method, you can apply the \nMath.max() method instead."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Math.max.apply(null, [1,2,3]); // Will also return 3"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The first argument (null) does not matter. It is not used in this example."
+    },
+    {
+      "type": "paragraph",
+      "text": "These examples will give the same result:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Math.max.apply(Math, [1,2,3]); // Will also return 3"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Math.max.apply(\" \", [1,2,3]); // Will also return 3"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Math.max.apply(0, [1,2,3]); // Will also return 3"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Strict Mode"
+    },
+    {
+      "type": "paragraph",
+      "text": "In JavaScript strict mode, if the first argument of the apply() method is not an object,\nit becomes the owner (object) of the invoked function.\nIn \"non-strict\" mode, it becomes the global object."
+    }
+  ]
+}

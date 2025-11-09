@@ -1,0 +1,48 @@
+{
+  "url": "https://www.w3schools.com/css/css_templates.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Templates"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CSS Layout Templates"
+    },
+    {
+      "type": "paragraph",
+      "text": "We have created some responsive starter templates with CSS."
+    },
+    {
+      "type": "paragraph",
+      "text": "You are free to modify, save, share, and use them in all your projects."
+    },
+    {
+      "type": "other",
+      "text": "Header, equal columns and footer:\n\n  \n  \n  \n  \n  \n  \n  \n\n      Try it (using float) »\n      Try it (using flexbox) »\n      Try it (using grid) »\n    \n  \n\n  \n    Header, unequal columns and footer:\n\n  \n  \n  \n  \n  \n  \n  \n\n      Try it (using float) »\n      Try it (using flexbox) »\n      Try it (using grid) »"
+    },
+    {
+      "type": "other",
+      "text": "Topnav, content and footer:\n\n  \n   \n  \n\n    \n      Try it Yourself »\n    \n  \n  \n    Sidenav and content:\n\n  \n  \n  \n  \n\n    \n\n      Try it Yourself »"
+    },
+    {
+      "type": "other",
+      "text": "Ever heard about W3Schools Spaces? Here you can create your website from scratch or use a template, and host it for free.\n  Get started for free ❯\n  * no credit card required"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

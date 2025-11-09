@@ -1,0 +1,206 @@
+{
+  "url": "https://www.w3schools.com/html/html_iframe.asp",
+  "title": "HTML ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "HTML Iframes"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "An HTML iframe is used to display a web page within a web page."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML Iframe Syntax"
+    },
+    {
+      "type": "paragraph",
+      "text": "The HTML <iframe> tag specifies an \ninline frame."
+    },
+    {
+      "type": "paragraph",
+      "text": "An inline frame is used to embed another document within the current HTML document."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<iframe src=\"url\" title=\"description\"></iframe>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Tip: It is a good practice to always include a \ntitle attribute for the <iframe>. \nThis is used by screen readers to read out what the content of the iframe is."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Iframe - Set Height and Width"
+    },
+    {
+      "type": "paragraph",
+      "text": "Use the height and width attributes to specify the \nsize of the iframe."
+    },
+    {
+      "type": "paragraph",
+      "text": "The height and width are specified in pixels by default:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<iframe src=\"demo_iframe.htm\" height=\"200\" width=\"300\" \n  title=\"Iframe Example\"></iframe>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Or you can add the style attribute and use \nthe CSS height and width \nproperties:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<iframe src=\"demo_iframe.htm\" style=\"height:200px;width:300px;\" \n  title=\"Iframe Example\"></iframe>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Iframe - Remove the Border"
+    },
+    {
+      "type": "paragraph",
+      "text": "By default, an iframe has a border around it."
+    },
+    {
+      "type": "paragraph",
+      "text": "To remove the border, add the style attribute and use the CSS \nborder property:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<iframe src=\"demo_iframe.htm\" style=\"border:none;\" \n  title=\"Iframe Example\"></iframe>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "With CSS, you can also change the size, style and color of the iframe's border:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<iframe src=\"demo_iframe.htm\" style=\"border:2px solid red;\" \n  title=\"Iframe Example\"></iframe>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Iframe - Target for a Link"
+    },
+    {
+      "type": "paragraph",
+      "text": "An iframe can be used as the target frame for a link."
+    },
+    {
+      "type": "paragraph",
+      "text": "The target attribute \nof the link must refer to the name attribute of the iframe:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<iframe src=\"demo_iframe.htm\" name=\"iframe_a\" title=\"Iframe \n  Example\"></iframe>\n <p><a href=\"https://www.w3schools.com\" target=\"iframe_a\">W3Schools.com</a></p>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Chapter Summary"
+    },
+    {
+      "type": "other",
+      "text": "The HTML <iframe> tag specifies an \ninline frame\n  The src \nattribute defines the URL of the page to embed\n  Always include a \ntitle attribute (for screen readers)\n  The height and width attributes specify the \nsize of the iframe\n  Use border:none; to remove the border \n  around the iframe"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML iframe Tag"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Tag",
+          "Description"
+        ],
+        [
+          "<iframe>",
+          "Defines an inline frame"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "For a complete list of all available HTML tags, visit our HTML Tag Reference."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Video: HTML Iframe"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "The HTML <iframe> tag specifies an \ninline frame",
+        "The src \nattribute defines the URL of the page to embed",
+        "Always include a \ntitle attribute (for screen readers)",
+        "The height and width attributes specify the \nsize of the iframe",
+        "Use border:none; to remove the border \n  around the iframe"
+      ]
+    },
+    {
+      "type": "image",
+      "src": "https://www.w3schools.com/html/images/yt_logo_rgb_dark.png"
+    },
+    {
+      "type": "image",
+      "src": "https://www.w3schools.com/html/images/19_html_iframe.png"
+    }
+  ]
+}

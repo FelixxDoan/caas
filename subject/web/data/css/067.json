@@ -1,0 +1,105 @@
+{
+  "url": "https://www.w3schools.com/css/css_table_responsive.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Responsive Table"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Responsive Table"
+    },
+    {
+      "type": "paragraph",
+      "text": "A responsive table will display a horizontal scroll bar if the screen is too \nsmall to display the full content:"
+    },
+    {
+      "type": "other",
+      "text": "First Name\n  Last Name\n  Points\n  Points\n  Points\n  Points\n  Points\n  Points\n  Points\n  Points\n  Points\n  Points\n  Points\n  Points\n\n\n\n  Jill\n  Smith\n  50\n  50\n  50\n  50\n  50\n  50\n  50\n  50\n  50\n  50\n  50\n  50\n\n\n  Eve\n  Jackson\n  94\n  94\n  94\n  94\n  94\n  94\n  94\n  94\n  94\n  94\n  94\n  94\n\n\n  Adam\n  Johnson\n  67\n  67\n  67\n  67\n  67\n  67\n  67\n  67\n  67\n  67\n  67\n  67"
+    },
+    {
+      "type": "paragraph",
+      "text": "Add a container element (like <div>) with overflow-x:auto around the <table> element to make it responsive:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<div style=\"overflow-x:auto;\"><table>\n... table content ...</table>\n</div>"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note: In OS X Lion (on Mac), scrollbars are hidden by default and only shown when being used (even though \"overflow:scroll\" is set)."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "More Examples"
+    },
+    {
+      "type": "paragraph",
+      "text": "Make a fancy table\nThis example demonstrates how to create a fancy table."
+    },
+    {
+      "type": "paragraph",
+      "text": "Set the position of the table caption\nThis example demonstrates how to position the table caption."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CSS Table Properties"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Property",
+          "Description"
+        ],
+        [
+          "border",
+          "Sets all the border properties in one declaration"
+        ],
+        [
+          "border-collapse",
+          "Specifies whether or not table borders should be collapsed"
+        ],
+        [
+          "border-spacing",
+          "Specifies the distance between the borders of adjacent cells"
+        ],
+        [
+          "caption-side",
+          "Specifies the placement of a table caption"
+        ],
+        [
+          "empty-cells",
+          "Specifies whether or not to display borders and background on empty cells in a table"
+        ],
+        [
+          "table-layout",
+          "Sets the layout algorithm to be used for a table"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

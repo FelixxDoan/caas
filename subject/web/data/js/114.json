@@ -1,0 +1,176 @@
+{
+  "url": "https://www.w3schools.com/js/js_set_logic.asp",
+  "title": "JavaScript Set Logic",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Set Logic"
+    },
+    {
+      "type": "other",
+      "text": "Logic Methods\nIn JavaScript 2025, 7 new logical methods were added to the Set object: \nunion()\ndifference()\nintersection()\nisDisjointFrom()\nisSubsetOf()\nisSupersetOf()\nsymmetricDifference()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The new Set methods are supported all modern browsers since June 2024:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome 122    \n    Edge 122\n    Firefox 127\n    Safari 17\n    Opera 108\n  \n  \n    Feb 2024\n    Feb 2024    \n    Jun 2024\n    Sep 2023\n    Mar 2024"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The union() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The union() method returns the union of two sets."
+    },
+    {
+      "type": "paragraph",
+      "text": "The union() method returns a new set containing the elements which are in this set,\nor in the argument set, or in both:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const A = new Set(['a','b','c']);\nconst B = new Set(['b','c','d']);\n\nconst C = A.union(B);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The intersection() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The intersection() method returns the intersection of two sets."
+    },
+    {
+      "type": "paragraph",
+      "text": "The intersection() method returns a new set containing the elements which are in this set\nand in the argument set:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const A = new Set(['a','b','c']);\nconst B = new Set(['b','c','d']);\n\nconst C = A.intersection(B);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The difference() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The difference() method returns the difference between two sets."
+    },
+    {
+      "type": "paragraph",
+      "text": "The difference() method returns a new set containing elements which are in this set\nbut not in the argument set:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const A = new Set(['a','b','c']);\nconst B = new Set(['b','c','d']);\n\nconst C = A.difference(B);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The symmetricDifference() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The symmetricDifference() method returns the symmetric difference between to sets."
+    },
+    {
+      "type": "paragraph",
+      "text": "The symmetricDifference() method returns a new set containing elements which are in this set\nor in the argument set, but not in both:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const A = new Set(['a','b','c']);\nconst B = new Set(['b','c','d']);\n\nconst C = A.symetricDifference(B);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The isSubsetOf() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The isSubsetOf() method returns true if all elements in this set\nis also elements in the argument set:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const A = new Set(['a','b','c']);\nconst B = new Set(['b','c','d']);\n\nlet answer = A.isSubsetOf(B);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The isSupersetOf() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The isSupersetOf() method returns true if all elements in the argument set are also in this set:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const A = new Set(['a','b','c']);\nconst B = new Set(['b','c','d']);\n\nlet answer = A.isSupersetOf(B);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The isDisjointFrom() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The isDisjointFrom() method returns true\nif this set has no elements in common with the argument set:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const A = new Set(['a','b','c']);\nconst B = new Set(['b','c','d']);\n\nlet answer = A.isDisjointFrom(B);"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Complete Set Reference\nFor a complete reference, go to our:\nComplete JavaScript Set Reference.\nThe reference contains descriptions and examples of all Set Properties and Methods."
+    }
+  ]
+}

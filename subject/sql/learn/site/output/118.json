@@ -1,0 +1,70 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_ref_like.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL LIKE Keyword"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "text": "LIKE"
+    },
+    {
+      "type": "paragraph",
+      "text": "The LIKE command is used in a WHERE clause \nto search for a specified pattern in a column."
+    },
+    {
+      "type": "paragraph",
+      "text": "You can use two wildcards with LIKE:"
+    },
+    {
+      "type": "other",
+      "text": "% - Represents zero, one, or multiple characters\n  _ - Represents a single character (MS Access uses a question mark (?) instead)"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL selects all customers with a CustomerName starting with \n\"a\":"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n SELECT * FROM Customers\n WHERE CustomerName LIKE 'a%';\n\n Try it Yourself »"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL selects all customers with a CustomerName ending with \"a\":"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n SELECT * FROM Customers\n WHERE CustomerName LIKE '%a'; \n\n Try it Yourself »"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL selects all customers with a CustomerName that \nhave \"or\" in any position:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n SELECT * FROM Customers\n  WHERE CustomerName LIKE '%or%';\n\n\n Try it Yourself »"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement selects all customers with a CustomerName that \nstarts with \"a\" and are at least 3 characters in length:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n SELECT * FROM Customers\n  WHERE CustomerName LIKE 'a__%';\n  Try it Yourself »"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

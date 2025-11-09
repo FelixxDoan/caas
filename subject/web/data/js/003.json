@@ -1,0 +1,155 @@
+{
+  "url": "https://www.w3schools.com/js/js_bootcamp.asp",
+  "title": "W3Schools",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "W3Schools JavaScript Bootcamp"
+    },
+    {
+      "type": "other",
+      "text": "JavaScript Bootcamp\n     Learn Front-end with W3Schools.\n    Self-paced online courses.\n    Duration: Around 80 hours.\n    Learn More\n    \n      \n      \n      w\n      3\n      s\n      c\n      h\n      o\n      o\n      l\n      s\n       \n      B\n      O\n      O\n      T\n      C\n      A\n      M\n      P\n       \n       \n      .\n       \n       \n      2\n      0\n      2\n      5"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What You Will Learn"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "HTML"
+    },
+    {
+      "type": "other",
+      "text": "How to use the latest HTML 5 standard to create your own Website. \n  How to format text, add graphics, create links, input forms, frames and tables, etc. \n  How to save it all in a text file that any browser can read and display."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "CSS"
+    },
+    {
+      "type": "other",
+      "text": "How to control the style and layout of multiple web pages all at once. \n  How to change the appearance and layout of all the pages in a Web site."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "JavaScript"
+    },
+    {
+      "type": "other",
+      "text": "How to program the behavior of web pages. \n  How to change the content and style of web pages."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Self-paced Courses"
+    },
+    {
+      "type": "paragraph",
+      "text": "Start learning Front-end with the W3Schools program and lay the foundations of your Web Development skills. This program is a great foundation for you that wants to get started with Front-end Development. It covers HTML, CSS and JavaScript."
+    },
+    {
+      "type": "paragraph",
+      "text": "HTML is the standard markup language for Web pages. With HTML you can create your own Website."
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS is the language we use to style an HTML document. CSS describes how HTML elements should be displayed."
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript is the programming language of the Web."
+    },
+    {
+      "type": "paragraph",
+      "text": "This is a structured and interactive version of the w3schools HTML, CSS, and JavaScript Tutorials together with the \nW3schools certification."
+    },
+    {
+      "type": "paragraph",
+      "text": "The program is a set of self-paced courses with text based modules, practical interactive examples and exercises to check your understanding as you progress. Complete the modules and the final certification exams to get the w3schools certification."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What You Get"
+    },
+    {
+      "type": "paragraph",
+      "text": "4x Certifications:"
+    },
+    {
+      "type": "other",
+      "text": "Certified HTML Developer \n  Certified CSS Developer\n  Certified JavaScript Developer\n  Certified Front End Developer"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Certificate of Completion"
+    },
+    {
+      "type": "paragraph",
+      "text": "You get sharable certificates that can be added to your CV, Resume or LinkedIn."
+    },
+    {
+      "type": "image",
+      "src": "https://www.w3schools.com/images/diploma_frontend.png"
+    },
+    {
+      "type": "paragraph",
+      "text": "Check out what it looks like in this example!"
+    },
+    {
+      "type": "other",
+      "text": "Three Reasons to Join the Program\n  \n    \n      1. Bite-sized learning\n      The training content is built to be easy to understand.\n    \n    \n      2. Increase your employability\n      Document your skills and knowledge with acknowledged certifications.\n    \n    \n      3. Save time and money\n      No deadlines. Study at your own pace.\n    \n  \n  Learn More"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How it Works"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Step 1. Course enrollment"
+    },
+    {
+      "type": "paragraph",
+      "text": "Enroll by paying the enrollment fee and gain access to the course and final exam.\nThere is no deadline to take the exam. All questions in the exam are based on W3Schools content."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Step 2. Complete the course learning modules"
+    },
+    {
+      "type": "paragraph",
+      "text": "The courses are self-paced with text based modules, practical interactive examples and exercises\nto check your understanding as you progress. Complete the learning modules to unlock the final exam."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Step 3. Take the exams"
+    },
+    {
+      "type": "paragraph",
+      "text": "The exams are taken at the end of each course after finishing the course learning modules.\nImmediately after completing the exam, you will be informed of your score and of your pass/fail status.\nYou will get three attempts to pass each exam. You can use the new attempts to improve \nyour score.\nThe best result of the attempts will count."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Step 4: Become certified"
+    },
+    {
+      "type": "paragraph",
+      "text": "Pass the exams and get your certifications and your Certified Developer titles!\nEach certificate gets a unique link that can be shared with others. Validate your certificates with \na link or a QR code."
+    },
+    {
+      "type": "paragraph",
+      "text": "Learn More"
+    }
+  ]
+}

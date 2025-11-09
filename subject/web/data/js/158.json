@@ -1,0 +1,420 @@
+{
+  "url": "https://www.w3schools.com/js/js_conventions.asp",
+  "title": "JavaScript Style Guide",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Style Guide"
+    },
+    {
+      "type": "paragraph",
+      "text": "Always use the same coding conventions for all your JavaScript \nprojects."
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Coding Conventions"
+    },
+    {
+      "type": "paragraph",
+      "text": "Coding conventions are style guidelines for programming. \nThey typically cover:"
+    },
+    {
+      "type": "other",
+      "text": "Naming and declaration rules for variables and functions.\n  Rules for the use of white space, indentation, and comments.\n  Programming practices and principles."
+    },
+    {
+      "type": "paragraph",
+      "text": "Coding conventions secure quality:"
+    },
+    {
+      "type": "other",
+      "text": "Improve code readability\n  Make code maintenance easier"
+    },
+    {
+      "type": "paragraph",
+      "text": "Coding conventions can be documented rules for teams to follow, or just be your individual coding practice."
+    },
+    {
+      "type": "other",
+      "text": "This page describes the general JavaScript code conventions used by W3Schools.\nYou should also read the next chapter \"Best Practices\", and learn how to avoid coding pitfalls."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Variable Names"
+    },
+    {
+      "type": "paragraph",
+      "text": "At W3schools we use camelCase for identifier names (variables and functions)."
+    },
+    {
+      "type": "paragraph",
+      "text": "All names start with a letter."
+    },
+    {
+      "type": "paragraph",
+      "text": "At the bottom of this page, you will find a wider discussion about naming \nrules."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "firstName = \"John\";lastName = \"Doe\";price = 19.90;\n tax = 0.20;fullPrice = price + (price * tax);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Spaces Around Operators"
+    },
+    {
+      "type": "paragraph",
+      "text": "Always put spaces around operators ( = + - * / ), and after commas:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = y + z;\nconst myArray = [\"Volvo\", \"Saab\", \n \"Fiat\"];"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Code Indentation"
+    },
+    {
+      "type": "paragraph",
+      "text": "Always use 2 spaces for indentation of code blocks:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "function toCelsius(fahrenheit) {\n    return (5 / 9) * (fahrenheit - 32);\n}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Do not use tabs (tabulators) for indentation. Different editors interpret tabs differently."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Statement Rules"
+    },
+    {
+      "type": "paragraph",
+      "text": "General rules for simple statements:"
+    },
+    {
+      "type": "other",
+      "text": "Always end a simple statement with a semicolon."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const cars = [\"Volvo\", \"Saab\", \n \"Fiat\"];\nconst person = {  firstName: \"John\",  \n lastName: \"Doe\",  age: 50,  eyeColor: \n \"blue\"};"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "General rules for complex (compound) statements:"
+    },
+    {
+      "type": "other",
+      "text": "Put the opening bracket at the end of the first line.\n Use one space before the opening bracket.\n Put the closing bracket on a new line, without leading spaces.\n Do not end a complex statement with a semicolon."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "function toCelsius(fahrenheit) {\n  return (5 / 9) * (fahrenheit - 32);\n}"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "for (let i = 0; i < 5; i++) {  x += i;}"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "if (time < 20) {  greeting = \"Good day\";} else {\n    \n greeting = \"Good evening\";}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Object Rules"
+    },
+    {
+      "type": "paragraph",
+      "text": "General rules for object definitions:"
+    },
+    {
+      "type": "other",
+      "text": "Place the opening bracket on the same line as the object name.\n Use colon plus one space between each property and its value.\n Use quotes around string values, not around numeric values.\n Do not add a comma after the last property-value pair.\n Place the closing bracket on a new line, without \n leading spaces.\n Always end an object definition with a semicolon."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const person = {  firstName: \"John\",  \n lastName: \"Doe\",  age: 50,  eyeColor: \n \"blue\"};"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Short objects can be written compressed, on one line, using spaces only \nbetween properties, like this:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const person = {firstName:\"John\", lastName:\"Doe\", age:50, eyeColor:\"blue\"};"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Line Length < 80"
+    },
+    {
+      "type": "paragraph",
+      "text": "For readability, avoid lines longer than 80 \ncharacters."
+    },
+    {
+      "type": "paragraph",
+      "text": "If a JavaScript statement does not fit on one line, the best place to break \nit, is after an operator or a comma."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "document.getElementById(\"demo\").innerHTML =\n  \"Hello Dolly.\";"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Naming Conventions"
+    },
+    {
+      "type": "paragraph",
+      "text": "Always use the same naming convention for all your code. For example:"
+    },
+    {
+      "type": "other",
+      "text": "Variable and function names written as camelCase\nGlobal variables written in UPPERCASE (We don't, but it's \nquite common)\nConstants (like PI) written in UPPERCASE"
+    },
+    {
+      "type": "paragraph",
+      "text": "Should you use hyp-hens, camelCase, or\nunder_scores in variable names?"
+    },
+    {
+      "type": "paragraph",
+      "text": "This is a question programmers often discuss. The answer depends on who you \nask:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Hyphens in HTML and CSS:"
+    },
+    {
+      "type": "paragraph",
+      "text": "HTML5 attributes can start with data- (data-quantity, data-price)."
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS uses hyphens in property-names (font-size)."
+    },
+    {
+      "type": "other",
+      "text": "Hyphens can be mistaken as subtraction attempts. Hyphens are not allowed in JavaScript names."
+    },
+    {
+      "type": "paragraph",
+      "text": "Underscores:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Many programmers prefer to use underscores (date_of_birth), especially in SQL \ndatabases."
+    },
+    {
+      "type": "paragraph",
+      "text": "Underscores are often used in PHP documentation."
+    },
+    {
+      "type": "paragraph",
+      "text": "PascalCase:"
+    },
+    {
+      "type": "paragraph",
+      "text": "PascalCase is often preferred by C programmers."
+    },
+    {
+      "type": "paragraph",
+      "text": "camelCase:"
+    },
+    {
+      "type": "paragraph",
+      "text": "camelCase is used by JavaScript itself, by jQuery, and other JavaScript \nlibraries."
+    },
+    {
+      "type": "other",
+      "text": "Do not start names with a $ sign. It will put you in conflict with many JavaScript library names."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Loading JavaScript in HTML"
+    },
+    {
+      "type": "paragraph",
+      "text": "Use simple syntax for loading external scripts (the type attribute is not \nnecessary):"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<script src=\"myscript.js\"></script>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Accessing HTML Elements"
+    },
+    {
+      "type": "paragraph",
+      "text": "A consequence of using \"untidy\" HTML styles, might result in JavaScript errors."
+    },
+    {
+      "type": "paragraph",
+      "text": "These two JavaScript statements will produce different results:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const obj = getElementById(\"Demo\")\nconst obj = getElementById(\"demo\")"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "If possible, use the same naming convention (as JavaScript) in HTML."
+    },
+    {
+      "type": "paragraph",
+      "text": "Visit the HTML Style Guide."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "File Extensions"
+    },
+    {
+      "type": "paragraph",
+      "text": "HTML files should have a .html extension (.htm is allowed)."
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS files should have a .css extension."
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript files should have a .js extension."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Use Lower Case File Names"
+    },
+    {
+      "type": "paragraph",
+      "text": "Most web servers (Apache, Unix) are case sensitive about file names:"
+    },
+    {
+      "type": "paragraph",
+      "text": "london.jpg cannot be accessed as London.jpg."
+    },
+    {
+      "type": "paragraph",
+      "text": "Other web servers (Microsoft, IIS) are not case sensitive:"
+    },
+    {
+      "type": "paragraph",
+      "text": "london.jpg can be accessed as London.jpg or london.jpg."
+    },
+    {
+      "type": "paragraph",
+      "text": "If you use a mix of upper and lower case, you have to be extremely \nconsistent."
+    },
+    {
+      "type": "paragraph",
+      "text": "If you move from a case insensitive, to a case sensitive server, even small \nerrors can break your web site."
+    },
+    {
+      "type": "paragraph",
+      "text": "To avoid these problems, always use lower case file names (if possible)."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Performance"
+    },
+    {
+      "type": "paragraph",
+      "text": "Coding conventions are not used by computers. Most rules have \nlittle impact on the execution of programs."
+    },
+    {
+      "type": "paragraph",
+      "text": "Indentation and extra spaces are not significant in small scripts."
+    },
+    {
+      "type": "paragraph",
+      "text": "For code in development, readability should be preferred. Larger production \nscripts should be minimized."
+    }
+  ]
+}

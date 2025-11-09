@@ -1,0 +1,256 @@
+{
+  "url": "https://www.w3schools.com/js/js_date_methods_set.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Set Date Methods"
+    },
+    {
+      "type": "paragraph",
+      "text": "Set Date methods let you set date values (years, \nmonths, days, hours, minutes, seconds, milliseconds) for a Date Object."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Set Date Methods"
+    },
+    {
+      "type": "paragraph",
+      "text": "Set Date methods are used for setting a part of a date:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Method",
+          "Description"
+        ],
+        [
+          "setDate()",
+          "Set the day as a number (1-31)"
+        ],
+        [
+          "setFullYear()",
+          "Set the year (yyyy)"
+        ],
+        [
+          "setHours()",
+          "Set the hour (0-23)"
+        ],
+        [
+          "setMilliseconds()",
+          "Set the milliseconds (0-999)"
+        ],
+        [
+          "setMinutes()",
+          "Set the minutes (0-59)"
+        ],
+        [
+          "setMonth()",
+          "Set the month (0-11)"
+        ],
+        [
+          "setSeconds()",
+          "Set the seconds (0-59)"
+        ],
+        [
+          "setTime()",
+          "Set the time (milliseconds since January 1, 1970)"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The setFullYear() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The setFullYear() method sets the year of a date object. In this example to 2020:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const d = new Date(\"January 01, 2025\");\nd.setFullYear(2020);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The setFullYear() method can optionally set month and day:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const d = new Date(\"January 01, 2025\");\nd.setFullYear(2020, 11, 3);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The setMonth() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The setMonth() method sets the month of a date object (0-11):"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const d = new Date(\"January 01, 2025\");\nd.setMonth(11);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The setDate() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The setDate() method sets the day of a date object (1-31):"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const d = new Date(\"January 01, 2025\");\nd.setDate(15);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The setDate() method can also be used to add days to a date:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const d = new Date(\"January 01, 2025\");\nd.setDate(d.getDate() + 50);"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\nIf adding days shifts the month or year, the changes are handled automatically by the Date object."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The setHours() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The setHours() method sets the hours of a date object (0-23):"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const d = new Date(\"January 01, 2025\");\nd.setHours(22);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The setHours() method can also be used to set minutes and\nseconds."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const d = new Date(\"January 01, 2025\");\nd.setHours(22, 10, 20);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The setMinutes() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The setMinutes() method sets the minutes of a date object (0-59):"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const d = new Date(\"January 01, 2025\");\nd.setMinutes(30);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The setSeconds() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The setSeconds() method sets the seconds of a date object (0-59):"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const d = new Date(\"January 01, 2025\");\nd.setSeconds(30);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Compare Dates"
+    },
+    {
+      "type": "paragraph",
+      "text": "Dates can easily be compared."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following example compares today's date with January 14, 2100:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"\";\nconst today = new Date();\nconst someday = new Date();\n someday.setFullYear(2100, 0, 14);if (someday > today) {  text = \"Today is before January 14, 2100.\";} else {\n    text = \"Today is after January 14, 2100.\";}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\nJavaScript counts months from 0 to 11. January is 0. December is 11."
+    },
+    {
+      "type": "other",
+      "text": "Complete JavaScript Date Reference\nFor a complete Date reference, go to our:\nComplete JavaScript Date Reference.\nThe reference contains descriptions and examples of all Date properties and \nmethods."
+    }
+  ]
+}

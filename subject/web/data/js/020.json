@@ -1,0 +1,227 @@
+{
+  "url": "https://www.w3schools.com/js/js_graphics_plotly.asp",
+  "title": "Plotly.js",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Plotly.js"
+    },
+    {
+      "type": "other",
+      "text": "Plotly.js is a charting library that comes with over 40 chart types:\n\nHorizontal and Vertical Bar Charts\nPie and Donut Charts\nLine Charts\nScatter and Bubble Plots\nEquation Plots\n3D Charts\nStatistical Graphs\nSVG Maps\n...\n\nPlotly.js is free and open-source under the MIT license.\nIt costs nothing to install and use.\nYou can view the source, report issues and contribute using Github."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Bar Charts"
+    },
+    {
+      "type": "other",
+      "text": "var xArray = [\"Italy\",\"France\",\"Spain\",\"USA\",\"Argentina\"];\nvar yArray = [55, 49, 44, 24, 15];\nvar data = [{x:xArray, y:yArray, type:\"bar\"}];\nvar layout = {title:\"World Wide Wine Production\"};\nPlotly.newPlot(\"myPlot23\", data, layout);"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const xArray = [\"Italy\",\"France\",\"Spain\",\"USA\",\"Argentina\"];\nconst yArray = [55, 49, 44, 24, 15];\nconst data = [{\n  x: xArray,\n  y: yArray,\n  type: \"bar\",\n  orientation:\"v\",\n  marker: {color:\"rgba(0,0,255)\"}\n}];\n\nconst layout = {title:\"World Wide Wine Production\"};\nPlotly.newPlot(\"myPlot\", data, layout);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Horizontal Bar Charts"
+    },
+    {
+      "type": "other",
+      "text": "var xArray = [55, 49, 44, 24, 15];\nvar yArray = [\"Italy \",\"France \",\"Spain \",\"USA \",\"Argentina \"];\nvar data = [{x:xArray, y:yArray, type:\"bar\", orientation:\"h\", marker: {color: 'rgba(255,0,0,0.6)'}}];\nvar layout = {title:\"World Wide Wine Production\"};\nPlotly.newPlot(\"myPlot26\", data, layout);"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const xArray = [55, 49, 44, 24, 15];\nconst yArray = [\"Italy\",\"France\",\"Spain\",\"USA\",\"Argentina\"];\n\nconst data = [{\n  x: xArray,\n  y: yArray,\n  type: \"bar\",\n  orientation: \"h\",\n  marker: {color:\"rgba(255,0,0,0.6)\"}\n\n}];\n\nconst layout = {title:\"World Wide Wine Production\"};\n\nPlotly.newPlot(\"myPlot\", data, layout);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Pie Charts"
+    },
+    {
+      "type": "other",
+      "text": "var xArray = [\"Italy\",\"France\",\"Spain\",\"USA\",\"Argentina\"];\nvar yArray = [55, 49, 44, 24, 15];\nvar data = [{labels:xArray, values:yArray, type:\"pie\"}];\nvar layout = {title:\"World Wide Wine Production\"};\nPlotly.newPlot(\"myPlot24\", data, layout);"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const data = [{\n  labels: xArray,\n  values: yArray,\n  type: \"pie\"\n}];"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Donut Charts"
+    },
+    {
+      "type": "other",
+      "text": "var xArray = [\"Italy\",\"France\",\"Spain\",\"USA\",\"Argentina\"];\nvar yArray = [55, 49, 44, 24, 15];\nvar data = [{labels:xArray, values:yArray, hole:.4, type:\"pie\"}];\nvar layout = {title:\"World Wide Wine Production\"};\nPlotly.newPlot(\"myPlot25\", data, layout);"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const data = [{\n  labels: xArray,\n  values: yArray,\n  hole: .4,\n  type: \"pie\"\n}];"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Plotting Equations"
+    },
+    {
+      "type": "other",
+      "text": "var exp = \"Math.sin(x)\";\n// Generate values<br>\nvar xValues = [];\nvar yValues = [];\nfor (var x = 0; x <= 10; x += 0.1) {\n  yValues.push(eval(exp));\n  xValues.push(x);\n}\n// Display using Plotly\nvar data = [{x:xValues, y:yValues, mode:\"lines\"}];\nvar layout = {title: \"y = \" + exp};\nPlotly.newPlot(\"myPlot11\", data, layout);"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let exp = \"Math.sin(x)\";\n\n// Generate values\nconst xValues = [];\nconst yValues = [];\nfor (let x = 0; x <= 10; x += 0.1) {\n  xValues.push(x);\n  yValues.push(eval(exp));\n}\n\n// Display using Plotly\nconst data = [{x:xValues, y:yValues, mode:\"lines\"}];\nconst layout = {title: \"y = \" + exp};\nPlotly.newPlot(\"myPlot\", data, layout);"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "var exp = \"Math.cos(x)\";\n// Generate values<br>\nvar xValues = [];\nvar yValues = [];\nfor (var x = 0; x <= 10; x += 0.2) {\n  xValues.push(x);\n  yValues.push(eval(exp));\n}\n// Display using Plotly\nvar data = [{x:xValues, y:yValues, mode:\"markers\"}];\nvar layout = {title: \"y = \" + exp};\nPlotly.newPlot(\"myPlot12\", data, layout);"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Display using Plotly\nconst data = [{x:xValues, y:yValues, mode:\"markers\"}];\nconst layout = {title: \"y = \" + exp};\nPlotly.newPlot(\"myPlot\", data, layout);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Scatter Plots"
+    },
+    {
+      "type": "other",
+      "text": "var xArray = [50,60,70,80,90,100,110,120,130,140,150];\nvar yArray = [7,8,8,9,9,9,10,11,14,14,15];\nvar data = [{x:xArray, y:yArray, mode:\"markers\", type:\"scatter\"}];\nvar layout = {\n xaxis: {range: [40, 160], title: \"Square Meters\"},\n yaxis: {range: [5, 16], title: \"Price in Millions\"},\n title: \"House Prices vs. Size\"\n};\nPlotly.newPlot(\"myPlot21\", data, layout);"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const xArray = [50,60,70,80,90,100,110,120,130,140,150];\nconst yArray = [7,8,8,9,9,9,10,11,14,14,15];\n// Define Data\nconst data = [{\n  x: xArray,\n  y: yArray,\n  mode:\"markers\",\n  type:\"scatter\"\n}];\n// Define Layout\nconst layout = {\n  xaxis: {range: [40, 160], title: \"Square Meters\"},\n  yaxis: {range: [5, 16], title: \"Price in Millions\"},\n  title: \"House Prices vs. Size\"\n};\nPlotly.newPlot(\"myPlot\", data, layout);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Line Graphs"
+    },
+    {
+      "type": "other",
+      "text": "var xArray = [50,60,70,80,90,100,110,120,130,140,150];\nvar yArray = [7,8,8,9,9,9,10,11,14,14,15];\nvar data = [{x:xArray, y:yArray, mode:\"lines\", type:\"scatter\"}];\nvar layout = {\nxaxis: {range: [40, 160], title: \"Square Meters\"},\nyaxis: {range: [5, 16], title: \"Price in Millions\"},\ntitle: \"House Prices vs Size\"\n};\nPlotly.newPlot(\"myPlot22\", data, layout);"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const xArray = [50,60,70,80,90,100,110,120,130,140,150];\nconst yArray = [7,8,8,9,9,9,10,11,14,14,15];\n\n// Define Data\nconst data = [{\n  x: xArray,\n  y: yArray,\n  mode: \"lines\",\n  type: \"scatter\"\n}];\n\n// Define Layout\nconst layout = {\n  xaxis: {range: [40, 160], title: \"Square Meters\"},\n  yaxis: {range: [5, 16], title: \"Price in Millions\"},\n  title: \"House Prices vs Size\"\n};\n// Display using Plotly\nPlotly.newPlot(\"myPlot\", data, layout);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Bubble Plots"
+    },
+    {
+      "type": "paragraph",
+      "text": "Bubble Plots are Scatter Plots whose markers have variable color, size, and symbols."
+    },
+    {
+      "type": "paragraph",
+      "text": "It is a type of 3-dimensional chart with only two axes (x and y) where the size of the bubble\ncommunicates the third dimention."
+    },
+    {
+      "type": "other",
+      "text": "var xArray = [1,2,3,4];\nvar yArray = [10,20,30,40];\n\nvar trace1 = {\n  x: xArray,\n  y: yArray,\n  mode: 'markers',\n  marker: {\n    color: ['red', 'green',  'blue', 'orange'],\n    size: [20, 30, 40, 50]\n  }\n};\n\nvar trace2 = {\n  x: [1, 2, 3, 4],\n  y: [15, 30, 45, 60],\n  mode: 'markers',\n  marker: {\n    color: 'rgb(31, 119, 180)',\n    size: 18,\n    symbol: ['circle', 'square', 'diamond', 'cross']\n  },\n};\n\nvar data = [trace1, trace2];\n\nvar layout = {\n  title: \"Plotting Bubbles\"\n};\n\nPlotly.newPlot('myPlot19', data, layout);"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const xArray = [1,2,3,4];\nconst yArray = [10,20,30,40];\n\nconst trace1 = {\n  x: xArray,\n  y: yArray,\n  mode: 'markers',\n  marker: {\n    color: ['red', 'green',  'blue', 'orange'],\n    size: [20, 30, 40, 50]\n  }\n};\n\nconst data = [trace1];\n\nconst layout = {\n  title: \"Plotting Bubbles\"\n};\n\nPlotly.newPlot('myPlot', data, layout);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Linear Graphs"
+    },
+    {
+      "type": "other",
+      "text": "var exp = \"x + 17\";\n// Generate values\nvar xValues = [];\nvar yValues = [];\nfor (var x = 0; x <= 10; x += 1) {\n  yValues.push(eval(exp));\n  xValues.push(x);\n}\n// Display using Plotly\nvar data = [{x:xValues, y:yValues, mode:\"lines\"}];\nvar layout = {title: \"y = \" + exp};\nPlotly.newPlot(\"myPlot13\", data, layout);"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let exp = \"x + 17\";\n\n// Generate values\nconst xValues = [];\nconst yValues = [];\nfor (let x = 0; x <= 10; x += 1) {\n  yValues.push(eval(exp));\n  xValues.push(x);\n}\n\n// Define Data\nconst data = [{\n  x: xValues,\n  y: yValues,\n  mode: \"lines\"\n}];\n\n// Define Layout\nconst layout = {title: \"y = \" + exp};\n\n// Display using Plotly\nPlotly.newPlot(\"myPlot\", data, layout);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Multiple Lines"
+    },
+    {
+      "type": "other",
+      "text": "var exp1 = \"x\";\nvar exp2 = \"1.5*x\";\nvar exp3 = \"1.5*x + 7\";\n// Generate values\n\nvar x1Values = [];\nvar x2Values = [];\nvar x3Values = [];\nvar y1Values = [];\nvar y2Values = [];\nvar y3Values = [];\n\nfor (var x = 0; x <= 10; x += 1) {\n  x1Values.push(x);\n  x2Values.push(x);\n  x3Values.push(x);\n  y1Values.push(eval(exp1));\n  y2Values.push(eval(exp2));\n  y3Values.push(eval(exp3));\n}\n\n// Define Data\nvar data = [\n  {x: x1Values, y: y1Values, mode:\"lines\"},\n  {x: x2Values, y: y2Values, mode:\"lines\"},\n  {x: x3Values, y: y3Values, mode:\"lines\"}\n];\n\nvar layout = {title: \"[y=\" + exp1 + \"]  [y=\" + exp2 + \"]  [y=\" + exp3 + \"]\"};\n\n// Display using Plotly\nPlotly.newPlot(\"myPlot14\", data, layout);"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let exp1 = \"x\";\nlet exp2 = \"1.5*x\";\nlet exp3 = \"1.5*x + 7\";\n\n// Generate values\nconst x1Values = [];\nconst x2Values = [];\nconst x3Values = [];\nconst y1Values = [];\nconst y2Values = [];\nconst y3Values = [];\n\nfor (let x = 0; x <= 10; x += 1) {\n  x1Values.push(x);\n  x2Values.push(x);\n  x3Values.push(x);\n  y1Values.push(eval(exp1));\n  y2Values.push(eval(exp2));\n  y3Values.push(eval(exp3));\n}\n\n// Define Data\nconst data = [\n  {x: x1Values, y: y1Values, mode:\"lines\"},\n  {x: x2Values, y: y2Values, mode:\"lines\"},\n  {x: x3Values, y: y3Values, mode:\"lines\"}\n];\n\n// Define Layout\nconst layout = {title: \"[y=\" + exp1 + \"]  [y=\" + exp2 + \"]  [y=\" + exp3 + \"]\"};\n\n// Display using Plotly\nPlotly.newPlot(\"myPlot\", data, layout);"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "url": "https://www.w3schools.com/css/css_text_align.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Text Alignment"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Text Alignment and Text Direction"
+    },
+    {
+      "type": "paragraph",
+      "text": "In this chapter you will learn about the following properties:"
+    },
+    {
+      "type": "other",
+      "text": "text-align\ntext-align-last\ndirection\nunicode-bidi\nvertical-align"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Text Alignment"
+    },
+    {
+      "type": "paragraph",
+      "text": "The text-align property is used to set the horizontal alignment of a text."
+    },
+    {
+      "type": "paragraph",
+      "text": "A text can be left or right aligned, centered, or justified."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following example shows center aligned, and left and right aligned text \n(left alignment is default if text direction is left-to-right, and right \nalignment is default if text direction is right-to-left):"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "h1 {  text-align: center;}h2 {  text-align: left;}h3 {  text-align: right;\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "When the text-align property is set to \"justify\", each line is \nstretched so that every line has equal width, and the left and right margins are \nstraight (like in magazines and newspapers):"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "div {  text-align: justify;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Text Align Last"
+    },
+    {
+      "type": "paragraph",
+      "text": "The text-align-last property specifies how to align the last line of a text."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "p.a\n{\n   \ntext-align-last: right;\n}p.b\n{\n   \ntext-align-last: center;\n}p.c\n{\n    text-align-last: justify;\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Text Direction"
+    },
+    {
+      "type": "paragraph",
+      "text": "The direction and \nunicode-bidi properties can be used to change the text direction of an element:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "p {  direction: rtl;  unicode-bidi: bidi-override;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Vertical Alignment"
+    },
+    {
+      "type": "paragraph",
+      "text": "The vertical-align property sets the vertical alignment of an element."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "img.a {  vertical-align: baseline;}img.b {  \n  vertical-align: text-top;}img.c {  vertical-align: \n  text-bottom;}img.d {  vertical-align: sub;}\n  img.e {  vertical-align: super;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The CSS Text Alignment/Direction Properties"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Property",
+          "Description"
+        ],
+        [
+          "direction",
+          "Specifies the text direction/writing direction"
+        ],
+        [
+          "text-align",
+          "Specifies the horizontal alignment of text"
+        ],
+        [
+          "text-align-last",
+          "Specifies how to align the last line of a text"
+        ],
+        [
+          "unicode-bidi",
+          "Used together with the direction property to set or return whether the text should be overridden to support multiple languages in the same document"
+        ],
+        [
+          "vertical-align",
+          "Sets the vertical alignment of an element"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

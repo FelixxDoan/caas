@@ -1,0 +1,193 @@
+{
+  "url": "https://www.w3schools.com/js/js_hoisting.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Hoisting"
+    },
+    {
+      "type": "paragraph",
+      "text": "Hoisting is JavaScript's default behavior of moving declarations to the \ntop."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Declarations are Hoisted"
+    },
+    {
+      "type": "paragraph",
+      "text": "In JavaScript, a variable can be declared after it has been used."
+    },
+    {
+      "type": "paragraph",
+      "text": "In other words; a variable can be used before it has been declared."
+    },
+    {
+      "type": "paragraph",
+      "text": "Example 1 gives the same result as Example 2:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "x = 5; // Assign 5 to x\n\nelem = document.getElementById(\"demo\"); // Find an element \nelem.innerHTML = x;                     \n// Display x in the elementvar x; // Declare x"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "var x; // Declare x\nx = 5; // Assign 5 to x\nelem = document.getElementById(\"demo\"); // Find an element elem.innerHTML = x;                     \n// Display x in the element"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "To understand this, you have to understand the term \"hoisting\"."
+    },
+    {
+      "type": "paragraph",
+      "text": "Hoisting is JavaScript's default behavior of moving all declarations to the \ntop of the current scope (to the top of the current script or the current function)."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The let and const Keywords"
+    },
+    {
+      "type": "paragraph",
+      "text": "Variables defined with let and const are hoisted to the top \nof the block, but not initialized."
+    },
+    {
+      "type": "paragraph",
+      "text": "Meaning: The block of code is aware of the \nvariable, but it cannot be used until it has been declared."
+    },
+    {
+      "type": "paragraph",
+      "text": "Using a let variable before it is declared will result in a\nReferenceError."
+    },
+    {
+      "type": "paragraph",
+      "text": "The variable is in a \"temporal dead zone\" from the start \nof the block until it is declared:"
+    },
+    {
+      "type": "example",
+      "description": "This will result in a :",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "carName = \"Volvo\";\nlet carName;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Using a const variable before it is declared, is a syntax error,\nso the code will simply not run."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "carName = \"Volvo\";\nconst carName;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Read more about let and const in JS Let / Const."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Initializations are Not Hoisted"
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript only hoists declarations, not initializations."
+    },
+    {
+      "type": "paragraph",
+      "text": "Example 1 does not give the same result as\nExample 2:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "var x = 5; // Initialize xvar y = 7; // Initialize yelem = document.getElementById(\"demo\"); // Find an element \nelem.innerHTML = x + \" \" + y;           // Display x and y"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "var x = 5; // Initialize x\n\nelem = document.getElementById(\"demo\"); // Find an element \nelem.innerHTML = x + \" \" + y;           // Display x and y\n\nvar y = 7; // Initialize y"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Does it make sense that y is undefined in the last example?"
+    },
+    {
+      "type": "paragraph",
+      "text": "This is because only the declaration (var y), not the initialization (=7) is hoisted to the top."
+    },
+    {
+      "type": "paragraph",
+      "text": "Because of hoisting, y has been declared before it is used, but because \ninitializations are not hoisted, the value of y is undefined."
+    },
+    {
+      "type": "paragraph",
+      "text": "Example 2 is the same as writing:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "var x = 5; // Initialize x\nvar y;     // Declare y\n\nelem = document.getElementById(\"demo\"); // Find an element \nelem.innerHTML = x + \" \" + y;           // Display x and y\n\ny = 7;    // Assign 7 to y"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Declare Your Variables At the Top !"
+    },
+    {
+      "type": "paragraph",
+      "text": "Hoisting is (to many developers) an unknown or overlooked behavior of  \nJavaScript."
+    },
+    {
+      "type": "paragraph",
+      "text": "If a developer doesn't understand hoisting, programs may contain bugs (errors)."
+    },
+    {
+      "type": "paragraph",
+      "text": "To avoid bugs, always declare all variables at the beginning of \nevery scope."
+    },
+    {
+      "type": "paragraph",
+      "text": "Since this is how JavaScript interprets the \ncode, it is always a good rule."
+    },
+    {
+      "type": "other",
+      "text": "JavaScript in strict mode does not allow variables to be used if they are \nnot declared.Study \"use strict\" in the next chapter."
+    }
+  ]
+}

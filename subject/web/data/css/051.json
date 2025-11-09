@@ -1,0 +1,161 @@
+{
+  "url": "https://www.w3schools.com/css/css_dropdowns.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Dropdowns"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "Create a hoverable dropdown with CSS."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Demo: Dropdown Examples"
+    },
+    {
+      "type": "paragraph",
+      "text": "Move the mouse over the examples below:"
+    },
+    {
+      "type": "other",
+      "text": "Dropdown Text\n  \n    Hello World!\n  \n\n\n\n\n\n  Dropdown Menu\n  \n    Link 1\n    Link 2\n    Link 3\n  \n\n\n\n\n\nOther: \n  \n\n\nBeautiful Cinque Terre"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Basic Dropdown"
+    },
+    {
+      "type": "paragraph",
+      "text": "Create a dropdown box that appears when the user moves the mouse over an \nelement."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<style>.dropdown {  position: relative;  \ndisplay: inline-block;}.dropdown-content {  display: \nnone;  position: absolute;  \nbackground-color: #f9f9f9;  min-width: 160px;  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);\n    padding: \n12px 16px;  z-index: 1;}.dropdown:hover \n.dropdown-content {  display: block;}</style>\n<div class=\"dropdown\">\n  <span>Mouse over me</span>  \n<div class=\"dropdown-content\">    <p>Hello World!</p>  </div></div>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Example Explained"
+    },
+    {
+      "type": "paragraph",
+      "text": "HTML) Use any element to open the dropdown content, e.g. a \n<span>, or a <button> element."
+    },
+    {
+      "type": "paragraph",
+      "text": "Use a container element (like <div>) to create the dropdown content and add \nwhatever you want inside of it."
+    },
+    {
+      "type": "paragraph",
+      "text": "Wrap a <div> element around the elements to position the dropdown content \ncorrectly with CSS."
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS) The .dropdown class uses position:relative, which is needed when we want the \ndropdown content to be placed right below the dropdown button (using position:absolute)."
+    },
+    {
+      "type": "paragraph",
+      "text": "The .dropdown-content class holds the actual dropdown content. It is hidden by \ndefault, and will be displayed on hover (see below). Note the min-width is set to 160px. Feel free to change \nthis. Tip: If you want the width of the dropdown content to be \nas wide as the dropdown button, set the width to 100% (and overflow:auto to \nenable scroll on small screens)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Instead of using a border, we have used the CSS box-shadow property to make the \ndropdown menu look like a \"card\"."
+    },
+    {
+      "type": "paragraph",
+      "text": "The :hover selector is used to show the dropdown menu when the user moves the \nmouse over the dropdown button."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Dropdown Menu"
+    },
+    {
+      "type": "paragraph",
+      "text": "Create a dropdown menu that allows the user to choose an option from a list:"
+    },
+    {
+      "type": "other",
+      "text": "Dropdown Menu\n  \n    Link 1\n    Link 2\n    Link 3"
+    },
+    {
+      "type": "paragraph",
+      "text": "This example is similar to the previous one, except that we add links inside the dropdown box and style them to fit a styled dropdown button:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<style>/* Style The Dropdown Button */.dropbtn {  \nbackground-color: #4CAF50;  color: white;  \npadding: 16px;  font-size: 16px;  \nborder: none;  cursor: pointer;}/* The \ncontainer <div> - needed to position the dropdown content */.dropdown {\n    position: relative;  display: \ninline-block;}/* Dropdown Content (Hidden by Default) */\n.dropdown-content {  display: none;  position: \nabsolute;  background-color: #f9f9f9;  \nmin-width: 160px;  box-shadow: \n0px 8px 16px 0px rgba(0,0,0,0.2);  z-index: 1;}/* Links inside the dropdown */\n.dropdown-content a {  color: black;  padding: 12px 16px;  text-decoration: none;\n    \ndisplay: block;}/* Change color of dropdown links on hover */\n.dropdown-content a:hover {background-color: #f1f1f1}/* Show the \ndropdown menu on hover */.dropdown:hover .dropdown-content {  \ndisplay: block;}/* Change the background color of the dropdown \nbutton when the dropdown content is shown */.dropdown:hover .dropbtn {  background-color: #3e8e41;}</style>\n<div class=\"dropdown\">  <button class=\"dropbtn\">Dropdown</button>  \n<div class=\"dropdown-content\">    <a href=\"#\">Link \n1</a>    \n<a href=\"#\">Link 2</a>    <a href=\"#\">Link 3</a>  </div></div>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Right-aligned Dropdown Content"
+    },
+    {
+      "type": "other",
+      "text": "Left\n  \n    Link 1\n    Link 2\n    Link 3"
+    },
+    {
+      "type": "other",
+      "text": "Right\n  \n    Link 1\n    Link 2\n    Link 3"
+    },
+    {
+      "type": "paragraph",
+      "text": "If you want the dropdown menu to go from right to left, instead of left to right, add right: 0;"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".dropdown-content {  right: 0;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "More Examples"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": []
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": []
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

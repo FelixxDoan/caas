@@ -1,0 +1,213 @@
+{
+  "url": "https://www.w3schools.com/css/css_float_examples.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Layout - Float Examples"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "This page contains common float examples."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Grid of Boxes / Equal Width Boxes"
+    },
+    {
+      "type": "other",
+      "text": "Box 1\n  \n  \n  Box 2"
+    },
+    {
+      "type": "other",
+      "text": "Box 1\n  \n  \n  Box 2\n \n  \n  Box 3"
+    },
+    {
+      "type": "paragraph",
+      "text": "With the float property, it is easy to float boxes of content side by side:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "* {  box-sizing: border-box;}.box {  float: left;  width: 33.33%; /* three \n  boxes (use 25% for four, and 50% for two, etc) */  padding: \n  50px; /* if you want space between the images */}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "What is box-sizing?\nYou can easily create three floating boxes side by side. However, when you add something that enlarges the width of each box (e.g. padding or borders), the box will break. The box-sizing property allows us to include the padding and border in the box's total width (and height), making sure that the padding stays inside of the box and that it does not break.\nYou can read more about the box-sizing property in our CSS Box Sizing Chapter."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Images Side By Side"
+    },
+    {
+      "type": "paragraph",
+      "text": "The grid of boxes can also be used to display images side by side:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".img-container {  float: left;  width: 33.33%; /* three \n  containers (use 25% for four, and 50% for two, etc) */  padding: \n  5px; /* if you want space between the images */}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Equal Height Boxes"
+    },
+    {
+      "type": "paragraph",
+      "text": "In the previous example, you learned how to float boxes side by side with an equal width. However, it is not easy to create floating boxes with equal heights. A quick fix \nhowever, is to set a fixed height, like in the example below:"
+    },
+    {
+      "type": "other",
+      "text": "Box 1\n  Some content, some content, some content\n  \n  \n  Box 2\n  Some content, some content, some content\n  Some content, some content, some content\n  Some content, some content, some content"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".box {  height: 500px;}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "However, this is not very flexible. It is ok if you can guarantee that the boxes will always have the same amount of content in them. \nBut many times, the content is not the same. If you try the example above on a mobile phone, you will see that the second \nbox's content will be displayed outside of the box. \nThis is where CSS3 Flexbox comes in handy - as it can automatically stretch \nboxes to be as long as the longest box:"
+    },
+    {
+      "type": "other",
+      "text": ".flex-container {\n  display: flex;\n  flex-wrap: nowrap;\n  background-color: DodgerBlue;\n}\n\n.flex-container > div {\n  background-color: #f1f1f1;\n  color:#000;\n  width: 50%;\n  margin: 10px;\n  text-align: center;\n  line-height: 50px;\n  font-size: 24px;\n}"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": []
+    },
+    {
+      "type": "other",
+      "text": "Tip:  You can read more about the Flexbox Layout Module in our CSS Flexbox Chapter."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Navigation Menu"
+    },
+    {
+      "type": "other",
+      "text": "ul.navbarmenu {\n    list-style-type: none;\n    margin: 0;\n    padding: 0;\n    overflow: hidden;\n    background-color: #333;\n}\n\nul.navbarmenu li {\n    float: left;\n}\n\nul.navbarmenu li a {\n    display: inline-block;\n    color: white;\n    text-align: center;\n    padding: 14px 16px;\n    text-decoration: none;\n}\n\nul.navbarmenu li a:hover {\n    background-color: #111;\n}\n\nul.navbarmenu li a.active {\n    background-color: red;\n}"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can also use float with a list of hyperlinks to create a horizontal menu:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": []
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Web Layout Example"
+    },
+    {
+      "type": "paragraph",
+      "text": "It is also common to do entire web layouts using the float property:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".header, .footer {  background-color: grey;  color: white;\n    padding: 15px;}.column {  float: left;  \n  padding: 15px;}.clearfix::after {  content: \n  \"\";  clear: both;  display: table;\n  }.menu {  \n  width: 25%;}.content {  width: 75%;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "More Examples"
+    },
+    {
+      "type": "paragraph",
+      "text": "An image with border and margins that floats to the right in a paragraph\nLet an image float to the right in a paragraph. Add border and margins to the image."
+    },
+    {
+      "type": "paragraph",
+      "text": "An image with a caption that floats to the right\nLet an image with a caption float to the right."
+    },
+    {
+      "type": "paragraph",
+      "text": "Let the first letter of a paragraph float to the left\nLet the first letter of a paragraph float to the left and style the letter."
+    },
+    {
+      "type": "paragraph",
+      "text": "Creating a website with float\nUse float to create a homepage with a navbar, header, footer, left content and main content."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "All CSS Float Properties"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Property",
+          "Description"
+        ],
+        [
+          "box-sizing",
+          "Defines how the width and height of an element are calculated: should they include padding and borders, or not"
+        ],
+        [
+          "clear",
+          "Specifies what should happen with the element that is next to a floating \n    element"
+        ],
+        [
+          "float",
+          "Specifies whether an element should float to the left, right, or not at \n    all"
+        ],
+        [
+          "overflow",
+          "Specifies what happens if content overflows an element's box"
+        ],
+        [
+          "overflow-x",
+          "Specifies what to do with the left/right edges of the content if it overflows the element's content area"
+        ],
+        [
+          "overflow-y",
+          "Specifies what to do with the top/bottom edges of the content if it overflows the element's content area"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

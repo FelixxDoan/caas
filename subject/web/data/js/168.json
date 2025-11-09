@@ -1,0 +1,536 @@
+{
+  "url": "https://www.w3schools.com/js/js_bitwise.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Bitwise Operations"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Bitwise Operators"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Operator",
+          "Name",
+          "Description"
+        ],
+        [
+          "&",
+          "AND",
+          "Sets each bit to 1 if both bits are 1"
+        ],
+        [
+          "|",
+          "OR",
+          "Sets each bit to 1 if one of two bits is 1"
+        ],
+        [
+          "^",
+          "XOR",
+          "Sets each bit to 1 if only one of two bits is 1"
+        ],
+        [
+          "~",
+          "NOT",
+          "Inverts all the bits"
+        ],
+        [
+          "<<",
+          "Zero fill left shift",
+          "Shifts left by pushing zeros in from the right and let the leftmost bits fall off"
+        ],
+        [
+          ">>",
+          "Signed right shift",
+          "Shifts right by pushing copies of the leftmost bit in from the left, and let the rightmost bits \nfall off"
+        ],
+        [
+          ">>>",
+          "Zero fill right shift",
+          "Shifts right by pushing zeros in from the left, and let the rightmost bits fall off"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Examples"
+    },
+    {
+      "type": "other",
+      "text": "Operation\nResult\nSame as\nResult\n\n\n5 & 1\n1\n0101 & 0001\n 0001\n\n\n5 | 1\n5\n0101 | 0001\n 0101\n\n\n~ 5\n10\n ~0101\n 1010\n\n\n5 << 1\n10\n0101 << 1\n 1010\n\n\n5 ^ 1\n4\n0101 ^ 0001\n 0100\n\n\n5 >> 1\n2\n0101 >> 1\n 0010\n\n\n5 >>> 1\n2\n0101 >>> 1\n 0010"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Uses 32 bits Bitwise Operands"
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript stores numbers as 64 bits floating point numbers, but all bitwise \noperations are performed on 32 bits binary numbers."
+    },
+    {
+      "type": "paragraph",
+      "text": "Before a bitwise operation is performed, JavaScript converts numbers to 32 bits \nsigned integers."
+    },
+    {
+      "type": "paragraph",
+      "text": "After the bitwise operation is performed, the result is converted back to 64 bits JavaScript \nnumbers."
+    },
+    {
+      "type": "other",
+      "text": "The examples above uses 4 bits unsigned binary numbers. Because of this ~ 5 returns 10.\nSince JavaScript uses 32 bits signed integers, it will not return 10. It will return -6.\n00000000000000000000000000000101 (5)\n11111111111111111111111111111010 (~5 = -6)\nA signed integer uses the leftmost bit as the minus sign."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Bitwise AND"
+    },
+    {
+      "type": "paragraph",
+      "text": "When a bitwise AND is performed on a pair of bits, it returns 1 if both bits are 1."
+    },
+    {
+      "type": "other",
+      "text": "One bit example:\n\n  OperationResult\n  0 & 00\n  0 & 10\n  1 & 00\n  1 & 11\n\n\n\n4 bits example:\n\n  OperationResult\n  1111 & 00000000\n  1111 & 00010001\n  1111 & 00100010\n  1111 & 01000100"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Bitwise OR"
+    },
+    {
+      "type": "paragraph",
+      "text": "When a bitwise OR is performed on a pair of bits, it returns 1 if one of the bits is 1:"
+    },
+    {
+      "type": "other",
+      "text": "One bit example:\n\n  OperationResult\n  0 | 00\n  0 | 11 \n  1 | 01\n  1 | 11\n\n\n\n4 bits example:\n\n  OperationResult\n  1111 | 00001111\n  1111 | 00011111\n  1111 | 00101111\n  1111 | 01001111"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Bitwise XOR"
+    },
+    {
+      "type": "paragraph",
+      "text": "When a bitwise XOR is performed on a pair of bits, it returns 1 if the bits are different:"
+    },
+    {
+      "type": "other",
+      "text": "One bit example:\n\n  OperationResult\n  0 ^ 00\n  0 ^ 11 \n  1 ^ 01\n  1 ^ 10 \n\n\n\n4 bits example:\n\n  OperationResult\n  1111 ^ 00001111\n  1111 ^ 00011110\n  1111 ^ 00101101\n  1111 ^ 01001011"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Bitwise AND (&)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Bitwise AND returns 1 only if both bits are 1:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Decimal",
+          "Binary"
+        ],
+        [
+          "5",
+          "00000000000000000000000000000101"
+        ],
+        [
+          "1",
+          "00000000000000000000000000000001"
+        ],
+        [
+          "5 & 1",
+          "00000000000000000000000000000001 (1)"
+        ]
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 5 & 1;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Bitwise OR (|)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Bitwise OR returns 1 if one of the bits is 1:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Decimal",
+          "Binary"
+        ],
+        [
+          "5",
+          "00000000000000000000000000000101"
+        ],
+        [
+          "1",
+          "00000000000000000000000000000001"
+        ],
+        [
+          "5 | 1",
+          "00000000000000000000000000000101 (5)"
+        ]
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 5 | 1;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Bitwise XOR (^)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Bitwise XOR returns 1 if the bits are different:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Decimal",
+          "Binary"
+        ],
+        [
+          "5",
+          "00000000000000000000000000000101"
+        ],
+        [
+          "1",
+          "00000000000000000000000000000001"
+        ],
+        [
+          "5 ^ 1",
+          "00000000000000000000000000000100 (4)"
+        ]
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 5 ^ 1;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Bitwise NOT (~)"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Decimal",
+          "Binary"
+        ],
+        [
+          "5",
+          "00000000000000000000000000000101"
+        ],
+        [
+          "~5",
+          "11111111111111111111111111111010 (-6)"
+        ]
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = ~5;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript (Zero Fill) Bitwise Left Shift (<<)"
+    },
+    {
+      "type": "paragraph",
+      "text": "This is a zero fill left shift. One or more zero bits are pushed in from the right,\nand the leftmost bits fall off:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Decimal",
+          "Binary"
+        ],
+        [
+          "5",
+          "00000000000000000000000000000101"
+        ],
+        [
+          "5 << 1",
+          "00000000000000000000000000001010 (10)"
+        ]
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 5 << 1;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript (Sign Preserving) Bitwise Right Shift (>>)"
+    },
+    {
+      "type": "paragraph",
+      "text": "This is a sign preserving right shift. Copies of the leftmost bit are pushed \nin from the left, and the rightmost bits fall off:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Decimal",
+          "Binary"
+        ],
+        [
+          "-5",
+          "11111111111111111111111111111011"
+        ],
+        [
+          "-5 >> 1",
+          "11111111111111111111111111111101 (-3)"
+        ]
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = -5 >> 1;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript (Zero Fill) Right Shift (>>>)"
+    },
+    {
+      "type": "paragraph",
+      "text": "This is a zero fill right shift. One or more zero bits are pushed in from the left,\nand the rightmost bits fall off:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Decimal",
+          "Binary"
+        ],
+        [
+          "5",
+          "00000000000000000000000000000101"
+        ],
+        [
+          "5 >>> 1",
+          "00000000000000000000000000000010 (2)"
+        ]
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 5 >>> 1;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Binary Numbers"
+    },
+    {
+      "type": "paragraph",
+      "text": "Binary numbers with only one bit set are easy to understand:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Binary Representation",
+          "Decimal value"
+        ],
+        [
+          "00000000000000000000000000000001",
+          "1"
+        ],
+        [
+          "00000000000000000000000000000010",
+          "2"
+        ],
+        [
+          "00000000000000000000000000000100",
+          "4"
+        ],
+        [
+          "00000000000000000000000000001000",
+          "8"
+        ],
+        [
+          "00000000000000000000000000010000",
+          "16"
+        ],
+        [
+          "00000000000000000000000000100000",
+          "32"
+        ],
+        [
+          "00000000000000000000000001000000",
+          "64"
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Setting a few more bits reveals the binary pattern:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Binary Representation",
+          "Decimal value"
+        ],
+        [
+          "00000000000000000000000000000101",
+          "5 (4 + 1)"
+        ],
+        [
+          "00000000000000000000000000001101",
+          "13 (8 + 4 + 1)"
+        ],
+        [
+          "00000000000000000000000000101101",
+          "45 (32 + 8 + 4 + 1)"
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript binary numbers are stored in two's complement format."
+    },
+    {
+      "type": "paragraph",
+      "text": "This means that a negative number is the bitwise NOT of the number plus 1:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Binary Representation",
+          "Decimal value"
+        ],
+        [
+          "00000000000000000000000000000101",
+          "5"
+        ],
+        [
+          "11111111111111111111111111111011",
+          "-5"
+        ],
+        [
+          "00000000000000000000000000000110",
+          "6"
+        ],
+        [
+          "11111111111111111111111111111010",
+          "-6"
+        ],
+        [
+          "00000000000000000000000000101000",
+          "40"
+        ],
+        [
+          "11111111111111111111111111011000",
+          "-40"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Joke:\nThere are only 10 types of people in the world: those who understand binary and those who don't."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Converting Decimal to Binary"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "function dec2bin(dec){\n  return (dec >>> 0).toString(2);\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Converting Binary to Decimal"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "function bin2dec(bin){\n    return parseInt(bin, 2).toString(10);\n}"
+        }
+      ]
+    }
+  ]
+}

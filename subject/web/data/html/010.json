@@ -1,0 +1,226 @@
+{
+  "url": "https://www.w3schools.com/html/html_accessibility.asp",
+  "title": "HTML ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "HTML Accessibility"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nHTML Reference ❯"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML Accessibility"
+    },
+    {
+      "type": "paragraph",
+      "text": "Always write HTML code with accessibility in mind!"
+    },
+    {
+      "type": "paragraph",
+      "text": "Provide the user a good way to navigate and interact with your site. Make your HTML code \nas semantic as possible."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Semantic HTML"
+    },
+    {
+      "type": "paragraph",
+      "text": "Semantic HTML means using correct HTML elements for their correct purpose as \nmuch as possible. Semantic elements are elements with a meaning; if you need a button, use the <button> element (and not a \n<div> element)."
+    },
+    {
+      "type": "other",
+      "text": "Semantic\n\n  <button>Report an Error</button>\nTry it Yourself »\n\n\n\n\n\nNon-semantic\n\n  <div>Report an Error</div>\nTry it Yourself »"
+    },
+    {
+      "type": "paragraph",
+      "text": "Semantic HTML gives context to screen readers, which read the contents of a page out loud."
+    },
+    {
+      "type": "paragraph",
+      "text": "With the button example in mind:"
+    },
+    {
+      "type": "other",
+      "text": "buttons have more suitable styling by default\n  a screen reader identifies it as a button\n  focusable\n  clickable"
+    },
+    {
+      "type": "paragraph",
+      "text": "A button is also accessible for people relying on keyboard-only navigation; \nit can be clickable with both mouse and keys, and it can be tabbed between \n(using the tab key on the keyboard)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples of non-semantic elements: <div> and <span> - Tells nothing about its content."
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples of semantic elements: <form>, <table>, and <article> - Clearly defines its content."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Headings Are Important"
+    },
+    {
+      "type": "paragraph",
+      "text": "Headings are defined with the <h1> to <h6> tags:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<h1>Heading 1</h1>\n<h2>Heading 2</h2>\n<h3>Heading 3</h3><h4>Heading 4</h4><h5>Heading 5</h5><h6>Heading 6</h6>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Search engines use the headings to index the structure and content of your web pages."
+    },
+    {
+      "type": "paragraph",
+      "text": "Users skim your pages by its headings. It is important to use headings to \nshow the document structure and the relationships between different sections."
+    },
+    {
+      "type": "paragraph",
+      "text": "Screen readers also use headings as a navigational \ntool. The different types of heading specify the outline of the page.\n<h1> headings should be used for main headings, followed by <h2> headings, then the less important \n<h3>, and so on."
+    },
+    {
+      "type": "other",
+      "text": "Note: Use HTML headings for headings only. Don't use headings to make text \n  BIG or bold."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Alternative Text"
+    },
+    {
+      "type": "paragraph",
+      "text": "The alt attribute provides an alternate text for an image, if the user for \nsome reason cannot view it (because of slow connection, an error in the \nsrc \nattribute, or if the user uses a screen reader)."
+    },
+    {
+      "type": "paragraph",
+      "text": "The value of the alt attribute should describe the image:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<img src=\"img_chania.jpg\" alt=\"A narrow city street with flowers in Chania\">"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "If a browser cannot find an image, it will display the value of the alt \nattribute:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<img src=\"wrongname.gif\" alt=\"A narrow city street with flowers in Chania\">"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Declare the Language"
+    },
+    {
+      "type": "paragraph",
+      "text": "You should always include the lang \nattribute inside the <html> tag, to declare the \nlanguage of the Web page. This is meant to assist search engines and browsers."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following example specifies English as the language:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<!DOCTYPE html><html lang=\"en\"><body>\n ...</body></html>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Use Clear Language"
+    },
+    {
+      "type": "paragraph",
+      "text": "Always use a clear language, that is easy to understand. Also try to avoid characters that \ncannot be read clearly by a screen reader. For example:"
+    },
+    {
+      "type": "other",
+      "text": "Keep sentences as short as possible\n  Avoid dashes. Instead of writing 1-3, write 1 to 3\n  Avoid abbreviations. Instead of writing Feb, write February\n  Avoid slang words"
+    },
+    {
+      "type": "other",
+      "text": ".x a:focus,.x a:active.x a:visited {\n  background-color: white !important;\n}"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Create Good Link Text"
+    },
+    {
+      "type": "paragraph",
+      "text": "A link text should explain clearly what information the reader will get by clicking on that link."
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples of good and bad links:"
+    },
+    {
+      "type": "other",
+      "text": "Good\n\nFind out more about the HTML language\nRead more about how to eat healthy\nBuy tickets to Mars here\n\n\nTry it Yourself »\n\n\n\n\n\nBad\n\nClick here\nRead more..\nBuy tickets to Mars here\n\n\nTry it Yourself »"
+    },
+    {
+      "type": "other",
+      "text": "Note: This page is an introduction in web accessibility. Visit our Accessibility Tutorial for more details."
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nHTML Reference ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "buttons have more suitable styling by default",
+        "a screen reader identifies it as a button",
+        "focusable",
+        "clickable"
+      ]
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Keep sentences as short as possible",
+        "Avoid dashes. Instead of writing 1-3, write 1 to 3",
+        "Avoid abbreviations. Instead of writing Feb, write February",
+        "Avoid slang words"
+      ]
+    }
+  ]
+}

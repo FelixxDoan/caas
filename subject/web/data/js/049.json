@@ -1,0 +1,239 @@
+{
+  "url": "https://www.w3schools.com/js/js_api_geolocation.asp",
+  "title": "Web Geolocation API",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Web Geolocation API"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Locate the User's Position"
+    },
+    {
+      "type": "paragraph",
+      "text": "The HTML Geolocation API is used to get the geographical position of a user."
+    },
+    {
+      "type": "paragraph",
+      "text": "Since this can compromise privacy, the position is not available unless the user approves it."
+    },
+    {
+      "type": "paragraph",
+      "text": "Try It"
+    },
+    {
+      "type": "other",
+      "text": "let x=document.getElementById(\"demo\");\nfunction getLocation()\n  {\n  if (navigator.geolocation)\n    {\n    navigator.geolocation.getCurrentPosition(showPosition,showError);\n    }\n  else{x.innerHTML=\"Geolocation is not supported by this browser.\";}\n  }\n\nfunction showPosition(position)\n  {\n  let lat=position.coords.latitude;\n  let lon=position.coords.longitude;\n  let latlon=new google.maps.LatLng(lat, lon)\n  let mapholder=document.getElementById('mapholder')\n  mapholder.style.height='250px';\n  mapholder.style.width='100%';\n\n  let myOptions={\n  center:latlon,zoom:14,\n  mapTypeId:google.maps.MapTypeId.ROADMAP,\n  mapTypeControl:false,\n  navigationControlOptions:{style:google.maps.NavigationControlStyle.SMALL}\n  };\n  let map=new google.maps.Map(document.getElementById(\"mapholder\"),myOptions);\n  let marker=new google.maps.Marker({position:latlon,map:map,title:\"You are here!\"});\n  }\n\nfunction showError(error)\n  {\n  switch(error.code) \n    {\n    case error.PERMISSION_DENIED:\n      x.innerHTML=\"User denied the request for Geolocation.\"\n      break;\n    case error.POSITION_UNAVAILABLE:\n      x.innerHTML=\"Location information is unavailable.\"\n      break;\n    case error.TIMEOUT:\n      x.innerHTML=\"The request to get user location timed out.\"\n      break;\n    case error.UNKNOWN_ERROR:\n      x.innerHTML=\"An unknown error occurred.\"\n      break;\n    }\n  }"
+    },
+    {
+      "type": "other",
+      "text": "Note\nGeolocation is most accurate for devices with GPS, like smartphones."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Browser Support"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Geolocation API is supported in all browsers:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Yes",
+          "Yes",
+          "Yes",
+          "Yes",
+          "Yes"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\nThe Geolocation API will only work on secure contexts such \nas HTTPS.\nIf your site is hosted on a non-secure origin (such as HTTP) the \nrequests to get the users location will no longer function."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Using the Geolocation API"
+    },
+    {
+      "type": "paragraph",
+      "text": "The getCurrentPosition() method is used to return the user's position."
+    },
+    {
+      "type": "paragraph",
+      "text": "The example below returns the latitude and longitude of the user's position:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<script>const x = document.getElementById(\"demo\");function getLocation() {  if (navigator.geolocation) {\n      navigator.geolocation.getCurrentPosition(showPosition);  } else {\n      x.innerHTML = \"Geolocation is not supported by this browser.\";\n    }}\n function showPosition(position) {  x.innerHTML = \"Latitude: \" + position.coords.latitude +   \"<br>Longitude: \" + position.coords.longitude; \n }</script>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Example explained:"
+    },
+    {
+      "type": "other",
+      "text": "Check if Geolocation is supported\n  If supported, run the getCurrentPosition() method. If not, display a message to the user\n  If the getCurrentPosition() method is successful, it returns a coordinates object to the function specified in the parameter (showPosition)\n  The showPosition() function outputs the Latitude and Longitude"
+    },
+    {
+      "type": "paragraph",
+      "text": "The example above is a very basic Geolocation script, with no error handling."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Handling Errors and Rejections"
+    },
+    {
+      "type": "paragraph",
+      "text": "The second parameter of the getCurrentPosition() method is used to handle \nerrors. It specifies a function to run if it fails to get the user's location:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "function showError(error) {  switch(error.code) {    case error.PERMISSION_DENIED:\n        x.innerHTML = \"User denied the request for Geolocation.\"\n        break;    case error.POSITION_UNAVAILABLE:\n        x.innerHTML = \"Location information is unavailable.\"      break;    case error.TIMEOUT:\n        x.innerHTML = \"The request to get user location timed out.\"\n        break;    case error.UNKNOWN_ERROR:      x.innerHTML = \"An unknown error occurred.\"      break;\n    }\n }"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Displaying the Result in a Map"
+    },
+    {
+      "type": "paragraph",
+      "text": "To display the result in a map, you need access to a map service, like Google \nMaps."
+    },
+    {
+      "type": "paragraph",
+      "text": "In the example below, the returned latitude and longitude is used to show the location in a Google \nMap (using a static image):"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "function showPosition(position) {  let latlon = position.coords.latitude + \",\" + position.coords.longitude;\n   let img_url = \"https://maps.googleapis.com/maps/api/staticmap?center=\n   \"+latlon+\"&zoom=14&size=400x300&sensor=false&key=YOUR_KEY\";\n   document.getElementById(\"mapholder\").innerHTML = \"<img src='\"+img_url+\"'>\";\n }"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Location-specific Information"
+    },
+    {
+      "type": "paragraph",
+      "text": "This page has demonstrated how to show a user's position on a map."
+    },
+    {
+      "type": "paragraph",
+      "text": "Geolocation is also very useful for location-specific information, like:"
+    },
+    {
+      "type": "other",
+      "text": "Up-to-date local information\n  Showing Points-of-interest near the user\n  Turn-by-turn navigation (GPS)"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The getCurrentPosition() Method - Return Data"
+    },
+    {
+      "type": "paragraph",
+      "text": "The getCurrentPosition() method returns an object on success. The latitude, \nlongitude and accuracy properties are always returned. The other properties are returned \nif available:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Property",
+          "Returns"
+        ],
+        [
+          "coords.latitude",
+          "The latitude as a decimal number (always returned)"
+        ],
+        [
+          "coords.longitude",
+          "The longitude as a decimal number (always returned)"
+        ],
+        [
+          "coords.accuracy",
+          "The accuracy of position (always returned)"
+        ],
+        [
+          "coords.altitude",
+          "The altitude in meters above the mean sea level (returned if available)"
+        ],
+        [
+          "coords.altitudeAccuracy",
+          "The altitude accuracy of position (returned if available)"
+        ],
+        [
+          "coords.heading",
+          "The heading as degrees clockwise from North (returned if available)"
+        ],
+        [
+          "coords.speed",
+          "The speed in meters per second (returned if available)"
+        ],
+        [
+          "timestamp",
+          "The date/time of the response (returned if available)"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Geolocation Object - Other interesting Methods"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Geolocation object also has other interesting methods:"
+    },
+    {
+      "type": "other",
+      "text": "watchPosition() - Returns the current position of the user and continues to \nreturn updated position as the user moves (like the GPS in a car).\n  clearWatch() - Stops the watchPosition() method."
+    },
+    {
+      "type": "paragraph",
+      "text": "The example below shows the watchPosition() method. You need an accurate GPS device to test this (like \nsmartphone):"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<script>const x = document.getElementById(\"demo\");function getLocation() {\n    if (navigator.geolocation) {    navigator.geolocation.watchPosition(showPosition);  } else {\n      x.innerHTML = \"Geolocation is not supported by this browser.\";\n    }}\n function showPosition(position) {  x.innerHTML = \"Latitude: \" + position.coords.latitude +   \"<br>Longitude: \" + position.coords.longitude; \n }</script>"
+        }
+      ]
+    }
+  ]
+}

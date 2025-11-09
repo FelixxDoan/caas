@@ -1,0 +1,965 @@
+{
+  "url": "https://www.w3schools.com/js/js_string_methods.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript String Methods"
+    },
+    {
+      "type": "other",
+      "text": "Basic String Methods\nJavascript strings are primitive and immutable:\nAll string methods produce a new string without altering the original string.\n\n\n\n\nString length\nString charAt()\nString charCodeAt()\nString codePointAt()\nString concat()\nString at()\nString [ ]\nString slice()\nString substring()\nString substr()\nString toUpperCase()\nString toLowerCase()\n\n\nString isWellFormed()\nString toWellFormed()\nString trim()\nString trimStart()\nString trimEnd()\nString padStart()\nString padEnd()\nString repeat()\nString replace()\nString replaceAll()\nString split()"
+    },
+    {
+      "type": "other",
+      "text": "See Also:\nString Tutorial\nString Search\nString Templates\nString Reference"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript String Length"
+    },
+    {
+      "type": "paragraph",
+      "text": "The length property returns the length of a string:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"ABCDEFGHIJKLMNOPQRSTUVWXYZ\";\nlet length = text.length;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Extracting String Characters"
+    },
+    {
+      "type": "paragraph",
+      "text": "There are 4 methods for extracting string characters:"
+    },
+    {
+      "type": "other",
+      "text": "The at(position) Method\n  The charAt(position) Method\n  The charCodeAt(position) Method\n  Using property access [] like in arrays"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript String charAt()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The charAt() method returns the character at a specified \nindex (position) in a string:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"HELLO WORLD\";\nlet char = text.charAt(0);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript String charCodeAt()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The charCodeAt() method returns the code of the character \nat a specified index in a string:"
+    },
+    {
+      "type": "paragraph",
+      "text": "The method returns a UTF-16 code (an integer between 0 and 65535)."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"HELLO WORLD\";\nlet char = text.charCodeAt(0);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript codePointAt()"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"HELLO WORLD\";\nlet code = text.codePointAt(0);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript String at()"
+    },
+    {
+      "type": "paragraph",
+      "text": "ES2022 introduced the string method at():"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const name = \"W3Schools\";\nlet letter = name.at(2);"
+        },
+        {
+          "language": "unknown",
+          "code": "const name = \"W3Schools\";\nlet letter = name[2];"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The at() method returns the character at a specified index (position) in a string."
+    },
+    {
+      "type": "paragraph",
+      "text": "The at() method is supported in all modern browsers since March 2022:"
+    },
+    {
+      "type": "other",
+      "text": "Note\nThe at() method is a new addition to JavaScript.\nIt allows the use of negative indexes while charAt() do not.\nNow you can use myString.at(-2) instead of\ncharAt(myString.length-2)."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Browser Support"
+    },
+    {
+      "type": "paragraph",
+      "text": "at() is an ES2022 feature."
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript 2022 is supported in all modern browsers since March 2023:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Chrome 94",
+          "Edge 94",
+          "Firefox 93",
+          "Safari 16.4",
+          "Opera 79"
+        ],
+        [
+          "Sep 2021",
+          "Sep 2021",
+          "Oct 2021",
+          "Mar 2023",
+          "Oct 2021"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Property Access [ ]"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"HELLO WORLD\";\nlet char = text[0];"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\nProperty access might be a little unpredictable: \n\n  It makes strings look like arrays (but they are not)\n  If no character is found, [ ] returns undefined, while charAt() returns an empty string.\n  It is read only. str[0] = \"A\" gives no error (but does not work!)"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"HELLO WORLD\";\ntext[0] = \"A\";    // Gives no error, but does not work"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript String concat()"
+    },
+    {
+      "type": "paragraph",
+      "text": "concat() joins two or more strings:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text1 = \"Hello\";\nlet text2 = \"World\";\nlet text3 = text1.concat(\" \", text2);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The concat() method can be used instead of the plus operator. \nThese two lines do the same:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "text = \"Hello\" + \" \" + \"World!\";\ntext = \"Hello\".concat(\" \", \"World!\");"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\nAll string methods return a new string. They don't modify the original string.\nFormally said:Strings are immutable: Strings cannot be changed, only replaced."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Extracting String Parts"
+    },
+    {
+      "type": "paragraph",
+      "text": "There are 3 methods for extracting a part of a string:"
+    },
+    {
+      "type": "other",
+      "text": "slice(start, end)\n  substring(start, end)\n  substr(start, length)"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript String slice()"
+    },
+    {
+      "type": "paragraph",
+      "text": "slice() extracts a part of a string and returns the \nextracted part in a new string."
+    },
+    {
+      "type": "paragraph",
+      "text": "The method takes 2 parameters: start position, and end position (end not included)."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"Apple, Banana, Kiwi\";\nlet part = text.slice(7, 13);"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\nJavaScript counts positions from zero.\nFirst position is 0.\nSecond position is 1."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"Apple, Banana, Kiwi\";\nlet part = text.slice(7);"
+        },
+        {
+          "language": "unknown",
+          "code": "let text = \"Apple, Banana, Kiwi\";\nlet part = text.slice(-12);"
+        },
+        {
+          "language": "unknown",
+          "code": "let text = \"Apple, Banana, Kiwi\";\nlet part = text.slice(-12, -6);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript String substring()"
+    },
+    {
+      "type": "paragraph",
+      "text": "substring() is similar to slice()."
+    },
+    {
+      "type": "paragraph",
+      "text": "The difference is that start and end values less than 0 are treated as 0 in\nsubstring()."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let str = \"Apple, Banana, Kiwi\";\nlet part = str.substring(7, 13);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "If you omit the second parameter, substring() will slice out the rest of the \nstring."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript String substr()"
+    },
+    {
+      "type": "paragraph",
+      "text": "substr() is similar to slice()."
+    },
+    {
+      "type": "paragraph",
+      "text": "The difference is \nthat the second parameter specifies the length \nof the extracted part."
+    },
+    {
+      "type": "other",
+      "text": "Warning\nThe substr() method is removed (deprecated) in the latest JavaScript standard.\nUse substring() or slice() instead."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let str = \"Apple, Banana, Kiwi\";\nlet part = str.substr(7, 6);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "If you omit the second parameter, substr() will slice out the rest of the \nstring."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let str = \"Apple, Banana, Kiwi\";\nlet part = str.substr(7);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "If the first parameter is negative, the position counts from the end of the \nstring."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let str = \"Apple, Banana, Kiwi\";\nlet part = str.substr(-4);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Converting to Upper and Lower Case"
+    },
+    {
+      "type": "paragraph",
+      "text": "A string is converted to upper case with toUpperCase():"
+    },
+    {
+      "type": "paragraph",
+      "text": "A string is converted to lower case with toLowerCase():"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript String toUpperCase()"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text1 = \"Hello World!\";\nlet text2 = text1.toUpperCase();"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript String toLowerCase()"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text1 = \"Hello World!\";       // String\nlet text2 = text1.toLowerCase();  // text2 is text1 \nconverted to lower"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript String isWellFormed()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The isWellFormed() method returns true\nif a string is well formed."
+    },
+    {
+      "type": "paragraph",
+      "text": "Otherwise it returns false."
+    },
+    {
+      "type": "paragraph",
+      "text": "A string is not well formed if it contains lone surrogates."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"Hello world!\";\nlet result = text.isWellFormed();"
+        },
+        {
+          "language": "unknown",
+          "code": "let text = \"Hello World \\uD800\";\nlet result = text.isWellFormed();"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Lone Surrogates\nA lone surrogate is a Unicode surrogate code point that is not part of a valid surrogate pair\nused to represent characters in UTF-16 encoding."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript String toWellFormed()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The String method toWellFormed()\nreturns a new string where all \"lone surrogates\" are replaced with the Unicode replacement character (U+FFFD)."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"Hello World \\uD800\";\nlet result = text.toWellFormed();"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript String trim()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The trim() method removes whitespace from both sides of a string:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text1 = \"      Hello World!      \";\nlet text2 = text1.trim();"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript String trimStart()"
+    },
+    {
+      "type": "paragraph",
+      "text": "ECMAScript 2019 added the String method trimStart() to JavaScript."
+    },
+    {
+      "type": "paragraph",
+      "text": "The trimStart() method works like trim(), but removes whitespace only from the start of a string."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text1 = \"     Hello World!     \";\nlet text2 = text1.trimStart();"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript String trimStart() is supported in all modern browsers since January 2020:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome 66    \n    Edge 79\n    Firefox 61\n    Safari 12\n    Opera 50\n  \n  \n    Apr 2018\n    Jan 2020    \n    Jun 2018\n    Sep 2018\n    May 2018"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript String trimEnd()"
+    },
+    {
+      "type": "paragraph",
+      "text": "ECMAScript 2019 added the string method trimEnd() to JavaScript."
+    },
+    {
+      "type": "paragraph",
+      "text": "The trimEnd() method works like trim(), but removes whitespace only from the end of a string."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text1 = \"     Hello World!     \";\nlet text2 = text1.trimEnd();"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript String trimEnd() is supported in all modern browsers since January 2020:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome 66    \n    Edge 79\n    Firefox 61\n    Safari 12\n    Opera 50\n  \n  \n    Apr 2018\n    Jan 2020    \n    Jun 2018\n    Sep 2018\n    May 2018"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript String Padding"
+    },
+    {
+      "type": "paragraph",
+      "text": "ECMAScript 2017 added two new string methods to JavaScript: padStart()\nand padEnd() to support padding at the beginning and at the end of a string."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript String padStart()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The padStart() method pads a string from the start."
+    },
+    {
+      "type": "paragraph",
+      "text": "It pads a string with another string (multiple times) until it reaches a given length."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"5\";\nlet padded = text.padStart(4,\"0\");"
+        },
+        {
+          "language": "unknown",
+          "code": "let text = \"5\";\nlet padded = text.padStart(4,\"x\");"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\nThe padStart() method is a string method. \nTo pad a number, convert the number to a string first.\nSee the example below."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let numb = 5;\nlet text = numb.toString();\nlet padded = text.padStart(4,\"0\");"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Browser Support"
+    },
+    {
+      "type": "paragraph",
+      "text": "padStart() is an ECMAScript 2017 feature."
+    },
+    {
+      "type": "paragraph",
+      "text": "ES2017 is supported in all modern browsers since September 2017:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome 58\n    Edge 15\n    Firefox 52\n    Safari 11\n    Opera 45\n  \n  \n    Apr 2017\n    Apr 2017\n    Mar 2017\n    Sep 2017\n    May 2017"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript String padEnd()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The padEnd() method pads a string from the end."
+    },
+    {
+      "type": "paragraph",
+      "text": "It pads a string with another string (multiple times) until it reaches a given length."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"5\";\nlet padded = text.padEnd(4,\"0\");"
+        },
+        {
+          "language": "unknown",
+          "code": "let text = \"5\";\nlet padded = text.padEnd(4,\"x\");"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\nThe padEnd() method is a string method. \nTo pad a number, convert the number to a string first.\nSee the example below."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let numb = 5;\nlet text = numb.toString();\nlet padded = text.padEnd(4,\"0\");"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Browser Support"
+    },
+    {
+      "type": "paragraph",
+      "text": "padEnd() is an ECMAScript 2017 feature."
+    },
+    {
+      "type": "paragraph",
+      "text": "ES2017 is supported in all modern browsers since September 2017:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome 58\n    Edge 15\n    Firefox 52\n    Safari 11\n    Opera 45\n  \n  \n    Apr 2017\n    Apr 2017\n    Mar 2017\n    Sep 2017\n    May 2017"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript String repeat()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The repeat() method returns a string with a number of copies of a string."
+    },
+    {
+      "type": "paragraph",
+      "text": "The repeat() method returns a new string."
+    },
+    {
+      "type": "paragraph",
+      "text": "The repeat() method does not change the original string."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"Hello world!\";\nlet result = text.repeat(2);"
+        },
+        {
+          "language": "unknown",
+          "code": "let text = \"Hello world!\";\nlet result = text.repeat(4);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Syntax"
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "string.repeat(count)"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Parameters"
+    },
+    {
+      "type": "table",
+      "data": [
+        [],
+        [
+          "Parameter",
+          "Description"
+        ],
+        [
+          "count",
+          "Required.\nThe number of copies wanted."
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Return Value"
+    },
+    {
+      "type": "table",
+      "data": [
+        [],
+        [
+          "Type",
+          "Description"
+        ],
+        [
+          "String",
+          "A new string containing the copies."
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Browser Support"
+    },
+    {
+      "type": "paragraph",
+      "text": "repeat() is an ES6  feature."
+    },
+    {
+      "type": "paragraph",
+      "text": "ES6 is fully supported in all modern browsers since June 2017:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome51\n    Edge15\n    Firefox54\n    Safari10\n    Opera38\n  \n  \n    May 2016\n    Apr 2017\n    Jun 2017\n    Sep 2016\n    Jun 2016"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Replacing String Content"
+    },
+    {
+      "type": "paragraph",
+      "text": "The replace() method replaces a specified value with another \nvalue in a string:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"Please visit Microsoft!\";\nlet newText = text.replace(\"Microsoft\", \"W3Schools\");"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\nThe replace() method does not change the string it is called on.\nThe replace() method returns a new string.\nThe replace() method replaces only the first match\nIf you want to replace all matches, use a regular expression with the /g flag set. See examples below."
+    },
+    {
+      "type": "paragraph",
+      "text": "By default, the replace() method replaces only the first match:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"Please visit Microsoft and Microsoft!\";\nlet newText = text.replace(\"Microsoft\", \"W3Schools\");"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "By default, the replace() method is case sensitive. Writing MICROSOFT (with \nupper-case) will not work:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"Please visit Microsoft!\";\nlet newText = text.replace(\"MICROSOFT\", \"W3Schools\");"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "To replace case insensitive, use a regular expression with an /i flag (insensitive):"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"Please visit Microsoft!\";\nlet newText = text.replace(/MICROSOFT/i, \"W3Schools\");"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\nRegular expressions are written without quotes."
+    },
+    {
+      "type": "paragraph",
+      "text": "To replace all matches, use a regular expression with a /g flag (global match):"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"Please visit Microsoft and Microsoft!\";\nlet newText = text.replace(/Microsoft/g, \"W3Schools\");"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\nYou will learn a lot more about regular expressions in the chapter JavaScript Regular \nExpressions."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript String ReplaceAll()"
+    },
+    {
+      "type": "paragraph",
+      "text": "In 2021, JavaScript introduced the string method replaceAll():"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "text = text.replaceAll(\"Cats\",\"Dogs\");\ntext = text.replaceAll(\"cats\",\"dogs\");"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The replaceAll() method allows you to specify a\nregular expression instead of a string to be replaced."
+    },
+    {
+      "type": "paragraph",
+      "text": "If the parameter is a regular expression, the global flag (g) must be set, otherwise\na TypeError is thrown."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "text = text.replaceAll(/Cats/g,\"Dogs\");\ntext = text.replaceAll(/cats/g,\"dogs\");"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\nreplaceAll() is an ES2021 feature.\nreplaceAll() does not work in Internet Explorer."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Converting a String to an Array"
+    },
+    {
+      "type": "other",
+      "text": "If you want to work with a string as an array, you can convert it to an array."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript String split()"
+    },
+    {
+      "type": "paragraph",
+      "text": "A string can be converted to an array with the split() method:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "text.split(\",\")    // Split on commas\ntext.split(\" \")    // Split on spaces\ntext.split(\"|\")    // Split on pipe"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "If the separator is omitted, the returned array will contain the whole string \nin index [0]."
+    },
+    {
+      "type": "paragraph",
+      "text": "If the separator is \"\", the returned array will be an array of single \ncharacters:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "text.split(\"\")"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Complete JavaScript Reference\nFor a complete reference to all JavaScript properties and methods, with full descriptions and many examples, go to:\nW3Schools' Full JavaScript Reference.\nThe reference inludes all JavaScript updates from 1999 to 2025."
+    }
+  ]
+}

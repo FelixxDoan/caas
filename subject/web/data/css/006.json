@@ -1,0 +1,78 @@
+{
+  "url": "https://www.w3schools.com/css/css_border.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Borders"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "The CSS border properties allow you to specify the style, \nwidth, and color of an element's border."
+    },
+    {
+      "type": "other",
+      "text": "I have borders on all sides."
+    },
+    {
+      "type": "other",
+      "text": "I have a red bottom border."
+    },
+    {
+      "type": "other",
+      "text": "I have rounded borders."
+    },
+    {
+      "type": "other",
+      "text": "I have a blue left border."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CSS Border Style"
+    },
+    {
+      "type": "paragraph",
+      "text": "The border-style property specifies what kind of border to display."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following values are allowed:"
+    },
+    {
+      "type": "other",
+      "text": "dotted - Defines a dotted border\ndashed - Defines a dashed border\nsolid - Defines a solid border\ndouble - Defines a double border\ngroove - Defines a 3D grooved border. The effect depends on the border-color value\nridge - Defines a 3D ridged border. The effect depends on the border-color value\ninset - Defines a 3D inset border. The effect depends on the border-color value\noutset - Defines a 3D outset border. The effect depends on the border-color value\nnone - Defines no border\nhidden - Defines a hidden border"
+    },
+    {
+      "type": "paragraph",
+      "text": "The border-style property can have from one to four values (for \nthe top border, right border, bottom border, and the left border)."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "p.dotted {border-style: dotted;}p.dashed \n{border-style: dashed;}p.solid {border-style: solid;}p.double \n{border-style: double;}p.groove {border-style: groove;}p.ridge \n{border-style: ridge;}p.inset {border-style: inset;}p.outset \n{border-style: outset;}p.none {border-style: none;}p.hidden {border-style: hidden;}\np.mix {border-style: dotted dashed solid double;}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note: None of the OTHER CSS border properties (which you will learn more about in the next chapters) will have ANY effect unless the \nborder-style property is set!"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

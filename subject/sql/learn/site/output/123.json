@@ -1,0 +1,74 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_ref_order_by.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL ORDER BY Keyword"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "text": "ORDER BY"
+    },
+    {
+      "type": "paragraph",
+      "text": "The ORDER BY command is used to sort the result set in ascending or descending order."
+    },
+    {
+      "type": "paragraph",
+      "text": "The ORDER BY command sorts the result set in \nascending order by default. To sort the records in descending order, use the \nDESC keyword."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement selects all the columns from the \"Customers\" \ntable, sorted by the \"CustomerName\" column:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n SELECT * FROM CustomersORDER BY CustomerName;\n\n Try it Yourself »"
+    },
+    {
+      "type": "heading",
+      "text": "ASC"
+    },
+    {
+      "type": "paragraph",
+      "text": "The ASC command is used to sort the data \nreturned in ascending order."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement selects all the columns from the \"Customers\" \ntable, sorted by the \"CustomerName\" column:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n SELECT * FROM CustomersORDER BY CustomerName ASC;\n\n Try it Yourself »"
+    },
+    {
+      "type": "heading",
+      "text": "DESC"
+    },
+    {
+      "type": "paragraph",
+      "text": "The DESC command is used to sort the data \nreturned in descending order."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement selects all the columns from the \"Customers\" \ntable, sorted descending by the \"CustomerName\" column:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n SELECT * FROM CustomersORDER BY CustomerName DESC;\n\n Try it Yourself »"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "url": "https://www.w3schools.com/css/css_table_size.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Table Size"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Table Width and Height"
+    },
+    {
+      "type": "paragraph",
+      "text": "The width and height of a table are defined by the width and height properties."
+    },
+    {
+      "type": "paragraph",
+      "text": "The example below sets the width of the table to 100%, and the height of the \n<th> elements to 70px:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Firstname",
+          "Lastname",
+          "Savings"
+        ],
+        [
+          "Peter",
+          "Griffin",
+          "$100"
+        ],
+        [
+          "Lois",
+          "Griffin",
+          "$150"
+        ],
+        [
+          "Joe",
+          "Swanson",
+          "$300"
+        ]
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "table \n{\n  width: 100%;\n}\nth\n{\n  height: 70px;\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "To create a table that should only span half the page, use width: 50%:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Firstname",
+          "Lastname",
+          "Savings"
+        ],
+        [
+          "Peter",
+          "Griffin",
+          "$100"
+        ],
+        [
+          "Lois",
+          "Griffin",
+          "$150"
+        ],
+        [
+          "Joe",
+          "Swanson",
+          "$300"
+        ]
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "table \n{\n  width: 50%;\n}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

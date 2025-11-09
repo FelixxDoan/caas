@@ -1,0 +1,104 @@
+{
+  "url": "https://www.w3schools.com/js/js_ajax_applications.asp",
+  "title": "XML",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "XML Applications"
+    },
+    {
+      "type": "paragraph",
+      "text": "This chapter demonstrates some HTML applications using \nXML, HTTP, DOM, and JavaScript."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The XML Document Used"
+    },
+    {
+      "type": "paragraph",
+      "text": "In this chapter we will use the XML file called \"cd_catalog.xml\"."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Display XML Data in an HTML Table"
+    },
+    {
+      "type": "paragraph",
+      "text": "This example loops through each <CD> element, and displays the values of the <ARTIST> and the \n<TITLE> elements in an HTML table:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<table id=\"demo\"></table>\n\n<script>\nfunction loadXMLDoc() {\n  const xhttp = new XMLHttpRequest();\n  xhttp.onload = function() {\n    const xmlDoc = xhttp.responseXML;\n    const cd = xmlDoc.getElementsByTagName(\"CD\");\n    myFunction(cd);\n  }\n  xhttp.open(\"GET\", \"cd_catalog.xml\");  \nxhttp.send();\n}\n\nfunction myFunction(cd) {\n  let table=\"<tr><th>Artist</th><th>Title</th></tr>\";\n  for (let i = 0; i < cd.length; i++) {\n    table += \"<tr><td>\" +    cd[i].getElementsByTagName(\"ARTIST\")[0].childNodes[0].nodeValue \n +    \"</td><td>\" +    cd[i].getElementsByTagName(\"TITLE\")[0].childNodes[0].nodeValue \n +    \"</td></tr>\";  }  \n document.getElementById(\"demo\").innerHTML = table;}</script>\n\n</body>\n</html>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "For more information about using JavaScript and the XML DOM, go to\nDOM Intro."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Display the First CD in an HTML div Element"
+    },
+    {
+      "type": "paragraph",
+      "text": "This example uses a function to display the first CD element in an HTML element with id=\"showCD\":"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const xhttp = new XMLHttpRequest();\nxhttp.onload = function() {\n  const xmlDoc = xhttp.responseXML;\n  const cd = xmlDoc.getElementsByTagName(\"CD\");\n  myFunction(cd, 0);\n}\nxhttp.open(\"GET\", \"cd_catalog.xml\");\nxhttp.send();\n\nfunction myFunction(cd, i) {\n\n  document.getElementById(\"showCD\").innerHTML =\n  \"Artist: \" +\n  cd[i].getElementsByTagName(\"ARTIST\")[0].childNodes[0].nodeValue +\n  \"<br>Title: \" +\n  cd[i].getElementsByTagName(\"TITLE\")[0].childNodes[0].nodeValue +\n  \"<br>Year: \" + \n  cd[i].getElementsByTagName(\"YEAR\")[0].childNodes[0].nodeValue;\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Navigate Between the CDs"
+    },
+    {
+      "type": "paragraph",
+      "text": "To navigate between the CDs in the example above, create a \nnext() and previous() function:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "function next()\n{  // display the next CD, unless you are on the last CD\n \nif (i < len-1) {\n    i++;\n    displayCD(i);\n  }\n}\n\nfunction previous()\n{  // display the previous CD, unless you are on the first CD \n \nif (i > 0) {\n    i--;\n    displayCD(i);\n  }\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Show Album Information When Clicking On a CD"
+    },
+    {
+      "type": "paragraph",
+      "text": "The last example shows how you can show album information when the user clicks on a CD:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "function displayCD(i) {\n  document.getElementById(\"showCD\").innerHTML =\n   \"Artist: \" +\n  cd[i].getElementsByTagName(\"ARTIST\")[0].childNodes[0].nodeValue +\n  \"<br>Title: \" +\n  cd[i].getElementsByTagName(\"TITLE\")[0].childNodes[0].nodeValue +\n  \"<br>Year: \" + \n  cd[i].getElementsByTagName(\"YEAR\")[0].childNodes[0].nodeValue;\n}"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_create_db.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL CREATE DATABASE Statement"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "heading",
+      "text": "The SQL CREATE DATABASE Statement"
+    },
+    {
+      "type": "paragraph",
+      "text": "The CREATE DATABASE statement is used to create a new SQL database."
+    },
+    {
+      "type": "other",
+      "text": "Syntax"
+    },
+    {
+      "type": "other",
+      "text": "CREATE DATABASE databasename;"
+    },
+    {
+      "type": "heading",
+      "text": "CREATE DATABASE Example"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement creates a database called \"testDB\":"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\nCREATE DATABASE testDB;"
+    },
+    {
+      "type": "other",
+      "text": "Tip: Make sure you have admin privilege before creating any database. Once a \ndatabase is created, you can check it in the list of databases with the \nfollowing SQL command: SHOW DATABASES;"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

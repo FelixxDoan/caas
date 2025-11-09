@@ -1,0 +1,29 @@
+{
+  "url": "https://www.w3schools.com/js/js_set_reference.asp",
+  "title": "JavaScript Set Reference",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Set Reference"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Complete Set Reference"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Revised July 2025"
+    },
+    {
+      "type": "other",
+      "text": "MethodDescription\nnew Set()Creates a new set\nadd()Adds a new element to a set\nclear()Removes all elements from a set\ndelete()Removes an element from a set\ndifference()Returns the difference between two sets\nentries()Returns an Iterator with the [value,value] pairs from a set\nforEach()Invokes a callback for each element in a set\nhas()Returns true if a value exists\nintersection()Returns the intersection of two sets\nisDisjointFrom()Returns true if no elements in a set are elements in another set\nisSubsetOf()Returns true if a set is a subset of another set\nisSupersetOf()Returns true if a set is a superset of another set\nkeys()Same as values()\nsymmetricDifference()Returns the symmetric difference between two set\nunion()Returns the union of two sets\nvalues()Returns an Iterator with the values in a set\n\nSets have only one property:\n\nPropertyDescription\nsizeReturns the number of elements in a Set"
+    },
+    {
+      "type": "other",
+      "text": "Complete JavaScript Reference\nFor a complete reference to all JavaScript properties and methods, with full descriptions and many examples, go to:\nW3Schools' Full JavaScript Reference.\nThe reference inludes all JavaScript updates from 1999 to 2025."
+    }
+  ]
+}

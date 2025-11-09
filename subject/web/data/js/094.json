@@ -1,0 +1,226 @@
+{
+  "url": "https://www.w3schools.com/js/js_promise.asp",
+  "title": "JavaScript Promises",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Promises"
+    },
+    {
+      "type": "other",
+      "text": "\"I Promise a Result!\"\n\"Producing code\" is code that can take some time\n\"Consuming code\" is code that must wait for the result\nA Promise is an Object that links Producing code and Consuming code"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Promise Object"
+    },
+    {
+      "type": "paragraph",
+      "text": "A Promise contains both the producing code and calls to the consuming code:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let myPromise = new Promise(function(myResolve, myReject) {\n// \"Producing Code\" (May take some time)\n\n  myResolve(); // when successful\n  myReject();  // when error\n});\n// \"Consuming Code\" (Must wait for a fulfilled Promise)\nmyPromise.then(\n  function(value) { /* code if successful */ },\n  function(error) { /* code if some error */ }\n);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "When the producing code obtains the result, it should call one of the two callbacks:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "When",
+          "Call"
+        ],
+        [
+          "Success",
+          "myResolve(result value)"
+        ],
+        [
+          "Error",
+          "myReject(error object)"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Promise Object Properties"
+    },
+    {
+      "type": "paragraph",
+      "text": "A JavaScript Promise object can be:"
+    },
+    {
+      "type": "other",
+      "text": "Pending\nFulfilled\nRejected"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Promise object supports two properties: state and result."
+    },
+    {
+      "type": "paragraph",
+      "text": "While a Promise object is \"pending\" (working), the result is undefined."
+    },
+    {
+      "type": "paragraph",
+      "text": "When a Promise object is \"fulfilled\", the result is a value."
+    },
+    {
+      "type": "paragraph",
+      "text": "When a Promise object is \"rejected\", the result is an error object."
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "myPromise.state",
+          "myPromise.result"
+        ],
+        [
+          "\"pending\"",
+          "undefined"
+        ],
+        [
+          "\"fulfilled\"",
+          "a result value"
+        ],
+        [
+          "\"rejected\"",
+          "an error object"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "You cannot access the Promise properties state and result.\nYou must use a Promise method to handle promises."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Promise How To"
+    },
+    {
+      "type": "paragraph",
+      "text": "Here is how to use a Promise:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "myPromise.then(\n  function(value) { /* code if successful */ },\n  function(error) { /* code if some error */ }\n);"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Promise.then() takes two arguments, a callback for success and another for failure.\nBoth are optional, so you can add a callback for success or failure only."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "function myDisplayer(some) {\n  document.getElementById(\"demo\").innerHTML = some;}\nlet myPromise = new Promise(function(myResolve, myReject) {\n  let x = 0;\n// The producing code (this may take some time)\n  if (x == 0) {\n    myResolve(\"OK\");\n  } else {\n    myReject(\"Error\");\n  }\n});\nmyPromise.then(\n  function(value) {myDisplayer(value);},\n  function(error) {myDisplayer(error);});"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Promise Examples"
+    },
+    {
+      "type": "paragraph",
+      "text": "To demonstrate the use of promises, we will use the callback examples from the previous chapter:"
+    },
+    {
+      "type": "other",
+      "text": "Waiting for a Timeout\nWaiting for a File"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Waiting for a Timeout"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "setTimeout(function() { myFunction(\"I love You !!!\"); }, 3000);\n\nfunction myFunction(value) {\n  document.getElementById(\"demo\").innerHTML = value;\n}"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let myPromise = new Promise(function(myResolve, myReject) {\n  setTimeout(function() { myResolve(\"I love You !!\"); }, 3000);});\nmyPromise.then(function(value) {\n  document.getElementById(\"demo\").innerHTML = value;\n});"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Waiting for a file"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "function getFile(myCallback) {\n  let req = new XMLHttpRequest();\n  req.open('GET', \"mycar.html\");\n  req.onload = function() {\n    if (req.status == 200) {\n      myCallback(req.responseText);\n    } else {\n      myCallback(\"Error: \" + req.status);\n    }\n  }\n  req.send();\n}\ngetFile(myDisplayer);"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let myPromise = new Promise(function(myResolve, myReject) {\n   \n  let req = new XMLHttpRequest();\n   \n  req.open('GET', \"mycar.html\");\n   \n  req.onload = function() {\n       \n    if (req.status == 200) {\n           \n      myResolve(req.response);\n       \n    } else {\n           \n      myReject(\"File not Found\");\n       \n    }\n  };\n  req.send();\n});\n\nmyPromise.then(\n   \n  function(value) {myDisplayer(value);},\n   \n  function(error) {myDisplayer(error);}\n);"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "table.browserref\n  {\n  border-collapse:collapse;width:100%;\n  }\n  \n  table.browserref th:first-child,table.browserref td:first-child{padding-left:16px}\n  \n  table.browserref th{\n  height:32px;background-repeat:no-repeat;background-position:center center;font-weight:normal;padding:11px 5px 11px 5px;vertical-align:middle;\n  }\n  \n  table.browserref .bsChrome   {background-image:url('/images/compatible_chrome.png');}\n  table.browserref .bsEdge     {background-image:url('/images/compatible_edge.png');}\n  table.browserref .bsFirefox  {background-image:url('/images/compatible_firefox.png')}\n  table.browserref .bsSafari   {background-image:url('/images/compatible_safari.png');}\n  table.browserref .bsOpera    {background-image:url('/images/compatible_opera.png')}\n  \n  table.browserref td{\n  text-align:center;padding:8px;vertical-align:top;\n  }"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Browser Support"
+    },
+    {
+      "type": "paragraph",
+      "text": "ECMAScript 2015, also known as ES6, introduced the JavaScript Promise object."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following table defines the first browser version with full support for Promise objects:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome 33\n    Edge 12    \n    Firefox 29\n    Safari 7.1\n    Opera 20\n  \n  \n    Feb, 2014\n    Jul, 2015    \n    Apr, 2014\n    Sep, 2014\n    Mar, 2014"
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_create_index.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL CREATE INDEX Statement"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "heading",
+      "text": "SQL CREATE INDEX Statement"
+    },
+    {
+      "type": "paragraph",
+      "text": "The CREATE INDEX statement is used to create indexes in tables."
+    },
+    {
+      "type": "paragraph",
+      "text": "Indexes are used to retrieve data from the database more quickly than \notherwise. The users cannot see the indexes, they are just used to speed up searches/queries."
+    },
+    {
+      "type": "other",
+      "text": "Note: Updating a table with indexes takes more time than updating a table without (because the indexes also need an update).\nSo, only create indexes on columns that will be frequently searched against."
+    },
+    {
+      "type": "other",
+      "text": "CREATE INDEX Syntax"
+    },
+    {
+      "type": "paragraph",
+      "text": "Creates an index on a table. Duplicate values are allowed:"
+    },
+    {
+      "type": "other",
+      "text": "CREATE INDEX index_name\nON table_name (column1, column2, ...);"
+    },
+    {
+      "type": "other",
+      "text": "CREATE UNIQUE INDEX Syntax"
+    },
+    {
+      "type": "paragraph",
+      "text": "Creates a unique index on a table. Duplicate values are not allowed:"
+    },
+    {
+      "type": "other",
+      "text": "CREATE UNIQUE INDEX index_name\nON table_name (column1, column2, ...);"
+    },
+    {
+      "type": "paragraph",
+      "text": "Note: The syntax for creating indexes varies among different databases. Therefore: Check the syntax for creating indexes in your database."
+    },
+    {
+      "type": "heading",
+      "text": "CREATE INDEX Example"
+    },
+    {
+      "type": "paragraph",
+      "text": "The SQL statement below creates an index named \"idx_lastname\" on the \"LastName\" column in the \"Persons\" table:"
+    },
+    {
+      "type": "other",
+      "text": "CREATE INDEX idx_lastname\nON Persons (LastName);"
+    },
+    {
+      "type": "paragraph",
+      "text": "If you want to create an index on a combination of columns, you can list the column names within the parentheses, separated by commas:"
+    },
+    {
+      "type": "other",
+      "text": "CREATE INDEX idx_pname\nON Persons (LastName, FirstName);"
+    },
+    {
+      "type": "heading",
+      "text": "DROP INDEX Statement"
+    },
+    {
+      "type": "paragraph",
+      "text": "The DROP INDEX statement is used to delete an index in a table."
+    },
+    {
+      "type": "paragraph",
+      "text": "MS Access:"
+    },
+    {
+      "type": "other",
+      "text": "DROP INDEX index_name ON table_name;"
+    },
+    {
+      "type": "paragraph",
+      "text": "SQL Server:"
+    },
+    {
+      "type": "other",
+      "text": "DROP INDEX table_name.index_name;"
+    },
+    {
+      "type": "paragraph",
+      "text": "DB2/Oracle:"
+    },
+    {
+      "type": "other",
+      "text": "DROP INDEX index_name;"
+    },
+    {
+      "type": "paragraph",
+      "text": "MySQL:"
+    },
+    {
+      "type": "other",
+      "text": "ALTER TABLE table_nameDROP INDEX index_name;"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "url": "https://www.w3schools.com/js/js_dom_examples.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript HTML DOM Examples"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples of using JavaScript to access and manipulate DOM objects."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Document Object"
+    },
+    {
+      "type": "other",
+      "text": "Display all name/value pairs of cookies in a document\nDisplay the domain name of the server that loaded the document\nDisplay the date and time the document was last modified\n\nDisplay the title of a document\nDisplay the full URL of a document\nReplace the content of a document\nOpen a new window, and add some content\nDisplay the number of elements with a specific name\nDisplay the number of elements with a specific tag name"
+    },
+    {
+      "type": "paragraph",
+      "text": "Document Object Explained"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Anchors Collection"
+    },
+    {
+      "type": "other",
+      "text": "Find the number of anchors in a document\nFind the innerHTML of the first anchor in a document"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Links Collection"
+    },
+    {
+      "type": "other",
+      "text": "Display the number of links in a document\nDisplay the href attribute of the first link in a document"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Forms Collection"
+    },
+    {
+      "type": "other",
+      "text": "Find the number of forms in a document\nFind the name of the first form in a document"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Images Collection"
+    },
+    {
+      "type": "other",
+      "text": "Return the number of images in a document\nReturn the id of the first image in a document"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CSS Manipulation"
+    },
+    {
+      "type": "other",
+      "text": "Change the visibility of an HTML element\nChange the background color of an HTML element"
+    }
+  ]
+}

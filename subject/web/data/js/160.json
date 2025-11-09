@@ -1,0 +1,198 @@
+{
+  "url": "https://www.w3schools.com/js/js_json.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript JSON"
+    },
+    {
+      "type": "paragraph",
+      "text": "JSON is a format for storing and transporting data."
+    },
+    {
+      "type": "paragraph",
+      "text": "JSON is often used when data is sent from a server to a web \npage."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What is JSON?"
+    },
+    {
+      "type": "other",
+      "text": "JSON stands for JavaScript Object Notation\n  JSON is a lightweight data interchange format\n  JSON is language independent *\n  JSON is \"self-describing\" and easy to understand"
+    },
+    {
+      "type": "paragraph",
+      "text": "* The JSON syntax is derived from JavaScript object notation syntax, but the JSON format is text only. \nCode for reading and generating JSON data can be written in any programming \nlanguage."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JSON Example"
+    },
+    {
+      "type": "paragraph",
+      "text": "This JSON syntax defines an employees object: an array of 3 employee records (objects):"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "{\"employees\":[\n  {\"firstName\":\"John\", \"lastName\":\"Doe\"}, \n  {\"firstName\":\"Anna\", \"lastName\":\"Smith\"},\n    {\"firstName\":\"Peter\", \"lastName\":\"Jones\"}\n]}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The JSON Format Evaluates to JavaScript Objects"
+    },
+    {
+      "type": "paragraph",
+      "text": "The JSON format is syntactically identical to the code for creating \nJavaScript objects."
+    },
+    {
+      "type": "paragraph",
+      "text": "Because of this similarity, a JavaScript program \ncan easily convert JSON data into native \nJavaScript objects."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JSON Syntax Rules"
+    },
+    {
+      "type": "other",
+      "text": "Data is in name/value pairs\n  Data is separated by commas\n  Curly braces hold objects\n  Square brackets hold arrays"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JSON Data - A Name and a Value"
+    },
+    {
+      "type": "paragraph",
+      "text": "JSON data is written as name/value pairs, just like JavaScript object \nproperties."
+    },
+    {
+      "type": "paragraph",
+      "text": "A name/value pair consists of a field name (in double quotes), \nfollowed by a colon, followed by a value:"
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "\"firstName\":\"John\""
+    },
+    {
+      "type": "other",
+      "text": "JSON names require double quotes. JavaScript names do not."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JSON Objects"
+    },
+    {
+      "type": "paragraph",
+      "text": "JSON objects are written inside curly braces."
+    },
+    {
+      "type": "paragraph",
+      "text": "Just like in JavaScript, objects can contain multiple name/value pairs:"
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "{\"firstName\":\"John\", \"lastName\":\"Doe\"}"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JSON Arrays"
+    },
+    {
+      "type": "paragraph",
+      "text": "JSON arrays are written inside square brackets."
+    },
+    {
+      "type": "paragraph",
+      "text": "Just like in JavaScript, an array can contain objects:"
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "\"employees\":[\n   \n{\"firstName\":\"John\", \"lastName\":\"Doe\"}, \n   \n{\"firstName\":\"Anna\", \"lastName\":\"Smith\"}, \n   \n{\"firstName\":\"Peter\", \"lastName\":\"Jones\"}\n]"
+    },
+    {
+      "type": "paragraph",
+      "text": "In the example above, the object \"employees\" is an array. It contains three \nobjects."
+    },
+    {
+      "type": "paragraph",
+      "text": "Each object is a record of a person (with a first name and a last name)."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Converting a JSON Text to a JavaScript Object"
+    },
+    {
+      "type": "paragraph",
+      "text": "A common use of JSON is to read data from a web server, \nand display the data in a web page."
+    },
+    {
+      "type": "paragraph",
+      "text": "For simplicity, this can be demonstrated using a string as input."
+    },
+    {
+      "type": "paragraph",
+      "text": "First, create a JavaScript string containing JSON syntax:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = '{ \"employees\" : [' +\n'{ \"firstName\":\"John\" , \"lastName\":\"Doe\" },' +\n'{ \"firstName\":\"Anna\" , \"lastName\":\"Smith\" },' +\n'{ \"firstName\":\"Peter\" , \"lastName\":\"Jones\" } ]}';"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Then, use the JavaScript built-in function JSON.parse() to convert the string into a JavaScript object:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const obj = JSON.parse(text);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Finally, use the new JavaScript object in your page:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<p id=\"demo\"></p>\n\n<script>\ndocument.getElementById(\"demo\").innerHTML =\nobj.employees[1].firstName + \" \" + obj.employees[1].lastName;\n</script>"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "You can read more about JSON in our JSON tutorial."
+    }
+  ]
+}

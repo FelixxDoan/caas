@@ -1,0 +1,491 @@
+{
+  "url": "https://www.w3schools.com/js/js_assignment.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Assignment"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Assignment Operators"
+    },
+    {
+      "type": "paragraph",
+      "text": "Assignment operators assign values to JavaScript variables."
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Operator",
+          "Example",
+          "Same As"
+        ],
+        [
+          "=",
+          "x = y",
+          "x = y"
+        ],
+        [
+          "+=",
+          "x += y",
+          "x = x + y"
+        ],
+        [
+          "-=",
+          "x -= y",
+          "x = x - y"
+        ],
+        [
+          "*=",
+          "x *= y",
+          "x = x * y"
+        ],
+        [
+          "/=",
+          "x /= y",
+          "x = x / y"
+        ],
+        [
+          "%=",
+          "x %= y",
+          "x = x % y"
+        ],
+        [
+          "**=",
+          "x **= y",
+          "x = x ** y"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Shift Assignment Operators"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Operator",
+          "Example",
+          "Same As"
+        ],
+        [
+          "<<=",
+          "x <<= y",
+          "x = x << y"
+        ],
+        [
+          ">>=",
+          "x >>= y",
+          "x = x >> y"
+        ],
+        [
+          ">>>=",
+          "x >>>= y",
+          "x = x >>> y"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The = Operator"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Simple Assignment Operator assigns a value to a variable."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 10;"
+        },
+        {
+          "language": "unknown",
+          "code": "let x = 10 + y;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The += Operator"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Addition Assignment Operator adds a value to a variable."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 10;x += 5;"
+        },
+        {
+          "language": "unknown",
+          "code": "let text = \"Hello\";\ntext += \" World\";"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The -= Operator"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Subtraction Assignment Operator subtracts a value from a variable."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 10;\nx -= 5;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The *= Operator"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Multiplication Assignment Operator multiplies a variable."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 10;x *= 5;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The **= Operator"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Exponentiation Assignment Operator raises a variable to the power of the operand."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 10;\nx **= 5;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The /= Operator"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Division Assignment Operator divides a variable."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 10;x /= 5;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The %= Operator"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Remainder Assignment Operator assigns a remainder to a variable."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 10;\nx %= 5;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The <<= Operator"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Left Shift Assignment Operator left shifts a variable."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = -100;\nx <<= 5;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The >>= Operator"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Right Shift Assignment Operator right shifts a variable (signed)."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = -100;\nx >>= 5;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The >>>= Operator"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Unsigned Right Shift Assignment Operator right shifts a variable (unsigned)."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = -100;\nx >>>= 5;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Bitwise Assignment Operators"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Operator",
+          "Example",
+          "Same As"
+        ],
+        [
+          "&=",
+          "x &= y",
+          "x = x & y"
+        ],
+        [
+          "^=",
+          "x ^= y",
+          "x = x ^ y"
+        ],
+        [
+          "|=",
+          "x |= y",
+          "x = x | y"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The &= Operator"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Bitwise AND Assignment Operator does a bitwise AND operation on two operands\nand assigns the result to the the variable."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 10;\nx &= 5;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The |= Operator"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Bitwise OR Assignment Operator does a bitwise OR operation on two operands\nand assigns the result to the variable."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 10;\nx |= 5;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The ^= Operator"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Bitwise XOR Assignment Operator does a bitwise XOR operation on two operands\nand assigns the result to the variable."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 10;\nx ^= 5;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Logical Assignment Operators"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Operator",
+          "Example",
+          "Same As"
+        ],
+        [
+          "&&=",
+          "x &&= y",
+          "x = x && (x = y)"
+        ],
+        [
+          "||=",
+          "x ||= y",
+          "x = x || (x = y)"
+        ],
+        [
+          "??=",
+          "x ??= y",
+          "x = x ?? (x = y)"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The &&= Operator"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Logical AND assignment operator is used between two values."
+    },
+    {
+      "type": "paragraph",
+      "text": "If the first value is true, the second value is assigned."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 10;\nx &&= 5;"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "The &&= operator is an ES2020 feature."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The ||= Operator"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Logical OR assignment operator is used between two values."
+    },
+    {
+      "type": "paragraph",
+      "text": "If the first value is false, the second value is assigned."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 10;\nx ||= 5;"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "The ||= operator is an ES2020 feature."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The ??= Operator"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Nullish coalescing assignment operator is used between two values."
+    },
+    {
+      "type": "paragraph",
+      "text": "If the first value is undefined or null, the second value is assigned."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x;\nx ??= 5;"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "The ??= operator is an ES2020 feature."
+    }
+  ]
+}

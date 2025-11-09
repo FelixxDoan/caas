@@ -1,0 +1,227 @@
+{
+  "url": "https://www.w3schools.com/css/css_rwd_images.asp",
+  "title": "Responsive Web Design - ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Responsive Web Design - Images"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "Resize the browser window to see how the image scales to fit the page."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Using The width Property"
+    },
+    {
+      "type": "paragraph",
+      "text": "If the width property is set to a percentage \nand the height property is set to \"auto\", the image will be \nresponsive and scale up and down:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "img {\n  width: 100%;  height: auto;\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Notice that in the example above, the image can be scaled up to be larger \nthan its original size. A better solution, in many cases, will be to use the\nmax-width property instead."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Using The max-width Property"
+    },
+    {
+      "type": "paragraph",
+      "text": "If the max-width property is set to 100%, the image will scale down if it has to, but never scale up to be larger than its \noriginal size:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "img {\n    max-width: 100%;  height: auto;\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Add an Image to The Example Web Page"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "img {\n    width: 100%;  height: auto;\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Background Images"
+    },
+    {
+      "type": "paragraph",
+      "text": "Background images can also respond to resizing and scaling."
+    },
+    {
+      "type": "paragraph",
+      "text": "Here we will show three different methods:"
+    },
+    {
+      "type": "paragraph",
+      "text": "1. If the background-size property is set to \"contain\", the \nbackground \nimage will scale, and try to fit the content area. However, the image will keep its aspect ratio (the proportional relationship \nbetween the image's width and height):"
+    },
+    {
+      "type": "paragraph",
+      "text": "Here is the CSS code:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "div {  width: 100%;  height: 400px;  \nbackground-image: url('img_flowers.jpg');  background-repeat: no-repeat;  background-size: contain;  border: 1px solid red;}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "2. If the background-size property is set to \"100% 100%\", the background image will stretch to cover the entire content area:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Here is the CSS code:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "div {  width: 100%;  height: 400px;  \nbackground-image: url('img_flowers.jpg');  \nbackground-size: 100% 100%;  border: 1px solid red;}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "3. If the background-size property is set to \"cover\", the background image will scale \nto cover the entire content area. Notice that the \"cover\" value keeps the aspect \nratio, and some part of the background image may be \nclipped:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Here is the CSS code:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "div {  width: 100%;  height: 400px;  \nbackground-image: url('img_flowers.jpg');  background-size: cover;  border: 1px solid red;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Different Images for Different Devices"
+    },
+    {
+      "type": "paragraph",
+      "text": "A large image can be perfect on a big computer \nscreen, but useless on a small device. Why load a large image when \nyou have to scale it down anyway? To reduce the load, or for any other reasons, you can use media queries to display different images on different devices."
+    },
+    {
+      "type": "paragraph",
+      "text": "Here is one large image and one smaller image that will be displayed on different devices:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "/* For width smaller than 400px: */body {  background-image: \nurl('img_smallflower.jpg'); }/* \nFor width 400px and larger: */@media only screen and (min-width: 400px) \n{  body {     background-image: url('img_flowers.jpg'); \n    }}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "You can use the media query min-device-width, instead of min-width, which\nchecks the device width, instead of the browser width. Then the image will not change when you resize the browser window:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "/* For devices smaller than 400px: */body {  background-image: \nurl('img_smallflower.jpg'); }/* \nFor devices 400px and larger: */@media only screen and (min-device-width: 400px) \n{  body {     \nbackground-image: url('img_flowers.jpg');   }}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The HTML <picture> Element"
+    },
+    {
+      "type": "paragraph",
+      "text": "The HTML <picture> element gives web \ndevelopers more flexibility in specifying image resources."
+    },
+    {
+      "type": "paragraph",
+      "text": "The most common use of the <picture> \nelement will be for images used in responsive designs. Instead of having one \nimage that is scaled up or down based on the viewport width, multiple images can \nbe designed to more nicely fill the browser viewport."
+    },
+    {
+      "type": "paragraph",
+      "text": "The <picture> element works similar to the <video> and \n<audio> elements. You set up different sources, and the first source that fits the \npreferences is the one being used:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<picture>  <source srcset=\"img_smallflower.jpg\" media=\"(max-width: \n400px)\">  <source srcset=\"img_flowers.jpg\">  <img \nsrc=\"img_flowers.jpg\" alt=\"Flowers\"></picture>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The srcset attribute is required, and defines the source of the image."
+    },
+    {
+      "type": "paragraph",
+      "text": "The media attribute is optional, and accepts the media queries you find in\nCSS @media rule."
+    },
+    {
+      "type": "paragraph",
+      "text": "You should also define an <img> element for browsers that do not support the\n<picture> element."
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

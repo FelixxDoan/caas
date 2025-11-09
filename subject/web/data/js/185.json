@@ -1,0 +1,249 @@
+{
+  "url": "https://www.w3schools.com/js/js_comparisons.asp",
+  "title": "JavaScript Comparison and Logical Operators",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Comparison and Logical Operators"
+    },
+    {
+      "type": "paragraph",
+      "text": "Comparison and Logical operators are used to test for true or \nfalse."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Comparison Operators"
+    },
+    {
+      "type": "paragraph",
+      "text": "Comparison operators are used in logical statements to determine equality or difference between variables or values."
+    },
+    {
+      "type": "paragraph",
+      "text": "Given that x = 5, the table below explains the comparison operators:"
+    },
+    {
+      "type": "other",
+      "text": "Operator\nDescription\nComparing\nReturns\nTry it\n\n\n==\nequal to\nx == 8\nfalse\nTry it » \n\n\nx == 5\ntrue\nTry it » \n\n\nx == \"5\"\ntrue\nTry it » \n\n\n===\nequal value and equal type\nx === 5\ntrue\nTry it »\n\n\nx === \"5\"\nfalse\nTry it »\n\n\n!=\nnot equal\nx != 8\ntrue\nTry it »\n\n\n!==\nnot equal value or not equal type\nx !== 5\nfalse\n\nTry it »\n\n\nx !== \"5\"\ntrue\n\nTry it »\n\n\nx !== 8\ntrue\n\nTry it »\n\n\n>\ngreater than\nx > 8\nfalse\nTry it »\n\n\n<\nless than\nx < 8\ntrue\nTry it »\n\n\n>=\ngreater than or equal to\nx >= 8\nfalse\nTry it »\n\n\n<=\nless than or equal to\nx <= 8\ntrue\nTry it »"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How Can it be Used"
+    },
+    {
+      "type": "paragraph",
+      "text": "Comparison operators can be used in conditional statements to compare values \nand take action depending on the result:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "if (age < 18) text = \"Too young to buy alcohol\";"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "You will learn more about the use of conditional statements in the next chapter of this tutorial."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Logical Operators"
+    },
+    {
+      "type": "paragraph",
+      "text": "Logical operators are used to determine the logic between variables or values."
+    },
+    {
+      "type": "paragraph",
+      "text": "Given that x = 6 and y = 3, the table below explains the logical operators:"
+    },
+    {
+      "type": "other",
+      "text": "Operator\nDescription\nExample\nTry it\n\n\n&&\nand\n (x < 10 && y > 1) is true\nTry it »\n\n\n||\nor\n(x == 5 || y == 5) is false\nTry it »\n\n\n!\nnot\n !(x == y) is true\nTry it »"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Conditional (Ternary) Operator"
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript also contains a conditional operator that assigns a value to a variable based on some condition."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Syntax"
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "variablename = (condition) ? value1:value2"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Example"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let voteable = (age < 18) ? \"Too young\":\"Old enough\";"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "If the variable age is a value below 18, the value of the variable voteable \nwill be \"Too young\", otherwise the value of voteable will be \"Old enough\"."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Comparing Different Types"
+    },
+    {
+      "type": "paragraph",
+      "text": "Comparing data of different types may give unexpected results."
+    },
+    {
+      "type": "paragraph",
+      "text": "When comparing a string with a number, JavaScript will convert the string to \na number when doing the comparison. An empty string converts to 0. A non-numeric \nstring converts to NaN which is always false."
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Case",
+          "Value",
+          "Try"
+        ],
+        [
+          "2 < 12",
+          "true",
+          "Try it »"
+        ],
+        [
+          "2 < \"12\"",
+          "true",
+          "Try it »"
+        ],
+        [
+          "2 < \"John\"",
+          "false",
+          "Try it »"
+        ],
+        [
+          "2 > \"John\"",
+          "false",
+          "Try it »"
+        ],
+        [
+          "2 == \"John\"",
+          "false",
+          "Try it »"
+        ],
+        [
+          "\"2\" < \"12\"",
+          "false",
+          "Try it »"
+        ],
+        [
+          "\"2\" > \"12\"",
+          "true",
+          "Try it »"
+        ],
+        [
+          "\"2\" == \"12\"",
+          "false",
+          "Try it »"
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "When comparing two strings, \"2\" will be greater than \"12\", because \n(alphabetically) 1 is less than 2."
+    },
+    {
+      "type": "paragraph",
+      "text": "To secure a proper result, variables should be converted to the proper type \nbefore comparison:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "age = Number(age);\nif (isNaN(age)) {\n  voteable = \"Input is not a number\";\n} else {\n    voteable = (age < 18) ? \"Too young\" : \"Old enough\";\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Nullish Coalescing Operator (??)"
+    },
+    {
+      "type": "paragraph",
+      "text": "The ?? operator returns the first argument if it is not nullish\n(null or undefined)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Otherwise it returns the second argument."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let name = null;\nlet text = \"missing\";\nlet result = name ?? text;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The nullish operator is supported in all browsers since March 2020:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome 80    \n    Edge 80\n    Firefox 72\n    Safari 13.1\n    Opera 67\n  \n  \n    Feb 2020\n    Feb 2020    \n    Jan 2020\n    Mar 2020\n    Mar 2020"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Optional Chaining Operator (?.)"
+    },
+    {
+      "type": "paragraph",
+      "text": "The ?. operator returns undefined if an object is\nundefined or null (instead of throwing an error)."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create an object:\nconst car = {type:\"Fiat\", model:\"500\", color:\"white\"};\n// Ask for car name:\ndocument.getElementById(\"demo\").innerHTML = car?.name;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The optional chaining operator is supported in all browsers since March 2020:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome 80    \n    Edge 80\n    Firefox 72\n    Safari 13.1\n    Opera 67\n  \n  \n    Feb 2020\n    Feb 2020    \n    Jan 2020\n    Mar 2020\n    Mar 2020"
+    }
+  ]
+}

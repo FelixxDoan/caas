@@ -1,0 +1,337 @@
+{
+  "url": "https://www.w3schools.com/js/js_2018.asp",
+  "title": "ECMAScript 2018",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "ECMAScript 2018"
+    },
+    {
+      "type": "other",
+      "text": "New Features in JavaScript 2018\n\n  Asynchronous Iteration\n  Promise Finally\n  Array Rest Elements\n  Object Rest Properties\n  RegExp /s\n  RegExp \\p{}\n  RegExp (?<=y)x\n  RegExp (?<!y)x\n  RegExp (?<name>...)\n  JavaScript Shared Memory"
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript 2018 is supported in all modern browsers since June 2020:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome 64    \n    Edge 79\n    Firefox 78\n    Safari 12\n    Opera 51\n  \n  \n    Jan 2018\n    Jan 2020    \n    Jun 2020\n    Sep 2018\n    Feb 2018"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Asynchronous Iteration"
+    },
+    {
+      "type": "paragraph",
+      "text": "ECMAScript 2018 added asynchronous iterators and iterables."
+    },
+    {
+      "type": "paragraph",
+      "text": "With asynchronous iterables, we can use the await\nkeyword in for/of loops."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "for await () {}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript asynchronous iteration is supported in all modern browsers since January 2020:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome 63    \n    Edge 79\n    Firefox 57\n    Safari 11\n    Opera 50\n  \n  \n    Dec 2017\n    Jan 2020    \n    Nov 2017\n    Sep 2017\n    Jan 2018"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Promise.finally()"
+    },
+    {
+      "type": "paragraph",
+      "text": "ECMAScript 2018 finalizes the full implementation of the Promise object with Promise.finally:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Promise.finally() defines a function to be executed when a promise has either been successfully resolved\nrejected."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let myPromise = new Promise();\n\nmyPromise.then();\nmyPromise.catch();\nmyPromise.finally();"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Promise.finally is supported in all modern browsers since November 2018:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome 63    \n    Edge 18\n    Firefox 58\n    Safari 11.1\n    Opera 50\n  \n  \n    Dec 2017\n    Nov 2018    \n    Jan 2018\n    Mar 2018\n    Jan 2018"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Array Rest Elements"
+    },
+    {
+      "type": "paragraph",
+      "text": "ECMAScript 2018 added the rest operator (...)."
+    },
+    {
+      "type": "paragraph",
+      "text": "The rest operator (...) allows us to destruct an array and collect the leftovers:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let a, rest;\nconst arr1 = [1,2,3,4,5,6,7,8];\n\n[a, ...rest] = arr1;"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let a, b, rest;\nconst arr1 = [1,2,3,4,5,6,7,8];\n\n[a, b, ...rest] = arr1;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Object Rest Properties"
+    },
+    {
+      "type": "paragraph",
+      "text": "ECMAScript 2018 added the rest operator (...)."
+    },
+    {
+      "type": "paragraph",
+      "text": "This allows us to destruct an object and collect the leftovers onto a new object:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create an Object:\nconst car = {type:\"Fiat\", model:\"500\", color:\"white\"};\n\n// Destructure the Object\nlet {type, model, color} = car;\ndocument.getElementById(\"demo\").innerHTML = \"The car type is: \" + type;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Object rest properties is supported in all modern browsers since January 2020:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome 60    \n    Edge 79\n    Firefox 55\n    Safari 11.1\n    Opera 47\n  \n  \n    Jul 2017\n    Jan 2020    \n    Aug 2017\n    Mar 2018\n    Aug 2017"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "New JavaScript RegExp Features"
+    },
+    {
+      "type": "paragraph",
+      "text": "ECMAScript 2018 added 4 new RegExp features:"
+    },
+    {
+      "type": "other",
+      "text": "/s (dotAll) Flag\nUnicode Property Escapes (\\p{...})\nLookbehind Assertions (?<=y)x and (?<!y)x\nNamed Capture Groups"
+    },
+    {
+      "type": "paragraph",
+      "text": "The new RegExp features is supported in all modern browsers since June 2020:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome 64    \n    Edge 79\n    Firefox 78\n    Safari 12\n    Opera 51\n  \n  \n    Jan 2018\n    Jan 2020    \n    Jun 2020\n    Sep 2018\n    Feb 2018"
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "RegExp /s Flag"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"Line\\nLine.\";\n\nlet pattern = /Line./gs;\nlet result = text.match(pattern);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Description"
+    },
+    {
+      "type": "paragraph",
+      "text": "The s (dotAll) flag allows the . (dot) metacharacter to match any character,\nincluding line terminator characters (like \\n, \\r, \\u2028, \\u2029)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Without s, \\n does not match line terminators."
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "RegExp \\p Metacharacter"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"Hello 😄\";\n\nlet pattern = /\\p{RGI_Emoji}/v;\nlet result = pattern.test(text);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Description"
+    },
+    {
+      "type": "paragraph",
+      "text": "The \\p{Unicode Property} metacharacter matches any character with a Unicode character property."
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "RegExp Lookbehind"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"Hello W3Schools\";\n\nlet pattern = /(?<=Hello )W3Schools/;\nlet result = pattern.test(text);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Description"
+    },
+    {
+      "type": "paragraph",
+      "text": "(?<=y)x matches \"x\" if \"x\" is preceded by \"y\"."
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Negative Lookbehind"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"Hello W3Schools\";\n\nlet pattern = /(?<=Hello )W3Schools/;\nlet result = pattern.test(text);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Description"
+    },
+    {
+      "type": "paragraph",
+      "text": "(?<!y)x matches \"x\" if \"x\" is NOT preceded by \"y\"."
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "RegExp Named Capturing Groups"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const text = \"Name: John Doe\";\n\n// Using named capturing groups\nconst regex = /(?<firstName>\\w+) (?<lastName>\\w+)/;\nconst match = text.match(regex);\n\nlet fName = match.groups.firstName;\nlet lName = match.groups.lastName;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Explained"
+    },
+    {
+      "type": "other",
+      "text": "(?<firstName>\\w+) captures a word and labels it firstName\n(?<lastName>\\w+) does the same for lastName\ntext.match() returns an array with a groups property\nmatch.groups() returns an object:\n{firstName:\"John\", lastName:\"Doe\" }"
+    },
+    {
+      "type": "paragraph",
+      "text": "When using a regular expression with capturing groups, the match() method of a string\nreturns a result array that includes a groups property.\nThis groups property is an object that holds the matches for named capturing groups."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Threads"
+    },
+    {
+      "type": "paragraph",
+      "text": "In JavaScript you use the Web Workers API to create threads."
+    },
+    {
+      "type": "paragraph",
+      "text": "Worker threads are used to execute code in the background so that the main program can continue execution."
+    },
+    {
+      "type": "paragraph",
+      "text": "Worker threads run simultaneously with the main program. Simultaneous execution of different parts\nof a program can be time-saving."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Shared Memory"
+    },
+    {
+      "type": "paragraph",
+      "text": "Shared memory is a feature that allows threads (different parts of a program) to\naccess and update the same data in the same memory."
+    },
+    {
+      "type": "paragraph",
+      "text": "Instead of passing data between threads, you can pass a SharedArrayBuffer object\nthat points to the memory where data is saved."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "SharedArrayBuffer"
+    },
+    {
+      "type": "paragraph",
+      "text": "A SharedArrayBuffer object represents a fixed-length raw binary data buffer similar to the ArrayBuffer object."
+    }
+  ]
+}

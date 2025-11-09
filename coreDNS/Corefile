@@ -1,0 +1,12 @@
+.:53 {
+  # directory <path> <regex-with-()> <zone-template>
+  # Ví dụ: /zones/db.123123  -> zone 123123.test
+  auto {
+    directory /zones db\.(.*) {1}.test
+    reload 2s
+  }
+
+  forward . 8.8.8.8
+  log
+  errors
+}

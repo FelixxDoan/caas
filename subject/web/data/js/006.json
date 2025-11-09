@@ -1,0 +1,234 @@
+{
+  "url": "https://www.w3schools.com/js/js_syllabus.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Syllabus"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Introduction"
+    },
+    {
+      "type": "other",
+      "text": ".ws-purple:hover {\n  background-color:#9723f5!important;\n}"
+    },
+    {
+      "type": "paragraph",
+      "text": "The W3Schools JavaScript Tutorial is comprehensive and beginner-friendly."
+    },
+    {
+      "type": "paragraph",
+      "text": "It will give you a fundamental knowledge of JavaScript."
+    },
+    {
+      "type": "paragraph",
+      "text": "It is designed for beginners and requires no prior experience with programming."
+    },
+    {
+      "type": "paragraph",
+      "text": "The content has been carefully made to be bite-sized, simple, and easy to understand."
+    },
+    {
+      "type": "paragraph",
+      "text": "The content has been proven by millions of users over the years. It is updated and improved frequently."
+    },
+    {
+      "type": "paragraph",
+      "text": "The syllabus outline and its sequence are structured so you can learn JavaScript step by step, from the introduction to creating your first application with JavaScript."
+    },
+    {
+      "type": "paragraph",
+      "text": "Get Started With JavaScript »"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Learning Outcomes"
+    },
+    {
+      "type": "other",
+      "text": "Learn how JavaScript works and how it is used in web development.\n    Make web pages interactive by typing and running JavaScript code.\n    Use variables to store and change data.\n    Use data types and operators to do logic and calculations.\n    Organize and reuse code by functions.\n    Conditions, like \"if\" and \"else,\" let you control how a program runs. Learn how to use them.\n    Use loops (like for and while) to do things over and over again.\n    Learn how to use Document Object Model (DOM) to change HTML elements.\n    Make interactive user experiences by handling events like button clicks and form submissions.\n    Debugging JavaScript code."
+    },
+    {
+      "type": "other",
+      "text": "Note: Are you a teacher teaching JavaScript? W3Schools Academy is a toolbox of features that can help you teach. It offers classroom features such as pre-built study plans, classroom administration and much more. Read more about Academy here."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Which Subjects Are JavaScript Relevant For?"
+    },
+    {
+      "type": "other",
+      "text": "Computer Science (CS) / Information Technology (IT): \n        JavaScript is a fundamental programming language used to teach coding, algorithms, and how to make websites that people can interact with.\n    \n    \n        Math:\n        JavaScript can be used for mathematical operations and algorithms. It can help you develop logical thinking and problem-solving skills.\n    \n    \n        Physics and Engineering:\n        JavaScript can be used for simulations and modeling to help you understand advanced concepts and engineering problems better.\n    \n    \n        Digital Media:\n        JavaScript is used to make websites interactive, making your digital projects more relevant and interesting.\n    \n    \n        Business and Entrepreneurship:\n        JavaScript makes your web applications, prototypes, and digital presentations interactive.\n    \n    \n        Art and Design:\n        JavaScript lets you make animations, interactive graphs, and can be used for generative art.\n    \n    \n        STEM (Science, Technology, Engineering, Mathematics): \n        JavaScript as a programming language can be an important part of technology-based projects because it teaches students about logic, automation, and how to use code in the real world.\n    \n    \n        Robotics and the Internet of Things (IoT): \n        JavaScript is used by some platforms to program robots and IoT devices."
+    },
+    {
+      "type": "paragraph",
+      "text": "Get Started"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Activities"
+    },
+    {
+      "type": "paragraph",
+      "text": "In this tutorial we offer different activities for you to learn JavaScript for free:"
+    },
+    {
+      "type": "other",
+      "text": "Lessons\n    Exercises\n    Quizzes"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Sign in to Track Progress"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can also create a free account to track your progress."
+    },
+    {
+      "type": "paragraph",
+      "text": "As a signed-in user, you get access to features such as:"
+    },
+    {
+      "type": "other",
+      "text": "Learning paths\n    Sandbox and lab environments\n    Achievements\n    And much more!"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sign Up - It's free"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Overview of the Modules"
+    },
+    {
+      "type": "other",
+      "text": ".link-boxes {\n    list-style-type: none; \n    padding: 0;\n    margin: 0;\n}\n\n.link-boxes li {\n    margin: 10px 0;\n}\n\n.link-boxes a {\n    display: block;\n    padding: 10px 15px; \n    background-color: #E7E9EB;    color: #333; \n    text-decoration: none;\n    border: 1px solid #ccc; \n    border-radius: 5px; \n    font-size: 15px;\n}\n\n.link-boxes a:hover {\n    background-color: #ccc; /\n}\n\n\n\n    JavaScript HOME\n    JavaScript Introduction\n    JavaScript Where To\n    JavaScript Output\n    JavaScript Statements\n    JavaScript Syntax\n    JavaScript Comments\n    JavaScript Variables\n    JavaScript Let\n    JavaScript Const\n    JavaScript Operators\n    JavaScript Arithmetic\n    JavaScript Assignment\n    JavaScript Data Types\n    JavaScript Functions\n    JavaScript Objects\n    JavaScript Events\n    JavaScript Strings\n    JavaScript String Methods\n    JavaScript String Search\n  JavaScript String Templates\n    JavaScript Numbers\n    JavaScript BigInt\nJavaScript Number Methods\n    JavaScript Number Properties\n    JavaScript Arrays\n    JavaScript Array Methods\nJavaScript Array Search\n    JavaScript Array Sort\n    JavaScript Array Iteration\n JavaScript Array Const\n    JavaScript Dates\nJavaScript Date Formats\n    JavaScript Date Methods\nJavaScript Set Methods\n    JavaScript Math\n    JavaScript Random\n    JavaScript Booleans\n    JavaScript Comparisons\n    JavaScript If Else\n    JavaScript Switch\n    JavaScript For Loop\nJavaScript For In\nJavaScript For Of\n    JavaScript While Loop\n    JavaScript Break and Continue\n    JavaScript Iterables\n    JavaScript Sets\n    JavaScript Set Methods\n    JavaScript Maps\n    JavaScript Map Methods\n    JavaScript typeof\n    JavaScript Type Conversion\nJavaScript Destructing\n    JavaScript Bitwise\n    JavaScript RegExp\n    JavaScript Precedence\n    JavaScript Errors\n    JavaScript Scope\n    JavaScript Hoisting\n    JavaScript Strict Mode\n    JavaScript this Keyword\n    JavaScript Arrow Function\n    JavaScript Classes\n    JavaScript Modules\n    JavaScript JSON\n    JavaScript Debugging\n    JavaScript Style Guide\n    JavaScript Best Practices\n    JavaScript Mistakes\n    JavaScript Performance\n    JavaScript Reserved Words\nJavaScript Versions\nJavaScript Objects\nJavaScript Functions\nJavaScript Classes\nJavaScript Async\nJavaScript HTML DOM\nJavaScript Browser DOM\nJavaScript Web APIs\nJavaScript AJAX\nJavaScript JSON\nJavaScript vs. jQuery\nJavaScript Graphics"
+    },
+    {
+      "type": "paragraph",
+      "text": "Get Started"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Sandbox and Lab Environment"
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript, like any other programming language, is best learned by working hands-on with code."
+    },
+    {
+      "type": "paragraph",
+      "text": "Easily try code with our \"Try it Yourself\" editor."
+    },
+    {
+      "type": "paragraph",
+      "text": "Here, you can edit JavaScript code and view the result:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "document.getElementById(\"demo\").innerHTML = \"Hello JavaScript\";"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "If you want to explore more and host your JavaScript project, we have a feature called Spaces \nthat allows you to build, test and deploy static websites for free."
+    },
+    {
+      "type": "paragraph",
+      "text": "Here you get a secure sandbox environment called Spaces, where you can practice coding and test projects in real-time."
+    },
+    {
+      "type": "paragraph",
+      "text": "Spaces allow you to test, build, and deploy code. This includes a W3Schools subdomain, hosting, and secure SSL certificates."
+    },
+    {
+      "type": "paragraph",
+      "text": "Spaces require no installation and run directly in the browser."
+    },
+    {
+      "type": "paragraph",
+      "text": "Features include:"
+    },
+    {
+      "type": "other",
+      "text": "Collaboration\n    File navigator\n    Terminal & log\n    Package manager\n    Database\n    Environment manager\n    Analytics"
+    },
+    {
+      "type": "paragraph",
+      "text": "Create a Spaces Account"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Certification"
+    },
+    {
+      "type": "paragraph",
+      "text": "W3Schools offers an end-of-pathway certification program."
+    },
+    {
+      "type": "paragraph",
+      "text": "Here you can take exams to get certified."
+    },
+    {
+      "type": "paragraph",
+      "text": "The JavaScript exam is a test that summarizes the W3Schools JavaScript syllabus."
+    },
+    {
+      "type": "paragraph",
+      "text": "After passing the exam you get the \"Certified JavaScript Developer\" Certification."
+    },
+    {
+      "type": "paragraph",
+      "text": "There are two different types of certifications:"
+    },
+    {
+      "type": "other",
+      "text": "Non-adaptive\nAdaptive"
+    },
+    {
+      "type": "paragraph",
+      "text": "The non-adaptive is pass or no pass."
+    },
+    {
+      "type": "paragraph",
+      "text": "The adaptive certification is adaptive and graded; students will get a grade from intermediate, advanced to professional."
+    },
+    {
+      "type": "paragraph",
+      "text": "Buy Certificate »"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Are You a Teacher?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Are you interested in learning how you can use W3Schools Academy to Teach \nJavaScript?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Watch a demo of W3Schools Academy. You'll see how it works, and discover how it can make teaching programming easier and more engaging."
+    },
+    {
+      "type": "paragraph",
+      "text": "Watch Demo »"
+    }
+  ]
+}

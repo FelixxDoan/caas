@@ -1,0 +1,30 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_quickref.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL Quick Reference from W3Schools"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "other",
+      "text": "SQL Statement\n      Syntax\n    \n    \n      AND / OR\n      SELECT column_name(s)\n  FROM table_name\n  WHERE condition\n  AND|OR condition\n    \n  \n      ALTER TABLE\n      ALTER TABLE table_name \n  ADD column_name datatypeor\n  ALTER TABLE table_name \n  DROP COLUMN column_name\n    \n  \n      AS (alias)\n      SELECT column_name AS column_alias\n  FROM table_nameor\n  SELECT column_name\n  FROM table_name  AS table_alias\n    \n  \n      BETWEEN\n      SELECT column_name(s)\n  FROM table_name\n  WHERE column_name\n  BETWEEN value1 AND value2\n    \n  \n      CREATE DATABASE\n      CREATE DATABASE database_name\n    \n  \n      CREATE TABLE\n      CREATE TABLE table_name\n  (\n  column_name1 data_type,\n  column_name2 data_type,\n  column_name3 data_type,\n  ...\n  )\n    \n  \n      CREATE INDEX\n      CREATE INDEX index_name\n  ON table_name (column_name)or\n  CREATE UNIQUE INDEX index_name\n  ON table_name (column_name)\n    \n  \n      CREATE VIEW\n      CREATE VIEW view_name AS\n  SELECT column_name(s)\n  FROM table_name\n  WHERE condition\n    \n  \n      DELETE\n      DELETE FROM table_name\n  WHERE some_column=some_valueor\n  DELETE FROM table_name \n  (Note: Deletes the entire table!!)\n  DELETE * FROM table_name \n  (Note: Deletes the entire table!!)\n    \n  \n      DROP DATABASE\n      DROP DATABASE database_name\n    \n  \n      DROP INDEX\n      DROP INDEX table_name.index_name (SQL  Server)\n  DROP INDEX index_name ON table_name (MS Access)\n  DROP INDEX index_name (DB2/Oracle)\n  ALTER TABLE table_name\n  DROP INDEX index_name (MySQL)\n    \n  \n      DROP TABLE\n      DROP TABLE table_name\n    \n  \n      EXISTS\n      IF EXISTS (SELECT * FROM table_name WHERE id = ?)BEGIN--do   what needs to be done if existsENDELSEBEGIN--do what needs   to be done if notEND\n    \n  \n      GROUP BY\n      SELECT column_name,  aggregate_function(column_name)\n  FROM table_name\n  WHERE column_name operator value\n  GROUP BY column_name\n    \n  \n      HAVING\n      SELECT column_name,  aggregate_function(column_name)\n  FROM table_name\n  WHERE column_name operator value\n  GROUP BY column_name\n  HAVING aggregate_function(column_name) operator value\n    \n  \n      IN\n      SELECT column_name(s)\n  FROM table_name\n  WHERE column_name\n  IN (value1,value2,..)\n    \n  \n      INSERT INTO\n      INSERT INTO table_name\n  VALUES (value1, value2, value3,....)or\n  INSERT INTO table_name\n  (column1, column2, column3,...)\n  VALUES (value1, value2, value3,....)\n    \n  \n      INNER JOIN\n      SELECT column_name(s)\n  FROM table_name1\n  INNER JOIN table_name2 \n  ON table_name1.column_name=table_name2.column_name\n    \n  \n      LEFT JOIN\n      SELECT column_name(s)\n  FROM table_name1\n  LEFT JOIN table_name2 \n  ON table_name1.column_name=table_name2.column_name\n    \n  \n      RIGHT JOIN\n      SELECT column_name(s)\n  FROM table_name1\n  RIGHT JOIN table_name2 \n  ON table_name1.column_name=table_name2.column_name\n    \n  \n      FULL JOIN\n      SELECT column_name(s)\n  FROM table_name1\n  FULL JOIN table_name2 \n  ON table_name1.column_name=table_name2.column_name\n    \n  \n      LIKE\n      SELECT column_name(s)\n  FROM table_name\n  WHERE column_name\n  LIKE pattern\n    \n  \n      ORDER BY\n      SELECT column_name(s)\n  FROM table_name\n  ORDER BY column_name [ASC|DESC]\n    \n    \n      SELECT\n      SELECT column_name(s)\n  FROM table_name\n    \n    \n      SELECT *\n      SELECT *\n  FROM table_name\n    \n    \n      SELECT DISTINCT\n      SELECT DISTINCT column_name(s)\n  FROM table_name\n    \n    \n      SELECT INTO\n      SELECT *\n  INTO new_table_name [IN externaldatabase]\n  FROM old_table_nameor\n  SELECT column_name(s)\n  INTO new_table_name [IN externaldatabase]\n  FROM old_table_name\n    \n    \n      SELECT TOP\n      SELECT TOP number|percent column_name(s)\n  FROM table_name\n    \n    \n      TRUNCATE TABLE\n      TRUNCATE TABLE table_name\n    \n  \n      UNION\n      SELECT column_name(s) FROM table_name1\n  UNION\n  SELECT column_name(s) FROM table_name2\n    \n  \n      UNION ALL\n      SELECT column_name(s) FROM table_name1\n  UNION ALL\n  SELECT column_name(s) FROM table_name2\n    \n  \n      UPDATE\n      UPDATE table_name\n  SET column1=value, column2=value,...\n  WHERE some_column=some_value\n    \n    \n      WHERE\n      SELECT column_name(s)\n  FROM table_name\n  WHERE column_name operator value"
+    },
+    {
+      "type": "paragraph",
+      "text": "Source : https://www.w3schools.com/sql/sql_quickref.asp"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

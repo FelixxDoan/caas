@@ -1,0 +1,235 @@
+{
+  "url": "https://www.w3schools.com/html/html_emojis.asp",
+  "title": "Using Emojis in HTML",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Using Emojis in HTML"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "Emojis are characters from the UTF-8 character set: 😄 😍 💗"
+    },
+    {
+      "type": "other",
+      "text": "Emoji\nValue\n\n\n🗻&#128507;Try it »🗼&#128508;Try it »🗽&#128509;Try it »🗾&#128510;Try it »🗿&#128511;Try it »😀&#128512;Try it »😁&#128513;Try it »😂&#128514;Try it »😃&#128515;Try it »😄&#128516;Try it »😅&#128517;Try it »"
+    },
+    {
+      "type": "paragraph",
+      "text": "Full HTML Emoji Reference"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML Emojis Examples"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "🚀🚁🚂🚃🚄"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "HTML Emoji Transport Symbols"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "💺💻💼💽💾"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "HTML Emoji Office Symbols"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "👮👯👰👱👲"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "HTML Emoji People Symbols"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "🐂🐃🐄🐅🐆"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "HTML Emoji Animals Symbols"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What are Emojis?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Emojis look like images, or icons, but they are not."
+    },
+    {
+      "type": "paragraph",
+      "text": "They are letters (characters) from the UTF-8 (Unicode) character set."
+    },
+    {
+      "type": "other",
+      "text": "UTF-8 covers almost all of the characters and symbols in the world."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The HTML charset Attribute"
+    },
+    {
+      "type": "paragraph",
+      "text": "To display an HTML page correctly, a web browser must know the character set used in the page."
+    },
+    {
+      "type": "paragraph",
+      "text": "This is specified in the <meta> tag:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<meta charset=\"UTF-8\">"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "If not specified, UTF-8 is the default character set in HTML."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "UTF-8 Characters"
+    },
+    {
+      "type": "paragraph",
+      "text": "Many UTF-8 characters cannot be typed on a keyboard,\nbut they can always be displayed using numbers (called entity numbers):"
+    },
+    {
+      "type": "other",
+      "text": "A is 65\nB is 66\nC is 67"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<!DOCTYPE html>\n<html>\n<meta charset=\"UTF-8\">\n<body>\n<p>I will display A B C</p>\n<p>I will display &#65; &#66; &#67;</p>\n</body>\n</html>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Example Explained"
+    },
+    {
+      "type": "paragraph",
+      "text": "The <meta charset=\"UTF-8\"> element defines the character set."
+    },
+    {
+      "type": "paragraph",
+      "text": "The characters A, B, and C, are displayed by the numbers 65, 66, and 67."
+    },
+    {
+      "type": "paragraph",
+      "text": "To let the browser understand that you are displaying a character, you must start the entity number\nwith &# and end it with ; (semicolon)."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Emoji Characters"
+    },
+    {
+      "type": "paragraph",
+      "text": "Emojis are also characters from the UTF-8 alphabet:"
+    },
+    {
+      "type": "other",
+      "text": "😄 is 128516\n😍 is 128525\n💗 is 128151"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<!DOCTYPE html>\n<html>\n<meta charset=\"UTF-8\">\n<body>\n<h1>My First Emoji</h1>\n<p>&#128512;</p>\n</body></html>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Since Emojis are characters, they can be copied, displayed,\nand sized just like any other character in HTML."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<!DOCTYPE html>\n<html>\n<meta charset=\"UTF-8\">\n<body>\n<h1>Sized Emojis</h1>\n  <p style=\"font-size:48px\">&#128512; &#128516; &#128525; &#128151;</p>\n</body></html>"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "A is 65",
+        "B is 66",
+        "C is 67"
+      ]
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "😄 is 128516",
+        "😍 is 128525",
+        "💗 is 128151"
+      ]
+    }
+  ]
+}

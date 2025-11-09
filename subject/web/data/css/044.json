@@ -1,0 +1,180 @@
+{
+  "url": "https://www.w3schools.com/css/css_performance.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Performance and Optimization"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CSS Performance and Optimization"
+    },
+    {
+      "type": "paragraph",
+      "text": "Writing efficient CSS helps your website load faster and run more smoothly, especially on slower devices."
+    },
+    {
+      "type": "paragraph",
+      "text": "Here are some tips to improve CSS performance:"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "1. Use Simple Selectors"
+    },
+    {
+      "type": "paragraph",
+      "text": "Complex selectors take longer for the browser to match. Keep them simple when possible."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "ul li a.button:hover {\n  background-color: blue;\n}"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".button:hover {\n  background-color: blue;\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "2. Avoid Universal Selector for Styling"
+    },
+    {
+      "type": "paragraph",
+      "text": "Using * affects every element and can slow down page rendering."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "* {\n  margin: 0;\n  padding: 0;\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "3. Avoid Inline Styles"
+    },
+    {
+      "type": "paragraph",
+      "text": "Inline styles make your HTML heavier and are harder to manage and cache."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<div style=\"color: red; font-size: 18px;\">Hello</div>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "4. Combine and Minify CSS"
+    },
+    {
+      "type": "paragraph",
+      "text": "Use one CSS file when possible, and remove spaces and comments to reduce file size."
+    },
+    {
+      "type": "paragraph",
+      "text": "You can use tools like:"
+    },
+    {
+      "type": "other",
+      "text": "CSS Minifier\n  PostCSS\n  Online compressors"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "5. Load CSS Efficiently"
+    },
+    {
+      "type": "paragraph",
+      "text": "Place your main CSS in the <head> so it loads before your page is rendered."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<link rel=\"stylesheet\" href=\"style.css\">"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Avoid using @import for loading CSS, as it delays stylesheet loading."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "6. Use Shorthand Properties"
+    },
+    {
+      "type": "paragraph",
+      "text": "Using shorthand properties saves space and is faster to parse."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "/* Long version */\nmargin-top: 10px;\nmargin-right: 20px;\nmargin-bottom: 10px;\nmargin-left: 20px;\n\n/* Shorthand version */\nmargin: 10px 20px;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "7. Cache Your CSS"
+    },
+    {
+      "type": "paragraph",
+      "text": "Make sure your CSS file is cached by the browser by giving it a long expiration time in your server settings. This reduces how often users need to re-download it."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Summary"
+    },
+    {
+      "type": "other",
+      "text": "Keep selectors short and simple\n  Avoid layout-thrashing operations\n  Use external, minified, and cached stylesheets\n  Use efficient hiding and animation techniques"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

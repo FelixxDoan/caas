@@ -1,0 +1,172 @@
+{
+  "url": "https://www.w3schools.com/css/css_website_layout.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Website Layout"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Website Layout"
+    },
+    {
+      "type": "paragraph",
+      "text": "A website is often divided into headers, menus, content and a footer:"
+    },
+    {
+      "type": "other",
+      "text": "Header\n  Navigation Menu\n  \n  Content\n  Main Content\n  Content\n  \n  Footer"
+    },
+    {
+      "type": "paragraph",
+      "text": "There are tons of different layout designs to choose from. However, the structure above, is one of the most common, and we will take a closer look at it in this tutorial."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Header"
+    },
+    {
+      "type": "paragraph",
+      "text": "A header is usually located at the top of the website (or right below a top navigation menu). It often contains a logo or the website name:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".header {  background-color: #F1F1F1;  text-align: \n   center;  padding: 20px;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Navigation Bar"
+    },
+    {
+      "type": "paragraph",
+      "text": "A navigation bar contains a list of links to help visitors navigating through your website:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "/* The navbar container */.topnav {  overflow: hidden;  \n   background-color: #333;}/* Navbar links */.topnav a {  float: \n   left;  display: block;  color: \n   #f2f2f2;  text-align: center;  \n   padding: 14px 16px;  text-decoration: none;}\n   /* Links - change color on hover */.topnav a:hover {  \n   background-color: #ddd;  color: black;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Content"
+    },
+    {
+      "type": "paragraph",
+      "text": "The layout in this section, often depends on the target users. The most common layout is \none (or combining them) of the following:"
+    },
+    {
+      "type": "other",
+      "text": "1-column (often used for mobile browsers)\n  2-column (often used for tablets and laptops)\n  3-column layout (only used for desktops)"
+    },
+    {
+      "type": "other",
+      "text": "1-column:\n    \n\n  \n  \n  \n\n    \n    \n    \n  \n   \n  \n    2-column:\n\n  \n  \n  \n  \n  \n  \n\n    \n    \n  \n    \n \n  \n    3-column:"
+    },
+    {
+      "type": "paragraph",
+      "text": "We will create a 3-column layout, and change it to a 1-column layout on smaller screens:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "/* Create three equal columns that float next to each other */.column {  \n   float: left;  width: 33.33%;}/* Clear floats after the \n   columns */.row:after {  content: \"\";  \n   display: table;  clear: both;}/* Responsive \n   layout - makes the three columns stack on top of each other instead of next \n   to each other on smaller screens (600px wide or less) */@media screen and (max-width: \n   600px) {  .column \n   {    width: 100%;  }}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Tip: To create a 2-column layout, change the width to 50%. To create a 4-column layout, use 25%, etc.\nTip: Do you wonder how the @media rule works? Read more about \nit in our CSS Media Queries chapter.\nTip: A more modern way of creating column layouts, is to use CSS Flexbox. \nHowever, it is not supported in Internet Explorer 10 and earlier versions. If you require IE6-10 support, use floats (as shown above). \nTo learn more about the Flexible Box Layout Module,  read our  \nCSS Flexbox chapter."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Unequal Columns"
+    },
+    {
+      "type": "paragraph",
+      "text": "The main content is the biggest and the most important part of your site."
+    },
+    {
+      "type": "paragraph",
+      "text": "It is common with unequal column widths, so that most of the space \nis reserved for \nthe main content. The side content (if any) is often used as an alternative \nnavigation or to specify information relevant to the main content. Change the widths as you like, only remember that it should add up to 100% in total:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".column {  float: left;}/* Left and right column */\n   .column.side {  width: 25%;}/* Middle column */.column.middle \n   {  width: 50%;}/* Responsive layout - makes \n   the three columns stack on top of each other instead of next to each other */\n   @media screen and (max-width: 600px) {  .column.side, .column.middle \n   {    width: 100%;  }}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Footer"
+    },
+    {
+      "type": "paragraph",
+      "text": "The footer is placed at the bottom of your page. It often contains \ninformation like copyright and contact info:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".footer {  background-color: #F1F1F1;  text-align: \n   center;  padding: 10px;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Responsive Website Layout"
+    },
+    {
+      "type": "paragraph",
+      "text": "By using some of the CSS code above, we have created a responsive website layout, which varies between two columns and full-width columns depending on screen width:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Try it Yourself »"
+    },
+    {
+      "type": "other",
+      "text": "Ever heard about W3Schools Spaces? Here you can create your website from scratch or use a template, and host it for free.\n  Get started for free ❯\n  * no credit card required"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

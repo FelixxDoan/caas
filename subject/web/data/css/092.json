@@ -1,0 +1,127 @@
+{
+  "url": "https://www.w3schools.com/css/css_outline_color.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Outline Color"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CSS Outline Color"
+    },
+    {
+      "type": "paragraph",
+      "text": "The outline-color property is used to set the color of the outline."
+    },
+    {
+      "type": "paragraph",
+      "text": "The color can be set by:"
+    },
+    {
+      "type": "other",
+      "text": "name - specify a color name, like \"red\"\nHEX - specify a hex value, like \"#ff0000\"\nRGB - specify a RGB value, like \"rgb(255,0,0)\"\nHSL - specify a HSL value, like \"hsl(0, 100%, 50%)\"\ninvert - performs a color inversion (which ensures that the outline is visible, regardless of color background)"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following example shows some different outlines with different colors. \nAlso notice that these elements also have a thin black border inside the outline:"
+    },
+    {
+      "type": "paragraph",
+      "text": "A solid red outline."
+    },
+    {
+      "type": "paragraph",
+      "text": "A dotted blue outline."
+    },
+    {
+      "type": "paragraph",
+      "text": "An outset grey outline."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "p.ex1\n{\n    border: 2px solid black; \noutline-style: solid;\n  outline-color: red;\n}p.ex2\n{\n  border: 2px solid black; \noutline-style: dotted;\n   \noutline-color: blue;\n}p.ex3\n{\n  border: 2px solid black;  outline-style: outset;\n  outline-color: grey;\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HEX Values"
+    },
+    {
+      "type": "paragraph",
+      "text": "The outline color can also be specified using a hexadecimal value (HEX):"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "p.ex1 {  outline-style: solid;  outline-color: #ff0000; \n  /* red */}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "RGB Values"
+    },
+    {
+      "type": "paragraph",
+      "text": "Or by using RGB values:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "p.ex1 {  outline-style: solid;  outline-color: rgb(255, 0, 0); /* \n  red */}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HSL Values"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can also use HSL values:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "p.ex1 {  outline-style: solid;  outline-color: hsl(0, 100%, 50%); \n  /* red */}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "You can learn more about HEX, RGB and HSL values in our CSS Colors chapters."
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

@@ -1,0 +1,198 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_ref_create.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL CREATE Keyword"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "text": "CREATE DATABASE"
+    },
+    {
+      "type": "paragraph",
+      "text": "The CREATE DATABASE command is used is to \ncreate a new SQL database."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL creates a database called \"testDB\":"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\nCREATE DATABASE testDB;"
+    },
+    {
+      "type": "other",
+      "text": "Tip: Make sure you have admin privilege before creating any database. Once a \ndatabase is created, you can check it in the list of databases with the \nfollowing SQL command: SHOW DATABASES;"
+    },
+    {
+      "type": "heading",
+      "text": "CREATE TABLE"
+    },
+    {
+      "type": "paragraph",
+      "text": "The CREATE TABLE command creates a new table \nin the database."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL creates a table called \"Persons\" that contains five columns: PersonID, LastName, FirstName, \nAddress, and City:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\nCREATE TABLE Persons\n(\n   \nPersonID int,\n   \nLastName varchar(255),\n   \nFirstName varchar(255),\n   \nAddress varchar(255),\n   \nCity varchar(255) \n);"
+    },
+    {
+      "type": "heading",
+      "text": "CREATE TABLE Using Another Table"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL creates a new table called \"TestTables\" (which is \na copy of two columns of the \"Customers\" table):"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\nCREATE TABLE TestTable ASSELECT customername, contactname\nFROM customers;"
+    },
+    {
+      "type": "heading",
+      "text": "CREATE INDEX"
+    },
+    {
+      "type": "paragraph",
+      "text": "The CREATE INDEX command is used to \ncreate indexes in tables (allows duplicate values)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Indexes are used to retrieve data from the database very fast. The users cannot see the indexes, they are just used to speed up searches/queries."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL creates an index named \"idx_lastname\" on the \"LastName\" column in the \"Persons\" table:"
+    },
+    {
+      "type": "other",
+      "text": "CREATE INDEX idx_lastname\nON Persons (LastName);"
+    },
+    {
+      "type": "paragraph",
+      "text": "If you want to create an index on a combination of columns, you can list the column names within the parentheses, separated by commas:"
+    },
+    {
+      "type": "other",
+      "text": "CREATE INDEX idx_pname\nON Persons (LastName, FirstName);"
+    },
+    {
+      "type": "paragraph",
+      "text": "Note: The syntax for creating indexes varies among different databases. Therefore: Check the syntax for creating indexes in your database."
+    },
+    {
+      "type": "other",
+      "text": "Note: Updating a table with indexes takes more time than updating a table without (because the indexes also need an update).\nSo, only create indexes on columns that will be frequently searched against."
+    },
+    {
+      "type": "heading",
+      "text": "CREATE UNIQUE INDEX"
+    },
+    {
+      "type": "paragraph",
+      "text": "The CREATE UNIQUE INDEX command creates a unique index on a table (no duplicate values \nallowed)"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL creates an index named \"uidx_pid\" on the \"PersonID\" column in the \"Persons\" table:"
+    },
+    {
+      "type": "other",
+      "text": "CREATE UNIQUE INDEX uidx_pid\nON Persons (PersonID);"
+    },
+    {
+      "type": "heading",
+      "text": "CREATE VIEW"
+    },
+    {
+      "type": "paragraph",
+      "text": "The CREATE VIEW command creates a view."
+    },
+    {
+      "type": "paragraph",
+      "text": "A view is a virtual table based on the result set of an SQL statement."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL creates a view that selects all customers from Brazil:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\nCREATE VIEW [Brazil Customers] AS\nSELECT CustomerName, ContactName\nFROM Customers\nWHERE Country = \"Brazil\";"
+    },
+    {
+      "type": "heading",
+      "text": "CREATE OR REPLACE VIEW"
+    },
+    {
+      "type": "paragraph",
+      "text": "The CREATE OR REPLACE VIEW command updates a view."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL adds the \"City\" column to the \"Brazil Customers\" view:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\nCREATE OR REPLACE VIEW [Brazil Customers] AS\nSELECT CustomerName, ContactName, City\nFROM Customers\nWHERE Country = \"Brazil\";"
+    },
+    {
+      "type": "heading",
+      "text": "Query The View"
+    },
+    {
+      "type": "paragraph",
+      "text": "We can query the view above as follows:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\nSELECT * FROM [Brazil \n  Customers];"
+    },
+    {
+      "type": "heading",
+      "text": "CREATE PROCEDURE"
+    },
+    {
+      "type": "paragraph",
+      "text": "The CREATE PROCEDURE command is used to \ncreate a stored procedure."
+    },
+    {
+      "type": "paragraph",
+      "text": "A stored procedure is a prepared SQL code that you can save, so the \ncode can be reused over and over again."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL creates a stored procedure named \"SelectAllCustomers\" \nthat selects all records from the \"Customers\" table:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n  CREATE PROCEDURE SelectAllCustomersASSELECT * FROM CustomersGO;"
+    },
+    {
+      "type": "paragraph",
+      "text": "Execute the stored procedure above as follows:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n  EXEC SelectAllCustomers;"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

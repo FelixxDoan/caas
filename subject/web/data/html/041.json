@@ -1,0 +1,247 @@
+{
+  "url": "https://www.w3schools.com/html/html5_svg.asp",
+  "title": "HTML ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "HTML  SVG Graphics"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "SVG (Scalable Vector Graphics)"
+    },
+    {
+      "type": "paragraph",
+      "text": "SVG defines vector-based graphics in XML, which can be directly embedded in HTML pages."
+    },
+    {
+      "type": "paragraph",
+      "text": "SVG graphics are scalable, and do not lose any quality if they are zoomed or resized:"
+    },
+    {
+      "type": "other",
+      "text": "����� \n����� \n    \n  \n  \n  SVG\n  Sorry, your browser does not support inline SVG."
+    },
+    {
+      "type": "paragraph",
+      "text": "SVG is supported by all major browsers."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What is SVG?"
+    },
+    {
+      "type": "other",
+      "text": "SVG stands for Scalable Vector Graphics\n  SVG is used to define vector-based graphics for the Web\n  SVG defines graphics in XML format\n  Each element and attribute in SVG files can be animated\n  SVG is a W3C recommendation\n  SVG integrates with other standards, such as CSS, DOM, XSL and JavaScript"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The <svg> Element"
+    },
+    {
+      "type": "paragraph",
+      "text": "The HTML <svg> element is a container for SVG graphics."
+    },
+    {
+      "type": "paragraph",
+      "text": "SVG has several methods for drawing paths, rectangles, circles, polygons, text, and \nmuch more."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "SVG Circle"
+    },
+    {
+      "type": "other",
+      "text": "Sorry, your browser does not support inline SVG."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<!DOCTYPE html><html><body><svg \n width=\"100\" height=\"100\">  <circle cx=\"50\" cy=\"50\" r=\"40\" stroke=\"green\" \n stroke-width=\"4\" fill=\"yellow\" /></svg></body></html>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "SVG Rectangle"
+    },
+    {
+      "type": "other",
+      "text": "Sorry, your browser does not support inline SVG."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<svg width=\"400\" height=\"120\">  <rect \n  x=\"10\" y=\"10\" width=\"200\" height=\"100\" \n  stroke=\"red\" stroke-width=\"6\" fill=\"blue\" \n /></svg>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "SVG Rectangle with Opacity and Rounded Corners"
+    },
+    {
+      "type": "other",
+      "text": "Sorry, your browser does not support inline SVG."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<svg width=\"400\" height=\"180\">  <rect x=\"50\" y=\"20\" rx=\"20\" ry=\"20\" \n width=\"150\" height=\"150\"  \n style=\"fill:red;stroke:black;stroke-width:5;opacity:0.5\" /></svg>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "SVG Star"
+    },
+    {
+      "type": "other",
+      "text": "Sorry, your browser does not support inline SVG."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<svg width=\"300\" height=\"200\">\n  <polygon points=\"100,10 40,198 190,78 10,78 160,198\"\n   style=\"fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;\" />\n</svg>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "SVG Gradient Ellipse and Text"
+    },
+    {
+      "type": "other",
+      "text": "�����  \n�����  \n     \n   \n   \n   SVG\n   Sorry, your browser does not support inline SVG."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<svg height=\"130\" width=\"500\">  <defs>    <linearGradient id=\"grad1\">      <stop offset=\"0%\" stop-color=\"yellow\" \n />      <stop offset=\"100%\" stop-color=\"red\" />\n    \n </linearGradient>  </defs>  <ellipse cx=\"100\" cy=\"70\" rx=\"85\" ry=\"55\" \n fill=\"url(#grad1)\" />  <text fill=\"#ffffff\" font-size=\"45\" \n font-family=\"Verdana\" x=\"50\" y=\"86\">SVG</text>  Sorry, your browser does not \n support inline SVG.</svg>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Differences Between SVG and Canvas"
+    },
+    {
+      "type": "paragraph",
+      "text": "SVG is a language for describing 2D graphics in XML, while Canvas draws 2D graphics, on the fly (with JavaScript)."
+    },
+    {
+      "type": "paragraph",
+      "text": "SVG is XML based, which means that every element is available within the SVG \nDOM. You can attach JavaScript event handlers to SVG graphics."
+    },
+    {
+      "type": "paragraph",
+      "text": "In SVG, each drawn shape is remembered as an object. If attributes of an SVG \nobject are changed, the browser can automatically re-render the shape."
+    },
+    {
+      "type": "paragraph",
+      "text": "Canvas is rendered pixel by pixel. In canvas, once the graphic is drawn, it is forgotten by the browser. If its \nposition should be changed, the entire scene needs to be redrawn, including any \nobjects that might have been covered by the graphic."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Comparison of SVG and Canvas"
+    },
+    {
+      "type": "paragraph",
+      "text": "The table below shows some important differences between Canvas and SVG:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "SVG",
+          "Canvas"
+        ],
+        [
+          "Resolution independent\n  Support for event handlers\n  Good text rendering capabilities\n  Slow rendering if complex\n  Not suited for game applications",
+          "Resolution dependent\n  No support for event handlers\n  Poor text rendering capabilities\n  You can save the resulting image as .png or .jpg\n  Well suited for graphic-intensive games"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "SVG Tutorial"
+    },
+    {
+      "type": "paragraph",
+      "text": "To learn more about SVG, please read our SVG Tutorial."
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "SVG stands for Scalable Vector Graphics",
+        "SVG is used to define vector-based graphics for the Web",
+        "SVG defines graphics in XML format",
+        "Each element and attribute in SVG files can be animated",
+        "SVG is a W3C recommendation",
+        "SVG integrates with other standards, such as CSS, DOM, XSL and JavaScript"
+      ]
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Resolution independent",
+        "Support for event handlers",
+        "Good text rendering capabilities",
+        "Slow rendering if complex",
+        "Not suited for game applications"
+      ]
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Resolution dependent",
+        "No support for event handlers",
+        "Poor text rendering capabilities",
+        "You can save the resulting image as .png or .jpg",
+        "Well suited for graphic-intensive games"
+      ]
+    }
+  ]
+}

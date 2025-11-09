@@ -1,0 +1,82 @@
+{
+  "url": "https://www.w3schools.com/js/js_jquery_dom.asp",
+  "title": "JavaScript / jQuery HTML DOM",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript / jQuery HTML DOM"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "jQuery vs JavaScript"
+    },
+    {
+      "type": "paragraph",
+      "text": "jQuery was created in 2006 by John Resig. \nIt was designed to handle Browser Incompatibilities and to simplify HTML DOM Manipulation, Event Handling, Animations, and Ajax."
+    },
+    {
+      "type": "paragraph",
+      "text": "However, after JavaScript Version 5 (2009), most of the jQuery utilities can be solved with a few lines of standard JavaScript:"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Removing HTML Elements"
+    },
+    {
+      "type": "paragraph",
+      "text": "Remove an HTML element:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "$(\"#id02\").remove();"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "document.getElementById(\"id02\").remove();"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Get Parent Element"
+    },
+    {
+      "type": "paragraph",
+      "text": "Return the parent of an HTML element:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "myParent = $(\"#02\").parent().prop(\"nodeName\"); ;"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "myParent = document.getElementById(\"02\").parentNode.nodeName;"
+        }
+      ]
+    }
+  ]
+}

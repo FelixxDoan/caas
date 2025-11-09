@@ -1,0 +1,233 @@
+{
+  "url": "https://www.w3schools.com/js/js_window_navigator.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Window Navigator"
+    },
+    {
+      "type": "other",
+      "text": "The Navigator Object\n\nThe navigator object contains information about the \nvisitor's browser.\nIt can be written with or without the window prefix like:\nwindows.navigator or just navigator"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Browser Cookies"
+    },
+    {
+      "type": "paragraph",
+      "text": "The cookieEnabled property returns true if cookies are enabled, otherwise \nfalse:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<p id=\"demo\"></p>\n\n<script>\ndocument.getElementById(\"demo\").innerHTML =\"cookiesEnabled is \" + navigator.cookieEnabled;\n</script>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Browser Language"
+    },
+    {
+      "type": "paragraph",
+      "text": "The language property returns the browser's language:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<p id=\"demo\"></p>\n\n<script>\ndocument.getElementById(\"demo\").innerHTML = navigator.language;\n</script>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Is The Browser Online?"
+    },
+    {
+      "type": "paragraph",
+      "text": "The onLine property returns true if the browser is online:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<p id=\"demo\"></p>\n\n<script>\ndocument.getElementById(\"demo\").innerHTML = navigator.onLine;\n</script>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Browser Application Name"
+    },
+    {
+      "type": "paragraph",
+      "text": "The appName property returns the application name \nof the browser:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<p id=\"demo\"></p>\n\n<script>\ndocument.getElementById(\"demo\").innerHTML =\"navigator.appName is \" + navigator.appName;\n</script>"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Warning\nThis property is removed (deprecated) in the latest web standard.\nMost browsers (Chrome, Edge, Firefox, Safari) returns Netscape as\nappName."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Browser Application Code Name"
+    },
+    {
+      "type": "paragraph",
+      "text": "The appCodeName property returns the application code name \nof the browser:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<p id=\"demo\"></p>\n\n<script>\ndocument.getElementById(\"demo\").innerHTML =\n \"navigator.appCodeName is \" + navigator.appCodeName;\n</script>"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Warning\nThis property is removed (deprecated) in the latest web standard.\nMost browsers (Chrome, Edge, Firefox, Safari) returns Mozilla as\nappCodeName."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Browser Engine"
+    },
+    {
+      "type": "paragraph",
+      "text": "The product property returns \nthe product name of the browser engine:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<p id=\"demo\"></p>\n\n<script>\ndocument.getElementById(\"demo\").innerHTML =\n \"navigator.product is \" + navigator.product;\n</script>"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Warning\nThis property is removed (deprecated) in the latest web standard.\nMost browsers returns Gecko as product."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Browser Version"
+    },
+    {
+      "type": "paragraph",
+      "text": "The appVersion property returns \nversion information about the browser:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<p id=\"demo\"></p>\n\n<script>\ndocument.getElementById(\"demo\").innerHTML = navigator.appVersion;\n</script>"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Warning\nThis property is removed (deprecated) in the latest web standard.\nDo not rely on appVersion to return the correct browser version."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Browser Agent"
+    },
+    {
+      "type": "paragraph",
+      "text": "The userAgent property returns the user-agent header sent by the browser to the server:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<p id=\"demo\"></p>\n\n<script>\ndocument.getElementById(\"demo\").innerHTML = navigator.userAgent;\n</script>"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Warning\nThe information from the navigator object can often be misleading.\nThe navigator object should not be used to detect browser versions because:\n\n  Different browsers can use the same name\n  The navigator data can \nbe changed by the browser owner\n  Some browsers misidentify themselves to bypass site tests\n  Browsers cannot report new operating systems, released later than the browser"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Browser Platform"
+    },
+    {
+      "type": "paragraph",
+      "text": "The platform property returns the browser platform \n(operating system):"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<p id=\"demo\"></p>\n\n<script>\ndocument.getElementById(\"demo\").innerHTML = navigator.platform;\n</script>"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Warning\nThis property is removed (deprecated) in the latest web standard.\nDo not rely on platform to return the correct browser platform in all browsers."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Is Java Enabled?"
+    },
+    {
+      "type": "paragraph",
+      "text": "The javaEnabled() method returns true if Java is enabled:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<p id=\"demo\"></p>\n\n<script>\ndocument.getElementById(\"demo\").innerHTML = navigator.javaEnabled();\n</script>"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Warning\nThis method is removed (deprecated) in the latest web standard.\njavaEnabled() always returns false."
+    }
+  ]
+}

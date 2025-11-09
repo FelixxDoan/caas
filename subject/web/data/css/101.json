@@ -1,0 +1,110 @@
+{
+  "url": "https://www.w3schools.com/css/css_border_sides.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Border Sides"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CSS Border - Individual Sides"
+    },
+    {
+      "type": "paragraph",
+      "text": "From the examples on the previous pages, you have seen that it is possible to specify a \ndifferent border for each side."
+    },
+    {
+      "type": "paragraph",
+      "text": "In CSS, there are also properties for specifying each of the borders (top, \nright, bottom, and left):"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "p\n{\n   \nborder-top-style: dotted;\n   \nborder-right-style: solid;\n  border-bottom-style: dotted;\n  border-left-style: solid;\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The example above gives the same result as this:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "p { \nborder-style: dotted solid;}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "So, here is how it works:"
+    },
+    {
+      "type": "paragraph",
+      "text": "If the border-style property has four values:"
+    },
+    {
+      "type": "other",
+      "text": "border-style: dotted solid double dashed; \ntop border is dotted\nright border is solid\nbottom border is double\nleft border is dashed"
+    },
+    {
+      "type": "paragraph",
+      "text": "If the border-style property has three values:"
+    },
+    {
+      "type": "other",
+      "text": "border-style: dotted solid double;\ntop border is dotted\nright and left borders are solid\nbottom border is double"
+    },
+    {
+      "type": "paragraph",
+      "text": "If the border-style property has two values:"
+    },
+    {
+      "type": "other",
+      "text": "border-style: dotted solid;\ntop and bottom borders are dotted\nright and left borders are solid"
+    },
+    {
+      "type": "paragraph",
+      "text": "If the border-style property has one value:"
+    },
+    {
+      "type": "other",
+      "text": "border-style: dotted;all four borders are dotted"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "/* Four values */p {  border-style: dotted solid double dashed; }/* Three \n  values */p {  border-style: dotted solid double; }\n  /* Two values */p {  border-style: dotted solid; }/* One value */p {  border-style: dotted; }"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "The border-style property is used in the example above. However, it also works with \nborder-width \nand border-color."
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

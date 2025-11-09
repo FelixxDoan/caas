@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SQL Tutorial - W3Schools Clone</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <h2>SQL Tutorial</h2>
+      <ul class="sidebar-menu" id="sidebar-menu"></ul>
+    </div>
+
+    <div class="main">
+      <div class="modal">
+        <div class="model-content">
+          <div class="close-btn">x</div>
+          <div class="content-body">
+            <h3>SQL Query</h3>
+            <div class="query">
+              <div class="body-left">
+                <textarea class="sql-editor">SELECT * FROM Customers;</textarea>
+              </div>
+              <div class="body-right">
+                <p>Your Database:</p>
+                <div class="database-info">
+                  <div class="row">
+                    <div class="tablename">Tablenames</div>
+                    <div class="records">Records</div>
+                  </div>
+                  <div class="row">
+                    <div class="tablename"><a href="#">Customers</a></div>
+                    <div class="records">91</div>
+                  </div>
+                  <div class="row">
+                    <div class="tablename"><a href="#">Categories</a></div>
+                    <div class="records">8</div>
+                  </div>
+                  <div class="row">
+                    <div class="tablename"><a href="#">Employees</a></div>
+                    <div class="records">10</div>
+                  </div>
+                  <div class="row">
+                    <div class="tablename"><a href="#">OrderDetails</a></div>
+                    <div class="records">518</div>
+                  </div>
+                  <div class="row">
+                    <div class="tablename"><a href="#">Orders</a></div>
+                    <div class="records">196</div>
+                  </div>
+                  <div class="row">
+                    <div class="tablename"><a href="#">Products</a></div>
+                    <div class="records">77</div>
+                  </div>
+                  <div class="row">
+                    <div class="tablename"><a href="#">Shippers</a></div>
+                    <div class="records">3</div>
+                  </div>
+                  <div class="row">
+                    <div class="tablename"><a href="#">Suppliers</a></div>
+                    <div class="records">29</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="run">
+              <p>Run</p>
+            </div>
+            <div class="result">
+              <p>Your result:</p>
+              <div class="table-scroll-container">
+                <table id="employeeTable">
+                  <thead>
+                    <tr></tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header">
+        <h1 id="page-title">Loading SQL Tutorial...</h1>
+      </div>
+      <div id="content-container">
+        <div class="loading">Loading content, please wait...</div>
+      </div>
+      <div class="prev-next">
+        <a href="#" id="prev-link">❮ Previous</a>
+        <a href="#" id="next-link">Next ❯</a>
+      </div>
+      <div class="footer">
+        <p>© 2025 SQL Tutorial Viewer</p>
+      </div>
+    </div>
+
+    <script src="./js/main.js" type="module"></script>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>

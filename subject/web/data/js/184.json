@@ -1,0 +1,136 @@
+{
+  "url": "https://www.w3schools.com/js/js_if_else.asp",
+  "title": "JavaScript if, else, and else if",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript if, else, and else if"
+    },
+    {
+      "type": "paragraph",
+      "text": "Conditional statements are used to perform different actions based on different conditions."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Conditional Statements"
+    },
+    {
+      "type": "paragraph",
+      "text": "Very often when you write code, you want to perform different actions for different decisions."
+    },
+    {
+      "type": "paragraph",
+      "text": "You can use conditional statements in your code to do this."
+    },
+    {
+      "type": "paragraph",
+      "text": "In JavaScript we have the following conditional statements:"
+    },
+    {
+      "type": "other",
+      "text": "Use if to specify a block of code to be executed, if a specified condition is true\n  Use else to specify a block of code to be executed, if the same condition is \n  false\n  Use else if to specify a new condition to test, if the first condition is false\n  Use switch to specify many alternative blocks of code to be executed"
+    },
+    {
+      "type": "other",
+      "text": "The switch statement is described in the next chapter."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The if Statement"
+    },
+    {
+      "type": "paragraph",
+      "text": "Use the if statement to specify a block of JavaScript code to \nbe executed if a condition is true."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Syntax"
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "if (condition) {\n  //  block of code to be executed if the condition is true\n }"
+    },
+    {
+      "type": "other",
+      "text": "Note that if is in lowercase letters. Uppercase letters (If or IF) will generate a JavaScript error."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "if (hour < 18) {\n    greeting = \"Good day\";\n }"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The else Statement"
+    },
+    {
+      "type": "paragraph",
+      "text": "Use the else statement to specify a block of code to be \nexecuted if the condition is \nfalse."
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "if (condition) {\n  //  block of code to be executed if the condition is true\n }\nelse {\n\n  //  block of code to be executed if the condition is false\n }"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "if (hour < 18) {\n    greeting = \"Good day\";\n }\nelse {\n    greeting = \"Good evening\";\n }"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The else if Statement"
+    },
+    {
+      "type": "paragraph",
+      "text": "Use the else if statement to specify a new condition if the first condition is false."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Syntax"
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "if (condition1) {\n  //  block of code to be executed if condition1 is true\n }\nelse if (condition2) {\n  //  block of code to be executed if the condition1 is false and condition2 is true\n} else {\n  //  block of code to be executed if the condition1 is false and condition2 is false\n }"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "if (time < 10) {\n    greeting = \"Good morning\";\n }\nelse if (time < 20) {\n    greeting = \"Good day\";\n }\nelse {\n    greeting = \"Good evening\";\n }"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text;\nif (Math.random() < 0.5) {\n  text = \"<a href='https://w3schools.com'>Visit W3Schools</a>\";\n} else {\n  text = \"<a href='https://wwf.org'>Visit WWF</a>\";\n}\ndocument.getElementById(\"demo\").innerHTML = text;"
+        }
+      ]
+    }
+  ]
+}

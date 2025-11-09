@@ -1,0 +1,203 @@
+{
+  "url": "https://www.w3schools.com/html/html5_serversentevents.asp",
+  "title": "HTML ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "HTML Server-Sent Events API"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Server-Sent Events (SSE) API enables pushing \nmessages/updates from a server to the web page via HTTP connection."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Server-Sent Events - One Way Messaging"
+    },
+    {
+      "type": "paragraph",
+      "text": "A server-sent event is when a web page automatically gets messages/updates from a server."
+    },
+    {
+      "type": "paragraph",
+      "text": "Normally, a web page has to request data from the server, but with server-sent events, the updates \nare pushed automatically."
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples: Facebook/Twitter updates, stock market updates, news feeds, sport results, etc."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Browser Support"
+    },
+    {
+      "type": "paragraph",
+      "text": "The numbers in the table specify the first browser version that fully support \nthe Server-Sent Events API."
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "API",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "SSE",
+          "6.0",
+          "79.0",
+          "6.0",
+          "5.0",
+          "11.5"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Receive Server-Sent Event Notifications"
+    },
+    {
+      "type": "paragraph",
+      "text": "The EventSource object is used to receive server-sent event notifications:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "javascript",
+          "code": "<script>const x = document.getElementById(\"result\");\n  // Check browser support for SSEif(typeof(EventSource) \n  !== \"undefined\") {  var source = new EventSource(\"demo_sse.php\");  \n  source.onmessage = function(event) {    x.innerHTML += \n  event.data + \"<br>\";  };} else {  x.innerHTML = \"Sorry, \n  no support for server-sent events.\";}</script>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Example explained:"
+    },
+    {
+      "type": "other",
+      "text": "Create a new EventSource object, and specify the URL of the page sending the updates (in this example \"demo_sse.php\")\n  Each time an update is received, the onmessage event occurs\n  When an onmessage event occurs, put the received data into the element with id=\"result\""
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Check Browser Support"
+    },
+    {
+      "type": "paragraph",
+      "text": "In the tryit example above there were some extra lines of code to check browser support for server-sent events:"
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "code": "if(typeof(EventSource) !== \"undefined\") {\n    // Yes! Server-sent events support!\n    // Some code.....\n }\n else {\n    // Sorry! No server-sent events support..\n }"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Server-Side Code Example"
+    },
+    {
+      "type": "paragraph",
+      "text": "For the example above to work, you need a server capable of sending data updates (like PHP or ASP)."
+    },
+    {
+      "type": "paragraph",
+      "text": "The server-side event stream syntax is simple. Set the \"Content-Type\" header to \n\"text/event-stream\". Now you can start sending event streams."
+    },
+    {
+      "type": "paragraph",
+      "text": "Code in PHP (demo_sse.php):"
+    },
+    {
+      "type": "code",
+      "language": "html",
+      "code": "<?phpheader('Content-Type: text/event-stream');\n header('Cache-Control: no-cache');$time = date('r');echo \"data: The server time is: {$time}\\n\\n\";flush();?>"
+    },
+    {
+      "type": "paragraph",
+      "text": "Code in ASP (VB) (demo_sse.asp):"
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "<%Response.ContentType = \"text/event-stream\"Response.Expires = -1\n Response.Write(\"data: The server time is: \" & now())Response.Flush()%>"
+    },
+    {
+      "type": "paragraph",
+      "text": "Code explained:"
+    },
+    {
+      "type": "other",
+      "text": "Set the \"Content-Type\" header to \n\"text/event-stream\"\n  Specify that the page should not cache\n  Output the data to send (Always start with \"data: \")\n  Flush the output data back to the web page"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The EventSource Object"
+    },
+    {
+      "type": "paragraph",
+      "text": "In the examples above we used the onmessage event to get messages. But other events are also available:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Events",
+          "Description"
+        ],
+        [
+          "onopen",
+          "When a connection to the server is opened"
+        ],
+        [
+          "onmessage",
+          "When a message is received"
+        ],
+        [
+          "onerror",
+          "When an error occurs"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Create a new EventSource object, and specify the URL of the page sending the updates (in this example \"demo_sse.php\")",
+        "Each time an update is received, the onmessage event occurs",
+        "When an onmessage event occurs, put the received data into the element with id=\"result\""
+      ]
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Set the \"Content-Type\" header to \n\"text/event-stream\"",
+        "Specify that the page should not cache",
+        "Output the data to send (Always start with \"data: \")",
+        "Flush the output data back to the web page"
+      ]
+    }
+  ]
+}

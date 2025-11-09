@@ -1,0 +1,381 @@
+{
+  "url": "https://www.w3schools.com/js/js_booleans.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Booleans"
+    },
+    {
+      "type": "other",
+      "text": "The Boolean Data Type\nIn JavaScript, a Boolean is a primitive data type that can only have one of two values:\ntrue or false\nThe Boolean value of an expression is the basis for all JavaScript comparisons and \nconditions."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Key Boolean Characteristics"
+    },
+    {
+      "type": "other",
+      "text": "true and false are boolean data types\ntrue and false are the only possible boolean values\ntrue and false must be written in lowercase\ntrue and false must be written without quotes"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Boolean Use Cases"
+    },
+    {
+      "type": "paragraph",
+      "text": "Very often, in programming, you will need a data type that can represent one \nof two values, like:"
+    },
+    {
+      "type": "other",
+      "text": "yes or no\n  on or off\n  true or false"
+    },
+    {
+      "type": "paragraph",
+      "text": "Boolean values are fundamental for logical operations and control flow in JavaScript programming."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Comparisons"
+    },
+    {
+      "type": "paragraph",
+      "text": "All JavaScript comparison operators (like ==, !=, <, >)\nreturn true or false from the comparison."
+    },
+    {
+      "type": "paragraph",
+      "text": "Given that x = 5, the table below explains comparison:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [],
+        [
+          "Description",
+          "Example",
+          "Returns"
+        ],
+        [
+          "Not equal to",
+          "(x == 8)",
+          "false"
+        ],
+        [
+          "Unequal to",
+          "(x != 8)",
+          "true"
+        ],
+        [
+          "Greater than",
+          "(x > 8)",
+          "false"
+        ],
+        [
+          "Less than",
+          "(x < 8)",
+          "true"
+        ]
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 5;\n\n(x == 8); // equals false\n(x != 8); // equals true"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "See Also:\nJavaScript Comparisons Tutorials"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Conditions"
+    },
+    {
+      "type": "paragraph",
+      "text": "Booleans are extensively used in if statements to determine the code blocks to execute based on the logic."
+    },
+    {
+      "type": "table",
+      "data": [
+        [],
+        [
+          "Example",
+          "Result"
+        ],
+        [
+          "if (day == \"Monday\")",
+          "true or false"
+        ],
+        [
+          "if (salary > 9000)",
+          "true or false"
+        ],
+        [
+          "if (age < 18)",
+          "true or false"
+        ]
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "if (hour < 18) {\n  greeting = \"Good day\";\n} else {\n  greeting = \"Good evening\";\n}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "See Also:\nJavaScript If Else Tutorial"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Loops"
+    },
+    {
+      "type": "paragraph",
+      "text": "Booleans are extensively used in loops to determine conditions for looping."
+    },
+    {
+      "type": "table",
+      "data": [
+        [],
+        [
+          "Description",
+          "Example"
+        ],
+        [
+          "For loop",
+          "for (i = 0; i < 5; i++)"
+        ],
+        [
+          "While loop",
+          "while (i < 10)"
+        ],
+        [
+          "For in loop",
+          "for (x in person)"
+        ],
+        [
+          "For of loop",
+          "for (x of cars)"
+        ]
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "while (i < 10) {\n  text += i;\n  i++;\n}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "See Also:\nJavaScript Loop Tutorial"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Boolean() Function"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can use the Boolean() function to find out if an expression (or a variable) is \ntrue:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Boolean(10 > 9)"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Or even easier:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "(10 > 9)"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Everything With a \"Value\" is True"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "100 is true\n3.14 is true\n-15 is true\n\"Hello\" is true\n\"false\" is true\n(7 + 1 + 3.14) is true"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Everything Without a \"Value\" is False"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 0;\nBoolean(x);"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = -0;\nBoolean(x);"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = \"\";\nBoolean(x);"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x;\nBoolean(x);"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = null;\nBoolean(x);"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = false;\nBoolean(x);"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 10 / \"Hallo\";\nBoolean(x);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Booleans as Objects"
+    },
+    {
+      "type": "paragraph",
+      "text": "Normally JavaScript booleans are primitive values created from literals:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = false;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "But booleans can also be defined as objects with the keyword new:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let y = new Boolean(false);"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = false;\nlet y = new Boolean(false);\n //\ntypeof x returns boolean\n //\ntypeof y returns object"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Warning\nDo not create Boolean objects.\nThe new keyword complicates the code and slows down execution speed.\nBoolean objects can produce unexpected results:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = Boolean(false);\nlet y = new Boolean(false);\n\n(x == Y) returns true\n(y === Y) returns false"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Comparing two JavaScript objects always returns false."
+    },
+    {
+      "type": "other",
+      "text": "Complete Boolean Reference\nFor a complete reference, go to our Complete \nJavaScript Boolean Reference.\nThe reference contains descriptions and examples of all Boolean properties and methods."
+    }
+  ]
+}

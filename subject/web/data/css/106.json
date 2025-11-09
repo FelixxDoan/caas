@@ -1,0 +1,252 @@
+{
+  "url": "https://www.w3schools.com/css/css_margin.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Margins"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "Margins are used to create space around elements, outside of any defined borders."
+    },
+    {
+      "type": "other",
+      "text": "This element has a margin of 70px."
+    },
+    {
+      "type": "other",
+      "text": "Try it Yourself »"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CSS Margins"
+    },
+    {
+      "type": "paragraph",
+      "text": "The CSS margin properties are used to create space around elements, \noutside of any defined borders."
+    },
+    {
+      "type": "paragraph",
+      "text": "With CSS, you have full control over the margins. There are properties \nfor setting the margin for each side of an element (top, right, bottom, and left)."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Margin - Individual Sides"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS has properties for specifying the margin for each \nside of an element:"
+    },
+    {
+      "type": "other",
+      "text": "margin-top\nmargin-right\nmargin-bottom\nmargin-left"
+    },
+    {
+      "type": "paragraph",
+      "text": "All the margin properties can have the following values:"
+    },
+    {
+      "type": "other",
+      "text": "auto - the browser calculates the margin\nlength - specifies a margin in px, pt, cm, etc.\n% - specifies a margin in % of the width of the containing element\ninherit - specifies that the margin should be inherited from the parent element"
+    },
+    {
+      "type": "paragraph",
+      "text": "Tip: Negative values are allowed."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "p {  margin-top: 100px;\n  margin-bottom: 100px;\n  margin-right: 150px;\n  margin-left: 80px;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Margin - Shorthand Property"
+    },
+    {
+      "type": "paragraph",
+      "text": "To shorten the code, it is possible to specify all the margin properties in \none property."
+    },
+    {
+      "type": "paragraph",
+      "text": "The margin property is a shorthand property for the following individual margin properties:"
+    },
+    {
+      "type": "other",
+      "text": "margin-top\nmargin-right\nmargin-bottom\nmargin-left"
+    },
+    {
+      "type": "paragraph",
+      "text": "So, here is how it works:"
+    },
+    {
+      "type": "paragraph",
+      "text": "If the margin property has four values:"
+    },
+    {
+      "type": "other",
+      "text": "margin: 25px 50px 75px 100px; \ntop margin is 25px\nright margin is 50px\nbottom margin is 75px\nleft margin is 100px"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "p {  margin: 25px 50px 75px 100px;}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "If the margin property has three values:"
+    },
+    {
+      "type": "other",
+      "text": "margin: 25px 50px 75px;\ntop margin is 25px\nright and left margins are 50px\nbottom margin is 75px"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "p { \nmargin: 25px 50px 75px;}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "If the margin property has two values:"
+    },
+    {
+      "type": "other",
+      "text": "margin: 25px 50px;top and bottom margins are 25px\nright and left margins are 50px"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "p { \nmargin: 25px 50px;}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "If the margin property has one value:"
+    },
+    {
+      "type": "other",
+      "text": "margin: 25px;all four margins are 25px"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "p {  margin: 25px;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The auto Value"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can set the margin property to auto to horizontally center the element within its container."
+    },
+    {
+      "type": "paragraph",
+      "text": "The element will then take up the specified width, and the remaining space \nwill be split equally between the left and right margins."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "div {  width: 300px;  margin: \nauto;  border: 1px solid red;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The inherit Value"
+    },
+    {
+      "type": "paragraph",
+      "text": "This example lets the left margin of the <p class=\"ex1\"> element be inherited from the parent element \n(<div>):"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "div {  border: 1px solid red;  margin-left: 100px;}p.ex1 {\n    margin-left: \ninherit;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "All CSS Margin Properties"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Property",
+          "Description"
+        ],
+        [
+          "margin",
+          "A shorthand property for setting all the margin properties in one declaration"
+        ],
+        [
+          "margin-bottom",
+          "Sets the bottom margin of an element"
+        ],
+        [
+          "margin-left",
+          "Sets the left margin of an element"
+        ],
+        [
+          "margin-right",
+          "Sets the right margin of an element"
+        ],
+        [
+          "margin-top",
+          "Sets the top margin of an element"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

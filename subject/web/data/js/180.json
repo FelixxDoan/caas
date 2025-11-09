@@ -1,0 +1,81 @@
+{
+  "url": "https://www.w3schools.com/js/js_loop_forof.asp",
+  "title": "JavaScript For Of",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript For Of"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The For Of Loop"
+    },
+    {
+      "type": "paragraph",
+      "text": "The JavaScript for of statement loops \nthrough the values of an iterable object."
+    },
+    {
+      "type": "paragraph",
+      "text": "It lets you loop over iterable data structures \nsuch as Arrays, Strings, Maps, NodeLists, and more:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "for (variable of iterable) {\n  // code block to be executed\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "variable - For every iteration the value of the next property is \nassigned to the variable. Variable can be declared with\nconst, let, or var."
+    },
+    {
+      "type": "paragraph",
+      "text": "iterable - An object that has iterable properties."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Looping over an Array"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const cars = [\"BMW\", \"Volvo\", \"Mini\"];\nlet text = \"\";\nfor (let x of cars) {\n  text += x;\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Looping over a String"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let language = \"JavaScript\";\nlet text = \"\";\nfor (let x of language) {\n  text += x;\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The While Loop"
+    },
+    {
+      "type": "paragraph",
+      "text": "The while loop and the do/while loop are explained in the next chapter."
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_and.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL AND Operator"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "text": "The SQL AND Operator"
+    },
+    {
+      "type": "paragraph",
+      "text": "The WHERE clause can contain one or many \nAND operators."
+    },
+    {
+      "type": "paragraph",
+      "text": "The AND operator is used to filter records based on more than one \ncondition, like if you want to return all customers from Spain that starts with the letter 'G':"
+    },
+    {
+      "type": "other",
+      "text": "Example\nSelect all customers from Spain that starts with the letter 'G':\n\n SELECT *\n FROM Customers\n WHERE Country = 'Spain' AND CustomerName LIKE 'G%';\n\nTry it Yourself »"
+    },
+    {
+      "type": "heading",
+      "text": "Syntax"
+    },
+    {
+      "type": "other",
+      "text": "SELECT column1, column2, ...\nFROM table_name\nWHERE condition1 AND condition2 AND condition3 ...;"
+    },
+    {
+      "type": "heading",
+      "text": "AND vs OR"
+    },
+    {
+      "type": "other",
+      "text": "The AND operator displays a record if all the conditions are TRUE.\nThe OR operator displays a record if any of the conditions are TRUE."
+    },
+    {
+      "type": "heading",
+      "text": "Demo Database"
+    },
+    {
+      "type": "paragraph",
+      "text": "Below is a selection from the Customers table used in the examples:"
+    },
+    {
+      "type": "other",
+      "text": "CustomerID\n    CustomerName\n    ContactName\n    Address\n    City\n    PostalCode\n    Country\n  \n  \n    1\n    Alfreds Futterkiste\n    Maria Anders\n    Obere Str. 57\n    Berlin\n    12209\n    Germany\n  \n  \n    2\n    Ana Trujillo Emparedados y helados\n    Ana Trujillo\n    Avda. de la Constitución 2222\n    México D.F.\n    05021\n    Mexico\n  \n  \n    3\n    Antonio Moreno Taquería\n    Antonio Moreno\n    Mataderos 2312\n    México D.F.\n    05023\n    Mexico\n  \n  \n    4\n    Around the Horn\n    Thomas Hardy\n    120 Hanover Sq.\n    London\n    WA1 1DP\n    UK\n  \n  \n    5\n    Berglunds snabbköp\n    Christina Berglund\n    Berguvsvägen 8\n    Luleå\n    S-958 22\n    Sweden"
+    },
+    {
+      "type": "heading",
+      "text": "All Conditions Must Be True"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement selects all fields from Customers where \nCountry is \"Brazil\" AND \nCity is \"Rio de Janeiro\" AND \nCustomerID is higher than 50:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n  SELECT * FROM CustomersWHERE Country = 'Brazil'AND City = 'Rio de \n  Janeiro'AND CustomerID > 50;\n\nTry it Yourself »"
+    },
+    {
+      "type": "heading",
+      "text": "Combining AND and OR"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can combine the AND and OR operators."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement selects all customers from Spain that starts with a \"G\" or an \"R\"."
+    },
+    {
+      "type": "paragraph",
+      "text": "Make sure you use parenthesis to get the correct result."
+    },
+    {
+      "type": "other",
+      "text": "Example\nSelect all Spanish customers that starts with either \"G\" or \"R\":\n\n SELECT * FROM Customers\n WHERE Country = 'Spain'\n AND (CustomerName LIKE 'G%' OR CustomerName LIKE 'R%');\nTry it Yourself »"
+    },
+    {
+      "type": "paragraph",
+      "text": "Without parenthesis, the select statement will return all customers from Spain that starts with a \"G\", plus\nall customers that starts with an \"R\", regardless of the country value:"
+    },
+    {
+      "type": "other",
+      "text": "Example\nSelect all customers that either:\nare from Spain and starts with either \"G\", or\nstarts with the letter \"R\":\n\n SELECT * FROM Customers\n WHERE Country = 'Spain'\n AND CustomerName LIKE 'G%' OR CustomerName LIKE 'R%';\nTry it Yourself »"
+    },
+    {
+      "type": "heading",
+      "text": "Video: SQL AND Operator"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

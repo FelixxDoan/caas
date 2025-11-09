@@ -1,0 +1,438 @@
+{
+  "url": "https://www.w3schools.com/js/js_math.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Math Object"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Math Properties (Constants)"
+    },
+    {
+      "type": "paragraph",
+      "text": "The syntax for any Math property is : Math.property."
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript provides 8 mathematical constants that can be accessed as Math properties:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Math.E        // returns Euler's number\nMath.PI       // returns PI\nMath.SQRT2    // returns the square root of 2\nMath.SQRT1_2  // returns the square root of 1/2\nMath.LN2      // returns the natural logarithm of 2\nMath.LN10     // returns the natural logarithm of 10\nMath.LOG2E    // returns base 2 logarithm of E\nMath.LOG10E   // returns base 10 logarithm of E"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Math Methods"
+    },
+    {
+      "type": "paragraph",
+      "text": "The syntax for Math any methods is : Math.method(number)"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Number to Integer"
+    },
+    {
+      "type": "paragraph",
+      "text": "There are 4 common methods to round a number to an integer:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [],
+        [
+          "Math.round(x)",
+          "Returns x rounded to its nearest integer"
+        ],
+        [],
+        [
+          "Math.ceil(x)",
+          "Returns x rounded up to its nearest integer"
+        ],
+        [],
+        [
+          "Math.floor(x)",
+          "Returns x rounded down to its nearest integer"
+        ],
+        [],
+        [
+          "Math.trunc(x)",
+          "Returns the integer part of x (new in ES6)"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Math.round()"
+    },
+    {
+      "type": "paragraph",
+      "text": "Math.round(x) returns the nearest integer:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Math.round(4.6);"
+        },
+        {
+          "language": "unknown",
+          "code": "Math.round(4.5);"
+        },
+        {
+          "language": "unknown",
+          "code": "Math.round(4.4);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Math.ceil()"
+    },
+    {
+      "type": "paragraph",
+      "text": "Math.ceil(x) returns the value of x rounded up to its nearest integer:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Math.ceil(4.9);\nMath.ceil(4.7);\nMath.ceil(4.4);\nMath.ceil(4.2);\nMath.ceil(-4.2);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Math.floor()"
+    },
+    {
+      "type": "paragraph",
+      "text": "Math.floor(x) returns the value of x rounded down to its nearest integer:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Math.floor(4.9);\nMath.floor(4.7);\nMath.floor(4.4);\nMath.floor(4.2);\nMath.floor(-4.2);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Math.trunc()"
+    },
+    {
+      "type": "paragraph",
+      "text": "Math.trunc(x) returns the integer part of x:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Math.trunc(4.9);\nMath.trunc(4.7);\nMath.trunc(4.4);\nMath.trunc(4.2);\nMath.trunc(-4.2);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Math.sign()"
+    },
+    {
+      "type": "paragraph",
+      "text": "Math.sign(x) returns if x is negative, null or positive."
+    },
+    {
+      "type": "other",
+      "text": "If x is positive it returns 1\nIf x is negative it returns -1\nIf x is zero, it returns 0"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Math.sign(-4);\nMath.sign(0);\nMath.sign(4);"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\nMath.trunc() and Math.sign() were added to JavaScript 2015 - ES6."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Math.pow()"
+    },
+    {
+      "type": "paragraph",
+      "text": "Math.pow(x, y) returns the value of x to the power of y:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Math.pow(8, 2);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Math.sqrt()"
+    },
+    {
+      "type": "paragraph",
+      "text": "Math.sqrt(x) returns the square root of x:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Math.sqrt(64);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Math.abs()"
+    },
+    {
+      "type": "paragraph",
+      "text": "Math.abs(x) returns the absolute (positive) value of x:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Math.abs(-4.7);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Math.sin()"
+    },
+    {
+      "type": "paragraph",
+      "text": "Math.sin(x) returns the sine (a value between -1 and 1) of the angle x (given in radians)."
+    },
+    {
+      "type": "paragraph",
+      "text": "If you want to use degrees instead of radians, you have to convert degrees to radians:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Angle in radians = Angle in degrees x PI / 180."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Math.sin(90 * Math.PI / 180);     // returns 1 (the sine of 90 degrees)"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Math.cos()"
+    },
+    {
+      "type": "paragraph",
+      "text": "Math.cos(x) returns the cosine (a value between -1 and 1) of the angle x (given in radians)."
+    },
+    {
+      "type": "paragraph",
+      "text": "If you want to use degrees instead of radians, you have to convert degrees to radians:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Angle in radians = Angle in degrees x PI / 180."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Math.cos(0 * Math.PI / 180);     // returns 1 (the cos of 0 degrees)"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Math.min() and Math.max()"
+    },
+    {
+      "type": "paragraph",
+      "text": "Math.min() and Math.max() can be used to find the lowest or highest value in a list of arguments:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Math.min(0, 150, 30, 20, -8, -200);"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Math.max(0, 150, 30, 20, -8, -200);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Math.random()"
+    },
+    {
+      "type": "paragraph",
+      "text": "Math.random() returns a random number between 0 (inclusive), and 1 \n(exclusive):"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Math.random();"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "You will learn more about Math.random() in the next chapter of this tutorial."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Math.log() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "Math.log(x) returns the natural logarithm of x."
+    },
+    {
+      "type": "paragraph",
+      "text": "The natural logarithm returns the time needed to reach a certain level of growth:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Math.log(1);"
+        },
+        {
+          "language": "unknown",
+          "code": "Math.log(2);"
+        },
+        {
+          "language": "unknown",
+          "code": "Math.log(3);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Math.E and Math.log() are twins."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Math.log(10);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Math.log2() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "Math.log2(x) returns the base 2 logarithm of x."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Math.log2(8);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Math.log10() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "Math.log10(x) returns the base 10 logarithm of x."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Math.log10(1000);"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Learn More:\nFull Math Reference"
+    }
+  ]
+}

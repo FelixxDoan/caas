@@ -1,0 +1,405 @@
+{
+  "url": "https://www.w3schools.com/html/html_attributes.asp",
+  "title": "HTML ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "HTML Attributes"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "HTML attributes provide additional information about HTML elements."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML Attributes"
+    },
+    {
+      "type": "other",
+      "text": "All HTML elements can have attributes\n  Attributes provide additional information about elements\n  Attributes are always specified in the start tag\n  Attributes usually come in name/value pairs like: name=\"value\""
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The href Attribute"
+    },
+    {
+      "type": "paragraph",
+      "text": "The <a> tag defines a hyperlink. The \nhref attribute specifies the URL of the page \nthe link goes to:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<a href=\"https://www.w3schools.com\">Visit W3Schools</a>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "You will learn more about links in our HTML Links\nchapter."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The src Attribute"
+    },
+    {
+      "type": "paragraph",
+      "text": "The <img> tag is used to embed an \nimage in an HTML page. The src attribute \nspecifies the path to the image to be displayed:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<img src=\"img_girl.jpg\">"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "There are two ways to specify the URL in the src \nattribute:"
+    },
+    {
+      "type": "paragraph",
+      "text": "1. Absolute URL - Links to an external image that is hosted \non another website. Example: src=\"https://www.w3schools.com/images/img_girl.jpg\"."
+    },
+    {
+      "type": "paragraph",
+      "text": "Notes: External images might be under copyright. If you do \nnot get permission to use it, you may be in violation of copyright laws. In \naddition, you cannot control external images; it can suddenly be removed or \nchanged."
+    },
+    {
+      "type": "paragraph",
+      "text": "2. Relative URL - Links to an image that is hosted within \nthe website. Here, the URL does not include the domain name. If the URL begins \nwithout a slash, it will be relative to the current page. Example: src=\"img_girl.jpg\". \nIf the URL begins with a slash, it will be relative to the domain. Example: src=\"/images/img_girl.jpg\"."
+    },
+    {
+      "type": "paragraph",
+      "text": "Tip: It is almost always best to use relative URLs. They \nwill not break if you change domain."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The width and height Attributes"
+    },
+    {
+      "type": "paragraph",
+      "text": "The <img> tag should also contain the\nwidth and \nheight attributes, which specify the width and \nheight of the image (in pixels):"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<img src=\"img_girl.jpg\" width=\"500\" height=\"600\">"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The alt Attribute"
+    },
+    {
+      "type": "paragraph",
+      "text": "The required alt attribute for the <img> \ntag specifies an \nalternate text for an image, if the image for some reason cannot be displayed. \nThis can be due to \na slow connection, or an error in the src attribute, or if the user uses a screen \nreader."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<img src=\"img_girl.jpg\" alt=\"Girl \n  with a jacket\">"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<img src=\"img_typo.jpg\" alt=\"Girl \n  with a jacket\">"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "You will learn more about images in our HTML Images chapter."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The style Attribute"
+    },
+    {
+      "type": "paragraph",
+      "text": "The style attribute is used to add styles to \nan element, such as color, font, size, and more."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<p style=\"color:red;\">This is a red paragraph.</p>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "You will learn more about styles in our HTML Styles chapter."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The lang Attribute"
+    },
+    {
+      "type": "paragraph",
+      "text": "You should always include the lang attribute \ninside the <html> tag, to declare the \nlanguage of the Web page. This is meant to assist search engines and browsers."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following example specifies English as the language:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<!DOCTYPE html><html lang=\"en\"><body>...</body></html>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Country codes can also be added to the language code in the lang \nattribute. So, the first two characters define the language of the HTML page, \nand the last two characters define the country."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following example specifies English as the language and United States as \nthe country:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<!DOCTYPE html><html lang=\"en-US\"><body>...</body></html>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "You can see all the language codes in our\nHTML Language Code Reference."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The title Attribute"
+    },
+    {
+      "type": "paragraph",
+      "text": "The title attribute defines some extra \ninformation about an \nelement."
+    },
+    {
+      "type": "paragraph",
+      "text": "The value of the title attribute will be displayed as a tooltip when \nyou mouse over the element:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<p title=\"I'm a tooltip\">This is a paragraph.</p>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "We Suggest: Always Use Lowercase Attributes"
+    },
+    {
+      "type": "paragraph",
+      "text": "The HTML standard does not require lowercase attribute names."
+    },
+    {
+      "type": "paragraph",
+      "text": "The title attribute (and all other attributes) can be written with uppercase or lowercase \nlike title or TITLE."
+    },
+    {
+      "type": "paragraph",
+      "text": "However, W3C recommends lowercase attributes in HTML, and demands \nlowercase attributes for stricter document types like XHTML."
+    },
+    {
+      "type": "other",
+      "text": "At W3Schools we always use lowercase attribute names."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "We Suggest: Always Quote Attribute Values"
+    },
+    {
+      "type": "paragraph",
+      "text": "The HTML standard does not require quotes around attribute values."
+    },
+    {
+      "type": "paragraph",
+      "text": "However, W3C recommends quotes in HTML, and demands quotes for \nstricter document types like XHTML."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<a href=\"https://www.w3schools.com/html/\">Visit our HTML tutorial</a>"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<a href=https://www.w3schools.com/html/>Visit our HTML tutorial</a>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Sometimes you have to use quotes. This example will not display \nthe title attribute correctly, because it contains a space:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<p\n title=Description of W3Schools>"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "At W3Schools we always use quotes around attribute values."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Single or Double Quotes?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Double quotes around attribute values are the most common in HTML, but single \nquotes can also be used."
+    },
+    {
+      "type": "paragraph",
+      "text": "In some situations, when the attribute value itself contains double quotes, it is necessary to use single quotes:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<p title='John \"ShotGun\" Nelson'>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Or vice versa:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<p title=\"John 'ShotGun' Nelson\">"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Chapter Summary"
+    },
+    {
+      "type": "other",
+      "text": "All HTML elements can have attributes\n  The href attribute of \n  <a> specifies the URL of the page the link goes to\n  The src attribute of \n  <img> specifies the path to the image to be displayed\n  The width and height attributes \n  of <img> provide size information for images\n  The alt attribute of \n  <img> provides an alternate text for an image\n  The style attribute is used to add styles \n  to an element, such as color, font, size, and more\n  The lang attribute \n  of the <html> tag declares the \n  language of the Web page\n  The title attribute defines some extra \n  information about an element"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML Attribute Reference"
+    },
+    {
+      "type": "other",
+      "text": "A complete list of all attributes for each HTML element, is listed in our:\nHTML Attribute Reference."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Video: HTML Attributes"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "All HTML elements can have attributes",
+        "Attributes provide additional information about elements",
+        "Attributes are always specified in the start tag",
+        "Attributes usually come in name/value pairs like: name=\"value\""
+      ]
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "All HTML elements can have attributes",
+        "The href attribute of \n  <a> specifies the URL of the page the link goes to",
+        "The src attribute of \n  <img> specifies the path to the image to be displayed",
+        "The width and height attributes \n  of <img> provide size information for images",
+        "The alt attribute of \n  <img> provides an alternate text for an image",
+        "The style attribute is used to add styles \n  to an element, such as color, font, size, and more",
+        "The lang attribute \n  of the <html> tag declares the \n  language of the Web page",
+        "The title attribute defines some extra \n  information about an element"
+      ]
+    },
+    {
+      "type": "image",
+      "src": "https://www.w3schools.com/html/images/yt_logo_rgb_dark.png"
+    },
+    {
+      "type": "image",
+      "src": "https://www.w3schools.com/html/images/04_html_attributes.png"
+    }
+  ]
+}

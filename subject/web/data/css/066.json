@@ -1,0 +1,87 @@
+{
+  "url": "https://www.w3schools.com/css/css_inline-block.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Layout - display: inline-block"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The display: inline-block Value"
+    },
+    {
+      "type": "paragraph",
+      "text": "Compared to display: inline, the major \ndifference is that display: inline-block allows \nto set a width and height on the element."
+    },
+    {
+      "type": "paragraph",
+      "text": "Compared to display: block, the major \ndifference is that display: inline-block does \nnot add a line-break after the element, so the element can sit next to other \nelements."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following example shows the different behavior of display: inline, display: inline-block \nand display: block:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "span.a {  display: inline; /* the default for span */  \n  width: 100px;  height: 100px;  \n  padding: 5px;  border: 1px solid blue;   background-color: yellow; }span.b {\n    display: \n  inline-block;  width: 100px;  height: \n  100px;  padding: 5px;  border: 1px \n  solid blue;   background-color: yellow; }\n  span.c {  display: block;  width: \n  100px;  height: 100px;  padding: 5px;  \n  border: 1px solid blue;   background-color: yellow; }"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Using inline-block to Create Navigation Links"
+    },
+    {
+      "type": "paragraph",
+      "text": "One common use for display: inline-block \nis to display list items horizontally instead of vertically. The following \nexample creates horizontal navigation links:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".nav {  background-color: yellow;   list-style-type: none;  text-align: \n  center;   padding: 0;  margin: 0;}.nav li {  display: inline-block;\n    font-size: 20px;  padding: \n  20px;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CSS Property"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Property",
+          "Description"
+        ],
+        [
+          "display",
+          "Specifies the display behavior (the type of rendering box) of an element"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

@@ -1,0 +1,365 @@
+{
+  "url": "https://www.w3schools.com/js/js_typeof.asp",
+  "title": "JavaScript typeof",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript typeof"
+    },
+    {
+      "type": "other",
+      "text": "The typeof Operator\nThe typeof operator returns the data type of a JavaScript variable."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Primitive Data Types"
+    },
+    {
+      "type": "paragraph",
+      "text": "In JavaScript, a primitive value is a single value with no properties or methods."
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript has 7 primitive data types:"
+    },
+    {
+      "type": "other",
+      "text": "string\n  number\n  boolean\n  bigint\n  symbol\n  null\n  undefined"
+    },
+    {
+      "type": "paragraph",
+      "text": "The typeof operator returns the type of a variable or an expression."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "typeof \"John\"        \n// Returns string\ntypeof (\"John\"+\"Doe\")\n// Returns string\ntypeof 3.14          \n// Returns number\ntypeof 33            \n// Returns number\ntypeof (33 + 66)     \n// Returns number\ntypeof true          \n// Returns boolean\ntypeof false         \n// Returns boolean\ntypeof 1234n         \n// Returns bigint\ntypeof Symbol()      \n// Returns symbol\ntypeof x             \n// Returns undefined"
+        },
+        {
+          "language": "unknown",
+          "code": "typeof null          \n// Returns object"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note:\nIn JavaScript, null is  a primitive value.\nHowever, typeof returns \"object\".\nThis is a well-known bug in JavaScript and has historical reasons."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Complex Data Types"
+    },
+    {
+      "type": "paragraph",
+      "text": "A complex data type can store multiple values\nand/or different data types together."
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript has one complex data type:"
+    },
+    {
+      "type": "other",
+      "text": "object"
+    },
+    {
+      "type": "paragraph",
+      "text": "All other complex types like arrays, functions, sets, and maps are just different types of objects."
+    },
+    {
+      "type": "paragraph",
+      "text": "The typeof operator returns only two types:"
+    },
+    {
+      "type": "other",
+      "text": "object\n  function"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "typeof {name:'John'}   // Returns object\ntypeof [1,2,3,4]      \n// Returns object\ntypeof new Map()      \n// Returns object\ntypeof new Set()      \n// Returns object\ntypeof function (){}   // Returns function"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note:\nThe typeof operator returns object for all types of objects:\n\nobjects\narrays\nsets\nmaps\n\nYou cannot use typeof to determine if a JavaScript object is an array or a date."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How to Recognize an Array"
+    },
+    {
+      "type": "paragraph",
+      "text": "How to know if a variable is an array?"
+    },
+    {
+      "type": "paragraph",
+      "text": "ECMAScript 5 (2009) defined a new method for this: Array.isArray():"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create an Array\nconst fruits = [\"apples\", \"bananas\", \"oranges\"];\nArray.isArray(fruits);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The instanceof Operator"
+    },
+    {
+      "type": "paragraph",
+      "text": "The instanceof operator returns true\nif an object is an instance of a specified object type:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create a Date\nconst time = new Date();\n\n(time instanceof Date);"
+        },
+        {
+          "language": "unknown",
+          "code": "// Create an Array\nconst fruits = [\"apples\", \"bananas\", \"oranges\"];\n\n(fruits instanceof Array);"
+        },
+        {
+          "language": "unknown",
+          "code": "// Create a Map\nconst fruits = new Map([\n  [\"apples\", 500],\n  [\"bananas\", 300],\n  [\"oranges\", 200]\n]);\n\n(fruits instanceof Map);"
+        },
+        {
+          "language": "unknown",
+          "code": "// Create a Set\nconst fruits = new Set([\"apples\", \"bananas\", \"oranges\"]);\n\n(fruits instanceof Set);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Undefined Variables"
+    },
+    {
+      "type": "paragraph",
+      "text": "The typeof of an undefined variable is\nundefined."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "typeof car;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The typeof of a variable with no value is\nundefined. The value is also undefined."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let car;\ntypeof car;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Any variable can be emptied, by setting the value to undefined."
+    },
+    {
+      "type": "paragraph",
+      "text": "The type will also be undefined."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let car = \"Volvo\";\ncar = undefined;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Empty Values"
+    },
+    {
+      "type": "paragraph",
+      "text": "An empty value has nothing to do with undefined."
+    },
+    {
+      "type": "paragraph",
+      "text": "An empty string has both a legal value and a type."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let car = \"\";\ntypeof car;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Null"
+    },
+    {
+      "type": "paragraph",
+      "text": "In JavaScript null is \"nothing\". It is supposed to be something that doesn't exist."
+    },
+    {
+      "type": "paragraph",
+      "text": "Unfortunately, in JavaScript, the data type of null is an object."
+    },
+    {
+      "type": "paragraph",
+      "text": "You can empty an object by setting it to null:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create an Object\nlet person = {firstName:\"John\", lastName:\"Doe\", age:50, eyeColor:\"blue\"};\n\nperson = null;\n// Now value is null, but type is still an object"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "You can also empty an object by setting it to undefined:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let person = {firstName:\"John\", lastName:\"Doe\", age:50, eyeColor:\"blue\"};\n\nperson = undefined;\n// Now both value and type is undefined"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Difference Between Undefined and Null"
+    },
+    {
+      "type": "paragraph",
+      "text": "undefined and null are equal in value but different in type:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "typeof undefined     \n    // undefinedtypeof null          \n    // objectnull === undefined   \n    // falsenull == undefined    \n    // true"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The constructor Property"
+    },
+    {
+      "type": "paragraph",
+      "text": "The constructor property returns the constructor \nfunction for all JavaScript variables."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Returns function Object() {[native code]}:\n{name:'John',age:34}.constructor\n// Returns function Array() {[native code]}:\n[1,2,3,4].constructor\n// Returns function Date() {[native code]}:\nnew Date().constructor\n// Returns function Set() {[native code]}:\nnew Set().constructor\n// Returns function Map() {[native code]}:\nnew Map().constructor\n// Returns function Function() {[native code]}:\nfunction () {}.constructor"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "With the constructor, you can check if an object is an Array:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "(myArray.constructor === Array);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "With the constructor, you can check if an object is a Date:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "(myDate.constructor === Date);"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "typeof \"John\"          \n// Returns \"string\" \ntypeof (\"John\"+\"Doe\")  \n// Returns \"string\" \ntypeof 3.14            \n// Returns \"number\"\ntypeof (33 + 66)       \n// Returns \"number\"\ntypeof NaN             \n// Returns \"number\"\ntypeof 1234n          \n// Returns \"bigint\"\ntypeof true           \n// Returns \"boolean\"\ntypeof false          \n// Returns \"boolean\"\ntypeof {name:'John'}  \n// Returns \"object\"\ntypeof [1,2,3,4]      \n// Returns \"object\"\ntypeof {}             \n// Returns \"object\"\ntypeof []             \n// Returns \"object\"\ntypeof new Object()    \n// Returns \"object\"\ntypeof new Array()     \n// Returns \"object\"\ntypeof new Date()      \n// Returns \"object\"\ntypeof new Set()       \n// Returns \"object\"\ntypeof new Map()       \n// Returns \"object\"\ntypeof function () {} \n// Returns \"function\"\ntypeof x               \n// Returns \"undefined\"\ntypeof null            \n// Returns \"object\""
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note:\nThe data type of NaN (Not a Number) is number !"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The void Operator"
+    },
+    {
+      "type": "paragraph",
+      "text": "The void operator evaluates an expression and returns \nundefined. This operator is often used to obtain the undefined \nprimitive value, using \"void(0)\" (useful when evaluating an expression without \nusing the return value)."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<a href=\"javascript:void(0);\">  Useless link</a>\n <a href=\"javascript:void(document.body.style.backgroundColor='red');\">  Click me to change the background color of body to red</a>"
+        }
+      ]
+    }
+  ]
+}

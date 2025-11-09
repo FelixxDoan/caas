@@ -1,0 +1,118 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_null_values.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL NULL Values"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "heading",
+      "text": "What is a NULL Value?"
+    },
+    {
+      "type": "paragraph",
+      "text": "A field with a NULL value is a field with no value."
+    },
+    {
+      "type": "paragraph",
+      "text": "If a field in a table is optional, it is possible to insert a new record or \nupdate a record without adding a value to this field. Then, the field will be \nsaved with a NULL value."
+    },
+    {
+      "type": "other",
+      "text": "Note: A NULL value is different from a zero value or a field that \ncontains spaces. A field with a NULL value is one that has been left blank \nduring record creation!"
+    },
+    {
+      "type": "heading",
+      "text": "How to Test for NULL Values?"
+    },
+    {
+      "type": "paragraph",
+      "text": "It is not possible to test for NULL values with comparison operators, such as \n=, <, or <>."
+    },
+    {
+      "type": "paragraph",
+      "text": "We will have to use the IS NULL and \nIS NOT NULL operators instead."
+    },
+    {
+      "type": "other",
+      "text": "IS NULL Syntax"
+    },
+    {
+      "type": "other",
+      "text": "SELECT column_namesFROM table_name\n  WHERE column_name IS NULL;"
+    },
+    {
+      "type": "other",
+      "text": "IS NOT NULL Syntax"
+    },
+    {
+      "type": "other",
+      "text": "SELECT column_namesFROM table_name\n  WHERE column_name IS NOT NULL;"
+    },
+    {
+      "type": "heading",
+      "text": "Demo Database"
+    },
+    {
+      "type": "paragraph",
+      "text": "Below is a selection from the Customers table used in the examples:"
+    },
+    {
+      "type": "other",
+      "text": "CustomerID\n    CustomerName\n    ContactName\n    Address\n    City\n    PostalCode\n    Country\n  \n  \n    1\n    Alfreds Futterkiste\n    Maria Anders\n    Obere Str. 57\n    Berlin\n    12209\n    Germany\n  \n  \n    2\n    Ana Trujillo Emparedados y helados\n    Ana Trujillo\n    Avda. de la Constitución 2222\n    México D.F.\n    05021\n    Mexico\n  \n  \n    3\n    Antonio Moreno Taquería\n    Antonio Moreno\n    Mataderos 2312\n    México D.F.\n    05023\n    Mexico\n  \n  \n    4\n    Around the Horn\n    Thomas Hardy\n    120 Hanover Sq.\n    London\n    WA1 1DP\n    UK\n  \n  \n    5\n    Berglunds snabbköp\n    Christina Berglund\n    Berguvsvägen 8\n    Luleå\n    S-958 22\n    Sweden"
+    },
+    {
+      "type": "heading",
+      "text": "The IS NULL Operator"
+    },
+    {
+      "type": "paragraph",
+      "text": "The IS NULL operator is used to test for empty values (NULL values)."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL lists all customers with a NULL value in the \"Address\" field:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n  SELECT CustomerName, ContactName, AddressFROM CustomersWHERE Address \n  IS NULL;\n\n\n  Try it Yourself »"
+    },
+    {
+      "type": "other",
+      "text": "Tip: Always use IS NULL to look for NULL values."
+    },
+    {
+      "type": "heading",
+      "text": "The IS NOT NULL Operator"
+    },
+    {
+      "type": "paragraph",
+      "text": "The IS NOT NULL operator is used to test for non-empty values (NOT NULL \nvalues)."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL lists all customers with a value in the \"Address\" field:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n  SELECT CustomerName, ContactName, AddressFROM CustomersWHERE Address \n  IS NOT NULL;\n\n  \n  Try it Yourself »"
+    },
+    {
+      "type": "heading",
+      "text": "Video: SQL NULL Values"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

@@ -1,0 +1,243 @@
+{
+  "url": "https://www.w3schools.com/css/css_table_style.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Table Style"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Table Padding"
+    },
+    {
+      "type": "paragraph",
+      "text": "To control the space between the border and the content in a table, use the \npadding property on \n<td> and <th> elements:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "First Name",
+          "Last Name",
+          "Savings"
+        ],
+        [
+          "Peter",
+          "Griffin",
+          "$100"
+        ],
+        [
+          "Lois",
+          "Griffin",
+          "$150"
+        ],
+        [
+          "Joe",
+          "Swanson",
+          "$300"
+        ]
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "th, td\n{\n   \npadding: 15px;  text-align: left;\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Horizontal Dividers"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "First Name",
+          "Last Name",
+          "Savings"
+        ],
+        [
+          "Peter",
+          "Griffin",
+          "$100"
+        ],
+        [
+          "Lois",
+          "Griffin",
+          "$150"
+        ],
+        [
+          "Joe",
+          "Swanson",
+          "$300"
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Add the border-bottom property to <th> and <td> for horizontal dividers:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "th, td {  border-bottom: 1px solid #ddd;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Hoverable Table"
+    },
+    {
+      "type": "paragraph",
+      "text": "Use the :hover selector on <tr> to highlight table rows on mouse \nover:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "First Name",
+          "Last Name",
+          "Savings"
+        ],
+        [
+          "Peter",
+          "Griffin",
+          "$100"
+        ],
+        [
+          "Lois",
+          "Griffin",
+          "$150"
+        ],
+        [
+          "Joe",
+          "Swanson",
+          "$300"
+        ]
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "tr:hover {background-color: coral;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Striped Tables"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "First Name",
+          "Last Name",
+          "Savings"
+        ],
+        [
+          "Peter",
+          "Griffin",
+          "$100"
+        ],
+        [
+          "Lois",
+          "Griffin",
+          "$150"
+        ],
+        [
+          "Joe",
+          "Swanson",
+          "$300"
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "For zebra-striped tables, use the nth-child() selector and add a background-color to all even (or odd) table rows:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "tr:nth-child(even) {background-color: #f2f2f2;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Table Color"
+    },
+    {
+      "type": "paragraph",
+      "text": "The example below specifies the background color \nand text color of \n<th> elements:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "First Name",
+          "Last Name",
+          "Savings"
+        ],
+        [
+          "Peter",
+          "Griffin",
+          "$100"
+        ],
+        [
+          "Lois",
+          "Griffin",
+          "$150"
+        ],
+        [
+          "Joe",
+          "Swanson",
+          "$300"
+        ]
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "th {  background-color: #04AA6D;  color: white;}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

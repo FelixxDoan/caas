@@ -1,0 +1,174 @@
+{
+  "url": "https://www.w3schools.com/js/js_json_parse.asp",
+  "title": "JSON",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JSON.parse()"
+    },
+    {
+      "type": "paragraph",
+      "text": "A common use of JSON is to exchange data to/from a web server."
+    },
+    {
+      "type": "paragraph",
+      "text": "When receiving data from a web server, the data is always a string."
+    },
+    {
+      "type": "paragraph",
+      "text": "Parse the data with JSON.parse(), and the data becomes a JavaScript object."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Example - Parsing JSON"
+    },
+    {
+      "type": "paragraph",
+      "text": "Imagine we received this text from a web server:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "'{\"name\":\"John\", \"age\":30, \"city\":\"New York\"}'"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Use the JavaScript function JSON.parse() to convert text into a JavaScript object:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const obj = JSON.parse('{\"name\":\"John\", \"age\":30, \"city\":\"New \n  York\"}');"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Make sure the text is in JSON format, or else you will get a syntax error."
+    },
+    {
+      "type": "paragraph",
+      "text": "Use the JavaScript object in your page:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<p id=\"demo\"></p>\n\n<script>\ndocument.getElementById(\"demo\").innerHTML = obj.name;\n</script>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Array as JSON"
+    },
+    {
+      "type": "paragraph",
+      "text": "When using the JSON.parse() on a JSON derived from an array, the method will \nreturn a JavaScript array, instead of a JavaScript object."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const text = '[\"Ford\", \"BMW\", \"Audi\", \"Fiat\"]';\nconst myArr = JSON.parse(text);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Exceptions"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Parsing Dates"
+    },
+    {
+      "type": "paragraph",
+      "text": "Date objects are not allowed in JSON."
+    },
+    {
+      "type": "paragraph",
+      "text": "If you need to include a date, write it as a string."
+    },
+    {
+      "type": "paragraph",
+      "text": "You can convert it back into a date object later:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const text =\n  '{\"name\":\"John\", \"birth\":\"1986-12-14\", \"city\":\"New York\"}';\n  const obj = JSON.parse(text);obj.birth = new Date(obj.birth);\n  document.getElementById(\"demo\").innerHTML = obj.name + \", \" + obj.birth;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Or, you can use the second parameter, of the JSON.parse() function, called reviver."
+    },
+    {
+      "type": "paragraph",
+      "text": "The reviver parameter is a function that checks each property, \nbefore returning the value."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const text =\n  '{\"name\":\"John\", \"birth\":\"1986-12-14\", \"city\":\"New York\"}';\n  const obj = JSON.parse(text, function (key, value) {  if \n  (key == \"birth\") {    return new \n  Date(value);  } else {    \n  return value;  }});\n  document.getElementById(\"demo\").innerHTML = obj.name + \", \" + obj.birth;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Parsing Functions"
+    },
+    {
+      "type": "paragraph",
+      "text": "Functions are not allowed in JSON."
+    },
+    {
+      "type": "paragraph",
+      "text": "If you need to include a function, write it as a string."
+    },
+    {
+      "type": "paragraph",
+      "text": "You can convert it back into a function later:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const text =\n  '{\"name\":\"John\", \"age\":\"function () {return \n  30;}\", \"city\":\"New York\"}';\n  const obj = JSON.parse(text);obj.age = eval(\"(\" + obj.age + \")\");\n  document.getElementById(\"demo\").innerHTML = obj.name + \", \" + \n  obj.age();"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "You should avoid using functions in JSON, the functions will lose their scope, \nand you would have to use eval() to convert them back into functions."
+    }
+  ]
+}

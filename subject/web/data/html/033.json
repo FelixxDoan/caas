@@ -1,0 +1,137 @@
+{
+  "url": "https://www.w3schools.com/html/html5_api_whatis.asp",
+  "title": "HTML - ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "HTML - What is a Web API?"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "other",
+      "text": "A Web API is a developer's dream.\n\nIt can extend the functionality of the browser\nIt can greatly simplify complex functions\nIt can provide easy syntax to complex code"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What is Web API?"
+    },
+    {
+      "type": "paragraph",
+      "text": "API stands for Application Programming Interface. An API \nis some kind of interface that includes a set of functions and subroutines that allow \nprogrammers to access specific features or data of an application, operating \nsystem or other services."
+    },
+    {
+      "type": "paragraph",
+      "text": "A Web API is an application programming interface for the Web."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML APIs"
+    },
+    {
+      "type": "paragraph",
+      "text": "All browsers have a set of built-in Web APIs \nto support complex operations, and to help accessing data."
+    },
+    {
+      "type": "paragraph",
+      "text": "Here are some of the main HTML5 APIs:"
+    },
+    {
+      "type": "paragraph",
+      "text": "1. Geolocation API - This API is used to access the \ncurrent location of a user (with latitude and longitude)."
+    },
+    {
+      "type": "paragraph",
+      "text": "2. Drag and Drop API - This API enables you to use \ndrag-and-drop features in browsers."
+    },
+    {
+      "type": "paragraph",
+      "text": "3. Web Storage API - This API \nhas mechanisms to let \nbrowsers store key/value pairs (in a more intuitive way than cookies)."
+    },
+    {
+      "type": "paragraph",
+      "text": "4. Web Workers API - This API allows a JavaScript to run in \nthe background, without affecting the performance of the page. Users can \ncontinue to do whatever they want: clicking, selecting things, etc., while the \nweb worker runs in the background."
+    },
+    {
+      "type": "paragraph",
+      "text": "5. Server-Sent Events API - This API allows a web page to \nautomatically get updates from a server."
+    },
+    {
+      "type": "paragraph",
+      "text": "6. Canvas API - This API lets \nyou draw graphics, on the fly, via JavaScript."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Notes on Using HTML APIs"
+    },
+    {
+      "type": "paragraph",
+      "text": "When implementing an HTML API, you should always:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Check Browser Capability - Always check that the target \nbrowsers support the API. Always add script or message to be run if a browser \ndoes not support it."
+    },
+    {
+      "type": "paragraph",
+      "text": "Add Robust Error Handling - Add robust error handling to \ntake care of scenarios where an API may not function as expected, to ensure a \nseamless user experience."
+    },
+    {
+      "type": "paragraph",
+      "text": "Request User Permission - When using an API that accesses \nsensitive data, like the Geolocation API (which will access the user's \ngeographical position), always prompt  the user for consent before \nproceeding."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Third Party APIs"
+    },
+    {
+      "type": "paragraph",
+      "text": "Third party APIs are not built into your browser."
+    },
+    {
+      "type": "paragraph",
+      "text": "To use these APIs, you will have to download the code from the Web."
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples:"
+    },
+    {
+      "type": "other",
+      "text": "YouTube API - Allows you to display videos on a web site.\nTwitter API - Allows you to display Tweets on a web site.\nFacebook API - Allows you to display Facebook info on a web site."
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "It can extend the functionality of the browser",
+        "It can greatly simplify complex functions",
+        "It can provide easy syntax to complex code"
+      ]
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "YouTube API - Allows you to display videos on a web site.",
+        "Twitter API - Allows you to display Tweets on a web site.",
+        "Facebook API - Allows you to display Facebook info on a web site."
+      ]
+    }
+  ]
+}

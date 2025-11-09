@@ -1,0 +1,231 @@
+{
+  "url": "https://www.w3schools.com/js/js_versions.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Versions"
+    },
+    {
+      "type": "other",
+      "text": "JavaScript was invented by Brendan Eich in 1995, and became an ECMA standard  \nin 1997.\nECMAScript is the official name of the JavaScript standard.\nFrom 1997 versions was abbreviated by numbers. (ES1, ES2, ES3, ES5, ES6)\nSince 2016, versions are named by year (ECMAScript 2016, 2017, 2018, ....)"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "ECMAScript Editions"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Ver",
+          "Official Name",
+          "Description"
+        ],
+        [
+          "ES1",
+          "ECMAScript 1 (1997)",
+          "First edition"
+        ],
+        [
+          "ES2",
+          "ECMAScript 2 (1998)",
+          "Editorial changes"
+        ],
+        [
+          "ES3",
+          "ECMAScript 3 (1999)",
+          "Added regular expressions\nAdded try/catch\nAdded switch\nAdded do-while"
+        ],
+        [
+          "ES4",
+          "ECMAScript 4",
+          "Never released"
+        ],
+        [
+          "ES5",
+          "ECMAScript 5 (2009)\nRead More",
+          "Added \"strict mode\"\nAdded JSON support\nAdded String.trim()\nAdded Array.isArray()\nAdded Array iteration methods\nAllows trailing commas for object literals"
+        ],
+        [
+          "ES6",
+          "ECMAScript 2015\nRead More",
+          "Added let and const\nAdded default parameter values\nAdded Array.find()\nAdded Array.findIndex()"
+        ],
+        [
+          "",
+          "ECMAScript 2016\nRead More",
+          "Added exponential operator (**)\nAdded Array.includes()"
+        ],
+        [
+          "",
+          "ECMAScript 2017\nRead More",
+          "Added string padding\nAdded Object.entries()\nAdded Object.values()\nAdded async functions\nAdded shared memory\nAllows trailing commas for function parameters"
+        ],
+        [
+          "",
+          "ECMAScript 2018\nRead More",
+          "Added rest / spread properties\nAdded asynchronous iteration\nAdded Promise.finally()\nAdditions to RegExp"
+        ],
+        [
+          "",
+          "ECMAScript 2019\nRead More",
+          "String.trimStart()\nString.trimEnd()\nArray.flat()\nObject.fromEntries\nOptional catch binding"
+        ],
+        [
+          "",
+          "ECMAScript 2020\nRead More",
+          "The Nullish Coalescing Operator (??)"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "This tutorial covers every version of JavaScript:\n\nThe Original JavaScript ES1 ES2 ES3 (1997-1999)\nThe First Main Revision ES5 (2009)\nThe Second Revision ES6 (2015)\nYearly Additions (2016, 2017, 2018, 2019, 2020)"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Browser Support"
+    },
+    {
+      "type": "paragraph",
+      "text": "ECMAScript 1 - 6 is fully supported in all modern browsers."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Browser Support for ES5 (2009)"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Browser",
+          "Version",
+          "From Date"
+        ],
+        [
+          "Chrome",
+          "23",
+          "Nov 2012"
+        ],
+        [
+          "Firefox",
+          "21",
+          "May 2013"
+        ],
+        [
+          "IE",
+          "9*",
+          "Mar 2011"
+        ],
+        [
+          "IE / Edge",
+          "10",
+          "Sep 2012"
+        ],
+        [
+          "Safari",
+          "6",
+          "Jul 2012"
+        ],
+        [
+          "Opera",
+          "15",
+          "Jul 2013"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "* Internet Explorer 9 does not support ECMAScript 5 \"use strict\"."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Browser Support for ES6 (2015)"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Browser",
+          "Version",
+          "Date"
+        ],
+        [
+          "Chrome",
+          "51",
+          "May 2016"
+        ],
+        [
+          "Firefox",
+          "52",
+          "Mar 2017"
+        ],
+        [
+          "Edge",
+          "14",
+          "Aug 2016"
+        ],
+        [
+          "Safari",
+          "10",
+          "Sep 2016"
+        ],
+        [
+          "Opera",
+          "38",
+          "Jun 2016"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Internet Explorer does not support ECMAScript 2015."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Browser Support for ECMAScript 2016"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Browser",
+          "Version",
+          "Date"
+        ],
+        [
+          "Chrome",
+          "52",
+          "Jul 2016"
+        ],
+        [
+          "Firefox",
+          "54",
+          "Jun 2017"
+        ],
+        [
+          "Edge",
+          "14",
+          "Aug 2016"
+        ],
+        [
+          "Safari",
+          "10.1",
+          "Mar 2017"
+        ],
+        [
+          "Opera",
+          "39",
+          "Aug 2016"
+        ]
+      ]
+    }
+  ]
+}

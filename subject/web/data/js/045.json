@@ -1,0 +1,139 @@
+{
+  "url": "https://www.w3schools.com/js/js_ajax_http_response.asp",
+  "title": "AJAX - Server",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "AJAX - Server Response"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Server Response Properties"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Property",
+          "Description"
+        ],
+        [
+          "responseText",
+          "get the response data as a string"
+        ],
+        [
+          "responseXML",
+          "get the response data as XML data"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The responseText Property"
+    },
+    {
+      "type": "paragraph",
+      "text": "The responseText property returns the server response as a \nJavaScript string, and you can use it accordingly:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "document.getElementById(\"demo\").innerHTML = xhttp.responseText;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The responseXML Property"
+    },
+    {
+      "type": "paragraph",
+      "text": "The XMLHttpRequest object has an in-built XML parser."
+    },
+    {
+      "type": "paragraph",
+      "text": "The responseXML property returns the server response as an XML DOM object."
+    },
+    {
+      "type": "paragraph",
+      "text": "Using this property you can parse the response as an XML DOM object:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const xmlDoc = xhttp.responseXML;\nconst x = xmlDoc.getElementsByTagName(\"ARTIST\");\n\nlet txt = \"\";\nfor (let i = 0; i < x.length; i++) {\n  txt += x[i].childNodes[0].nodeValue + \"<br>\";\n  }\ndocument.getElementById(\"demo\").innerHTML = txt;\n\nxhttp.open(\"GET\", \n \"cd_catalog.xml\");xhttp.send();"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Server Response Methods"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Method",
+          "Description"
+        ],
+        [
+          "getResponseHeader()",
+          "Returns specific header information from the server resource"
+        ],
+        [
+          "getAllResponseHeaders()",
+          "Returns all the header information from the server resource"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The getAllResponseHeaders() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The getAllResponseHeaders() method returns all header information from the server response."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const xhttp = new XMLHttpRequest();\nxhttp.onload = function() {\n    document.getElementById(\"demo\").innerHTML =\n    this.getAllResponseHeaders();\n}\nxhttp.open(\"GET\", \"ajax_info.txt\");\nxhttp.send();"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The getResponseHeader() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The getResponseHeader() method returns specific header information from the server response."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const xhttp = new XMLHttpRequest();\nxhttp.onload = function() {\n    document.getElementById(\"demo\").innerHTML =\n    this.getResponseHeader(\"Last-Modified\");\n}\nxhttp.open(\"GET\", \"ajax_info.txt\");\nxhttp.send();"
+        }
+      ]
+    }
+  ]
+}

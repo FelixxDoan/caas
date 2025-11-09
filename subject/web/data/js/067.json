@@ -1,0 +1,306 @@
+{
+  "url": "https://www.w3schools.com/js/js_htmldom_navigation.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript HTML DOM Navigation"
+    },
+    {
+      "type": "paragraph",
+      "text": "With the HTML DOM, you can navigate the node tree using node \nrelationships."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "DOM Nodes"
+    },
+    {
+      "type": "paragraph",
+      "text": "According to the W3C HTML DOM standard, everything in an HTML document is a node:"
+    },
+    {
+      "type": "other",
+      "text": "The entire document is a document node\n  Every HTML element is an element node\n  The text inside HTML elements are text nodes\n  Every HTML attribute is an attribute node (deprecated)\n  All comments are comment nodes"
+    },
+    {
+      "type": "paragraph",
+      "text": "With the HTML DOM, all nodes in the node tree can be accessed by JavaScript."
+    },
+    {
+      "type": "paragraph",
+      "text": "New nodes can be created, and all \nnodes can be modified or deleted."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Node Relationships"
+    },
+    {
+      "type": "paragraph",
+      "text": "The nodes in the node tree have a hierarchical relationship to each other."
+    },
+    {
+      "type": "paragraph",
+      "text": "The terms parent, child, and sibling are used to describe the relationships."
+    },
+    {
+      "type": "other",
+      "text": "In a node tree, the top node is called the root (or root node)\n  Every node has exactly one parent, except the root (which has no parent)\n  A node can have a number of children\n  Siblings (brothers or sisters) are nodes with the same parent"
+    },
+    {
+      "type": "other",
+      "text": "<html>\n       <head>\n          <title>DOM Tutorial</title>\n       </head> \n<body>\n          <h1>DOM Lesson one</h1>\n          <p>Hello world!</p>\n       </body>\n     </html>"
+    },
+    {
+      "type": "paragraph",
+      "text": "From the HTML above you can read:"
+    },
+    {
+      "type": "other",
+      "text": "<html> is the root node\n  <html> has no parents \n  <html> is the parent of <head> and <body>\n  <head> is the first child of <html>\n  <body> is the last child of <html>"
+    },
+    {
+      "type": "paragraph",
+      "text": "and:"
+    },
+    {
+      "type": "other",
+      "text": "<head> has one child: <title>\n  <title> has one child (a text node): \"DOM Tutorial\"\n  <body> has two children: <h1> and <p>\n  <h1> has one child: \"DOM Lesson one\"\n  <p> has one child: \"Hello world!\"\n  <h1> and <p> are siblings"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Navigating Between Nodes"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can use the following node properties to navigate between nodes with \nJavaScript:"
+    },
+    {
+      "type": "other",
+      "text": "parentNode\n  childNodes[nodenumber]\n  firstChild\n  lastChild\n  nextSibling\n  previousSibling"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Child Nodes and Node Values"
+    },
+    {
+      "type": "other",
+      "text": "A common error in DOM processing is to expect an element node to contain text."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<title \n id=\"demo\">DOM Tutorial</title>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The element node \n<title> (in the example above) does not contain text."
+    },
+    {
+      "type": "paragraph",
+      "text": "It contains a text node with the value \"DOM Tutorial\"."
+    },
+    {
+      "type": "paragraph",
+      "text": "The value of the text node can be accessed by the \nnode's \ninnerHTML property:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "myTitle = document.getElementById(\"demo\").innerHTML;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Accessing the innerHTML property is the same as accessing the nodeValue \nof the first child:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "myTitle = document.getElementById(\"demo\").firstChild.nodeValue;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Accessing the first child can also be done like this:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "myTitle = document.getElementById(\"demo\").childNodes[0].nodeValue;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "All the (3) following examples retrieves the text of an <h1> element and copies it \ninto a <p> element:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<html>\n<body><h1 id=\"id01\">My First Page</h1><p id=\"id02\"></p>\n<script>\n document.getElementById(\"id02\").innerHTML \n = document.getElementById(\"id01\").innerHTML;\n</script>\n</body>\n</html>"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<html>\n<body><h1 id=\"id01\">My First Page</h1><p id=\"id02\"></p>\n<script>\n document.getElementById(\"id02\").innerHTML = document.getElementById(\"id01\").firstChild.nodeValue;\n</script>\n</body>\n</html>"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<html>\n<body><h1 id=\"id01\">My First Page</h1><p id=\"id02\">Hello!</p>\n<script>\n document.getElementById(\"id02\").innerHTML = document.getElementById(\"id01\").childNodes[0].nodeValue;\n</script>\n</body>\n</html>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "InnerHTML"
+    },
+    {
+      "type": "paragraph",
+      "text": "In this tutorial we use the innerHTML property to retrieve the content of an \nHTML element."
+    },
+    {
+      "type": "paragraph",
+      "text": "However, learning \nthe other methods above is useful for understanding the tree structure and the \nnavigation of the DOM."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "DOM Root Nodes"
+    },
+    {
+      "type": "paragraph",
+      "text": "There are two special properties that allow access to the full document:"
+    },
+    {
+      "type": "other",
+      "text": "document.body - The body of the document\n  document.documentElement - The full document"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<html>\n<body>\n\n<h2>JavaScript HTMLDOM</h2><p>Displaying document.body</p><p \nid=\"demo\"></p><script>document.getElementById(\"demo\").innerHTML \n= document.body.innerHTML;</script>\n\n</body>\n</html>"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<html>\n<body>\n\n<h2>JavaScript HTMLDOM</h2><p>Displaying document.documentElement</p>\n<p id=\"demo\"></p><script>\ndocument.getElementById(\"demo\").innerHTML = \ndocument.documentElement.innerHTML;</script>\n\n</body>\n</html>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The nodeName Property"
+    },
+    {
+      "type": "paragraph",
+      "text": "The nodeName property specifies the name of a node."
+    },
+    {
+      "type": "other",
+      "text": "nodeName is read-only\n  nodeName of an element node is the same as the tag name\n  nodeName of an attribute node is the attribute name\n  nodeName of a text node is always #text\n  nodeName of the document node is always #document"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<h1 id=\"id01\">My First Page</h1>\n <p id=\"id02\"></p><script>document.getElementById(\"id02\").innerHTML \n = document.getElementById(\"id01\").nodeName;</script>"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note: nodeName always contains the uppercase tag name of an HTML element."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The nodeValue Property"
+    },
+    {
+      "type": "paragraph",
+      "text": "The nodeValue property specifies the value of a node."
+    },
+    {
+      "type": "other",
+      "text": "nodeValue for element nodes is null\n  nodeValue for text nodes is the text itself\n  nodeValue for attribute nodes is the attribute value"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The nodeType Property"
+    },
+    {
+      "type": "paragraph",
+      "text": "The nodeType property is read only. It returns the type of a node."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<h1 id=\"id01\">My First Page</h1>\n <p id=\"id02\"></p><script>document.getElementById(\"id02\").innerHTML \n = document.getElementById(\"id01\").nodeType;</script>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The most important nodeType properties are:"
+    },
+    {
+      "type": "other",
+      "text": "Node\nType\nExample\n\n\n  ELEMENT_NODE\n  1\n  <h1 class=\"heading\">W3Schools</h1>\n\n\n  ATTRIBUTE_NODE\n  2\n   class = \"heading\" (deprecated)\n\n\n  TEXT_NODE\n  3\n  W3Schools\n\n\n  COMMENT_NODE\n  8\n  <!-- This is a comment -->\n\n\n  DOCUMENT_NODE\n  9\n  The HTML document itself (the parent of <html>)\n\n\n  DOCUMENT_TYPE_NODE\n  10\n  <!Doctype html>"
+    },
+    {
+      "type": "other",
+      "text": "Type 2 is deprecated in the HTML DOM (but works). It is not deprecated in the XML DOM."
+    }
+  ]
+}

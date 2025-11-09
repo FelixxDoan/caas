@@ -1,0 +1,675 @@
+{
+  "url": "https://www.w3schools.com/js/js_array_iteration.asp",
+  "title": "JavaScript Array Iterations",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Array Iterations"
+    },
+    {
+      "type": "other",
+      "text": "Array Iteration Methods\nArray iteration methods operate on every array item.\n\n\n\n\nArray forEach\nArray map()\nArray flatMap()\nArray filter()\nArray reduce()\nArray reduceRight()\nArray every()\n\nArray some()\nArray from()\nArray keys()\nArray entries()\nArray with()\nArray Spread (...)\nArray Rest (...)"
+    },
+    {
+      "type": "other",
+      "text": "See Also\nArray Tutorial\nArray Basic Methods\nArray Search Methods\nArray Sort Methods\nArray Iteration Methods\nArray Reference"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Array forEach()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The forEach() method calls a function (a callback function) once for each array element."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const numbers = [45, 4, 9, 16, 25];\nlet txt = \"\";\nnumbers.forEach(myFunction);\nfunction myFunction(value, index, array) {\n   \ntxt += value + \"<br>\";\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Note that the function takes 3 arguments:"
+    },
+    {
+      "type": "other",
+      "text": "The item value\nThe item index \nThe array itself"
+    },
+    {
+      "type": "paragraph",
+      "text": "The example above uses only the value parameter. The example can be rewritten \nto:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const numbers = [45, 4, 9, 16, 25];\nlet txt = \"\";\nnumbers.forEach(myFunction);\nfunction myFunction(value) {\n   \ntxt += value + \"<br>\"; \n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Array map()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The map() method creates a new array by performing a function on each array element."
+    },
+    {
+      "type": "paragraph",
+      "text": "The map() method does not execute the function for array \nelements without values."
+    },
+    {
+      "type": "paragraph",
+      "text": "The map() method does not change the original array."
+    },
+    {
+      "type": "paragraph",
+      "text": "This example multiplies each array value by 2:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const numbers1 = [45, 4, 9, 16, 25];\nconst numbers2 = numbers1.map(myFunction);\n  \nfunction myFunction(value, index, array) {\n    return value * 2;\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Note that the function takes 3 arguments:"
+    },
+    {
+      "type": "other",
+      "text": "The item value\nThe item index \nThe array itself"
+    },
+    {
+      "type": "paragraph",
+      "text": "When a callback function uses only the value parameter, the index and array \nparameters can be omitted:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const numbers1 = [45, 4, 9, 16, 25];\nconst numbers2 = numbers1.map(myFunction);\n  \nfunction myFunction(value) {\n    return value * 2;\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Array flatMap()"
+    },
+    {
+      "type": "paragraph",
+      "text": "ES2019 added the Array flatMap() method to JavaScript."
+    },
+    {
+      "type": "paragraph",
+      "text": "The flatMap() method first maps all elements of an array\nand then creates a new array by flattening the array."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const myArr = [1, 2, 3, 4, 5, 6];\nconst newArr = myArr.flatMap((x) => x * 2);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Browser Support"
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript Array flatMap() is supported in all modern browsers since January 2020:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome 69    \n    Edge 79\n    Firefox 62\n    Safari 12\n    Opera 56\n  \n  \n    Sep 2018\n    Jan 2020    \n    Sep 2018\n    Sep 2018\n    Sep 2018"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Array filter()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The filter() method creates a new array with array elements that pass a test."
+    },
+    {
+      "type": "paragraph",
+      "text": "This example creates a new array from elements with a value larger than 18:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const numbers = [45, 4, 9, 16, 25];\nconst over18 = numbers.filter(myFunction);\nfunction myFunction(value, index, array) {  return value > 18;}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Note that the function takes 3 arguments:"
+    },
+    {
+      "type": "other",
+      "text": "The item value\nThe item index \nThe array itself"
+    },
+    {
+      "type": "paragraph",
+      "text": "In the example above, the callback function does not use the index and array \nparameters, so they can be omitted:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const numbers = [45, 4, 9, 16, 25];\nconst over18 = \n  numbers.filter(myFunction);function myFunction(value) {  return value > 18;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Array reduce()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The reduce() method runs a function on each array element to produce a single value."
+    },
+    {
+      "type": "paragraph",
+      "text": "The reduce() method works from left-to-right in the array. See also reduceRight()."
+    },
+    {
+      "type": "other",
+      "text": "Note\nThe reduce() method does not reduce the original array."
+    },
+    {
+      "type": "paragraph",
+      "text": "This example finds the sum of all numbers in an array:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const numbers = [45, 4, 9, 16, 25];\nlet sum = numbers.reduce(myFunction);\n  function myFunction(total, value, index, array) {  \n  return total + value;}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Note that the function takes 4 arguments:"
+    },
+    {
+      "type": "other",
+      "text": "The total (the initial value / previously returned value)\n  The item value\n  The item index \n  The array itself"
+    },
+    {
+      "type": "paragraph",
+      "text": "Since the example above does not use the index and array parameters, it can be \nrewritten to:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const numbers = [45, 4, 9, 16, 25];\nlet sum = numbers.reduce(myFunction);\n  function myFunction(total, value) {  \n  return total + value;}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The reduce() method can accept an initial value:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const numbers = [45, 4, 9, 16, 25];\nlet sum = numbers.reduce(myFunction, \n  100);\n  function myFunction(total, value) {  return total + value;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Array reduceRight()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The reduceRight() method runs a function on each array element to produce a single value."
+    },
+    {
+      "type": "paragraph",
+      "text": "The reduceRight() works from right-to-left in the array. See also reduce()."
+    },
+    {
+      "type": "other",
+      "text": "Note\nThe reduceRight() method does not reduce the original array."
+    },
+    {
+      "type": "paragraph",
+      "text": "This example finds the sum of all numbers in an array:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const numbers = [45, 4, 9, 16, 25];\nlet sum = numbers.reduceRight(myFunction);\n  function myFunction(total, value, index, array) {  \n  return total + value;}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Note that the function takes 4 arguments:"
+    },
+    {
+      "type": "other",
+      "text": "The total (the initial value / previously returned value)\n  The item value\n  The item index \n  The array itself"
+    },
+    {
+      "type": "paragraph",
+      "text": "The example above does not use the index and array parameters. It can be \nrewritten to:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const numbers = [45, 4, 9, 16, 25];\nlet sum = numbers.reduceRight(myFunction);\n  function myFunction(total, value) {  return total + value;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Array every()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The every() method checks if all array values pass a test."
+    },
+    {
+      "type": "paragraph",
+      "text": "This example checks if all array values are larger than 18:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const numbers = [45, 4, 9, 16, 25];\nlet allOver18 = \n  numbers.every(myFunction);function myFunction(value, index, array) {\n    return \n  value > 18;}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Note that the function takes 3 arguments:"
+    },
+    {
+      "type": "other",
+      "text": "The item value\n  The item index \n  The array itself"
+    },
+    {
+      "type": "paragraph",
+      "text": "When a callback function uses the first parameter only (value), the other \nparameters can be omitted:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const numbers = [45, 4, 9, 16, 25];\nlet allOver18 = \n  numbers.every(myFunction);function myFunction(value) {  return \n  value > 18;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Array some()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The some() method checks if some array values pass a test."
+    },
+    {
+      "type": "paragraph",
+      "text": "This example checks if some array values are larger than 18:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const numbers = [45, 4, 9, 16, 25];\nlet someOver18 = numbers.some(myFunction);function myFunction(value, index, array) {\n    return \n  value > 18;}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Note that the function takes 3 arguments:"
+    },
+    {
+      "type": "other",
+      "text": "The item value\nThe item index \nThe array itself"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Array.from()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Array.from() method returns an Array object from:"
+    },
+    {
+      "type": "other",
+      "text": "Any iterable object \nAny object with a length property"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"ABCDEFG\";\nArray.from(text);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Array.from() has an optional parameter which allows you to execute a function\non each element of the new array:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const myNumbers = [1,2,3,4];\nconst myArr = Array.from(myNumbers, (x) => x * 2);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Browser Support"
+    },
+    {
+      "type": "paragraph",
+      "text": "from() is an ES6  feature."
+    },
+    {
+      "type": "paragraph",
+      "text": "ES6 is fully supported in all modern browsers since June 2017:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome51\n    Edge15\n    Firefox54\n    Safari10\n    Opera38\n  \n  \n    May 2016\n    Apr 2017\n    Jun 2017\n    Sep 2016\n    Jun 2016"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Array keys()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Array.keys() method returns an Array Iterator object with the keys of an array."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];\nconst keys = fruits.keys();\nfor (let x of keys) {\n  text += x + \"<br>\";}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Browser Support"
+    },
+    {
+      "type": "paragraph",
+      "text": "keys() is an ES6  feature."
+    },
+    {
+      "type": "paragraph",
+      "text": "ES6 is fully supported in all modern browsers since June 2017:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome51\n    Edge15\n    Firefox54\n    Safari10\n    Opera38\n  \n  \n    May 2016\n    Apr 2017\n    Jun 2017\n    Sep 2016\n    Jun 2016"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Array entries()"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];\nconst f = fruits.entries();for (let x of f) {\n  document.getElementById(\"demo\").innerHTML += x;}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The entries() method returns an Array Iterator object with key/value pairs:"
+    },
+    {
+      "type": "paragraph",
+      "text": "[0, \"Banana\"][1, \"Orange\"][2, \"Apple\"][3, \"Mango\"]"
+    },
+    {
+      "type": "paragraph",
+      "text": "The entries() method does not change the original array."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Browser Support"
+    },
+    {
+      "type": "paragraph",
+      "text": "entries() is an ES6  feature."
+    },
+    {
+      "type": "paragraph",
+      "text": "ES6 is fully supported in all modern browsers since June 2017:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome51\n    Edge15\n    Firefox54\n    Safari10\n    Opera38\n  \n  \n    May 2016\n    Apr 2017\n    Jun 2017\n    Sep 2016\n    Jun 2016"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Array with() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "ES2023 added the Array with() method as a safe way to update elements in an array without altering the original array."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const months = [\"Januar\", \"Februar\", \"Mar\", \"April\"];\nconst myMonths = months.with(2, \"March\");"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Array Spread (...)"
+    },
+    {
+      "type": "paragraph",
+      "text": "The ... operator expands an array into individual elements."
+    },
+    {
+      "type": "paragraph",
+      "text": "This can be used join arrays:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const arr1 = [1, 2, 3];\nconst arr2 = [4, 5, 6];\n\nconst arr3 = [...arr1, ...arr2];"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "In the example above, ...arr1 expands arr1 into single elements, ...arr2 expands arr2 into single elements,\nand arr3 is constructed using ...arr1 and ...arr2."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const q1 = [\"Jan\", \"Feb\", \"Mar\"];\nconst q2 = [\"Apr\", \"May\", \"Jun\"];\nconst q3 = [\"Jul\", \"Aug\", \"Sep\"];\nconst q4 = [\"Oct\", \"Nov\", \"Des\"];\n\nconst year = [...q1, ...q2, ...q3, ...q4];"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The spread operator (...) can be used to copy an array:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const arr1 = [1, 2, 3];\nconst arr2 = [...arr1];"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The spread operator (...) can be used to pass arguments to a function:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const numbers = [23,55,21,87,56];\nlet minValue = Math.min(...numbers);\nlet maxValue = Math.max(...numbers);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Browser Support"
+    },
+    {
+      "type": "paragraph",
+      "text": "... (spread) is an ES6  feature."
+    },
+    {
+      "type": "paragraph",
+      "text": "ES6 is fully supported in all modern browsers since June 2017:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome51\n    Edge15\n    Firefox54\n    Safari10\n    Opera38\n  \n  \n    May 2016\n    Apr 2017\n    Jun 2017\n    Sep 2016\n    Jun 2016"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Array Rest (...)"
+    },
+    {
+      "type": "paragraph",
+      "text": "The rest operator (...) allows us to destruct an array and collect the leftovers:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let a, rest;\nconst arr1 = [1,2,3,4,5,6,7,8];\n\n[a, ...rest] = arr1;"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let a, b, rest;\nconst arr1 = [1,2,3,4,5,6,7,8];\n\n[a, b, ...rest] = arr1;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Browser Support"
+    },
+    {
+      "type": "paragraph",
+      "text": "... (rest) is an ECMAScript 2018 feature."
+    },
+    {
+      "type": "paragraph",
+      "text": "ES2018 is supported in all modern browsers since January 2020:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome 64\n    Edge 79\n    Firefox 78\n    Safari 12\n    Opera 51\n  \n  \n    Jan 2018\n    Jan 2020\n    Jun 2020\n    Sep 2018\n    Feb 2018"
+    },
+    {
+      "type": "other",
+      "text": "Complete JavaScript Reference\nFor a complete reference to all JavaScript properties and methods, with full descriptions and many examples, go to:\nW3Schools' Full JavaScript Reference.\nThe reference inludes all JavaScript updates from 1999 to 2025."
+    }
+  ]
+}

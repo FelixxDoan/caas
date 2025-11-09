@@ -1,0 +1,146 @@
+{
+  "url": "https://www.w3schools.com/html/html_comments.asp",
+  "title": "HTML ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "HTML Comments"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "HTML comments are not displayed in the browser, but they can \nhelp document your HTML source code."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML Comment Tag"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can add comments to your HTML source by using the following syntax:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<!-- Write your comments here -->"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Notice that there is an exclamation point (!) in the start tag, but not in the \nend tag."
+    },
+    {
+      "type": "other",
+      "text": "Note: Comments are not displayed by the browser, but they can help document your HTML source code."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Add Comments"
+    },
+    {
+      "type": "paragraph",
+      "text": "With comments you can place notifications and reminders in your HTML code:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<!-- This is a comment --><p>This is a paragraph.</p>\n<!-- Remember to add more information here -->"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Hide Content"
+    },
+    {
+      "type": "paragraph",
+      "text": "Comments can be used to hide content."
+    },
+    {
+      "type": "paragraph",
+      "text": "This can be helpful if you hide content temporarily:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<p>This is a paragraph.</p><!-- <p>This is another paragraph \n  </p> --><p>This is a paragraph too.</p>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "You can also hide more than one line. Everything between the <!-- and the -->\nwill be hidden from the display."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<p>This is a paragraph.</p><!--<p>Look at this cool \n  image:</p>\n<img border=\"0\" src=\"pic_trulli.jpg\" \nalt=\"Trulli\">--><p>This is a paragraph too.</p>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Comments are also great for debugging HTML, because you can \ncomment out HTML lines of code, one at a time, to search for errors."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Hide Inline Content"
+    },
+    {
+      "type": "paragraph",
+      "text": "Comments can be used to hide parts in the middle of the HTML code."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<p>This <!-- great text --> is a paragraph.</p>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Video: HTML Comments"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    },
+    {
+      "type": "image",
+      "src": "https://www.w3schools.com/html/images/yt_logo_rgb_dark.png"
+    },
+    {
+      "type": "image",
+      "src": "https://www.w3schools.com/html/images/09_html_comments.png"
+    }
+  ]
+}

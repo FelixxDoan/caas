@@ -1,0 +1,78 @@
+{
+  "url": "https://www.w3schools.com/css/css_border_shorthand.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Shorthand Border Property"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CSS Border - Shorthand Property"
+    },
+    {
+      "type": "paragraph",
+      "text": "Like you saw in the previous page, there are many properties to consider when dealing with borders."
+    },
+    {
+      "type": "paragraph",
+      "text": "To shorten the code, it is also possible to specify all the individual border properties in \none property."
+    },
+    {
+      "type": "paragraph",
+      "text": "The border property is a shorthand property for the following individual border properties:"
+    },
+    {
+      "type": "other",
+      "text": "border-width\nborder-style (required)\nborder-color"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "p { \nborder: 5px solid red;}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "You can also specify all the individual border properties for just one side:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "p { \nborder-left: 6px solid red;}"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "p { \nborder-bottom: 6px solid red;}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

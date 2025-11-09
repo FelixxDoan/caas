@@ -1,0 +1,352 @@
+{
+  "url": "https://www.w3schools.com/html/html_links.asp",
+  "title": "HTML ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "HTML Links"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "Links are found in nearly all web pages. Links allow users to click their way from page to page."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML Links - Hyperlinks"
+    },
+    {
+      "type": "paragraph",
+      "text": "HTML links are hyperlinks."
+    },
+    {
+      "type": "paragraph",
+      "text": "You can click on a link and jump to another document."
+    },
+    {
+      "type": "paragraph",
+      "text": "When you move the mouse over a link, the mouse arrow will turn into a little hand."
+    },
+    {
+      "type": "other",
+      "text": "Note: A link does not have to be text. A link can be an image \n  or any other HTML element!"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML Links - Syntax"
+    },
+    {
+      "type": "paragraph",
+      "text": "The HTML <a> tag defines a hyperlink. \nIt has the following syntax:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<a href=\"url\">link text</a>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The most important attribute of the <a>  element is the \nhref attribute, which indicates the link's destination."
+    },
+    {
+      "type": "paragraph",
+      "text": "The link text is the part that will be visible to the reader."
+    },
+    {
+      "type": "paragraph",
+      "text": "Clicking on the link text, will send the reader to the specified URL address."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<a href=\"https://www.w3schools.com/\">Visit W3Schools.com!</a>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "By default, links will appear as follows in all browsers:"
+    },
+    {
+      "type": "other",
+      "text": "An unvisited link is underlined and blue\n  A visited link is underlined and purple\n  An active link is underlined and red"
+    },
+    {
+      "type": "other",
+      "text": "Tip: Links can of course be styled with CSS, to get \n  another look!"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML Links - The target Attribute"
+    },
+    {
+      "type": "paragraph",
+      "text": "By default, the linked page will be displayed in the current browser window. \nTo change this, you must specify another target for the link."
+    },
+    {
+      "type": "paragraph",
+      "text": "The target attribute specifies where to open the linked document."
+    },
+    {
+      "type": "paragraph",
+      "text": "The target attribute can have one of the following values:"
+    },
+    {
+      "type": "other",
+      "text": "_self - Default. Opens the document in \n  the same window/tab as it was clicked\n  _blank - Opens the document in a new window or tab\n  _parent - Opens the document in the parent frame\n  _top - Opens the document in the full body of the window"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<a href=\"https://www.w3schools.com/\"\ntarget=\"_blank\">Visit W3Schools!</a>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Absolute URLs vs. Relative URLs"
+    },
+    {
+      "type": "paragraph",
+      "text": "Both examples above are using an absolute URL (a full web address) \nin the href attribute."
+    },
+    {
+      "type": "paragraph",
+      "text": "A local link (a link to a page within the same website) is specified with a \nrelative URL (without \nthe \"https://www\" part):"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<h2>Absolute URLs</h2><p><a href=\"https://www.w3.org/\">W3C</a></p>\n  <p><a href=\"https://www.google.com/\">Google</a></p><h2>Relative \n  URLs</h2><p><a href=\"html_images.asp\">HTML Images</a></p><p><a href=\"/css/default.asp\">CSS \n  Tutorial</a></p>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML Links - Use an Image as a Link"
+    },
+    {
+      "type": "paragraph",
+      "text": "To use an image as a link, just put the <img> \ntag inside the <a> tag:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<a href=\"default.asp\"><img src=\"smiley.gif\" alt=\"HTML tutorial\" style=\"width:42px;height:42px;\"></a>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Link to an Email Address"
+    },
+    {
+      "type": "paragraph",
+      "text": "Use \nmailto: inside the \nhref attribute to create a link that opens the user's email program (to \nlet them send a new email):"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<a href=\"mailto:someone@example.com\">Send email</a>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Button as a Link"
+    },
+    {
+      "type": "paragraph",
+      "text": "To use an HTML button as a link, you have to add some JavaScript code."
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript allows you to specify what happens at certain events, such as a click of a button:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<button \n  onclick=\"document.location='default.asp'\">HTML Tutorial</button>"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Tip: Learn more about JavaScript in our JavaScript Tutorial."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Link Titles"
+    },
+    {
+      "type": "paragraph",
+      "text": "The title attribute specifies extra information about an element.\nThe information is most often shown as a tooltip text when the mouse moves over the element."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<a href=\"https://www.w3schools.com/html/\" title=\"Go to W3Schools HTML \n  section\">Visit our HTML Tutorial</a>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "More on Absolute URLs and Relative URLs"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<a href=\"https://www.w3schools.com/html/default.asp\">HTML tutorial</a>"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<a href=\"/html/default.asp\">HTML tutorial</a>"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<a href=\"default.asp\">HTML tutorial</a>"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "You can read more about file paths in the chapter HTML \nFile Paths."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Chapter Summary"
+    },
+    {
+      "type": "other",
+      "text": "Use the <a> element to define a link\n  Use the href attribute to define the link address\n  Use the target attribute to define where to open the linked document\n  Use the <img> element (inside <a>) \n  to use an image as a link\n  Use the \n  mailto: scheme inside the \nhref attribute to create a link that opens the user's email program"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML Link Tags"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Tag",
+          "Description"
+        ],
+        [
+          "<a>",
+          "Defines a hyperlink"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "For a complete list of all available HTML tags, visit our HTML Tag Reference."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Video: HTML Links"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "An unvisited link is underlined and blue",
+        "A visited link is underlined and purple",
+        "An active link is underlined and red"
+      ]
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "_self - Default. Opens the document in \n  the same window/tab as it was clicked",
+        "_blank - Opens the document in a new window or tab",
+        "_parent - Opens the document in the parent frame",
+        "_top - Opens the document in the full body of the window"
+      ]
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Use the <a> element to define a link",
+        "Use the href attribute to define the link address",
+        "Use the target attribute to define where to open the linked document",
+        "Use the <img> element (inside <a>) \n  to use an image as a link",
+        "Use the \n  mailto: scheme inside the \nhref attribute to create a link that opens the user's email program"
+      ]
+    },
+    {
+      "type": "image",
+      "src": "https://www.w3schools.com/html/images/yt_logo_rgb_dark.png"
+    },
+    {
+      "type": "image",
+      "src": "https://www.w3schools.com/html/images/12_html_links.png"
+    }
+  ]
+}

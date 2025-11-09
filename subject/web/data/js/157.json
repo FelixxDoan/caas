@@ -1,0 +1,378 @@
+{
+  "url": "https://www.w3schools.com/js/js_best_practices.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Best Practices"
+    },
+    {
+      "type": "paragraph",
+      "text": "Avoid global variables, avoid new, avoid ==, avoid eval()"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Avoid Global Variables"
+    },
+    {
+      "type": "paragraph",
+      "text": "Minimize the use of global variables."
+    },
+    {
+      "type": "paragraph",
+      "text": "This includes all data types, objects, and functions."
+    },
+    {
+      "type": "paragraph",
+      "text": "Global variables and functions can be overwritten by other scripts."
+    },
+    {
+      "type": "paragraph",
+      "text": "Use local variables instead, and learn how to use \nclosures."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Always Declare Local Variables"
+    },
+    {
+      "type": "paragraph",
+      "text": "All variables used in a function should be declared as local variables."
+    },
+    {
+      "type": "paragraph",
+      "text": "Local variables must be declared with the var, \nthe let, or the const keyword,\notherwise they will become global variables."
+    },
+    {
+      "type": "other",
+      "text": "Strict mode does not allow undeclared variables."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Declarations on Top"
+    },
+    {
+      "type": "paragraph",
+      "text": "It is a good coding practice to put all declarations at the top of each script \nor function."
+    },
+    {
+      "type": "paragraph",
+      "text": "This will:"
+    },
+    {
+      "type": "other",
+      "text": "Give cleaner code\n Provide a single place to look for local variables\n Make it easier to avoid unwanted (implied) global variables\n Reduce the possibility of unwanted re-declarations"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Declare at the beginning\nlet firstName, lastName, price, discount, fullPrice;\n // Use laterfirstName = \"John\";lastName = \"Doe\";price = 19.90;\ndiscount = 0.10;fullPrice = price - discount;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "This also goes for loop variables:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "for (let i = 0; i < 5; i++) \n {"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Initialize Variables"
+    },
+    {
+      "type": "paragraph",
+      "text": "It is a good coding practice to initialize variables when you declare them."
+    },
+    {
+      "type": "paragraph",
+      "text": "This will:"
+    },
+    {
+      "type": "other",
+      "text": "Give cleaner code\n Provide a single place to initialize variables\n Avoid undefined values"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Declare and initiate at the beginning\nlet firstName = \"\";\nlet lastName = \"\";\nlet price = 0;\nlet discount = 0;\nlet fullPrice = 0,\nconst myArray = [];\nconst myObject = {};"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Initializing variables provides an idea of the intended use (and intended data type)."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Declare Objects with const"
+    },
+    {
+      "type": "paragraph",
+      "text": "Declaring objects with const will prevent any accidental change of type:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let car = {type:\"Fiat\", model:\"500\", color:\"white\"};\ncar = \"Fiat\";      // Changes object to string"
+        },
+        {
+          "language": "unknown",
+          "code": "const car = {type:\"Fiat\", model:\"500\", color:\"white\"};\ncar = \"Fiat\";      // Not possible"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Declare Arrays with const"
+    },
+    {
+      "type": "paragraph",
+      "text": "Declaring arrays with const will prevent any accidential change of type:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let cars = [\"Saab\", \"Volvo\", \"BMW\"];\ncars = 3;    // Changes array to number"
+        },
+        {
+          "language": "unknown",
+          "code": "const cars = [\"Saab\", \"Volvo\", \"BMW\"];\ncars = 3;    // Not possible"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Don't Use new Object()"
+    },
+    {
+      "type": "other",
+      "text": "Use \"\" instead of new String()\n  Use 0 instead of new Number()\n  Use false instead of new Boolean()\n  Use {} instead of new Object()\n  Use [] instead of new Array()\n  Use /()/ instead of new RegExp()\n  Use function (){} instead of new Function()"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x1 = \"\";             // new primitive string\nlet x2 = 0;              // new primitive number\nlet x3 = false;          // new primitive boolean\nconst x4 = {};           // new object\nconst x5 = [];           // new array object\nconst x6 = /()/;         // new regexp object\nconst x7 = function(){}; // new function object"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Beware of Automatic Type Conversions"
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript is loosely typed."
+    },
+    {
+      "type": "paragraph",
+      "text": "A variable can contain all data types."
+    },
+    {
+      "type": "paragraph",
+      "text": "A variable can change its data type:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = \"Hello\";     // typeof x is a string\nx = 5;               // changes typeof x to a number"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Beware that numbers can accidentally be converted to strings or NaN (Not a \nNumber)."
+    },
+    {
+      "type": "paragraph",
+      "text": "When doing mathematical operations, JavaScript can convert numbers to strings:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 5 + 7;       // x.valueOf() is 12,  typeof x is a number\nlet x = 5 + \"7\";     // x.valueOf() is 57,  typeof x is a string\nlet x = \"5\" + 7;     // x.valueOf() is 57,  typeof x is a string\nlet x = 5 - 7;       // x.valueOf() is -2,  typeof x is a number\nlet x = 5 - \"7\";     // x.valueOf() is -2,  typeof x is a number\nlet x = \"5\" - 7;     // x.valueOf() is -2,  typeof x is a number\nlet x = 5 - \"x\";     // x.valueOf() is NaN, typeof x is a number"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Subtracting a string from a string, does not \ngenerate an error but returns NaN (Not a Number):"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "\"Hello\" - \"Dolly\"    // returns NaN"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Use === Comparison"
+    },
+    {
+      "type": "paragraph",
+      "text": "The == comparison operator always converts (to matching types) before \ncomparison."
+    },
+    {
+      "type": "paragraph",
+      "text": "The === operator forces comparison of values and type:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "0 == \"\";        // true\n1 == \"1\";       // true\n1 == true;      // true\n0 === \"\";       // false\n1 === \"1\";      // false\n1 === true;     \n// false"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Use Parameter Defaults"
+    },
+    {
+      "type": "paragraph",
+      "text": "If a function is called with a missing argument, the value of the missing \nargument is set to\nundefined."
+    },
+    {
+      "type": "paragraph",
+      "text": "Undefined values can break your code. It is a good habit to assign default \nvalues to arguments."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "function myFunction(x, y) {\n    if (y === undefined) {\n      y = 0;\n     }\n}"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "function (a=1, b=1) { /*function code*/  }"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Read more about function parameters and arguments at Function Parameters"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "End Your Switches with Defaults"
+    },
+    {
+      "type": "paragraph",
+      "text": "Always end your switch statements with a default. Even if you think there is \nno need for it."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "switch (new Date().getDay()) {\n   \ncase 0:\n      day = \"Sunday\";\n      break;\n  case 1:\n      day = \"Monday\";\n      break;\n  case 2:\n    day = \"Tuesday\";\n     break;\n   \ncase 3:\n    day = \"Wednesday\";\n      break;\n   \ncase 4:\n    day = \"Thursday\";\n     break;\n  case 5:\n      day = \"Friday\";\n      break;\n  case 6:\n    day = \"Saturday\";\n      break;\n  default:    day = \n \"Unknown\";}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Avoid Number, String, and Boolean as Objects"
+    },
+    {
+      "type": "paragraph",
+      "text": "Always treat numbers, strings, or booleans as primitive values. Not as \nobjects."
+    },
+    {
+      "type": "paragraph",
+      "text": "Declaring these types as objects, slows down execution speed, \nand produces nasty side effects:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = \"John\";             \nlet y = new String(\"John\");\n(x === y) // is false because x is a string and y is an object."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Or even worse:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = new String(\"John\");             \nlet y = new String(\"John\");\n(x == y) // is false because you cannot compare objects."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Avoid Using eval()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The eval() function is used to run text as code. In almost all cases, it \nshould not be necessary to use it."
+    },
+    {
+      "type": "paragraph",
+      "text": "Because it allows arbitrary code to be run, it also represents a security \nproblem."
+    }
+  ]
+}

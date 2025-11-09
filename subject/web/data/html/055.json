@@ -1,0 +1,194 @@
+{
+  "url": "https://www.w3schools.com/html/html_computercode_elements.asp",
+  "title": "HTML ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "HTML Computer Code Elements"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "HTML contains several elements for defining user input and \ncomputer code."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<code>x = 5;y = 6;\n  z = x + y;</code>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML <kbd> For Keyboard Input"
+    },
+    {
+      "type": "paragraph",
+      "text": "The HTML <kbd> element is used \nto define keyboard input. The content inside is displayed in the browser's \ndefault monospace font."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<p>Save the document by pressing <kbd>Ctrl + S</kbd></p>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML <samp> For Program Output"
+    },
+    {
+      "type": "paragraph",
+      "text": "The HTML <samp> element is used to \ndefine sample output from a computer program. The content inside is displayed in \nthe browser's default monospace font."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<p>Message from my computer:</p><p><samp>File not found.<br>Press F1 to \n  continue</samp></p>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML <code> For Computer Code"
+    },
+    {
+      "type": "paragraph",
+      "text": "The HTML <code> element  is used \nto define a piece of computer code. The content inside is displayed in the \nbrowser's default monospace font."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<code>x = 5;y = 6;z = x + y;</code>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Preserve Line-Breaks"
+    },
+    {
+      "type": "paragraph",
+      "text": "Notice that the <code> element does \nNOT preserve extra whitespace and line-breaks."
+    },
+    {
+      "type": "paragraph",
+      "text": "To preserve extra whitespace and line-breaks, you can put the <code> element inside a <pre> element:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<pre><code>x = 5;y = 6;z = x + y;</code></pre>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML <var> For Variables"
+    },
+    {
+      "type": "paragraph",
+      "text": "The HTML <var> element  is used \nto define a variable in programming or in a mathematical expression. The \ncontent inside is typically displayed in italic."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<p>The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, where <var>b</var> \n  is the base, and <var>h</var> is the vertical height.</p>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Chapter Summary"
+    },
+    {
+      "type": "other",
+      "text": "The <kbd> element defines \nkeyboard input\n  The <samp> element defines \n  sample output from a computer program\n  The <code> element defines a piece of computer code\n  The <var> element defines a variable in programming or in a mathematical expression\n  The <pre> element defines \n  preformatted text"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML Computer Code Elements"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Tag",
+          "Description"
+        ],
+        [
+          "<code>",
+          "Defines programming code"
+        ],
+        [
+          "<kbd>",
+          "Defines keyboard input"
+        ],
+        [
+          "<samp>",
+          "Defines computer output"
+        ],
+        [
+          "<var>",
+          "Defines a variable"
+        ],
+        [
+          "<pre>",
+          "Defines preformatted text"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "For a complete list of all available HTML tags, visit our HTML Tag Reference."
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "The <kbd> element defines \nkeyboard input",
+        "The <samp> element defines \n  sample output from a computer program",
+        "The <code> element defines a piece of computer code",
+        "The <var> element defines a variable in programming or in a mathematical expression",
+        "The <pre> element defines \n  preformatted text"
+      ]
+    }
+  ]
+}

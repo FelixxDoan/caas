@@ -1,0 +1,202 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_alias.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL Aliases"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "text": "SQL Aliases"
+    },
+    {
+      "type": "paragraph",
+      "text": "SQL aliases are used to give a table, or a column in a table, a temporary name."
+    },
+    {
+      "type": "paragraph",
+      "text": "Aliases are often used to make column names more readable."
+    },
+    {
+      "type": "paragraph",
+      "text": "An alias only exists for the duration of that query."
+    },
+    {
+      "type": "paragraph",
+      "text": "An alias is created with the AS keyword."
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n SELECT CustomerID AS ID\n FROM Customers;\nTry it Yourself »"
+    },
+    {
+      "type": "heading",
+      "text": "AS is Optional"
+    },
+    {
+      "type": "paragraph",
+      "text": "Actually, in most database languages, you can skip the AS keyword and get the same result:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n SELECT CustomerID ID\n FROM Customers;\nTry it Yourself »"
+    },
+    {
+      "type": "heading",
+      "text": "Syntax"
+    },
+    {
+      "type": "paragraph",
+      "text": "When alias is used on column:"
+    },
+    {
+      "type": "other",
+      "text": "SELECT column_name AS alias_name\n FROM table_name;"
+    },
+    {
+      "type": "paragraph",
+      "text": "When alias is used on table:"
+    },
+    {
+      "type": "other",
+      "text": "SELECT column_name(s)\n FROM table_name AS alias_name;"
+    },
+    {
+      "type": "heading",
+      "text": "Demo Database"
+    },
+    {
+      "type": "paragraph",
+      "text": "Below is a selection from the\nCustomers\nand \nOrders tables used in the examples:"
+    },
+    {
+      "type": "other",
+      "text": "Customers"
+    },
+    {
+      "type": "other",
+      "text": "CustomerID\n    CustomerName\n    ContactName\n    Address\n    City\n    PostalCode\n    Country\n  \n  \n    1\n    Alfreds Futterkiste\n    Maria Anders\n    Obere Str. 57\n    Berlin\n    12209\n    Germany\n  \n  \n    2\n    Ana Trujillo Emparedados y helados\n    Ana Trujillo\n    Avda. de la Constitución 2222\n    México D.F.\n    05021\n    Mexico\n  \n  \n    3\n    Antonio Moreno Taquería\n    Antonio Moreno\n    Mataderos 2312\n    México D.F.\n    05023\n    Mexico"
+    },
+    {
+      "type": "other",
+      "text": "Orders"
+    },
+    {
+      "type": "other",
+      "text": "OrderID\n    CustomerID\n    EmployeeID\n    OrderDate\n    ShipperID\n  \n  \n    10248\n    90\n    5\n    7/4/1996\n    3\n  \n  \n    10249\n    81\n    6\n    7/5/1996\n    1\n  \n  \n    10250\n    34\n    4\n    7/8/1996\n    2"
+    },
+    {
+      "type": "heading",
+      "text": "Alias for Columns"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement creates two aliases, one for the CustomerID \ncolumn and one for the CustomerName column:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n SELECT CustomerID AS ID, CustomerName AS Customer\n FROM Customers;\nTry it Yourself »"
+    },
+    {
+      "type": "heading",
+      "text": "Using Aliases With a Space Character"
+    },
+    {
+      "type": "paragraph",
+      "text": "If you want your alias to contain one or more spaces, like \"My Great Products\",\nsurround your alias with square brackets or double quotes."
+    },
+    {
+      "type": "other",
+      "text": "Example\nUsing [square brackets] for aliases with space characters:\n\n SELECT ProductName AS [My Great Products]\n FROM Products;\nTry it Yourself »"
+    },
+    {
+      "type": "other",
+      "text": "Example\nUsing \"double quotes\" for aliases with space characters:\n\n SELECT ProductName AS \"My Great Products\"\n FROM Products;\nTry it Yourself »"
+    },
+    {
+      "type": "other",
+      "text": "Note: Some database systems allows both [] and \"\", and some only allows one of them."
+    },
+    {
+      "type": "heading",
+      "text": "Concatenate Columns"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement creates an alias named \"Address\" that combine four columns (Address, PostalCode, \nCity and Country):"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n  SELECT CustomerName, Address + ', ' + PostalCode + ' ' + City + ', ' + Country \n  AS Address\n FROM Customers;\nTry it Yourself »"
+    },
+    {
+      "type": "paragraph",
+      "text": "Note: To get the SQL statement above to work in MySQL use the following:"
+    },
+    {
+      "type": "other",
+      "text": "MySQL Example\n\nSELECT CustomerName, CONCAT(Address,', ',PostalCode,', ',City,', ',Country) AS Address\nFROM Customers;\nTry it Yourself »"
+    },
+    {
+      "type": "paragraph",
+      "text": "Note: To get the SQL statement above to work in Oracle use the following:"
+    },
+    {
+      "type": "other",
+      "text": "Oracle Example\n\n  SELECT CustomerName, (Address || ', ' || PostalCode || ' ' || City || ', ' || \n  Country) AS AddressFROM Customers;"
+    },
+    {
+      "type": "heading",
+      "text": "Alias for Tables"
+    },
+    {
+      "type": "paragraph",
+      "text": "The same rules applies when you want to use an alias for a table."
+    },
+    {
+      "type": "other",
+      "text": "Example\nRefer to the Customers table as Persons instead:\n\n SELECT * FROM Customers AS Persons;\n\nTry it Yourself »"
+    },
+    {
+      "type": "paragraph",
+      "text": "It might seem useless to use aliases on tables, but when you are using more than one table in your queries,\nit can make the SQL statements shorter."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement selects all the orders from the customer with \nCustomerID=4 (Around the Horn). We use the \"Customers\" and \"Orders\" tables, and \ngive them the table aliases of \"c\" and \"o\" respectively (Here we use \naliases to make the SQL shorter):"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n SELECT o.OrderID, o.OrderDate, c.CustomerNameFROM Customers AS c, Orders AS oWHERE c.CustomerName='Around the Horn' AND c.CustomerID=o.CustomerID;\n\nTry it Yourself »"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement is the same as above, but without aliases:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n SELECT Orders.OrderID, Orders.OrderDate, Customers.CustomerNameFROM Customers, OrdersWHERE Customers.CustomerName='Around the Horn' AND Customers.CustomerID=Orders.CustomerID;\n\nTry it Yourself »"
+    },
+    {
+      "type": "paragraph",
+      "text": "Aliases can be useful when:"
+    },
+    {
+      "type": "other",
+      "text": "There are more than one table involved in a query\n  Functions are used in the query\n  Column names are big or not very readable\n  Two or more columns are combined together"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

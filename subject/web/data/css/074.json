@@ -1,0 +1,137 @@
+{
+  "url": "https://www.w3schools.com/css/css_icons.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Icons"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "Icons can easily be added to your HTML page, by using an icon library."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How To Add Icons"
+    },
+    {
+      "type": "paragraph",
+      "text": "The simplest way to add an icon to your HTML page, is with an icon library, \nsuch as Font Awesome."
+    },
+    {
+      "type": "paragraph",
+      "text": "Add the name of the specified icon class to any inline HTML element (like <i> or \n<span>)."
+    },
+    {
+      "type": "paragraph",
+      "text": "All the icons in the icon libraries below, are scalable vectors that can \nbe customized with CSS (size, color, shadow, etc.)"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Font Awesome Icons"
+    },
+    {
+      "type": "paragraph",
+      "text": "To use the Font Awesome icons, go to \nfontawesome.com, sign in, and get a code to add in the <head> section of your HTML page:"
+    },
+    {
+      "type": "other",
+      "text": "<script src=\"https://kit.fontawesome.com/yourcode.js\" crossorigin=\"anonymous\"></script>"
+    },
+    {
+      "type": "paragraph",
+      "text": "Read more about how to get started with Font Awesome in our \nFont \nAwesome 5 tutorial."
+    },
+    {
+      "type": "paragraph",
+      "text": "Note: No downloading or installation is required!"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<!DOCTYPE html><html><head>\n  <script src=\"https://kit.fontawesome.com/a076d05399.js\" crossorigin=\"anonymous\"></script>\n</head><body><i class=\"fas fa-cloud\"></i><i  class=\"fas fa-heart\"></i><i class=\"fas fa-car\"></i><i class=\"fas fa-file\"></i>\n<i class=\"fas fa-bars\"></i>\n</body></html>"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "For a complete reference of all Font Awesome icons, visit our Icon Reference."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Bootstrap Icons"
+    },
+    {
+      "type": "paragraph",
+      "text": "To use the Bootstrap glyphicons, add the following line inside the <head> section of your HTML page:"
+    },
+    {
+      "type": "other",
+      "text": "<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\">"
+    },
+    {
+      "type": "paragraph",
+      "text": "Note: No downloading or installation is required!"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<!DOCTYPE html><html><head>\n     <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\"></head><body>\n  <i class=\"glyphicon glyphicon-cloud\"></i><i class=\"glyphicon  glyphicon-remove\"></i><i class=\"glyphicon glyphicon-user\"></i><i  class=\"glyphicon glyphicon-envelope\"></i><i class=\"glyphicon glyphicon-thumbs-up\"></i>\n  </body></html>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Google Icons"
+    },
+    {
+      "type": "paragraph",
+      "text": "To use the Google icons, add the following line inside the <head> section of your HTML page:"
+    },
+    {
+      "type": "other",
+      "text": "<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/icon?family=Material+Icons\">"
+    },
+    {
+      "type": "paragraph",
+      "text": "Note: No downloading or installation is required!"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<!DOCTYPE html><html><head>\n<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/icon?family=Material+Icons\"></head><body>\n<i class=\"material-icons\">cloud</i><i  class=\"material-icons\">favorite</i><i  class=\"material-icons\">attachment</i><i  class=\"material-icons\">computer</i><i  class=\"material-icons\">traffic</i></body></html>"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "For a complete list of all icons, visit our\nIcon Tutorial."
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

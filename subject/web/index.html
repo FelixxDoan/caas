@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Môn Lập trình Web</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <nav class="subject-nav" aria-label="Chọn môn">
+          <button class="subject-item" data-subject="html" type="button">
+            HTML
+          </button>
+          <button class="subject-item" data-subject="css" type="button">
+            CSS
+          </button>
+          <button class="subject-item" data-subject="js" type="button">
+            JavaScript
+          </button>
+        </nav>
+      </div>
+      <div class="controls">
+        <input
+          id="searchBox"
+          type="search"
+          placeholder="Tìm kiếm nội dung..."
+        />
+        <button id="fontMinus" title="Giảm cỡ chữ">A−</button>
+        <button id="fontPlus" title="Tăng cỡ chữ">A+</button>
+        <button id="themeToggle" title="Đổi giao diện sáng/tối">Tối</button>
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside id="toc" class="sidebar">
+        <h2 class="sidebar-title">Mục lục</h2>
+        <nav id="tocList"></nav>
+      </aside>
+
+      <main id="content" class="content">
+        <div class="empty-hint">
+          <h2>Đang chờ dữ liệu…</h2>
+          <p>
+            Trang này sẽ <b>tự động</b> đọc các file JSON theo chỉ số
+            <code>../output/XX.json</code>.
+          </p>
+          <ol>
+            <li>URL <code>?i=12</code> hoặc <code>?index=12</code></li>
+            <li>LocalStorage <code>lastIndex</code></li>
+            <li>Mặc định <code>02.json</code></li>
+          </ol>
+          <p>
+            Nhớ chạy qua web server cục bộ:
+            <code>python -m http.server 8080</code>
+          </p>
+        </div>
+      </main>
+
+      <section id="playground" class="playground">
+        <header class="pg-header">
+          <h3>Playground</h3>
+          <div class="pg-actions">
+            <button id="runBtn">Chạy ▶</button>
+            <button id="resetBtn">Đặt lại</button>
+            <button
+              id="saveCodeBtn"
+              title="Lưu code của bài hiện tại vào trình duyệt"
+            >
+              Lưu
+            </button>
+            <button id="clearSaveBtn" title="Xóa code đã lưu">Xóa</button>
+          </div>
+        </header>
+
+        <textarea
+          id="codeEditor"
+          spellcheck="false"
+          placeholder="Chọn một ví dụ ở nội dung để nạp code vào đây..."
+        ></textarea>
+        <iframe
+          id="preview"
+          title="Kết quả chạy"
+          sandbox="allow-scripts "
+        ></iframe>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <div class="tip">Mẹo: chuyển bài nhanh bằng phím ← → (Arrow keys)</div>
+    </footer>
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

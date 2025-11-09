@@ -1,0 +1,74 @@
+{
+  "url": "https://www.w3schools.com/js/js_ajax_database.asp",
+  "title": "AJAX",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "AJAX Database Example"
+    },
+    {
+      "type": "paragraph",
+      "text": "AJAX can be used for interactive communication with a database."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "AJAX Database Example"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following example will demonstrate how a web page can fetch \ninformation from a database with AJAX:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": []
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Example Explained - The showCustomer() Function"
+    },
+    {
+      "type": "paragraph",
+      "text": "When a user selects a customer in the dropdown list above, a function called showCustomer() is executed. The \nfunction is triggered by the onchange event:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "function showCustomer(str) {\n  if (str == \"\") {\n    document.getElementById(\"txtHint\").innerHTML = \"\";\n    return;\n  }\n  const xhttp = new XMLHttpRequest();\n  xhttp.onload = function() {\n    document.getElementById(\"txtHint\").innerHTML = this.responseText;\n  }\n  xhttp.open(\"GET\", \"getcustomer.php?q=\"+str);\n  xhttp.send();\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The showCustomer() function does the following:"
+    },
+    {
+      "type": "other",
+      "text": "Check if a customer is selected\n  Create an XMLHttpRequest object\n  Create the function to be executed when the server response is ready\n  Send the request off to a file on the server\n  Notice that a parameter (q) is added to the URL (with the content of the dropdown list)"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The AJAX Server Page"
+    },
+    {
+      "type": "paragraph",
+      "text": "The page on the server called by the JavaScript above is a PHP file called \"getcustomer.php\"."
+    },
+    {
+      "type": "paragraph",
+      "text": "The source code in \"getcustomer.php\" runs a query against a database, and returns the result in an HTML \ntable:"
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "<?php$mysqli = new mysqli(\"servername\", \"username\", \n  \"password\", \"dbname\");if($mysqli->connect_error) {  \n  exit('Could not connect');}$sql = \"SELECT customerid, companyname, \n  contactname, address, city, postalcode, countryFROM customers WHERE \n  customerid = ?\";$stmt = $mysqli->prepare($sql);\n  $stmt->bind_param(\"s\", $_GET['q']);\n  $stmt->execute();$stmt->store_result();$stmt->bind_result($cid, \n  $cname, $name, $adr, $city, $pcode, $country);$stmt->fetch();$stmt->close();\n  echo \"<table>\";echo \"<tr>\";echo \"<th>CustomerID</th>\";echo \n  \"<td>\" . $cid . \"</td>\";echo \"<th>CompanyName</th>\";echo \"<td>\" . $cname \n  . \"</td>\";echo \"<th>ContactName</th>\";echo \"<td>\" . $name . \"</td>\";\n  echo \"<th>Address</th>\";echo \"<td>\" . \n  $adr . \"</td>\";echo \"<th>City</th>\";\n  echo \"<td>\" . $city . \"</td>\";echo \"<th>PostalCode</th>\";echo \"<td>\" . \n  $pcode . \"</td>\";echo \"<th>Country</th>\";echo \"<td>\" . $country . \n  \"</td>\";echo \"</tr>\";echo \"</table>\";?>"
+    }
+  ]
+}

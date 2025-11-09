@@ -1,0 +1,258 @@
+{
+  "url": "https://www.w3schools.com/js/js_whereto.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Where To"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The <script> Tag"
+    },
+    {
+      "type": "paragraph",
+      "text": "In HTML, JavaScript code is inserted between <script> and </script> tags."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<script>\ndocument.getElementById(\"demo\").innerHTML = \"My First JavaScript\";\n</script>"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Old JavaScript examples may use a type attribute: <script type=\"text/javascript\">.\nThe type attribute is not required. JavaScript is the default scripting language in HTML."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Functions and Events"
+    },
+    {
+      "type": "paragraph",
+      "text": "A JavaScript function is a block of JavaScript code, that can be executed when \"called\" for."
+    },
+    {
+      "type": "paragraph",
+      "text": "For example, a function can be called when an event occurs, like when the user clicks a button."
+    },
+    {
+      "type": "other",
+      "text": "You will learn much more about functions and events in later chapters."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript in <head> or <body>"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can place any number of scripts in an HTML document."
+    },
+    {
+      "type": "paragraph",
+      "text": "Scripts can be placed in the <body>, or in the <head> section of an HTML page, or in both."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript in <head>"
+    },
+    {
+      "type": "paragraph",
+      "text": "In this example, a JavaScript function is placed in the <head> section \nof an HTML page."
+    },
+    {
+      "type": "paragraph",
+      "text": "The function is invoked (called) when a button is clicked:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<!DOCTYPE html>\n<html>\n<head>\n<script>\nfunction myFunction() {\n  document.getElementById(\"demo\").innerHTML = \"Paragraph changed.\";\n}\n</script>\n</head><body>\n<h2>Demo JavaScript in Head</h2>\n\n<p id=\"demo\">A Paragraph</p><button type=\"button\" onclick=\"myFunction()\">Try \nit</button>\n</body>\n</html>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript in <body>"
+    },
+    {
+      "type": "paragraph",
+      "text": "In this example, a JavaScript function is placed in the <body> section of an HTML page."
+    },
+    {
+      "type": "paragraph",
+      "text": "The function is invoked (called) when a button is clicked:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<!DOCTYPE html>\n<html>\n<body>\n<h2>Demo JavaScript in Body</h2>\n\n  <p id=\"demo\">A Paragraph</p>\n\n  <button type=\"button\" onclick=\"myFunction()\">Try \nit</button>\n <script>\nfunction myFunction() {\n    document.getElementById(\"demo\").innerHTML = \"Paragraph changed.\";\n}\n</script>\n </body>\n</html>"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Placing scripts at the bottom of the <body> element improves the display \nspeed, because script interpretation slows down the display."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "External JavaScript"
+    },
+    {
+      "type": "paragraph",
+      "text": "Scripts can also be placed in external files:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "function myFunction() {\n  document.getElementById(\"demo\").innerHTML = \"Paragraph changed.\";\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "External scripts are practical when the same code is used in many different web pages."
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript files have the file extension .js."
+    },
+    {
+      "type": "paragraph",
+      "text": "To use an external script, put the name of the script file in the src (source) attribute of \na <script> tag:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<script src=\"myScript.js\"></script>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "You can place an external script reference in <head> or <body> as you like."
+    },
+    {
+      "type": "paragraph",
+      "text": "The script will behave as if it was located exactly where the <script> tag is located."
+    },
+    {
+      "type": "other",
+      "text": "External scripts cannot contain <script> tags."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "External JavaScript Advantages"
+    },
+    {
+      "type": "paragraph",
+      "text": "Placing scripts in external files has some advantages:"
+    },
+    {
+      "type": "other",
+      "text": "It separates HTML and code\n It makes HTML and JavaScript easier to read and maintain\n Cached JavaScript files can speed up page loads"
+    },
+    {
+      "type": "paragraph",
+      "text": "To add several script files to one page  - use several script tags:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<script src=\"myScript1.js\"></script>\n<script src=\"myScript2.js\"></script>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "External References"
+    },
+    {
+      "type": "paragraph",
+      "text": "An external script can be referenced in 3 different ways:"
+    },
+    {
+      "type": "other",
+      "text": "With a full URL (a full web address)\nWith a file path (like /js/)\nWithout any path"
+    },
+    {
+      "type": "paragraph",
+      "text": "This example uses a full URL to link to myScript.js:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<script src=\"https://www.w3schools.com/js/myScript.js\"></script>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "This example uses a file path to link to myScript.js:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<script src=\"/js/myScript.js\"></script>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "This example uses no path to link to myScript.js:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<script src=\"myScript.js\"></script>"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "You can read more about file paths in the chapter HTML \nFile Paths."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Video: JavaScript Where to?"
+    }
+  ]
+}

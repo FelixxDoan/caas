@@ -1,0 +1,401 @@
+{
+  "url": "https://www.w3schools.com/css/css_grid_item.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Grid Item"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "other",
+      "text": "1\n  2\n  3  \n  4\n  5"
+    },
+    {
+      "type": "paragraph",
+      "text": "Try it Yourself »"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Grid Items"
+    },
+    {
+      "type": "paragraph",
+      "text": "A grid container contains one or more grid items."
+    },
+    {
+      "type": "paragraph",
+      "text": "By default, a container has one grid item for each column, in each row, but you can style the grid items so that they \nwill span multiple columns and/or rows."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The grid-column-start and grid-column-end Properties"
+    },
+    {
+      "type": "paragraph",
+      "text": "The grid-column-start property specifies where to start \na grid item."
+    },
+    {
+      "type": "paragraph",
+      "text": "The grid-column-end property specifies where to \nend a grid item."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".item1 {\n    grid-column-start: 1;  grid-column-end: 3;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The grid-column Property"
+    },
+    {
+      "type": "paragraph",
+      "text": "The grid-column property is a shorthand property for the grid-column-start and the grid-column-end properties."
+    },
+    {
+      "type": "paragraph",
+      "text": "To place an item, you can refer to line numbers, or use the keyword \"span\" to \ndefine how many columns the item will span."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".item1 {\n    grid-column: 1 / span \n  2;}"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".item1 {\n    \n  grid-column: 1 / 4;}"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".item2 {\n    \n  grid-column: 2 / span 2;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The grid-row-start and grid-row-end Property"
+    },
+    {
+      "type": "paragraph",
+      "text": "The grid-row-start property specifies where to start \na grid item."
+    },
+    {
+      "type": "paragraph",
+      "text": "The grid-row-end property specifies where to \nend a grid item."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".item1 {\n    grid-row-start: 1;  grid-row-end: 3;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The grid-row Property"
+    },
+    {
+      "type": "paragraph",
+      "text": "The grid-row property is a shorthand property for the grid-row-start and the grid-row-end properties."
+    },
+    {
+      "type": "paragraph",
+      "text": "To place an item, you can refer to line numbers, or use the keyword \"span\" to \ndefine how many rows the item will span:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".item1 {\n    grid-row: 1 / span 2;}"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".item1 {\n    \n  grid-row: 1 / 4;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The grid-area Property"
+    },
+    {
+      "type": "paragraph",
+      "text": "The grid-area property is a shorthand property for the \ngrid-row-start, grid-column-start, grid-row-end and the grid-column-end properties."
+    },
+    {
+      "type": "paragraph",
+      "text": "The syntax is grid-row-start / grid-column-start / grid-row-end / grid-column-end."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".item4 {\n    \n  grid-area: 1 / 2 / 3 / 2;}"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".item8 {\n    \n  grid-area: 1 / 1 / span 4 / span 1;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Naming Grid Items with grid-area"
+    },
+    {
+      "type": "paragraph",
+      "text": "The grid-area property can also be used to assign names to grid items."
+    },
+    {
+      "type": "paragraph",
+      "text": "The named grid items can then be referred to by the grid-template-areas property \nof the grid container."
+    },
+    {
+      "type": "other",
+      "text": "Header\n  Menu\n  Main\n  Right\n  Footer"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".item1 {  grid-area: \n  myArea;}.grid-container {  grid-template-areas: 'myArea myArea \n  myArea myArea myArea';}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Each row is defined by apostrophes (' ')."
+    },
+    {
+      "type": "paragraph",
+      "text": "The named grid items in each row is defined inside the apostrophes, separated by a space."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".item1 {  grid-area: \n  myArea;}.grid-container {  grid-template-areas: 'myArea myArea \n  myArea . .';}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note: A period sign represents a grid item with no name."
+    },
+    {
+      "type": "paragraph",
+      "text": "To define two rows, define the second row inside another set of apostrophes:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".item1 {  grid-area: \n  myArea;}.grid-container {  grid-template-areas:    'myArea myArea \n  . . .'    'myArea myArea . . .';}"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".item1 { grid-area: header; }.item2 { grid-area: menu; }.item3 { \n  grid-area: main; }.item4 { grid-area: right; }.item5 { grid-area: \n  footer; }.grid-container {  grid-template-areas:    \n  'header header header header header header'    'menu main \n  main main main right'    'menu footer footer footer footer \n  footer';}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Order of the Grid Items"
+    },
+    {
+      "type": "paragraph",
+      "text": "The grid-area property can also be used to \ndefine the order of the grid items."
+    },
+    {
+      "type": "other",
+      "text": "The first grid item in the HTML code does not have to appear as the first item in the grid."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "/* place in row 1 column 3 */.item1 {grid-area: 1 / 3;}/* place in \n  row 2 column 3 */.item2 {grid-area: 2 / 3;}/* place in row 1 \n  column 1 */.item3 {grid-area: 1 / 1;}/* place in row 1 column 2 */\n  .item4 {grid-area: 1 / 2;}/* place in row 2 column 1 */.item5 \n  {grid-area: 2 / 1;}/* place in row 2 column 2 */.item6 {grid-area: \n  2 / 2;}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "You can also re-arrange the order for certain screen sizes, with media queries:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "@media only screen and (max-width: 500px) {  .item1 {grid-area: 1 / \n  span 3;}  .item2 {grid-area: 3 / 3;}  .item3 {grid-area: 2 / \n  1;}  .item4 {grid-area: 2 / 2 / span 2;}  .item5 {grid-area: \n  3 / 1;}  .item6 {grid-area: 2 / 3;}}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The justify-self Property"
+    },
+    {
+      "type": "paragraph",
+      "text": "The justify-self  property is used to align the content \nof a grid item along the row axis."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".item1 {  justify-self: right;}.item6 {  justify-self: \n  center;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The align-self Property"
+    },
+    {
+      "type": "paragraph",
+      "text": "The align-self property is used to align the \ncontent of a grid item along the column axis."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".item1 {  align-self: start;}.item6 {  \n  align-self: center;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "All CSS Grid Item Properties"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Property",
+          "Description"
+        ],
+        [
+          "align-self",
+          "Aligns the content for a specific grid item along the column axis"
+        ],
+        [
+          "grid-area",
+          "A shorthand property for the grid-row-start, grid-column-start, grid-row-end and the grid-column-end properties"
+        ],
+        [
+          "grid-column",
+          "A shorthand property for the grid-column-start and the grid-column-end properties"
+        ],
+        [
+          "grid-column-end",
+          "Specifies where to end the grid item"
+        ],
+        [
+          "grid-column-start",
+          "Specifies where to start the grid item"
+        ],
+        [
+          "grid-row",
+          "A shorthand property for the grid-row-start and the grid-row-end properties"
+        ],
+        [
+          "grid-row-end",
+          "Specifies where to end the grid item"
+        ],
+        [
+          "grid-row-start",
+          "Specifies where to start the grid item"
+        ],
+        [
+          "justify-self",
+          "Aligns the content for a specific grid item along the row axis"
+        ],
+        [
+          "place-self",
+          "A shorthand property for the align-self and the \n    justify-self properties"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

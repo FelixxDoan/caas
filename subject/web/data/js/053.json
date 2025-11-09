@@ -1,0 +1,140 @@
+{
+  "url": "https://www.w3schools.com/js/js_api_history.asp",
+  "title": "Web History API",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Web History API"
+    },
+    {
+      "type": "other",
+      "text": "The Web History API provides easy methods to access the windows.history object.\nThe window.history object contains the URLs (Web Sites) visited by the user."
+    },
+    {
+      "type": "paragraph",
+      "text": "The Web History API is supported in all browsers:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Yes",
+          "Yes",
+          "Yes",
+          "Yes",
+          "Yes"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The History back() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The back() method loads the previous URL in the windows.history list."
+    },
+    {
+      "type": "paragraph",
+      "text": "It is the same as clicking the \"back arrow\" in your browser."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<button onclick=\"myFunction()\">Go Back</button>\n<script>\nfunction myFunction() {\n  window.history.back();\n  }\n</script>"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "function goBack()\n  {\n  window.history.back();\n  }"
+    },
+    {
+      "type": "paragraph",
+      "text": "Go Back"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The History go() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The go() method loads a specific URL from the history list:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<button onclick=\"myFunction()\">Go Back 2 Pages</button>\n <script>\nfunction myFunction() {\n  window.history.go(-2);\n }\n</script>"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "function goBack() {\n    window.history.go(-2);\n}"
+    },
+    {
+      "type": "paragraph",
+      "text": "Go Back 2 Pages"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "History Object Properties"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Property",
+          "Description"
+        ],
+        [
+          "length",
+          "Returns the number of URLs in the history list"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "History Object Methods"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Method",
+          "Description"
+        ],
+        [
+          "back()",
+          "Loads the previous URL in the history list"
+        ],
+        [
+          "forward()",
+          "Loads the next URL in the history list"
+        ],
+        [
+          "go()",
+          "Loads a specific URL from the history list"
+        ]
+      ]
+    }
+  ]
+}

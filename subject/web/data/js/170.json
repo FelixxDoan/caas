@@ -1,0 +1,438 @@
+{
+  "url": "https://www.w3schools.com/js/js_type_conversion.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Type Conversion"
+    },
+    {
+      "type": "other",
+      "text": "Converting Strings to Numbers\nConverting Numbers to Strings\nConverting Dates to Numbers\nConverting Numbers to Dates\nConverting Booleans to Numbers\nConverting Numbers to Booleans"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Type Conversion"
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript variables can be converted to a new variable and another data type:"
+    },
+    {
+      "type": "other",
+      "text": "By the use of a JavaScript function\n  Automatically by JavaScript itself"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Converting Strings to Numbers"
+    },
+    {
+      "type": "paragraph",
+      "text": "The global method Number() converts a variable (or a value) into a number."
+    },
+    {
+      "type": "paragraph",
+      "text": "A numeric string (like \"3.14\") converts to a number (like 3.14)."
+    },
+    {
+      "type": "paragraph",
+      "text": "An empty string (like \"\") converts to 0."
+    },
+    {
+      "type": "paragraph",
+      "text": "A non numeric string (like \"John\") converts to NaN (Not a Number)."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Number(\"3.14\")\nNumber(Math.PI)\nNumber(\" \")\nNumber(\"\")"
+        },
+        {
+          "language": "unknown",
+          "code": "Number(\"99 88\")\nNumber(\"John\")"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Number Methods"
+    },
+    {
+      "type": "paragraph",
+      "text": "In the chapter Number Methods, you \nwill find more methods that can be used to convert strings to \nnumbers:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Method",
+          "Description"
+        ],
+        [
+          "Number()",
+          "Returns a number, converted from its argument"
+        ],
+        [],
+        [
+          "parseFloat()",
+          "Parses a string and returns a floating point number"
+        ],
+        [
+          "parseInt()",
+          "Parses a string and returns an integer"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Unary + Operator"
+    },
+    {
+      "type": "paragraph",
+      "text": "The unary + operator can be used to \nconvert a variable to a number:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let y = \"5\";     \n// y is a string\nlet x = + y;      \n// x is a number"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "If the \nvariable cannot be converted, it will still become a number, but with the value NaN \n(Not a Number):"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let y = \"John\";  \n// y is a string\nlet x = + y;      // x is a number (NaN)"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Converting Numbers to Strings"
+    },
+    {
+      "type": "paragraph",
+      "text": "The global method String() can convert numbers to strings."
+    },
+    {
+      "type": "paragraph",
+      "text": "It can be used on any type of numbers, literals, variables, or expressions:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "String(x)         // returns a string from a number variable x\n String(123)       // returns a string from a number literal 123\n String(100 + 23)  // returns a string from a number from an expression"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The Number method toString() does the same."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "x.toString()(123).toString()(100 + 23).toString()"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "More Methods"
+    },
+    {
+      "type": "paragraph",
+      "text": "In the chapter Number Methods, you \nwill find more methods that can be used to convert numbers to \nstrings:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Method",
+          "Description"
+        ],
+        [
+          "toExponential()",
+          "Returns a string, with a number rounded and written using exponential notation."
+        ],
+        [
+          "toFixed()",
+          "Returns a string, with a number rounded and written with a specified number of decimals."
+        ],
+        [
+          "toPrecision()",
+          "Returns a string, with a number written with a specified length"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Converting Dates to Numbers"
+    },
+    {
+      "type": "paragraph",
+      "text": "The global method Number() can be used to convert dates to \nnumbers."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "d = new Date();Number(d)          // returns 1404568027739"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The date method getTime()  does the same."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "d = new Date();d.getTime()        // returns 1404568027739"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Converting Dates to Strings"
+    },
+    {
+      "type": "paragraph",
+      "text": "The global method String() can convert dates to \nstrings."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "String(Date())  // returns \"Thu Jul 17 2014 15:38:19 GMT+0200 (W. Europe Daylight Time)\""
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The Date method toString() does the same."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Date().toString()  // returns \"Thu Jul 17 2014 15:38:19 GMT+0200 (W. Europe Daylight Time)\""
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "In the chapter Date Methods, you \nwill find more methods that can be used to convert dates to \nstrings:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Method",
+          "Description"
+        ],
+        [
+          "getDate()",
+          "Get the day as a number (1-31)"
+        ],
+        [
+          "getDay()",
+          "Get the weekday a number (0-6)"
+        ],
+        [
+          "getFullYear()",
+          "Get the four digit year (yyyy)"
+        ],
+        [
+          "getHours()",
+          "Get the hour (0-23)"
+        ],
+        [
+          "getMilliseconds()",
+          "Get the milliseconds (0-999)"
+        ],
+        [
+          "getMinutes()",
+          "Get the minutes (0-59)"
+        ],
+        [
+          "getMonth()",
+          "Get the month (0-11)"
+        ],
+        [
+          "getSeconds()",
+          "Get the seconds (0-59)"
+        ],
+        [
+          "getTime()",
+          "Get the time (milliseconds since January 1, 1970)"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Converting Booleans to Numbers"
+    },
+    {
+      "type": "paragraph",
+      "text": "The global method Number() can also convert booleans to numbers."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Number(false)     // returns 0\nNumber(true)      // returns 1"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Converting Booleans to Strings"
+    },
+    {
+      "type": "paragraph",
+      "text": "The global method String() can convert booleans to \nstrings."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "String(false)      // returns \"false\"\nString(true)       // returns \"true\""
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The Boolean method toString() does the same."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "false.toString()   // returns \"false\"\n  true.toString()    // returns \"true\""
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Automatic Type Conversion"
+    },
+    {
+      "type": "paragraph",
+      "text": "When JavaScript tries to operate on a \"wrong\" data type, it will try to \nconvert the value to a \"right\" type."
+    },
+    {
+      "type": "paragraph",
+      "text": "The result is not always what you expect:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "5 + null    // returns 5         because null is converted to 0\"5\" + null  // returns \"5null\"   because null is converted to \"null\"\"5\" + 2     // returns \n    \"52\"      because 2 is converted to \"2\"\n \"5\" - 2     // returns 3         because \"5\" is converted to 5\"5\" * \"2\"   // returns \n    10        because \"5\" and \"2\" are \n    converted to 5 and 2"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Automatic String Conversion"
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript automatically calls the variable's toString() function when you try \nto \"output\" an object or a variable:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "document.getElementById(\"demo\").innerHTML = myVar;\n// if myVar = {name:\"Fjohn\"}  // toString converts to \"[object Object]\"\n// if myVar = [1,2,3,4]       // toString converts to \"1,2,3,4\"\n// if myVar = new Date()      // toString converts to \"Fri Jul 18 2014 09:08:55 GMT+0200\""
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Numbers and booleans are also converted, but this is not very visible:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// if myVar = 123             // toString converts to \"123\"\n// if myVar = true            // toString converts to \"true\"\n// if myVar = false           // toString converts to \"false\""
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Type Conversion Table"
+    },
+    {
+      "type": "paragraph",
+      "text": "This table shows the result of converting different JavaScript values to Number, String, and Boolean:"
+    },
+    {
+      "type": "other",
+      "text": "OriginalValue\n  Convertedto Number\n  Convertedto String\n  Convertedto Boolean\n  Try it\n \n \n  false\n  0\n  \"false\"\n  false\n  Try it »\n \n \n  true\n  1\n  \"true\"\n  true\n  Try it »\n \n \n  0\n  0\n  \"0\"\n  false\n  Try it »\n \n \n  1\n  1\n  \"1\"\n  true\n  Try it »\n \n \n  \"0\"\n  0\n  \"0\"\n  true\n  Try it »\n \n \n  \"000\"\n  0\n  \"000\"\n  true\n  Try it »\n \n \n  \"1\"\n  1\n  \"1\"\n  true\n  Try it »\n \n \n  NaN\n  NaN\n  \"NaN\"\n  false\n  Try it »\n \n \n  Infinity\n  Infinity\n  \"Infinity\"\n  true\n  Try it »\n \n \n  -Infinity\n  -Infinity\n  \"-Infinity\"\n  true\n  Try it »\n \n \n  \"\"\n  0\n  \"\"\n  false\n  Try it »\n \n \n  \"20\"\n  20\n  \"20\"\n  true\n  Try it »\n \n \n  \"twenty\"\n  NaN\n  \"twenty\"\n  true\n  Try it »\n \n \n  [ ]\n  0\n  \"\"\n  true\n  Try it »\n \n \n  [20]\n  20\n  \"20\"\n  true\n  Try it »\n \n \n  [10,20]\n  NaN\n  \"10,20\"\n  true\n  Try it »\n \n \n  [\"twenty\"]\n  NaN\n  \"twenty\"\n  true\n  Try it »\n \n \n  [\"ten\",\"twenty\"]\n  NaN\n  \"ten,twenty\"\n  true\n  Try it »\n \n \n  function(){}\n  NaN\n  \"function(){}\"\n  true\n  Try it »\n \n \n  { }\n  NaN\n  \"[object Object]\"\n  true\n  Try it »\n \n \n  null\n  0\n  \"null\"\n  false\n  Try it »\n \n \n  undefined\n  NaN\n  \"undefined\"\n  false\n  Try it »"
+    },
+    {
+      "type": "paragraph",
+      "text": "Values in quotes indicate string values."
+    },
+    {
+      "type": "paragraph",
+      "text": "Red values indicate values (some) programmers might not expect."
+    }
+  ]
+}

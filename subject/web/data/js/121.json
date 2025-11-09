@@ -1,0 +1,168 @@
+{
+  "url": "https://www.w3schools.com/js/js_object_accessors.asp",
+  "title": "JavaScript Object Accessors",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Object Accessors"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Accessors (Getters and Setters)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Getters and setters allow you to define Object Accessors (Computed \nProperties)."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Getter (The get Keyword)"
+    },
+    {
+      "type": "paragraph",
+      "text": "This example uses a lang property to get \nthe value of the language property."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create an object:\nconst person = {\n  firstName: \"John\",\n  lastName: \"Doe\",\n  language: \"en\",\n  get lang() {\n    return this.language;\n    }};\n// Display data from the object using a getter:\ndocument.getElementById(\"demo\").innerHTML = person.lang;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Setter (The set Keyword)"
+    },
+    {
+      "type": "paragraph",
+      "text": "This example uses a lang property to set \nthe value of the language property."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const person = {\n  firstName: \"John\",\n  lastName: \"Doe\",\n  language: \"\",\n    set lang(lang) {\n    this.language = lang;\n    }};\n// Set an object \nproperty using a setter:\nperson.lang = \"en\";\n// Display data from the object:\ndocument.getElementById(\"demo\").innerHTML = person.language;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Function or Getter?"
+    },
+    {
+      "type": "paragraph",
+      "text": "What is the differences between these two examples?"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const person = {\n  firstName: \"John\",\n  lastName: \"Doe\",\n  fullName: function() {\n    return this.firstName + \" \" + \nthis.lastName;  }\n};// Display data from the object using a method:\n  document.getElementById(\"demo\").innerHTML = person.fullName();"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const person = {\n  firstName: \"John\",\n  lastName: \"Doe\",\n  get fullName() {\n    return this.firstName + \" \" + \nthis.lastName;  }\n};// Display data from the object using a getter:\n  document.getElementById(\"demo\").innerHTML = person.fullName;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Example 1 access fullName as a function: person.fullName()."
+    },
+    {
+      "type": "paragraph",
+      "text": "Example 2 access fullName as a property: person.fullName."
+    },
+    {
+      "type": "paragraph",
+      "text": "The second example provides a simpler syntax."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Data Quality"
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript can secure better data quality when using getters and setters."
+    },
+    {
+      "type": "paragraph",
+      "text": "Using the lang property, in this example, returns the value \nof the language property in upper case:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create an object:\nconst person = {\n  firstName: \"John\",\n  lastName: \"Doe\",\n  language: \"en\",\n  get lang() {\n    return this.language.toUpperCase();\n    }};\n// Display data from the object using a getter:\ndocument.getElementById(\"demo\").innerHTML = person.lang;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Using the lang property, in this example, stores an upper case \nvalue in the language property:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const person = {\n  firstName: \"John\",\n  lastName: \"Doe\",\n  language: \"\",\n  set lang(lang) {\n      this.language = lang.toUpperCase();\n    }};\n// Set an object \nproperty using a setter:\nperson.lang = \"en\";\n// Display data from the object:\ndocument.getElementById(\"demo\").innerHTML = person.language;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Why Using Getters and Setters?"
+    },
+    {
+      "type": "other",
+      "text": "It gives simpler syntax\n  It allows equal syntax for properties and methods\n  It can secure better data quality\n  It is useful for doing things behind-the-scenes"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Object.defineProperty()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Object.defineProperty() method can also be used to add Getters and \nSetters:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Define object\nconst obj = {counter : 0};\n// Define setters and getters\nObject.defineProperty(obj, \"reset\", {\n  get : function () {this.counter = 0;}});\nObject.defineProperty(obj, \"increment\", {\n  get : function () {this.counter++;}});\nObject.defineProperty(obj, \"decrement\", {\n  get : function () {this.counter--;}});\nObject.defineProperty(obj, \"add\", {\n  set : function (value) {this.counter += value;}});\nObject.defineProperty(obj, \"subtract\", {\n  set : function (value) {this.counter -= value;}});\n// Play with the counter:\nobj.reset;\nobj.add = 5;\nobj.subtract = 1;\nobj.increment;\nobj.decrement;"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Learn More:\nJavaScript Object Definitions\nJavaScript Object Constructors\nJavaScript Object this\nJavaScript Object Methods\nJavaScript Object Properties\nJavaScript Object Getters & Setters\nJavaScript Object Protection\nJavaScript Object Reference"
+    }
+  ]
+}

@@ -1,0 +1,236 @@
+{
+  "url": "https://www.w3schools.com/js/js_function_invocation.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Function Invocation"
+    },
+    {
+      "type": "paragraph",
+      "text": "The code inside a JavaScript function will execute when \"something\" invokes it."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Invoking a JavaScript Function"
+    },
+    {
+      "type": "paragraph",
+      "text": "The code inside a function is not executed when the function is defined."
+    },
+    {
+      "type": "paragraph",
+      "text": "The code inside a function is executed when the function is invoked."
+    },
+    {
+      "type": "paragraph",
+      "text": "It is common to use the term \"call a function\" instead of \"invoke \na function\"."
+    },
+    {
+      "type": "paragraph",
+      "text": "It is also common to say \"call upon a function\", \"start a function\", or \n\"execute a function\"."
+    },
+    {
+      "type": "paragraph",
+      "text": "In this tutorial, we will use invoke, because a \nJavaScript function can be invoked without being called."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Invoking a Function as a Function"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "function myFunction(a, b) {\n  \n  return a * b;\n}\nmyFunction(10, 2);           // \n  Will return 20"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The function above does not belong to any object. But in JavaScript there \nis always a default global object."
+    },
+    {
+      "type": "paragraph",
+      "text": "In HTML the default global object is the HTML page itself, so the function above \"belongs\" to the \nHTML page."
+    },
+    {
+      "type": "paragraph",
+      "text": "In a browser the page object is the browser window. The function above \nautomatically becomes a window function."
+    },
+    {
+      "type": "other",
+      "text": "Note\nThis is a common way to invoke a JavaScript function, but not a very good practice.\nGlobal variables, methods, or functions can easily create name conflicts and bugs in the global object."
+    },
+    {
+      "type": "paragraph",
+      "text": "myFunction() and window.myFunction() is the same function:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "function myFunction(a, b) {\n    return a * b;\n}window.myFunction(10, 2);     // Will also return 20"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What is this?"
+    },
+    {
+      "type": "paragraph",
+      "text": "In JavaScript, the this keyword refers to an object."
+    },
+    {
+      "type": "paragraph",
+      "text": "The this keyword refers to different objects depending on how it is used:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Alone, this refers to the global object."
+        ],
+        [
+          "In a function, this refers to the global object."
+        ],
+        [
+          "In a function, in strict mode, this is undefined."
+        ],
+        [
+          "In an object method, this refers to the object."
+        ],
+        [
+          "In an event, this refers to the element that received the event."
+        ],
+        [
+          "Methods like call(), apply(),\nand bind() can refer this to any object."
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\nthis is not a variable.\nthis is a keyword.\nYou cannot change the value of this."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Global Object"
+    },
+    {
+      "type": "paragraph",
+      "text": "When a function is called without an owner object, the value of this \nbecomes the global object."
+    },
+    {
+      "type": "paragraph",
+      "text": "In a web browser the global object is the browser window."
+    },
+    {
+      "type": "paragraph",
+      "text": "This example returns the window object as the value of this:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = myFunction();\n           // x will be the window object\nfunction myFunction() {\n  return this;\n}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Invoking a function as a global function, causes the value of this to be the global object.\nUsing the window object as a variable can easily crash your program."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Invoking a Function as a Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "In JavaScript you can define functions as object methods."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following example creates an object (myObject), with two \nproperties (firstName and lastName), and a \nmethod (fullName):"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const myObject = {\n  firstName:\"John\",\n    lastName: \"Doe\",\n    fullName: function () {\n    return this.firstName + \" \" + this.lastName;\n    }\n}\nmyObject.fullName();         // Will return \"John Doe\""
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The fullName method is a function. The function belongs to \nthe object. myObject is the owner of the function."
+    },
+    {
+      "type": "paragraph",
+      "text": "The thing called this, is the object that \n\"owns\" the JavaScript code. In this case the value of this \nis myObject."
+    },
+    {
+      "type": "paragraph",
+      "text": "Test it! Change the fullName method to return the value of this:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const myObject = {  firstName:\"John\",\n    lastName: \"Doe\",\n    fullName: function () {\n      return this;\n    }}\n\n// This will return [object Object] (the owner object)\nmyObject.fullName();"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Invoking a function as an object method, causes the value of this \nto be the object itself."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Invoking a Function with the Constructor"
+    },
+    {
+      "type": "paragraph",
+      "text": "If a function invocation is preceded with the new keyword, \nit is a constructor invocation."
+    },
+    {
+      "type": "paragraph",
+      "text": "It looks like you create a new function, but since JavaScript functions are \nobjects you actually create a new object:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// This is a function constructor:function myFunction(arg1, arg2) {\n    this.firstName = arg1;\n  this.lastName  = arg2;\n}\n\n// This creates a new object\nconst myObj = new myFunction(\"John\", \"Doe\");\n\n// This will return \"John\"\nmyObj.firstName;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "A constructor invocation creates a new object. The new object inherits the \nproperties and methods from its constructor."
+    },
+    {
+      "type": "other",
+      "text": "The this keyword in the constructor does not have a value.\nThe value of this will be the new object created when the function is invoked."
+    }
+  ]
+}

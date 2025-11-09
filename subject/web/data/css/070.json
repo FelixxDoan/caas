@@ -1,0 +1,209 @@
+{
+  "url": "https://www.w3schools.com/css/css_overflow.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Layout - Overflow"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "The CSS overflow property controls what \nhappens to content that is too big to fit into an area."
+    },
+    {
+      "type": "other",
+      "text": "This text is really long and the height of its container is only 100 pixels. Therefore, a scrollbar is added to help the reader to scroll the content. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem."
+    },
+    {
+      "type": "other",
+      "text": "Try it Yourself »"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CSS Overflow"
+    },
+    {
+      "type": "paragraph",
+      "text": "The overflow property specifies whether to clip \nthe content or \nto add scrollbars when the content of an element is too big to fit in the specified \narea."
+    },
+    {
+      "type": "paragraph",
+      "text": "The overflow property has the following values:"
+    },
+    {
+      "type": "other",
+      "text": "visible - Default. The overflow is not clipped. \nThe content renders outside the element's box\nhidden - The overflow is clipped, and the rest of the content will be invisible\nscroll - The overflow is clipped, and a scrollbar is added to see the rest of the content\nauto - Similar to scroll, \nbut it adds scrollbars only when necessary"
+    },
+    {
+      "type": "other",
+      "text": "Note: The overflow property only works for block elements with a specified height.\nNote: In OS X Lion (on Mac), scrollbars are hidden by default and only shown when being used (even though \"overflow:scroll\" is set)."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "overflow: visible"
+    },
+    {
+      "type": "paragraph",
+      "text": "By default, the overflow is visible, meaning that it is not clipped and it \nrenders outside the element's box:"
+    },
+    {
+      "type": "other",
+      "text": "You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "div {  width: 200px;  height: \n  65px;  background-color: coral;  \noverflow: visible;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "overflow: hidden"
+    },
+    {
+      "type": "paragraph",
+      "text": "With the hidden value, the overflow is clipped, and the rest of the content is hidden:"
+    },
+    {
+      "type": "other",
+      "text": "You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "div {  overflow: hidden;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "overflow: scroll"
+    },
+    {
+      "type": "paragraph",
+      "text": "Setting the value to scroll, the overflow is clipped and a scrollbar is added to scroll inside the box. Note that this will add a scrollbar both horizontally and vertically (even if you do not need it):"
+    },
+    {
+      "type": "other",
+      "text": "You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "div {  overflow: scroll;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "overflow: auto"
+    },
+    {
+      "type": "paragraph",
+      "text": "The auto value is similar to scroll, \nbut it adds scrollbars only when necessary:"
+    },
+    {
+      "type": "other",
+      "text": "You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "div {  overflow: auto;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "overflow-x and overflow-y"
+    },
+    {
+      "type": "paragraph",
+      "text": "The overflow-x and overflow-y properties specifies \nwhether to change the overflow of content just horizontally or vertically (or \nboth):"
+    },
+    {
+      "type": "paragraph",
+      "text": "overflow-x specifies what to do with the left/right edges of the \ncontent.\n\noverflow-y specifies what to do with the top/bottom edges of the \ncontent."
+    },
+    {
+      "type": "other",
+      "text": "You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "div {  overflow-x: hidden; /* Hide horizontal scrollbar \n*/  overflow-y: scroll; /* Add vertical scrollbar */}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "All CSS Overflow Properties"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Property",
+          "Description"
+        ],
+        [
+          "overflow",
+          "Specifies what happens if content overflows an element's box"
+        ],
+        [
+          "overflow-anchor",
+          "Makes it possible to turn off scroll anchoring"
+        ],
+        [
+          "overflow-x",
+          "Specifies what to do with the left/right edges of the content if it overflows the element's content area"
+        ],
+        [
+          "overflow-y",
+          "Specifies what to do with the top/bottom edges of the content if it overflows the element's content area"
+        ],
+        [
+          "overflow-wrap",
+          "Specifies whether or not the browser can break lines with long words, if \n    they overflow its container"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

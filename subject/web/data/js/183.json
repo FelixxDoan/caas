@@ -1,0 +1,181 @@
+{
+  "url": "https://www.w3schools.com/js/js_switch.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Switch Statement"
+    },
+    {
+      "type": "paragraph",
+      "text": "The switch statement is used to perform different actions based on different conditions."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The JavaScript Switch Statement"
+    },
+    {
+      "type": "paragraph",
+      "text": "Use the switch statement to select one of many code blocks to be executed."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Syntax"
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "switch(expression) {\n  case x:\n     // code block\n        break;\n  case y:\n     // code block\n     break;\n  default:\n      // code block\n }"
+    },
+    {
+      "type": "paragraph",
+      "text": "This is how it works:"
+    },
+    {
+      "type": "other",
+      "text": "The switch expression is evaluated once.\nThe value of the expression is compared with the values of each case.\nIf there is a match, the associated block of code is executed.\n  If there is no match, the default code block is executed."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "switch (new Date().getDay()) {\n  case 0:\n    day = \"Sunday\";\n    break;\n  case 1:\n      day = \"Monday\";\n     break;\n  case 2:\n       day = \"Tuesday\";\n      break;\n  case 3:\n    day = \"Wednesday\";\n      break;\n  case 4:\n      day = \"Thursday\";\n     break;\n  case 5:\n      day = \"Friday\";\n      break;\n  case 6:\n    day = \"Saturday\";\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The break Keyword"
+    },
+    {
+      "type": "paragraph",
+      "text": "When JavaScript reaches a break \nkeyword, it breaks out of the switch block."
+    },
+    {
+      "type": "paragraph",
+      "text": "This will stop the execution inside the switch block."
+    },
+    {
+      "type": "paragraph",
+      "text": "It is not necessary to break the last case in a switch block. The block breaks (ends) there anyway."
+    },
+    {
+      "type": "other",
+      "text": "Note\nIf you omit the break statement, execution will continue to the next case regardless of whether its condition matches."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The default Keyword"
+    },
+    {
+      "type": "paragraph",
+      "text": "The default keyword specifies the code to run if there is no \ncase match:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "switch (new Date().getDay()) {\n   \ncase 6:\n      text = \"Today is Saturday\";\n    break; \n  case 0:\n      text = \"Today is Sunday\";\n      break; \n   \ndefault: \n      text = \"Looking forward to the Weekend\";}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The default case does not have to be the last case in a switch \nblock:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "switch (new Date().getDay()) {\n  default: \n        text = \"Looking forward to the Weekend\";    \n  break;  case 6:\n        text = \"Today is Saturday\";\n        break; \n  case 0:\n        text = \"Today is Sunday\";\n  }"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "If default is not the last case in the switch block, remember to end the default case with a break."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Common Code Blocks"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sometimes you will want different \nswitch cases to use the same \ncode."
+    },
+    {
+      "type": "paragraph",
+      "text": "In this example case 4 and 5 share the same code block, and 0 and 6 share \nanother code block:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "switch (new Date().getDay()) {\n  case 4:  case 5:\n    text = \"Soon it is Weekend\";\n      break; \n  case 0:\n  case 6:\n      text = \"It is Weekend\";    break;  default: \n    text = \"Looking forward to the Weekend\";\n  }"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Switching Details"
+    },
+    {
+      "type": "paragraph",
+      "text": "If multiple cases matches a case value, the first case is selected."
+    },
+    {
+      "type": "paragraph",
+      "text": "If no matching cases are found, the program continues to the default label."
+    },
+    {
+      "type": "paragraph",
+      "text": "If no default label is found, the program continues to the statement(s) after the switch."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Strict Comparison"
+    },
+    {
+      "type": "paragraph",
+      "text": "Switch cases use strict comparison (===)."
+    },
+    {
+      "type": "paragraph",
+      "text": "The values must be of the same type to match."
+    },
+    {
+      "type": "paragraph",
+      "text": "A strict comparison can only be true if the operands are of the same type."
+    },
+    {
+      "type": "paragraph",
+      "text": "In this example there will be no match for x:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = \"0\";switch (x) {  case 0:    text = \"Off\";\n      break;  case 1:    text = \"On\";    break;\n    default:    \n  text = \"No value found\";}"
+        }
+      ]
+    }
+  ]
+}

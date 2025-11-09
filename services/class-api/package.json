@@ -1,0 +1,22 @@
+{
+  "name": "class-api",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "nodemon --watch src --ext js,json --legacy-watch --signal SIGTERM src/index.js",
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.5.3",
+    "dockerode": "^4.0.2",
+    "minio": "^8.0.5",
+    "archiver": "^5.3.2",
+    "mime": "^4.0.4"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.0"
+  }
+}

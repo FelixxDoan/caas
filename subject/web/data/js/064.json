@@ -1,0 +1,148 @@
+{
+  "url": "https://www.w3schools.com/js/js_htmldom_nodelist.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript HTML DOM Node Lists"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The HTML DOM NodeList Object"
+    },
+    {
+      "type": "paragraph",
+      "text": "A NodeList object is a list (collection) of nodes extracted from a \ndocument."
+    },
+    {
+      "type": "paragraph",
+      "text": "A NodeList object is almost the same as an HTMLCollection object."
+    },
+    {
+      "type": "paragraph",
+      "text": "Some (older) browsers return a NodeList object instead of an HTMLCollection \nfor methods like getElementsByClassName()."
+    },
+    {
+      "type": "paragraph",
+      "text": "All browsers return a NodeList object for the property childNodes."
+    },
+    {
+      "type": "paragraph",
+      "text": "Most browsers return a NodeList object for the method querySelectorAll()."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following code selects all <p> nodes in a document:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const myNodeList = document.querySelectorAll(\"p\");"
+        },
+        {
+          "language": "unknown",
+          "code": "myNodeList[1]"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Note: The index starts at 0."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML DOM Node List Length"
+    },
+    {
+      "type": "paragraph",
+      "text": "The length property defines the number of nodes in a node list:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "myNodelist.length"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The length property is useful when you want to loop through the nodes in a node \nlist:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const myNodelist = document.querySelectorAll(\"p\");\nfor (let i = 0; i < myNodelist.length; i++) {\n  myNodelist[i].style.color = \"red\";\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Difference Between an HTMLCollection and a NodeList"
+    },
+    {
+      "type": "paragraph",
+      "text": "A NodeList and an HTMLcollection is very much the same thing."
+    },
+    {
+      "type": "paragraph",
+      "text": "Both are array-like collections (lists) of nodes (elements) extracted from a \ndocument. The nodes can be accessed by index numbers. The index starts at 0."
+    },
+    {
+      "type": "paragraph",
+      "text": "Both have a length property that returns the number of elements in the list (collection)."
+    },
+    {
+      "type": "paragraph",
+      "text": "An HTMLCollection is a collection of document elements."
+    },
+    {
+      "type": "paragraph",
+      "text": "A NodeList is a collection of document nodes (element nodes, attribute nodes, and text nodes)."
+    },
+    {
+      "type": "paragraph",
+      "text": "HTMLCollection items can be accessed by their name, id, or index number."
+    },
+    {
+      "type": "paragraph",
+      "text": "NodeList items can only be accessed by their index number."
+    },
+    {
+      "type": "paragraph",
+      "text": "An HTMLCollection is always a live collection. Example: If you add a <li> element to a list in the DOM, the list in the HTMLCollection will also change."
+    },
+    {
+      "type": "paragraph",
+      "text": "A NodeList is most often a static collection. Example: If you add a <li> element to a list in the DOM, the list in NodeList will not change."
+    },
+    {
+      "type": "paragraph",
+      "text": "The getElementsByClassName() and getElementsByTagName()\nmethods return a live HTMLCollection."
+    },
+    {
+      "type": "paragraph",
+      "text": "The querySelectorAll() method returns a static NodeList."
+    },
+    {
+      "type": "paragraph",
+      "text": "The childNodes property returns a live NodeList."
+    },
+    {
+      "type": "other",
+      "text": "Not an Array!\nA NodeList may look like an array, but it is not.\nYou can loop through a NodeList and refer to its nodes by index.\nBut, you cannot use Array methods like push(), pop(), or join() on a NodeList."
+    }
+  ]
+}

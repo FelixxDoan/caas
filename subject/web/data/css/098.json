@@ -1,0 +1,268 @@
+{
+  "url": "https://www.w3schools.com/css/css_padding.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Padding"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "Padding is used to create space around an element's content, inside of any defined borders."
+    },
+    {
+      "type": "other",
+      "text": "This element has a padding of 70px."
+    },
+    {
+      "type": "other",
+      "text": "Try it Yourself »"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CSS Padding"
+    },
+    {
+      "type": "paragraph",
+      "text": "The CSS padding properties are used to generate space around \nan element's content, inside of any defined borders."
+    },
+    {
+      "type": "paragraph",
+      "text": "With CSS, you have full control over the padding. There are properties \nfor setting the padding for each side of an element (top, right, bottom, and left)."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Padding - Individual Sides"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS has properties for specifying the padding for each \nside of an element:"
+    },
+    {
+      "type": "other",
+      "text": "padding-top\npadding-right\npadding-bottom\npadding-left"
+    },
+    {
+      "type": "paragraph",
+      "text": "All the padding properties can have the following values:"
+    },
+    {
+      "type": "other",
+      "text": "length - specifies a padding in px, pt, cm, etc.\n% - specifies a padding in % of the width of the containing element\ninherit - specifies that the padding should be inherited from the parent element"
+    },
+    {
+      "type": "paragraph",
+      "text": "Note: Negative values are not allowed."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "div { \npadding-top: 50px;\n  padding-right: 30px;\n  padding-bottom: 50px;\n  padding-left: 80px;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Padding - Shorthand Property"
+    },
+    {
+      "type": "paragraph",
+      "text": "To shorten the code, it is possible to specify all the padding properties in \none property."
+    },
+    {
+      "type": "paragraph",
+      "text": "The padding property is a shorthand property for the following individual \npadding properties:"
+    },
+    {
+      "type": "other",
+      "text": "padding-top\npadding-right\npadding-bottom\npadding-left"
+    },
+    {
+      "type": "paragraph",
+      "text": "So, here is how it works:"
+    },
+    {
+      "type": "paragraph",
+      "text": "If the padding property has four values:"
+    },
+    {
+      "type": "other",
+      "text": "padding: 25px 50px 75px 100px; \ntop padding is 25px\nright padding is 50px\nbottom padding is 75px\nleft padding is 100px"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "div { \n  padding: 25px 50px 75px 100px;}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "If the padding property has three values:"
+    },
+    {
+      "type": "other",
+      "text": "padding: 25px 50px 75px;\ntop padding is 25px\nright and left paddings are 50px\nbottom padding is 75px"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "div { \n  padding: 25px 50px 75px;}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "If the padding property has two values:"
+    },
+    {
+      "type": "other",
+      "text": "padding: 25px 50px;top and bottom paddings are 25px\nright and left paddings are 50px"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "div { \n  padding: 25px 50px;}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "If the padding property has one value:"
+    },
+    {
+      "type": "other",
+      "text": "padding: 25px;all four paddings are 25px"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "div { \n  padding: 25px;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Padding and Element Width"
+    },
+    {
+      "type": "paragraph",
+      "text": "The CSS width property specifies the width of the element's content area. The \ncontent area is the portion inside the padding, border, and margin of an element \n(the box model)."
+    },
+    {
+      "type": "paragraph",
+      "text": "So, if an element has a specified width, the padding added to that element will \nbe added to the total width of the element. This is often an undesirable result."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "div {  width: 300px;  padding: 25px;}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "To keep the width at 300px, no matter the amount of padding, you can use the \nbox-sizing property. This causes the element to maintain its actual width; if \nyou increase the padding, the available content space will decrease."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "div {  width: 300px;  padding: 25px;  box-sizing: border-box;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "More Examples"
+    },
+    {
+      "type": "paragraph",
+      "text": "Set the left padding\nThis example demonstrates how to set the left padding of a <p> element."
+    },
+    {
+      "type": "paragraph",
+      "text": "Set the right padding\nThis example demonstrates how to set the right padding of a <p> element."
+    },
+    {
+      "type": "paragraph",
+      "text": "Set the top padding\nThis example demonstrates how to set the top padding of a <p> element."
+    },
+    {
+      "type": "paragraph",
+      "text": "Set the bottom padding\nThis example demonstrates how to set the bottom padding of a <p> element."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "All CSS Padding Properties"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Property",
+          "Description"
+        ],
+        [
+          "padding",
+          "A shorthand property for setting all the padding properties in one declaration"
+        ],
+        [
+          "padding-bottom",
+          "Sets the bottom padding of an element"
+        ],
+        [
+          "padding-left",
+          "Sets the left padding of an element"
+        ],
+        [
+          "padding-right",
+          "Sets the right padding of an element"
+        ],
+        [
+          "padding-top",
+          "Sets the top padding of an element"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

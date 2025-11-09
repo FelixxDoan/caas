@@ -1,0 +1,327 @@
+{
+  "url": "https://www.w3schools.com/js/js_2019.asp",
+  "title": "ECMAScript 2019",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "ECMAScript 2019"
+    },
+    {
+      "type": "other",
+      "text": "New Features in JavaScript 2019\n\n  String trimStart()\n  String trimEnd()\n  Object.fromEntries\n  Optional catch binding\n  Array flat()\n  Array flatMap()\n  Revised Array Sort()\n  Revised JSON.stringify()\n  Separator symbols allowed in string litterals\n  Revised Function.toString()"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript String trimStart()"
+    },
+    {
+      "type": "paragraph",
+      "text": "ES2019 added the String method trimStart() to JavaScript."
+    },
+    {
+      "type": "paragraph",
+      "text": "The trimStart() method works like trim(), but removes whitespace only from the start of a string."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text1 = \"     Hello World!     \";\nlet text2 = text1.trimStart();"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript String trimStart() is supported in all modern browsers since January 2020:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome 66    \n    Edge 79\n    Firefox 61\n    Safari 12\n    Opera 50\n  \n  \n    Apr 2018\n    Jan 2020    \n    Jun 2018\n    Sep 2018\n    May 2018"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript String trimEnd()"
+    },
+    {
+      "type": "paragraph",
+      "text": "ES2019 added the String method trimEnd() to JavaScript."
+    },
+    {
+      "type": "paragraph",
+      "text": "The trimEnd() method works like trim(), but removes whitespace only from the end of a string."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text1 = \"     Hello World!     \";\nlet text2 = text1.trimEnd();"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript String trimEnd() is supported in all modern browsers since January 2020:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome 66    \n    Edge 79\n    Firefox 61\n    Safari 12\n    Opera 50\n  \n  \n    Apr 2018\n    Jan 2020    \n    Jun 2018\n    Sep 2018\n    May 2018"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Object fromEntries()"
+    },
+    {
+      "type": "paragraph",
+      "text": "ES2019 added the Object method fromEntries() to JavaScript."
+    },
+    {
+      "type": "paragraph",
+      "text": "The fromEntries() method creates an object from iterable key / value pairs."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const fruits = [\n[\"apples\", 300],\n[\"pears\", 900],\n[\"bananas\", 500]\n];\n\nconst myObj = Object.fromEntries(fruits);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript Object fromEntries() is supported in all modern browsers since January 2020:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome 73    \n    Edge 79\n    Firefox 63\n    Safari 12.1\n    Opera 60\n  \n  \n    Mar 2019\n    Jan 2020    \n    Oct 2018\n    Mar 2019\n    Apr 2019"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Optional catch Binding"
+    },
+    {
+      "type": "paragraph",
+      "text": "From ES2019 you can omit the catch parameter if you don't need it:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "try {\n  // code\n} catch (err) {\n  // code\n}"
+        },
+        {
+          "language": "unknown",
+          "code": "try {\n  // code\n} catch {\n  // code\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Optional catch binding is supported in all modern browsers since January 2020:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome 66    \n    Edge 79\n    Firefox 58\n    Safari 11.1\n    Opera 53\n  \n  \n    Apr 2018\n    Jan 2020    \n    Jan 2018\n    Mar 2018\n    May 2018"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Array flat()"
+    },
+    {
+      "type": "paragraph",
+      "text": "ES2019 added the Array flat() method to JavaScript."
+    },
+    {
+      "type": "paragraph",
+      "text": "The flat() method creates a new array by flattening a nested array."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const myArr = [[1,2],[3,4],[5,6]];\nconst newArr = myArr.flat();"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript Array flat() is supported in all modern browsers since January 2020:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome 69    \n    Edge 79\n    Firefox 62\n    Safari 12\n    Opera 56\n  \n  \n    Sep 2018\n    Jan 2020    \n    Sep 2018\n    Sep 2018\n    Sep 2018"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Array flatMap()"
+    },
+    {
+      "type": "paragraph",
+      "text": "ES2019 added the Array flatMap() method to JavaScript."
+    },
+    {
+      "type": "paragraph",
+      "text": "The flatMap() method first maps all elements of an array\nand then creates a new array by flattening the array."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const myArr = [1, 2, 3, 4, 5, 6];\nconst newArr = myArr.flatMap(x => [x, x * 10]);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Stable Array sort()"
+    },
+    {
+      "type": "paragraph",
+      "text": "ES2019 revised the Array sort() method."
+    },
+    {
+      "type": "paragraph",
+      "text": "Before 2019, the specification allowed unstable sorting algorithms such as QuickSort."
+    },
+    {
+      "type": "paragraph",
+      "text": "After ES2019, browsers must use a stable sorting algorithm:"
+    },
+    {
+      "type": "paragraph",
+      "text": "When sorting elements on a value, the elements must keep their relative position to other elements with the same value."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const myArr = [\n  {name:\"X00\",price:100 },\n  {name:\"X01\",price:100 },\n  {name:\"X02\",price:100 },\n  {name:\"X03\",price:100 },\n  {name:\"X04\",price:110 },\n  {name:\"X05\",price:110 },\n  {name:\"X06\",price:110 },\n  {name:\"X07\",price:110 }\n];"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "In the example above, when sorting on price, the result should not have names in a different relative position, such as this:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "X01 100\nX03 100\nX00 100\nX03 100\nX05 110\nX04 110\nX06 110\nX07 110"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Revised JSON.stringify()"
+    },
+    {
+      "type": "paragraph",
+      "text": "ES2019 revised the JSON stringify() method."
+    },
+    {
+      "type": "paragraph",
+      "text": "Before 2019, JSON could not stringify character encoded with \\."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = JSON.stringify(\"\\u26D4\");"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Before ES2019, using JSON.stringify()JSON on UTF-8 code points (U+D800 to U+DFFF)\nreturned broken Unicode characters like ���."
+    },
+    {
+      "type": "paragraph",
+      "text": "After this revision, strings with UTF-8 code points convert safely with JSON.stringify(),\nand back to the original using JSON.parse()."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Separator Symbols"
+    },
+    {
+      "type": "paragraph",
+      "text": "Line separators and paragraph separator symbols (\\u2028 and \\u2029) are now allowed in string literals."
+    },
+    {
+      "type": "paragraph",
+      "text": "Before 2019, these were treated as line terminators and resulted in error exceptions:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// This is valid in ES2019:\nlet text = \"\\u2028\";"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\nNow, JavaScript and JSON have equal rules.\nBefore ES2019:\ntext = JSON.parse('\"\\u2028\"') would parse to ''.\ntext = '\"\\u2028\"' would give syntax error."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Revised Function toString()"
+    },
+    {
+      "type": "paragraph",
+      "text": "ES2019 revised the Function toString() method."
+    },
+    {
+      "type": "paragraph",
+      "text": "The toString() method returns a string representing the source code of a function."
+    },
+    {
+      "type": "paragraph",
+      "text": "From 2019, toString() must return the source code of the function including comments,\nspaces, and syntax details."
+    },
+    {
+      "type": "paragraph",
+      "text": "Before 2019, different browsers returned different variants of the function (like without comments and spaces).\nFrom 2019 the function should be returned exactly as it is written."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "function myFunction(p1, p2) {\n    return p1 * p2;\n}\nlet text = myFunction.toString();"
+        }
+      ]
+    }
+  ]
+}

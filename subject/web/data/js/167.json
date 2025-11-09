@@ -1,0 +1,516 @@
+{
+  "url": "https://www.w3schools.com/js/js_regexp.asp",
+  "title": "JavaScript RegExp",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript RegExp"
+    },
+    {
+      "type": "other",
+      "text": "Regular Expressions\nA Regular Expression is a sequence of characters that forms a search pattern.\nRegex is a common shorthand for a regular expression.\nJavaScript RexExp is an Object for handling Regular Expressions.\n\nRegExp are be used for:\n\nText searching\nText replacing\nText validation"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"Visit W3Schools\";\nlet n = text.search(/w3schools/i);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Example explained:"
+    },
+    {
+      "type": "paragraph",
+      "text": "/w3schools/i  is a regular expression."
+    },
+    {
+      "type": "paragraph",
+      "text": "w3schools  is a pattern (to be used in a search)."
+    },
+    {
+      "type": "paragraph",
+      "text": "i  is a modifier (modifies the search to be case-insensitive)."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Regular Expression Syntax"
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "/pattern/modifier flags;"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Using String Methods"
+    },
+    {
+      "type": "paragraph",
+      "text": "Regular expressions are often used with the string methods:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [],
+        [
+          "Method",
+          "Description"
+        ],
+        [
+          "match(regex)",
+          "Returns an Array of results"
+        ],
+        [
+          "replace(regex)",
+          "Returns a new String"
+        ],
+        [
+          "search(regex)",
+          "Returns the index of the first match"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Using String match()"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"Visit W3Schools\";\nlet n = text.match(/W3schools/);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Using String replace()"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"Visit Microsoft!\";\nlet result = text.replace(/Microsoft/i, \"W3Schools\");"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Using String search()"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"Visit W3Schools\";\nlet n = text.search(/W3Schools/);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "RexExp Alteration (OR)"
+    },
+    {
+      "type": "paragraph",
+      "text": "In a regular expression an alteration is denoted with a vertical line character |."
+    },
+    {
+      "type": "paragraph",
+      "text": "An alteration matches any of the alternatives separated with |."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"Black, white, red, green, blue, yellow.\";\n\nlet result = text.match(/red|green|blue/g);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Regex Flags"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "/pattern/flags"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Regular expression flags are parameters that can modify how a pattern is used,\nsuch as making it case-insensitive or global."
+    },
+    {
+      "type": "paragraph",
+      "text": "These are the most common:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [],
+        [
+          "Flag",
+          "Description"
+        ],
+        [
+          "/g",
+          "Performs a global match (find all)"
+        ],
+        [
+          "/i",
+          "Performs case-insensitive matching"
+        ],
+        [
+          "/u",
+          "Enables Unicode support (new 2015)"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The /g Flag (Global)"
+    },
+    {
+      "type": "paragraph",
+      "text": "The /g flag matches all occurrences of the pattern, rather than just the first one."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"Is this all there is?\";\nconst pattern = /is/g;\n\nlet result = text.match(pattern);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The /i Flag (Insensitive)"
+    },
+    {
+      "type": "paragraph",
+      "text": "The /i flag makes a match case-insensitive: /abc/i matches \"abc\", \"AbC\", \"ABC\"."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"Visit W3Schools\";\nconst pattern = /w3schools/i;\n\nlet result = text.match(pattern);"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Learn More:\nJavaScript RegExp Flags"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "RexExp Metacharacters"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Match words\nconst pattern = /\\w/;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Metacharacters are characters with a special meaning."
+    },
+    {
+      "type": "paragraph",
+      "text": "They can be used to match digts, words, spaces, and more."
+    },
+    {
+      "type": "paragraph",
+      "text": "These are the most common:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [],
+        [
+          "Meta",
+          "Description"
+        ],
+        [
+          "\\d",
+          "Matches Digits"
+        ],
+        [
+          "\\w",
+          "Matches Words"
+        ],
+        [
+          "\\s",
+          "Matches Spaces"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "RegExp \\d (digits) Metacharacter"
+    },
+    {
+      "type": "paragraph",
+      "text": "The \\d metacharacter matches digits."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"Give 100%!\";\nconst pattern = /\\d/g;\n\nlet result = text.match(pattern);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "RegExp \\w (word) Metacharacter"
+    },
+    {
+      "type": "paragraph",
+      "text": "The \\w metacharacter matches word characters."
+    },
+    {
+      "type": "paragraph",
+      "text": "A word character is a character a-z, A-Z, 0-9, including _ (underscore)."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"Give 100%!\";\nconst pattern = /\\w/g;\n\nlet result = text.match(pattern);"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Learn More:\nJavaScript RegExp Metacharacters"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript RegExp Quantifiers"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Match at least one zero\nconst pattern = /0+/;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Quantifiers define the numbers of characters or expressions to match."
+    },
+    {
+      "type": "paragraph",
+      "text": "These are the most common:"
+    },
+    {
+      "type": "other",
+      "text": "Code\n  Description\n\n\n  x*\n  Matches zero or more occurrences of x\n\n\n  x?\n  Matches zero or one occurrences of x\n\n\n  x{n}\n  Matches n occurences of x"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The n? Quantifier"
+    },
+    {
+      "type": "paragraph",
+      "text": "x? matches zero or one occurrences of x."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"1, 100 or 1000?\";\nconst pattern = /10?/g;\n\nlet result = text.match(pattern);"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Learn More:\nJavaScript RegExp Quantifiers"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Regular Expression Assertions"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Match beginning of string\nconst pattern = /^W3Schools/;\n\n// Match end of string\nconst pattern = /W3Schools$/;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Assertions matches Boundaries and Lookarounds:"
+    },
+    {
+      "type": "paragraph",
+      "text": "String Boundaries and Word Boundaries."
+    },
+    {
+      "type": "paragraph",
+      "text": "Lookarounds: Lookaheads and Lookbehinds."
+    },
+    {
+      "type": "paragraph",
+      "text": "These are the most common:"
+    },
+    {
+      "type": "other",
+      "text": "SyntaxNameDescription\n^String boundaryMatches the beginning of a string\n$String boundaryMatches the end of a string\n\\bWord boundaryMatches the beginning or end of a word\n(?=...)LookaheadMatches the subsequent string\n(?<=...)LookbehindMatches the previous string"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "RegExp ^ Metacharacter"
+    },
+    {
+      "type": "paragraph",
+      "text": "The ^ metacharacter matches the beginning of a string."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const pattern = /^W3Schools/;\nlet text = \"W3Schools Tutorial\";\n\nlet result = pattern.test(text); // true"
+        },
+        {
+          "language": "unknown",
+          "code": "const pattern = /^W3Schools/;\nlet text = \"Hello W3Schools\";\n\nlet result = pattern.test(text); // false"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "RegExp $ Metacharacter"
+    },
+    {
+      "type": "paragraph",
+      "text": "The $ metacharacter matches the end of a string."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const pattern = /W3Schools$/;\nlet text = \"Hello W3Schools\";\n\nlet result = pattern.test(text); // true"
+        },
+        {
+          "language": "unknown",
+          "code": "const pattern = /W3Schools$/;\nlet text = \"W3Schools tutorial\";\n\nlet result = pattern.test(text); // false"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Learn More:\nJavaScript RegExp Assertions"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript RegExp Character Classes"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Match Digits\nconst pattern = /[0-9]/;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Character Classes are characters enclosed in square brackets []."
+    },
+    {
+      "type": "paragraph",
+      "text": "A character class matches any character from a set within brackets."
+    },
+    {
+      "type": "paragraph",
+      "text": "These are the most common:"
+    },
+    {
+      "type": "other",
+      "text": "Class\n  Description\n\n\n  [a]\n  Matches the character between the brackets\n\n\n  [abc]\n  Matches all characters between the brackets\n  \n\n  [a-z]\n  Matches all characters in the range from a to z\n\n\n  [0-9]\n  Matches all characters in the range from 0 to 9"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"More than 1000 times\";\nconst pattern = /[0-9]/g;\n\nlet result = text.match(pattern);"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Learn More:\nJavaScript RegExp Character Classes"
+    },
+    {
+      "type": "other",
+      "text": "See Also:\nJavaScript RegExp Patterns\nJavaScript RegExp Objects\nJavaScript RegExp Methods"
+    }
+  ]
+}

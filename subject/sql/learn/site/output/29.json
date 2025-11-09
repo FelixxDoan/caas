@@ -1,0 +1,94 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_join_full.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL FULL OUTER JOIN Keyword"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "heading",
+      "text": "SQL FULL OUTER JOIN Keyword"
+    },
+    {
+      "type": "paragraph",
+      "text": "The FULL OUTER JOIN keyword returns all records when there is a match in \nleft (table1) or right (table2) table records."
+    },
+    {
+      "type": "paragraph",
+      "text": "Tip: FULL OUTER JOIN and \nFULL JOIN are the same."
+    },
+    {
+      "type": "other",
+      "text": "FULL OUTER JOIN Syntax"
+    },
+    {
+      "type": "other",
+      "text": "SELECT column_name(s)\n FROM table1\n FULL OUTER JOIN table2 ON table1.column_name = table2.column_name\n WHERE condition;"
+    },
+    {
+      "type": "paragraph",
+      "text": "Note: FULL OUTER JOIN can potentially return very large \nresult-sets!"
+    },
+    {
+      "type": "heading",
+      "text": "Demo Database"
+    },
+    {
+      "type": "paragraph",
+      "text": "In this tutorial we will use the well-known Northwind sample database."
+    },
+    {
+      "type": "paragraph",
+      "text": "Below is a selection from the \"Customers\" table:"
+    },
+    {
+      "type": "other",
+      "text": "CustomerID\n    CustomerName\n    ContactName\n    Address\n    City\n    PostalCode\n    Country\n  \n  \n    1\n    Alfreds Futterkiste\n    Maria Anders\n    Obere Str. 57\n    Berlin\n    12209\n    Germany\n  \n  \n    2\n    Ana Trujillo Emparedados y helados\n    Ana Trujillo\n    Avda. de la Constitución 2222\n    México D.F.\n    05021\n    Mexico\n  \n  \n    3\n    Antonio Moreno Taquería\n    Antonio Moreno\n    Mataderos 2312\n    México D.F.\n    05023\n    Mexico"
+    },
+    {
+      "type": "paragraph",
+      "text": "And a selection from the \"Orders\" table:"
+    },
+    {
+      "type": "other",
+      "text": "OrderID\n    CustomerID\n    EmployeeID\n    OrderDate\n    ShipperID\n  \n  \n    10308\n    2\n    7\n    1996-09-18\n    3\n  \n  \n    10309\n    37\n    3\n    1996-09-19\n    1\n  \n  \n    10310\n    77\n    8\n    1996-09-20\n    2"
+    },
+    {
+      "type": "heading",
+      "text": "SQL FULL OUTER JOIN Example"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement selects all customers, and all orders:"
+    },
+    {
+      "type": "other",
+      "text": "SELECT Customers.CustomerName, Orders.OrderID\n  FROM Customers\n  FULL OUTER JOIN Orders\n  ON Customers.CustomerID=Orders.CustomerID\n  ORDER BY Customers.CustomerName;"
+    },
+    {
+      "type": "paragraph",
+      "text": "A selection from the result set may look like this:"
+    },
+    {
+      "type": "other",
+      "text": "CustomerName\n    OrderID\n  \n  \n    Null\n    10309\n  \n  \n    Null\n    10310\n  \n  \n    Alfreds Futterkiste\n    Null\n  \n  \n    Ana Trujillo Emparedados y helados \n    10308\n  \n  \n    Antonio Moreno Taquería \n    Null"
+    },
+    {
+      "type": "paragraph",
+      "text": "Note: The FULL OUTER JOIN keyword returns all matching \nrecords from both tables whether the other table matches or not. So, if \nthere are rows in \"Customers\" that do not have matches in \"Orders\", or if there \nare rows in \"Orders\" that do not have matches in \"Customers\", those rows will be \nlisted as well."
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

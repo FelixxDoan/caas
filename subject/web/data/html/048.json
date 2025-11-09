@@ -1,0 +1,318 @@
+{
+  "url": "https://www.w3schools.com/html/html_forms.asp",
+  "title": "HTML ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "HTML Forms"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "An HTML form is used to collect user input. The user input is \nmost often sent to a server for processing."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": []
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The <form> Element"
+    },
+    {
+      "type": "paragraph",
+      "text": "The HTML <form> element is used to \ncreate an HTML form for user input:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<form>\n .\nform elements\n .\n </form>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The <form> element is a container for different types of input elements, \nsuch as: text fields, checkboxes, radio \nbuttons, submit buttons, etc."
+    },
+    {
+      "type": "paragraph",
+      "text": "All\nthe different form elements are covered in this chapter:\nHTML Form Elements."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The <input> Element"
+    },
+    {
+      "type": "paragraph",
+      "text": "The HTML <input> element is the most \nused form element."
+    },
+    {
+      "type": "paragraph",
+      "text": "An <input> element can be displayed in \nmany ways, depending on the type \nattribute."
+    },
+    {
+      "type": "paragraph",
+      "text": "Here are some examples:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Type",
+          "Description"
+        ],
+        [
+          "<input type=\"text\">",
+          "Displays a single-line text input field"
+        ],
+        [
+          "<input type=\"radio\">",
+          "Displays a radio button (for selecting one of many choices)"
+        ],
+        [
+          "<input type=\"checkbox\">",
+          "Displays a checkbox (for selecting zero or more of many choices)"
+        ],
+        [
+          "<input type=\"submit\">",
+          "Displays a submit button (for submitting the form)"
+        ],
+        [
+          "<input type=\"button\">",
+          "Displays a clickable button"
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "All the different input types are covered in this chapter:\nHTML Input Types."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Text Fields"
+    },
+    {
+      "type": "paragraph",
+      "text": "The <input type=\"text\"> defines a single-line input field for \ntext input."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<form>\n    <label for=\"fname\">First name:</label><br>  <input \n  type=\"text\" id=\"fname\" name=\"fname\"><br>  <label for=\"lname\">Last \n  name:</label><br>  <input type=\"text\" id=\"lname\" name=\"lname\"></form>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "This is how the HTML code above will be displayed in a browser:"
+    },
+    {
+      "type": "other",
+      "text": "First name:\n\nLast name:"
+    },
+    {
+      "type": "other",
+      "text": "Note: The form itself is not visible. Also note that the default width \nof an input field is 20 characters."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The <label> Element"
+    },
+    {
+      "type": "paragraph",
+      "text": "Notice the use of the <label> element in the \nexample above."
+    },
+    {
+      "type": "paragraph",
+      "text": "The <label> tag defines a label for many \nform elements."
+    },
+    {
+      "type": "paragraph",
+      "text": "The <label> element is useful for \nscreen-reader users, because the screen-reader will read out loud the label when \nthe user focuses on the input element."
+    },
+    {
+      "type": "paragraph",
+      "text": "The <label> element also helps users who have \ndifficulty clicking on very small regions (such as radio buttons or checkboxes) \n- because when the user clicks the text within the <label> element, it toggles \nthe radio button/checkbox."
+    },
+    {
+      "type": "paragraph",
+      "text": "The for attribute of the <label> tag should \nbe equal to the id attribute of the <input>  \nelement to bind them together."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Radio Buttons"
+    },
+    {
+      "type": "paragraph",
+      "text": "The <input type=\"radio\"> defines a radio button."
+    },
+    {
+      "type": "paragraph",
+      "text": "Radio buttons let a user select ONE of a limited number of choices."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<p>Choose your favorite Web language:</p>\n<form>  <input type=\"radio\" id=\"html\" name=\"fav_language\" \n  value=\"HTML\">  <label for=\"html\">HTML</label><br>  <input \n  type=\"radio\" id=\"css\" name=\"fav_language\" value=\"CSS\">  <label \n  for=\"css\">CSS</label><br>  <input type=\"radio\" id=\"javascript\" \n  name=\"fav_language\" value=\"JavaScript\">  <label for=\"javascript\">JavaScript</label></form>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "This is how the HTML code above will be displayed in a browser:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Choose your favorite Web language:"
+    },
+    {
+      "type": "other",
+      "text": "HTML"
+    },
+    {
+      "type": "other",
+      "text": "CSS"
+    },
+    {
+      "type": "other",
+      "text": "JavaScript"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Checkboxes"
+    },
+    {
+      "type": "paragraph",
+      "text": "The <input type=\"checkbox\"> defines a checkbox."
+    },
+    {
+      "type": "paragraph",
+      "text": "Checkboxes let a user select ZERO or MORE options of a limited number of choices."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<form>  <input type=\"checkbox\" id=\"vehicle1\" name=\"vehicle1\" value=\"Bike\">  \n  <label for=\"vehicle1\"> I have a bike</label><br>  <input \n  type=\"checkbox\" id=\"vehicle2\" name=\"vehicle2\" value=\"Car\">  <label for=\"vehicle2\"> \n  I have a car</label><br>  <input type=\"checkbox\" \n  id=\"vehicle3\" name=\"vehicle3\" \n  value=\"Boat\">  <label for=\"vehicle3\"> I have a boat</label>\n </form>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "This is how the HTML code above will be displayed in a browser:"
+    },
+    {
+      "type": "other",
+      "text": "I have a bike"
+    },
+    {
+      "type": "other",
+      "text": "I have a car"
+    },
+    {
+      "type": "other",
+      "text": "I have a boat"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Submit Button"
+    },
+    {
+      "type": "paragraph",
+      "text": "The <input type=\"submit\"> defines a button for submitting the form data to a form-handler."
+    },
+    {
+      "type": "paragraph",
+      "text": "The form-handler is typically a file on the server with a script for processing \ninput data."
+    },
+    {
+      "type": "paragraph",
+      "text": "The form-handler is specified in the form's action \nattribute."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<form action=\"/action_page.php\">  <label for=\"fname\">First \n  name:</label><br>  <input type=\"text\" id=\"fname\" name=\"fname\" \n  value=\"John\"><br>  <label for=\"lname\">Last name:</label><br>  \n  <input type=\"text\" id=\"lname\" name=\"lname\" value=\"Doe\"><br><br>  \n  <input type=\"submit\" value=\"Submit\"></form>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "This is how the HTML code above will be displayed in a browser:"
+    },
+    {
+      "type": "other",
+      "text": "First name:\n\nLast name:"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Name Attribute for <input>"
+    },
+    {
+      "type": "paragraph",
+      "text": "Notice that each input field must have a name attribute to be submitted."
+    },
+    {
+      "type": "paragraph",
+      "text": "If the name attribute is omitted, the value of the input field will not be sent at all."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<form action=\"/action_page.php\">  <label for=\"fname\">First \n  name:</label><br>  <input type=\"text\" id=\"fname\" value=\"John\"><br><br>  \n  <input type=\"submit\" value=\"Submit\"></form>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Video: HTML Forms"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    },
+    {
+      "type": "image",
+      "src": "https://www.w3schools.com/html/images/yt_logo_rgb_dark.png"
+    },
+    {
+      "type": "image",
+      "src": "https://www.w3schools.com/html/images/22_html_forms.png"
+    }
+  ]
+}

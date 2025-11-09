@@ -1,0 +1,106 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_not.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL NOT Operator"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "text": "The NOT Operator"
+    },
+    {
+      "type": "paragraph",
+      "text": "The NOT operator is used in combination with \nother operators to give the opposite result, also called the negative result."
+    },
+    {
+      "type": "paragraph",
+      "text": "In the select statement below we want to return all customers that are NOT \nfrom Spain:"
+    },
+    {
+      "type": "other",
+      "text": "Example\nSelect only the customers that are NOT from Spain:\n\n SELECT * FROM Customers\n WHERE NOT Country = 'Spain';\n\nTry it Yourself »"
+    },
+    {
+      "type": "paragraph",
+      "text": "In the example above, the NOT operator is used in combination with the\n= operator, but it can be used in combination with other comparison and/or logical operators.\nSee examples below."
+    },
+    {
+      "type": "heading",
+      "text": "Syntax"
+    },
+    {
+      "type": "other",
+      "text": "SELECT column1, column2, ...\nFROM table_name\nWHERE NOT condition;"
+    },
+    {
+      "type": "heading",
+      "text": "Demo Database"
+    },
+    {
+      "type": "paragraph",
+      "text": "Below is a selection from the Customers table used in the examples:"
+    },
+    {
+      "type": "other",
+      "text": "CustomerID\n    CustomerName\n    ContactName\n    Address\n    City\n    PostalCode\n    Country\n  \n  \n    1\n    Alfreds Futterkiste\n    Maria Anders\n    Obere Str. 57\n    Berlin\n    12209\n    Germany\n  \n  \n    2\n    Ana Trujillo Emparedados y helados\n    Ana Trujillo\n    Avda. de la Constitución 2222\n    México D.F.\n    05021\n    Mexico\n  \n  \n    3\n    Antonio Moreno Taquería\n    Antonio Moreno\n    Mataderos 2312\n    México D.F.\n    05023\n    Mexico\n  \n  \n    4\n    Around the Horn\n    Thomas Hardy\n    120 Hanover Sq.\n    London\n    WA1 1DP\n    UK\n  \n  \n    5\n    Berglunds snabbköp\n    Christina Berglund\n    Berguvsvägen 8\n    Luleå\n    S-958 22\n    Sweden"
+    },
+    {
+      "type": "heading",
+      "text": "NOT LIKE"
+    },
+    {
+      "type": "other",
+      "text": "Example\nSelect customers that does not start with the letter 'A':\n\n SELECT * FROM Customers\n WHERE CustomerName NOT LIKE 'A%';\n\nTry it Yourself »"
+    },
+    {
+      "type": "heading",
+      "text": "NOT BETWEEN"
+    },
+    {
+      "type": "other",
+      "text": "Example\nSelect customers with a customerID not between 10 and 60:\n\n SELECT * FROM Customers\n WHERE CustomerID NOT BETWEEN 10 AND 60;\n\nTry it Yourself »"
+    },
+    {
+      "type": "heading",
+      "text": "NOT IN"
+    },
+    {
+      "type": "other",
+      "text": "Example\nSelect customers that are not from Paris or London:\n\n SELECT * FROM Customers\n WHERE City NOT IN ('Paris', 'London');\n\nTry it Yourself »"
+    },
+    {
+      "type": "heading",
+      "text": "NOT Greater Than"
+    },
+    {
+      "type": "other",
+      "text": "Example\nSelect customers with a CustomerId not greater than 50:\n\n SELECT * FROM Customers\n WHERE NOT CustomerID > 50;\n\nTry it Yourself »"
+    },
+    {
+      "type": "heading",
+      "text": "NOT Less Than"
+    },
+    {
+      "type": "other",
+      "text": "Example\nSelect customers with a CustomerID not less than 50:\n\n SELECT * FROM Customers\n WHERE NOT CustomerId < 50;\n\nTry it Yourself »"
+    },
+    {
+      "type": "heading",
+      "text": "Video: SQL NOT Operator"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

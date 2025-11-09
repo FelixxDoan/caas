@@ -1,0 +1,810 @@
+{
+  "url": "https://www.w3schools.com/html/html5_syntax.asp",
+  "title": "HTML ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "HTML Style Guide"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "Consistent, clean, and tidy HTML code makes it easier for others to read and understand your code."
+    },
+    {
+      "type": "paragraph",
+      "text": "Here are some guidelines and tips for creating good HTML code."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Always Declare Document Type"
+    },
+    {
+      "type": "paragraph",
+      "text": "Always declare the document type as the first line in your document."
+    },
+    {
+      "type": "paragraph",
+      "text": "The correct document type for HTML is:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<!DOCTYPE html>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Use Lowercase Element Names"
+    },
+    {
+      "type": "paragraph",
+      "text": "HTML allows mixing uppercase and lowercase letters in element names."
+    },
+    {
+      "type": "paragraph",
+      "text": "However, we recommend using lowercase element names, because:"
+    },
+    {
+      "type": "other",
+      "text": "Mixing uppercase and lowercase names looks bad\n Developers normally use lowercase names\n Lowercase looks cleaner\n Lowercase is easier to type"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<body>\n<p>This is a paragraph.</p>\n</body>"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<BODY>\n<P>This is a paragraph.</P>\n</BODY>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Close All HTML Elements"
+    },
+    {
+      "type": "paragraph",
+      "text": "In HTML, you do not have to close all elements (for example the <p> element)."
+    },
+    {
+      "type": "paragraph",
+      "text": "However, we strongly recommend closing all HTML elements, like this:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<section>  <p>This is a paragraph.</p>  <p>This is a paragraph.</p>\n    </section>"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<section>  <p>This is a paragraph.  <p>This is a paragraph.\n    </section>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Use Lowercase Attribute Names"
+    },
+    {
+      "type": "paragraph",
+      "text": "HTML allows mixing uppercase and lowercase letters in attribute names."
+    },
+    {
+      "type": "paragraph",
+      "text": "However, we recommend using lowercase attribute names, because:"
+    },
+    {
+      "type": "other",
+      "text": "Mixing uppercase and lowercase names looks bad\n Developers normally use lowercase names\n Lowercase looks cleaner\n Lowercase is easier to type"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<a href=\"https://www.w3schools.com/html/\">Visit our HTML tutorial</a>"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<a HREF=\"https://www.w3schools.com/html/\">Visit our HTML tutorial</a>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Always Quote Attribute Values"
+    },
+    {
+      "type": "paragraph",
+      "text": "HTML allows attribute values without quotes."
+    },
+    {
+      "type": "paragraph",
+      "text": "However, we recommend quoting attribute values, because:"
+    },
+    {
+      "type": "other",
+      "text": "Developers normally quote attribute values\n  Quoted values are easier to read\n  You MUST use quotes if the value contains spaces"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<table \n    class=\"striped\">"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<table class=striped>"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<table class=table striped>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Always Specify alt, width, and height for Images"
+    },
+    {
+      "type": "paragraph",
+      "text": "Always specify the alt attribute for images. This attribute is important if the image \nfor some reason cannot be displayed."
+    },
+    {
+      "type": "paragraph",
+      "text": "Also, always define the width and \nheight of images. This reduces flickering, because the browser can reserve space for \nthe image before loading."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<img \n    src=\"html5.gif\" alt=\"HTML5\" style=\"width:128px;height:128px\">"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<img \n    src=\"html5.gif\">"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Spaces and Equal Signs"
+    },
+    {
+      "type": "paragraph",
+      "text": "HTML allows spaces around equal signs. But space-less is easier to read and \ngroups entities better together."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<link rel=\"stylesheet\" href=\"styles.css\">"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<link \n    rel = \"stylesheet\" href = \"styles.css\">"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Avoid Long Code Lines"
+    },
+    {
+      "type": "paragraph",
+      "text": "When using an HTML editor, it is NOT convenient to scroll right and left to read the HTML code."
+    },
+    {
+      "type": "paragraph",
+      "text": "Try to avoid too long code lines."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Blank Lines and Indentation"
+    },
+    {
+      "type": "paragraph",
+      "text": "Do not add blank lines, spaces, or indentations without a reason."
+    },
+    {
+      "type": "paragraph",
+      "text": "For readability, add blank lines to separate large or logical code blocks."
+    },
+    {
+      "type": "paragraph",
+      "text": "For readability, add two spaces of indentation. Do not use the tab key."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<body><h1>Famous Cities</h1><h2>Tokyo</h2>\n    <p>Tokyo is the capital of Japan, the \n    center of the Greater Tokyo Area, and the most \n    populous metropolitan area in the world.</p><h2>London</h2>\n    <p>London is the capital city of England. It is the most populous city \n  in the United Kingdom.</p><h2>Paris</h2>\n    <p>Paris is the capital of France. The Paris area is one of the \n  largest population centers in Europe.</p></body>"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<body><h1>Famous Cities</h1><h2>Tokyo</h2><p>Tokyo is the capital of Japan, the \n    center of the Greater Tokyo Area, and the most \n    populous metropolitan area in the world.</p><h2>London</h2><p>London \n  is the capital city of England. It is the most populous city in the United \n  Kingdom.</p><h2>Paris</h2><p>Paris is the capital \n  of France. The Paris area is one of the largest population centers in Europe.</p></body>"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<table>  <tr>    <th>Name</th>\n    <th>Description</th>\n     \n    </tr>  <tr>    <td>A</td>\n    <td>Description of A</td>\n     \n    </tr>  <tr>    <td>B</td>\n    <td>Description of B</td>  </tr></table>"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<ul>  <li>London</li>  <li>Paris</li>\n      \n    <li>Tokyo</li></ul>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Never Skip the <title> Element"
+    },
+    {
+      "type": "paragraph",
+      "text": "The <title> element is required in HTML."
+    },
+    {
+      "type": "paragraph",
+      "text": "The contents of a page title is very important for search engine optimization \n(SEO)! The page title is used by search engine algorithms to decide the order \nwhen listing pages in search results."
+    },
+    {
+      "type": "paragraph",
+      "text": "The <title> element:"
+    },
+    {
+      "type": "other",
+      "text": "defines a title in the browser toolbar\n  provides a title for the page when it is added to favorites\n  displays a title for the page in search-engine results"
+    },
+    {
+      "type": "paragraph",
+      "text": "So, try to make the title as accurate and meaningful as possible:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<title>HTML \n    Style Guide and Coding Conventions</title>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Omitting <html> and <body>?"
+    },
+    {
+      "type": "paragraph",
+      "text": "An HTML page will validate without the <html> and \n<body> tags:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<!DOCTYPE html><head>  <title>Page Title</title>\n    </head>\n    \n <h1>This is a heading</h1><p>This is a paragraph.</p>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "However, we strongly recommend to always add the <html> and \n<body> tags!"
+    },
+    {
+      "type": "paragraph",
+      "text": "Omitting <body> can produce errors in older browsers."
+    },
+    {
+      "type": "paragraph",
+      "text": "Omitting <html> and <body> \ncan also crash DOM and XML software."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Omitting <head>?"
+    },
+    {
+      "type": "paragraph",
+      "text": "The HTML <head> tag can also \nbe omitted."
+    },
+    {
+      "type": "paragraph",
+      "text": "Browsers will add all elements before <body>, to a default <head> \nelement."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<!DOCTYPE html><html><title>Page Title</title>\n    <body><h1>This is a heading</h1><p>This is a paragraph.</p>\n    </body></html>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "However, we recommend using the <head> tag."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Close Empty HTML Elements?"
+    },
+    {
+      "type": "paragraph",
+      "text": "In HTML, it is optional to close empty elements."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<meta \n    charset=\"utf-8\">"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<meta charset=\"utf-8\" />"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "If you expect XML/XHTML software to access your page, keep the \nclosing slash (/), because it is required in XML and XHTML."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Add the lang Attribute"
+    },
+    {
+      "type": "paragraph",
+      "text": "You should always include the lang attribute \ninside the <html> tag, to declare the \nlanguage of the Web page. This is meant to assist search engines and browsers."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<!DOCTYPE html><html lang=\"en-us\"><head>  <title>Page Title</title>\n    </head><body><h1>This is a \n    heading</h1><p>This is a paragraph.</p></body></html>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Meta Data"
+    },
+    {
+      "type": "paragraph",
+      "text": "To ensure proper interpretation and correct search engine indexing, both the language and \nthe character encoding <meta charset=\"charset\"> should be defined as early as possible in an HTML document:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<!DOCTYPE html><html \n    lang=\"en-us\"><head>  <meta charset=\"UTF-8\">\n   \n <title>Page Title</title></head>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Setting The Viewport"
+    },
+    {
+      "type": "paragraph",
+      "text": "The viewport is the user's visible area of a web page. It varies with the device \n- it will be smaller on a mobile phone than on a computer screen."
+    },
+    {
+      "type": "paragraph",
+      "text": "You should include the following <meta> element in all your web pages:"
+    },
+    {
+      "type": "code",
+      "language": "html",
+      "code": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">"
+    },
+    {
+      "type": "paragraph",
+      "text": "This gives the browser instructions on how \nto control the page's dimensions and scaling."
+    },
+    {
+      "type": "paragraph",
+      "text": "The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device)."
+    },
+    {
+      "type": "paragraph",
+      "text": "The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser."
+    },
+    {
+      "type": "paragraph",
+      "text": "Here is an example of a web page without the viewport meta tag, and the same web page with the viewport meta tag:"
+    },
+    {
+      "type": "other",
+      "text": "Tip: If you are browsing this page with a phone or a tablet, you can click on the two links below to see the difference."
+    },
+    {
+      "type": "other",
+      "text": "Without the \nviewport meta tag\n   \n    \n  \n  \n    With the \nviewport meta tag"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML Comments"
+    },
+    {
+      "type": "paragraph",
+      "text": "Short comments should be written on one line, like this:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<!-- This is a comment -->"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Comments that spans more than one line, should be written like this:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<!--   This is a long comment example. This is \n  a long comment example.  This is a \n  long comment example. This is a long comment example.-->"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Long comments are easier to observe if they are indented with two spaces."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Using Style Sheets"
+    },
+    {
+      "type": "paragraph",
+      "text": "Use simple syntax for linking to style sheets (the \ntype attribute is not necessary):"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<link rel=\"stylesheet\" href=\"styles.css\">"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Short CSS rules can be written compressed, like this:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "css",
+          "code": "p.intro {font-family:Verdana;font-size:16em;}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Long CSS rules should be written over multiple lines:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "css",
+          "code": "body {  background-color: lightgrey;  font-family: \"Arial \nBlack\", Helvetica, sans-serif;  font-size: 16em;  color: \nblack;}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Place the opening bracket on the same line as the selector\n Use one space before the opening bracket\n Use two spaces of indentation\n Use semicolon after each property-value pair, including the last\n Only use quotes around values if the value contains spaces\n Place the closing bracket on a new line, without leading spaces"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Loading JavaScript in HTML"
+    },
+    {
+      "type": "paragraph",
+      "text": "Use simple syntax for loading external scripts (the \ntype attribute is not necessary):"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<script src=\"myscript.js\">"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Accessing HTML Elements with JavaScript"
+    },
+    {
+      "type": "paragraph",
+      "text": "Using \"untidy\" HTML code can result in JavaScript errors."
+    },
+    {
+      "type": "paragraph",
+      "text": "These two JavaScript statements will produce different results:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "javascript",
+          "code": "getElementById(\"Demo\").innerHTML = \"Hello\";getElementById(\"demo\").innerHTML \n  = \"Hello\";"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Visit the JavaScript Style Guide."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Use Lower Case File Names"
+    },
+    {
+      "type": "paragraph",
+      "text": "Some web servers (Apache, Unix) are case sensitive about file names: \"london.jpg\" cannot be accessed as \n\"London.jpg\"."
+    },
+    {
+      "type": "paragraph",
+      "text": "Other web servers (Microsoft, IIS) are not case sensitive: \"london.jpg\" can be accessed as \n\"London.jpg\"."
+    },
+    {
+      "type": "paragraph",
+      "text": "If you use a mix of uppercase and lowercase, you have to be aware of this."
+    },
+    {
+      "type": "paragraph",
+      "text": "If you move from a case-insensitive to a case-sensitive server, even small \nerrors will break your web!"
+    },
+    {
+      "type": "paragraph",
+      "text": "To avoid these problems, always use lowercase file names!"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "File Extensions"
+    },
+    {
+      "type": "paragraph",
+      "text": "HTML files should have a .html extension (.htm is allowed)."
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS files should have a .css extension."
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript files should have a .js extension."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Differences Between .htm and .html?"
+    },
+    {
+      "type": "paragraph",
+      "text": "There is no difference between the .htm and .html file extensions!"
+    },
+    {
+      "type": "paragraph",
+      "text": "Both will be \ntreated as HTML by any web browser and web server."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Default Filenames"
+    },
+    {
+      "type": "paragraph",
+      "text": "When a URL does not specify a filename at the end (like \"https://www.w3schools.com/\"), \nthe server just adds a default filename, such as \"index.html\", \n\"index.htm\", \"default.html\", or \"default.htm\"."
+    },
+    {
+      "type": "paragraph",
+      "text": "If your server is configured only with \"index.html\" as the default filename, your \nfile must be named \"index.html\", and not \"default.html\"."
+    },
+    {
+      "type": "paragraph",
+      "text": "However, servers can be configured with more than one default filename; \nusually you can set up as many default filenames as you want."
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Mixing uppercase and lowercase names looks bad",
+        "Developers normally use lowercase names",
+        "Lowercase looks cleaner",
+        "Lowercase is easier to type"
+      ]
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Mixing uppercase and lowercase names looks bad",
+        "Developers normally use lowercase names",
+        "Lowercase looks cleaner",
+        "Lowercase is easier to type"
+      ]
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Developers normally quote attribute values",
+        "Quoted values are easier to read",
+        "You MUST use quotes if the value contains spaces"
+      ]
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "defines a title in the browser toolbar",
+        "provides a title for the page when it is added to favorites",
+        "displays a title for the page in search-engine results"
+      ]
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Place the opening bracket on the same line as the selector",
+        "Use one space before the opening bracket",
+        "Use two spaces of indentation",
+        "Use semicolon after each property-value pair, including the last",
+        "Only use quotes around values if the value contains spaces",
+        "Place the closing bracket on a new line, without leading spaces"
+      ]
+    },
+    {
+      "type": "image",
+      "src": "https://www.w3schools.com/css/img_viewport1.png"
+    },
+    {
+      "type": "image",
+      "src": "https://www.w3schools.com/css/img_viewport2.png"
+    }
+  ]
+}

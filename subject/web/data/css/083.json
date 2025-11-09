@@ -1,0 +1,92 @@
+{
+  "url": "https://www.w3schools.com/css/css_font_style.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Font Style"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Font Style"
+    },
+    {
+      "type": "paragraph",
+      "text": "The font-style property is mostly used to specify italic text."
+    },
+    {
+      "type": "paragraph",
+      "text": "This property has three values:"
+    },
+    {
+      "type": "other",
+      "text": "normal - The text is shown normally\nitalic - The text is shown in italics\noblique - The text is \"leaning\"\n(oblique is very similar to italic, but less supported)"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "p.normal {  font-style: normal;}\np.italic {  font-style: italic;}\np.oblique {  font-style: oblique;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Font Weight"
+    },
+    {
+      "type": "paragraph",
+      "text": "The font-weight property specifies the weight of a font:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "p.normal {  font-weight: normal;}\np.thick {  font-weight: bold;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Font Variant"
+    },
+    {
+      "type": "paragraph",
+      "text": "The font-variant property specifies whether or not a text should \nbe displayed in a small-caps font."
+    },
+    {
+      "type": "paragraph",
+      "text": "In a small-caps font, all lowercase letters are converted to uppercase \nletters. However, the converted uppercase letters appears in a smaller font size \nthan the original uppercase letters in the text."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "p.normal {  font-variant: normal;}\np.small {  font-variant: small-caps;}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

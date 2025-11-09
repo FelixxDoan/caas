@@ -1,0 +1,160 @@
+{
+  "url": "https://www.w3schools.com/js/js_string_templates.asp",
+  "title": "JavaScript Template Strings",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Template Strings"
+    },
+    {
+      "type": "other",
+      "text": "String Templates\nTemplate Strings\nTemplate Literals\nBeloved child has many names"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Back-Tics Syntax"
+    },
+    {
+      "type": "paragraph",
+      "text": "Template Strings use back-ticks (``) rather than the quotes (\"\") to define a string:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = `Hello World!`;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Quotes Inside Strings"
+    },
+    {
+      "type": "paragraph",
+      "text": "Template Strings allow both single and double quotes inside a string:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = `He's often called \"Johnny\"`;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Multiline Strings"
+    },
+    {
+      "type": "paragraph",
+      "text": "Template Strings allow multiline strings:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text =\n`The quick\nbrown fox\njumps over\nthe lazy dog`;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Interpolation"
+    },
+    {
+      "type": "paragraph",
+      "text": "Template Strings allow variables in strings."
+    },
+    {
+      "type": "paragraph",
+      "text": "Template strings provide an easy way to interpolate variables in strings."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "${...}"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let firstName = \"John\";\nlet lastName = \"Doe\";\n\nlet text = `Welcome ${firstName}, ${lastName}!`;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Expression Substitution"
+    },
+    {
+      "type": "paragraph",
+      "text": "Template Strings allow interpolation of expressions in strings:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let price = 10;\nlet VAT = 0.25;\n\nlet total = `Total: ${(price * (1 + VAT)).toFixed(2)}`;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML Templates"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let header = \"Template Strings\";\nlet tags = [\"template strings\", \"javascript\", \"es6\"];\n\nlet html = `<h2>${header}</h2><ul>`;\n\nfor (const x of tags) {\n  html += `<li>${x}</li>`;\n}\n\nhtml += `</ul>`;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Browser Support"
+    },
+    {
+      "type": "paragraph",
+      "text": "Template Strings is an ES6  feature."
+    },
+    {
+      "type": "paragraph",
+      "text": "ES6 is fully supported in all modern browsers since June 2017:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome51\n    Edge15\n    Firefox54\n    Safari10\n    Opera38\n  \n  \n    May 2016\n    Apr 2017\n    Jun 2017\n    Sep 2016\n    Jun 2016"
+    },
+    {
+      "type": "other",
+      "text": "Complete String Reference\nFor a complete String reference, go to our:\nComplete JavaScript String Reference.\nThe reference contains descriptions and examples of all string properties and methods."
+    }
+  ]
+}

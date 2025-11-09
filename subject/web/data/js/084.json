@@ -1,0 +1,158 @@
+{
+  "url": "https://www.w3schools.com/js/js_2021.asp",
+  "title": "ECMAScript 2021",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "ECMAScript 2021"
+    },
+    {
+      "type": "other",
+      "text": "New Features in JavaScript 2021\n\nPromise.any()\nString replaceAll()\nNumeric Separators (_)"
+    },
+    {
+      "type": "paragraph",
+      "text": "ECMAScript 2021 is supported in all modern browsers since April 2021:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome 85    \n    Edge 85\n    Firefox 79\n    Safari 14.1\n    Opera 71\n  \n  \n    Aug 2020\n    Aug 2020    \n    Jul 2020\n    Apr 2021\n    Sep 2020"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Promise.any()"
+    },
+    {
+      "type": "paragraph",
+      "text": "Promise.any() is a static method in JavaScript that takes an iterable of Promises as input and returns\na single Promise."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create a Promise\nconst myPromise1 = new Promise((resolve, reject) => {\n  setTimeout(resolve, 200, \"King\");\n});\n\n// Create another Promise\nconst myPromise2 = new Promise((resolve, reject) => {\n  setTimeout(resolve, 100, \"Queen\");\n});\n\n// Run when any promise fulfill\nPromise.any([myPromise1, myPromise2]).then((x) => {\n  myDisplay(x);\n});"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Promise.any() is supported in all modern browsers since September 2020:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome 85    \n    Edge 85\n    Firefox 79\n    Safari 14\n    Opera 71\n  \n  \n    Aug 2020\n    Aug 2020    \n    Jul 2020\n    Sep 2020\n    Sep 2020"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript String ReplaceAll()"
+    },
+    {
+      "type": "paragraph",
+      "text": "ES2021 introduced the string method replaceAll():"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "text = text.replaceAll(\"Cats\",\"Dogs\");\ntext = text.replaceAll(\"cats\",\"dogs\");"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The replaceAll() method allows you to specify a\nregular expression instead of a string to be replaced."
+    },
+    {
+      "type": "paragraph",
+      "text": "If the parameter is a regular expression, the global flag (g) must be set, otherwise\na TypeError is thrown."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "text = text.replaceAll(/Cats/g,\"Dogs\");\ntext = text.replaceAll(/cats/g,\"dogs\");"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "replace.All() is supported in all modern browsers since April 2021:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome 85    \n    Edge 85\n    Firefox 77\n    Safari 13.1\n    Opera 71\n  \n  \n    Aug 2020\n    Aug 2020    \n    Jun 2020\n    Mar 2020\n    Sep 2020"
+    },
+    {
+      "type": "other",
+      "text": "Note\nES2020 introduced the string method matchAll()."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Numeric Separator (_)"
+    },
+    {
+      "type": "paragraph",
+      "text": "ES2021 intoduced the numeric separator (_) to make numbers more readable:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const num = 1_000_000_000;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The numeric separator is only for visual use."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const num1 = 1_000_000_000;\nconst num2 = 1000000000;\n(num1 === num2);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The numeric separator can be placed anywhere in a number:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const num1 = 1_2_3_4_5;"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\nThe numeric separator is not allowed at the beginning or at the end of a number.\nIn JavaScript only variables can start with _."
+    },
+    {
+      "type": "paragraph",
+      "text": "The numeric separator is supported in all modern browsers since January 2020:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome 75    \n    Edge 79\n    Firefox 74\n    Safari 13.1\n    Opera 67\n  \n  \n    Jun 2019\n    Jan 2020    \n    Oct 2019\n    Sep 2019\n    Jun 2019"
+    }
+  ]
+}

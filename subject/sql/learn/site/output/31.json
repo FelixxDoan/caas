@@ -1,0 +1,122 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_union.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL UNION Operator"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "heading",
+      "text": "The SQL UNION Operator"
+    },
+    {
+      "type": "paragraph",
+      "text": "The UNION operator is used to combine the result-set of two or more \nSELECT \nstatements."
+    },
+    {
+      "type": "paragraph",
+      "text": "The UNION operator automatically removes \nduplicate rows from the result set."
+    },
+    {
+      "type": "paragraph",
+      "text": "Requirements for UNION:"
+    },
+    {
+      "type": "other",
+      "text": "Every SELECT statement within\n  UNION must have the same number \nof columns\n  The columns must also have similar data types\n  The columns in \n  every SELECT statement must also be in the same order"
+    },
+    {
+      "type": "other",
+      "text": "UNION Syntax"
+    },
+    {
+      "type": "other",
+      "text": "SELECT column_name(s) FROM table1\n UNION\n SELECT column_name(s) FROM table2;"
+    },
+    {
+      "type": "paragraph",
+      "text": "Note: The column names in the result-set are usually equal to \nthe column names in the first SELECT statement."
+    },
+    {
+      "type": "heading",
+      "text": "Demo Database"
+    },
+    {
+      "type": "paragraph",
+      "text": "In this tutorial we will use the well-known Northwind sample database."
+    },
+    {
+      "type": "paragraph",
+      "text": "Below is a selection from the \"Customers\" table:"
+    },
+    {
+      "type": "other",
+      "text": "CustomerID\n    CustomerName\n    ContactName\n    Address\n    City\n    PostalCode\n    Country\n  \n  \n    1\n    Alfreds Futterkiste\n    Maria Anders\n    Obere Str. 57\n    Berlin\n    12209\n    Germany\n  \n  \n    2\n    Ana Trujillo Emparedados y helados\n    Ana Trujillo\n    Avda. de la Constitución 2222\n    México D.F.\n    05021\n    Mexico\n  \n  \n    3\n    Antonio Moreno Taquería\n    Antonio Moreno\n    Mataderos 2312\n    México D.F.\n    05023\n    Mexico"
+    },
+    {
+      "type": "paragraph",
+      "text": "And a selection from the \"Suppliers\" table:"
+    },
+    {
+      "type": "other",
+      "text": "SupplierID\n    SupplierName\n    ContactName\n    Address\n    City\n    PostalCode\n    Country\n  \n  \n    1\n    Exotic Liquid\n    Charlotte Cooper\n    49 Gilbert St.\n    London\n    EC1 4SD\n    UK\n  \n  \n    2\n    New Orleans Cajun Delights\n    Shelley Burke\n    P.O. Box 78934\n    New Orleans\n    70117\n    USA\n  \n  \n    3\n    Grandma Kelly's Homestead\n    Regina Murphy\n    707 Oxford Rd.\n    Ann Arbor\n    48104\n    USA"
+    },
+    {
+      "type": "heading",
+      "text": "SQL UNION Example"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement returns the cities \n(only distinct values) from both the \"Customers\" and the \"Suppliers\" table:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n SELECT City FROM CustomersUNIONSELECT City FROM SuppliersORDER BY City;\n\n\n Try it Yourself »"
+    },
+    {
+      "type": "paragraph",
+      "text": "Note: If some customers or suppliers have the same city, each city will only be \nlisted once, because UNION selects only distinct values. Use \nUNION ALL to also select \nduplicate values!"
+    },
+    {
+      "type": "heading",
+      "text": "SQL UNION With WHERE"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement returns the German cities \n(only distinct values) from both the \"Customers\" and the \"Suppliers\" table:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n SELECT City, Country FROM CustomersWHERE Country='Germany'UNION\n SELECT City, Country FROM SuppliersWHERE Country='Germany'ORDER BY City;\n\n\n Try it Yourself »"
+    },
+    {
+      "type": "heading",
+      "text": "Another UNION Example"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement lists all customers and suppliers:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n  SELECT 'Customer' AS Type, ContactName, City, CountryFROM Customers\n  UNIONSELECT 'Supplier', ContactName, City, CountryFROM Suppliers;\n\n\n Try it Yourself »"
+    },
+    {
+      "type": "paragraph",
+      "text": "Notice the \"AS Type\" above - it is an alias. SQL \nAliases are used to give a table or a column a temporary name.\nAn alias only exists for the duration of the query. So, here we have created a \ntemporary column named \"Type\", that list whether the contact person is a \n\"Customer\" or a \"Supplier\"."
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

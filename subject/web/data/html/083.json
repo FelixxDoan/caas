@@ -1,0 +1,170 @@
+{
+  "url": "https://www.w3schools.com/html/html_favicon.asp",
+  "title": "HTML ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "HTML Favicon"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "A favicon is a small image displayed next to the page title in the browser tab."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How To Add a Favicon in HTML"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can use any image you like as your favicon. You can also create your own \nfavicon on sites like \nhttps://www.favicon.cc."
+    },
+    {
+      "type": "other",
+      "text": "Tip: A favicon is a small image, so it should be a simple image with high contrast."
+    },
+    {
+      "type": "paragraph",
+      "text": "A favicon image is displayed to the left of the page title in the browser tab, like this:"
+    },
+    {
+      "type": "paragraph",
+      "text": "To add a favicon to your website, either save your favicon image to the root \ndirectory of your webserver, or create a folder in the root directory \ncalled images, and save your favicon image in this folder. A common name for a favicon image is \"favicon.ico\"."
+    },
+    {
+      "type": "paragraph",
+      "text": "Next, add a <link> element to your \"index.html\" file, \nafter the <title> element, like this:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<!DOCTYPE html><html><head>  <title>My Page \n  Title</title>  <link rel=\"icon\" type=\"image/x-icon\" href=\"/images/favicon.ico\"></head><body>\n  <h1>This is a Heading</h1><p>This is a paragraph.</p></body></html>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Now, save the \"index.html\" file and reload it in your browser. Your browser tab should now \ndisplay your favicon image to the left of the page title."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Favicon File Format Support"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following table shows the file format support for a favicon image:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Browser",
+          "ICO",
+          "PNG",
+          "GIF",
+          "JPEG",
+          "SVG"
+        ],
+        [
+          "Edge",
+          "Yes",
+          "Yes",
+          "Yes",
+          "Yes",
+          "Yes"
+        ],
+        [
+          "Chrome",
+          "Yes",
+          "Yes",
+          "Yes",
+          "Yes",
+          "Yes"
+        ],
+        [
+          "Firefox",
+          "Yes",
+          "Yes",
+          "Yes",
+          "Yes",
+          "Yes"
+        ],
+        [
+          "Opera",
+          "Yes",
+          "Yes",
+          "Yes",
+          "Yes",
+          "Yes"
+        ],
+        [
+          "Safari",
+          "Yes",
+          "Yes",
+          "Yes",
+          "Yes",
+          "Yes"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Chapter Summary"
+    },
+    {
+      "type": "other",
+      "text": "Use the HTML <link> element to \n  insert a favicon"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML Link Tag"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Tag",
+          "Description"
+        ],
+        [
+          "<link>",
+          "Defines the relationship between a document and an external resource"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "For a complete list of all available HTML tags, visit our HTML Tag Reference."
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Use the HTML <link> element to \n  insert a favicon"
+      ]
+    },
+    {
+      "type": "image",
+      "src": "https://www.w3schools.com/html/img_favicon.png"
+    }
+  ]
+}

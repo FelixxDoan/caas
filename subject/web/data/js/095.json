@@ -1,0 +1,159 @@
+{
+  "url": "https://www.w3schools.com/js/js_asynchronous.asp",
+  "title": "Asynchronous JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Asynchronous JavaScript"
+    },
+    {
+      "type": "other",
+      "text": "\"I will finish later!\"\nFunctions running in parallel with other functions are called asynchronous\nA good example is JavaScript setTimeout()"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Asynchronous JavaScript"
+    },
+    {
+      "type": "paragraph",
+      "text": "The examples used in the previous chapter, was very simplified."
+    },
+    {
+      "type": "paragraph",
+      "text": "The purpose of the examples was to demonstrate the syntax of callback functions:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "function myDisplayer(something) {  document.getElementById(\"demo\").innerHTML \n  = something;}function myCalculator(num1, num2, myCallback) {  let sum = num1 + num2;  \n  myCallback(sum);}myCalculator(5, 5, myDisplayer);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "In the example above, myDisplayer is the name of a function."
+    },
+    {
+      "type": "paragraph",
+      "text": "It is passed to myCalculator() as an argument."
+    },
+    {
+      "type": "other",
+      "text": "In the real world, callbacks are most often used with asynchronous functions.\nA typical example is JavaScript setTimeout()."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Waiting for a Timeout"
+    },
+    {
+      "type": "paragraph",
+      "text": "When using the JavaScript function setTimeout(),\nyou can specify a callback function to be executed on time-out:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "setTimeout(myFunction, 3000);\n\nfunction myFunction() {\n  document.getElementById(\"demo\").innerHTML = \"I love You !!\";\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "In the example above, myFunction is used as a callback."
+    },
+    {
+      "type": "paragraph",
+      "text": "myFunction is passed to setTimeout() as an argument."
+    },
+    {
+      "type": "paragraph",
+      "text": "3000 is the number of milliseconds before time-out, so\nmyFunction() will be called after 3 seconds."
+    },
+    {
+      "type": "other",
+      "text": "Note\nWhen you pass a function as an argument, remember not to use parenthesis.\nRight: setTimeout(myFunction, 3000);\nWrong: setTimeout(myFunction(), 3000);"
+    },
+    {
+      "type": "paragraph",
+      "text": "Instead of passing the name of a function as an argument to another function,\nyou can always pass a whole function instead:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "setTimeout(function() { myFunction(\"I love You !!!\"); }, 3000);\n\nfunction myFunction(value) {\n  document.getElementById(\"demo\").innerHTML = value;\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "In the example above, function(){ myFunction(\"I love You !!!\"); }\nis used as a callback. It is a complete function.\nThe complete function is passed to setTimeout() as an argument."
+    },
+    {
+      "type": "paragraph",
+      "text": "3000 is the number of milliseconds before time-out, so\nmyFunction() will be called after 3 seconds."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Waiting for Intervals:"
+    },
+    {
+      "type": "paragraph",
+      "text": "When using the JavaScript function setInterval(),\nyou can specify a callback function to be executed for each interval:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "setInterval(myFunction, 1000);\n\nfunction myFunction() {\n  let d = new Date();\n  document.getElementById(\"demo\").innerHTML=\n  d.getHours() + \":\" +\n  d.getMinutes() + \":\" + \n  d.getSeconds();\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "In the example above, myFunction is used as a callback."
+    },
+    {
+      "type": "paragraph",
+      "text": "myFunction is passed to setInterval() as an argument."
+    },
+    {
+      "type": "paragraph",
+      "text": "1000 is the number of milliseconds between intervals, so\nmyFunction() will be called every second."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Callback Alternatives"
+    },
+    {
+      "type": "paragraph",
+      "text": "With asynchronous programming, JavaScript programs can start long-running tasks,\nand continue running other tasks in parallel."
+    },
+    {
+      "type": "paragraph",
+      "text": "But, asynchronus programmes are difficult to write and difficult to debug."
+    },
+    {
+      "type": "paragraph",
+      "text": "Because of this, most modern asynchronous JavaScript methods don't use callbacks.\nInstead, in JavaScript, asynchronous programming is solved using Promises instead."
+    },
+    {
+      "type": "other",
+      "text": "Note\nYou will learn about promises in the next chapter of this tutorial."
+    }
+  ]
+}

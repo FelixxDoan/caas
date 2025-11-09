@@ -1,0 +1,579 @@
+{
+  "url": "https://www.w3schools.com/js/js_numbers.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Numbers"
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript has only one type of number.\nNumbers can be written with or without decimals."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 3.14;    // A number with decimals\nlet y = 3;       // A number without decimals"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Extra large or extra small numbers can be written with scientific (exponent) notation:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 123e5;    // 12300000\nlet y = 123e-5;   // 0.00123"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Numbers are Always 64-bit Floating Point"
+    },
+    {
+      "type": "paragraph",
+      "text": "Unlike many other programming languages, \nJavaScript does not define different types of numbers, like integers, short, long, \nfloating-point etc."
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript numbers are always stored as double precision floating point \nnumbers, following the international IEEE 754 standard. This format \nstores numbers in 64 bits, where the number (the fraction) is stored in bits 0 \nto 51, the exponent in bits 52 to 62, and the sign in bit 63:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Value (aka Fraction/Mantissa)",
+          "Exponent",
+          "Sign"
+        ],
+        [
+          "52 bits (0 - 51)",
+          "11 bits (52 - 62)",
+          "1 bit (63)"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Integer Precision"
+    },
+    {
+      "type": "paragraph",
+      "text": "Integers (numbers without a period or exponent notation) are accurate up to 15 digits."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 999999999999999;   // x will be 999999999999999\nlet y = 9999999999999999;  // y will be 10000000000000000"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The maximum number of decimals is 17."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Floating Precision"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 0.2 + 0.1;"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = (0.2 * 10 + 0.1 * 10) / 10;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Adding Numbers and Strings"
+    },
+    {
+      "type": "other",
+      "text": "WARNING !!\n JavaScript uses the + operator for both addition and concatenation.\n Numbers are added. Strings are concatenated."
+    },
+    {
+      "type": "paragraph",
+      "text": "If you add two numbers, the result will be a number:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 10;\nlet y = 20;\nlet z = x + y;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "If you add two strings, the result will be a string concatenation:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = \"10\";\nlet y = \"20\";\nlet z = x + y;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "If you add a number and a string, the result will be a string concatenation:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 10;\nlet y = \"20\";\nlet z = x + y;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "If you add a string and a number, the result will be a string concatenation:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = \"10\";\nlet y = 20;\nlet z = x + y;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "A common mistake is to expect this result to be 30:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 10;\nlet y = 20;\nlet z = \"The result is: \" + x + y;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "A common mistake is to expect this result to be 102030:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 10;\nlet y = 20;\nlet z = \"30\";\nlet result = x + y + z;"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "The JavaScript interpreter works from left to right.\nFirst 10 + 20 is added because x and y are both numbers.\nThen 30 + \"30\" is concatenated because z is a string."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Numeric Strings"
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript strings can have numeric content:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 100;         // x is a number\nlet y = \"100\";       // y is a \nstring"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript will try to convert strings to numbers in all numeric operations:"
+    },
+    {
+      "type": "paragraph",
+      "text": "This will work:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = \"100\";\nlet y = \"10\";\nlet z = x / y;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "This will also work:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = \"100\";\nlet y = \"10\";\nlet z = x * y;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "And this will work:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = \"100\";\nlet y = \"10\";\nlet z = x - y;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "But this will not work:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = \"100\";\nlet y = \"10\";\nlet z = x + y;"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "In the last example JavaScript uses the + operator to concatenate the strings."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "NaN - Not a Number"
+    },
+    {
+      "type": "paragraph",
+      "text": "NaN is a JavaScript reserved word indicating that a number is not a legal number."
+    },
+    {
+      "type": "paragraph",
+      "text": "Trying to do arithmetic with a non-numeric string will result in NaN (Not a \nNumber):"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 100 / \"Apple\";"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "However, if the string is numeric, the result will be a \nnumber:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 100 / \"10\";"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "You can use the global JavaScript function isNaN()\nto find out if a value is a not a number:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 100 / \"Apple\";isNaN(x);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Watch out for NaN. If you use NaN in a mathematical operation, the result will also be NaN:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = NaN;\nlet y = 5;\nlet z = x + y;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Or the result might be a concatenation like NaN5:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = NaN;\nlet y = \"5\";\nlet z = x + y;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "NaN is a number: typeof NaN returns number:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "typeof NaN;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Infinity"
+    },
+    {
+      "type": "paragraph",
+      "text": "Infinity (or -Infinity) is the value JavaScript will return if you calculate a number outside the largest \npossible number."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let myNumber = 2;\n// Execute until Infinity\nwhile (myNumber != Infinity) {\n    myNumber = myNumber * myNumber;}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Division by 0 (zero) also generates Infinity:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x =  2 / 0;\nlet y = -2 / 0;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Infinity is a number: typeof Infinity returns number."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "typeof Infinity;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Hexadecimal"
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript interprets numeric constants as hexadecimal if they are preceded by \n0x."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 0xFF;"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Never write a number with a leading zero (like 07).Some JavaScript versions interpret \nnumbers as octal if they are written with a leading zero."
+    },
+    {
+      "type": "paragraph",
+      "text": "By default, JavaScript displays numbers as base 10 decimals."
+    },
+    {
+      "type": "paragraph",
+      "text": "But you can use the toString() method to output numbers from base 2 \nto base 36."
+    },
+    {
+      "type": "paragraph",
+      "text": "Hexadecimal is base 16. Decimal is base 10. \nOctal is base 8. Binary is base 2."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let myNumber = 32;\nmyNumber.toString(32);\nmyNumber.toString(16);\nmyNumber.toString(12);\nmyNumber.toString(10);\nmyNumber.toString(8);\nmyNumber.toString(2);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Numbers as Objects"
+    },
+    {
+      "type": "paragraph",
+      "text": "Normally JavaScript numbers are primitive values created from literals:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 123;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "But numbers can also be defined as objects with the keyword new:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let y = new Number(123);"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 123;\nlet y = new Number(123);"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Do not create Number objects.\nThe new keyword complicates the code and slows down execution speed.\nNumber Objects can produce unexpected results:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 500;\nlet y = new Number(500);"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 500;\nlet y = new Number(500);"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note the difference between (x==y) and (x===y)."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = new Number(500);\nlet y = new Number(500);"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = new Number(500);\nlet y = new Number(500);"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Comparing two JavaScript objects always returns false."
+    },
+    {
+      "type": "other",
+      "text": "Learn More:\nJavaScript Number Methods\nJavaScript Number Properties\nJavaScript Number Reference"
+    }
+  ]
+}

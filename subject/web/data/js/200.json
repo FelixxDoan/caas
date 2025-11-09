@@ -1,0 +1,263 @@
+{
+  "url": "https://www.w3schools.com/js/js_functions.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Functions"
+    },
+    {
+      "type": "other",
+      "text": "What are Functions?\nFunctions are fundamental building blocks in all programming.\nFunctions enable better code organization, modularity, and efficiency.\nFunctions are reusable block of code designed to perform a \nparticular task.\nFunctions execute when they are \"called\" or \"invoked\"."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "function myFunction(p1, p2) {\n    return p1 * p2;\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Function Syntax"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "function\nname(p1, p2, p3) { // code }"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "A function is defined with the function keyword, \nfollowed by the function name, followed by parentheses ( ), followed by brackets { }."
+    },
+    {
+      "type": "paragraph",
+      "text": "The name follows the naming rules for variables (letters, digits, ...)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Optional parameters are listed inside parentheses: (p1, p2, p3)"
+    },
+    {
+      "type": "paragraph",
+      "text": "The code to be executed is listed inside curly brackets: { code }"
+    },
+    {
+      "type": "paragraph",
+      "text": "Functions can optionally return a value back to the \"caller\"."
+    },
+    {
+      "type": "other",
+      "text": "Why Functions?\nWith functions you can reuse code\nYou can write code that can be used many times.\nYou can use the same code with different arguments, to produce different results."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Function Invocation ()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The code inside the function will execute when \"something\" invokes (calls) the \nfunction:"
+    },
+    {
+      "type": "other",
+      "text": "When it is invoked (called) from JavaScript code\nWhen an event occurs (a user clicks a button)\nAutomatically (self invoked)"
+    },
+    {
+      "type": "paragraph",
+      "text": "The () operator invokes (calls) the function:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "function toCelsius(fahrenheit) {\n    return (5/9) * (fahrenheit-32);\n}\n\nlet value = toCelsius(77);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Accessing a function with incorrect parameters can return an incorrect answer:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "function toCelsius(fahrenheit) {\n    return (5/9) * (fahrenheit-32);\n}\n\nlet value = toCelsius();"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Accessing a function without () returns the function and not the function result:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "function toCelsius(fahrenheit) {\n    return (5/9) * (fahrenheit-32);\n}\n\nlet value = toCelsius;"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\nIn the examples above, toCelsius refers to the function object, and \ntoCelsius() refers to the function result."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Arrow Functions"
+    },
+    {
+      "type": "paragraph",
+      "text": "Arrow functions were introduced in ES6."
+    },
+    {
+      "type": "paragraph",
+      "text": "Arrow functions allow us to write shorter function syntax:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let myFunction = function(a, b) {return a * b}"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let myFunction = (a, b) => a * b;"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Learn More:\nJavaScript Arrow Functions"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Local Variables"
+    },
+    {
+      "type": "paragraph",
+      "text": "Variables declared within a JavaScript function, become \nLOCAL to \nthe function."
+    },
+    {
+      "type": "paragraph",
+      "text": "Local variables can only be accessed \nfrom within the function."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// code here can NOT use carName\nfunction myFunction() {\n  let carName = \"Volvo\";\n  // code here CAN use carName\n}\n// code here can NOT use carName"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Since local variables are only recognized inside their functions, variables with the same name can be used in different functions."
+    },
+    {
+      "type": "paragraph",
+      "text": "Local variables are created when a function starts, and deleted when the function is completed."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Parameters vs. Arguments"
+    },
+    {
+      "type": "paragraph",
+      "text": "In JavaScript, function parameters and arguments are distinct concepts:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Parameters are the names listed in the function definition."
+    },
+    {
+      "type": "paragraph",
+      "text": "Parameters are the names of the values that will be passed."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "function greet(name, age) {\n  return `Hello $name! You are ${age} years old.`;\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Arguments are the values passed to the function when it is invoked or called."
+    },
+    {
+      "type": "paragraph",
+      "text": "Arguments are the values received by the function."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "greet(\"John\", 21);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Functions Used as Variables"
+    },
+    {
+      "type": "paragraph",
+      "text": "Functions can be used as variables, in all types of formulas, assignments, and calculations."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = toCelsius(77);\nlet text = \"The temperature is \" + x + \" Celsius\";"
+        },
+        {
+          "language": "unknown",
+          "code": "let text = \"The temperature is \" + toCelsius(77) + \" Celsius\";"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\nYou will learn a lot more about functions later in this tutorial."
+    }
+  ]
+}

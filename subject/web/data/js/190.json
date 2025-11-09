@@ -1,0 +1,730 @@
+{
+  "url": "https://www.w3schools.com/js/js_arrays.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Arrays"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const cars = [\"Saab\", \"Volvo\", \"BMW\"];"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "An Array is an object type designed for storing data collections.\nKey characteristics of JavaScript arrays are:\n\nElements: An array is a list of values, known as elements.\nOrdered: Array elements are ordered based on their index.\nZero indexed: The first element is at index 0, the second at index 1, and so on. \nDynamic size: Arrays can grow or shrink as elements are added or removed.\nHeterogeneous: Arrays can store elements of different data types\n(numbers, strings, objects and other arrays)."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Why Use Arrays?"
+    },
+    {
+      "type": "paragraph",
+      "text": "If you have a list of items (a list of car names, for example), storing the \nnames in single variables could look like this:"
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "let car1 = \"Saab\";\nlet car2 = \"Volvo\";\nlet car3 = \"BMW\";"
+    },
+    {
+      "type": "paragraph",
+      "text": "However, what if you want to loop through the cars and find a specific one? \nAnd what if you had not 3 cars, but 300?"
+    },
+    {
+      "type": "paragraph",
+      "text": "The solution is an array!"
+    },
+    {
+      "type": "paragraph",
+      "text": "An array can hold many values under a single name, and you can \naccess the values by referring to an index number."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Creating an Array"
+    },
+    {
+      "type": "paragraph",
+      "text": "Using an array literal is the easiest way to create a JavaScript Array."
+    },
+    {
+      "type": "paragraph",
+      "text": "Syntax:"
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "const array_name = [item1, item2, ...];"
+    },
+    {
+      "type": "other",
+      "text": "Note\nIt is a common practice to declare arrays with the const keyword.\nLearn more about const with arrays in the chapter: JS Array Const."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const cars = [\"Saab\", \"Volvo\", \"BMW\"];"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Spaces and line breaks are not important. A declaration can span multiple lines:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const cars = [\n  \"Saab\",\n    \"Volvo\",\n    \"BMW\"\n];"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "You can also create an empty array, and provide elements later:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const cars = [];\ncars[0]= \"Saab\";\ncars[1]= \"Volvo\";\ncars[2]= \"BMW\";"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Using the JavaScript Keyword new"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following example also creates an Array, and assigns values to it:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const cars = new Array(\"Saab\", \"Volvo\", \"BMW\");"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\nThe two examples above do exactly the same.\nThere is no need to use new Array().\nFor simplicity, readability and execution speed, use the array literal method."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Accessing Array Elements"
+    },
+    {
+      "type": "paragraph",
+      "text": "You access an array element by referring to the index number:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const cars = [\"Saab\", \"Volvo\", \"BMW\"];\nlet car = cars[0];"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note: Array indexes start with 0.\n[0] is the first element.\n[1] is the second element."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Changing an Array Element"
+    },
+    {
+      "type": "paragraph",
+      "text": "This statement changes the value of the first element in cars:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "cars[0] = \"Opel\";"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const cars = [\"Saab\", \"Volvo\", \"BMW\"];\ncars[0] = \"Opel\";"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Converting an Array to a String"
+    },
+    {
+      "type": "paragraph",
+      "text": "The JavaScript method toString() converts an array to a \nstring of (comma separated) array values."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];\ndocument.getElementById(\"demo\").innerHTML = fruits.toString();"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Access the Full Array"
+    },
+    {
+      "type": "paragraph",
+      "text": "With JavaScript, the full array can be accessed by referring to the array \nname:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const cars = [\"Saab\", \"Volvo\", \"BMW\"];\ndocument.getElementById(\"demo\").innerHTML = cars;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Arrays are Objects"
+    },
+    {
+      "type": "paragraph",
+      "text": "Arrays are a special type of objects. The typeof operator in JavaScript returns \"object\" for \narrays."
+    },
+    {
+      "type": "paragraph",
+      "text": "But, JavaScript arrays are best described as arrays."
+    },
+    {
+      "type": "paragraph",
+      "text": "Arrays use numbers to access its \"elements\". In this \nexample, person[0] \nreturns John:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const person = [\"John\", \"Doe\", 46];"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Objects use names to access its \"members\". In this example, \nperson.firstName \nreturns John:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const person = {firstName:\"John\", lastName:\"Doe\", age:46};"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Array Elements Can Be Objects"
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript variables can be objects. Arrays are special kinds of objects."
+    },
+    {
+      "type": "paragraph",
+      "text": "Because of this, you can have variables of different types in the \nsame Array."
+    },
+    {
+      "type": "paragraph",
+      "text": "You can have objects in an Array. You can have functions in an Array. You can \nhave arrays in an Array:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "myArray[0] = Date.now;\nmyArray[1] = myFunction;\nmyArray[2] = myCars;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Array Properties and Methods"
+    },
+    {
+      "type": "paragraph",
+      "text": "The real strength of JavaScript arrays are the built-in array properties and \nmethods:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "cars.length   // Returns the number of elements\ncars.sort()   // Sorts the array"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Array methods are covered in the next chapters."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The length Property"
+    },
+    {
+      "type": "paragraph",
+      "text": "The length property of an array returns the length of an array (the number of array \nelements)."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];\nlet length = fruits.length;"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "The length property is always one more than the highest array index."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Accessing the First Array Element"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];\nlet fruit = fruits[0];"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Accessing the Last Array Element"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];\nlet fruit = fruits[fruits.length - 1];"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Looping Array Elements"
+    },
+    {
+      "type": "paragraph",
+      "text": "One way to loop through an array, is using a for loop:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];\nlet fLen = fruits.length;\nlet text = \"<ul>\";for (let i = 0; i < fLen; i++) {  text += \"<li>\" + fruits[i] + \"</li>\";}text \n  += \"</ul>\";"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "You can also use the Array.forEach() function:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];\n\nlet text = \"<ul>\";fruits.forEach(myFunction);text += \"</ul>\";\n  function \n  myFunction(value) {  \n text += \"<li>\" + value + \"</li>\";}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Adding Array Elements"
+    },
+    {
+      "type": "paragraph",
+      "text": "The easiest way to add a new element to an array is using the push() method:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const fruits = [\"Banana\", \"Orange\", \"Apple\"];\nfruits.push(\"Lemon\");  // Adds a new element (Lemon) to fruits"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "New element can also be added to an array using the length property:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const fruits = [\"Banana\", \"Orange\", \"Apple\"];\nfruits[fruits.length] = \"Lemon\";  // Adds \"Lemon\" to fruits"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "WARNING !\nAdding elements with high indexes can create undefined \"holes\" in an array:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const fruits = [\"Banana\", \"Orange\", \"Apple\"];\nfruits[6] = \"Lemon\";  // Creates undefined \"holes\" in fruits"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Associative Arrays"
+    },
+    {
+      "type": "paragraph",
+      "text": "Many programming languages support arrays with named indexes."
+    },
+    {
+      "type": "paragraph",
+      "text": "Arrays with named indexes are called associative \narrays (or hashes)."
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript does not support arrays with named indexes."
+    },
+    {
+      "type": "paragraph",
+      "text": "In JavaScript, arrays always use numbered indexes."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const person = [];\nperson[0] = \"John\";\nperson[1] = \"Doe\";\nperson[2] = 46;\nperson.length;    // Will return 3\nperson[0];        // Will return \"John\""
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "WARNING !!\nIf you use named indexes, JavaScript will redefine the array to an object.\nAfter that, some array methods and properties will produce incorrect \nresults."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const person = [];\nperson[\"firstName\"] = \"John\";\nperson[\"lastName\"] = \"Doe\";\nperson[\"age\"] = 46;\nperson.length;     // Will return 0\nperson[0];         // Will return undefined"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Difference Between Arrays and Objects"
+    },
+    {
+      "type": "paragraph",
+      "text": "In JavaScript, arrays use numbered indexes."
+    },
+    {
+      "type": "paragraph",
+      "text": "In JavaScript, objects use named indexes."
+    },
+    {
+      "type": "other",
+      "text": "Arrays are a special kind of objects, with numbered indexes."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "When to Use Arrays. When to use Objects."
+    },
+    {
+      "type": "other",
+      "text": "JavaScript does not support associative arrays.\nYou should use objects when you want the element names to be \nstrings (text).\nYou should use arrays when you want the element names to be\nnumbers."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript new Array()"
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript has a built-in array constructor new Array()."
+    },
+    {
+      "type": "paragraph",
+      "text": "But you can safely use [] instead."
+    },
+    {
+      "type": "paragraph",
+      "text": "These two different statements both create a new empty array named points:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const points = new Array();\nconst points = [];"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "These two different statements both create a new array containing 6 numbers:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const points = new Array(40, 100, 1, 5, 25, 10);\nconst points = [40, 100, 1, 5, 25, 10];"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The new keyword can produce some unexpected results:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create an array with three elements:\nconst points = new Array(40, 100, 1);"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create an array with two elements:\nconst points = new Array(40, 100);"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create an array with one element ???\nconst points = new Array(40);"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const points = [40];"
+        },
+        {
+          "language": "unknown",
+          "code": "const points = new Array(40);"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create an array with one element:\nconst points = [40];"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create an array with 40 undefined elements:\nconst points = new Array(40);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How to Recognize an Array"
+    },
+    {
+      "type": "paragraph",
+      "text": "A common question is: How do I know if a variable is an array?"
+    },
+    {
+      "type": "paragraph",
+      "text": "The problem is that the JavaScript operator typeof returns \n\"object\":"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const fruits = [\"Banana\", \"Orange\", \"Apple\"];\nlet type = typeof fruits;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The typeof operator returns object because a JavaScript array is an \nobject."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Solution 1:"
+    },
+    {
+      "type": "paragraph",
+      "text": "To solve this problem ECMAScript 5 (JavaScript 2009) defined a new method Array.isArray():"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Array.isArray(fruits);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Solution 2:"
+    },
+    {
+      "type": "paragraph",
+      "text": "The instanceof operator returns true if an object is created \nby a given constructor:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const fruits = [\"Banana\", \"Orange\", \"Apple\"];\n    (fruits instanceof Array);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Nested Arrays and Objects"
+    },
+    {
+      "type": "paragraph",
+      "text": "Values in objects can be arrays, and values in arrays can be objects:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const myObj =\n  {  name: \"John\",  age: 30,\n    \n  cars: [    {name:\"Ford\", \n  models:[\"Fiesta\", \"Focus\", \"Mustang\"]},    \n  {name:\"BMW\", models:[\"320\", \"X3\", \"X5\"]},\n      \n  {name:\"Fiat\", models:[\"500\", \"Panda\"]}\n    ]}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "To access arrays inside arrays, use a for-in loop for each array:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "for (let i in myObj.cars) {  x += \"<h1>\" + myObj.cars[i].name \n  + \"</h1>\";  for (let j in myObj.cars[i].models) {    \n  x += myObj.cars[i].models[j];  }}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Learn More:\nBasic Array Methods\nArray Search Methods\nArray Sort Methods\nArray Iteration Methods\nJavaScript Array Reference"
+    }
+  ]
+}

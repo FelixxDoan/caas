@@ -1,0 +1,236 @@
+{
+  "url": "https://www.w3schools.com/js/js_destructuring.asp",
+  "title": "JavaScript Destructuring",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Destructuring"
+    },
+    {
+      "type": "other",
+      "text": "Destructuring Assignment Syntax\nThe destructuring assignment syntax unpack object properties into variables:\n\nlet {firstName, lastName} = person;\n\nIt can also unpack arrays and any other iterables:\n\nlet [firstName, lastName] = person;"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Object Destructuring"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create an Object\nconst person = {\n  firstName: \"John\",\n  lastName: \"Doe\",\n  age: 50\n};\n\n// Destructuring\nlet {firstName, lastName} = person;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The order of the properties does not matter:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create an Object\nconst person = {\n  firstName: \"John\",\n  lastName: \"Doe\",\n  age: 50\n};\n\n// Destructuring\nlet {lastName, firstName} = person;"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note:\nDestructuring is not destructive.\nDestructuring does not change the original object."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Object Default Values"
+    },
+    {
+      "type": "paragraph",
+      "text": "For potentially missing properties we can set default values:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create an Object\nconst person = {\n  firstName: \"John\",\n  lastName: \"Doe\",\n  age: 50\n};\n\n// Destructuring\nlet {firstName, lastName, country = \"US\"} = person;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Object Property Alias"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create an Object\nconst person = {\n  firstName: \"John\",\n  lastName: \"Doe\",\n  age: 50\n};\n\n// Destructuring\nlet {lastName : name} = person;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "String Destructuring"
+    },
+    {
+      "type": "paragraph",
+      "text": "One use for destructuring is unpacking string characters."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create a String\nlet name = \"W3Schools\";\n\n// Destructuring\nlet [a1, a2, a3, a4, a5] = name;"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note:\nDestructuring can be used with any iterables."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Array Destructuring"
+    },
+    {
+      "type": "paragraph",
+      "text": "We can pick up array variables into our own variables:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create an Array\nconst fruits = [\"Bananas\", \"Oranges\", \"Apples\", \"Mangos\"];\n\n// Destructuring\nlet [fruit1, fruit2] = fruits;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Skipping Array Values"
+    },
+    {
+      "type": "paragraph",
+      "text": "We can skip array values using two or more commas:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create an Array\nconst fruits = [\"Bananas\", \"Oranges\", \"Apples\", \"Mangos\"];\n\n// Destructuring\nlet [fruit1,,,fruit2] = fruits;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Array Position Values"
+    },
+    {
+      "type": "paragraph",
+      "text": "We can pick up values from specific index locations of an array:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create an Array\nconst fruits = [\"Bananas\", \"Oranges\", \"Apples\", \"Mangos\"];\n\n// Destructuring\nlet {[0]:fruit1 ,[1]:fruit2} = fruits;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Rest Property"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can end a destructuring syntax with a rest property."
+    },
+    {
+      "type": "paragraph",
+      "text": "This syntax will store all remaining values into a new array:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create an Array\nconst numbers = [10, 20, 30, 40, 50, 60, 70];\n\n// Destructuring\nconst [a,b, ...rest] = numbers"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Destructuring Maps"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create a Map\nconst fruits = new Map([\n  [\"apples\", 500],\n  [\"bananas\", 300],\n  [\"oranges\", 200]\n]);\n\n// Destructuring\nlet text = \"\";\nfor (const [key, value] of fruits) {\n  text += key + \" is \" + value;\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Swapping JavaScript Variables"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can swap the values of two variables using a destructuring assignment:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let firstName = \"John\";\nlet lastName = \"Doe\";\n\n// Destructuring\n[firstName, lastName] = [lastName, firstName];"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Browser Support"
+    },
+    {
+      "type": "paragraph",
+      "text": "Destructuring is an ES6  feature."
+    },
+    {
+      "type": "paragraph",
+      "text": "ES6 is fully supported in all modern browsers since June 2017:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome51\n    Edge15\n    Firefox54\n    Safari10\n    Opera38\n  \n  \n    May 2016\n    Apr 2017\n    Jun 2017\n    Sep 2016\n    Jun 2016"
+    }
+  ]
+}

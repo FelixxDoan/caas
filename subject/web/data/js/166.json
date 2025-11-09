@@ -1,0 +1,424 @@
+{
+  "url": "https://www.w3schools.com/js/js_errors.asp",
+  "title": "JavaScript Errors",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Errors"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Throw, and Try...Catch...Finally"
+    },
+    {
+      "type": "paragraph",
+      "text": "The try statement defines a code block to run (to try)."
+    },
+    {
+      "type": "paragraph",
+      "text": "The catch statement defines a code block to handle any error."
+    },
+    {
+      "type": "paragraph",
+      "text": "The finally statement defines a code block to run regardless of the result."
+    },
+    {
+      "type": "paragraph",
+      "text": "The throw statement defines a custom error."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Errors Will Happen!"
+    },
+    {
+      "type": "paragraph",
+      "text": "When executing JavaScript code, different errors can \noccur."
+    },
+    {
+      "type": "paragraph",
+      "text": "Errors can be coding errors made by the programmer, errors due to wrong \ninput, and other unforeseeable things."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<p id=\"demo\"></p><script>\ntry {  adddlert(\"Welcome guest!\");}catch(err) {  \ndocument.getElementById(\"demo\").innerHTML = err.message;}</script>"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "JavaScript catches adddlert as an error, and executes the \ncatch code to \nhandle it."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript try and catch"
+    },
+    {
+      "type": "paragraph",
+      "text": "The try statement allows you to define a block of code to be \ntested for errors while it is being executed."
+    },
+    {
+      "type": "paragraph",
+      "text": "The catch statement allows you to define a block of code to \nbe executed, if an error occurs in the try block."
+    },
+    {
+      "type": "paragraph",
+      "text": "The JavaScript statements try and catch \ncome in pairs:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "try {\n    Block of code to try\n}\ncatch(err) {\n    Block of code to handle errors\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Throws Errors"
+    },
+    {
+      "type": "paragraph",
+      "text": "When an error occurs, JavaScript will \nnormally stop and generate an error message."
+    },
+    {
+      "type": "paragraph",
+      "text": "The technical term for this is: JavaScript will throw an \nexception (throw an error)."
+    },
+    {
+      "type": "other",
+      "text": "JavaScript will actually create an Error object with two properties: \nname and message."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The throw Statement"
+    },
+    {
+      "type": "paragraph",
+      "text": "The throw statement allows you to create a custom error."
+    },
+    {
+      "type": "paragraph",
+      "text": "Technically you can throw an exception (throw an error)."
+    },
+    {
+      "type": "paragraph",
+      "text": "The exception can be a JavaScript String, a Number, a Boolean or an Object:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "throw \"Too big\";    // throw a text\nthrow 500;          // throw a number"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "If you use throw together with try and \ncatch, you can control program \nflow and generate custom error messages."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Input Validation Example"
+    },
+    {
+      "type": "paragraph",
+      "text": "This example examines input. If the value is wrong, \nan exception (err) is thrown."
+    },
+    {
+      "type": "paragraph",
+      "text": "The exception (err) is caught by the catch statement and a custom error message is displayed:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<!DOCTYPE html><html><body><p>Please input a number between \n5 and 10:</p><input id=\"demo\" type=\"text\"><button type=\"button\" \nonclick=\"myFunction()\">Test Input</button><p id=\"p01\"></p>\n<script>function myFunction() {  const message = \ndocument.getElementById(\"p01\");  message.innerHTML = \"\";\n  let x = \ndocument.getElementById(\"demo\").value;  \ntry {     if(x.trim() == \"\") throw \"empty\";\n      \n if(isNaN(x)) throw \"not a number\";    \n x = Number(x);    if(x < 5) throw \n \"too low\";    if(x > 10) throw \"too \n high\";  }  catch(err) {    message.innerHTML = \n\"Input is \" + err;  }}</script></body></html>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML Validation"
+    },
+    {
+      "type": "paragraph",
+      "text": "The code above is just an example."
+    },
+    {
+      "type": "paragraph",
+      "text": "Modern browsers will often use a combination of JavaScript and built-in HTML \nvalidation, using predefined validation rules defined in HTML attributes:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<input id=\"demo\" type=\"number\" min=\"5\" max=\"10\" step=\"1\">"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "You can read more about forms validation in a later chapter of this tutorial."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The finally Statement"
+    },
+    {
+      "type": "paragraph",
+      "text": "The finally statement lets you execute code, after try and \ncatch, regardless of the result:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "try {\n    Block of code to try\n}\ncatch(err) {\n    Block of code to handle errors\n}\nfinally {  Block of code to be executed regardless of the try / catch result\n}"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "function myFunction() {  const message = \ndocument.getElementById(\"p01\");  message.innerHTML = \"\";\n  let x = \ndocument.getElementById(\"demo\").value;  \ntry {     \nif(x.trim() == \"\") throw \"is empty\";    if(isNaN(x)) \nthrow \"is not a number\";    \n    x = Number(x);    if(x > \n10) throw \"is too high\";    if(x < \n5) throw \"is too low\";  }  catch(err) \n{    message.innerHTML = \"Error: \" + \nerr + \".\";  }  finally {    document.getElementById(\"demo\").value = \"\";\n    }}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Error Object"
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript has a built in error object that provides error information when \nan error occurs."
+    },
+    {
+      "type": "paragraph",
+      "text": "The error object provides two useful properties: name and message."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Error Object Properties"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Property",
+          "Description"
+        ],
+        [
+          "name",
+          "Sets or returns an error name"
+        ],
+        [
+          "message",
+          "Sets or returns an error message (a string)"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Error Name Values"
+    },
+    {
+      "type": "paragraph",
+      "text": "Six different values can be returned by the error name property:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Error Name",
+          "Description"
+        ],
+        [
+          "EvalError",
+          "An error has occurred in the eval() function"
+        ],
+        [
+          "RangeError",
+          "A number \"out of range\" has occurred"
+        ],
+        [
+          "ReferenceError",
+          "An illegal reference has occurred"
+        ],
+        [
+          "SyntaxError",
+          "A syntax error has occurred"
+        ],
+        [
+          "TypeError",
+          "A type error has occurred"
+        ],
+        [
+          "URIError",
+          "An error in encodeURI() has occurred"
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The six different values are described below."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Eval Error"
+    },
+    {
+      "type": "paragraph",
+      "text": "An EvalError indicates an error in the eval() function."
+    },
+    {
+      "type": "other",
+      "text": "Newer versions of JavaScript do not throw EvalError. Use SyntaxError instead."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Range Error"
+    },
+    {
+      "type": "paragraph",
+      "text": "A RangeError is thrown if you use a number that is outside \nthe range of legal values."
+    },
+    {
+      "type": "paragraph",
+      "text": "For example: You cannot set the number of significant digits of a number to \n500."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let num = 1;\ntry {\n    num.toPrecision(500);   // A number cannot have 500 \n significant digits\n}\ncatch(err) {\n    document.getElementById(\"demo\").innerHTML = err.name;\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Reference Error"
+    },
+    {
+      "type": "paragraph",
+      "text": "A ReferenceError is thrown if you use (reference) a variable \nthat has not been declared:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 5;try {\n  x = y + 1;   // y cannot be used (referenced)\n}\ncatch(err) {\n    document.getElementById(\"demo\").innerHTML = err.name;\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Syntax Error"
+    },
+    {
+      "type": "paragraph",
+      "text": "A SyntaxError is thrown if you try to evaluate code with a \nsyntax error."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "try {  eval(\"alert('Hello)\");   // \n Missing ' will produce an error}catch(err) {  document.getElementById(\"demo\").innerHTML = err.name;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Type Error"
+    },
+    {
+      "type": "paragraph",
+      "text": "A TypeError is thrown if an operand or argument \nis incompatible with the type expected by an operator or function."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let num = 1;\ntry {\n  num.toUpperCase();   // You cannot convert a number \n to upper case\n}\ncatch(err) {\n  document.getElementById(\"demo\").innerHTML = err.name;\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "URI (Uniform Resource Identifier) Error"
+    },
+    {
+      "type": "paragraph",
+      "text": "A URIError is thrown if you use illegal characters in a URI function:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "try {\n    decodeURI(\"%%%\");   // You cannot URI decode \n  percent signs\n}\ncatch(err) {\n  document.getElementById(\"demo\").innerHTML = err.name;\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Non-Standard Error Object Properties"
+    },
+    {
+      "type": "other",
+      "text": "Mozilla and Microsoft define some non-standard error object properties:\nfileName (Mozilla)\nlineNumber (Mozilla)\ncolumnNumber (Mozilla)\nstack (Mozilla)\ndescription (Microsoft)\nnumber (Microsoft)\nDo not use these properties in public web sites. They will not work in all browsers."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Complete Error Reference"
+    },
+    {
+      "type": "paragraph",
+      "text": "For a complete reference of the Error object, go to our Complete \nJavaScript Error Reference."
+    }
+  ]
+}

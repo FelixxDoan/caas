@@ -1,0 +1,39 @@
+{
+  "url": "https://www.w3schools.com/js/js_class_static.asp",
+  "title": "JavaScript Static Methods",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Static Methods"
+    },
+    {
+      "type": "other",
+      "text": "Static class methods are defined on the class itself.\nYou cannot call a static method on an object, only on an object class."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "class Car {  constructor(name) {    this.name = \n  name; \n  }  static hello() {    return \"Hello!!\"; \n  }}const myCar = new Car(\"Ford\");// You can call 'hello()' on \n  the Car Class:document.getElementById(\"demo\").innerHTML \n  = Car.hello();// But NOT on a Car Object:// document.getElementById(\"demo\").innerHTML \n  = myCar.hello();// this will raise an error."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "If you want to use the myCar object inside the static method, you can send it \nas a parameter:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "class Car {  constructor(name) {    this.name = \n  name; \n  }  static hello(x) {    return \"Hello \" + \n  x.name; \n  }}const myCar = new Car(\"Ford\");document.getElementById(\"demo\").innerHTML \n  = Car.hello(myCar);"
+        }
+      ]
+    }
+  ]
+}

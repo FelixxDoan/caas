@@ -1,0 +1,267 @@
+{
+  "url": "https://www.w3schools.com/html/html5_canvas.asp",
+  "title": "HTML ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "HTML Canvas Graphics"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "Your browser does not support the <canvas> element.\n\nThe HTML <canvas> element is used to draw graphics on a web page.\nThe graphic to the left is created with <canvas>. It shows four \nelements: a red rectangle, a gradient rectangle,\na multicolor rectangle, and a multicolor text."
+    },
+    {
+      "type": "other",
+      "text": "var c=document.getElementById(\"myCanvas\");\nvar canvOK=1;\ntry {c.getContext(\"2d\");}\ncatch (er) {canvOK=0;}\nif (canvOK==1)\n {\n var ctx=c.getContext(\"2d\");\n ctx.fillStyle=\"#FF0000\";\n ctx.fillRect(20,20,100,50);\n \n var grd=ctx.createLinearGradient(140,20,240,70);\n    grd.addColorStop(0,\"black\");\n    grd.addColorStop(1,\"white\");\n    ctx.fillStyle=grd;\n    ctx.fillRect(140,20,100,50);\n    \n    var grd2=ctx.createLinearGradient(20,90,120,90);\n    grd2.addColorStop(0,\"black\");\n    grd2.addColorStop(\"0.3\",\"magenta\");\n    grd2.addColorStop(\"0.5\",\"blue\");\n    grd2.addColorStop(\"0.6\",\"green\");\n    grd2.addColorStop(\"0.8\",\"yellow\");\n    grd2.addColorStop(1,\"red\");\n    ctx.fillStyle=grd2;\n    ctx.fillRect(20,90,100,50);\n    \n    ctx.font=\"30px Verdana\";\n    var grd3=ctx.createLinearGradient(140,20,240,90);\n    grd3.addColorStop(0,\"black\");\n    grd3.addColorStop(\"0.3\",\"magenta\");\n    grd3.addColorStop(\"0.6\",\"blue\");\n    grd3.addColorStop(\"0.8\",\"green\");\n    grd3.addColorStop(1,\"red\");\n    ctx.strokeStyle=grd3;\n    ctx.strokeText(\"Smile!\",140,120); }"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What is HTML Canvas?"
+    },
+    {
+      "type": "paragraph",
+      "text": "The HTML <canvas> element is used to draw graphics, on the fly, via JavaScript."
+    },
+    {
+      "type": "paragraph",
+      "text": "The <canvas> element is only a container for graphics. You must use  \nJavaScript to actually draw the graphics."
+    },
+    {
+      "type": "paragraph",
+      "text": "Canvas has several methods for drawing paths, boxes, circles, text, and adding images."
+    },
+    {
+      "type": "paragraph",
+      "text": "Canvas is supported by all major browsers."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Canvas Examples"
+    },
+    {
+      "type": "paragraph",
+      "text": "A canvas is a rectangular area on an HTML page. By default, a canvas has no border and no content."
+    },
+    {
+      "type": "paragraph",
+      "text": "The markup looks like this:"
+    },
+    {
+      "type": "code",
+      "language": "html",
+      "code": "<canvas id=\"myCanvas\" width=\"200\" height=\"100\"></canvas>"
+    },
+    {
+      "type": "paragraph",
+      "text": "Note: Always specify an id attribute (to be referred to in a script), \nand a width and height attribute to define the size of the canvas. To add a border, use the style attribute."
+    },
+    {
+      "type": "paragraph",
+      "text": "Here is an example of a basic, empty canvas:"
+    },
+    {
+      "type": "other",
+      "text": "Your browser does not support the canvas element."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<canvas id=\"myCanvas\" width=\"200\" height=\"100\"\nstyle=\"border:1px solid \n#000000;\">\n</canvas>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Add a JavaScript"
+    },
+    {
+      "type": "paragraph",
+      "text": "After creating the rectangular canvas area, you must add a JavaScript to do \nthe drawing."
+    },
+    {
+      "type": "paragraph",
+      "text": "Here are some examples:"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Draw a Line"
+    },
+    {
+      "type": "other",
+      "text": "Your browser does not support the canvas element"
+    },
+    {
+      "type": "other",
+      "text": "var c=document.getElementById(\"myCanvas2\");\nvar canvOK=1;\ntry {c.getContext(\"2d\");}\ncatch (er) {canvOK=0;}\nif (canvOK==1)\n {\n var ctx=c.getContext(\"2d\");\n ctx.moveTo(0,0);\n ctx.lineTo(200,100);\n ctx.stroke();\n }"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "javascript",
+          "code": "<script>var c = document.getElementById(\"myCanvas\");var ctx = c.getContext(\"2d\");\n ctx.moveTo(0, 0);ctx.lineTo(200, 100);\n ctx.stroke();</script>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Draw a Circle"
+    },
+    {
+      "type": "other",
+      "text": "Your browser does not support the canvas element"
+    },
+    {
+      "type": "other",
+      "text": "var c=document.getElementById(\"myCanvas3\");\nvar canvOK=1;\ntry {c.getContext(\"2d\");}\ncatch (er) {canvOK=0;}\nif (canvOK==1)\n {\n var ctx=c.getContext(\"2d\");\n ctx.beginPath();\n ctx.arc(95,50,40,0,2*Math.PI);\n ctx.stroke();\n }"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "javascript",
+          "code": "<script>var c = document.getElementById(\"myCanvas\");var ctx = c.getContext(\"2d\");\n ctx.beginPath();ctx.arc(95, 50, 40, 0, 2 * Math.PI);ctx.stroke();\n  </script>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Draw a Text"
+    },
+    {
+      "type": "other",
+      "text": "Your browser does not support the canvas element"
+    },
+    {
+      "type": "other",
+      "text": "var c=document.getElementById(\"myCanvas4\");\nvar canvOK=1;\ntry {c.getContext(\"2d\");}\ncatch (er) {canvOK=0;}\nif (canvOK==1)\n {\n    var ctx=c.getContext(\"2d\");\n    ctx.font=\"30px Arial\";\n    ctx.fillText(\"Hello World\",10,50);\n }"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "javascript",
+          "code": "<script>var c = document.getElementById(\"myCanvas\");var ctx = c.getContext(\"2d\");\n ctx.font = \"30px Arial\";ctx.fillText(\"Hello World\", 10, 50);\n   </script>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Stroke Text"
+    },
+    {
+      "type": "other",
+      "text": "Your browser does not support the canvas element"
+    },
+    {
+      "type": "other",
+      "text": "var c=document.getElementById(\"myCanvas5\");\nvar canvOK=1;\ntry {c.getContext(\"2d\");}\ncatch (er) {canvOK=0;}\nif (canvOK==1)\n {\n    var ctx=c.getContext(\"2d\");\n    ctx.font=\"30px Arial\";\n    ctx.strokeText(\"Hello World\",10,50);\n }"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "javascript",
+          "code": "<script>var c = document.getElementById(\"myCanvas\");var ctx = c.getContext(\"2d\");\n ctx.font = \"30px Arial\";ctx.strokeText(\"Hello World\", 10, 50);\n  </script>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Draw Linear Gradient"
+    },
+    {
+      "type": "other",
+      "text": "Your browser does not support the canvas element"
+    },
+    {
+      "type": "other",
+      "text": "var c=document.getElementById(\"myCanvas6\");\nvar canvOK=1;\ntry {c.getContext(\"2d\");}\ncatch (er) {canvOK=0;}\nif (canvOK==1)\n {\n    var ctx=c.getContext(\"2d\");\n    // Create gradient\n    var grd = ctx.createLinearGradient(0,0,200,0);\n    grd.addColorStop(0,\"red\");\n    grd.addColorStop(1,\"white\");\n    // Fill with gradient\n    ctx.fillStyle = grd;\n    ctx.fillRect(10,10,150,80);\n }"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "javascript",
+          "code": "<script>var c = document.getElementById(\"myCanvas\");\n var ctx = c.getContext(\"2d\");\n \n // Create gradient\n var grd = ctx.createLinearGradient(0, 0, 200, 0);\n grd.addColorStop(0, \"red\");\n grd.addColorStop(1, \"white\");\n \n // Fill with gradient\n ctx.fillStyle = grd;\n ctx.fillRect(10, 10, 150, 80);</script>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Draw Circular Gradient"
+    },
+    {
+      "type": "other",
+      "text": "Your browser does not support the canvas element"
+    },
+    {
+      "type": "other",
+      "text": "var c=document.getElementById(\"myCanvas7\");\nvar canvOK=1;\ntry {c.getContext(\"2d\");}\ncatch (er) {canvOK=0;}\nif (canvOK==1)\n {\n    var ctx=c.getContext(\"2d\");\n    // Create gradient\n    var grd = ctx.createRadialGradient(75,50,5,90,60,100);\n    grd.addColorStop(0,\"red\");\n    grd.addColorStop(1,\"white\");\n    // Fill with gradient\n    ctx.fillStyle = grd;\n    ctx.fillRect(10,10,150,80);\n }"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "javascript",
+          "code": "<script>var c = document.getElementById(\"myCanvas\");\n var ctx = c.getContext(\"2d\");\n \n // Create gradient\n var grd = ctx.createRadialGradient(75, 50, 5, 90, 60, 100);\n grd.addColorStop(0, \"red\");\n grd.addColorStop(1, \"white\");\n \n // Fill with gradient\n  ctx.fillStyle = grd;ctx.fillRect(10, 10, 150, 80);</script>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Draw Image"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "javascript",
+          "code": "<script>var c = document.getElementById(\"myCanvas\");\n var ctx = c.getContext(\"2d\");\n var img = document.getElementById(\"scream\");\n ctx.drawImage(img, 10, 10);</script>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML Canvas Tutorial"
+    },
+    {
+      "type": "paragraph",
+      "text": "To learn more about <canvas>, please \nread our HTML Canvas Tutorial."
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

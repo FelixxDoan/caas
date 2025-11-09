@@ -1,0 +1,124 @@
+{
+  "url": "https://www.w3schools.com/css/css_intro.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Introduction"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS is the language we use to style a Web page."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What is CSS?"
+    },
+    {
+      "type": "other",
+      "text": "CSS stands for Cascading Style Sheets\n  CSS describes how HTML elements are to be displayed on screen,  \n  paper, or in other media\n  CSS saves a lot of work. It can control the layout of \n  multiple web pages all at once\n  External stylesheets are stored in CSS files"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CSS Demo - One HTML Page - Multiple Styles!"
+    },
+    {
+      "type": "paragraph",
+      "text": "Here we will show one HTML page displayed with four different stylesheets. \nClick on the \"Stylesheet 1\", \"Stylesheet 2\", \"Stylesheet 3\", \"Stylesheet 4\" \nlinks below to see the different styles:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": []
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Why Use CSS?"
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS is used to define styles for your web pages, including the design, layout \nand variations in display for different devices and screen sizes."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "body\n{  background-color: lightblue;}\nh1\n{\n  color: white;\n  text-align: center;\n}\np\n{\n   \nfont-family: verdana;\n  font-size: 20px;\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CSS Solved a Big Problem"
+    },
+    {
+      "type": "paragraph",
+      "text": "HTML was NEVER intended to contain tags for formatting a web page!"
+    },
+    {
+      "type": "paragraph",
+      "text": "HTML was \ncreated to describe the content of a web page, like:"
+    },
+    {
+      "type": "paragraph",
+      "text": "<h1>This is a heading</h1>"
+    },
+    {
+      "type": "paragraph",
+      "text": "<p>This is a paragraph.</p>"
+    },
+    {
+      "type": "paragraph",
+      "text": "When tags like <font>, and color attributes were added to the HTML 3.2 \nspecification, it started a nightmare for web developers. Development of large \nwebsites, where fonts and color information were added to every single  \npage, became a long and expensive process."
+    },
+    {
+      "type": "paragraph",
+      "text": "To solve this problem, the World Wide Web Consortium (W3C) created CSS."
+    },
+    {
+      "type": "paragraph",
+      "text": "CSS removed the style formatting from the HTML page!"
+    },
+    {
+      "type": "other",
+      "text": "If you don't know what HTML is, we suggest that you read our HTML Tutorial."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CSS Saves a Lot of Work!"
+    },
+    {
+      "type": "paragraph",
+      "text": "The style definitions are normally saved in external .css files."
+    },
+    {
+      "type": "paragraph",
+      "text": "With an external stylesheet file, you can change the look of an entire website by changing just one file!"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Video: CSS Introduction"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

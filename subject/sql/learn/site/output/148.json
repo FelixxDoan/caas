@@ -1,0 +1,326 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_examples.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL Examples"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "text": "SQL Syntax"
+    },
+    {
+      "type": "other",
+      "text": "Select all the records from a specific table (\"Customers\")"
+    },
+    {
+      "type": "paragraph",
+      "text": "Example Explained"
+    },
+    {
+      "type": "heading",
+      "text": "SQL SELECT"
+    },
+    {
+      "type": "other",
+      "text": "SELECT Column\n\nSELECT *"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples Explained"
+    },
+    {
+      "type": "heading",
+      "text": "SQL SELECT DISTINCT"
+    },
+    {
+      "type": "other",
+      "text": "SELECT DISTINCT"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples Explained"
+    },
+    {
+      "type": "heading",
+      "text": "SQL WHERE"
+    },
+    {
+      "type": "other",
+      "text": "WHERE Clause\n\nText Fields vs. Numeric Fields"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples Explained"
+    },
+    {
+      "type": "heading",
+      "text": "SQL AND, OR and NOT Operators"
+    },
+    {
+      "type": "other",
+      "text": "AND\n\nOR\n\nNOT\n\nCombining AND, OR and NOT"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples Explained"
+    },
+    {
+      "type": "heading",
+      "text": "SQL ORDER BY"
+    },
+    {
+      "type": "other",
+      "text": "ORDER BY\n\nORDER BY DESC\n\nORDER BY Several Columns"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples Explained"
+    },
+    {
+      "type": "heading",
+      "text": "SQL NULL Values"
+    },
+    {
+      "type": "other",
+      "text": "IS NULL Operator\n\nIS NOT NULL Operator"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples Explained"
+    },
+    {
+      "type": "other",
+      "text": "#buy_course_btn {\ntext-decoration:none !important;\nbackground-color:#04AA6D;\nwidth:auto;\nborder-radius:25px;\npadding-top:10px;\npadding-bottom:10px;\nfont-family: 'Source Sans Pro', sans-serif;\n}\n#buy_course_btn {\nbackground-color:#059862!important;\n}"
+    },
+    {
+      "type": "other",
+      "text": ".cls-1{fill:#04aa6b;}.cls-2{font-size:23px;}.cls-2,.cls-3,.cls-4{fill:#fff;}.cls-2,.cls-3{font-family:RobotoMono-Medium, Roboto Mono;font-weight:500;}.cls-3{font-size:20.08px;}w3schools CERTIFIED  .  2025\n\n\nGet Certified!\nTake the SQL exam and become w3schools certified!!\n\n$95 ENROLL"
+    },
+    {
+      "type": "heading",
+      "text": "SQL SELECT TOP"
+    },
+    {
+      "type": "other",
+      "text": "SELECT TOP\n\nLIMIT\n\nSELECT TOP PERCENT\n\nSELECT TOP and add a WHERE Clause"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples Explained"
+    },
+    {
+      "type": "heading",
+      "text": "SQL MIN() and MAX()"
+    },
+    {
+      "type": "other",
+      "text": "MIN()\n\nMAX()"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples Explained"
+    },
+    {
+      "type": "heading",
+      "text": "SQL COUNT, AVG() and SUM()"
+    },
+    {
+      "type": "other",
+      "text": "COUNT()\n\nAVG()\n\nSUM()"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples Explained"
+    },
+    {
+      "type": "heading",
+      "text": "SQL LIKE"
+    },
+    {
+      "type": "other",
+      "text": "LIKE - select all table rows starting with \"a\"\n\nLIKE - select all table rows ending with \"a\"\n\nLIKE - select all table rows that have \"or\" in any position\n\nLIKE - select all table rows that have \"r\" in the second position\n\nLIKE - select all table rows that starts with \"a\" and ends with \"o\"\n\nLIKE - select all table rows that does NOT start with \"a\""
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples Explained"
+    },
+    {
+      "type": "heading",
+      "text": "SQL Wildcards"
+    },
+    {
+      "type": "other",
+      "text": "Using the % Wildcard\n\nUsing the _ Wildcard\n\nUsing the [charlist] Wildcard\n\nUsing the [!charlist] Wildcard"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples Explained"
+    },
+    {
+      "type": "heading",
+      "text": "SQL IN"
+    },
+    {
+      "type": "other",
+      "text": "IN\n\nNOT IN"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples Explained"
+    },
+    {
+      "type": "heading",
+      "text": "SQL BETWEEN"
+    },
+    {
+      "type": "other",
+      "text": "BETWEEN\n\nNOT BETWEEN\n\nBETWEEN with IN\n\nBETWEEN Text Values\n\nNOT BETWEEN Text Values"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples Explained"
+    },
+    {
+      "type": "heading",
+      "text": "SQL Aliases"
+    },
+    {
+      "type": "other",
+      "text": "Alias for Columns\n\nTwo Aliases\n\nAlias for Tables"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples Explained"
+    },
+    {
+      "type": "heading",
+      "text": "SQL Joins"
+    },
+    {
+      "type": "other",
+      "text": "INNER JOIN\n\nLEFT JOIN\n\nRIGHT JOIN\n\nSelf JOIN"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples Explained"
+    },
+    {
+      "type": "heading",
+      "text": "SQL UNION"
+    },
+    {
+      "type": "other",
+      "text": "UNION\n\nUNION ALL\n\nUNION With WHERE\n\nUNION ALL With WHERE"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples Explained"
+    },
+    {
+      "type": "heading",
+      "text": "SQL GROUP BY"
+    },
+    {
+      "type": "other",
+      "text": "GROUP BY\n\nGROUP BY and ORDER BY\n\nGROUP BY With JOIN"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples Explained"
+    },
+    {
+      "type": "heading",
+      "text": "SQL HAVING"
+    },
+    {
+      "type": "other",
+      "text": "HAVING and GROUP BY\n\nHAVING and ORDER BY"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples Explained"
+    },
+    {
+      "type": "heading",
+      "text": "SQL EXISTS"
+    },
+    {
+      "type": "other",
+      "text": "EXISTS"
+    },
+    {
+      "type": "paragraph",
+      "text": "Example Explained"
+    },
+    {
+      "type": "heading",
+      "text": "SQL ANY and ALL"
+    },
+    {
+      "type": "other",
+      "text": "ANY\n\nALL"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples Explained"
+    },
+    {
+      "type": "heading",
+      "text": "SQL CASE"
+    },
+    {
+      "type": "other",
+      "text": "CASE 1\n\nCASE 2"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples Explained"
+    },
+    {
+      "type": "heading",
+      "text": "SQL Comments"
+    },
+    {
+      "type": "other",
+      "text": "Single Line Comments\n\nSingle Line Comments At The End Of a Line\n\nMulti-line Comments"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples Explained"
+    },
+    {
+      "type": "heading",
+      "text": "SQL Database"
+    },
+    {
+      "type": "paragraph",
+      "text": "SQL Database tutorials can be found here:"
+    },
+    {
+      "type": "other",
+      "text": "SQL Create DB\nSQL Drop DB\nSQL Backup DB\nSQL Create Table\nSQL Drop Table\nSQL Alter Table\nSQL Constraints\nSQL Not Null\nSQL Unique\nSQL Primary Key\nSQL Foreign Key\nSQL Check\nSQL Default\nSQL Index\nSQL Auto Increment\nSQL Dates\nSQL Views\nSQL Injection\nSQL Hosting"
+    },
+    {
+      "type": "other",
+      "text": "#w3_cert_badge {\n  position: absolute;\n  right: 5%;\n  width: 220px;\n  transform: rotate(10deg);\n  bottom: -20%;\n}\n\n#w3_cert_arrow {\n  position: absolute;\n  right: 220px;\n  width: 220px;\n  transform: rotate(10deg);\n  bottom: 0;\n  z-index: 1;\n}\n\n#getdiploma {\n  position: relative;\n  padding: 0 60px 50px 60px;\n  margin-bottom: 125px;\n  background-color: #282A35;\n  color:white;\n  border-radius:10px;\n  font-family: 'Source Sans Pro', sans-serif;\n}\n\n#getdiploma h2 {\n  font-size:45px;\n  margin-top: 1em;\n  margin-bottom: 1em;\n  font-family: 'Source Sans Pro', sans-serif\n}\n\n#getdiploma p {\n  font-size: 32px;\n  margin-top: 1em;\n  margin-bottom: 1em;\n  font-family: 'Source Sans Pro', sans-serif\n}\n\n#getdiploma a {\n  border-radius: 50px;\n  mxargin-top: 50px;\n  font-size: 18px;\n  background-color: #04AA6D;\n  padding: 17px 55px\n}\n\n#getdiploma a:hover,\n#getdiploma a:active {\n  background-color: #059862 !important;\n}\n\n\n@media screen and (max-width: 1442px) {\n  #w3_cert_arrow {\n    right: 212px;\n    bottom: -15px;\n  }\n}\n\n\n@media screen and (max-width: 1202px) {\n  #w3_cert_arrow {\n    display: none;\n  }\n}\n\n@media screen and (max-width: 992px) {\n  #w3_cert_arrow {\n    display: block;\n  }\n}\n\n\n@media screen and (max-width: 800px) {\n  #w3_cert_arrow {\n    display: none;\n  }\n  #getdiploma h2 {\n    font-size: 44px;\n  }\n  #getdiploma p {\n    font-size: 30px;\n  }\n\n  #getdiploma a {\n    width: 100%;\n  }\n  #w3_cert_badge {\n    top: -16px;\n    right: -8px;\n    width: 100px;\n  }\n  #getdiploma  {\n    margin-bottom: 55px;\n  }\n}"
+    },
+    {
+      "type": "other",
+      "text": "Kickstart your career\nGet certified by completing the  course\nGet certified\n\n\nvar foldername;\nfunction getCourseFolder() {\n  var pathname = window.location.pathname;\n  if (pathname.substr(0,1) == \"/\") {pathname = pathname.substr(1);}\n  pos = pathname.indexOf(\"/\");\n  foldername = pathname.substr(0, pos);\n  foldername = foldername.toUpperCase();\n  certLink = \"\";\n  switch (foldername) {\n  case \"CPP\":\n    certLink = \"https://campus.w3schools.com/collections/course-catalog/products/c-course-1?utm_source=classic&utm_medium=tutorials&utm_campaign=first-page-ad\";\n    foldername = \"C++\";\n    break;\n  case \"JAVA\":\n    certLink = \"https://campus.w3schools.com/collections/course-catalog/products/java-course?utm_source=classic&utm_medium=tutorials&utm_campaign=first-page-ad\";\n    break;\n  case \"BOOTSTRAP4\":\n    certLink = \"https://campus.w3schools.com/collections/course-catalog/products/bootstrap-4-course?utm_source=classic&utm_medium=tutorials&utm_campaign=first-page-ad\";\n    break;  \n  case \"XML\":\n    certLink = \"https://campus.w3schools.com/collections/course-catalog/products/xml-course?utm_source=classic&utm_medium=tutorials&utm_campaign=first-page-ad\";\n    break;\n  case \"JQUERY\":\n    certLink = \"https://campus.w3schools.com/collections/course-catalog/products/jquery-course?utm_source=classic&utm_medium=tutorials&utm_campaign=first-page-ad\";\n    break;\n  case \"ACCESSIBILITY\":\n    certLink = \"https://campus.w3schools.com/collections/course-catalog/products/accessibility-course?utm_source=classic&utm_medium=tutorials&utm_campaign=first-page-ad\";\n    break;\n  case \"BOOTSTRAP\":\n    certLink = \"https://campus.w3schools.com/collections/course-catalog/products/bootstrap-course?utm_source=classic&utm_medium=tutorials&utm_campaign=first-page-ad\";\n    break;\n  case \"HTML\":\n    certLink = \"https://campus.w3schools.com/collections/course-catalog/products/html-course?utm_source=classic&utm_medium=tutorials&utm_campaign=first-page-ad\";\n    break;\n  case \"CSS\":\n    certLink = \"https://campus.w3schools.com/collections/course-catalog/products/css-course?utm_source=classic&utm_medium=tutorials&utm_campaign=first-page-ad\";\n    break;\n  case \"JS\":\n    certLink = \"https://campus.w3schools.com/collections/course-catalog/products/javascript-course?utm_source=classic&utm_medium=tutorials&utm_campaign=first-page-ad\";\n    foldername = \"JavaScript\";\n    break;\n  case \"REACT\":\n    subjectText = \"React.js\";\n    certLink = \"https://campus.w3schools.com/collections/course-catalog/products/react-js-course?utm_source=classic&utm_medium=tutorials&utm_campaign=first-page-ad\";\n    break;\n  case \"SQL\":\n    certLink = \"https://campus.w3schools.com/collections/course-catalog/products/sql-course?utm_source=classic&utm_medium=tutorials&utm_campaign=first-page-ad\";\n    break;\n  case \"PHP\":\n    certLink = \"https://campus.w3schools.com/collections/course-catalog/products/php-course?utm_source=classic&utm_medium=tutorials&utm_campaign=first-page-ad\";\n    break;\n  case \"CYBERSECURITY\":\n    certLink = \"https://campus.w3schools.com/collections/course-catalog/products/cyber-security-course?utm_source=classic&utm_medium=tutorials&utm_campaign=first-page-ad\";\n    foldername = \"Cyber Security\";\n    break;\n  case \"R\":\n    certLink = \"https://campus.w3schools.com/collections/course-catalog/products/r-course?utm_source=classic&utm_medium=tutorials&utm_campaign=first-page-ad\";\n    break;\n  case \"NUMPY\":\n    certLink = \"https://campus.w3schools.com/collections/course-catalog/products/numpy-course?utm_source=classic&utm_medium=tutorials&utm_campaign=first-page-ad\";\n    break;\n  case \"TYPESCRIPT\":\n    certLink = \"https://campus.w3schools.com/collections/course-catalog/products/learn-typescript?utm_source=classic&utm_medium=tutorials&utm_campaign=first-page-ad\";\n    break; \n  case \"PANDAS\":\n    certLink = \"https://campus.w3schools.com/collections/course-catalog/products/pandas-course?utm_source=classic&utm_medium=tutorials&utm_campaign=first-page-ad\";\n    break;\n  case \"PYTHON\":\n    certLink = \"https://campus.w3schools.com/collections/course-catalog/products/python-course?utm_source=classic&utm_medium=tutorials&utm_campaign=first-page-ad\";\n    break;\n  case \"CS\":\n    certLink = \"https://campus.w3schools.com/collections/course-catalog/products/c-course?utm_source=classic&utm_medium=tutorials&utm_campaign=first-page-ad\";\n    foldername = \"C#\";\n    break;    \n  default:\n    certLink = \"https://campus.w3schools.com/collections/course-catalog?utm_source=classic&utm_medium=tutorials&utm_campaign=first-page-ad\";\n  }\n  document.getElementById(\"cert_firstpage\").href = certLink;\n  if (foldername == \"QUIZTEST\" || foldername == \"EXERCISES\") {\n    document.getElementById(\"hey\").innerText = \"a\";\n  }\n  if (foldername == \"QUIZTEST\" || foldername == \"EXERCISES\") foldername = \"\";\n  document.getElementById(\"coursetopic\").innerText = foldername;\n}\ngetCourseFolder();\n\n\n\n\n\n\n.cls-1{fill:#04aa6b;}.cls-2{font-size:23px;}.cls-2,.cls-3,.cls-4{fill:#fff;}.cls-2,.cls-3{font-family:RobotoMono-Medium, Roboto Mono;font-weight:500;}.cls-3{font-size:20.08px;}w3schools CERTIFIED  .  2025"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

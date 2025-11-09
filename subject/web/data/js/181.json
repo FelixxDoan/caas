@@ -1,0 +1,123 @@
+{
+  "url": "https://www.w3schools.com/js/js_loop_forin.asp",
+  "title": "JavaScript For In",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript For In"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The For In Loop"
+    },
+    {
+      "type": "paragraph",
+      "text": "The JavaScript for in statement loops through the properties of an Object:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "for (key in object) {\n  // code block to be executed\n\n}"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const person = {fname:\"John\", lname:\"Doe\", age:25};\nlet text = \"\";for (let x in person) {\n  text += person[x];\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Example Explained"
+    },
+    {
+      "type": "other",
+      "text": "The for in loop iterates over a person object\nEach iteration returns a key (x)\nThe key is used to access the value of the key\nThe value of the key is person[x]"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "For In Over Arrays"
+    },
+    {
+      "type": "paragraph",
+      "text": "The JavaScript for in statement can also loop over the properties of an Array:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "for (variable in array) {\n  code\n}"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const numbers = [45, 4, 9, 16, 25];\nlet txt = \"\";\nfor (let x in numbers) {\n  txt += numbers[x]; \n}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Do not use for in over an Array if the index order is important.\nThe index order is implementation-dependent, and array values may not be accessed in the order you expect.\nIt is better to use a for loop, a for of loop, or Array.forEach() when the order is important."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Array.forEach()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The forEach() method calls a function (a callback function) once for each array element."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const numbers = [45, 4, 9, 16, 25];\nlet txt = \"\";\nnumbers.forEach(myFunction);\nfunction myFunction(value, index, array) {\n   \ntxt += value;\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Note that the function takes 3 arguments:"
+    },
+    {
+      "type": "other",
+      "text": "The item value\nThe item index \nThe array itself"
+    },
+    {
+      "type": "paragraph",
+      "text": "The example above uses only the value parameter. It can be rewritten to:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const numbers = [45, 4, 9, 16, 25];\nlet txt = \"\";\nnumbers.forEach(myFunction);\nfunction myFunction(value) {\n   \ntxt += value; \n}"
+        }
+      ]
+    }
+  ]
+}

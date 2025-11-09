@@ -1,0 +1,46 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_ref_case.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL CASE Keyword"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "text": "CASE"
+    },
+    {
+      "type": "paragraph",
+      "text": "The CASE command is used is to \ncreate different output based on conditions."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL goes through several conditions and returns a value when the \nspecified condition is met:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n  SELECT OrderID, Quantity,CASE    WHEN Quantity > 30 \n  THEN 'The quantity is greater than 30'    WHEN Quantity = \n  30 THEN 'The quantity is 30'    ELSE 'The quantity is under 30'ENDFROM OrderDetails;\nTry it Yourself »"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL will order the customers by City. However, if City is NULL, \nthen order by Country:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n  SELECT CustomerName, City, CountryFROM CustomersORDER BY(CASE    \n  WHEN City IS NULL THEN Country    ELSE CityEND);\nTry it Yourself »"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

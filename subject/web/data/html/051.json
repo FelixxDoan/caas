@@ -1,0 +1,321 @@
+{
+  "url": "https://www.w3schools.com/html/html_symbols.asp",
+  "title": "HTML ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "HTML Symbols"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "Symbols or letters that are not present on your keyboard can be added to HTML using entities."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML Symbol Entities"
+    },
+    {
+      "type": "paragraph",
+      "text": "HTML entities were described in the previous chapter."
+    },
+    {
+      "type": "paragraph",
+      "text": "Many mathematical, technical, and currency symbols, are not present on a normal keyboard."
+    },
+    {
+      "type": "paragraph",
+      "text": "To add such symbols to an HTML page, you can use the entity name or the entity number \n(a decimal or a hexadecimal reference) for the symbol:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<p>I will display &euro;</p>\n<p>I will display &#8364;</p>\n<p>I will display &#x20AC;</p>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Some Mathematical Symbols Supported by HTML"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Char",
+          "Number",
+          "Entity",
+          "Description",
+          ""
+        ],
+        [
+          "∀",
+          "&#8704;",
+          "&forall;",
+          "For all",
+          "Try it »"
+        ],
+        [
+          "∂",
+          "&#8706;",
+          "&part;",
+          "Partial differential",
+          "Try it »"
+        ],
+        [
+          "∃",
+          "&#8707;",
+          "&exist;",
+          "There exists",
+          "Try it »"
+        ],
+        [
+          "∅",
+          "&#8709;",
+          "&empty;",
+          "Empty sets",
+          "Try it »"
+        ],
+        [
+          "∇",
+          "&#8711;",
+          "&nabla;",
+          "Nabla",
+          "Try it »"
+        ],
+        [
+          "∈",
+          "&#8712;",
+          "&isin;",
+          "Element of",
+          "Try it »"
+        ],
+        [
+          "∉",
+          "&#8713;",
+          "&notin;",
+          "Not an element of",
+          "Try it »"
+        ],
+        [
+          "∋",
+          "&#8715;",
+          "&ni;",
+          "Contains as member",
+          "Try it »"
+        ],
+        [
+          "∏",
+          "&#8719;",
+          "&prod;",
+          "N-ary product",
+          "Try it »"
+        ],
+        [
+          "∑",
+          "&#8721;",
+          "&sum;",
+          "N-ary summation",
+          "Try it »"
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Full Math Symbols Reference"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Some Greek Letters Supported by HTML"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Char",
+          "Number",
+          "Entity",
+          "Description",
+          ""
+        ],
+        [
+          "Α",
+          "&#913;",
+          "&Alpha;",
+          "GREEK ALPHA",
+          "Try it »"
+        ],
+        [
+          "Β",
+          "&#914;",
+          "&Beta;",
+          "GREEK BETA",
+          "Try it »"
+        ],
+        [
+          "Γ",
+          "&#915;",
+          "&Gamma;",
+          "GREEK GAMMA",
+          "Try it »"
+        ],
+        [
+          "Δ",
+          "&#916;",
+          "&Delta;",
+          "GREEK DELTA",
+          "Try it »"
+        ],
+        [
+          "Ε",
+          "&#917;",
+          "&Epsilon;",
+          "GREEK EPSILON",
+          "Try it »"
+        ],
+        [
+          "Ζ",
+          "&#918;",
+          "&Zeta;",
+          "GREEK ZETA",
+          "Try it »"
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Full Greek Reference"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Some Other Entities Supported by HTML"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Char",
+          "Number",
+          "Entity",
+          "Description",
+          ""
+        ],
+        [
+          "©",
+          "&#169;",
+          "&copy;",
+          "COPYRIGHT",
+          "Try it »"
+        ],
+        [
+          "®",
+          "&#174;",
+          "&reg;",
+          "REGISTERED TRADEMARK",
+          "Try it »"
+        ],
+        [
+          "€",
+          "&#8364;",
+          "&euro;",
+          "EURO SIGN",
+          "Try it »"
+        ],
+        [
+          "™",
+          "&#8482;",
+          "&trade;",
+          "TRADEMARK",
+          "Try it »"
+        ],
+        [
+          "←",
+          "&#8592;",
+          "&larr;",
+          "LEFT ARROW",
+          "Try it »"
+        ],
+        [
+          "↑",
+          "&#8593;",
+          "&uarr;",
+          "UP ARROW",
+          "Try it »"
+        ],
+        [
+          "→",
+          "&#8594;",
+          "&rarr;",
+          "RIGHT ARROW",
+          "Try it »"
+        ],
+        [
+          "↓",
+          "&#8595;",
+          "&darr;",
+          "DOWN ARROW",
+          "Try it »"
+        ],
+        [
+          "♠",
+          "&#9824;",
+          "&spades;",
+          "SPADE",
+          "Try it »"
+        ],
+        [
+          "♣",
+          "&#9827;",
+          "&clubs;",
+          "CLUB",
+          "Try it »"
+        ],
+        [
+          "♥",
+          "&#9829;",
+          "&hearts;",
+          "HEART",
+          "Try it »"
+        ],
+        [
+          "♦",
+          "&#9830;",
+          "&diams;",
+          "DIAMOND",
+          "Try it »"
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Full Currency Reference"
+    },
+    {
+      "type": "paragraph",
+      "text": "Full Arrows Reference"
+    },
+    {
+      "type": "paragraph",
+      "text": "Full Symbols Reference"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

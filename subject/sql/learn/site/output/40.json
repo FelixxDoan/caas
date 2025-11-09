@@ -1,0 +1,126 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_isnull.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL NULL Functions"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "heading",
+      "text": "SQL IFNULL(), ISNULL(), COALESCE(), and NVL() Functions"
+    },
+    {
+      "type": "paragraph",
+      "text": "Look at the following \"Products\" table:"
+    },
+    {
+      "type": "other",
+      "text": "P_Id\n    ProductName\n    UnitPrice\n    UnitsInStock\n    UnitsOnOrder\n  \n  \n    1\n    Jarlsberg\n    10.45\n    16\n    15\n  \n  \n    2\n    Mascarpone\n    32.56\n    23\n     \n  \n  \n    3\n    Gorgonzola\n    15.67\n    9\n    20"
+    },
+    {
+      "type": "paragraph",
+      "text": "Suppose that the \"UnitsOnOrder\" column is optional, and may contain NULL values."
+    },
+    {
+      "type": "paragraph",
+      "text": "Look at the following SELECT statement:"
+    },
+    {
+      "type": "other",
+      "text": "SELECT ProductName, UnitPrice * (UnitsInStock + UnitsOnOrder)\nFROM Products;"
+    },
+    {
+      "type": "paragraph",
+      "text": "In the example above, if any of the \"UnitsOnOrder\" values are NULL, the result \nwill be NULL."
+    },
+    {
+      "type": "heading",
+      "text": "Solutions"
+    },
+    {
+      "type": "paragraph",
+      "text": "MySQL"
+    },
+    {
+      "type": "paragraph",
+      "text": "The MySQL IFNULL() function lets you \nreturn an alternative value if an expression is NULL:"
+    },
+    {
+      "type": "other",
+      "text": "SELECT ProductName, UnitPrice * (UnitsInStock + IFNULL(UnitsOnOrder, 0))\nFROM Products;"
+    },
+    {
+      "type": "paragraph",
+      "text": "or we can use the \nCOALESCE() function, like this:"
+    },
+    {
+      "type": "other",
+      "text": "SELECT ProductName, UnitPrice * (UnitsInStock + COALESCE(UnitsOnOrder, 0))\nFROM Products;"
+    },
+    {
+      "type": "paragraph",
+      "text": "SQL Server"
+    },
+    {
+      "type": "paragraph",
+      "text": "The SQL Server \nISNULL() function lets \nyou return an alternative value when an expression is NULL:"
+    },
+    {
+      "type": "other",
+      "text": "SELECT ProductName, UnitPrice * (UnitsInStock + ISNULL(UnitsOnOrder, 0))\nFROM Products;"
+    },
+    {
+      "type": "paragraph",
+      "text": "or we can use the COALESCE()\nfunction, like this:"
+    },
+    {
+      "type": "other",
+      "text": "SELECT ProductName, UnitPrice * (UnitsInStock + COALESCE(UnitsOnOrder, 0))\nFROM Products;"
+    },
+    {
+      "type": "paragraph",
+      "text": "MS Access"
+    },
+    {
+      "type": "paragraph",
+      "text": "The MS Access \nIsNull() function returns \nTRUE (-1) if the expression is a null value, otherwise FALSE (0):"
+    },
+    {
+      "type": "other",
+      "text": "SELECT ProductName, UnitPrice * (UnitsInStock + IIF(IsNull(UnitsOnOrder), 0, UnitsOnOrder))\nFROM Products;"
+    },
+    {
+      "type": "paragraph",
+      "text": "Oracle"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Oracle NVL() function achieves the same result:"
+    },
+    {
+      "type": "other",
+      "text": "SELECT ProductName, UnitPrice * (UnitsInStock + NVL(UnitsOnOrder, 0))\nFROM Products;"
+    },
+    {
+      "type": "paragraph",
+      "text": "or we can use the COALESCE()\nfunction, like this:"
+    },
+    {
+      "type": "other",
+      "text": "SELECT ProductName, UnitPrice * (UnitsInStock + COALESCE(UnitsOnOrder, 0))\nFROM Products;"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

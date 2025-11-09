@@ -1,0 +1,42 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_ref_drop_database.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL DROP DATABASE Keyword"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "text": "DROP DATABASE"
+    },
+    {
+      "type": "paragraph",
+      "text": "The DROP DATABASE command is used to \ndelete an existing SQL database."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL drops a database named \"testDB\":"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n  DROP DATABASE testDB;"
+    },
+    {
+      "type": "other",
+      "text": "Note: Be careful before dropping a database. Deleting \na database will result in loss of complete information stored in the database!"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

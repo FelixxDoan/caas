@@ -1,0 +1,111 @@
+{
+  "url": "https://www.w3schools.com/js/js_window.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Window - The Browser Object Model"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Browser Object Model (BOM) allows JavaScript to \"talk to\" \nthe browser."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Browser Object Model (BOM)"
+    },
+    {
+      "type": "paragraph",
+      "text": "There are no official standards for the Browser Object\nModel (BOM)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Since modern browsers have implemented (almost) the same methods and \nproperties for JavaScript interactivity, it is often referred to, as methods and \nproperties of the BOM."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Window Object"
+    },
+    {
+      "type": "paragraph",
+      "text": "The window object is supported by all browsers. It represents \nthe browser's window."
+    },
+    {
+      "type": "paragraph",
+      "text": "All global JavaScript objects, functions, and variables automatically become \nmembers of the window object."
+    },
+    {
+      "type": "paragraph",
+      "text": "Global variables are properties of the window object."
+    },
+    {
+      "type": "paragraph",
+      "text": "Global functions are methods of the window object."
+    },
+    {
+      "type": "paragraph",
+      "text": "Even the document object (of the HTML DOM) is a property of the window \nobject:"
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "window.document.getElementById(\"header\");"
+    },
+    {
+      "type": "paragraph",
+      "text": "is the same as:"
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "document.getElementById(\"header\");"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Window Size"
+    },
+    {
+      "type": "paragraph",
+      "text": "Two properties can be used to determine the size of the browser \nwindow."
+    },
+    {
+      "type": "paragraph",
+      "text": "Both properties return the sizes in \npixels:"
+    },
+    {
+      "type": "other",
+      "text": "window.innerHeight - the inner height of the browser window (in pixels)\n  window.innerWidth - the inner width of the browser window (in pixels)"
+    },
+    {
+      "type": "other",
+      "text": "The browser window (the browser viewport) is NOT including toolbars and scrollbars."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let w = window.innerWidth;\nlet h = window.innerHeight;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Other Window Methods"
+    },
+    {
+      "type": "paragraph",
+      "text": "Some other methods:"
+    },
+    {
+      "type": "other",
+      "text": "window.open() - open a new window\n  window.close() - close the current window\n  window.moveTo() - move the current window\n  window.resizeTo() - resize the current window"
+    }
+  ]
+}

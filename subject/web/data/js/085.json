@@ -1,0 +1,307 @@
+{
+  "url": "https://www.w3schools.com/js/js_2020.asp",
+  "title": "ECMAScript 2020",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "ECMAScript 2020"
+    },
+    {
+      "type": "other",
+      "text": "New Features in JavaScript 2020\n\n  BigInt\n  String matchAll()\n  The Nullish Coalescing Operator (??)\n  The Optional Chaining Operator (?.)\n  Logical AND Assignment Operator (&&=)\n  Logical OR Assignment (||=)\n  Nullish Coalescing Assignment (??=)\n  Promise.allSettled()\n  Dynamic Import"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript BigInt"
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript BigInt variables are used to store big integer values\nthat are too big to be represented by a a normal JavaScript Number."
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript integers are only accurate up to about 15 digits."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 999999999999999;\nlet y = 9999999999999999; // too big"
+        },
+        {
+          "language": "unknown",
+          "code": "let x = 9999999999999999;\nlet y = 9999999999999999n;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "To create a BigInt, append n to the end of an integer or call\nBigInt():"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 1234567890123456789012345n;\nlet y = BigInt(1234567890123456789012345)"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The JavaScript typeof a BigInt is \"bigint\":"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = BigInt(999999999999999);\nlet type = typeof x;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "BigInt is supported in all modern browsers since September 2020:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome 67    \n    Edge 79\n    Firefox 68\n    Safari 14\n    Opera 54\n  \n  \n    May 2018\n    Jan 2020    \n    Jul 2019\n    Sep 2020\n    Jun 2018"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript String matchAll()"
+    },
+    {
+      "type": "paragraph",
+      "text": "Before ES2020 there was no string method that could be used to search for all occurrences\nof a string in a string."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const iterator = text.matchAll(\"Cats\");"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "If the parameter is a regular expression, the global flag (g) must be set set, otherwise\na TypeError is thrown."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const iterator = text.matchAll(/Cats/g);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "If you want to search case insensitive, the insensitive flag (i) must be set:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const iterator = text.matchAll(/Cats/gi);"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\nES2021 introduced the string method replaceAll()."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Nullish Coalescing Operator (??)"
+    },
+    {
+      "type": "paragraph",
+      "text": "The ?? operator returns the first argument if it is not nullish\n(null or undefined)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Otherwise it returns the second."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let name = null;\nlet text = \"missing\";\nlet result = name ?? text;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The nullish operator is supported in all modern browsers since March 2020:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome 80    \n    Edge 80\n    Firefox 72\n    Safari 13.1\n    Opera 67\n  \n  \n    Feb 2020\n    Feb 2020    \n    Jan 2020\n    Mar 2020\n    Mar 2020"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Optional Chaining Operator (?.)"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Optional Chaining Operator returns undefined if an object is\nundefined or null (instead of throwing an error)."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const car = {type:\"Fiat\", model:\"500\", color:\"white\"};\nlet name = car?.name;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The ?.= operator is supported in all modern browsers since March 2020:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome 80    \n    Edge 80\n    Firefox 74\n    Safari 13.1\n    Opera 67\n  \n  \n    Feb 2020\n    Feb 2020    \n    Mar 2020\n    Mar 2020\n    Mar 2020"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The &&= Operator"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Logical AND Assignment Operator is used between two values."
+    },
+    {
+      "type": "paragraph",
+      "text": "If the first value is true, the second value is assigned."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 10;\nx &&= 5;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The &&= operator is supported in all modern browsers since September 2020:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome 85    \n    Edge 85\n    Firefox 79\n    Safari 14\n    Opera 71\n  \n  \n    Aug 2020\n    Aug 2020    \n    Mar 2020\n    Sep 2020\n    Sep 2020"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The ||= Operator"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Logical OR Assignment Operator is used between two values."
+    },
+    {
+      "type": "paragraph",
+      "text": "If the first value is false, the second value is assigned."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = 10;\nx ||= 5;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The ||= operator is supported in all modern browsers since September 2020:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome 85    \n    Edge 85\n    Firefox 79\n    Safari 14\n    Opera 71\n  \n  \n    Aug 2020\n    Aug 2020    \n    Mar 2020\n    Sep 2020\n    Sep 2020"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The ??= Operator"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Nullish Coalescing Assignment Operator is used between two values."
+    },
+    {
+      "type": "paragraph",
+      "text": "If the first value is undefined or null, the second value is assigned."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x;\nx ??= 5;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The ??= operator is supported in all modern browsers since September 2020:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome 85    \n    Edge 85\n    Firefox 79\n    Safari 14\n    Opera 71\n  \n  \n    Aug 2020\n    Aug 2020    \n    Mar 2020\n    Sep 2020\n    Sep 2020"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Promise.allSettled()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Promise.allSettled() method returns a single Promise from a list of promises."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create a Promise\nconst myPromise1 = new Promise((resolve, reject) => {\n  setTimeout(resolve, 200, \"King\");\n});\n\n// Create another Promise\nconst myPromise2 = new Promise((resolve, reject) => {\n  setTimeout(resolve, 100, \"Queen\");\n});\n\n// Settle All\nPromise.allSettled([myPromise1, myPromise2]).then((results) =>\n  results.forEach((x) => myDisplay(x.status)),\n);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Promise.allSettled() is supported in all modern browsers since March 2020:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome 76    \n    Edge 79\n    Firefox 71\n    Safari 13\n    Opera 63\n  \n  \n    May 2019\n    Nov 2019    \n    Mar 2020\n    Sep 2019\n    Aug 2019"
+    }
+  ]
+}

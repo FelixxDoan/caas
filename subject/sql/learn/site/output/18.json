@@ -1,0 +1,122 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_sum.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL SUM() Function"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "heading",
+      "text": "The SQL SUM() Function"
+    },
+    {
+      "type": "paragraph",
+      "text": "The SUM() function returns the total sum of a numeric column."
+    },
+    {
+      "type": "other",
+      "text": "Example\nReturn the sum of all Quantity fields in the OrderDetails table:\n\nSELECT SUM(Quantity)FROM OrderDetails;\nTry it Yourself »"
+    },
+    {
+      "type": "heading",
+      "text": "Syntax"
+    },
+    {
+      "type": "other",
+      "text": "SELECT SUM(column_name)\nFROM table_name\nWHERE condition;"
+    },
+    {
+      "type": "heading",
+      "text": "Demo Database"
+    },
+    {
+      "type": "paragraph",
+      "text": "Below is a selection from the OrderDetails table used in the examples:"
+    },
+    {
+      "type": "other",
+      "text": "OrderDetailID\n    OrderID\n    ProductID\n    Quantity\n  \n  \n    1\n    10248\n    11\n    12\n  \n  \n    2\n    10248\n    42\n    10\n  \n  \n    3\n    10248\n    72\n    5\n  \n  \n    4\n    10249\n    14\n    9\n  \n  \n    5\n    10249\n    51\n    40"
+    },
+    {
+      "type": "heading",
+      "text": "Add a WHERE Clause"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can add a WHERE clause to specify conditions:"
+    },
+    {
+      "type": "other",
+      "text": "Example\nReturn the sum of the Quantity field for the product with\nProductID 11:\n\n  SELECT SUM(Quantity)FROM OrderDetailsWHERE ProductId = 11;\n\n\n  Try it Yourself »"
+    },
+    {
+      "type": "heading",
+      "text": "Use an Alias"
+    },
+    {
+      "type": "paragraph",
+      "text": "Give the summarized column a name by using the AS keyword."
+    },
+    {
+      "type": "other",
+      "text": "Example\nName the column \"total\":\n\nSELECT SUM(Quantity) AS totalFROM OrderDetails;\n\n\n  Try it Yourself »"
+    },
+    {
+      "type": "heading",
+      "text": "Use SUM() with GROUP BY"
+    },
+    {
+      "type": "paragraph",
+      "text": "Here we use the SUM() function and the\nGROUP BY clause, to return the Quantity\nfor each OrderID in the OrderDetails table:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n  SELECT OrderID, SUM(Quantity) AS [Total Quantity]FROM OrderDetails\n  GROUP BY OrderID; \nTry it Yourself »"
+    },
+    {
+      "type": "paragraph",
+      "text": "You will learn more about the\nGROUP BY clause later in this tutorial."
+    },
+    {
+      "type": "heading",
+      "text": "SUM() With an Expression"
+    },
+    {
+      "type": "paragraph",
+      "text": "The parameter inside the SUM() function can also be an expression."
+    },
+    {
+      "type": "paragraph",
+      "text": "If we assume that each product in the OrderDetails column costs 10 dollars, we can find the total earnings in dollars by \nmultiply each quantity with 10:"
+    },
+    {
+      "type": "other",
+      "text": "Example\nUse an expression inside the SUM() function:\n\nSELECT SUM(Quantity * 10)FROM OrderDetails;\nTry it Yourself »"
+    },
+    {
+      "type": "paragraph",
+      "text": "We can also join the OrderDetails table to the \nProducts table to find the actual amount, instead of assuming it is 10 dollars:"
+    },
+    {
+      "type": "other",
+      "text": "Example\nJoin OrderDetails with \nProducts, and use SUM() to find the total amount:\n\nSELECT SUM(Price * Quantity)\nFROM OrderDetails\nLEFT JOIN Products ON OrderDetails.ProductID = Products.ProductID;\nTry it Yourself »"
+    },
+    {
+      "type": "paragraph",
+      "text": "You will learn more about Joins later in this tutorial."
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

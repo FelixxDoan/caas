@@ -1,0 +1,106 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_syntax.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL Syntax"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "text": "SQL Statements"
+    },
+    {
+      "type": "paragraph",
+      "text": "Most of the actions you need to perform on a database are done with SQL statements."
+    },
+    {
+      "type": "paragraph",
+      "text": "SQL statements consist of keywords that are easy to understand."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement returns all records from a table named \"Customers\":"
+    },
+    {
+      "type": "other",
+      "text": "Example\nSelect all records from the Customers table:\n\n SELECT * FROM Customers;\n\n\n Try it Yourself »"
+    },
+    {
+      "type": "paragraph",
+      "text": "In this tutorial we will teach you all about the different SQL statements."
+    },
+    {
+      "type": "heading",
+      "text": "Database Tables"
+    },
+    {
+      "type": "paragraph",
+      "text": "A database most often contains one or more tables. Each table is identified \nby a name (e.g. \"Customers\" or \"Orders\"), and contain records (rows) with \ndata."
+    },
+    {
+      "type": "paragraph",
+      "text": "In this tutorial we will use the well-known Northwind sample database \n(included in MS Access and MS SQL Server)."
+    },
+    {
+      "type": "paragraph",
+      "text": "Below is a selection from the Customers table used in the examples:"
+    },
+    {
+      "type": "other",
+      "text": "CustomerID\n    CustomerName\n    ContactName\n    Address\n    City\n    PostalCode\n    Country\n  \n  \n    1\n    Alfreds Futterkiste\n    Maria Anders\n    Obere Str. 57\n    Berlin\n    12209\n    Germany\n  \n  \n    2\n    Ana Trujillo Emparedados y helados\n    Ana Trujillo\n    Avda. de la Constitución 2222\n    México D.F.\n    05021\n    Mexico\n  \n  \n    3\n    Antonio Moreno Taquería\n    Antonio Moreno\n    Mataderos 2312\n    México D.F.\n    05023\n    Mexico\n  \n  \n    4\n    Around the Horn\n    Thomas Hardy\n    120 Hanover Sq.\n    London\n    WA1 1DP\n    UK\n  \n  \n    5\n    Berglunds snabbköp\n    Christina Berglund\n    Berguvsvägen 8\n    Luleå\n    S-958 22\n    Sweden"
+    },
+    {
+      "type": "paragraph",
+      "text": "The table above contains five records (one for each customer) and seven columns \n(CustomerID, CustomerName, ContactName, Address, City, PostalCode, and Country)."
+    },
+    {
+      "type": "heading",
+      "text": "Keep in Mind That..."
+    },
+    {
+      "type": "other",
+      "text": "SQL keywords are NOT case sensitive: select is the same as \n  SELECT"
+    },
+    {
+      "type": "paragraph",
+      "text": "In this tutorial we will write all SQL keywords in upper-case."
+    },
+    {
+      "type": "heading",
+      "text": "Semicolon after SQL Statements?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Some database systems require a semicolon at the end of each SQL statement."
+    },
+    {
+      "type": "paragraph",
+      "text": "Semicolon is the standard way to separate each SQL statement in database \nsystems that allow more than one SQL statement to be executed in the same call \nto the server."
+    },
+    {
+      "type": "paragraph",
+      "text": "In this tutorial, we will use semicolon at the end of each SQL statement."
+    },
+    {
+      "type": "heading",
+      "text": "Some of The Most Important SQL Commands"
+    },
+    {
+      "type": "other",
+      "text": "SELECT - extracts data from a database\n  UPDATE - updates data in a database\n  DELETE - deletes data from a database\n  INSERT INTO - inserts new data into a database\n  CREATE DATABASE - creates a new database\n  ALTER DATABASE - modifies a database\n  CREATE TABLE - creates a new table\n  ALTER TABLE - modifies a table\n  DROP TABLE - deletes a table\n  CREATE INDEX - creates an index (search key)\n  DROP INDEX - deletes an index"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: postgres_subject
+    restart: unless-stopped
+    environment:
+      POSTGRES_PASSWORD: postgres 
+    ports:
+      - "5432:5432"
+    volumes:
+      - D:\WorkSpace\private_cloud\Subject_db\sql:/var/lib/postgresql/data
+      - ./config/pg_hba.conf:/var/lib/postgresql/data/pg_hba.conf
+
+  sql-manager:
+    image: sql-manager
+    container_name: sql-manager
+    environment:
+      PG_HOST: "postgres"
+      APP_PORT: "5000"
+    expose:
+      - "5000" 
+    ports:
+      - "5000:5000"
+
+  exam-sql:
+    image: exam-sql
+    container_name: exam-sql 
+    ports:
+      - "8080:80"
+
+  learn-sql:
+    image: learn-sql
+    container_name: learn-sql
+    ports:
+      - "8081:80"
+
+  lear-web:
+    image: learn-web
+    container_name: learn-web
+    ports:
+      - "8082:80"

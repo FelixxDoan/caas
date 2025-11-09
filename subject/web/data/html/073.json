@@ -1,0 +1,103 @@
+{
+  "url": "https://www.w3schools.com/html/html_table_padding_spacing.asp",
+  "title": "HTML ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "HTML Table Padding & Spacing"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "HTML tables can adjust the padding inside the cells, and also the space between the cells."
+    },
+    {
+      "type": "other",
+      "text": "With Padding\n\nhello\nhello\nhello\n\n\nhello\nhello\nhello\n\n\nhello\nhello\nhello\n\n\n\nWith Spacing\n\nhello\nhello\nhello\n\n\nhello\nhello\nhello\n\n\nhello\nhello\nhello"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML Table - Cell Padding"
+    },
+    {
+      "type": "paragraph",
+      "text": "Cell padding is the space between the cell edges and the cell content."
+    },
+    {
+      "type": "paragraph",
+      "text": "By default the padding is set to 0."
+    },
+    {
+      "type": "paragraph",
+      "text": "To add padding on table cells, use the CSS padding property:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "css",
+          "code": "th, td\n{\n  padding: 15px;\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "To add padding only above the content, use the padding-top property."
+    },
+    {
+      "type": "paragraph",
+      "text": "Add padding to the other sides with the padding-bottom, padding-left,\nand padding-right properties:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "css",
+          "code": "th, td\n{\n  padding-top: 10px;\n  padding-bottom: 20px;\n  padding-left: 30px;\n  padding-right: 40px;\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML Table - Cell Spacing"
+    },
+    {
+      "type": "paragraph",
+      "text": "Cell spacing is the space between each cell."
+    },
+    {
+      "type": "paragraph",
+      "text": "By default the space is set to 2 pixels."
+    },
+    {
+      "type": "paragraph",
+      "text": "To change the space between table cells, use the CSS \nborder-spacing property on the table \nelement:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "css",
+          "code": "table\n{\n  border-spacing: \n  30px;\n}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

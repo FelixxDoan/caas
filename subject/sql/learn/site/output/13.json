@@ -1,0 +1,106 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_delete.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL DELETE Statement"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "heading",
+      "text": "The SQL DELETE Statement"
+    },
+    {
+      "type": "paragraph",
+      "text": "The DELETE statement is used to delete existing records in a table."
+    },
+    {
+      "type": "other",
+      "text": "DELETE Syntax"
+    },
+    {
+      "type": "other",
+      "text": "DELETE FROM table_name WHERE condition;"
+    },
+    {
+      "type": "other",
+      "text": "Note: Be careful when deleting records in a table! Notice the \nWHERE clause in the \nDELETE statement.\nThe WHERE clause specifies which record(s) should be deleted. If \nyou omit the WHERE clause, all records in the table will be deleted!"
+    },
+    {
+      "type": "heading",
+      "text": "Demo Database"
+    },
+    {
+      "type": "paragraph",
+      "text": "Below is a selection from the Customers table used in the examples:"
+    },
+    {
+      "type": "other",
+      "text": "CustomerID\n    CustomerName\n    ContactName\n    Address\n    City\n    PostalCode\n    Country\n  \n  \n    1\n    Alfreds Futterkiste\n    Maria Anders\n    Obere Str. 57\n    Berlin\n    12209\n    Germany\n  \n  \n    2\n    Ana Trujillo Emparedados y helados\n    Ana Trujillo\n    Avda. de la Constitución 2222\n    México D.F.\n    05021\n    Mexico\n  \n  \n    3\n    Antonio Moreno Taquería\n    Antonio Moreno\n    Mataderos 2312\n    México D.F.\n    05023\n    Mexico\n  \n  \n    4\n    Around the Horn\n    Thomas Hardy\n    120 Hanover Sq.\n    London\n    WA1 1DP\n    UK\n  \n  \n    5\n    Berglunds snabbköp\n    Christina Berglund\n    Berguvsvägen 8\n    Luleå\n    S-958 22\n    Sweden"
+    },
+    {
+      "type": "heading",
+      "text": "SQL DELETE Example"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement deletes the customer \"Alfreds Futterkiste\" from \nthe \"Customers\" table:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n DELETE FROM Customers\n WHERE CustomerName='Alfreds Futterkiste';"
+    },
+    {
+      "type": "paragraph",
+      "text": "The \"Customers\" table will now look like this:"
+    },
+    {
+      "type": "other",
+      "text": "CustomerID\n    CustomerName\n    ContactName\n    Address\n    City\n    PostalCode\n    Country\n  \n  \n    2\n    Ana Trujillo Emparedados y helados\n    Ana Trujillo\n    Avda. de la Constitución 2222\n    México D.F.\n    05021\n    Mexico\n  \n  \n    3\n    Antonio Moreno Taquería\n    Antonio Moreno\n    Mataderos 2312\n    México D.F.\n    05023\n    Mexico\n  \n  \n    4\n    Around the Horn\n    Thomas Hardy\n    120 Hanover Sq.\n    London\n    WA1 1DP\n    UK\n  \n  \n    5\n    Berglunds snabbköp\n    Christina Berglund\n    Berguvsvägen 8\n    Luleå\n    S-958 22\n    Sweden"
+    },
+    {
+      "type": "heading",
+      "text": "Delete All Records"
+    },
+    {
+      "type": "paragraph",
+      "text": "It is possible to delete all rows in a table without deleting the table. This \nmeans that the table structure, attributes, and indexes will be intact:"
+    },
+    {
+      "type": "other",
+      "text": "DELETE FROM table_name;"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement deletes all rows in the \"Customers\" table, without deleting the table:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n  DELETE FROM Customers;"
+    },
+    {
+      "type": "heading",
+      "text": "Delete a Table"
+    },
+    {
+      "type": "paragraph",
+      "text": "To delete the table completely, use the DROP TABLE statement:"
+    },
+    {
+      "type": "other",
+      "text": "Example\nRemove the Customers table:\n\n  DROP TABLE Customers;"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

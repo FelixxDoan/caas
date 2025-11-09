@@ -1,0 +1,83 @@
+{
+  "url": "https://www.w3schools.com/js/js_htmldom_collections.asp",
+  "title": "JavaScript H",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript HTML DOM Collections"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The HTMLCollection Object"
+    },
+    {
+      "type": "paragraph",
+      "text": "The getElementsByTagName() method returns an HTMLCollection object."
+    },
+    {
+      "type": "paragraph",
+      "text": "An HTMLCollection object is \nan array-like list (collection) of HTML elements."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following code selects all <p> elements in a document:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const myCollection = document.getElementsByTagName(\"p\");"
+        },
+        {
+          "language": "unknown",
+          "code": "myCollection[1]"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Note: The index starts at 0."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML HTMLCollection Length"
+    },
+    {
+      "type": "paragraph",
+      "text": "The length property defines the number of elements in an HTMLCollection:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "myCollection.length"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The length property is useful when you want to loop through the elements in a \ncollection:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const myCollection = document.getElementsByTagName(\"p\");\nfor (let i = 0; i < myCollection.length; i++) {\n  myCollection[i].style.color = \"red\";\n}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "An HTMLCollection is NOT an array!\n  An HTMLCollection may look \nlike an array, but it is not.\n  You can loop through the list and refer to \nthe elements with a number (just like an array).\n  However, you cannot use array methods like valueOf(), pop(), push(), \nor join() on an HTMLCollection."
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "url": "https://www.w3schools.com/html/html_links_bookmarks.asp",
+  "title": "HTML ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "HTML Links - Create Bookmarks"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "HTML links can be used to create bookmarks, so that readers can \njump to specific parts of a web page."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Create a Bookmark in HTML"
+    },
+    {
+      "type": "paragraph",
+      "text": "Bookmarks can be useful if a web page is very long."
+    },
+    {
+      "type": "paragraph",
+      "text": "To create a bookmark - first create the bookmark, then add a link \nto it."
+    },
+    {
+      "type": "paragraph",
+      "text": "When the link is clicked, the page will scroll down or up to the location with the \nbookmark."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Example"
+    },
+    {
+      "type": "paragraph",
+      "text": "First, use the id attribute to create a \nbookmark:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<h2 id=\"C4\">Chapter 4</h2>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Then, add a link to the bookmark (\"Jump to Chapter 4\"), from within the same page:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<a href=\"#C4\">Jump to Chapter 4</a>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "You can also add a link to a bookmark on another page:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<a href=\"html_demo.html#C4\">Jump to Chapter 4</a>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Chapter Summary"
+    },
+    {
+      "type": "other",
+      "text": "Use the id attribute (id=\"value\") to define bookmarks in a page\n  Use the href attribute (href=\"#value\") to link to the bookmark"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML Link Tags"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Tag",
+          "Description"
+        ],
+        [
+          "<a>",
+          "Defines a hyperlink"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "For a complete list of all available HTML tags, visit our HTML Tag Reference."
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Use the id attribute (id=\"value\") to define bookmarks in a page",
+        "Use the href attribute (href=\"#value\") to link to the bookmark"
+      ]
+    }
+  ]
+}

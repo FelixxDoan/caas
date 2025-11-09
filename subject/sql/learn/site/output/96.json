@@ -1,0 +1,126 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_ref_drop_constraint.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL DROP CONSTRAINT Keyword"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "text": "DROP CONSTRAINT"
+    },
+    {
+      "type": "paragraph",
+      "text": "The DROP CONSTRAINT command is used to delete \na UNIQUE, PRIMARY KEY, FOREIGN KEY, or CHECK constraint."
+    },
+    {
+      "type": "heading",
+      "text": "DROP a UNIQUE Constraint"
+    },
+    {
+      "type": "paragraph",
+      "text": "To drop a UNIQUE constraint, use the following SQL:"
+    },
+    {
+      "type": "paragraph",
+      "text": "SQL Server / Oracle / MS Access:"
+    },
+    {
+      "type": "other",
+      "text": "ALTER TABLE Persons\nDROP CONSTRAINT UC_Person;"
+    },
+    {
+      "type": "paragraph",
+      "text": "MySQL:"
+    },
+    {
+      "type": "other",
+      "text": "ALTER TABLE Persons\nDROP INDEX UC_Person;"
+    },
+    {
+      "type": "heading",
+      "text": "DROP a PRIMARY KEY Constraint"
+    },
+    {
+      "type": "paragraph",
+      "text": "To drop a PRIMARY KEY constraint, use the following SQL:"
+    },
+    {
+      "type": "paragraph",
+      "text": "SQL Server / Oracle / MS Access:"
+    },
+    {
+      "type": "other",
+      "text": "ALTER TABLE Persons\nDROP CONSTRAINT PK_Person;"
+    },
+    {
+      "type": "paragraph",
+      "text": "MySQL:"
+    },
+    {
+      "type": "other",
+      "text": "ALTER TABLE Persons\nDROP PRIMARY KEY;"
+    },
+    {
+      "type": "heading",
+      "text": "DROP a FOREIGN KEY Constraint"
+    },
+    {
+      "type": "paragraph",
+      "text": "To drop a FOREIGN KEY constraint, use the following SQL:"
+    },
+    {
+      "type": "paragraph",
+      "text": "SQL Server / Oracle / MS Access:"
+    },
+    {
+      "type": "other",
+      "text": "ALTER TABLE Orders\nDROP CONSTRAINT FK_PersonOrder;"
+    },
+    {
+      "type": "paragraph",
+      "text": "MySQL:"
+    },
+    {
+      "type": "other",
+      "text": "ALTER TABLE Orders\nDROP FOREIGN KEY FK_PersonOrder;"
+    },
+    {
+      "type": "heading",
+      "text": "DROP a CHECK Constraint"
+    },
+    {
+      "type": "paragraph",
+      "text": "To drop a CHECK constraint, use the following SQL:"
+    },
+    {
+      "type": "paragraph",
+      "text": "SQL Server / Oracle / MS Access:"
+    },
+    {
+      "type": "other",
+      "text": "ALTER TABLE Persons\nDROP CONSTRAINT CHK_PersonAge;"
+    },
+    {
+      "type": "paragraph",
+      "text": "MySQL:"
+    },
+    {
+      "type": "other",
+      "text": "ALTER TABLE Persons\nDROP CHECK CHK_PersonAge;"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

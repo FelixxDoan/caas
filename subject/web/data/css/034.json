@@ -1,0 +1,65 @@
+{
+  "url": "https://www.w3schools.com/css/css_rwd_intro.asp",
+  "title": "Responsive Web Design - ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Responsive Web Design - Introduction"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What is Responsive Web Design?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Responsive web design makes your web page look good on all devices."
+    },
+    {
+      "type": "paragraph",
+      "text": "Responsive web design uses only HTML and CSS."
+    },
+    {
+      "type": "paragraph",
+      "text": "Responsive web design is not a program or a JavaScript."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Designing For The Best Experience For All Users"
+    },
+    {
+      "type": "paragraph",
+      "text": "Web pages can be viewed using many different devices: desktops, tablets, and phones.\nYour web page should look good, and be easy to use, regardless of the device."
+    },
+    {
+      "type": "paragraph",
+      "text": "Web pages should not leave out information to fit smaller devices, but rather adapt its content to fit any device:"
+    },
+    {
+      "type": "other",
+      "text": "Desktop\n  \n  \n    \n    \n    Tablet\n  \n  \n    \n    \n    Phone"
+    },
+    {
+      "type": "paragraph",
+      "text": "It is called responsive web design when you use CSS and HTML to resize, hide, shrink, enlarge, or move the content to make it look good on any screen."
+    },
+    {
+      "type": "other",
+      "text": "Try it Yourself »"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

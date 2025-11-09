@@ -1,0 +1,202 @@
+{
+  "url": "https://www.w3schools.com/js/js_function_this.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript this in Functions"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What is this?"
+    },
+    {
+      "type": "paragraph",
+      "text": "In JavaScript, the this keyword refers to an object."
+    },
+    {
+      "type": "paragraph",
+      "text": "The this keyword refers to different objects depending on how it is used:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Alone, this refers to the global object."
+        ],
+        [
+          "In a function, this refers to the global object."
+        ],
+        [
+          "In a function, in strict mode, this is undefined."
+        ],
+        [
+          "In an object method, this refers to the object."
+        ],
+        [
+          "In an event, this refers to the element that received the event."
+        ],
+        [
+          "Methods like call(), apply(),\nand bind() can refer this to any object."
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\nthis is not a variable.\nthis is a keyword.\nYou cannot change the value of this."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "this Alone"
+    },
+    {
+      "type": "paragraph",
+      "text": "When used alone, this refers to the global object."
+    },
+    {
+      "type": "paragraph",
+      "text": "Because this is in the global scope."
+    },
+    {
+      "type": "paragraph",
+      "text": "In a browser window the global object is [object Window]:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let x = this;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "In strict mode, when used alone, this also refers to the global object:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "\"use strict\";let x = this;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "this in a Function (Default)"
+    },
+    {
+      "type": "paragraph",
+      "text": "In a function,  by default, this is the global object."
+    },
+    {
+      "type": "paragraph",
+      "text": "In a browser window, the global object is [object Window]:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "function myFunction() {\n    return this;\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "this in a Function (Strict)"
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript strict mode does not allow default binding."
+    },
+    {
+      "type": "paragraph",
+      "text": "When used in a function, in strict mode, this is undefined."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "\"use strict\";function myFunction() {\n    return this;\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "this in Event Handlers"
+    },
+    {
+      "type": "paragraph",
+      "text": "In HTML event handlers, this refers to the HTML element that received the \nevent:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<button onclick=\"this.style.display='none'\">  Click to \n  Remove Me!</button>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "This Precedence"
+    },
+    {
+      "type": "paragraph",
+      "text": "Use the following precedence of order to determine which object\nthis refers to:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [],
+        [
+          "Order",
+          "Object",
+          "Because"
+        ],
+        [
+          "1",
+          "bind()",
+          "this is in a function being called using bind()"
+        ],
+        [
+          "2",
+          "apply()",
+          "this is in a function being called using apply()"
+        ],
+        [
+          "2",
+          "call()",
+          "this is in a function being called using call()"
+        ],
+        [
+          "3",
+          "Object method",
+          "this is in an object function (method)"
+        ],
+        [
+          "4",
+          "Global scope",
+          "this is in a function in the global scope"
+        ]
+      ]
+    }
+  ]
+}

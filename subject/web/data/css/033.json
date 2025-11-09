@@ -1,0 +1,463 @@
+{
+  "url": "https://www.w3schools.com/css/css_grid_container.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Grid Container"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "1\n  2\n  3  \n  4\n  5\n  6  \n  7\n  8"
+    },
+    {
+      "type": "paragraph",
+      "text": "Try it Yourself »"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Grid Container"
+    },
+    {
+      "type": "paragraph",
+      "text": "A grid container contains one or more grid items arranged in columns and rows."
+    },
+    {
+      "type": "paragraph",
+      "text": "Direct child elements(s) of the grid container automatically becomes grid items."
+    },
+    {
+      "type": "paragraph",
+      "text": "An element becomes a grid container when its display property \nis set to grid or inline-grid."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Grid Tracks"
+    },
+    {
+      "type": "paragraph",
+      "text": "The rows and columns of a grid is defined with the grid-template-rows \nand the grid-template-columns properties (or \nthe shorthand grid or grid-template \nproperties)."
+    },
+    {
+      "type": "paragraph",
+      "text": "These define the grid tracks. A grid track is the space between two adjacent grid lines."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The grid-template-columns Property"
+    },
+    {
+      "type": "paragraph",
+      "text": "The grid-template-columns property defines the \nnumber of columns in your grid layout, and it can define the width of each column."
+    },
+    {
+      "type": "paragraph",
+      "text": "The value is a space-separated-list, where each value defines the width \nof the respective column."
+    },
+    {
+      "type": "paragraph",
+      "text": "If you want your grid layout to contain 4 columns, specify the width of the 4 columns, or \"auto\" if all columns should have the same width."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".grid-container {\n    display: grid;  \n  grid-template-columns: auto auto auto auto;}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The grid-template-columns property can also be used to specify the \nexact size (width) of the columns, or a mix of fixed size and auto."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".grid-container {\n    display: grid;  \n  grid-template-columns: 80px 200px auto 40px;}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note: If you have more than 4 grid items in a 4 columns grid, the grid will automatically \nadd a new row to put the items in."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Cell Sizing with the fr Unit"
+    },
+    {
+      "type": "paragraph",
+      "text": "The fr unit can be used when defining grids, \nlike any other CSS length such as %, px or em."
+    },
+    {
+      "type": "paragraph",
+      "text": "The fr unit stands for \"fraction\". \nThis unit automatically divides the available space into fractions."
+    },
+    {
+      "type": "paragraph",
+      "text": "Example: 1fr will take 1 fraction of the available space, while 2fr will take \n2 fractions of the available space."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".grid-container {\n    display: grid;  \n  grid-template-columns: 1fr 1fr 1fr 1fr;}"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".grid-container {\n    display: grid;  \n  grid-template-columns: 1fr 2fr 1fr 1fr;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The grid-template-rows Property"
+    },
+    {
+      "type": "paragraph",
+      "text": "The grid-template-rows property defines the height of each row."
+    },
+    {
+      "type": "paragraph",
+      "text": "The value is a space-separated-list, where each value defines the height of the respective row:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".grid-container {\n    display: grid;  \n  grid-template-rows: 80px 200px;}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Notice that the first row in the grid above is 80px high and the second row is 200px high. \nThe next rows will use auto as default."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The justify-content Property"
+    },
+    {
+      "type": "paragraph",
+      "text": "The justify-content property is used to \nalign the grid items when they do not use all available space on the main-axis (horizontally)."
+    },
+    {
+      "type": "paragraph",
+      "text": "The justify-content property can have one of the following values:"
+    },
+    {
+      "type": "other",
+      "text": "space-evenly\n  space-around\n  space-between\n  center \n  start\n  end"
+    },
+    {
+      "type": "other",
+      "text": "Note: The grid item's total width has to be less than the container's width for the justify-content property to have any effect."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".grid-container {\n    display: grid;  \n  justify-content: space-evenly;}"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".grid-container {\n    display: grid;  \n  justify-content: space-around;}"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".grid-container {\n    display: grid;  \n  justify-content: space-between;}"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".grid-container {\n    display: grid;  \n  justify-content: center;}"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".grid-container {\n    display: grid;  \n  justify-content: start;}"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".grid-container {\n    display: grid;  \n  justify-content: end;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The align-content Property"
+    },
+    {
+      "type": "paragraph",
+      "text": "The align-content property is used to \nalign the grid items when they do not use all available space on the cross-axis (vertically)."
+    },
+    {
+      "type": "paragraph",
+      "text": "The align-content property can have one of the following values:"
+    },
+    {
+      "type": "other",
+      "text": "space-evenly\n  space-around\n  space-between\n  center \n  start\n  end"
+    },
+    {
+      "type": "other",
+      "text": "Note: The grid item's total height has to be less than the container's height for the align-content property to have any effect."
+    },
+    {
+      "type": "paragraph",
+      "text": "In the following examples we use a 400 pixels high container, to better demonstrate the align-content property."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".grid-container {\n    display: grid;  height: 400px;  \n  align-content: center;}"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".grid-container {\n    display: grid;  height: 400px;  \n  align-content: space-evenly;}"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".grid-container {\n    display: grid;  height: 400px;  \n  align-content: space-around;}"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".grid-container {\n    display: grid;  height: 400px;  \n  align-content: space-between;}"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".grid-container {\n    display: grid;  height: 400px;  \n  align-content: start;}"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".grid-container {\n    display: grid;  height: 400px;  \n  align-content: end;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The place-content Property"
+    },
+    {
+      "type": "paragraph",
+      "text": "The place-content property is a shorthand \nproperty for the align-content and the \njustify-content properties."
+    },
+    {
+      "type": "paragraph",
+      "text": "If the place-content property has two \nvalues:"
+    },
+    {
+      "type": "other",
+      "text": "place-content: start center; - the align-content \n  value is 'start' and \njustify-content value is 'center'"
+    },
+    {
+      "type": "paragraph",
+      "text": "If the place-content property has one value:"
+    },
+    {
+      "type": "other",
+      "text": "place-content: end; - both align-content \n  and \njustify-content values are 'end'"
+    },
+    {
+      "type": "other",
+      "text": "Note: The grid item's total height and width has to be less than the container's height \nand width for the place-content property to have any effect."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".grid-container {\n    display: grid;  height: 400px;  \n  place-content: center;}"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".grid-container {\n    display: grid;  height: 400px;  \n  place-content: end space-between;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CSS Grid Container Properties"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Property",
+          "Description"
+        ],
+        [
+          "align-content",
+          "Vertically aligns the whole grid inside the container (when total grid \n    size is smaller than container)"
+        ],
+        [
+          "align-items",
+          "Aligns content in a grid item along the column axis"
+        ],
+        [
+          "display",
+          "Specifies the display behavior (the type of rendering box) of an element"
+        ],
+        [
+          "column-gap",
+          "Specifies the gap between the columns"
+        ],
+        [
+          "gap",
+          "A shorthand property for the row-gap and the column-gap properties"
+        ],
+        [
+          "grid",
+          "A shorthand property for the grid-template-rows, \n    grid-template-columns, grid-template-areas, grid-auto-rows, \n    grid-auto-columns, and the grid-auto-flow properties"
+        ],
+        [
+          "grid-auto-columns",
+          "Specifies a default column size"
+        ],
+        [
+          "grid-auto-flow",
+          "Specifies how auto-placed items are inserted in the grid"
+        ],
+        [
+          "grid-auto-rows",
+          "Specifies a default row size"
+        ],
+        [
+          "grid-template",
+          "A shorthand property for the grid-template-rows, grid-template-columns \n    and grid-areas properties"
+        ],
+        [
+          "grid-template-areas",
+          "Specifies how to display columns and rows, using named grid items"
+        ],
+        [
+          "grid-template-columns",
+          "Specifies the size of the columns, and how many columns in a grid layout"
+        ],
+        [
+          "grid-template-rows",
+          "Specifies the size of the rows in a grid layout"
+        ],
+        [
+          "justify-content",
+          "Horizontally aligns the whole grid inside the container (when total grid \n    size is smaller than container)"
+        ],
+        [
+          "place-content",
+          "A shorthand property for the align-content and the \n    justify-content properties"
+        ],
+        [
+          "row-gap",
+          "Specifies the gap between the grid rows"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

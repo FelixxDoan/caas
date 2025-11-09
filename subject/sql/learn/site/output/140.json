@@ -1,0 +1,50 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_ref_update.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL UPDATE Keyword"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "text": "UPDATE"
+    },
+    {
+      "type": "paragraph",
+      "text": "The UPDATE command is used to update existing rows in a table."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement updates the first customer (CustomerID = 1) with a new contact person and \na new city."
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n UPDATE Customers\n SET ContactName = 'Alfred Schmidt', City= 'Frankfurt'\n WHERE CustomerID = 1;"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement will \nupdate the contactname to \"Juan\" for all records where country is \"Mexico\":"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\nUPDATE Customers\nSET ContactName='Juan'\nWHERE Country='Mexico';"
+    },
+    {
+      "type": "other",
+      "text": "Note: Be careful when updating records in a table! Notice the WHERE clause in the \nUPDATE statement.\nThe WHERE clause specifies which record(s) that should be updated. If \nyou omit the WHERE clause, all records in the table will be updated!"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

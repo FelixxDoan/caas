@@ -1,0 +1,92 @@
+{
+  "url": "https://www.w3schools.com/css/css_font_shorthand.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Font Property"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The CSS Font Property"
+    },
+    {
+      "type": "paragraph",
+      "text": "To shorten the code, it is also possible to specify all the individual font properties in one property."
+    },
+    {
+      "type": "paragraph",
+      "text": "The font property is a shorthand property for:"
+    },
+    {
+      "type": "other",
+      "text": "font-style\nfont-variant\nfont-weight\nfont-size/line-height\nfont-family"
+    },
+    {
+      "type": "paragraph",
+      "text": "Note: The font-size and font-family\nvalues are required. If one of the other values is missing, their default value are used."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "p.a\n {\n     \n font: 20px Arial, sans-serif;\n }\n \n p.b\n {\n     \n font: italic small-caps bold 12px/30px Georgia, serif;\n }"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "All CSS Font Properties"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Property",
+          "Description"
+        ],
+        [
+          "font",
+          "Sets all the font properties in one declaration"
+        ],
+        [
+          "font-family",
+          "Specifies the font family for text"
+        ],
+        [
+          "font-size",
+          "Specifies the font size of text"
+        ],
+        [
+          "font-style",
+          "Specifies the font style for text"
+        ],
+        [
+          "font-variant",
+          "Specifies whether or not a text should be displayed in a small-caps font"
+        ],
+        [
+          "font-weight",
+          "Specifies the weight of a font"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

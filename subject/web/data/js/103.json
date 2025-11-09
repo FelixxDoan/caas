@@ -1,0 +1,345 @@
+{
+  "url": "https://www.w3schools.com/js/js_regexp_assertions.asp",
+  "title": "Regular Expression Assertions",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Regular Expression Assertions"
+    },
+    {
+      "type": "other",
+      "text": "RegExp Assertions\nAssertions matches Boundaries and Lookarounds:\nString Boundaries and Word Boundaries.\nLookarounds: Lookaheads and Lookbehinds.\n\n// Match beginning of string\nconst pattern = /^W3Schools/;\n\n// Match end of string\nconst pattern = /W3Schools$/;"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Regex Assertions"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Revised July 2025"
+    },
+    {
+      "type": "other",
+      "text": "SyntaxNameDescription\n^String boundaryMatches the beginning of a string\n$String boundaryMatches the end of a string\n\\bWord boundaryMatches the beginning or end of a word\n\\BWord boundaryMatches NOT the beginning or end of a word\n(?=...)LookaheadMatches the subsequent string\n(?!...)LookaheadMatches NOT the subsequent string\n(?<=...)LookbehindMatches the previous string\n(?<!...)LookbehindMatches NOT the previous string"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "RegExp ^ Metacharacter"
+    },
+    {
+      "type": "paragraph",
+      "text": "The ^ metacharacter matches the beginning of a string."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const pattern = /^W3Schools/;\nlet text = \"W3Schools Tutorial\";\n\nlet result = pattern.test(text); // true"
+        },
+        {
+          "language": "unknown",
+          "code": "const pattern = /^W3Schools/;\nlet text = \"Hello W3Schools\";\n\nlet result = pattern.test(text); // false"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "RegExp $ Metacharacter"
+    },
+    {
+      "type": "paragraph",
+      "text": "The $ metacharacter matches the end of a string."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const pattern = /W3Schools$/;\nlet text = \"Hello W3Schools\";\n\nlet result = pattern.test(text); // true"
+        },
+        {
+          "language": "unknown",
+          "code": "const pattern = /W3Schools$/;\nlet text = \"W3Schools tutorial\";\n\nlet result = pattern.test(text); // false"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The \\b Metacharacter"
+    },
+    {
+      "type": "paragraph",
+      "text": "The \\b metacharacter matches the beginning of a word or the end of a word."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"HELLO, LOOK AT YOU!\";\n \nlet result = text.search(/\\bLO/);"
+        },
+        {
+          "language": "unknown",
+          "code": "let text = \"HELLO, LOOK AT YOU!\";\n \nlet result = text.search(/LO\\b/);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "RegExp Lookahead x(?=y)"
+    },
+    {
+      "type": "paragraph",
+      "text": "x(?=y) matches \"x\" if \"x\" is followed by \"y\"."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"W3Schools Tutorials\";\nlet pattern = /W3Schools(?= Tutorials)/;\n\nlet result = pattern.test(text);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Negative Lookahead x(?!y)"
+    },
+    {
+      "type": "paragraph",
+      "text": "x(?!y) matches \"x\" if \"x\" is NOT followed by \"y\"."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"Hello W3Schools\";\n\nlet pattern = /W3Schools(?!Hello )/;\nlet result = pattern.test(text);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "RegExp Lookbehind (?<=y)x"
+    },
+    {
+      "type": "paragraph",
+      "text": "(?<=y)x matches \"x\" if \"x\" is preceded by \"y\"."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"Hello W3Schools\";\nlet pattern = /(?<=Hello )W3Schools/;\n\nlet result = pattern.test(text);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Negative Lookbehind (?<!y)x"
+    },
+    {
+      "type": "paragraph",
+      "text": "(?<!y)x matches \"x\" only if \"x\" is NOT preceded by \"y\"."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"Hello W3Schools\";\n\nlet pattern = /(?<!Hello ) W3Schools/;\nlet result = pattern.test(text);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Regular Expression Groups"
+    },
+    {
+      "type": "other",
+      "text": "Char\n  Description\n\n\n  (x)\n  Matches x and saves it\n\n\n  (?<n>x)\n  Matches x and labels it n\n\n\n  (?flag:x)\n  Enables flag(s) for x\n\n\n  (?flag-flag:x)\n  Disables flag(s) for x"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "RegExp Capturing Groups (x)"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"Haha, haha, haha.\";\nconst pattern = /(haha)+/;\n\nlet result = text.match(pattern);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Explained"
+    },
+    {
+      "type": "other",
+      "text": "(haha) captures a group of characters\n(haha)+ matches zero or more occurences of the group\ntext.match() returns an array of results\nmatch.groups() returns an array of matches"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Named Capturing Groups (?<n>)"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const text = \"Name: John Doe\";\n\n// Using named capturing groups\nconst regex = /(?<firstName>\\w+) (?<lastName>\\w+)/;\nconst match = text.match(regex);\n\nlet fName = match.groups.firstName;\nlet lName = match.groups.lastName;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Explained"
+    },
+    {
+      "type": "other",
+      "text": "(?<firstName>\\w+) captures a word and labels it firstName\n(?<lastName>\\w+) does the same for lastName\ntext.match() returns an array with a groups property\nmatch.groups() returns an object:\n{firstName:\"John\", lastName:\"Doe\" }"
+    },
+    {
+      "type": "paragraph",
+      "text": "When using capturing groups, the String method match()\nand the RegExp method exec(), return a match object with a groups property.\nThis property holds the names and the values of the groups."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "RegExp Group Modifiers (?flag)"
+    },
+    {
+      "type": "paragraph",
+      "text": "The (?flag) syntax is a group modifier (inline flag modifier)."
+    },
+    {
+      "type": "paragraph",
+      "text": "It allows for modifying flags in a part of a pattern, rather than to the entire pattern."
+    },
+    {
+      "type": "paragraph",
+      "text": "(?flags:pattern) enables the flags only for the pattern in the group."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let text = \"W3Schools tutorials.\";\nconst pattern = /(?i:WShools) tutorials/;\n\n// Returns true:\nlet result = pattern.test(text);"
+        },
+        {
+          "language": "unknown",
+          "code": "let text = \"W3Schools Tutorials.\";\nconst pattern = /(?i:W3Sshools) tutorials/;\n\n// Returns false:\nlet result = pattern.test(text);"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "See Also:\nJavaScript RegExp Tutorial\nJavaScript RegExp Flags\nJavaScript RegExp Character Classes\nJavaScript RegExp Meta Characters\nJavaScript RegExp Quantifiers\nJavaScript RegExp Patterns\nJavaScript RegExp Objects\nJavaScript RegExp Methods"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Regular Expression Methods"
+    },
+    {
+      "type": "paragraph",
+      "text": "Regular Expression Search and Replace can be done with different methods."
+    },
+    {
+      "type": "paragraph",
+      "text": "These are the most common:"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "String Methods"
+    },
+    {
+      "type": "table",
+      "data": [
+        [],
+        [
+          "Method",
+          "Description"
+        ],
+        [
+          "match(regex)",
+          "Returns an Array of results"
+        ],
+        [
+          "matchAll(regex)",
+          "Returns an Iterator of results"
+        ],
+        [
+          "replace(regex)",
+          "Returns a new String"
+        ],
+        [
+          "replaceAll(regex)",
+          "Returns a new String"
+        ],
+        [
+          "search(regex)",
+          "Returns the index of the first match"
+        ],
+        [
+          "split(regex)",
+          "Returns an Array of results"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "RegExp Methods"
+    },
+    {
+      "type": "table",
+      "data": [
+        [],
+        [
+          "Method",
+          "Description"
+        ],
+        [
+          "regex.exec()",
+          "Returns an Iterator of results"
+        ],
+        [
+          "regex.test()",
+          "Returns true or false"
+        ]
+      ]
+    }
+  ]
+}

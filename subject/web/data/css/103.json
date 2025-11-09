@@ -1,0 +1,113 @@
+{
+  "url": "https://www.w3schools.com/css/css_boxmodel.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Box Model"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "All HTML elements can be considered as boxes."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The CSS Box Model"
+    },
+    {
+      "type": "paragraph",
+      "text": "In CSS, the term \"box model\" is used when talking about design and layout."
+    },
+    {
+      "type": "paragraph",
+      "text": "The CSS box model is essentially a box that wraps around every HTML element. \nIt consists of: content, padding, borders and margins. The image below illustrates the box model:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Explanation of the different parts:"
+    },
+    {
+      "type": "other",
+      "text": "Content - The content of the box, where text and images appear\nPadding - Clears an area around the content. The padding is transparent\nBorder - A border that goes around the padding and content\nMargin - Clears an area outside the border. The margin is \ntransparent"
+    },
+    {
+      "type": "paragraph",
+      "text": "The box model allows us to add a border around elements, and to define space \nbetween elements."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "div {  width: 300px;  border: 15px solid \ngreen;  \npadding: 50px;  \nmargin: 20px;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Width and Height of an Element"
+    },
+    {
+      "type": "paragraph",
+      "text": "In order to set the width and height of an element correctly in all browsers, you need to know how the box model works."
+    },
+    {
+      "type": "other",
+      "text": "Important: When you set the width and height properties of an \nelement with CSS, you just set the width and height of the content area. To \ncalculate the total width and height of an element, you must also include the padding and borders."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "div {\n  width: 320px;\n  height: 50px;\n  padding: 10px;\n  border: 5px solid gray;\n  margin: 0;\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Here is the calculation:"
+    },
+    {
+      "type": "other",
+      "text": "320px (width of content area)\n+ 20px (left padding + right padding)\n+ 10px (left border + right border)\n= 350px (total width)\n\n  50px (height of content area)\n+ 20px (top padding + bottom padding)\n+ 10px (top border + bottom border)\n= 80px (total height)"
+    },
+    {
+      "type": "paragraph",
+      "text": "The total width of an element should be calculated like this:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Total element width = width + left padding + right padding + left border + right border"
+    },
+    {
+      "type": "paragraph",
+      "text": "The total height of an element should be calculated like this:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Total element height = height + top padding + bottom padding + top border + bottom border"
+    },
+    {
+      "type": "other",
+      "text": "Note: The margin property also affects the total space that the box \n  will take up on the page, but the margin is not included in the actual size of \n  the box. The box's total width and height stops at the border."
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

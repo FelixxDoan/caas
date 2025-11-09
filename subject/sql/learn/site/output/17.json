@@ -1,0 +1,126 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_count.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL COUNT() Function"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "heading",
+      "text": "The SQL COUNT() Function"
+    },
+    {
+      "type": "paragraph",
+      "text": "The COUNT() function returns the number of \nrows that matches a specified criterion."
+    },
+    {
+      "type": "other",
+      "text": "Example\nFind the total number of rows in the Products \ntable:\n\n  SELECT COUNT(*)FROM Products;\n\n\n  Try it Yourself »"
+    },
+    {
+      "type": "heading",
+      "text": "Syntax"
+    },
+    {
+      "type": "other",
+      "text": "SELECT COUNT(column_name)\n  FROM table_name\n  WHERE condition;"
+    },
+    {
+      "type": "heading",
+      "text": "Demo Database"
+    },
+    {
+      "type": "paragraph",
+      "text": "Below is a selection from the Products table used in the examples:"
+    },
+    {
+      "type": "other",
+      "text": "ProductID\nProductName\nSupplierID\nCategoryID\nUnit\nPrice\n\n\n1\nChais\n1\n1\n10 boxes x 20 bags\n18\n\n2\nChang\n1\n1\n24 - 12 oz bottles\n19\n\n3\nAniseed Syrup\n1\n2\n12 - 550 ml bottles\n10\n\n4\nChef Anton's Cajun Seasoning\n2\n2\n48 - 6 oz jars\n22\n\n5\nChef Anton's Gumbo Mix\n2\n2\n36 boxes\n21.35"
+    },
+    {
+      "type": "heading",
+      "text": "Specify Column"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can specify a column name instead of the asterix symbol (*)."
+    },
+    {
+      "type": "paragraph",
+      "text": "If you specify a column name instead of (*), NULL values will not be counted."
+    },
+    {
+      "type": "other",
+      "text": "Example\nFind the number of products where the ProductName is not null:\n\n  SELECT COUNT(ProductName)FROM Products;\n\n\n  Try it Yourself »"
+    },
+    {
+      "type": "heading",
+      "text": "Add a WHERE Clause"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can add a WHERE clause to specify conditions:"
+    },
+    {
+      "type": "other",
+      "text": "Example\nFind the number of products where Price is higher than 20:\n\n  SELECT COUNT(ProductID)FROM ProductsWHERE Price > 20;\n\n\n  Try it Yourself »"
+    },
+    {
+      "type": "heading",
+      "text": "Ignore Duplicates"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can ignore duplicates by using the DISTINCT keyword in the \nCOUNT() function."
+    },
+    {
+      "type": "paragraph",
+      "text": "If DISTINCT is specified, rows with the same value for the specified column will be counted as one."
+    },
+    {
+      "type": "other",
+      "text": "Example\nHow many different prices are there in the Products table:\n\n  SELECT COUNT(DISTINCT Price)FROM Products;\n\n\n  Try it Yourself »"
+    },
+    {
+      "type": "heading",
+      "text": "Use an Alias"
+    },
+    {
+      "type": "paragraph",
+      "text": "Give the counted column a name by using the AS keyword."
+    },
+    {
+      "type": "other",
+      "text": "Example\nName the column \"Number of records\":\n\n  SELECT COUNT(*) AS [Number of records]FROM Products;\n\n\n  Try it Yourself »"
+    },
+    {
+      "type": "heading",
+      "text": "Use COUNT() with GROUP BY"
+    },
+    {
+      "type": "paragraph",
+      "text": "Here we use the COUNT() function and the\nGROUP BY clause, to return the number of \nrecords \nfor each category in the Products table:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n  SELECT COUNT(*) AS [Number of records], CategoryIDFROM ProductsGROUP \n  BY CategoryID;\n\n\n  Try it Yourself »"
+    },
+    {
+      "type": "paragraph",
+      "text": "You will learn more about the\nGROUP BY clause later in this tutorial."
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

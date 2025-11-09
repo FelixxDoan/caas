@@ -1,0 +1,290 @@
+{
+  "url": "https://www.w3schools.com/css/css_form.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Forms"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "The look of an HTML form can be greatly improved with CSS:"
+    },
+    {
+      "type": "other",
+      "text": "First Name\n  \n\n  Last Name\n  \n\n  Country\n  \n    Australia\n    Canada\n    USA\n  \n  \nTry it Yourself »"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Styling Input Fields"
+    },
+    {
+      "type": "paragraph",
+      "text": "Use the width property to determine the width of the input field:"
+    },
+    {
+      "type": "other",
+      "text": "First Name"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "input\n{\n  width: 100%;\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The example above applies to all <input> elements. If you only want to \nstyle a specific input type, you can use attribute selectors:"
+    },
+    {
+      "type": "other",
+      "text": "input[type=text] - will only select text fields\ninput[type=password] - will only select password fields\ninput[type=number] - will only select number fields\netc.."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Padded Inputs"
+    },
+    {
+      "type": "paragraph",
+      "text": "Use the padding property to add space inside the text field."
+    },
+    {
+      "type": "paragraph",
+      "text": "Tip: When you have many inputs after each other, you might \nalso want to add some margin, to add more space \noutside of them:"
+    },
+    {
+      "type": "other",
+      "text": "First Name"
+    },
+    {
+      "type": "other",
+      "text": "Last Name"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "input[type=text]\n{\n    width: 100%;  padding: 12px 20px;  margin: 8px 0;  \nbox-sizing: border-box;\n}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note that we have set the box-sizing property to \nborder-box. This makes sure that the padding and eventually borders are included in the \ntotal width and height of the elements. Read more about the box-sizing property in our CSS Box Sizing chapter."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Bordered Inputs"
+    },
+    {
+      "type": "paragraph",
+      "text": "Use the border property to change the border size and color, and \nuse the border-radius property to add rounded corners:"
+    },
+    {
+      "type": "other",
+      "text": "First Name"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "input[type=text]\n{  border: 2px solid red;  \nborder-radius: 4px;\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "If you only want a bottom border, use the border-bottom property:"
+    },
+    {
+      "type": "other",
+      "text": "First Name"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "input[type=text]\n{  border: none;  \nborder-bottom: 2px solid red;\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Colored Inputs"
+    },
+    {
+      "type": "paragraph",
+      "text": "Use the background-color property to add a background color to the input, and \nthe color property to change the text color:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "input[type=text]\n{  background-color: #3CBC8D;  color: white;\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Focused Inputs"
+    },
+    {
+      "type": "paragraph",
+      "text": "By default, some browsers will add a blue outline around the input when it gets \nfocus (clicked on). You can remove this behavior by adding outline: none; to the input."
+    },
+    {
+      "type": "paragraph",
+      "text": "Use the :focus selector to do something with the input field when it gets focus:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\ninput[type=text]:focus\n{\n  background-color: lightblue;\n}\nTry it Yourself »\n\n\n\n\n\nExample\n\ninput[type=text]:focus\n{\n  border: 3px solid #555;\n}\nTry it Yourself »"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Input with icon/image"
+    },
+    {
+      "type": "paragraph",
+      "text": "If you want an icon inside the input, use the background-image property and \nposition it with the background-position property. Also notice that we \nadd a \nlarge left padding to reserve the space of the icon:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "input[type=text]\n{  background-color: white;  background-image: url('searchicon.png');  \nbackground-position: 10px 10px;   background-repeat: \nno-repeat;  \npadding-left: 40px;\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Animated Search Input"
+    },
+    {
+      "type": "paragraph",
+      "text": "In this example we use the CSS transition property to animate \nthe width of the search input when it gets focus. You will learn more about the \ntransition property later, in our CSS Transitions chapter."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "input[type=text] {  transition: width 0.4s ease-in-out;}input[type=text]:focus {\n    \nwidth: 100%;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Styling Textareas"
+    },
+    {
+      "type": "paragraph",
+      "text": "Tip: Use the resize property to prevent textareas from being resized (disable the \"grabber\" in the bottom right corner):"
+    },
+    {
+      "type": "other",
+      "text": "Some text..."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "textarea\n{  width: 100%;  height: 150px;  padding: 12px 20px;  \nbox-sizing: border-box;  border: 2px solid #ccc;  \nborder-radius: 4px;  background-color: #f8f8f8;  resize: none;\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Styling Select Menus"
+    },
+    {
+      "type": "other",
+      "text": "Australia\n    Canada\n    USA"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "select\n{  width: 100%;  padding: 16px 20px;  \nborder: none;  border-radius: 4px;  background-color: #f1f1f1;\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Styling Input Buttons"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "input[type=button], input[type=submit], input[type=reset]\n{  background-color: #04AA6D;  border: \nnone;  color: white;  padding: \n16px 32px;  text-decoration: none;  \nmargin: 4px 2px;  cursor: pointer;\n}/* Tip: use width: 100% for full-width buttons */"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "For more information about how to style buttons with CSS, read our CSS Buttons Tutorial."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Responsive Form"
+    },
+    {
+      "type": "paragraph",
+      "text": "Resize the browser window to see the effect. When the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other."
+    },
+    {
+      "type": "other",
+      "text": "Advanced: The following example uses media queries to create a responsive form. You will learn more about this in a later chapter."
+    },
+    {
+      "type": "other",
+      "text": "Try it Yourself »"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

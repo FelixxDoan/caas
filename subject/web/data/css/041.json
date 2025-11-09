@@ -1,0 +1,168 @@
+{
+  "url": "https://www.w3schools.com/css/css_accessibility.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Accessibility Styling"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CSS Accessibility Styling"
+    },
+    {
+      "type": "paragraph",
+      "text": "Good CSS styling should help all users interact with your website, including those with visual or mobility challenges."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "1. Use Visible Focus Indicators"
+    },
+    {
+      "type": "paragraph",
+      "text": "The CSS :focus pseudo-class is used to select and style the element that gets focus."
+    },
+    {
+      "type": "paragraph",
+      "text": "Always use the :focus state so that keyboard and screen reader users can see which element is active."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "a:focus,\nbutton:focus,\ninput:focus {\n  outline: 2px solid #005fcc;\n  outline-offset: 2px;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "2. Provide High Contrast"
+    },
+    {
+      "type": "paragraph",
+      "text": "Always use high contrast between text and background to ensure readability."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "body {\n  background-color: #ffffff;\n  color: #000000;}"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "body {\n  background-color: #eeeeee;\n  color: #cccccc;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "3. Avoid Styling that Hides Focus"
+    },
+    {
+      "type": "paragraph",
+      "text": "Never remove outlines without replacing them with another visible focus style."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "button:focus {\n  outline: none;}"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "button:focus {\n  outline: 2px solid blue;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "4. Use Semantic HTML + CSS"
+    },
+    {
+      "type": "paragraph",
+      "text": "Use semantic elements instead of using non-semantic tags like <div> for everything."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "nav {\n  background-color: #333333;\n  color: white;}\n\naside {\n  background-color: #333333;\n  color: white;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "5. Respect User Preferences"
+    },
+    {
+      "type": "paragraph",
+      "text": "The CSS prefers-reduced-motion media feature lets you check if\n   a user has asked to reduce motion, such as animations or transitions."
+    },
+    {
+      "type": "paragraph",
+      "text": "Some users have motion sensitivity and prefer websites with less animation.\n  You can use this media query to turn off or tone down animations when needed:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "@media (prefers-reduced-motion: reduce) {\n  * {\n    animation: none !important;\n    transition: none !important;\n  }}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "You will learn more about media queries in a later chapter."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Summary"
+    },
+    {
+      "type": "other",
+      "text": "Keep focus outlines visible\n  Maintain good color contrast\n  Use semantic HTML elements\n  Respect motion preferences"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

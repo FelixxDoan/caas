@@ -1,0 +1,102 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_in.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL IN Operator"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "text": "The SQL IN Operator"
+    },
+    {
+      "type": "paragraph",
+      "text": "The IN operator allows you to specify multiple values in a \nWHERE clause."
+    },
+    {
+      "type": "paragraph",
+      "text": "The IN operator is a shorthand for multiple \nOR conditions."
+    },
+    {
+      "type": "other",
+      "text": "Example\nReturn all customers from 'Germany', 'France', or 'UK'\n\n SELECT * FROM Customers\n  WHERE Country IN ('Germany', 'France', 'UK');\n\nTry it Yourself »"
+    },
+    {
+      "type": "heading",
+      "text": "Syntax"
+    },
+    {
+      "type": "other",
+      "text": "SELECT column_name(s)\nFROM table_name\nWHERE column_name IN (value1, value2, ...);"
+    },
+    {
+      "type": "heading",
+      "text": "Demo Database"
+    },
+    {
+      "type": "paragraph",
+      "text": "Below is a selection from the Customers table used in the examples:"
+    },
+    {
+      "type": "other",
+      "text": "CustomerID\n    CustomerName\n    ContactName\n    Address\n    City\n    PostalCode\n    Country\n  \n  \n    1\n    Alfreds Futterkiste\n    Maria Anders\n    Obere Str. 57\n    Berlin\n    12209\n    Germany\n  \n  \n    2\n    Ana Trujillo Emparedados y helados\n    Ana Trujillo\n    Avda. de la Constitución 2222\n    México D.F.\n    05021\n    Mexico\n  \n  \n    3\n    Antonio Moreno Taquería\n    Antonio Moreno\n    Mataderos 2312\n    México D.F.\n    05023\n    Mexico\n  \n  \n    4\n    Around the Horn\n    Thomas Hardy\n    120 Hanover Sq.\n    London\n    WA1 1DP\n    UK\n  \n  \n    5\n    Berglunds snabbköp\n    Christina Berglund\n    Berguvsvägen 8\n    Luleå\n    S-958 22\n    Sweden"
+    },
+    {
+      "type": "heading",
+      "text": "NOT IN"
+    },
+    {
+      "type": "paragraph",
+      "text": "By using the NOT keyword in front of the\nIN operator,\nyou return all records that are NOT any of the values in the list."
+    },
+    {
+      "type": "other",
+      "text": "Example\nReturn all customers that are NOT from 'Germany', 'France', or 'UK':\n\n SELECT * FROM Customers\n  WHERE Country NOT IN ('Germany', 'France', 'UK');\n\nTry it Yourself »"
+    },
+    {
+      "type": "heading",
+      "text": "IN (SELECT)"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can also use IN with a subquery in the WHERE clause."
+    },
+    {
+      "type": "paragraph",
+      "text": "With a subquery you can return all records from the main query\nthat are present in the result of the subquery."
+    },
+    {
+      "type": "other",
+      "text": "Example\nReturn all customers that have an order in the \nOrders table:\n\nSELECT * FROM Customers\nWHERE CustomerID IN (SELECT CustomerID FROM Orders);\n\nTry it Yourself »"
+    },
+    {
+      "type": "heading",
+      "text": "NOT IN (SELECT)"
+    },
+    {
+      "type": "paragraph",
+      "text": "The result in the example above returned 74 records,\nthat means that there are 17 customers that haven't placed any orders."
+    },
+    {
+      "type": "paragraph",
+      "text": "Let us check if that is correct, by using the NOT IN operator."
+    },
+    {
+      "type": "other",
+      "text": "Example\nReturn all customers that have NOT placed any orders in the\nOrders table:\n\nSELECT * FROM Customers\nWHERE CustomerID NOT IN (SELECT CustomerID FROM Orders);\n\nTry it Yourself »"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

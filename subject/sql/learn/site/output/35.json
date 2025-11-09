@@ -1,0 +1,82 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_exists.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL EXISTS Operator"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "heading",
+      "text": "The SQL EXISTS Operator"
+    },
+    {
+      "type": "paragraph",
+      "text": "The EXISTS operator is used to test for the existence of any record in a subquery."
+    },
+    {
+      "type": "paragraph",
+      "text": "The EXISTS operator returns TRUE if the subquery returns one or more records."
+    },
+    {
+      "type": "other",
+      "text": "EXISTS Syntax"
+    },
+    {
+      "type": "other",
+      "text": "SELECT column_name(s)\n  FROM table_name\n  WHERE \n  EXISTS(SELECT column_name FROM table_name WHERE\n  condition);"
+    },
+    {
+      "type": "heading",
+      "text": "Demo Database"
+    },
+    {
+      "type": "paragraph",
+      "text": "Below is a selection from the \"Products\" table in the Northwind sample database:"
+    },
+    {
+      "type": "other",
+      "text": "ProductID\n    ProductName\n    SupplierID\n    CategoryID\n    Unit\n    Price\n  \n  \n    1\n    Chais\n    1\n    1\n    10 boxes x 20 bags\n    18\n  \n  \n    2\n    Chang\n    1\n    1\n    24 - 12 oz bottles\n    19\n  \n  \n    3\n    Aniseed Syrup\n    1\n    2\n    12 - 550 ml bottles\n    10\n  \n  \n    4\n    Chef Anton's Cajun Seasoning\n    2\n    2\n    48 - 6 oz jars\n    22\n  \n  \n    5\n    Chef Anton's Gumbo Mix\n    2\n    2\n    36 boxes\n    21.35"
+    },
+    {
+      "type": "paragraph",
+      "text": "And a selection from the \"Suppliers\" table:"
+    },
+    {
+      "type": "other",
+      "text": "SupplierID\n    SupplierName\n    ContactName\n    Address\n    City\n    PostalCode\n    Country\n  \n  \n    1\n    Exotic Liquid\n    Charlotte Cooper\n    49 Gilbert St.\n    London\n    EC1 4SD\n    UK\n  \n  \n    2\n    New Orleans Cajun Delights\n    Shelley Burke\n    P.O. Box 78934\n    New Orleans\n    70117\n    USA\n  \n  \n    3\n    Grandma Kelly's Homestead\n    Regina Murphy\n    707 Oxford Rd.\n    Ann Arbor\n    48104\n    USA\n  \n  \n    4\n    Tokyo Traders\n    Yoshi Nagase\n    9-8 Sekimai Musashino-shi\n    Tokyo\n    100\n    Japan"
+    },
+    {
+      "type": "heading",
+      "text": "SQL EXISTS Examples"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement returns TRUE and lists the suppliers with a product price less than 20:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n  SELECT SupplierNameFROM SuppliersWHERE EXISTS (SELECT ProductName FROM \n  Products WHERE Products.SupplierID = Suppliers.supplierID AND Price < 20);\n\n  Try it Yourself »"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement returns TRUE and lists the suppliers with a product price \nequal to 22:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n  SELECT SupplierNameFROM SuppliersWHERE EXISTS (SELECT ProductName FROM \n  Products WHERE Products.SupplierID = Suppliers.supplierID AND Price = 22);\n\n  Try it Yourself »"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

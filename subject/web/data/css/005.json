@@ -1,0 +1,127 @@
+{
+  "url": "https://www.w3schools.com/css/css_background_shorthand.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Background Shorthand"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CSS background - Shorthand property"
+    },
+    {
+      "type": "paragraph",
+      "text": "To shorten the code, it is also possible to specify all the background properties in one \nsingle property. This is called a shorthand property."
+    },
+    {
+      "type": "paragraph",
+      "text": "Instead of writing:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "body {  background-color: #ffffff;  background-image: \n  url(\"img_tree.png\");  background-repeat: no-repeat;  \n  background-position: right top;}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "You can use the shorthand property background:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "body {  background: #ffffff url(\"img_tree.png\") no-repeat right top;}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "When using the shorthand property the order of the property values is:"
+    },
+    {
+      "type": "other",
+      "text": "background-color\nbackground-image\nbackground-repeat\nbackground-attachment\nbackground-position"
+    },
+    {
+      "type": "paragraph",
+      "text": "It does not matter if one of the property values is missing, as long as the \nother ones are in this order. Note that we do not use the background-attachment property in the examples above, as it does not have a value."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "All CSS Background Properties"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Property",
+          "Description"
+        ],
+        [
+          "background",
+          "Sets all the background properties in one declaration"
+        ],
+        [
+          "background-attachment",
+          "Sets whether a background image is fixed or scrolls with the rest of the page"
+        ],
+        [
+          "background-clip",
+          "Specifies the painting area of the background"
+        ],
+        [
+          "background-color",
+          "Sets the background color of an element"
+        ],
+        [
+          "background-image",
+          "Sets the background image for an element"
+        ],
+        [
+          "background-origin",
+          "Specifies where the background image(s) is/are positioned"
+        ],
+        [
+          "background-position",
+          "Sets the starting position of a background image"
+        ],
+        [
+          "background-repeat",
+          "Sets how a background image will be repeated"
+        ],
+        [
+          "background-size",
+          "Specifies the size of the background image(s)"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Video: CSS Background Shorthand"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

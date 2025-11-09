@@ -1,0 +1,785 @@
+{
+  "url": "https://www.w3schools.com/js/js_array_methods.asp",
+  "title": "JavaScript Array Methods",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Array Methods"
+    },
+    {
+      "type": "other",
+      "text": "Basic Array Methods\n\n\nArray length\nArray toString()\nArray at()\nArray join()\nArray pop()\nArray push()\nArray shift()\nArray unshift()\n\n\nArray delete()\nArray concat()\nArray copyWithin()\nArray flat()\nArray slice()\nArray splice()\nArray toSpliced()"
+    },
+    {
+      "type": "other",
+      "text": "See Also:\nArray Tutorial\nArray Search Methods\nArray Sort Methods\nArray Iteration Methods\nArray Reference"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Array length"
+    },
+    {
+      "type": "paragraph",
+      "text": "The length property returns the length (size) of an array:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];\n\nlet size = fruits.length;"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The length property can also be used to set the length of an array:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];\n\nfruits.length = 2;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Array toString()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The toString() method returns the elements of an array as a comma separated string."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];\n\nlet myList = fruits.toString();"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\nEvery JavaScript object has a toString() method.\nThe toString() method is used internally by JavaScript\nwhen an object needs to be displayed as a text (like in HTML),\nor when an object needs to be used as a string."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Array at()"
+    },
+    {
+      "type": "paragraph",
+      "text": "ES2022 intoduced the array method at():"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];\nlet fruit = fruits.at(2);"
+        },
+        {
+          "language": "unknown",
+          "code": "const fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];\nlet fruit = fruits[2];"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The at() method returns an indexed element from an array."
+    },
+    {
+      "type": "paragraph",
+      "text": "The at() method returns the same as []."
+    },
+    {
+      "type": "paragraph",
+      "text": "The at() method is supported in all modern browsers since March 2022:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome 92    \n    Edge 92\n    Firefox 90\n    Safari 15.4\n    Opera 78\n  \n  \n    Apr 2021\n    Jul 2021    \n    Jul 2021\n    Mar 2022\n    Aug 2021"
+    },
+    {
+      "type": "other",
+      "text": "Note\nMany languages allow negative bracket indexing like [-1] to access elements from the end of an\nobject / array / string.\nThis is not possible in JavaScript, because [] is used for accessing both arrays and objects.\nobj[-1] refers to the value of key -1, not to the last property of the object.\nThe at() method was introduced in ES2022 to solve this problem."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Array join()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The join() method also joins all array elements into a string."
+    },
+    {
+      "type": "paragraph",
+      "text": "It behaves just like toString(), but in addition you can specify the separator:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];\ndocument.getElementById(\"demo\").innerHTML = fruits.join(\" * \");"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Popping and Pushing"
+    },
+    {
+      "type": "paragraph",
+      "text": "When you work with arrays, it is easy to remove elements and add \nnew elements."
+    },
+    {
+      "type": "paragraph",
+      "text": "This is what popping and pushing is:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Popping items out of an array, or pushing \nitems into an array."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Array pop()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The pop() method removes the last element from an array:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];\nfruits.pop();"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The pop() method returns the value that was \"popped out\":"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];\nlet fruit = fruits.pop();"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Array push()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The push() method adds a new element to an array (at the end):"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];\nfruits.push(\"Kiwi\");"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The push() method returns the new array length:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];\nlet length = fruits.push(\"Kiwi\");"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Shifting Elements"
+    },
+    {
+      "type": "paragraph",
+      "text": "Shifting is equivalent to popping, but working on the first element instead of \nthe last."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Array shift()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The shift() method removes the first array element and \"shifts\" all \nother elements to a lower index."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];\nfruits.shift();"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The shift() method returns the value that was \"shifted out\":"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];\nlet fruit = fruits.shift();"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Array unshift()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The unshift() method adds a new element to an array (at the beginning), and \"unshifts\" \nolder elements:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];\nfruits.unshift(\"Lemon\");"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The unshift() method returns the new array length:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];\nfruits.unshift(\"Lemon\");"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Changing Elements"
+    },
+    {
+      "type": "paragraph",
+      "text": "Array elements are accessed using their index number:"
+    },
+    {
+      "type": "other",
+      "text": "Array indexes start with 0:\n[0] is the first array element[1] is the second[2] is the third ..."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];\nfruits[0] = \"Kiwi\";"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Array length"
+    },
+    {
+      "type": "paragraph",
+      "text": "The length property provides an easy way to append a new element to an array:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];\nfruits[fruits.length] = \"Kiwi\";"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Array delete()"
+    },
+    {
+      "type": "other",
+      "text": "Warning !\nUsing delete() leaves undefined holes in the \narray.\nUse pop() or shift() instead."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];\ndelete fruits[0];"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Merging Arrays (Concatenating)"
+    },
+    {
+      "type": "paragraph",
+      "text": "In programming languages, concatenation means joining strings end-to-end."
+    },
+    {
+      "type": "paragraph",
+      "text": "Concatenation \"snow\" and \"ball\" gives \"snowball\"."
+    },
+    {
+      "type": "paragraph",
+      "text": "Concatenating arrays means joining arrays end-to-end."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Array concat()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The concat() method creates a new array by merging (concatenating) \nexisting arrays:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const myGirls = [\"Cecilie\", \"Lone\"];\nconst myBoys = [\"Emil\", \"Tobias\", \"Linus\"];\n\nconst myChildren = myGirls.concat(myBoys);"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\nThe concat() method does not change the existing arrays. It always returns a new array.\nThe concat() method can take any number of array arguments."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const arr1 = [\"Cecilie\", \"Lone\"];\nconst arr2 = [\"Emil\", \"Tobias\", \"Linus\"];\nconst arr3 = [\"Robin\", \"Morgan\"];\nconst myChildren = arr1.concat(arr2, arr3);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The concat() method can also take strings as arguments:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const arr1 = [\"Emil\", \"Tobias\", \"Linus\"];\nconst myChildren = arr1.concat(\"Peter\");"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Array copyWithin()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The copyWithin() method copies array elements to another position in an array:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];\nfruits.copyWithin(2, 0);"
+        },
+        {
+          "language": "unknown",
+          "code": "const fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\", \"Kiwi\"];\nfruits.copyWithin(2, 0, 2);"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\nThe copyWithin() method overwrites the existing values.\nThe copyWithin() method does not add items to the array.\nThe copyWithin() method does not change the length of the array."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Flattening an Array"
+    },
+    {
+      "type": "paragraph",
+      "text": "Flattening an array is the process of reducing the dimensionality of an array."
+    },
+    {
+      "type": "paragraph",
+      "text": "Flattening is useful when you want to convert a multi-dimensional array into a one-dimensional array."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Array flat()"
+    },
+    {
+      "type": "paragraph",
+      "text": "ES2019 Introduced the Array flat() method."
+    },
+    {
+      "type": "paragraph",
+      "text": "The flat() method creates a new array with sub-array elements concatenated to a specified depth."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const myArr = [[1,2],[3,4],[5,6]];\nconst newArr = myArr.flat();"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Browser Support"
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript Array flat() is supported in all modern browsers since January 2020:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome 69    \n    Edge 79\n    Firefox 62\n    Safari 12\n    Opera 56\n  \n  \n    Sep 2018\n    Jan 2020    \n    Sep 2018\n    Sep 2018\n    Sep 2018"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Array flatMap()"
+    },
+    {
+      "type": "paragraph",
+      "text": "ES2019 added the Array flatMap() method to JavaScript."
+    },
+    {
+      "type": "paragraph",
+      "text": "The flatMap() method first maps all elements of an array\nand then creates a new array by flattening the array."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const myArr = [1, 2, 3, 4, 5, 6];\nconst newArr = myArr.flatMap(x => [x, x * 10]);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Browser Support"
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript Array flatMap() is supported in all modern browsers since January 2020:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome 69    \n    Edge 79\n    Firefox 62\n    Safari 12\n    Opera 56\n  \n  \n    Sep 2018\n    Jan 2020    \n    Sep 2018\n    Sep 2018\n    Sep 2018"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Splicing and Slicing Arrays"
+    },
+    {
+      "type": "paragraph",
+      "text": "The splice() method adds new items to an array."
+    },
+    {
+      "type": "paragraph",
+      "text": "The slice() method slices out a piece of an array."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Array splice()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The splice() method can be used to add new items to an array:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];\nfruits.splice(2, 0, \"Lemon\", \"Kiwi\");"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The first parameter (2) defines the position where new elements should be \nadded (spliced in)."
+    },
+    {
+      "type": "paragraph",
+      "text": "The second parameter (0) defines how many elements should be\nremoved."
+    },
+    {
+      "type": "paragraph",
+      "text": "The rest of the parameters (\"Lemon\" , \"Kiwi\") define the new elements to be\nadded."
+    },
+    {
+      "type": "paragraph",
+      "text": "The splice() method returns an array with the deleted items:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];\nfruits.splice(2, 2, \"Lemon\", \"Kiwi\");"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Using splice() to Remove Elements"
+    },
+    {
+      "type": "paragraph",
+      "text": "With clever parameter setting, you can use splice() to remove elements without leaving \n\"holes\" in the array:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];\nfruits.splice(0, 1);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The first parameter (0) defines the position where new elements should be \nadded (spliced in)."
+    },
+    {
+      "type": "paragraph",
+      "text": "The second parameter (1) defines how many elements should be\nremoved."
+    },
+    {
+      "type": "paragraph",
+      "text": "The rest of the parameters are omitted. No new elements will be added."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Array toSpliced()"
+    },
+    {
+      "type": "paragraph",
+      "text": "ES2023 added the Array toSpliced() method as a safe way to splice an array without altering the original array."
+    },
+    {
+      "type": "paragraph",
+      "text": "The difference between the new toSpliced() method and the old splice() method is that the new method\ncreates a new array, keeping the original array unchanged, while the old method altered the original array."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const months = [\"Jan\", \"Feb\", \"Mar\", \"Apr\"];\nconst spliced = months.toSpliced(0, 1);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Array slice()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The slice() method slices out a piece of an array into a new \narray:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const fruits = [\"Banana\", \"Orange\", \"Lemon\", \"Apple\", \"Mango\"];\nconst citrus = fruits.slice(1);"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\nThe slice() method creates a new array.\nThe slice() method does not remove any elements from the source array."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const fruits = [\"Banana\", \"Orange\", \"Lemon\", \"Apple\", \"Mango\"];\nconst citrus = fruits.slice(3);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The slice() method can take two arguments like slice(1, 3)."
+    },
+    {
+      "type": "paragraph",
+      "text": "The method then selects elements from the start argument, and up to (but not \nincluding) the end argument."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const fruits = [\"Banana\", \"Orange\", \"Lemon\", \"Apple\", \"Mango\"];\nconst citrus = fruits.slice(1, 3);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "If the end argument is omitted, like in the first examples, the slice() \nmethod slices out the rest of the array."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const fruits = [\"Banana\", \"Orange\", \"Lemon\", \"Apple\", \"Mango\"];\nconst citrus = fruits.slice(2);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Automatic toString()"
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript automatically converts an array to a comma separated string when a \nprimitive value is expected."
+    },
+    {
+      "type": "paragraph",
+      "text": "This is always the case when you try to output an array."
+    },
+    {
+      "type": "paragraph",
+      "text": "These two examples will produce the same result:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];\ndocument.getElementById(\"demo\").innerHTML = fruits.toString();"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const fruits = [\"Banana\", \"Orange\", \"Apple\", \"Mango\"];\ndocument.getElementById(\"demo\").innerHTML = fruits;"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\nAll JavaScript objects have a toString() method."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Searching Arrays"
+    },
+    {
+      "type": "paragraph",
+      "text": "Searching arrays are covered in the next chapter of this tutorial."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Sorting Arrays"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sorting arrays covers the methods used to sort arraysg."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Iterating Arrays"
+    },
+    {
+      "type": "paragraph",
+      "text": "Iterating arrays covers methods that operate on all array elements."
+    },
+    {
+      "type": "other",
+      "text": "Complete JavaScript Reference\nFor a complete reference to all JavaScript properties and methods, with full descriptions and many examples, go to:\nW3Schools' Full JavaScript Reference.\nThe reference inludes all JavaScript updates from 1999 to 2025."
+    }
+  ]
+}

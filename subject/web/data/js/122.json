@@ -1,0 +1,339 @@
+{
+  "url": "https://www.w3schools.com/js/js_object_properties.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Object Properties"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Property Management Methods"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Adding or changing an object property\nObject.defineProperty(object, property, descriptor)\n// Adding or changing object properties\nObject.defineProperties(object, descriptors)\n// Accessing a Property\nObject.getOwnPropertyDescriptor(object, property)\n// Accessing Properties\nObject.getOwnPropertyDescriptors(object)\n// Returns all properties as an array\nObject.getOwnPropertyNames(object)\n// Accessing the prototype\nObject.getPrototypeOf(object)"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Object.defineProperty()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Object.defineProperty() method can be used to:"
+    },
+    {
+      "type": "other",
+      "text": "Adding a new property to an object\nChanging property values\nChanging property metadata\nChanging object getters and setters"
+    },
+    {
+      "type": "paragraph",
+      "text": "Syntax:"
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "Object.defineProperty(object, property, descriptor)"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Adding a new Property"
+    },
+    {
+      "type": "paragraph",
+      "text": "This example adds a new property to an object:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create an Object:const person = {  firstName: \"John\",  lastName : \n  \"Doe\",  language : \"EN\"};// Add a PropertyObject.defineProperty(person, \"year\", \n  {value:\"2008\"});"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Changing a Property Value"
+    },
+    {
+      "type": "paragraph",
+      "text": "This example changes a property value:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create an Object:\nconst person = {  firstName: \"John\",  \n  lastName : \"Doe\",  language : \"EN\" };\n// Change a PropertyObject.defineProperty(person, \"language\", \n  {value : \"NO\"});"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Property Attributes"
+    },
+    {
+      "type": "paragraph",
+      "text": "All properties have a name. In addition they also have a value."
+    },
+    {
+      "type": "paragraph",
+      "text": "The value is one of the property's attributes."
+    },
+    {
+      "type": "paragraph",
+      "text": "Other attributes are: enumerable, configurable, and writable."
+    },
+    {
+      "type": "paragraph",
+      "text": "These attributes define how the property can be accessed (is it readable?, is \nit writable?)"
+    },
+    {
+      "type": "paragraph",
+      "text": "In JavaScript, all attributes can be read, but only the value attribute can \nbe changed (and only if the property is writable)."
+    },
+    {
+      "type": "paragraph",
+      "text": "( ECMAScript 5 has methods for both getting and setting all property \nattributes)"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Changing Meta Data"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following property meta data can be changed:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "writable : true      // Property value can be changed\nenumerable : true    // Property can be enumerated\nconfigurable : true  // Property can be reconfigured"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "writable : false     // Property value can not be changed\nenumerable : false   // Property can be not enumerated\nconfigurable : false // Property can be not reconfigured"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Getters and setters can also be changed:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Defining a getter\nget: function() { return language }\n// Defining a setter\nset: function(value) { language = value }"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "This example makes language read-only:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Object.defineProperty(person, \"language\", {writable:false});"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "This example makes language not enumerable:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "Object.defineProperty(person, \"language\", {enumerable:false});"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript getOwnPropertyNames()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Object.getOwnPropertyNames() method can:"
+    },
+    {
+      "type": "other",
+      "text": "List object properties"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Syntax"
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "Object.getOwnPropertyNames(object)"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "List all Object Properties"
+    },
+    {
+      "type": "paragraph",
+      "text": "This example gets all properties of an object:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create an Object\nconst person = {\n  firstName: \"John\",\n  lastName : \"Doe\",\n  language : \"EN\" \n};\n\n// Get all Properties\nObject.getOwnPropertyNames(person);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Object.getOwnPropertyNames() will also list properties that is not enumerable:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create an Object\nconst person = {\n  firstName: \"John\",\n  lastName : \"Doe\",\n  language : \"EN\" \n};\n// Set the language Property not enumerable \nObject.defineProperty(person, \"language\", {enumerable:false});\n\n// Get all Properties\nObject.getOwnPropertyNames(person);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Object.keys()"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Object.keys() method can:"
+    },
+    {
+      "type": "other",
+      "text": "List enumerable object properties"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Syntax"
+    },
+    {
+      "type": "code",
+      "language": "unknown",
+      "code": "Object.keys(object)"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "List Enumerable Object Properties"
+    },
+    {
+      "type": "paragraph",
+      "text": "This example uses Object.keys() insted of Object.getOwnPropertyNames():"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Create an Object\nconst person = {\n  firstName: \"John\",\n  lastName : \"Doe\",\n  language : \"EN\" \n};\n// Change the \"language\" Property \nObject.defineProperty(person, \"language\", {enumerable:false});\n\n// Get all Enumerable Properties\nObject.keys(person);"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\nThe getOwnPropertyNames() method returns all properties.\nThe Object.keys() method returns all enumerable properties.\nIf you define object properties without enumerable:false,\nthe two methods will return the same."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Adding Getters and Setters"
+    },
+    {
+      "type": "paragraph",
+      "text": "The Object.defineProperty() method can also be used to add Getters and \nSetters:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "//Create an objectconst person = {firstName:\"John\", lastName:\"Doe\"};\n// Define a getterObject.defineProperty(person, \"fullName\", {  get: \nfunction () {return this.firstName + \" \" + this.lastName;}});"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "A Counter Example"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "// Define object\nconst obj = {counter:0};\n// Define setters\nObject.defineProperty(obj, \"reset\", {\n  get : function () {this.counter = 0;}});\nObject.defineProperty(obj, \"increment\", {\n  get : function () {this.counter++;}});\nObject.defineProperty(obj, \"decrement\", {\n  get : function () {this.counter--;}});\nObject.defineProperty(obj, \"add\", {\n  set : function (value) {this.counter += value;}});\nObject.defineProperty(obj, \"subtract\", {\n  set : function (i) {this.counter -= i;}});\n// Play with the counter:\nobj.reset;\nobj.add = 5;\nobj.subtract = 1;\nobj.increment;\nobj.decrement;"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Prototype Properties"
+    },
+    {
+      "type": "paragraph",
+      "text": "JavaScript objects inherit the properties of their prototype."
+    },
+    {
+      "type": "paragraph",
+      "text": "The delete keyword does not delete inherited properties, but if you delete a \nprototype property, it will affect all objects \ninherited from the prototype."
+    },
+    {
+      "type": "other",
+      "text": "Learn More:\nJavaScript Object Definitions\nJavaScript Object Constructors\nJavaScript Object this\nJavaScript Object Methods\nJavaScript Object Properties\nJavaScript Object Getters & Setters\nJavaScript Object Protection\nJavaScript Object Reference"
+    }
+  ]
+}

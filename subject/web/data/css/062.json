@@ -1,0 +1,98 @@
+{
+  "url": "https://www.w3schools.com/css/css_navbar.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Navigation Bar"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Demo: Navigation Bars"
+    },
+    {
+      "type": "other",
+      "text": "Vertical\n\n  Home\n  News\n  Contact\n  About\n\n\n\n\nHorizontal\n\n\n  Home\n  News\n  Contact\n  About\n\n\n\n  Home\n  News\n  Contact\n  About"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Navigation Bars"
+    },
+    {
+      "type": "paragraph",
+      "text": "Having easy-to-use navigation is important for any web site."
+    },
+    {
+      "type": "paragraph",
+      "text": "With CSS you can transform boring HTML menus into good-looking navigation bars."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Navigation Bar = List of Links"
+    },
+    {
+      "type": "paragraph",
+      "text": "A navigation bar needs standard HTML as a base."
+    },
+    {
+      "type": "paragraph",
+      "text": "In our examples we will build the navigation bar from a standard HTML list."
+    },
+    {
+      "type": "paragraph",
+      "text": "A navigation bar is basically a list of links, so using the <ul> and <li> elements makes perfect \nsense:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<ul>\n \n<li><a href=\"default.asp\">Home</a></li>\n \n<li><a href=\"news.asp\">News</a></li>\n \n<li><a href=\"contact.asp\">Contact</a></li>\n \n<li><a href=\"about.asp\">About</a></li>\n</ul>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Now let's remove the bullets and the margins and padding from the list:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "ul\n{\n  list-style-type: none;\n    \nmargin: 0;\n    \npadding: 0;\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Example explained:"
+    },
+    {
+      "type": "other",
+      "text": "list-style-type: none; - Removes the bullets. A navigation bar \ndoes not need list markers\nSet margin: 0; and padding: 0; \nto remove browser default settings"
+    },
+    {
+      "type": "paragraph",
+      "text": "The code in the example above is the standard code used in both vertical, and horizontal navigation bars, which you will learn more about in the next chapters."
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

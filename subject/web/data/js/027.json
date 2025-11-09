@@ -1,0 +1,188 @@
+{
+  "url": "https://www.w3schools.com/js/js_json_jsonp.asp",
+  "title": "JSONP",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JSONP"
+    },
+    {
+      "type": "paragraph",
+      "text": "JSONP is a method for sending JSON data without worrying about cross-domain issues."
+    },
+    {
+      "type": "paragraph",
+      "text": "JSONP does not use the XMLHttpRequest object."
+    },
+    {
+      "type": "paragraph",
+      "text": "JSONP uses the <script> tag instead."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JSONP Intro"
+    },
+    {
+      "type": "other",
+      "text": "JSONP stands for JSON with Padding."
+    },
+    {
+      "type": "paragraph",
+      "text": "Requesting a file from another domain can cause problems, due to cross-domain policy."
+    },
+    {
+      "type": "paragraph",
+      "text": "Requesting an external script from another domain does not have this problem."
+    },
+    {
+      "type": "paragraph",
+      "text": "JSONP uses this advantage, and request files using the script tag \ninstead of the XMLHttpRequest object."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<script src=\"demo_jsonp.php\">"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Server File"
+    },
+    {
+      "type": "paragraph",
+      "text": "The file on the server wraps the result inside a \nfunction call:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<?php$myJSON = '{ \"name\":\"John\", \"age\":30, \"city\":\"New York\" }';\n  echo \"myFunc(\".$myJSON.\");\";\n  ?>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The result returns a call to a function named \"myFunc\" with the JSON data as \na parameter."
+    },
+    {
+      "type": "paragraph",
+      "text": "Make sure that the function exists on the client."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The JavaScript function"
+    },
+    {
+      "type": "paragraph",
+      "text": "The function named \"myFunc\" is located on the client, and ready to handle \nJSON data:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "function myFunc(myObj) \n  {  document.getElementById(\"demo\").innerHTML = \n  myObj.name;\n  }"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Creating a Dynamic Script Tag"
+    },
+    {
+      "type": "paragraph",
+      "text": "The example above will execute the \"myFunc\" function when the page is \nloading, based on where you put the script tag, which is not very satisfying."
+    },
+    {
+      "type": "paragraph",
+      "text": "The script tag should only be created when needed:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "function clickButton() {  let s = document.createElement(\"script\");  s.src = \"demo_jsonp.php\";  document.body.appendChild(s);\n  }"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Dynamic JSONP Result"
+    },
+    {
+      "type": "paragraph",
+      "text": "The examples above are still very static."
+    },
+    {
+      "type": "paragraph",
+      "text": "Make the example dynamic by sending JSON to the php file, and let the php file return a JSON object based on \nthe information it gets."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<?phpheader(\"Content-Type: application/json; charset=UTF-8\");$obj = \n  json_decode($_GET[\"x\"], false);\n  $conn = new mysqli(\"myServer\", \"myUser\", \"myPassword\", \"Northwind\");\n  $result = $conn->query(\"SELECT name FROM \n  \".$obj->$table.\" LIMIT \".$obj->$limit);$outp = array();\n  $outp = $result->fetch_all(MYSQLI_ASSOC);echo \"myFunc(\".json_encode($outp).\")\";?>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "PHP File explained:"
+    },
+    {
+      "type": "other",
+      "text": "Convert the request into an object, using the PHP function\n  json_decode().\n  Access the database, and fill an array with the requested data.\n  Add the array to an object.\n  Convert the array into JSON using \nthe json_encode() function.\n  Wrap \"myFunc()\" around the return object."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const obj = { table: \"products\", limit: 10 };\nlet s = document.createElement(\"script\");\ns.src = \"jsonp_demo_db.php?x=\" + JSON.stringify(obj);\ndocument.body.appendChild(s);\n\nfunction myFunc(myObj) {\n  let txt = \"\";  for (let x in myObj) \n  {    txt += myObj[x].name + \"<br>\";  \n  }  document.getElementById(\"demo\").innerHTML = txt;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Callback Function"
+    },
+    {
+      "type": "paragraph",
+      "text": "When you have no control over the server file, how do you get the server file \nto call the correct function?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sometimes the server file offers a callback function as \na parameter:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "let s = document.createElement(\"script\");\ns.src = \"jsonp_demo_db.php?callback=myDisplayFunction\";\ndocument.body.appendChild(s);"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_join_self.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL Self Join"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "heading",
+      "text": "SQL Self Join"
+    },
+    {
+      "type": "paragraph",
+      "text": "A self join is a regular join, but the table is joined with itself."
+    },
+    {
+      "type": "other",
+      "text": "Self Join Syntax"
+    },
+    {
+      "type": "other",
+      "text": "SELECT column_name(s)\nFROM table1 T1, table1 T2\n  WHERE condition;"
+    },
+    {
+      "type": "paragraph",
+      "text": "T1 and T2 are different table aliases for the same table."
+    },
+    {
+      "type": "heading",
+      "text": "Demo Database"
+    },
+    {
+      "type": "paragraph",
+      "text": "In this tutorial we will use the well-known Northwind sample database."
+    },
+    {
+      "type": "paragraph",
+      "text": "Below is a selection from the \"Customers\" table:"
+    },
+    {
+      "type": "other",
+      "text": "CustomerID\n    CustomerName\n    ContactName\n    Address\n    City\n    PostalCode\n    Country\n  \n  \n    1\n    Alfreds Futterkiste\n    Maria Anders\n    Obere Str. 57\n    Berlin\n    12209\n    Germany\n  \n  \n    2\n    Ana Trujillo Emparedados y helados\n    Ana Trujillo\n    Avda. de la Constitución 2222\n    México D.F.\n    05021\n    Mexico\n  \n  \n    3\n    Antonio Moreno Taquería\n    Antonio Moreno\n    Mataderos 2312\n    México D.F.\n    05023\n    Mexico"
+    },
+    {
+      "type": "heading",
+      "text": "SQL Self Join Example"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement matches customers that are from the same city:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n  SELECT A.CustomerName AS CustomerName1, B.CustomerName AS CustomerName2, \n  A.CityFROM Customers A, Customers BWHERE A.CustomerID <> B.CustomerID\n  AND A.City = B.City ORDER BY A.City;\n\nTry it Yourself »"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

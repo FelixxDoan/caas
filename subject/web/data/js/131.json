@@ -1,0 +1,167 @@
+{
+  "url": "https://www.w3schools.com/js/js_function_call.asp",
+  "title": "JavaScript Function call()",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Function call()"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Method Reuse"
+    },
+    {
+      "type": "paragraph",
+      "text": "With the call() method, you can write a method that can be used on different \nobjects."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "All Functions are Methods"
+    },
+    {
+      "type": "paragraph",
+      "text": "In JavaScript all functions are object methods."
+    },
+    {
+      "type": "paragraph",
+      "text": "If a function is not a method of a JavaScript object, it is a function of the \nglobal object (see previous chapter)."
+    },
+    {
+      "type": "paragraph",
+      "text": "The example below creates an object with 3 \nproperties, firstName, lastName, fullName."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const person = {\n  firstName:\"John\",\n  lastName: \"Doe\",\n    fullName: function () {\n    return this.firstName + \" \" + this.lastName;\n    }\n}\n\n// This will return \"John Doe\":\nperson.fullName();"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "In the example above, this refers to the person object."
+    },
+    {
+      "type": "paragraph",
+      "text": "this.firstName means the firstName property of this."
+    },
+    {
+      "type": "paragraph",
+      "text": "Same as:"
+    },
+    {
+      "type": "paragraph",
+      "text": "this.firstName means the firstName property of person."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What is this?"
+    },
+    {
+      "type": "paragraph",
+      "text": "In JavaScript, the this keyword refers to an object."
+    },
+    {
+      "type": "paragraph",
+      "text": "The this keyword refers to different objects depending on how it is used:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Alone, this refers to the global object."
+        ],
+        [
+          "In a function, this refers to the global object."
+        ],
+        [
+          "In a function, in strict mode, this is undefined."
+        ],
+        [
+          "In an object method, this refers to the object."
+        ],
+        [
+          "In an event, this refers to the element that received the event."
+        ],
+        [
+          "Methods like call(), apply(),\nand bind() can refer this to any object."
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note\nthis is not a variable.\nthis is a keyword.\nYou cannot change the value of this."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The JavaScript call() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The call() method is a predefined \nJavaScript method."
+    },
+    {
+      "type": "paragraph",
+      "text": "It can be used to invoke (call) a method \nwith an object as an argument (parameter)."
+    },
+    {
+      "type": "other",
+      "text": "Note\nWith call(), an object can use a method belonging to another object."
+    },
+    {
+      "type": "paragraph",
+      "text": "This example calls the fullName method of person, using it on \nperson1:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const person = {\n    fullName: function() {\n    return this.firstName + \" \" + this.lastName;\n    }}\nconst person1 = {\n  firstName:\"John\",\n    lastName: \"Doe\"\n  }\nconst person2 = {\n  firstName:\"Mary\",\n    lastName: \"Doe\"}\n\n// This will return \"John Doe\":  \n  person.fullName.call(person1);"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "This example calls the fullName method of person, using it on\nperson2:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const person = {\n    fullName: function() {\n      return this.firstName + \" \" + this.lastName;\n    }}\nconst person1 = {\n  firstName:\"John\",\n    lastName: \"Doe\"\n  }\nconst person2 = {\n    firstName:\"Mary\",\n    lastName: \"Doe\"}\n\n// This will return \"Mary Doe\"\n  person.fullName.call(person2);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The call() Method with Arguments"
+    },
+    {
+      "type": "paragraph",
+      "text": "The call() method can accept arguments:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const person = {\n    fullName: function(city, country) {\n    return this.firstName + \" \" + this.lastName \n  + \",\" + city + \",\" + country;\n    }}\n\nconst person1 = {\n  firstName:\"John\",\n  lastName: \"Doe\"\n}\n\nperson.fullName.call(person1, \"Oslo\", \"Norway\");"
+        }
+      ]
+    }
+  ]
+}

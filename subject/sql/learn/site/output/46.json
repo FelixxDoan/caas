@@ -1,0 +1,86 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_backup_db.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL BACKUP DATABASE for SQL Server"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "heading",
+      "text": "The SQL BACKUP DATABASE Statement"
+    },
+    {
+      "type": "paragraph",
+      "text": "The BACKUP DATABASE statement is used in SQL Server to create a full back up of an existing SQL database."
+    },
+    {
+      "type": "other",
+      "text": "Syntax"
+    },
+    {
+      "type": "other",
+      "text": "BACKUP DATABASE databasenameTO DISK = 'filepath';"
+    },
+    {
+      "type": "heading",
+      "text": "The SQL BACKUP WITH DIFFERENTIAL Statement"
+    },
+    {
+      "type": "paragraph",
+      "text": "A differential back up only backs up the parts of the database that have \nchanged since the last full database backup."
+    },
+    {
+      "type": "other",
+      "text": "Syntax"
+    },
+    {
+      "type": "other",
+      "text": "BACKUP DATABASE databasenameTO DISK = 'filepath'WITH \n  DIFFERENTIAL;"
+    },
+    {
+      "type": "heading",
+      "text": "BACKUP DATABASE Example"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement creates a full back up of the existing database \"testDB\" \nto the D disk:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\nBACKUP DATABASE testDBTO DISK = 'D:\\backups\\testDB.bak';"
+    },
+    {
+      "type": "other",
+      "text": "Tip: Always back up the database to a different drive than the \nactual database. Then, if you get a disk crash, you will not lose your backup \nfile along with the database."
+    },
+    {
+      "type": "heading",
+      "text": "BACKUP WITH DIFFERENTIAL Example"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement creates a differential back up of the database \"testDB\":"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\nBACKUP DATABASE testDBTO DISK = 'D:\\backups\\testDB.bak'WITH \n  DIFFERENTIAL;"
+    },
+    {
+      "type": "other",
+      "text": "Tip: A differential back up reduces the back up time (since only the changes are backed up)."
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

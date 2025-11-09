@@ -1,0 +1,172 @@
+{
+  "url": "https://www.w3schools.com/js/js_2023.asp",
+  "title": "ECMAScript 2023",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "ECMAScript 2023"
+    },
+    {
+      "type": "other",
+      "text": "New Features in JavaScript 2023\n\nArray findLast()\nArray findLastIndex()\nArray toReversed()\nArray toSorted()\nArray toSpliced()\nArray with()\n#! (Shebang)"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Array findLast() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "ES2023 added the findLast() method that will start from the end of an array and return\nthe value of the first element that satisfies a condition."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const temp = [27, 28, 30, 40, 42, 35, 30];\nlet high = temp.findLast(x => x > 40);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Array findLastIndex() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The findLastIndex() method finds the index of the last element that satisfies a condition."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const temp = [27, 28, 30, 40, 42, 35, 30];\nlet pos = temp.findLastIndex(x => x > 40);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Array toReversed() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "ES2023 added the Array toReversed() method as a safe way to reverse an array without altering the original array."
+    },
+    {
+      "type": "paragraph",
+      "text": "The difference between the new toReversed() method and the old reverse() method is that the new method\ncreates a new array, keeping the original array unchanged, while the old method altered the original array."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const months = [\"Jan\", \"Feb\", \"Mar\", \"Apr\"];\nconst reversed = months.toReversed();"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Array toSorted() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "ES2023 added the Array toSorted() method as a safe way to sort an array without altering the original array."
+    },
+    {
+      "type": "paragraph",
+      "text": "The difference between the new toSorted() method and the old sort() method is that the new method\ncreates a new array, keeping the original array unchanged, while the old method altered the original array."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const months = [\"Jan\", \"Feb\", \"Mar\", \"Apr\"];\nconst sorted = months.toSorted();"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Array toSpliced() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "ES2023 added the Array toSpliced() method as a safe way to splice an array without altering the original array."
+    },
+    {
+      "type": "paragraph",
+      "text": "The difference between the new toSpliced() method and the old splice() method is that the new method\ncreates a new array, keeping the original array unchanged, while the old method altered the original array."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const months = [\"Jan\", \"Feb\", \"Mar\", \"Apr\"];\nconst spliced = months.toSpliced(0, 1);"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "JavaScript Array with() Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "ES2023 added the Array with() method as a safe way to update elements in an array without altering the original array."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const months = [\"Januar\", \"Februar\", \"Mar\", \"April\"];\nconst new = months.with(2, \"March\");"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "#! JavaScript Shebang"
+    },
+    {
+      "type": "paragraph",
+      "text": "In operating systems, a shebang (also known as hashbang, pound-bang, sharp-exclamation or hash-pling)\nis a sequence of two characters: a number sign (#) and an exclamation mark (!)."
+    },
+    {
+      "type": "paragraph",
+      "text": "#! at the beginning of a script tells the operating system what interpreter should be used to execute the script:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "#!/usr/bin/env node"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The example above tells the operating system to use the node program to run the script."
+    },
+    {
+      "type": "paragraph",
+      "text": "Now, you can run JavaScript code with ./fileName.js instead \nof node fileName.js."
+    }
+  ]
+}

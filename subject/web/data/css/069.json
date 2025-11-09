@@ -1,0 +1,121 @@
+{
+  "url": "https://www.w3schools.com/css/css_float_clear.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Layout - clear and clearfix"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The clear Property"
+    },
+    {
+      "type": "paragraph",
+      "text": "When we use the float property, and we want \nthe next element below (not on right or left), we will have to use the clear \nproperty."
+    },
+    {
+      "type": "paragraph",
+      "text": "The clear property specifies what \nshould happen with the element that is next to a floating element."
+    },
+    {
+      "type": "paragraph",
+      "text": "The clear property can have one of the \nfollowing values:"
+    },
+    {
+      "type": "other",
+      "text": "none - The element is not pushed below \n  left or right floated elements. This is default\n   left - The element is pushed below left \n  floated elements\n   right - The element is pushed below \n  right floated elements\n   both - The element is pushed below both \n  left and right floated elements\n   inherit - The element inherits the clear value \n  from its parent"
+    },
+    {
+      "type": "paragraph",
+      "text": "When clearing floats, you should match the clear to the float: If an element \nis floated to the left, then you should clear to the left. Your floated element \nwill continue to float, but the cleared element will appear below it on the web \npage."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "div1 {  float: left;}div2 {  clear: left;}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The clearfix Hack"
+    },
+    {
+      "type": "paragraph",
+      "text": "If a floated element is taller than the containing element, it \nwill \"overflow\" outside of its container. We can then add a clearfix hack to \nsolve this problem:"
+    },
+    {
+      "type": "other",
+      "text": "Without Clearfix\n\n\n\nWith Clearfix"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".clearfix {  overflow: auto;}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The overflow: auto clearfix works well as long as you are able to keep control of your margins and padding (else you \nmight see scrollbars). The \nnew, modern clearfix hack however, is safer to use, and the following code is used for most webpages:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": ".clearfix::after {  content: \"\";  clear: both;  display: table;}"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "You will learn more about the ::after pseudo-element in a later chapter."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CSS Properties"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Property",
+          "Description"
+        ],
+        [
+          "clear",
+          "Specifies what should happen with the element that is next to a floating \n    element"
+        ],
+        [
+          "float",
+          "Specifies whether an element should float to the left, right, or not at \n    all"
+        ]
+      ]
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "url": "https://www.w3schools.com/js/js_htmldom_methods.asp",
+  "title": "JavaScript -",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript - HTML DOM Methods"
+    },
+    {
+      "type": "paragraph",
+      "text": "HTML DOM methods are actions you can perform (on HTML \nElements)."
+    },
+    {
+      "type": "paragraph",
+      "text": "HTML DOM properties are values (of HTML Elements) that you can \nset or change."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The DOM Programming Interface"
+    },
+    {
+      "type": "paragraph",
+      "text": "The HTML DOM can be accessed with JavaScript \n(and with other programming languages)."
+    },
+    {
+      "type": "paragraph",
+      "text": "In the DOM, all HTML elements are defined as objects."
+    },
+    {
+      "type": "paragraph",
+      "text": "The programming interface is \nthe properties and methods of each object."
+    },
+    {
+      "type": "paragraph",
+      "text": "A property is a value that you can get or set (like changing the \ncontent of an HTML element)."
+    },
+    {
+      "type": "paragraph",
+      "text": "A method is an action you can do (like add \nor deleting an HTML element)."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Example"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following example changes the content (the innerHTML) of the <p> element with id=\"demo\":"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<html>\n<body>\n<p id=\"demo\"></p>\n<script>\n document.getElementById(\"demo\").innerHTML = \"Hello World!\";\n</script>\n</body>\n</html>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "In the example above, getElementById is a method, while innerHTML is a \nproperty."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The getElementById Method"
+    },
+    {
+      "type": "paragraph",
+      "text": "The most common way to access an HTML element is to use the id of the \nelement."
+    },
+    {
+      "type": "paragraph",
+      "text": "In the example above the getElementById method used id=\"demo\" to find the \nelement."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The innerHTML Property"
+    },
+    {
+      "type": "paragraph",
+      "text": "The easiest way to get the content of an element is by using the innerHTML property."
+    },
+    {
+      "type": "paragraph",
+      "text": "The innerHTML property is useful for getting or replacing the content of HTML elements."
+    },
+    {
+      "type": "other",
+      "text": "The innerHTML property can be used to get or change any HTML element, \nincluding <html> and <body>."
+    }
+  ]
+}

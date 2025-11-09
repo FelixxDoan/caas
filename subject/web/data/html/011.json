@@ -1,0 +1,91 @@
+{
+  "url": "https://www.w3schools.com/html/html_colors_hex.asp",
+  "title": "HTML ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "HTML HEX Colors"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "A hexadecimal color is specified with: #RRGGBB, where the RR \n(red), GG (green) and BB (blue) hexadecimal integers specify the components of \nthe color."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HEX Color Values"
+    },
+    {
+      "type": "paragraph",
+      "text": "In HTML, a color can be specified using a hexadecimal value in \nthe form:"
+    },
+    {
+      "type": "paragraph",
+      "text": "#rrggbb"
+    },
+    {
+      "type": "paragraph",
+      "text": "Where rr (red), gg (green) and bb (blue) are hexadecimal values between 00 and ff (same as decimal 0-255)."
+    },
+    {
+      "type": "paragraph",
+      "text": "For example, #ff0000 is displayed as red, because red is set to its highest value (ff), and the other \ntwo (green and blue) are set to 00."
+    },
+    {
+      "type": "paragraph",
+      "text": "Another example, #00ff00 is displayed as green, \nbecause green is set to its highest value (ff), and the other two (red and blue) are \nset to 00."
+    },
+    {
+      "type": "paragraph",
+      "text": "To display black, set all color parameters to 00, like this: #000000."
+    },
+    {
+      "type": "paragraph",
+      "text": "To display white, set all color parameters to ff, like \nthis: #ffffff."
+    },
+    {
+      "type": "paragraph",
+      "text": "Experiment by mixing the HEX values below:"
+    },
+    {
+      "type": "other",
+      "text": "RED\n      \n      ff\n    \n    \n      GREEN\n      \n      0\n    \n    \n      BLUE\n      \n      0"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": []
+    },
+    {
+      "type": "other",
+      "text": "//changeRed(255)\n//changeGreen(0)\n//changeBlue(0)\nchangeHex(\"r\");\nfunction changeHex(x) {\n  var col, r, g, b;\n  r = document.getElementById(\"slideRedHex\").value;\n  g = document.getElementById(\"slideGreenHex\").value;\n  b = document.getElementById(\"slideBlueHex\").value;\n  col = w3color(\"rgb(\" + r + \",\" + g + \",\" + b + \")\");\n    document.getElementById('valRed2Hex').innerHTML = col.toHexString().substr(1,2);\n    document.getElementById('valGreen2Hex').innerHTML = col.toHexString().substr(3,2);\n    document.getElementById('valBlue2Hex').innerHTML = col.toHexString().substr(5,2);\n    document.getElementById('hexresult').style.backgroundColor = col.toRgbString();\n    document.getElementById('hexresulttext').innerHTML = col.toHexString();\n  if (col.isDark(150)) {\n    document.getElementById('hexresulttext').style.color = \"#ffffff\";\n  } else {\n    document.getElementById('hexresulttext').style.color = \"#1f2d3d\";\n  }\n}"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Shades of Gray"
+    },
+    {
+      "type": "paragraph",
+      "text": "Shades of gray are often defined using equal values for all three parameters:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": []
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

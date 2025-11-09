@@ -1,0 +1,226 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_syllabus.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL Syllabus"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "text": "Introduction"
+    },
+    {
+      "type": "other",
+      "text": ".ws-purple:hover {\n  background-color:#9723f5!important;\n}"
+    },
+    {
+      "type": "paragraph",
+      "text": "The W3Schools SQL Tutorial is comprehensive and beginner-friendly."
+    },
+    {
+      "type": "paragraph",
+      "text": "It will give you a fundamental knowledge of SQL."
+    },
+    {
+      "type": "paragraph",
+      "text": "It is designed for beginners and requires no prior experience with programming."
+    },
+    {
+      "type": "paragraph",
+      "text": "The content has been carefully made to be bite-sized, simple, and easy to understand."
+    },
+    {
+      "type": "paragraph",
+      "text": "The content has been proven by millions of users over the years. It is updated and improved frequently."
+    },
+    {
+      "type": "paragraph",
+      "text": "The syllabus outline and its sequence are structured so you can learn SQL step by step, from the introduction to creating your first application with SQL."
+    },
+    {
+      "type": "paragraph",
+      "text": "Get Started With SQL »"
+    },
+    {
+      "type": "heading",
+      "text": "Learning Outcomes"
+    },
+    {
+      "type": "other",
+      "text": "Understand what SQL is and why you would use it.\n    Create and manage databases and tables.\n    Insert, update, and delete data in tables.\n    Use SELECT with filters (WHERE) and sorting (ORDER BY) to get data.\n    Use JOIN to combine data from multiple tables.\n    Use functions like SUM, AVG, and COUNT to group data and add them up.\n    Create table relationships with foreign keys.\n    Use SQL functions like MIN, MAX, and COUNT.\n    Understand subqueries and indexes.\n    Manage user permissions and data security."
+    },
+    {
+      "type": "other",
+      "text": "Note: Are you a teacher teaching SQL? W3Schools Academy is a toolbox of features that can help you teach. It offers classroom features such as pre-built study plans, classroom administration and much more. Read more about Academy here."
+    },
+    {
+      "type": "heading",
+      "text": "Which Subjects Are SQL Relevant For?"
+    },
+    {
+      "type": "other",
+      "text": "Information Technology (IT):\n        SQL is used to run and manage databases and IT systems.\n    \n    \n        Computer Science (CS): \n        Learn database management and data structures.\n    \n    \n        Data Science: \n        SQL is foundational for data analysis and handling of big data.\n    \n    \n        Mathematics: \n        Organize and analyze data.\n    \n    \n        Business and Management: \n        SQL supports reporting and data-driven decision making.\n    \n    \n        Economics and Finance: \n        Pulling raw data from databases. Financial data management, reporting, and risk analysis.\n    \n    \n        Statistics: \n        Collecting and processing of large data sets.\n    \n    \n        Science (Biology, Chemistry, and more): \n        Handling, research, and analysis of experimental data.\n    \n    \n        Retail and E-commerce: \n        Analysis of inventory, supply chain management, and sales. Customer database management.\n    \n    \n        Other (Healthcare, Education, Engineering): \n        User record systems, data analysis, quality control, and data monitoring.\n    \n    \n        SQL is a language that is essential in any subject working with data."
+    },
+    {
+      "type": "paragraph",
+      "text": "Get Started"
+    },
+    {
+      "type": "heading",
+      "text": "Activities"
+    },
+    {
+      "type": "paragraph",
+      "text": "In this tutorial we offer different activities for you to learn SQL for free:"
+    },
+    {
+      "type": "other",
+      "text": "Lessons\n    Exercises\n    Quizzes"
+    },
+    {
+      "type": "heading",
+      "text": "Sign in to Track Progress"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can also create a free account to track your progress."
+    },
+    {
+      "type": "paragraph",
+      "text": "As a signed-in user, you get access to features such as:"
+    },
+    {
+      "type": "other",
+      "text": "Learning paths\n    Sandbox and lab environments\n    Achievements\n    And much more!"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sign Up - It's free"
+    },
+    {
+      "type": "heading",
+      "text": "Overview of the Modules"
+    },
+    {
+      "type": "other",
+      "text": ".link-boxes {\n    list-style-type: none; \n    padding: 0;\n    margin: 0;\n}\n\n.link-boxes li {\n    margin: 10px 0;\n}\n\n.link-boxes a {\n    display: block;\n    padding: 10px 15px; \n    background-color: #E7E9EB;    color: #333; \n    text-decoration: none;\n    border: 1px solid #ccc; \n    border-radius: 5px; \n    font-size: 15px;\n}\n\n.link-boxes a:hover {\n    background-color: #ccc; /\n}\n\n\n\nSQL Introduction\nSQL Syntax\nSQL SELECT\nSQL SELECT DISTINCT\nSQL WHERE\nSQL ORDER BY\nSQL AND, OR, NOT\nSQL INSERT INTO\nSQL NULL Values\nSQL UPDATE\nSQL DELETE\nSQL SELECT TOP\nAggregate Functions\nSQL MIN and MAX\nSQL COUNT, AVG, SUM\nSQL LIKE\nSQL Wildcards\nSQL IN\nSQL BETWEEN\nSQL Aliases\nSQL Joins\nSQL INNER JOIN\nSQL LEFT JOIN\nSQL RIGHT JOIN\nSQL FULL JOIN\nSQL Self Join\nSQL UNION\nSQL GROUP BY\nSQL HAVING\nSQL EXISTS\nSQL ANY and ALL\nSQL SELECT INTO\nSQL INSERT INTO SELECT\nSQL CASE\nSQL NULL Functions\nSQL Stored Procedures\nSQL Comments\nSQL Operators\nSQL Database\nSQL Drop DB\nSQL Backup DB\nSQL CREATE TABLE\nSQL Drop Table\nSQL Alter Table\nSQL Constraints\nSQL Unique\nSQL Primary Key\nSQL CHECK Constraint\nSQL Default Constraint\nSQL Create Index Statement\nSQL Auto Increment\nSQL Dates\nSQL Views\nSQL Injections\nSQL Hosting\nSQL Data Types"
+    },
+    {
+      "type": "paragraph",
+      "text": "Get Started"
+    },
+    {
+      "type": "heading",
+      "text": "Sandbox and Lab Environment"
+    },
+    {
+      "type": "paragraph",
+      "text": "SQL, like any other coding language, is best learned by working hands-on with code."
+    },
+    {
+      "type": "paragraph",
+      "text": "With our online SQL editor, you can edit the SQL statements, and view the result in your browser:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\nSELECT * FROM Customers;\n\nTry it Yourself »"
+    },
+    {
+      "type": "paragraph",
+      "text": "If you want to explore more and host your project, we have a feature called Spaces \nthat allows you to build, test and deploy static websites for free."
+    },
+    {
+      "type": "paragraph",
+      "text": "Here you get a secure sandbox environment called Spaces, where you can practice coding and test projects in real-time."
+    },
+    {
+      "type": "paragraph",
+      "text": "Spaces allow you to test, build, and deploy code. This includes a W3Schools subdomain, hosting, and secure SSL certificates."
+    },
+    {
+      "type": "paragraph",
+      "text": "Spaces require no installation and run directly in the browser."
+    },
+    {
+      "type": "paragraph",
+      "text": "Features include:"
+    },
+    {
+      "type": "other",
+      "text": "Collaboration\n    File navigator\n    Terminal & log\n    Package manager\n    Database\n    Environment manager\n    Analytics"
+    },
+    {
+      "type": "paragraph",
+      "text": "Create a Spaces Account"
+    },
+    {
+      "type": "heading",
+      "text": "SQL Certification"
+    },
+    {
+      "type": "paragraph",
+      "text": "W3Schools offers an end-of-pathway certification program."
+    },
+    {
+      "type": "paragraph",
+      "text": "Here you can take exams to get certified."
+    },
+    {
+      "type": "paragraph",
+      "text": "The SQL exam is a test that summarizes the W3Schools SQL syllabus."
+    },
+    {
+      "type": "paragraph",
+      "text": "After passing the exam you get the \"Certified SQL Developer\" Certification."
+    },
+    {
+      "type": "paragraph",
+      "text": "There are two different types of certifications:"
+    },
+    {
+      "type": "other",
+      "text": "Non-adaptive\nAdaptive"
+    },
+    {
+      "type": "paragraph",
+      "text": "The non-adaptive is pass or no pass."
+    },
+    {
+      "type": "paragraph",
+      "text": "The adaptive certification is adaptive and graded; students will get a grade from intermediate, advanced to professional."
+    },
+    {
+      "type": "paragraph",
+      "text": "Buy Certificate »"
+    },
+    {
+      "type": "heading",
+      "text": "Are You a Teacher?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Are you interested in learning how you can use W3Schools Academy to Teach \nSQL?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Watch a demo of W3Schools Academy. You'll see how it works, and discover how it can make teaching programming easier and more engaging."
+    },
+    {
+      "type": "paragraph",
+      "text": "Watch Demo »"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

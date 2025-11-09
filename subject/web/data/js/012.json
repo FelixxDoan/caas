@@ -1,0 +1,60 @@
+{
+  "url": "https://www.w3schools.com/js/js_events_examples.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript HTML DOM Events Examples"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples of using JavaScript to react to events"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Input Events"
+    },
+    {
+      "type": "other",
+      "text": "onblur - When a user leaves an input field\nonchange - When a user changes the content of an input field\nonchange - When a user selects a dropdown value\nonfocus - When an input field gets focus\nonselect - When input text is selected\nonsubmit - When a user clicks the submit button\nonreset - When a user clicks the reset button\nonkeydown - When a user is pressing/holding down a key\nonkeypress - When a user is pressing/holding down a key\nonkeyup - when the user releases a key (1)\nonkeyup - When the user releases a key (2)\nonkeydown vs onkeyup - Both"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Mouse Events"
+    },
+    {
+      "type": "other",
+      "text": "onmouseover/onmouseout - When the mouse passes over an element\nonmousedown/onmouseup - When pressing/releasing a mouse button\nonmousedown - When mouse is clicked: Alert which element\nonmousedown - When mouse is clicked: Alert which button\nonmousemove/onmouseout - When moving the mouse pointer over/out of an image\nonmouseover/onmouseout - When moving the mouse over/out of an image\nonmouseover an image map"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Click Events"
+    },
+    {
+      "type": "other",
+      "text": "Acting to the onclick event\nonclick - When button is clicked\nondblclick - \nWhen a text is double-clicked"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Load Events"
+    },
+    {
+      "type": "other",
+      "text": "onload - When the page has been loaded\nonload - When an image has been loaded\nonerror - When an error occurs when loading an image\nonunload - When the browser closes the document\nonresize - When the browser window is resized"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Others"
+    },
+    {
+      "type": "other",
+      "text": "What is the keycode of the key pressed?\nWhat are the coordinates of the cursor?\nWhat are the coordinates of the cursor, relative to the screen?\nWas the shift key pressed?\nWhich event type occurred?\nExamples explained"
+    }
+  ]
+}

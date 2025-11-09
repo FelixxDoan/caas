@@ -1,0 +1,322 @@
+{
+  "url": "https://www.w3schools.com/html/html_xhtml.asp",
+  "title": "HTML",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "HTML Versus XHTML"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "XHTML is a stricter, more XML-based version of HTML."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What is XHTML?"
+    },
+    {
+      "type": "other",
+      "text": "XHTML stands for EXtensible HyperText \nMarkup Language\nXHTML is a stricter, more XML-based version of HTML\nXHTML is HTML defined as an XML application\nXHTML is supported by all major browsers"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Why XHTML?"
+    },
+    {
+      "type": "paragraph",
+      "text": "XML is a markup language where all documents must be marked up correctly (be \"well-formed\")."
+    },
+    {
+      "type": "paragraph",
+      "text": "XHTML was developed to make HTML more extensible and flexible to work with \nother data formats (such as XML). In addition, browsers ignore errors in HTML \npages, and try to display the website even if it has some errors in the markup. \nSo XHTML comes with a much stricter error handling."
+    },
+    {
+      "type": "paragraph",
+      "text": "If you want to study XML, please read our XML Tutorial."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Most Important Differences from HTML"
+    },
+    {
+      "type": "other",
+      "text": "<!DOCTYPE> is mandatory\n  The xmlns attribute in <html> is mandatory\n  <html>, <head>, <title>, and <body> are mandatory\n  Elements must always be  properly nested\n  Elements must always be closed\n  Elements must always be in lowercase\n  Attribute names must always be in lowercase\n  Attribute values must always be quoted\n  Attribute minimization is forbidden"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "XHTML - <!DOCTYPE ....> Is Mandatory"
+    },
+    {
+      "type": "paragraph",
+      "text": "An XHTML document must have an XHTML <!DOCTYPE> declaration."
+    },
+    {
+      "type": "paragraph",
+      "text": "The <html>, <head>, <title>, and <body> elements must also be present, and the xmlns attribute in <html> \nmust specify the xml namespace for the document."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.1//EN\"\n  \"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd\"><html xmlns=\"http://www.w3.org/1999/xhtml\">\n<head>\n \n<title>Title of document</title>\n</head>\n<body>  some content here... \n  </body>\n</html>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "XHTML Elements Must be Properly Nested"
+    },
+    {
+      "type": "paragraph",
+      "text": "In XHTML, elements must always be properly nested within each other, like this:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<b><i>Some \n  text</i></b>"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<b><i>Some \n  text</b></i>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "XHTML Elements Must Always be Closed"
+    },
+    {
+      "type": "paragraph",
+      "text": "In XHTML, elements must always be closed, like this:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<p>This is a paragraph</p>\n<p>This is another paragraph</p>"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<p>This is a paragraph\n<p>This is another paragraph"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "XHTML Empty Elements Must Always be Closed"
+    },
+    {
+      "type": "paragraph",
+      "text": "In XHTML, empty elements must always be closed, like this:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "A break: <br />\nA horizontal rule: <hr />\nAn image: <img src=\"happy.gif\" alt=\"Happy face\" />"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "A break: <br>\nA horizontal rule: <hr>\nAn image: <img src=\"happy.gif\" alt=\"Happy face\">"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "XHTML Elements Must be in Lowercase"
+    },
+    {
+      "type": "paragraph",
+      "text": "In XHTML, element names must always be in lowercase, like this:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<body>\n<p>This is a paragraph</p>\n</body>"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<BODY>\n<P>This is a paragraph</P>\n</BODY>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "XHTML Attribute Names Must be in Lowercase"
+    },
+    {
+      "type": "paragraph",
+      "text": "In XHTML, attribute names must always be in lowercase, like this:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<a href=\"https://www.w3schools.com/html/\">Visit our HTML tutorial</a>"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<a HREF=\"https://www.w3schools.com/html/\">Visit our HTML tutorial</a>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "XHTML Attribute Values Must be Quoted"
+    },
+    {
+      "type": "paragraph",
+      "text": "In XHTML, attribute values must always be quoted, like this:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<a href=\"https://www.w3schools.com/html/\">Visit our HTML tutorial</a>"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<a href=https://www.w3schools.com/html/>Visit our HTML tutorial</a>"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "XHTML Attribute Minimization is Forbidden"
+    },
+    {
+      "type": "paragraph",
+      "text": "In XHTML, attribute minimization is forbidden:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<input type=\"checkbox\" name=\"vehicle\" value=\"car\" checked=\"checked\" /><input type=\"text\" name=\"lastname\" disabled=\"disabled\" />"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<input type=\"checkbox\" name=\"vehicle\" value=\"car\" checked /><input type=\"text\" name=\"lastname\" disabled />"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Validate HTML With The W3C Validator"
+    },
+    {
+      "type": "other",
+      "text": "Put your web address in the box below:"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "XHTML stands for EXtensible HyperText \nMarkup Language",
+        "XHTML is a stricter, more XML-based version of HTML",
+        "XHTML is HTML defined as an XML application",
+        "XHTML is supported by all major browsers"
+      ]
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "<!DOCTYPE> is mandatory",
+        "The xmlns attribute in <html> is mandatory",
+        "<html>, <head>, <title>, and <body> are mandatory",
+        "Elements must always be  properly nested",
+        "Elements must always be closed",
+        "Elements must always be in lowercase",
+        "Attribute names must always be in lowercase",
+        "Attribute values must always be quoted",
+        "Attribute minimization is forbidden"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "url": "https://www.w3schools.com/css/css_image_sprites.asp",
+  "title": "CSS ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "CSS Image Sprites"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Image Sprites"
+    },
+    {
+      "type": "paragraph",
+      "text": "An image sprite is a collection of images put into a single image."
+    },
+    {
+      "type": "paragraph",
+      "text": "A web page with many images can take a long time to load and generates \nmultiple server requests."
+    },
+    {
+      "type": "paragraph",
+      "text": "Using image sprites will reduce the number of server requests and save \nbandwidth."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Image Sprites - Simple Example"
+    },
+    {
+      "type": "paragraph",
+      "text": "Instead of using three separate images, we use this single image (\"img_navsprites.gif\"):"
+    },
+    {
+      "type": "paragraph",
+      "text": "With CSS, we can show just the part of the image we need."
+    },
+    {
+      "type": "paragraph",
+      "text": "In the following example the CSS specifies which part of the \"img_navsprites.gif\" \nimage to show:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "#home\n{\n   \nwidth: 46px;\n  height: 44px;\n   \nbackground: url(img_navsprites.gif) 0 0;\n}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Example explained:"
+    },
+    {
+      "type": "other",
+      "text": "<img id=\"home\" src=\"img_trans.gif\"> - Only defines a small transparent image \nbecause the src attribute cannot be empty. The displayed image will be the background image we specify in CSS\nwidth: 46px; height: 44px; - Defines the portion of the image we want to use\nbackground: url(img_navsprites.gif) 0 0; - Defines the background image and its position (left 0px, top 0px)"
+    },
+    {
+      "type": "paragraph",
+      "text": "This is the easiest way to use image sprites, now we want to expand it by \nusing links and hover effects."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Image Sprites - Create a Navigation List"
+    },
+    {
+      "type": "paragraph",
+      "text": "We want to use the sprite image (\"img_navsprites.gif\") to create a navigation list."
+    },
+    {
+      "type": "paragraph",
+      "text": "We will use an HTML list, because it can be a link and also supports a background image:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "#navlist {  position: relative;}\n#navlist li {  margin: 0;  padding: 0;  list-style: none;  position: absolute;\n    top: 0;}\n#navlist li, #navlist a {  height: 44px;  display: block;}\n\n#home {  left: 0px;  width: 46px;  background: url('img_navsprites.gif') \n0 0;}\n#prev {  left: 63px;  width: 43px;  background: url('img_navsprites.gif') -47px 0;}\n#next {  left: 129px;  width: 43px;  background: url('img_navsprites.gif') \n-91px 0;}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Example explained:"
+    },
+    {
+      "type": "other",
+      "text": "#navlist {position:relative;} - position is set to relative to allow \nabsolute positioning inside it\n#navlist li {margin:0;padding:0;list-style:none;position:absolute;top:0;} \n- margin and padding are set to 0, list-style is removed, and all list items \nare absolute positioned\n#navlist li, #navlist a {height:44px;display:block;} - the height of all \nthe images is 44px"
+    },
+    {
+      "type": "paragraph",
+      "text": "Now start to position and style for each specific part:"
+    },
+    {
+      "type": "other",
+      "text": "#home {left:0px;width:46px;} - Positioned all the way to the left, and \nthe width of the image is 46px\n#home {background:url(img_navsprites.gif) 0 0;} - \nDefines the background image and its position (left 0px, top 0px)\n#prev {left:63px;width:43px;} - Positioned 63px to the right (#home width \n46px + some extra space between items), and the width is 43px\n#prev {background:url('img_navsprites.gif') -47px 0;} - Defines the background \nimage 47px to the right (#home width 46px + 1px line \ndivider)\n#next {left:129px;width:43px;} - Positioned 129px to \nthe right (start of #prev is 63px + #prev width 43px + extra space), and the width is 43px\n#next {background:url('img_navsprites.gif') -91px 0;} - \nDefines the background image 91px to the right (#home width 46px + 1px \nline divider + #prev width 43px + 1px line divider)"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Image Sprites - Hover Effect"
+    },
+    {
+      "type": "paragraph",
+      "text": "Now we want to add a hover effect to our navigation list."
+    },
+    {
+      "type": "other",
+      "text": "Tip: The :hover selector can be used on all elements, \nnot only on links."
+    },
+    {
+      "type": "paragraph",
+      "text": "Our new image (\"img_navsprites_hover.gif\") contains three navigation images \nand three images to use for hover effects:"
+    },
+    {
+      "type": "paragraph",
+      "text": "Because this is one single image, and not six separate files, there will be no \nloading delay when a user hovers over the image."
+    },
+    {
+      "type": "paragraph",
+      "text": "We only add three lines of code to add the hover effect:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "#home a:hover {  background: url('img_navsprites_hover.gif') 0 -45px;}\n#prev a:hover {  background: url('img_navsprites_hover.gif') -47px \n-45px;}\n#next a:hover {  background: url('img_navsprites_hover.gif') -91px \n-45px;}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Example explained:"
+    },
+    {
+      "type": "other",
+      "text": "#home a:hover {background: url('img_navsprites_hover.gif') 0 -45px;} - For all three hover images we specify the same background position, only 45px further down"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

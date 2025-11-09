@@ -1,0 +1,26 @@
+# services/admin-api/Dockerfile.dev
+FROM node:20-bookworm-slim
+
+# (Tuỳ chọn) để cài build-essential khi cần native modules khác
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    curl ca-certificates git \
+  && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+
+# Chỉ copy file manifest của admin-api
+COPY services/admin-api/package.json /app/package.json
+COPY services/admin-api/pnpm-lock.yaml* /app/pnpm-lock.yaml
+
+# Bật pnpm qua corepack và cài deps
+RUN corepack enable || true
+RUN pnpm install
+
+# Copy mã nguồn admin-api
+COPY services/admin-api .
+
+ENV NODE_ENV=development
+EXPOSE 3000
+
+# Tự động watch package.json & pnpm-lock để cài lại khi đổi
+CMD ["sh", "-c", "npx chokidar-cli package.json pnpm-lock.yaml -c 'echo Installing... && pnpm install' & pnpm dev"]

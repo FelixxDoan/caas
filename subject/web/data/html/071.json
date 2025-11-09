@@ -1,0 +1,193 @@
+{
+  "url": "https://www.w3schools.com/html/html_table_colgroup.asp",
+  "title": "HTML ",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "HTML Table Colgroup"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "paragraph",
+      "text": "The <colgroup> element is used to style specific \ncolumns of a table."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HTML Table Colgroup"
+    },
+    {
+      "type": "paragraph",
+      "text": "If you want to style the first two columns of a table, use the <colgroup>\nand <col>\nelements."
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "MON",
+          "TUE",
+          "WED",
+          "THU",
+          "FRI",
+          "SAT",
+          "SUN"
+        ],
+        [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        [
+          "8",
+          "9",
+          "10",
+          "11",
+          "12",
+          "13",
+          "14"
+        ],
+        [
+          "15",
+          "16",
+          "17",
+          "18",
+          "19",
+          "20",
+          "21"
+        ],
+        [
+          "22",
+          "23",
+          "24",
+          "25",
+          "26",
+          "27",
+          "28"
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The <colgroup> element should be used as a container for the column \nspecifications."
+    },
+    {
+      "type": "paragraph",
+      "text": "Each group is specified with a <col> element."
+    },
+    {
+      "type": "paragraph",
+      "text": "The span attribute specifies how many columns get the style."
+    },
+    {
+      "type": "paragraph",
+      "text": "The style attribute specifies the style to give the columns."
+    },
+    {
+      "type": "other",
+      "text": "Note: There is a very limited selection of legal CSS properties for colgroups."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<table>  <colgroup>    <col span=\"2\" \n  style=\"background-color: #D6EEEE\">  </colgroup>\n    <tr>    <th>MON</th>    <th>TUE</th>    \n  <th>WED</th>    <th>THU</th>..."
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Note: The <colgroup> tag must be a \nchild of a <table> element and should be placed \nbefore any other table elements, like <thead>,\n<tr>, <td> \netc., but after the <caption> element, if \npresent."
+    },
+    {
+      "type": "other",
+      "text": "Legal CSS Properties"
+    },
+    {
+      "type": "paragraph",
+      "text": "There is only a very limited selection of CSS properties that are allowed to be used in the colgroup:"
+    },
+    {
+      "type": "paragraph",
+      "text": "width property\nvisibility property\nbackground properties\nborder properties"
+    },
+    {
+      "type": "paragraph",
+      "text": "All other CSS properties will have no effect on your tables."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Multiple Col Elements"
+    },
+    {
+      "type": "paragraph",
+      "text": "If you want to style multiple columns with different styles, use more than \none\n<col> element inside the\n<colgroup>:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<table>  <colgroup>    <col span=\"2\" \n  style=\"background-color: #D6EEEE\">    <col span=\"3\" \n  style=\"background-color: pink\">  </colgroup>  <tr>    <th>MON</th>    <th>TUE</th>    \n  <th>WED</th>    <th>THU</th>..."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Empty Colgroups"
+    },
+    {
+      "type": "paragraph",
+      "text": "If you want \nto style columns in the middle of a table, insert an \"empty\" \n<col> element (with no \nstyles) for the columns before:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<table>  <colgroup>    <col span=\"3\">    \n  <col \n  span=\"2\" \n  style=\"background-color: pink\">  </colgroup>  <tr>    <th>MON</th>    <th>TUE</th>    \n  <th>WED</th>    <th>THU</th>..."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Hide Columns"
+    },
+    {
+      "type": "paragraph",
+      "text": "You can hide columns with the visibility: collapse property:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "html",
+          "code": "<table>  <colgroup>    <col span=\"2\">    <col span=\"3\" \n  style=\"visibility: collapse\">  </colgroup>\n    <tr>    <th>MON</th>    <th>TUE</th>    \n  <th>WED</th>    <th>THU</th>..."
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

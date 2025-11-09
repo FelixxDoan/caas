@@ -1,0 +1,69 @@
+{
+  "url": "https://www.w3schools.com/js/js_ex_dom.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript HTML Objects Examples"
+    },
+    {
+      "type": "paragraph",
+      "text": "Examples of using JavaScript to access and manipulate HTML objects."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Anchor Object"
+    },
+    {
+      "type": "other",
+      "text": "Find the value of the href attribute of a link\nFind the value of the hreflang attribute of a link\nFind the value of the id attribute a link\nFind the value of the rel attribute of a link\nFind the value of the target attribute of a link\nFind the value of the type attribute of a link"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Area Object"
+    },
+    {
+      "type": "other",
+      "text": "Find the alternate text of an image-map area\nFind the coordinates of an area\nFind the shape of an area\nFind the href of an area\nFind the protocol part of the href attribute of an area\nFind the hostname part of the href attribute of an area\nFind the port number part of the href attribute of an area\nFind the pathname part of the href attribute of an area\nFind the querystring part of the href attribute of an area\nFind the hash part of the href attribute of an area\nFind the value of the target attribute of an area"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Base Object"
+    },
+    {
+      "type": "other",
+      "text": "Find the base URL for all relative URLs on a page\nFind the base target for all links on a page"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "IFrame Object"
+    },
+    {
+      "type": "other",
+      "text": "Change the background color of an iframe\nFind the height of an iframe\nFind the value of the name attribute of an iframe\nFind the source (src) attribute of an iframe\nChange the source (src) attribute of an iframe"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Image Object"
+    },
+    {
+      "type": "other",
+      "text": "Find the alternate text of an image\nFind the height of an image\nClick to display a high-resolution version of an image\nFind the source (src) of an image\nChange the source of an image\nChange the source of the lightbulb\nFind the value of the usemap attribute of an image"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Table Objects"
+    },
+    {
+      "type": "other",
+      "text": "Change the width of a table border\nChange the padding of a table\nFind the innerHTML of a cell\nCreate a caption for a table\nDelete rows in a table\nAdd rows to a table\nChange the content of a table cell"
+    }
+  ]
+}

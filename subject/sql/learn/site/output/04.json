@@ -1,0 +1,102 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_distinct.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL SELECT DISTINCT Statement"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "text": "The SQL SELECT DISTINCT Statement"
+    },
+    {
+      "type": "paragraph",
+      "text": "The SELECT DISTINCT statement is used to return only distinct \n(different) values."
+    },
+    {
+      "type": "other",
+      "text": "Example\nSelect all the different countries from the \"Customers\" table:\n\nSELECT DISTINCT Country FROM Customers;\n\nTry it Yourself »"
+    },
+    {
+      "type": "paragraph",
+      "text": "Inside a table, a column often contains many duplicate values; and sometimes you \nonly want to list the different (distinct) values."
+    },
+    {
+      "type": "heading",
+      "text": "Syntax"
+    },
+    {
+      "type": "other",
+      "text": "SELECT DISTINCT column1, column2, ...\n FROM table_name;"
+    },
+    {
+      "type": "heading",
+      "text": "Demo Database"
+    },
+    {
+      "type": "paragraph",
+      "text": "Below is a selection from the Customers table used in the examples:"
+    },
+    {
+      "type": "other",
+      "text": "CustomerID\n    CustomerName\n    ContactName\n    Address\n    City\n    PostalCode\n    Country\n  \n  \n    1\n    Alfreds Futterkiste\n    Maria Anders\n    Obere Str. 57\n    Berlin\n    12209\n    Germany\n  \n  \n    2\n    Ana Trujillo Emparedados y helados\n    Ana Trujillo\n    Avda. de la Constitución 2222\n    México D.F.\n    05021\n    Mexico\n  \n  \n    3\n    Antonio Moreno Taquería\n    Antonio Moreno\n    Mataderos 2312\n    México D.F.\n    05023\n    Mexico\n  \n  \n    4\n    Around the Horn\n    Thomas Hardy\n    120 Hanover Sq.\n    London\n    WA1 1DP\n    UK\n  \n  \n    5\n    Berglunds snabbköp\n    Christina Berglund\n    Berguvsvägen 8\n    Luleå\n    S-958 22\n    Sweden"
+    },
+    {
+      "type": "heading",
+      "text": "SELECT Example Without DISTINCT"
+    },
+    {
+      "type": "paragraph",
+      "text": "If you omit the DISTINCT keyword, the SQL statement \nreturns the \"Country\" value from all the records of the \"Customers\" table:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\nSELECT Country FROM Customers;\n\nTry it Yourself »"
+    },
+    {
+      "type": "heading",
+      "text": "Count Distinct"
+    },
+    {
+      "type": "paragraph",
+      "text": "By using the DISTINCT keyword in a function called \nCOUNT, we can return the number of different countries."
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n  SELECT COUNT(DISTINCT Country) FROM Customers;"
+    },
+    {
+      "type": "other",
+      "text": "Note: The COUNT(DISTINCT column_name) is not supported in Microsoft Access databases."
+    },
+    {
+      "type": "paragraph",
+      "text": "Here is a workaround for MS Access:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n  SELECT Count(*) AS DistinctCountriesFROM (SELECT DISTINCT Country FROM Customers);"
+    },
+    {
+      "type": "paragraph",
+      "text": "You will learn about the COUNT function later in this tutorial."
+    },
+    {
+      "type": "heading",
+      "text": "Video: SQL SELECT DISTINCT Statement"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

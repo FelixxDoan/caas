@@ -1,0 +1,268 @@
+{
+  "url": "https://www.w3schools.com/js/js_graphics_chartjs.asp",
+  "title": "Chart.js",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Chart.js"
+    },
+    {
+      "type": "other",
+      "text": "Chart.js is an free JavaScript library for making HTML-based charts.\nIt is one of the simplest visualization libraries for JavaScript, and \ncomes with the many built-in chart types:\n\nScatter Plot\nLine Chart\nBar Chart\nPie Chart\nDonut Chart\nBubble Chart\nArea Chart\nRadar Chart\nMixed Chart"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How to Use Chart.js?"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<script\nsrc=\"https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js\">\n</script>"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "<canvas id=\"myChart\" style=\"width:100%;max-width:700px\"></canvas>"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const myChart = new Chart(\"myChart\", {\n  type: \"bar\",\n  data: {},\n  options: {}\n});"
+        },
+        {
+          "language": "unknown",
+          "code": "const myChart = new Chart(\"myChart\", {\n  type: \"line\",\n  data: {},\n  options: {}\n});"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Bar Charts"
+    },
+    {
+      "type": "other",
+      "text": "var chart13 = new Chart(\"myPlot13\", {\n  type: 'bar',\n  data: {\n    labels: [\"Italy\",\"France\",\"Spain\",\"USA\",\"Argentina\"],\n    datasets: [{\n      backgroundColor:[\"red\", \"green\",\"blue\",\"orange\",\"brown\"],\n      data: [55, 49, 44, 24, 15]\n    }]\n  },\n  options: {\n    legend: {display: false},\n    scales: {\n      yAxes: [{\n        ticks: {\n          beginAtZero: true\n        }\n      }]\n    },\n        title: {\n      display: true,\n      text: \"World Wide Wine Production 2018\",\n      fontSize: 16\n    }\n\n  }\n});"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const xValues = [\"Italy\", \"France\", \"Spain\", \"USA\", \"Argentina\"];\nconst yValues = [55, 49, 44, 24, 15];\nconst barColors = [\"red\", \"green\",\"blue\",\"orange\",\"brown\"];\n\nnew Chart(\"myChart\", {\n  type: \"bar\",\n  data: {\n    labels: xValues,\n    datasets: [{\n      backgroundColor: barColors,\n      data: yValues\n    }]\n  },\n  options: {...}\n});"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const barColors = [\"blue\"];"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const barColors =\"red\";"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const barColors = [\n  \"rgba(0,0,255,1.0)\",\n  \"rgba(0,0,255,0.8)\",\n  \"rgba(0,0,255,0.6)\",\n  \"rgba(0,0,255,0.4)\",\n  \"rgba(0,0,255,0.2)\",\n];"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "type: \"horizontalBar\","
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Pie Charts"
+    },
+    {
+      "type": "other",
+      "text": "var xValues = [\"Italy\", \"France\", \"Spain\", \"USA\", \"Argentina\"];\nvar yValues = [55, 49, 44, 24, 15];\nvar barColors = [\n  \"#b91d47\",\n  \"#00aba9\",\n  \"#2b5797\",\n  \"#e8c3b9\",\n  \"#1e7145\"\n];\n\nvar chart = new Chart(\"myPlot14\", {\n  type: \"pie\",\n  data: {\n    labels: xValues,\n    datasets: [{\n      backgroundColor: barColors,\n      data: yValues\n    }]\n  },\n  options: {\n    title: {\n      display: true,\n      text: \"World Wide Wine Production 2018\"\n    }\n  }\n});"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "new Chart(\"myChart\", {\n  type: \"pie\",\n  data: {\n    labels: xValues,\n    datasets: [{\n      backgroundColor: barColors,\n      data: yValues\n    }]\n  },\n  options: {\n    title: {\n      display: true,\n      text: \"World Wide Wine Production\"\n    }\n  }\n});"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Doughnut Charts"
+    },
+    {
+      "type": "other",
+      "text": "var ctx = document.getElementById(\"myPlot15\").getContext(\"2d\");\n\nvar xValues = [\"Italy\", \"France\", \"Spain\", \"USA\", \"Argentina\"];\nvar yValues = [55, 49, 44, 24, 15];\nvar barColors = [\n  \"#b91d47\",\n  \"#00aba9\",\n  \"#2b5797\",\n  \"#e8c3b9\",\n  \"#1e7145\"\n];\n\nvar chart = new Chart(ctx, {\n  type: \"doughnut\",\n  data: {\n    labels: xValues,\n    datasets: [{\n      backgroundColor: barColors,\n      data: yValues\n    }]\n  },\n  options: {\n    title: {\n      display: true,\n      text: \"World Wide Wine Production 2018\"\n    }\n  }\n});"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "type: \"doughnut\";"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Scatter Plots"
+    },
+    {
+      "type": "paragraph",
+      "text": "House Prices vs. Size"
+    },
+    {
+      "type": "other",
+      "text": "new Chart(\"myPlot11\", {\n  type: 'scatter',\n  data: {\n    datasets: [{\n      pointRadius:4,\n      backgroundColor:\"rgba(0,0,255,1)\",\n      data:[\n      {x:50, y:7},\n      {x:60, y:8},\n      {x:70, y:8},\n      {x:80, y:9},\n      {x:90, y:9},\n      {x:100, y:9},\n      {x:110, y:10},\n      {x:120, y:11},\n      {x:130, y:14},\n      {x:140, y:14},\n      {x:150, y:15}\n      ]\n    }]\n  },\n  options: {\n    legend: {display: false},\n    scales: {\n      xAxes: [{ticks: {min: 40, max:160}}],\n      yAxes: [{ticks: {min: 6, max:16}}],\n    }\n  }\n});"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const xyValues = [\n  {x:50, y:7},\n  {x:60, y:8},\n  {x:70, y:8},\n  {x:80, y:9},\n  {x:90, y:9},\n  {x:100, y:9},\n  {x:110, y:10},\n  {x:120, y:11},\n  {x:130, y:14},\n  {x:140, y:14},\n  {x:150, y:15}\n];\n\nnew Chart(\"myChart\", {\n  type: \"scatter\",\n  data: {\n    datasets: [{\n      pointRadius: 4,\n      pointBackgroundColor: \"rgba(0,0,255,1)\",\n      data: xyValues\n    }]\n  },\n  options:{...}\n});"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Line Graphs"
+    },
+    {
+      "type": "paragraph",
+      "text": "House Prices vs. Size"
+    },
+    {
+      "type": "other",
+      "text": "new Chart(\"myPlot12\", {\n  type: 'line',\n  data: {\n    labels: [50,60,70,80,90,100,110,120,130,140,150],\n    datasets: [{\n      fill:false,\n      lineTension: 0,\n      backgroundColor:\"rgba(0,0,255,1.0)\",\n      borderColor: \"rgba(0,0,255,0.1)\",\n      data: [7,8,8,9,9,9,10,11,14,14,15]\n    }]\n  },\n  options: {\n    legend: {display: false},\n    scales: {\n      yAxes: [{ticks: {min: 6, max:16}}],\n    }\n  }\n});"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const xValues = [50,60,70,80,90,100,110,120,130,140,150];\nconst yValues = [7,8,8,9,9,9,10,11,14,14,15];\n\nnew Chart(\"myChart\", {\n  type: \"line\",\n  data: {\n    labels: xValues,\n    datasets: [{\n      backgroundColor:\"rgba(0,0,255,1.0)\",\n      borderColor: \"rgba(0,0,255,0.1)\",\n      data: yValues\n    }]\n  },\n  options:{...}\n});"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "If you set the borderColor to zero, you can scatter plot the line graph:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "borderColor: \"rgba(0,0,0,0)\","
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Multiple Lines"
+    },
+    {
+      "type": "other",
+      "text": "var xValues = [100,200,300,400,500,600,700,800,900,1000];\n\nnew Chart(\"myChart13\", {\n  type: \"line\",\n  data: {\n    labels: xValues,\n    datasets: [{ \n      data: [860,1140,1060,1060,1070,1110,1330,2210,7830,2478],\n      borderColor: \"red\",\n      fill: false\n    }, { \n      data: [1600,1700,1700,1900,2000,2700,4000,5000,6000,7000],\n      borderColor: \"green\",\n      fill: false\n    }, { \n      data: [300,700,2000,5000,6000,4000,2000,1000,200,100],\n      borderColor: \"blue\",\n      fill: false\n    }]\n  },\n  options: {\n    legend: {display: false}\n  }\n});"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const xValues = [100,200,300,400,500,600,700,800,900,1000];\n\nnew Chart(\"myChart\", {\n  type: \"line\",\n  data: {\n    labels: xValues,\n    datasets: [{\n      data: [860,1140,1060,1060,1070,1110,1330,2210,7830,2478],\n      borderColor: \"red\",\n      fill: false\n    },{\n      data: [1600,1700,1700,1900,2000,2700,4000,5000,6000,7000],\n      borderColor: \"green\",\n      fill: false\n    },{\n      data: [300,700,2000,5000,6000,4000,2000,1000,200,100],\n      borderColor: \"blue\",\n      fill: false\n    }]\n  },\n  options: {\n    legend: {display: false}\n  }\n});"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Linear Graphs"
+    },
+    {
+      "type": "other",
+      "text": "var xValues = [];\nvar yValues = [];\ngenerateData(\"x * 2 + 7\", 0, 10, 0.5);\n\nnew Chart(\"myFunc1\", {\n  type: \"line\",\n  data: {\n    labels: xValues,\n    datasets: [{\n      fill: false,\n      pointRadius: 1,\n      borderColor: \"rgba(255,0,0,0.5)\",\n      data: yValues\n    }]\n  },    \n  options: {\n    legend: {display: false},\n    title: {\n      display: true,\n      text: \"y = x * 2 + 7\",\n      fontSize: 16\n    }\n  }\n});\nfunction generateData(value, i1, i2, step = 1) {\n  for (let x = i1; x <= i2; x += step) {\n    yValues.push(eval(value));\n    xValues.push(x);\n  }\n}"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "const xValues = [];\nconst yValues = [];\ngenerateData(\"x * 2 + 7\", 0, 10, 0.5);\n\nnew Chart(\"myChart\", {\n  type: \"line\",\n  data: {\n    labels: xValues,\n    datasets: [{\n      fill: false,\n      pointRadius: 1,\n      borderColor: \"rgba(255,0,0,0.5)\",\n      data: yValues\n    }]\n  },\n  options: {...}\n});\n\nfunction generateData(value, i1, i2, step = 1) {\n  for (let x = i1; x <= i2; x += step) {\n    yValues.push(eval(value));\n    xValues.push(x);\n  }\n}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Function Graphs"
+    },
+    {
+      "type": "other",
+      "text": "var xValues = [];\nvar yValues = [];\ngenerateData(\"Math.sin(x)\", 0, 10, 0.5);\n\nnew Chart(\"myFunc2\", {\n  type: \"line\",\n  data: {\n    labels: xValues,\n    datasets: [{\n      fill: false,\n      pointRadius: 2,\n      borderColor: \"rgba(0,0,255,0.5)\",\n      data: yValues\n    }]\n  },    \n  options: {\n    legend: {display: false},\n    title: {\n      display: true,\n      text: \"y = sin(x)\",\n      fontSize: 16\n    }\n  }\n});\nfunction generateData(value, i1, i2, step = 1) {\n  for (let x = i1; x <= i2; x += step) {\n    yValues.push(eval(value));\n    xValues.push(x);\n  }\n}"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "generateData(\"Math.sin(x)\", 0, 10, 0.5);"
+        }
+      ]
+    }
+  ]
+}

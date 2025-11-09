@@ -1,0 +1,56 @@
+{
+  "url": "https://www.w3schools.com/js/js_typed_reference.asp",
+  "title": "Typed Array Reference",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "Typed Array Reference"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Typed Array Types"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Revised July 2025"
+    },
+    {
+      "type": "other",
+      "text": "Name\nRange\nType\n\n\n\nInt8Array\n-128 / 127\n1 byte signed integer\n\n\nUint8Array\n0 / 255\n1 byte unsigned integer\n\n\nUint8ClampedArray\n0 / 255\n1 byte unsigned integer\n\n\nInt16Array\n-32768 / 32767\n2 bytes signed short\n\n\nUint16Array\n0 / 65535\n2 bytes unsigned short\n\n\nInt32Array\n-231 / 231 - 1\n4 bytes signed long\n\n\nUint32Array\n0 / 232 - 1\n4 bytes unsigned long\n\n\nBigInt64Array\n-263 / 263 - 1\n8 bytes signed big integer\n\n\nBigUint64Array\n0 / 264 - 1\n8 bytes unsigned big integer\n\n   \n\nFloat16Array\n-65504 / 65504\n2 bytes floating point\n\n\nFloat32Array\n-3.4e38 / 3.4e38\n4 bytes floating point\n\n\nFloat64Array\n-1.8e308 / 1.8e308\n8 bytes floating point"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Typed Array Methods"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Revised July 2025"
+    },
+    {
+      "type": "other",
+      "text": "Method\n  Description\n\n\n  at()\n  Returns one indexed element from a typed array\n\n\n  byteLength\n  Returns the length (in bytes) of a typed array.\n\n\n  byteOffset\n  Returns the offset (in bytes) of a typed array from the start of its ArrayBuffer\n\n\n  BYTES_PER_ELEMENT\n  Returns the number of bytes used to store one element in a typed array\n\n\n  copyWithin()\n  Copies array elements to another position in the array\n\n\n  entries()\n  Returns an iterator object with the key/value pairs from the array\n\n\n  every()\n  Executes a function for each typed array element\n\n\n  fill()\n  Fill all array elements with a value\n\n\n  filter()\n  Returns a new array filled with elements that pass a test\n\n\n  find()\n  Returns the first element that satisfies a condition\n\n\n  findIndex()\n  Returns the index of the first element that satisfies a condition\n\n\n  findLast()\n  Returns the last element that satisfies a condition\n\n\n  findLastIndex()\n  Returns the index of the last element that satisfies a condition\n\n\n  forEach()\n  Executes a function for each typed array element\n\n\n  from()\n  Returns a typed array from any object with a length property\n\n\n  includes()\n  Returns true if an array includes a specified value\n\n\n  indexOf()\n  Returns the first index (position) of a specified value\n\n\n  join()\n  Returns the elements of an array as a string\n\n\n  keys()\n  Returns the keys of a typed array\n\n\n  lastIndexOf()\n  Returns the last index (position) of a specified value\n\n\n  length\n  Returns the lenth of the typed array\n\n\n  map()\n  Returns a new array from calling a function for every array element\n\n\n  name\n  Returns the name of the typed array\n\n\n  of()\n  Returns a new typed array from an existing array\n\n\n  reduce()\n  Reduce the values of an array to a single value\n\n\n  reduceRight()\n  Reduce the values of an array to a single value (right-to-left)\n\n\n  reverse()\n  Reverses a typed array in place\n\n\n  set()\n  Stores values in a typed array from another array\n\n\n  slice()\n  Reurns a new typed array sliced out of a typed array\n\n\n  some()\n  Reurns true if one element satisfies a condition\n\n\n  sort()\n  Sorts an array in place\n\n\n  subarray()\n  Returns a subarray in the same memory space\n\n\n  toLocaleString()\n  Returns all elements converted with their toLocaleString methods\n\n\n  toReversed()\n  Reverses an array in place\n\n\n  toSorted()\n  Sorts an array in place\n\n\n  toString()\n  Returns a string of all typed array elements\n\n\n  values()\n  Returns an iterator object with the values of an typed array\n\n\n  with()\n  Returns a new typed array with an updated array element"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Browser Support"
+    },
+    {
+      "type": "paragraph",
+      "text": "Typed Arrays is an ES6  feature."
+    },
+    {
+      "type": "paragraph",
+      "text": "ES6 is fully supported in all modern browsers since June 2017:"
+    },
+    {
+      "type": "other",
+      "text": "Chrome51\n    Edge15\n    Firefox54\n    Safari10\n    Opera38\n  \n  \n    May 2016\n    Apr 2017\n    Jun 2017\n    Sep 2016\n    Jun 2016"
+    }
+  ]
+}

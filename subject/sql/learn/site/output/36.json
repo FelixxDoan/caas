@@ -1,0 +1,162 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_any_all.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL ANY and ALL Operators"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "heading",
+      "text": "The SQL ANY and ALL Operators"
+    },
+    {
+      "type": "paragraph",
+      "text": "The ANY and ALL operators allow you to perform a comparison between a single \ncolumn value and a range of other values."
+    },
+    {
+      "type": "heading",
+      "text": "The SQL ANY Operator"
+    },
+    {
+      "type": "paragraph",
+      "text": "The ANY operator:"
+    },
+    {
+      "type": "other",
+      "text": "returns a boolean value as a result\n  returns TRUE if ANY of the subquery values meet the condition"
+    },
+    {
+      "type": "paragraph",
+      "text": "ANY means that the condition will be true if the operation is true for \nany of the values in the range."
+    },
+    {
+      "type": "other",
+      "text": "ANY Syntax"
+    },
+    {
+      "type": "other",
+      "text": "SELECT column_name(s)\n  FROM table_name\n  WHERE \n  column_name operator ANY  (SELECT column_name  FROM table_name  WHERE\n  condition);"
+    },
+    {
+      "type": "other",
+      "text": "Note: The operator must be a standard comparison \noperator (=, <>, !=, >, >=, <, or <=)."
+    },
+    {
+      "type": "heading",
+      "text": "The SQL ALL Operator"
+    },
+    {
+      "type": "paragraph",
+      "text": "The ALL operator:"
+    },
+    {
+      "type": "other",
+      "text": "returns a boolean value as a result\n  returns TRUE if ALL of the subquery values meet the condition\n  is used with SELECT, \n  WHERE and HAVING statements"
+    },
+    {
+      "type": "paragraph",
+      "text": "ALL means that the condition will be true only if the operation is true \nfor all values in the range."
+    },
+    {
+      "type": "other",
+      "text": "ALL Syntax With SELECT"
+    },
+    {
+      "type": "other",
+      "text": "SELECT ALL column_name(s)\n  FROM table_name\n  WHERE \n  condition;"
+    },
+    {
+      "type": "other",
+      "text": "ALL Syntax With WHERE or HAVING"
+    },
+    {
+      "type": "other",
+      "text": "SELECT column_name(s)\n  FROM table_name\n  WHERE \n  column_name operator ALL  (SELECT column_name  FROM table_name  WHERE condition);"
+    },
+    {
+      "type": "other",
+      "text": "Note: The operator must be a standard comparison \noperator (=, <>, !=, >, >=, <, or <=)."
+    },
+    {
+      "type": "heading",
+      "text": "Demo Database"
+    },
+    {
+      "type": "paragraph",
+      "text": "Below is a selection from the \"Products\" table in the Northwind sample database:"
+    },
+    {
+      "type": "other",
+      "text": "ProductID\n    ProductName\n    SupplierID\n    CategoryID\n    Unit\n    Price\n  \n  \n    1\n    Chais\n    1\n    1\n    10 boxes x 20 bags\n    18\n  \n  \n    2\n    Chang\n    1\n    1\n    24 - 12 oz bottles\n    19\n  \n  \n    3\n    Aniseed Syrup\n    1\n    2\n    12 - 550 ml bottles\n    10\n  \n  \n    4\n    Chef Anton's Cajun Seasoning\n    2\n    2\n    48 - 6 oz jars\n    22\n  \n  \n    5\n    Chef Anton's Gumbo Mix\n    2\n    2\n    36 boxes\n    21.35\n  \n  \n    6\n    Grandma's Boysenberry Spread\n    3\n    2\n    12 - 8 oz jars\n    25\n  \n  \n    7\n    Uncle Bob's Organic Dried Pears\n    3\n    7\n    12 - 1 lb pkgs.\n    30\n  \n  \n    8\n    Northwoods Cranberry Sauce\n    3\n    2\n    12 - 12 oz jars\n    40\n  \n  \n    9\n    Mishi Kobe Niku\n    4\n    6\n    18 - 500 g pkgs.\n    97"
+    },
+    {
+      "type": "paragraph",
+      "text": "And a selection from the \"OrderDetails\" table:"
+    },
+    {
+      "type": "other",
+      "text": "OrderDetailID\n    OrderID\n    ProductID\n    Quantity\n  \n  \n    1\n    10248\n    11\n    12\n  \n  \n    2\n    10248\n    42\n    10\n  \n  \n    3\n    10248\n    72\n    5\n  \n  \n    4\n    10249\n    14\n    9\n  \n  \n    5\n    10249\n    51\n    40\n  \n  \n    6\n    10250\n    41\n    10\n  \n  \n    7\n    10250\n    51\n    35\n  \n  \n    8\n    10250\n    65\n    15\n  \n  \n    9\n    10251\n    22\n    6\n  \n  \n    10\n    10251\n    57\n    15"
+    },
+    {
+      "type": "heading",
+      "text": "SQL ANY Examples"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement lists the ProductName if it \nfinds ANY records in the OrderDetails table has Quantity equal to 10 (this will \nreturn TRUE because the Quantity column has some values of 10):"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n  SELECT ProductNameFROM ProductsWHERE ProductID = ANY  (SELECT ProductID  FROM OrderDetails  WHERE Quantity = 10);\n\n  Try it Yourself »"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement lists the ProductName if it \nfinds ANY records in the OrderDetails table has Quantity larger than 99 (this \nwill return TRUE because the Quantity column has some values larger than 99):"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n  SELECT ProductNameFROM ProductsWHERE ProductID = ANY  (SELECT ProductID  \n  FROM OrderDetails  WHERE Quantity > 99);\n\n  Try it Yourself »"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement lists the ProductName if it \nfinds ANY records in the OrderDetails table has Quantity larger than 1000 (this \nwill return FALSE because the Quantity column has no values larger than 1000):"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n  SELECT ProductNameFROM ProductsWHERE ProductID = ANY  (SELECT ProductID  \n  FROM OrderDetails  WHERE Quantity > 1000);\n\n  Try it Yourself »"
+    },
+    {
+      "type": "heading",
+      "text": "SQL ALL Examples"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement lists ALL the product names:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n  SELECT ALL ProductNameFROM ProductsWHERE TRUE;\n\n  Try it Yourself »"
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement lists the ProductName if ALL the records in the \nOrderDetails table has Quantity equal to 10. This will of course return FALSE \nbecause the Quantity column has many different values (not only the value of 10):"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n  SELECT ProductNameFROM ProductsWHERE ProductID = ALL  (SELECT ProductID  FROM OrderDetails  WHERE Quantity = 10);\n\n  Try it Yourself »"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n  Next ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

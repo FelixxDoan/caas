@@ -1,0 +1,38 @@
+{
+  "url": "https://www.w3schools.com/sql/sql_ref_desc.asp",
+  "title": "SQL ",
+  "content": [
+    {
+      "type": "other",
+      "text": "SQL DESC Keyword"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+    },
+    {
+      "type": "heading",
+      "text": "DESC"
+    },
+    {
+      "type": "paragraph",
+      "text": "The DESC command is used to sort the data \nreturned in descending order."
+    },
+    {
+      "type": "paragraph",
+      "text": "The following SQL statement selects all the columns from the \"Customers\" \ntable, sorted descending by the \"CustomerName\" column:"
+    },
+    {
+      "type": "other",
+      "text": "Example\n\n SELECT * FROM CustomersORDER BY CustomerName DESC;\n\n Try it Yourself »"
+    },
+    {
+      "type": "other",
+      "text": "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+    },
+    {
+      "type": "other",
+      "text": "★\n\n      +1\n    \n  \n\n  \n   \n\n  \n    \n      \n        Track your progress - it's free!\n        \n          \n                 \n          \n        \n      \n    \n\n    \n      \n        \n          Log in\n        \n\n        \n          Sign Up"
+    }
+  ]
+}

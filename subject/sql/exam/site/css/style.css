@@ -1,0 +1,159 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+#container {
+  display: flex;
+  height: 100vh;
+}
+#questions {
+  width: 30%;
+  background: white;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+  overflow-y: auto;
+}
+#workarea {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+textarea {
+  width: 100%;
+  height: 150px;
+  font-family: monospace;
+  font-size: 14px;
+}
+#result {
+  background: white;
+  padding: 10px;
+  overflow: auto;
+  flex: 1;
+}
+button {
+  background: green;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+button:hover {
+  background: darkgreen;
+}
+
+#questionList li {
+  margin: 12px 0;
+}
+
+#questionList li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#gradingModal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  z-index: 999;
+}
+
+#scoreModal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  z-index: 1000;
+}
+
+.score-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+#gradingModal,
+#scoreModal {
+  display: none;
+}
+
+#resultTabs {
+  display: flex;
+  margin-top: 5px;
+}
+
+.tab-btn {
+  flex: 1;
+  padding: 6px;
+  cursor: pointer;
+  background-color: #eee;
+  border: none;
+  outline: none;
+  color: #333;
+}
+
+.tab-btn.active {
+  background-color: green;
+  color: white;
+}
+
+.result-box {
+  border: 1px solid #ccc;
+  padding: 8px;
+  min-height: 100px;
+  background: white;
+}
+
+#tableListContainer {
+  margin-top: 20px;
+}
+
+#tableListContainer h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+#tableList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#tableList li {
+  background-color: #f1f1f1;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  border: 1px solid #ccc;
+}
+
+#tableList li:hover {
+  background-color: #4caf50;
+  color: white;
+  border-color: #4caf50;
+  transform: scale(1.05);
+}

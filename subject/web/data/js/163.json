@@ -1,0 +1,436 @@
+{
+  "url": "https://www.w3schools.com/js/js_strict.asp",
+  "title": "JavaScript",
+  "content": [
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "JavaScript Use Strict"
+    },
+    {
+      "type": "paragraph",
+      "text": "\"use strict\"; Defines that \nJavaScript code should be executed in \n\"strict mode\"."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The \"use strict\" Directive"
+    },
+    {
+      "type": "paragraph",
+      "text": "The \"use strict\" directive was new in ECMAScript version 5."
+    },
+    {
+      "type": "paragraph",
+      "text": "It is not a statement, but a literal expression, ignored by earlier versions \nof JavaScript."
+    },
+    {
+      "type": "paragraph",
+      "text": "The purpose of \"use strict\" is to indicate that the code should be executed in \"strict mode\"."
+    },
+    {
+      "type": "paragraph",
+      "text": "With strict mode, you can not, for example, use undeclared variables."
+    },
+    {
+      "type": "paragraph",
+      "text": "All modern browsers support \"use strict\" except Internet Explorer 9 and lower:"
+    },
+    {
+      "type": "table",
+      "data": [
+        [
+          "Directive",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "\"use strict\"",
+          "13.0",
+          "10.0",
+          "4.0",
+          "6.0",
+          "12.1"
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The numbers in the table specify the first browser version that fully supports the directive."
+    },
+    {
+      "type": "other",
+      "text": "You can use strict mode in all your programs. It helps you to write cleaner code,\nlike preventing you from using undeclared variables.\n\"use strict\" is just a string, so IE 9 will not throw an error even if it does not understand it."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Declaring Strict Mode"
+    },
+    {
+      "type": "paragraph",
+      "text": "Strict mode is declared by adding \"use strict\"; to the beginning of a \nscript or a function."
+    },
+    {
+      "type": "paragraph",
+      "text": "Declared at the beginning of a script, it has global scope (all code \nin the script will execute in strict mode):"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "\"use strict\";x = 3.14;       // This will cause an error \n because x is not declared"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "\"use strict\";myFunction();\nfunction myFunction() {\n   y = 3.14;   // This will also cause an error \n because y is not declared}"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Declared inside a function, it has local scope (only the code inside the function is \nin strict mode):"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "x = 3.14;       // This will not cause an error.\n myFunction();function \n myFunction() {\n  \"use strict\";\n    y = 3.14;   // This will cause an error}"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The \"use strict\"; Syntax"
+    },
+    {
+      "type": "paragraph",
+      "text": "The syntax, for declaring strict mode, was designed to be compatible with \nolder versions of JavaScript."
+    },
+    {
+      "type": "paragraph",
+      "text": "Compiling a numeric literal (4 + 5;) or a string literal (\"John Doe\";) in a \nJavaScript program has no side effects. It simply compiles to a non existing \nvariable and dies."
+    },
+    {
+      "type": "paragraph",
+      "text": "So \"use strict\"; only matters to new compilers that \"understand\" the meaning \nof it."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Why Strict Mode?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Strict mode makes it easier to write \"secure\" JavaScript."
+    },
+    {
+      "type": "paragraph",
+      "text": "Strict mode changes previously accepted \"bad syntax\" into real errors."
+    },
+    {
+      "type": "paragraph",
+      "text": "As an example, in normal JavaScript, mistyping a variable name creates a new \nglobal variable. In strict mode, this will throw an error, making it impossible \nto accidentally create a global variable."
+    },
+    {
+      "type": "paragraph",
+      "text": "In normal JavaScript, a developer will not receive any error feedback \nassigning values to non-writable properties."
+    },
+    {
+      "type": "paragraph",
+      "text": "In strict mode, any assignment to a non-writable property, a getter-only \nproperty, a non-existing property, a non-existing variable, or a non-existing \nobject, will throw an error."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Not Allowed in Strict Mode"
+    },
+    {
+      "type": "paragraph",
+      "text": "Using a variable, without declaring it, is not allowed:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "\"use strict\";\n x = 3.14;                // This will cause an error"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Objects are variables too."
+    },
+    {
+      "type": "paragraph",
+      "text": "Using an object, without declaring it, is not allowed:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "\"use strict\";\n x = {p1:10, p2:20};      // This will cause an error"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Deleting a variable (or object) is not allowed."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "\"use strict\";let x = 3.14;\ndelete x;                // This \nwill cause an error"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Deleting a function is not allowed."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "\"use strict\";function x(p1, p2) {}; delete x;                \n // This will cause an error"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Duplicating a parameter name is not allowed:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "\"use strict\";function x(p1, p1) {};   // This will cause an error"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Octal numeric literals are not allowed:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "\"use strict\";let x = 010;             // This \nwill cause an error"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Octal escape characters are not allowed:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "\"use strict\";\nlet x = \"\\010\";            // This will cause an error"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Writing to a read-only property is not allowed:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "\"use strict\";\nconst obj = {};\nObject.defineProperty(obj, \"x\", {value:0, writable:false});\nobj.x = 3.14;            // This \nwill cause an error"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Writing to a get-only property is not allowed:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "\"use strict\";\nconst obj = {get x() \n{return 0} };obj.x = 3.14;            // This \nwill cause an error"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Deleting an undeletable property is not allowed:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "\"use strict\";delete Object.prototype; // This will cause an error"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The word eval cannot be used as a variable:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "\"use strict\";let eval = 3.14;         // This will cause an error"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The word arguments cannot be used as a variable:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "\"use strict\";let arguments = 3.14;    // This will cause an error"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The with statement is not allowed:"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "\"use strict\";with (Math){x = cos(2)}; // This will cause an error"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "For security reasons, eval() is not allowed to create  \nvariables in the scope from which it was called."
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "\"use strict\";\neval (\"x = 2\");\nalert (x);      // This \nwill cause an error"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "\"use strict\";\neval (\"var x = 2\");\nalert (x);    // This \nwill cause an error"
+        }
+      ]
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "eval (\"let x = 2\");\nalert (x);        // This \nwill cause an error"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The this keyword in functions behaves \ndifferently in strict mode."
+    },
+    {
+      "type": "paragraph",
+      "text": "The this keyword refers to the object that \ncalled the function."
+    },
+    {
+      "type": "paragraph",
+      "text": "If the object is not specified, functions in strict mode \nwill return undefined and functions in normal \nmode will return the global object (window):"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "\"use strict\";function myFunction() {  \n  alert(this); // will alert \"undefined\"}myFunction();"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Future Proof!"
+    },
+    {
+      "type": "paragraph",
+      "text": "Keywords reserved for future JavaScript versions can NOT be used as variable \nnames in strict mode."
+    },
+    {
+      "type": "paragraph",
+      "text": "These are:"
+    },
+    {
+      "type": "other",
+      "text": "implements\n  interface\n  let\n    package\n  private\n  protected\n  public\n  static\n  yield"
+    },
+    {
+      "type": "example",
+      "description": "",
+      "codes": [
+        {
+          "language": "unknown",
+          "code": "\"use strict\";let public = 1500;      // This will cause an error"
+        }
+      ]
+    },
+    {
+      "type": "other",
+      "text": "Watch Out!\nThe \"use strict\" directive is only recognized at the beginning of a script \nor a function."
+    }
+  ]
+}
