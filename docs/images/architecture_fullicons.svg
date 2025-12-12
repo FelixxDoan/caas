@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" fill="none">
+  <style>
+    .bg { fill:#F8FAFC; stroke:#E2E8F0; }
+    .panel { fill:#FFFFFF; stroke:#CBD5E1; stroke-width:1.5; rx:12; }
+    .box { fill:#EFF6FF; stroke:#BFDBFE; stroke-width:1.2; rx:10; }
+    .service { fill:#FFFFFF; stroke:#93C5FD; stroke-width:1.2; rx:8; }
+    .title { font: 700 18px 'Segoe UI', Roboto, sans-serif; fill:#0B2447; }
+    .label { font: 600 14px 'Segoe UI', Roboto, sans-serif; fill:#0F172A; }
+    .meta { font: 400 13px 'Segoe UI', Roboto, sans-serif; fill:#475569; }
+    .arrow { stroke:#64748B; stroke-width:2; fill:none; marker-end:url(#mArrow); }
+  </style>
+
+  <defs>
+    <marker id="mArrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0 0 L8 4 L0 8 z" fill="#64748B"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="1600" height="900" class="bg"/>
+
+  <!-- USERS -->
+  <g transform="translate(40,60)">
+    <rect x="0" y="0" width="260" height="260" rx="12" class="panel"/>
+    <text x="18" y="28" class="title">Users</text>
+
+    <!-- Student icon -->
+    <g transform="translate(30,56)">
+      <rect x="0" y="0" width="200" height="64" rx="8" class="service"/>
+      <text x="14" y="40" class="label">Student</text>
+
+      <!-- simple person icon -->
+      <g transform="translate(150,10)">
+        <circle cx="10" cy="12" r="10" fill="#F1F5F9" stroke="#94A3B8"/>
+        <rect x="2" y="28" width="16" height="10" rx="4" fill="#F1F5F9" stroke="#94A3B8"/>
+      </g>
+    </g>
+
+    <!-- Teacher icon -->
+    <g transform="translate(30,136)">
+      <rect x="0" y="0" width="200" height="64" rx="8" class="service"/>
+      <text x="14" y="40" class="label">Teacher</text>
+
+      <!-- book icon -->
+      <g transform="translate(150,18)">
+        <rect x="0" y="0" width="18" height="12" rx="1" fill="#FEF3C7" stroke="#F59E0B"/>
+        <line x1="2" y1="3" x2="16" y2="3" stroke="#FBBF24" stroke-width="1"/>
+      </g>
+    </g>
+
+    <!-- Admin icon -->
+    <g transform="translate(30,216)">
+      <rect x="0" y="0" width="200" height="64" rx="8" class="service"/>
+      <text x="14" y="40" class="label">Admin</text>
+
+      <!-- gear icon (simplified) -->
+      <g transform="translate(150,18)">
+        <circle cx="9" cy="9" r="6" fill="#EFF6FF" stroke="#60A5FA"/>
+        <path d="M9 0 L9 3 M9 15 L9 18 M0 9 L3 9 M15 9 L18 9 M3 3 L5 5 M13 13 L15 15 M3 15 L5 13 M13 5 L15 3"
+              stroke="#60A5FA" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- FRONTEND / GATEWAY -->
+  <g transform="translate(360,60)">
+    <rect x="0" y="0" width="420" height="140" rx="12" class="box"/>
+    <text x="18" y="34" class="title">Frontend / API Gateway</text>
+    <text x="18" y="60" class="meta">Authenticate · Proxy · Rate-limit</text>
+
+    <!-- browser icon -->
+    <g transform="translate(330,26)">
+      <rect x="0" y="0" width="70" height="60" rx="6" fill="#FFFFFF" stroke="#CBD5E1"/>
+      <rect x="6" y="8" width="58" height="12" rx="3" fill="#EFF6FF" stroke="#BFDBFE"/>
+      <rect x="6" y="28" width="58" height="20" rx="3" fill="#FEFEFE" stroke="#E6EEF8"/>
+    </g>
+  </g>
+
+  <!-- BACKEND SERVICES -->
+  <g transform="translate(820,40)">
+    <rect x="0" y="0" width="740" height="820" rx="12" class="panel"/>
+    <text x="18" y="34" class="title">Backend Services & Runtime</text>
+
+    <!-- Auth -->
+    <rect x="24" y="70" width="240" height="100" rx="10" class="service"/>
+    <text x="40" y="100" class="label">Auth Service</text>
+    <text x="40" y="122" class="meta">JWT · Roles · Refresh</text>
+
+    <!-- User -->
+    <rect x="284" y="70" width="240" height="100" rx="10" class="service"/>
+    <text x="300" y="100" class="label">User Service</text>
+    <text x="300" y="122" class="meta">Profile · Subjects · RBAC</text>
+
+    <!-- Admin API -->
+    <rect x="544" y="70" width="180" height="100" rx="10" class="service"/>
+    <text x="560" y="100" class="label">Admin API</text>
+    <text x="560" y="122" class="meta">Manage templates · Health</text>
+
+    <!-- Storage: MongoDB -->
+    <g transform="translate(24,190)">
+      <rect x="0" y="0" width="320" height="100" rx="10" class="service"/>
+      <text x="16" y="32" class="label">MongoDB</text>
+      <text x="16" y="56" class="meta">Users · Subjects · Scores</text>
+
+      <!-- cylinder icon -->
+      <ellipse cx="260" cy="24" rx="34" ry="12" fill="#FFFFFF" stroke="#34D399"/>
+      <rect x="226" y="24" width="68" height="40" fill="#ECFDF5" stroke="#34D399"/>
+      <ellipse cx="260" cy="64" rx="34" ry="12" fill="#FFFFFF" stroke="#34D399"/>
+    </g>
+
+    <!-- Storage: MinIO -->
+    <g transform="translate(364,190)">
+      <rect x="0" y="0" width="320" height="100" rx="10" class="service"/>
+      <text x="16" y="32" class="label">MinIO (S3)</text>
+      <text x="16" y="56" class="meta">Submissions · Materials</text>
+
+      <!-- simple bucket icon -->
+      <rect x="260" y="26" width="48" height="36" rx="6" fill="#FFF7ED" stroke="#F97316"/>
+      <rect x="268" y="30" width="32" height="4" fill="#FED7AA"/>
+    </g>
+
+    <!-- Container runtime cluster -->
+    <g transform="translate(24,320)">
+      <rect x="0" y="0" width="680" height="460" rx="12" class="box"/>
+      <text x="16" y="28" class="label">Container Runtime Cluster</text>
+
+      <!-- Templates -->
+      <rect x="24" y="56" width="180" height="380" rx="8" class="service"/>
+      <text x="40" y="92" class="meta">Image Templates</text>
+
+      <!-- Orchestrator -->
+      <rect x="224" y="56" width="120" height="120" rx="8" class="service"/>
+      <text x="236" y="92" class="meta">Orchestrator</text>
+      <!-- cog icon -->
+      <g transform="translate(264,72)">
+        <circle cx="0" cy="0" r="6" fill="#EFF6FF" stroke="#60A5FA"/>
+        <path d="M-8 0 L-4 0 M4 0 L8 0 M0 -8 L0 -4 M0 4 L0 8" stroke="#60A5FA" stroke-width="1"/>
+      </g>
+
+      <!-- Proxy / Port-forward -->
+      <rect x="364" y="56" width="320" height="120" rx="8" class="service"/>
+      <text x="376" y="92" class="meta">Proxy / Port-forward</text>
+
+      <!-- Student containers grid -->
+      <g transform="translate(224,200)">
+        <rect x="0" y="0" width="200" height="120" rx="8" class="service"/>
+        <text x="14" y="26" class="meta">Student Container</text>
+        <text x="14" y="46" class="meta">(session-1)</text>
+
+        <rect x="240" y="0" width="200" height="120" rx="8" class="service"/>
+        <text x="254" y="26" class="meta">Student Container</text>
+        <text x="254" y="46" class="meta">(session-2)</text>
+
+        <rect x="0" y="150" width="200" height="120" rx="8" class="service"/>
+        <text x="14" y="176" class="meta">Student Container</text>
+        <text x="14" y="196" class="meta">(session-3)</text>
+
+        <rect x="240" y="150" width="200" height="120" rx="8" class="service"/>
+        <text x="254" y="176" class="meta">Student Container</text>
+        <text x="254" y="196" class="meta">(session-4)</text>
+      </g>
+
+    </g>
+  </g>
+
+  <!-- Arrows and labels (simple lines) -->
+  <line x1="300" y1="170" x2="360" y2="170" stroke="#64748B" stroke-width="3" marker-end="url(#mArrow)"/>
+  <text x="200" y="160" class="meta">Login / Access</text>
+
+  <line x1="740" y1="150" x2="820" y2="150" stroke="#64748B" stroke-width="3" marker-end="url(#mArrow)"/>
+  <text x="580" y="140" class="meta">Authenticate</text>
+
+  <line x1="740" y1="190" x2="1060" y2="190" stroke="#64748B" stroke-width="3" marker-end="url(#mArrow)"/>
+  <text x="600" y="180" class="meta">User / Subjects API</text>
+
+  <line x1="1100" y1="310" x2="1020" y2="400" stroke="#64748B" stroke-width="2" marker-end="url(#mArrow)"/>
+
+  <text x="860" y="860" class="meta">CAAS — full-icon SVG (download and upload to GitHub)</text>
+</svg>
